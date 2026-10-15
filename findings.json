@@ -670,6 +670,120 @@
         "feed_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
         "checked_utc": "2026-10-15T19:01:37.237550+00:00"
       }
+    },
+    {
+      "id": "WR-7df42e5c57d29f",
+      "date": "2026-10-15",
+      "title": "Maduro pleads not guilty to new torture-related charges in New York",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: Maduro pleads not guilty to new torture-related charges in New York",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrn1l74zro",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-15T23:42:14.589598+00:00"
+      }
+    },
+    {
+      "id": "WR-4e5bd01b3071b4",
+      "date": "2026-10-15",
+      "title": "Letters with 'suspicious substances' sent to US senators and election offices",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: Letters with 'suspicious substances' sent to US senators and election offices",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n513x523o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-15T23:42:14.756809+00:00"
+      }
+    },
+    {
+      "id": "WR-0455a49b6eb6bb",
+      "date": "2026-10-15",
+      "title": "I find it quite demoralising in store - why I do all my shopping online",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Economy & business",
+      "finding": "Publisher-confirmed publication: I find it quite demoralising in store - why I do all my shopping online",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/c36lk280kd1o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+        "checked_utc": "2026-10-15T23:42:14.931221+00:00"
+      }
+    },
+    {
+      "id": "WR-303a1be0911da0",
+      "date": "2026-10-15",
+      "title": "Living with a stink? Technology might help",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Climate & science",
+      "finding": "Publisher-confirmed publication: Living with a stink? Technology might help",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/cr6240q1w136o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+        "checked_utc": "2026-10-15T23:42:15.083080+00:00"
+      }
+    },
+    {
+      "id": "WR-d96e3cf07db588",
+      "date": "2026-10-15",
+      "title": "Are student protests being manipulated ahead of France's presidential election?",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: Are student protests being manipulated ahead of France's presidential election?",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-15T23:42:15.267877+00:00"
+      }
+    },
+    {
+      "id": "WR-263cda793d6fcf",
+      "date": "2026-10-15",
+      "title": "Watch: What the data centre boom means for Arizona ahead of midterm elections",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: Watch: What the data centre boom means for Arizona ahead of midterm elections",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/videos/cw62yvzv9mm3o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-15T23:42:15.434613+00:00"
+      }
     }
   ]
 }
