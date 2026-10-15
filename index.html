@@ -25,7 +25,22 @@ input::placeholder{color:#b3ae9e}input:focus,select:focus{outline:2px solid #e4c
 .empty{color:#bdb7a6;border-color:#68614a}
 body>footer{border-top:1px solid #413e32;color:#aaa68f}
 a:hover{color:#ffe98b}
+
+/* Simple visitor gate. Not a security boundary on public GitHub Pages. */
+html:not(.radar-unlocked) body > :not(#visitor-gate){display:none!important}
+#visitor-gate{position:fixed;inset:0;display:grid;place-items:center;background:#101114;color:#f2ead0;padding:24px;z-index:9999}
+#visitor-gate .gate-box{width:min(420px,100%);background:#1d1e1f;border:1px solid #5c512e;border-radius:14px;padding:34px;box-shadow:0 20px 70px #0009}
+#visitor-gate h1{color:#f4d65c;margin:0 0 8px}#visitor-gate p{color:#beb8a6;line-height:1.5}
+#visitor-gate input{width:100%;margin-top:14px;min-width:0}#visitor-gate button{background:#f4d65c;color:#191919;border:0;border-radius:8px;padding:12px 22px;font-weight:750;margin-top:12px;cursor:pointer;width:100%}
+#gate-error{color:#ffab9e!important;min-height:1.5em}html.radar-unlocked #visitor-gate{display:none}
 </style></head><body>
+<div id="visitor-gate"><form class="gate-box" id="gate-form"><h1>World Radar</h1><p>Enter the visitor password to continue.</p><input id="gate-password" type="password" autocomplete="current-password" placeholder="Password" aria-label="Visitor password" required><button type="submit">Enter Radar</button><p id="gate-error" role="alert"></p></form></div>
+<script>
+// Only a casual deterrent; raw files remain public on GitHub Pages.
+(function(){const key='world-radar-visitor-open';if(sessionStorage.getItem(key)==='yes')document.documentElement.classList.add('radar-unlocked');
+const hash='8dae88d48586e24c324fcce5201ec3a110edb71dc71bd6aae43b9a8ff96c19d0';
+document.addEventListener('DOMContentLoaded',()=>document.getElementById('gate-form').addEventListener('submit',async e=>{e.preventDefault();const value=document.getElementById('gate-password').value;const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));const actual=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');if(actual===hash){sessionStorage.setItem(key,'yes');document.documentElement.classList.add('radar-unlocked');document.getElementById('gate-password').value='';}else{document.getElementById('gate-error').textContent='Incorrect password.';}}));})();
+</script>
 <header class="top"><div class="shell"><a class="brand" href="./">World Radar · EU perspective</a><span class="nav">Findings / Bibliography</span></div></header>
 <section class="hero"><div class="shell"><div class="eyebrow">Global developments · European perspective</div><h1>Radar Findings</h1><p>A concise watch of consequential developments anywhere in the world, viewed through a European lens. Evidence comes primarily from authoritative reports and papers, complemented by rigorously reported news. Each finding links to its source.</p><div class="meta"><span class="pill">Since 1 October 2026</span><span class="pill"><strong id="total">—</strong> findings</span><span class="pill">Cumulative · newest first</span></div></div></section>
 <section class="controls" aria-label="Filter findings"><div class="shell"><input type="search" id="search" placeholder="Search findings or sources…" aria-label="Search"><select id="topic" aria-label="Topic"><option value="">All topics</option></select><select id="kind" aria-label="Source type"><option value="">All source types</option></select></div></section>
