@@ -1,0 +1,28 @@
+name: World Radar Update
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 6 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate findings database
+        run: |
+          python -m json.tool findings.json > /dev/null
+          echo "World Radar database is valid."
