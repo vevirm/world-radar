@@ -1,29 +1,49 @@
-name: World Radar Update
-
+name: World Radar — Discover and Verify
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0,6,12,18 * * *"
-      timezone: "Europe/Helsinki"
-
+    - cron: '0 0,6,12,18 * * *'
+      timezone: Europe/Helsinki
 permissions:
-  contents: read
-
+  contents: write
+concurrency:
+  group: world-radar-db
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-
-      - name: Validate findings database
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Discover new candidate publications (up to 15 min)
+        run: python scripts/radar.py discover --minutes 15
+      - name: Verify publisher, source page, title and date (up to 10 min)
+        run: python scripts/radar.py verify --minutes 10
+      - name: Ensure valid JSON
+        run: python -m json.tool findings.json > /dev/null
+      - name: Commit verified findings
         run: |
-          python -m json.tool findings.json > /dev/null
-          echo "World Radar database is valid."
+          git config user.name 'world-radar-bot'
+          git config user.email 'world-radar-bot@users.noreply.github.com'
+          git add findings.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'World Radar: add source-verified publications'
+            git push
+          else
+            echo 'No new verified publications. Nothing to commit.'
+          fi
+      - name: Upload verification audit (including rejected items)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-verification-audit-${{ github.run_id }}
+          path: |
+            candidates.json
+            scan-report.json
+          if-no-files-found: ignore
+          retention-days: 30
