@@ -632,6 +632,44 @@
         "feed_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
         "checked_utc": "2026-10-15T15:00:15.720275+00:00"
       }
+    },
+    {
+      "id": "WR-bb726509169f77",
+      "date": "2026-10-15",
+      "title": "An Australian band’s ‘unreal’ journey to break a gig world record",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: An Australian band’s ‘unreal’ journey to break a gig world record",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/videos/c62keqn7wpwdo",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-15T19:01:37.130848+00:00"
+      }
+    },
+    {
+      "id": "WR-d7cd46bf3eded6",
+      "date": "2026-10-15",
+      "title": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Climate & science",
+      "finding": "Publisher-confirmed publication: Watch: What does Starlink have to do with the Ukraine-Russia war?",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+        "checked_utc": "2026-10-15T19:01:37.237550+00:00"
+      }
     }
   ]
 }
