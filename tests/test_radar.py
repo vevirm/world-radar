@@ -284,3 +284,85 @@ def test_pdf_original_year_can_confirm_undated_publisher_landing():
             result = radar.verify_report(candidate, actors, {})
     assert result['date'] == '2020-12-31'
     assert result['date_precision'] == 'year'
+
+
+def test_full_window_waits_until_deadline_and_emits_progress(capsys):
+    """Production phase clocks cannot silently turn 15+10 into up-to 15+10."""
+    current = [100.0]
+    sleeps = []
+    def fake_sleep(seconds):
+        assert 0 < seconds <= 30
+        sleeps.append(seconds)
+        current[0] += seconds
+    with patch.object(radar.time, 'monotonic', side_effect=lambda: current[0]), \
+         patch.object(radar.time, 'sleep', side_effect=fake_sleep):
+        radar.hold_open_until(100 + 15*60, 'discover')
+        assert current[0] == 100 + 15*60
+        assert len(sleeps) == 30
+        radar.hold_open_until(current[0] + 10*60, 'verify')
+        assert current[0] == 100 + 25*60
+        assert len(sleeps) == 50
+    output = capsys.readouterr().out
+    assert 'DISCOVER window completed (fixed duration)' in output
+    assert 'VERIFY window completed (fixed duration)' in output
+    assert 'waiting, not repeating downloads' in output
+
+
+def test_once_diagnostic_does_not_sleep():
+    with patch.object(radar.time, 'sleep') as sleeper:
+        radar.hold_open_until(float('inf'), 'discover', once=True)
+        sleeper.assert_not_called()
+
+
+def test_discover_attempts_all_rotated_sources_before_idle(tmp_path):
+    """Don't finish the active search after just six publishers."""
+    actors = [{'id': f'a{i}', 'category': 'University / research centre',
+               'archives': [f'https://site{i}.example/reports'],
+               'domain_hosts': [f'site{i}.example'], 'seeds': []} for i in range(8)]
+    (tmp_path/'findings.json').write_text('{"findings": []}')
+    pages = [f'https://site{i}.example/reports' for i in range(8)]
+    def fake_page(url, allowed):
+        assert url in pages
+        return (url, b'<html><main><h1>Foresight archive</h1></main></html>', 'text/html')
+    with patch.multiple(radar, RESULTS=tmp_path/'findings.json',
+                        STATE=tmp_path/'radar-state.json', CANDIDATES=tmp_path/'candidates.json'), \
+         patch.object(radar, 'get_registry', return_value=actors), \
+         patch.object(radar, 'get_page', side_effect=fake_page) as fetch, \
+         patch.object(radar, 'TODAY', return_value=date(2026, 10, 16)):
+        radar.discover(float('inf'))
+        assert fetch.call_count == 8
+        assert len(radar.read_json(tmp_path/'candidates.json')['sources_this_run']) == 8
+        # Archives get cooldowns. The next run does not hammer these pages.
+        radar.discover(float('inf'))
+        assert fetch.call_count == 8
+        assert radar.load_state()['runs'] == 2
+
+
+def test_active_scan_follows_new_pagination_in_same_full_window(tmp_path):
+    """The full 15-minute phase explores new pages instead of idling after roots."""
+    actor = {'id': 'a', 'category': 'University / research centre',
+             'archives': ['https://example.org/foresight'],
+             'domain_hosts': ['example.org'], 'seeds': []}
+    (tmp_path/'findings.json').write_text('{"findings": []}')
+    visited = []
+    def fake_page(url, allowed):
+        visited.append(url)
+        if url.endswith('/foresight'):
+            html = b'<main><a href="/foresight?page=2">Next</a></main>'
+        else:
+            html = b'<main><p>No further archives</p></main>'
+        return (url, html, 'text/html')
+    with patch.multiple(radar, RESULTS=tmp_path/'findings.json',
+                        STATE=tmp_path/'radar-state.json', CANDIDATES=tmp_path/'candidates.json'), \
+         patch.object(radar, 'get_registry', return_value=[actor]), \
+         patch.object(radar, 'get_page', side_effect=fake_page), \
+         patch.object(radar, 'TODAY', return_value=date(2026, 10, 16)), \
+         patch.object(radar.time, 'monotonic', return_value=0):
+        radar.discover(100)
+        assert visited == ['https://example.org/foresight',
+                           'https://example.org/foresight?page=2']
+        audit = radar.read_json(tmp_path/'candidates.json')
+        assert audit['archive_passes'] == 3
+        assert audit['archive_pages_visited'] == 2
+        radar.discover(100)
+        assert len(visited) == 2  # neither page re-fetched during cooldown
