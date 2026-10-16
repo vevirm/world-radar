@@ -134,11 +134,11 @@ def test_source_date_from_publisher_document_download():
     assert radar.select_publication_date(info, '2022-06-21')[0] == date(2022, 6, 21)
 
 
-def test_previous_joke_findings_remain_blank():
+def test_previous_joke_findings_cannot_reenter_published_data():
     data = radar.read_json(radar.RESULTS)
     assert data['schema_version'] == 2
     assert data['earliest_publication_date'] == '2015-01-01'
-    assert data['findings'] == []
+    assert all(x['id'].startswith('EUF-') and x['quality']['status'] == 'automated research-substance screen passed' for x in data['findings'])
 
 
 def test_workflow_still_15_then_10_minutes_and_half_hour_schedule():
@@ -146,3 +146,141 @@ def test_workflow_still_15_then_10_minutes_and_half_hour_schedule():
     assert '--minutes 15' in yml
     assert '--minutes 10' in yml
     assert "7,37 * * * *" in yml
+    assert 'git add findings.json radar-state.json' in yml
+
+
+def test_source_rotation_covers_every_group_before_repeating():
+    actors = radar.get_registry()
+    state = radar.empty_state()
+    batches = [radar.next_actor_batch(actors, state) for _ in range(4)]
+    ids = [a['id'] for batch in batches for a in batch]
+    assert len(set(ids[:len(actors)])) == len(actors)
+    assert ids[0] != ids[radar.ACTORS_PER_RUN]
+    assert {a['category'] for a in batches[0]} >= {
+        'EU institution / agency', 'Independent think tank', 'University / research centre'}
+
+
+def test_archive_pages_cooldown_and_next_page():
+    actor = {'id': 'test', 'archives': ['https://example.org/reports'],
+             'domain_hosts': ['example.org']}
+    state = radar.empty_state()
+    d = date(2026, 10, 16)
+    assert radar.page_queue(actor, state, d) == ['https://example.org/reports']
+    state['archive_pages']['test']['https://example.org/reports']['last_scan'] = d.isoformat()
+    html = {'links': [('Next page', '/reports?page=2'), ('Page 3', '/reports/page/3'),
+                      ('External reports', 'https://evil.example/reports?page=4'),
+                      ('Foresight publications', '/reports/archive')]}
+    assert radar.pagination_links(actor, 'https://example.org/reports', html) == [
+        'https://example.org/reports?page=2', 'https://example.org/reports/page/3']
+    assert radar.archive_trail_links(actor, 'https://example.org/reports', html, 0) == [
+        'https://example.org/reports/archive']
+    state['archive_pages']['test']['https://example.org/reports?page=2'] = {
+        'root': False, 'last_scan': None, 'depth': 0}
+    assert radar.page_queue(actor, state, d) == ['https://example.org/reports?page=2']
+    state['archive_pages']['test']['https://example.org/reports?page=2']['last_scan'] = d.isoformat()
+    assert radar.page_queue(actor, state, d) == []
+    assert radar.page_queue(actor, state, date(2026, 10, 17)) == ['https://example.org/reports']
+
+
+def test_rejected_and_accepted_reports_not_rescanned_each_run():
+    state = radar.empty_state()
+    today = date(2026, 10, 16)
+    c = fake_verify_candidate()
+    c['url'] = 'https://www.ceps.eu/foresight-paper/?utm_campaign=x'
+    assert radar.offer_candidate(state, c, set(), today) == 'queued'
+    assert radar.offer_candidate(state, c, set(), today) == 'already-queued'
+    key = radar.clean_url(c['url'])
+    state['queue'] = []
+    state['documents'][key] = {'status': 'rejected', 'retry_after': '2026-12-01'}
+    assert radar.offer_candidate(state, c, set(), today) == 'cooldown'
+    assert radar.offer_candidate(state, c, set(), date(2026, 12, 1)) == 'queued'
+    state['queue'] = []
+    state['documents'][key] = {'status': 'accepted'}
+    assert radar.offer_candidate(state, c, set(), today) == 'already-published'
+    assert radar.offer_candidate(state, fake_verify_candidate(date_hint='2026-07-01'), set(), today) == 'outside-window'
+
+
+def test_discovery_state_survives_runs(tmp_path):
+    from unittest.mock import patch
+    actor = {'id': 'foo', 'category': 'University / research centre',
+             'archives': ['https://example.org/foresight'], 'domain_hosts': ['example.org'],
+             'seeds': []}
+    html = b'<main><a href="/foresight/report-2035">Foresight scenarios for 2035</a>' \
+           b'<a href="/foresight?page=2">Next</a></main>'
+    (tmp_path/'findings.json').write_text('{"findings": []}')
+    paths = {'RESULTS': tmp_path/'findings.json', 'STATE': tmp_path/'radar-state.json',
+             'CANDIDATES': tmp_path/'candidates.json'}
+    with patch.multiple(radar, **paths), \
+         patch.object(radar, 'get_registry', return_value=[actor]), \
+         patch.object(radar, 'get_page', return_value=('https://example.org/foresight', html, 'text/html')) as fetch, \
+         patch.object(radar, 'TODAY', return_value=date(2026, 10, 16)):
+        radar.discover(float('inf'))
+        state = radar.load_state()
+        assert len(state['queue']) == 1
+        assert len(state['archive_pages']['foo']) == 2
+        assert fetch.call_count == 1
+        radar.discover(float('inf'))
+        state2 = radar.load_state()
+        assert state2['runs'] == 2
+        assert len(state2['queue']) == 1
+        assert fetch.call_count == 2  # second run examines unseen pagination, NOT root
+        assert fetch.call_args[0][0] == 'https://example.org/foresight?page=2'
+        radar.discover(float('inf'))
+        assert fetch.call_count == 2  # no repeated pages within cooldown
+
+
+def test_verification_persists_failed_cooldown_and_next_item(tmp_path):
+    actor = next(a for a in radar.get_registry() if a['id'] == 'ceps')
+    state = radar.empty_state()
+    c1 = fake_verify_candidate()
+    c2 = dict(c1, url='https://www.ceps.eu/another-report/', title='Another report')
+    state['queue'] = [c1, c2]
+    (tmp_path/'radar-state.json').write_text(json.dumps(state))
+    (tmp_path/'findings.json').write_text((radar.ROOT/'findings.json').read_text())
+    (tmp_path/'assessments.json').write_text('{"assessments": []}')
+    (tmp_path/'candidates.json').write_text('{"sources_this_run": ["ceps"]}')
+    def fake_verify(candidate, _actors, _review):
+        raise ValueError('Missing credible research methodology')
+    with patch.multiple(radar, STATE=tmp_path/'radar-state.json', RESULTS=tmp_path/'findings.json',
+                        AUDIT=tmp_path/'scan-report.json', CANDIDATES=tmp_path/'candidates.json',
+                        ROOT=tmp_path), \
+         patch.object(radar, 'get_registry', return_value=[actor]), \
+         patch.object(radar, 'verify_report', side_effect=fake_verify) as verify, \
+         patch.object(radar, 'TODAY', return_value=date(2026, 10, 16)):
+        radar.verify_until(float('inf'))
+        assert verify.call_count == 2
+        assert radar.load_state()['queue'] == []
+        for doc in radar.load_state()['documents'].values():
+            assert doc['status'] == 'rejected'
+            assert doc['retry_after'] == '2026-11-30'
+        radar.verify_until(float('inf'))
+        assert verify.call_count == 2  # not reprocessed on subsequent run
+
+
+def test_extracts_future_claim_not_generic_foresight_rhetoric():
+    content = ('Mainstream bureaucracy’s implicit understanding of the future is linear '
+               '– essentially, that tomorrow will be more of today. '
+               'By 2035, Europe could face rising energy import dependencies and '
+               'increased migration pressures if climate disruptions accelerate. '
+               'This report explores different foresight methodologies.')
+    assert 'By 2035' in radar.source_excerpt(content)
+    assert 'tomorrow will' not in radar.source_excerpt(content)
+
+
+def test_no_vague_sentence_passes_as_forecast():
+    assert radar.source_excerpt('The future may be complicated. Tomorrow will be more of today. ') == ''
+
+
+def test_pdf_original_year_can_confirm_undated_publisher_landing():
+    actors = {a['id']: a for a in radar.get_registry()}
+    candidate = fake_verify_candidate(date_hint=None)
+    landing = b'<html><body><h1>European Futures Foresight Report 2035</h1>' \
+              b'<p>Download the full foresight research.</p></body></html>'
+    full = full_study()
+    full['years'] = {2020}
+    full['dates'] = set()
+    with patch.object(radar, 'get_page', return_value=(candidate['url'], landing, 'text/html')):
+        with patch.object(radar, 'full_document', return_value=(candidate['url']+'full.pdf', full)):
+            result = radar.verify_report(candidate, actors, {})
+    assert result['date'] == '2020-12-31'
+    assert result['date_precision'] == 'year'

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """EU/European foresight retrospective — credible research, not news headlines.
 
-DISCOVER: re-scan registered EU institutions, universities, independent think
+DISCOVER: rotate registered EU institutions, universities, independent think
 tanks, research institutes, international bodies and EU-funded project sites
-for 15 minutes. VERIFY for 10 minutes. Report publication MUST be 2015 or later
+within a 15-minute budget. VERIFY new/deferred reports within 10 minutes. Report publication MUST be 2015 or later
 and six calendar months old or older on the current run. Full document must
 pass substantive foresight quality and evidence gates, not just a keyword/length
 check. A scenario is never automatically deemed to have come true.
@@ -19,7 +19,7 @@ import json
 import os
 import re
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlunsplit
 
@@ -34,6 +34,12 @@ TODAY = lambda: datetime.now(timezone.utc).date()
 RESULTS = ROOT / 'findings.json'
 CANDIDATES = ROOT / 'candidates.json'
 AUDIT = ROOT / 'scan-report.json'
+STATE = ROOT / 'radar-state.json'
+ACTORS_PER_RUN = 6
+PAGES_PER_ACTOR = 2
+MAX_PAGES_PER_ACTOR = 36
+MAX_BACKLOG = 2500
+MAX_HISTORY = 12000
 START_DATE = date(2015, 1, 1)
 MIN_WORDS = 2600
 MIN_PDF_PAGES = 8
@@ -256,54 +262,228 @@ def get_registry():
     return actors
 
 
-def discovery_pass(actors, candidates, diagnostics, cycle, deadline):
+def empty_state():
+    return {'schema_version': 1, 'runs': 0, 'source_cursor': 0, 'verification_cursor': 0,
+            'archive_pages': {}, 'documents': {}, 'queue': []}
+
+
+def load_state():
+    if not STATE.exists():
+        return empty_state()
+    state = read_json(STATE)
+    if state.get('schema_version') != 1 or not isinstance(state.get('queue'), list):
+        raise ValueError('Unknown or corrupt radar-state.json; refusing to reset scan history')
+    for field in ('archive_pages', 'documents'):
+        if not isinstance(state.get(field), dict):
+            raise ValueError('Invalid persisted radar state: ' + field)
+    return state
+
+
+def interleaved_actors(actors):
+    """Order categories fairly; don't let the first ten institutional actors monopolise runs."""
+    buckets = {}
     for actor in actors:
-        if time.monotonic() >= deadline:
+        buckets.setdefault(actor['category'], []).append(actor)
+    ordered = []
+    while any(buckets.values()):
+        for group in buckets.values():
+            if group:
+                ordered.append(group.pop(0))
+    return ordered
+
+
+def next_actor_batch(actors, state, limit=ACTORS_PER_RUN):
+    ordered = interleaved_actors(actors)
+    if not ordered:
+        return []
+    start = int(state.get('source_cursor', 0)) % len(ordered)
+    selection = [ordered[(start + i) % len(ordered)] for i in range(min(limit, len(ordered)))]
+    state['source_cursor'] = (start + len(selection)) % len(ordered)
+    return selection
+
+
+def page_queue(actor, state, current_day):
+    """Pick never-scanned pages first, then oldest stale ones; roots refresh daily."""
+    pages = state['archive_pages'].setdefault(actor['id'], {})
+    for root in actor['archives']:
+        pages.setdefault(clean_url(root), {'root': True, 'last_scan': None})
+    for url in list(pages):
+        if trusted_host(url) not in actor['domain_hosts']:
+            del pages[url]
+    available = []
+    for url, record in pages.items():
+        last = record.get('last_scan')
+        # Landing pages get a daily refresh; deeper archive pages are
+        # expensive and mostly historical, so only revisit monthly.
+        interval = 1 if record.get('root') else 30
+        if last and date.fromisoformat(last) + timedelta(days=interval) > current_day:
+            continue
+        available.append((bool(last), last or '0000-00-00', not record.get('root'), url))
+    return [entry[-1] for entry in sorted(available)[:PAGES_PER_ACTOR]]
+
+
+def pagination_links(actor, page_url, info):
+    """Allowlisted older/archive pages (not arbitrary search-result or offsite crawls)."""
+    base = urlsplit(page_url)
+    links = []
+    for label, href in info['links']:
+        dest = clean_url(urljoin(page_url, href))
+        if trusted_host(dest) not in actor['domain_hosts'] or dest == page_url:
+            continue
+        parsed = urlsplit(dest)
+        if parsed.hostname != base.hostname:
+            continue
+        path = parsed.path.rstrip('/').lower()
+        stem = base.path.rstrip('/').lower()
+        # Only walk numerical pagination attached to the current archive path.
+        same_path = path == stem
+        path_page = path.startswith(stem + '/page/') and bool(re.search(r'/page/[1-9]\d*$', path))
+        query_page = same_path and bool(re.search(r'(?:^|&)(?:page|p|offset)=[0-9]+(?:&|$)', parsed.query, re.I))
+        if path_page or query_page:
+            links.append(dest)
+    return list(dict.fromkeys(links))[:12]
+
+
+def archive_trail_links(actor, page_url, info, depth):
+    """Follow up to two levels of publisher-owned foresight/research collections.
+
+    A university landing page often links to its reports catalogue rather
+    than to individual papers. Limit these pointers to collection-like labels,
+    not endless news/articles/PDFs.
+    """
+    if depth >= 2:
+        return []
+    result = []
+    for label, href in info['links']:
+        dest = clean_url(urljoin(page_url, href))
+        if trusted_host(dest) not in actor['domain_hosts'] or dest == page_url:
+            continue
+        parts = urlsplit(dest)
+        if parts.path.lower().endswith(('.pdf', '.doc', '.docx', '.zip')):
+            continue
+        short = normal(label)
+        if not 8 <= len(short) <= 54:
+            continue
+        if not re.search(r'\b(?:foresight|futures|scenarios|strategic reports|research publications|research reports|reports archive|publication archive|publications|research outputs|studies)\b', short):
+            continue
+        if re.search(r'\b(?:20[12-9]\d|subscribe|newsletter|press release)\b', short):
+            continue
+        result.append(dest)
+    return list(dict.fromkeys(result))[:7]
+
+
+def offer_candidate(state, candidate, published_urls, today):
+    """Deduplicate across runs; rejected links return only after their cooldown."""
+    key = clean_url(candidate['url'])
+    hint = parse_any_date(candidate.get('date_hint'))
+    if hint and not (START_DATE <= hint <= cutoff(today)):
+        return 'outside-window'
+    if key in published_urls or state['documents'].get(key, {}).get('status') == 'accepted':
+        return 'already-published'
+    record = state['documents'].get(key, {})
+    retry = record.get('retry_after')
+    if retry and retry > today.isoformat():
+        return 'cooldown'
+    if any(clean_url(item['url']) == key for item in state['queue']):
+        return 'already-queued'
+    if len(state['queue']) >= MAX_BACKLOG:
+        return 'queue-full'
+    state['queue'].append(dict(candidate, url=key, first_seen=today.isoformat()))
+    return 'queued'
+
+
+def discover(deadline, once=False):
+    """Each scheduled run picks up at the next source, never repeats a page in-run.
+
+    --minutes is a TIME BUDGET, not a mandate to waste 15 minutes repeating the
+    same URLs. Persistent history is committed together with verified findings.
+    """
+    actors = get_registry()
+    state = load_state()
+    state['runs'] = int(state.get('runs', 0)) + 1
+    today = TODAY()
+    publishers = next_actor_batch(actors, state, len(actors) if once else ACTORS_PER_RUN)
+    published_urls = {clean_url(x['url']) for x in read_json(RESULTS).get('findings', [])}
+    diagnostics = []
+    new = []
+    processed = 0
+    for actor in publishers:
+        if not once and time.monotonic() >= deadline:
             break
-        count = 0
+        processed += 1
+        added = 0
+        skipped = 0
+        # Historical starting leads are enqueued once, not in every pass.
         for seed in actor.get('seeds', []):
-            d = parse_any_date(seed.get('date'))
-            if (d is None or START_DATE <= d <= cutoff(TODAY())):
-                c = {'title': seed['title'], 'url': clean_url(seed['url']), 'date_hint': d.isoformat() if d else None,
-                     'topic': seed['topic'], 'source_mode': 'historic catalogue seed (unverified)'}
-                candidates.setdefault(c['url'], dict(c, actor_id=actor['id']))
-                count += 1
-        for archive in actor['archives']:
-            if time.monotonic() >= deadline:
+            candidate = {'title': seed['title'], 'url': clean_url(seed['url']),
+                         'date_hint': seed.get('date'), 'topic': seed['topic'],
+                         'source_mode': 'historic catalogue seed (unverified)', 'actor_id': actor['id']}
+            outcome = offer_candidate(state, candidate, published_urls, today)
+            if outcome == 'queued':
+                added += 1
+                new.append(candidate)
+            else:
+                skipped += 1
+        page_urls = page_queue(actor, state, today)
+        for archive in page_urls:
+            if not once and time.monotonic() >= deadline:
                 break
+            info = state['archive_pages'][actor['id']][archive]
+            # Mark even failed pages as attempted, to avoid hammering broken sites.
+            info['last_scan'] = today.isoformat()
             try:
                 url, raw, ctype = get_page(archive, set(actor['domain_hosts']))
                 if raw[:4] == b'%PDF' or 'application/pdf' in ctype.lower():
                     raise ValueError('Archive must be HTML')
-                found = candidates_from_archives(actor, url, page_info(raw, ctype))
+                parsed = page_info(raw, ctype)
+                found = candidates_from_archives(actor, url, parsed)
+                queued = 0
                 for c in found:
-                    candidates.setdefault(c['url'], dict(c, actor_id=actor['id']))
-                count += len(found)
-                diagnostics.append({'cycle': cycle, 'actor': actor['id'], 'archive': archive, 'candidate_links': len(found)})
-            except Exception as e:
-                diagnostics.append({'cycle': cycle, 'actor': actor['id'], 'archive': archive, 'error': str(e)[:170]})
-        diagnostics.append({'cycle': cycle, 'actor': actor['id'], 'listed_candidates': count})
-
-
-def discover(deadline, once=False):
-    actors = get_registry()
-    candidates = {}
-    diagnostics = []
-    cycles = 0
-    while time.monotonic() < deadline or (once and cycles == 0):
-        cycles += 1
-        discovery_pass(actors, candidates, diagnostics, cycles, deadline if not once else float('inf'))
-        if once:
-            break
-        remaining = deadline - time.monotonic()
-        if remaining <= 0:
-            break
-        time.sleep(min(80, remaining))
-    atomic_json(CANDIDATES, {'collected_at_utc': datetime.now(timezone.utc).isoformat(),
-                              'six_month_cutoff': cutoff(TODAY()).isoformat(), 'earliest_publication_date': START_DATE.isoformat(), 'actor_count': len(actors),
-                              'cycles': cycles, 'candidates': list(candidates.values()), 'source_status': diagnostics})
-    print(f'DISCOVERED: {len(candidates)} possible historical reports from {len(actors)} EU/external registered publishers ({cycles} passes)', flush=True)
-
+                    candidate = dict(c, actor_id=actor['id'])
+                    outcome = offer_candidate(state, candidate, published_urls, today)
+                    if outcome == 'queued':
+                        queued += 1
+                        added += 1
+                        new.append(candidate)
+                # Travel through pagination and research/foresight collections
+                # over later runs; never re-fetch these in the current run.
+                pages = state['archive_pages'][actor['id']]
+                depth = info.get('depth', 0)
+                for target in pagination_links(actor, url, parsed):
+                    if len(pages) < MAX_PAGES_PER_ACTOR:
+                        pages.setdefault(target, {'root': False, 'depth': depth, 'last_scan': None})
+                for target in archive_trail_links(actor, url, parsed, depth):
+                    if len(pages) < MAX_PAGES_PER_ACTOR:
+                        pages.setdefault(target, {'root': False, 'depth': depth + 1, 'last_scan': None})
+                diagnostics.append({'actor': actor['id'], 'archive': archive,
+                                    'candidate_links': len(found), 'new_queue': queued})
+                print(f'SOURCE {actor["id"]}: {archive} | found {len(found)}, new {queued}, '
+                      f'backlog {len(state["queue"])}', flush=True)
+            except Exception as exc:
+                diagnostics.append({'actor': actor['id'], 'archive': archive, 'error': str(exc)[:170]})
+                print(f'SOURCE {actor["id"]}: archive unavailable: {str(exc)[:110]}', flush=True)
+        print(f'ROTATION actor={actor["id"]} new={added} skipped_known={skipped} '
+              f'pages_due={len(page_urls)}', flush=True)
+    # Don't lose unvisited members of the chosen batch if a slow site exhausted
+    # the budget before we reached them.
+    state['source_cursor'] = (state['source_cursor'] - len(publishers) + processed) % len(actors)
+    state['last_discovery_utc'] = datetime.now(timezone.utc).isoformat()
+    # Historical state is bounded; source rotation and outstanding queue are kept.
+    if len(state['documents']) > MAX_HISTORY:
+        excess = len(state['documents']) - MAX_HISTORY
+        for key, _ in sorted(state['documents'].items(),
+                             key=lambda kv: kv[1].get('last_checked', ''))[:excess]:
+            del state['documents'][key]
+    atomic_json(STATE, state)
+    atomic_json(CANDIDATES, {'collected_at_utc': state['last_discovery_utc'],
+                              'six_month_cutoff': cutoff(today).isoformat(),
+                              'earliest_publication_date': START_DATE.isoformat(),
+                              'actor_count': len(actors), 'sources_this_run': [a['id'] for a in publishers],
+                              'candidates_new': new, 'backlog_count': len(state['queue']),
+                              'source_status': diagnostics})
+    print(f'DISCOVERED this run: {len(new)} new candidates from '
+          f'{len(publishers)} rotated publishers; {len(state["queue"])} awaiting verification; '
+          f'next source cursor {state["source_cursor"]}', flush=True)
 
 def select_publication_date(info, hinted):
     """Reject contradictions; year-only records are dated conservatively 31 Dec.
@@ -340,15 +520,54 @@ def select_publication_date(info, hinted):
     return None, None, 'no unambiguous original publication date'
 
 
+CLAIM_VERSION = 2
+CLAIM_MODAL = re.compile(
+    r'\b(?:will|would|could|may|might|is expected to|are expected to|'
+    r'likely to|projected to|forecast to|set to|anticipated to|'
+    r'will have|would lead|could lead|may lead)\b', re.I)
+CLAIM_HORIZON = re.compile(
+    r'\b(?:by|in|towards?|until|through|before|after)\s+20[2-9]\d\b|'
+    r'\b(?:next|coming)\s+(?:few\s+)?(?:years|decades)|'
+    r'\b(?:long[- ]term|mid[- ]century|over the next|future decades)\b', re.I)
+CLAIM_OUTCOME = re.compile(
+    r'\b(?:change|shift|increase|decrease|accelerat\w*|declin\w*|'
+    r'grow|emerg\w*|transform\w*|fac\w*|reshap\w*|threat\w*|'
+    r'affect|becom\w*|ris\w*|reduc\w*|fall|demand|need|'
+    r'conflict|climate|energy|migration|technology|economy|security|'
+    r'industr\w*|employment|population|soci\w*|policy)\b', re.I)
+META_ONLY = re.compile(
+    r'\b(?:understanding of the future|tomorrow will be more of today|'
+    r'this report (?:explores|aims|sets out|presents)|the aim of (?:this|the) (?:study|report)|'
+    r'foresight (?:is|means|can be)|(?:scenario|future) thinking)\b', re.I)
+
+
 def source_excerpt(content):
-    """Exact historical wording for readers, never an invented forecast."""
-    phrases = re.split(r'(?<=[.!?])\s+(?=[A-Z])', content[:14000])
-    cues = re.compile(r'\b(?:by 20[345]\d|until 20[345]\d|towards 20[345]\d|could|may|might|likely|expected to|projected|will (?:be|have|face|need)|scenario|outlook|future risks?)\b', re.I)
-    for phrase in phrases:
-        p = phrase.strip()
-        if 65 <= len(p) <= 410 and cues.search(p) and not p.lower().startswith(('cookie', 'download')):
-            return p
-    return ''
+    """Choose an identifiable forward-looking passage, never generic foresight rhetoric.
+
+    Rule-based claim extraction is an index into the original document, NOT
+    semantic validation of a future claim. Retrospective verdicts remain separate.
+    """
+    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z0-9])', content[:180000])
+    best = ('', 0)
+    for sentence in sentences:
+        s = re.sub(r'\s+', ' ', sentence).strip()
+        if not 65 <= len(s) <= 460 or META_ONLY.search(s):
+            continue
+        modal = bool(CLAIM_MODAL.search(s))
+        horizon = bool(CLAIM_HORIZON.search(s))
+        outcome = bool(CLAIM_OUTCOME.search(s))
+        # Avoid generic platitudes and sentences that merely say the study
+        # discusses the future. Require both an outcome and a future marker.
+        if not outcome or not (modal or horizon):
+            continue
+        score = (3 if horizon else 0) + (3 if modal else 0) + (2 if outcome else 0)
+        score += (2 if re.search(r'\b(?:europe|eu|european|member states)\b', s, re.I) else 0)
+        score += (1 if 105 <= len(s) <= 340 else 0)
+        if re.search(r'\b(?:this (?:report|study|paper)|the authors|chapter|figure|table)\b', s, re.I):
+            score -= 3
+        if score > best[1]:
+            best = (s, score)
+    return best[0] if best[1] >= 5 else ''
 
 
 def quoted(text, source_text):
@@ -504,6 +723,14 @@ def verify_report(candidate, actors, reviews):
     if not any(title_match(candidate['title'], t) for t in info['titles']):
         raise ValueError('Title not corroborated by original publisher landing page or full text')
     published, precision, basis = select_publication_date(info, candidate.get('date_hint'))
+    doc_url, full = None, None
+    if not published:
+        # Many EU repositories omit a date on their landing page, but the
+        # linked original PDF has a clear title-page publication year. Check
+        # that original document before labelling a substantive study undated.
+        doc_url, full = full_document(url, info, raw, ctype, actor)
+        if full is not info:
+            published, precision, basis = select_publication_date(full, candidate.get('date_hint'))
     if not published:
         raise ValueError(basis)
     if published > cutoff(TODAY()):
@@ -512,7 +739,8 @@ def verify_report(candidate, actors, reviews):
         raise ValueError('Publication predates 2015 minimum')
     if not (ARCHIVE_HINT.search(candidate['title']) or candidate.get('source_mode') == 'historic catalogue seed (unverified)'):
         raise ValueError('Not a discoverable foresight/futures-oriented study')
-    doc_url, full = full_document(url, info, raw, ctype, actor)
+    if full is None:
+        doc_url, full = full_document(url, info, raw, ctype, actor)
     quality = quality_screen(full, actor, candidate['title'])
     excerpt = source_excerpt(full['text'])
     if not excerpt:
@@ -533,69 +761,134 @@ def verify_report(candidate, actors, reviews):
             'title': candidate['title'], 'source': actor['name'], 'actor_id': actor['id'],
             'source_category': actor['category'], 'relationship_to_eu': relationship,
             'authors': '', 'type': 'Substantive foresight / futures study', 'topic': candidate['topic'],
-            'finding': excerpt, 'context': basis, 'url': url, 'full_text_url': doc_url,
+            'finding': excerpt, 'claim_extraction_version': CLAIM_VERSION, 'context': basis, 'url': url, 'full_text_url': doc_url,
             'quality': quality, 'comparison': comparison,
             'checked_utc': datetime.now(timezone.utc).isoformat(),
             'status': 'Full research source, original age, relevance and quality-screen verified; verdict separate'}
 
+def verification_order(queue, actors, state):
+    """Interleave publisher queues so one large archive cannot monopolise verification."""
+    actor_order = [a['id'] for a in interleaved_actors(list(actors.values()))]
+    buckets = {name: [] for name in actor_order}
+    for c in queue:
+        if c.get('actor_id') in buckets:
+            buckets[c['actor_id']].append(c)
+    for bucket in buckets.values():
+        # Favour older work within each publisher, without excluding undated leads.
+        bucket.sort(key=lambda c: (c.get('date_hint') is None,
+                                   c.get('date_hint') or '9999', c.get('first_seen', '')))
+    offset = int(state.get('verification_cursor', 0)) % max(1, len(actor_order))
+    ordered = actor_order[offset:] + actor_order[:offset]
+    state['verification_cursor'] = (offset + 1) % max(1, len(actor_order))
+    output = []
+    while any(buckets.values()):
+        for key in ordered:
+            if buckets[key]:
+                output.append(buckets[key].pop(0))
+    return output
+
+
+def retry_after(exc, today):
+    """Short cooldown for network failures, longer for substantive rejections."""
+    reason = str(exc).lower()
+    transient = isinstance(exc, requests.RequestException) or any(
+        word in reason for word in ('timed out', 'connection', 'http 429', 'http 502', 'http 503', 'http 504', 'too many redirects'))
+    return (today + timedelta(days=2 if transient else 45)).isoformat()
+
+
 def verify_until(deadline, once=False):
     actors = {a['id']: a for a in get_registry()}
-    contents = read_json(CANDIDATES)
+    state = load_state()
+    discovery = read_json(CANDIDATES) if CANDIDATES.exists() else {}
     database = read_json(RESULTS)
     reviews = read_json(ROOT / 'assessments.json')['assessments']
     review_map = {clean_url(r['report_url']): r for r in reviews}
     old = {clean_url(item['url']): item for item in database.get('findings', [])}
     rejections = []
-    checked = set()
     added = 0
-    passes = 0
-    pending = contents.get('candidates', [])
-    # Prioritise 2+ year reports (the purpose is to look back).
-    pending = sorted(pending, key=lambda c: (c.get('date_hint') is None,
-                          c.get('date_hint') or '9999', c.get('actor_id', '')))
-    while time.monotonic() < deadline or (once and passes == 0):
-        passes += 1
-        for candidate in pending:
-            if not once and time.monotonic() >= deadline - 2:
-                break
-            key = clean_url(candidate['url'])
-            # Re-check old findings only when there is a new editorial evidence comparison.
-            if key in checked or (key in old and key not in review_map):
-                continue
-            checked.add(key)
-            try:
-                report = verify_report(candidate, actors, review_map)
-                old[clean_url(report['url'])] = report
-                if key not in {clean_url(x['url']) for x in database.get('findings', [])}:
-                    added += 1
-            except Exception as exc:
-                rejections.append({'actor': candidate.get('actor_id'), 'title': candidate.get('title'),
-                                   'url': key, 'reason': str(exc)[:250]})
-        if once:
+    checked = 0
+    today = TODAY()
+    # New human-supplied retrospective assessments are the one reason to
+    # revisit an already accepted study: verify the exact original quotation.
+    queued_urls = {clean_url(c['url']) for c in state['queue']}
+    for key, report in old.items():
+        needs_refresh = report.get('claim_extraction_version', 0) < CLAIM_VERSION
+        needs_review = key in review_map and report.get('comparison', {}).get('verdict') == 'Not yet assessed'
+        if (needs_refresh or needs_review) and key not in queued_urls:
+            state['queue'].append({'url': key, 'actor_id': report['actor_id'],
+                                   'title': report['title'], 'date_hint': report['date'],
+                                   'topic': report.get('topic', 'EU strategic foresight'),
+                                   'source_mode': 'historic catalogue seed (unverified)',
+                                   'first_seen': today.isoformat()})
+    # Keep unexamined reports in the queue for the next run, rather than
+    # recreating the same candidate pool and starting from its first report.
+    pending = verification_order(state['queue'], actors, state)
+    remaining = []
+    for index, candidate in enumerate(pending):
+        if not once and time.monotonic() >= deadline - 2:
+            remaining.extend(pending[index:])
             break
-        if time.monotonic() >= deadline:
-            break
-        time.sleep(min(50, deadline - time.monotonic()))
+        key = clean_url(candidate['url'])
+        previous = state['documents'].get(key, {})
+        # Previously accepted papers are only revisited if a NEW editorial
+        # assessment is available; the same PDF need not be downloaded again.
+        needs_refresh = key in old and old[key].get('claim_extraction_version', 0) < CLAIM_VERSION
+        if key in old and not needs_refresh and (key not in review_map or old[key].get('comparison', {}).get('verdict') != 'Not yet assessed'):
+            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat()}
+            continue
+        cooldown = previous.get('retry_after')
+        # Editorial follow-up should not be blocked by an earlier network cooldown.
+        editorial_update = key in old and key in review_map
+        if cooldown and cooldown > today.isoformat() and not editorial_update:
+            remaining.append(candidate)
+            continue
+        checked += 1
+        print(f'VERIFY {checked}: {candidate.get("actor_id")} | {candidate.get("title", "")[:100]}', flush=True)
+        try:
+            report = verify_report(candidate, actors, review_map)
+            if key not in old:
+                added += 1
+            old[clean_url(report['url'])] = report
+            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat()}
+            print(f'ACCEPTED {candidate.get("actor_id")}: {candidate.get("title", "")[:100]}', flush=True)
+        except Exception as exc:
+            retry = retry_after(exc, today)
+            state['documents'][key] = {'status': 'rejected', 'last_checked': today.isoformat(),
+                                       'retry_after': retry, 'reason': str(exc)[:250]}
+            rejections.append({'actor': candidate.get('actor_id'), 'title': candidate.get('title'),
+                               'url': key, 'reason': str(exc)[:250], 'retry_after': retry})
+            print(f'REJECTED {candidate.get("actor_id")}: {str(exc)[:160]} '
+                  f'(recheck after {retry})', flush=True)
+    state['queue'] = remaining
+    state['last_verification_utc'] = datetime.now(timezone.utc).isoformat()
     # Permanently drop any old out-of-window / unqualified records before writing.
-    # Age-cutoff changes daily; never allow a stale invalid item to survive.
-    old = {k: x for k, x in old.items() if (START_DATE <= date.fromisoformat(x['date']) <= cutoff(TODAY())
+    old = {k: x for k, x in old.items() if (START_DATE <= date.fromisoformat(x['date']) <= cutoff(today)
            and x.get('quality', {}).get('status') == 'automated research-substance screen passed'
            and x.get('actor_id') in actors)}
     results = sorted(old.values(), key=lambda x: (x['date'], x['id']), reverse=True)
     if results != database.get('findings', []):
         database['findings'] = results
-        database['updated_at'] = TODAY().isoformat()
+        database['updated_at'] = today.isoformat()
         database['schema_version'] = 2
         database['scope'] = 'EU and independent European foresight retrospective (2015 onward)'
         database['minimum_age_months'] = 6
         database['earliest_publication_date'] = START_DATE.isoformat()
         atomic_json(RESULTS, database)
-    atomic_json(AUDIT, {'checked_utc': datetime.now(timezone.utc).isoformat(),
-                        'cutoff': cutoff(TODAY()).isoformat(), 'earliest_publication_date': START_DATE.isoformat(), 'passes': passes,
-                        'candidate_count': len(pending), 'checked_count': len(checked),
+    atomic_json(STATE, state)
+    reason_counts = {}
+    for rejected in rejections:
+        reason = rejected['reason'].split(':')[0].strip()
+        reason_counts[reason] = reason_counts.get(reason, 0) + 1
+    atomic_json(AUDIT, {'checked_utc': state['last_verification_utc'],
+                        'cutoff': cutoff(today).isoformat(), 'earliest_publication_date': START_DATE.isoformat(),
+                        'sources_scanned': discovery.get('sources_this_run', []),
+                        'candidates_new': len(discovery.get('candidates_new', [])),
+                        'checked_count': checked, 'backlog_remaining': len(state['queue']),
                         'new_reports': added, 'total_reports': len(results), 'rejected': rejections,
-                        'discovery_source_status': contents.get('source_status', [])})
-    print(f'VERIFIED: {added} new historical reports; {len(results)} total; {len(rejections)} rejected; {passes} verification passes', flush=True)
+                        'rejection_reason_counts': reason_counts,
+                        'discovery_source_status': discovery.get('source_status', [])})
+    print(f'VERIFIED: {added} new historical reports; {len(results)} total; {checked} reviewed; '
+          f'{len(rejections)} rejected; {len(state["queue"])} queued for future runs', flush=True)
 
 
 if __name__ == '__main__':

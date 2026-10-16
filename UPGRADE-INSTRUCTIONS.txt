@@ -1,0 +1,28 @@
+EUROPEAN FORESIGHT RADAR — INCREMENTAL UPGRADE
+
+IMPORTANT: This is an UPDATE, not a site/database reset.
+Do not replace findings.json, index.html, actors.json or assessments.json.
+
+1) Unzip european-foresight-rotation-root-update.zip.
+2) In GitHub repository ROOT, upload/replace:
+   - README.md
+   - requirements.txt
+   - radar-state.json (only if radar-state.json does not already exist)
+3) In GitHub repository scripts/, upload/replace radar.py.
+4) In GitHub repository tests/, upload/replace test_radar.py (optional for production, recommended).
+5) In GitHub repository .github/workflows/, upload/replace update-radar.yml
+   from the SEPARATE download. Do not place it in repository root.
+6) Commit changes. Use Actions > Run workflow to test.
+
+Expected:
+- Existing page and accepted findings remain intact.
+- Discovery and verification have budgets of 15 and 10 minutes.
+- Rotation state is committed to radar-state.json after every run.
+- It searches distinct registered publisher groups on successive runs,
+  while deep archive pages and already checked publications use cooldowns.
+- The old single accepted report will be queued once for a better
+  forward-looking passage (if a source-verified one can be found).
+- Realizations/actualizations are not invented: retrospective verdicts
+  still require later, independent evidence.
+
+This change has offline tests but has not been deployed to GitHub for you.

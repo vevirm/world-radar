@@ -65,10 +65,24 @@ Each published record stores `quality.checks`, estimated word count, PDF pages, 
 
 The GitHub Actions scheduled run repeats at **:07 and :37 UTC** (nominally every **30 minutes**):
 
-- **15 minutes scan:** repeatedly discover historical potential studies on EU institutional, independent think-tank, university, research-institute, OECD and consortium archives.
-- **10 minutes verification:** fetch original source, resolve original date (2015 ↔ rolling cutoff), download/check full text, enforce quality, verify any separate retrospective evidence, then write qualifying source records. New rejections go to the audit.
+- **15-minute scanning budget:** rotate six publisher groups each run, discovering studies from different registered institutions, university collections, think tanks, research institutes, OECD and consortia. Never repeatedly fetch the same archive during a run.
+- **10-minute verification budget:** process the next pending reports fairly across publishers, confirm dates and full studies, enforce research quality and evidence checks, and carry any remaining reports forward. New rejections go to the audit.
 
-The workflow has a 35-minute total ceiling including setup. GitHub cron is **best-effort** and may be delayed. Not a continuously running hosted worker.
+The workflow has a 35-minute total ceiling including setup. **These are maximum phase budgets, not enforced waiting periods:** when there is no due source or pending candidate, a phase finishes early instead of pretending to search. GitHub cron is **best-effort** and may be delayed. Not a continuously running hosted worker.
+
+## Persistent source and study rotation — no repeated scan of the same 39 links
+
+The tracked **`radar-state.json` is necessary**. Upload it to the repository **root**, together with `actors.json`, `findings.json`, `scripts/` and other files. The workflow commits it back to GitHub after every run **even if no findings qualified**. Keep the existing `.github/workflows/update-radar.yml` in its workflow directory.
+
+- **Publisher fairness:** 19 registered source groups are interleaved by type (EU, think tank, university, institute, etc.). Each run works on the *next six groups*, rather than restarting from the Commission. The rotation position persists across all scheduled runs.
+- **Archive material rotation:** newly encountered older/paginated archive pages and linked publisher research collections become a follow-up queue. Each selected source checks at most two archive pages in a run, choosing unvisited pages before repeats. Root landing pages are rechecked no more than once daily, deeper archive pages no more than once every 30 days.
+- **Persistent verification backlog:** candidate URLs found in one run remain queued for later runs. The verifier interleaves work across publishers so a large single source cannot dominate the entire verification budget. Old original reports are prioritised *within* a publisher.
+- **No endless rejections:** failed methodological-quality/date checks are recorded with a **45-day cooldown**; transient site/network failures wait **2 days**. Already accepted studies are not re-downloaded unless a new editorial retrospective assessment is added.
+- **Useful action logs:** each publisher/page shows candidate links found and *new* reports queued; verification logs accepted/rejected studies and reasons. Logs and the per-run scan/rejection audit distinguish activity from substantive results.
+
+This improves coverage and avoids repeated requests, but it does **not** automatically search the entire web or academic databases. Exploration remains limited to the curated domain allowlist and discoverable linked collection/archive pages. Expand `actors.json` with additional credible research organisations as needed; never weaken full-text quality screening just to increase counts.
+
+**IMPORTANT:** Without the `git add findings.json radar-state.json` update to the workflow, the saved rotation will be lost on every scheduled job, and the scanner will start again at its first publisher. Do not delete `radar-state.json` after the first run.
 
 ## Retrospective / “did it actually happen?” rules
 
@@ -87,8 +101,16 @@ python scripts/check_data.py
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000/` (the `file://` protocol can block the JSON loader). In GitHub Actions use the unchanged full-duration `--minutes 15` and `--minutes 10` stages. The audit artifacts are retained for 30 days; `findings.json` is committed only when it changes.
+Open `http://localhost:8000/` (the `file://` protocol can block the JSON loader). In GitHub Actions use the unchanged `--minutes 15` and `--minutes 10` time budgets; stages end early if no distinct work remains. The audit artifacts are retained for 30 days; `findings.json` is committed only when it changes, and `radar-state.json` is committed whenever rotation or queue/history changes.
 
 ### Deployment and honesty notes
 
-This project has **offline tested screening rules**, but the actual remote publishers were not exhaustively scanned or every report manually evaluated in this update. Individual domains may block automated downloads or lack extractable dates. The package starts with **zero source-verified findings**, not fabricated examples. GitHub Pages' visitor password is preserved as a cosmetic deterrent, **not real access control**: data and password hash remain visible in the static repository/site. The underlying page structure, dark/yellow styling, search, filters, bibliography, hosting and 15+10 cycle are preserved.
+This project has **offline tested screening rules**, but the actual remote publishers were not exhaustively scanned or every report manually evaluated in this update. Individual domains may block automated downloads or lack extractable dates. A new installation can start with **zero source-verified findings**. The rotation update is an incremental patch and does **not** replace your live `findings.json`; pre-existing accepted records remain available. Older generic extracts are queued for one claim-extraction refresh. GitHub Pages' visitor password is preserved as a cosmetic deterrent, **not real access control**: data and password hash remain visible in the static repository/site. The underlying page structure, dark/yellow styling, search, filters, bibliography, hosting and 15+10 cycle are preserved.
+
+## October 2026 patch — source rotation and better claim selection
+
+The incremental update is supplied **without `findings.json` or `index.html`**, so uploading it will not wipe the existing site or the one currently accepted report. It includes `radar-state.json` only as a starting state; if a future repository already contains a populated state file, keep that one instead.
+
+A report must remain substantial research with cited sources. The new verifier attempts to corroborate missing webpage dates using the original publisher-hosted full PDF before declaring the publication undated. It ranks original forward-looking passages rather than publishing the first vague sentence with the word "will". Existing records with an old extractor version are queued for review on a subsequent workflow run. This passage extraction remains an automated **candidate claim**, not a validated prediction or a statement that it came true.
+
+The scan artifact now includes `rejection_reason_counts`, and Actions prints each rejection reason. If acceptance is still implausibly low, inspect the audit archive under the workflow run's **Artifacts** section; its per-document errors tell us whether the cause is genuine quality failure, missing publication metadata, download failures or overly restrictive parsing. Do not count candidate links as accepted academic studies.
