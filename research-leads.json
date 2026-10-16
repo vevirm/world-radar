@@ -1,8 +1,42 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T13:31:20.068460+00:00",
+  "updated_at": "2026-10-16T17:41:12.313439+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
+    {
+      "doi": "10.3390/w7020716",
+      "title": "Comparison of Water Flows in Four European Lagoon Catchments under a Set of Future Climate Scenarios",
+      "abstract": "Climate change is supposed to remarkably affect the water resources of coastal lagoons as they are highly vulnerable to changes occurring at their catchment and/or ocean or sea boundaries. Probable impacts of projected climate changes on catchment hydrology and freshwater input were assessed using the eco-hydrological model SWIM (Soil and Water Integrated Model) for the drainage areas of four European lagoons: Ria de Aveiro (Portugal), Mar Menor (Spain), Tyligulskyi Liman (Ukraine) and Vistula Lagoon (Poland/Russia) under a set of 15 climate scenarios covering the time period until the year 2100. Climate change signals for all regions show continuously increasing trends in temperature, but various trends in precipitation. Precipitation is projected to decrease in two catchments on the Iberian Peninsula and increase in the Baltic region catchment, and does not show a clear trend in the catchment located near the Black Sea. The average projected changes in freshwater inputs reflect these changes in climate conditions, but often show variability between the scenarios, in future periods, and within the catchments. According to the individual degrees of water management influences in the four drainage basins, the climate sensitivity of river inflows is differently pronounced in each.",
+      "date": "2015-02-12",
+      "journal": "Water",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/w7020716",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.7163/gpol.0008",
+      "title": "On European metropolisation scenarios and the future course of metropolitan development in Poland",
+      "abstract": "",
+      "date": "2015-03-27",
+      "journal": "Geographia Polonica",
+      "publisher": "Institute of Geography and Spatial Organization, Polish Academy of Sciences",
+      "url": "https://doi.org/10.7163/gpol.0008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
     {
       "doi": "10.1016/j.techfore.2014.06.009",
       "title": "The futures of the service economy in Europe: A foresight analysis",
@@ -16,7 +50,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -38,6 +72,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.techfore.2015.07.002",
+      "title": "Context, drivers, and future potential for wood-frame multi-story construction in Europe",
+      "abstract": "",
+      "date": "2015-10-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2015.07.002",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/d7040342",
+      "title": "Predicting Future European Breeding Distributions of British Seabird Species under Climate Change and Unlimited/No Dispersal Scenarios",
+      "abstract": "Understanding which traits make species vulnerable to climatic change and predicting future distributions permits conservation efforts to be focused on the most vulnerable species and the most appropriate sites. Here, we combine climate envelope models with predicted bioclimatic data from two emission scenarios leading up to 2100, to predict European breeding distributions of 23 seabird species that currently breed in the British Isles. Assuming unlimited dispersal, some species would be “winners” (increase the size of their range), but over 65% would lose range, some by up to 80%. These “losers” have a high vulnerability to low prey availability, and a northerly distribution meaning they would lack space to move into. Under the worst-case scenario of no dispersal, species are predicted to lose between 25% and 100% of their range, so dispersal ability is a key constraint on future range sizes. More globally, the results indicate, based on foraging ecology, which seabird species are likely to be most affected by climatic change. Neither of the emissions scenarios used in this study is extreme, yet they generate very different predictions for some species, illustrating that even small decreases in emissions could yield large benefits for conservation.",
+      "date": "2015-11-02",
+      "journal": "Diversity",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/d7040342",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.eneco.2014.05.003",
       "title": "Asymmetric impacts of European transmission network development towards 2050: Stakeholder assessment based on IRENE-40 scenarios",
       "abstract": "",
@@ -55,6 +123,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.52439/fiag3465",
+      "title": "Key Findings from the European Commission Global Food Security 2030 Foresight Study",
+      "abstract": "",
+      "date": "2016-02-24",
+      "journal": "Sight and Life Magazine: Food System",
+      "publisher": "Sight and Life Foundation",
+      "url": "https://doi.org/10.52439/fiag3465",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.renene.2015.10.008",
       "title": "Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe – Scenarios for power sector and transmission infrastructure in 2030 and 2050",
       "abstract": "",
@@ -68,6 +153,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2015.11.028",
+      "title": "A system dynamics based market agent model simulating future powertrain technology transition: Scenarios in the EU light duty vehicle road transport sector",
+      "abstract": "",
+      "date": "2016-03-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2015.11.028",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -101,7 +203,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/sbm-10-2014-0043",
+      "title": "The future of professional football",
+      "abstract": "Purpose – The purpose of this paper is to explore the future of professional soccer by 2025. Scientific foresight studies on this industry do not yet exist despite its current position at a crossroads: toward further exploitation of profit potential? Or clear commitment to the traditional European Model of Sport? Design/methodology/approach – The authors conducted a Delphi-based scenario study. In total, 62 high-level experts from sport, business, and society evaluated the probability of occurrence, impact, and desirability of 15 future projections over at least two rounds. The resulting 5,940 quantitative judgments and 670 qualitative comments were condensed into probable scenarios and surprising wildcards. Findings – Two probable scenarios for European professional soccer by 2025 exist: in an extrapolation scenario, clubs will reap long-term gains from fulfilling public demands regarding stadium security, competitive balance, and social engagement. The less likely alternative is an extensive commercialization, including a short-term exploitation of all imaginable income sources, such as virtually augmented stadiums, financial investors, and league-owned broadcasting channels. Research limitations/implications – The findings are primarily based on qualitative research and an all-German sample. Further studies could incorporate additional quantitative data or might survey an international panel to increase predictive accuracy. Originality/value – The paper is novel in that it examines a yet unaddressed research gap – the future of professional soccer – with a common scientific foresight method that is already established in sport management research – the Delphi technique.",
+      "date": "2016-07-11",
+      "journal": "Sport, Business and Management: An International Journal",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/sbm-10-2014-0043",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -169,7 +288,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -187,6 +306,40 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.atmosenv.2016.08.026",
+      "title": "Ozone concentrations and damage for realistic future European climate and air quality scenarios",
+      "abstract": "",
+      "date": "2016-11-30",
+      "journal": "Atmospheric Environment",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.atmosenv.2016.08.026",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.envpol.2016.07.042",
+      "title": "Impacts of air pollution on cultural heritage corrosion at European level: What has been achieved and what are the future scenarios",
+      "abstract": "",
+      "date": "2016-11-30",
+      "journal": "Environmental Pollution",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.envpol.2016.07.042",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -220,7 +373,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -747,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
