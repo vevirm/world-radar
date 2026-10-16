@@ -2,7 +2,7 @@ name: European Foresight Radar — Research Discovery and Retrospective Verifica
 on:
   workflow_dispatch:
   schedule:
-    # Repeat through the day (UTC); each run is 15 min discovery budget + 10 min verification budget.
+    # Repeat through the day (UTC); each run is 15 FULL minutes discovery + 10 FULL minutes verification.
     # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
     - cron: '7,37 * * * *'
 permissions:
@@ -21,9 +21,9 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Rotate EU + external foresight research sources (up to 15 minutes)
+      - name: Scan rotating foresight sources for 15 full minutes
         run: python scripts/radar.py discover --minutes 15
-      - name: Verify next queued 2015+ full studies (up to 10 minutes)
+      - name: Verify 2015+ studies for 10 full minutes
         run: python scripts/radar.py verify --minutes 10
       - name: Validate JSON and age limits
         run: |
