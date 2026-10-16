@@ -1,8 +1,127 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T12:57:05.351651+00:00",
+  "updated_at": "2026-10-16T13:31:20.068460+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
+    {
+      "doi": "10.1016/j.techfore.2014.06.009",
+      "title": "The futures of the service economy in Europe: A foresight analysis",
+      "abstract": "",
+      "date": "2015-05-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2014.06.009",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s10530-015-0986-0",
+      "title": "Trans-national horizon scanning for invasive non-native species: a case study in western Europe",
+      "abstract": "",
+      "date": "2015-09-18",
+      "journal": "Biological Invasions",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s10530-015-0986-0",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.eneco.2014.05.003",
+      "title": "Asymmetric impacts of European transmission network development towards 2050: Stakeholder assessment based on IRENE-40 scenarios",
+      "abstract": "",
+      "date": "2016-01-31",
+      "journal": "Energy Economics",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.eneco.2014.05.003",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.renene.2015.10.008",
+      "title": "Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe – Scenarios for power sector and transmission infrastructure in 2030 and 2050",
+      "abstract": "",
+      "date": "2016-03-31",
+      "journal": "Renewable Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.renene.2015.10.008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.31338/1641-2478pe.4.15.5",
+      "title": "The state of democracy in the European Union in scenarios: federation, empire and Europe à la carte",
+      "abstract": "The aim of the article is to present possible scenarios on maintaining democracy in the EU, while assuming different hypothetical directions in which it could develop as a federation, empire and Europe à la carte. Selected mechanisms, norms and values of the EU system that are crucial for the functioning of democracy in the European Union are the subject of this research. The abovementioned objective of scenario development is achieved through distinguishing the notions of policy, politics and polity in the research. In the analysis of the state of democracy in the European Union both the process (politics) and the normative approach (policy) have been adopted. The characterised norms, structures, values and democratic procedures in force in the EU will become a reference point for the projected scenarios. The projection refers to a situation when the existing polity transforms into a federation, empire or Europe à la carte. The article is to serve as a projection and is a part of a wider discussion on the future of the basis on which the European Union is build.",
+      "date": "2016-04-24",
+      "journal": "Przegląd Europejski",
+      "publisher": "University of Warsaw",
+      "url": "https://doi.org/10.31338/1641-2478pe.4.15.5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/w8060226",
+      "title": "European Water Footprint Scenarios for 2050",
+      "abstract": "This study develops water footprint scenarios for Europe for 2050, at the country level, based on projections regarding population and economic growth, production and trade patterns, consumption patterns (diets and bioenergy use) and technological development. The objective is to estimate possible future changes in the green, blue and grey water footprint (WF) of production and consumption, to analyze the main drivers of projected changes and to assess Europe’s future dependence on water resources elsewhere in the world. We develop four scenarios, considering globalization versus regional self-sufficiency, and development driven by economic objectives versus development driven by social and environmental objectives. The study shows that the most critical driver of change affecting Europe’s future WF is the consumption pattern. The WFs of both production and consumption in Western Europe increase under scenarios with high meat consumption and decrease with low-meat scenarios. Besides, additional water demands from increasing biofuel needs will put further pressure on European water resources. The European countries with a large ratio of external to total WF of consumption in 2000 decrease their dependencies on foreign water resources in 2050.",
+      "date": "2016-05-27",
+      "journal": "Water",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/w8060226",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/1465116516657672",
+      "title": "Multilingual communication for whom? Language policy and fairness in the European Union",
+      "abstract": "This article compares the effectiveness and the fairness of four alternative policies aimed at managing multilingual communication in the European Union. The current multilingual regime, based on the formal equality among the official languages of the European Union Member States disenfranchises only a small percentage of residents. On the contrary, an English-only language policy would exclude 45% to 79% of adult residents in the 25 countries for which data are available, depending on the indicator used. A language regime based on English, French and German would disenfranchise 26% to 49% of residents, whereas a regime based on six languages would bring the shares of the excluded population down to 9–18%. In addition, results show that economically and socially disadvantaged individuals are less likely to speak languages other than their own native tongue, and therefore they are much more likely to be adversely affected if the European Union stops using their language. The current full multilingual policy of the European Union based on translation and interpreting not only is (and will be for the foreseeable future) the most effective language policy among the alternatives examined; it is also the only one that is truly inclusive at a relatively reasonable cost. The British withdrawal from the European Union is likely to increase rather than decrease the importance of a multilingual language policy.",
+      "date": "2016-07-29",
+      "journal": "European Union Politics",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/1465116516657672",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
     {
       "doi": "10.1016/j.futures.2015.09.004",
       "title": "A scenario discovery study of the impact of uncertainties in the global container transport system on European ports",
@@ -21,6 +140,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.5547/01956574.37.si3.poei.ojea",
+      "title": "European Scenarios of CO2 Infrastructure Investment until 2050",
+      "abstract": "",
+      "date": "2016-09-01",
+      "journal": "The Energy Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.5547/01956574.37.si3.poei.ojea",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/fs-06-2015-0036",
       "title": "Strategic planning and foresight: the case of Smart Specialisation Strategy in Tuscany",
       "abstract": "Purpose Within the theoretical framework of Regional Innovation Systems, the purpose of the paper is to introduce an innovative methodological scheme for strategic planning decisions in public administrations, based on foresight, roadmapping and large participation processes. Design/methodology/approach Starting from the main literature contribution on Regional Innovation Systems, foresight and decision-making processes, an innovative methodology has been elaborated for strategic planning, based on innovation and large participation processes. A practical application is also described with regards to strategic planning in Tuscany (IT) for Smart Specialisation Strategy (S3). Findings On a practitioner perspective, the methodology elaborated addresses strategic planning uncertainties, both when problem setting and in solution finding; a detailed application is provided, easily to be adapted to other regions, and main findings are related to regional innovation governance enforcement. Research limitations/implications Being the Tuscany S3 in the implementation phase, it is not possible to verify the adequacy of alternatives selected. Only mid-term evaluations will allow a deeper insight on the effectiveness of the methodology adopted. Practical implications The methodology represents a useful tool for public administrations in charge of strategic planning and in particular for S3, as an ex ante requirement for European Structural and Investment Funds. The description of the case of Tuscany provides practical hints for the methodology application. Social implications The methodology presents interesting social implications related to the large involvement of stakeholders and quadruple helix within regional strategic planning. Originality/value Within the framework of Regional Innovation Systems, strategic planning decisions are addressed with a scheme based on foresight and large participation processes. European Commission requirements are fully taken into consideration by the methodology. The methodology is easy to be adopted and customised to specific needs of other regions.",
@@ -33,8 +169,42 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.renene.2016.04.024",
+      "title": "Renewable energy scenarios for costs reductions in the European Union",
+      "abstract": "",
+      "date": "2016-10-31",
+      "journal": "Renewable Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.renene.2016.04.024",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5547/01956574.37.si3.poei",
+      "title": "European Scenarios of CO2 Infrastructure Investment until 2050",
+      "abstract": "",
+      "date": "2016-12-01",
+      "journal": "The Energy Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.5547/01956574.37.si3.poei",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -51,6 +221,159 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1504/ijmbs.2016.077642",
+      "title": "The unlawfulness of existing pre-departure integration conditions applied in family reunification scenarios - urgent need to change national laws in the European Union",
+      "abstract": "",
+      "date": "2016-12-31",
+      "journal": "International Journal of Migration and Border Studies",
+      "publisher": "Inderscience Publishers",
+      "url": "https://doi.org/10.1504/ijmbs.2016.077642",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.18096/tmp.2017.01.03",
+      "title": "The Changing Role of Nuclear Power in the European Union: Reflections from Official Scenarios Released before and after the Fukushima Daiichi Accident",
+      "abstract": "Nuclear energy plays an important role in the global and European energy sectors. The nuclear disaster of Fukushima Daiichi has amplified the debate on the potential future roles of nuclear energy in the EU and has had impacts on the European Member States’ energy policies; however, the reactions of the member states were vary. Concerns about common legislation, waste management, safety and risk management have also strengthened. Initiatives were taken at national, regional and international levels. The goal of this study is to highlight the main advantages and disadvantages of nuclear energy utilisation in the light of the official forecasts released before and after the Japanese accident.",
+      "date": "2017-08-15",
+      "journal": "Theory, Methodology, Practice",
+      "publisher": "Theory, Methodology, Practice",
+      "url": "https://doi.org/10.18096/tmp.2017.01.03",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.4000/151gv",
+      "title": "The European Union and Africa towards 2030: perspectives from transnational civil society organisations",
+      "abstract": "Transnational civil society organisations bear visions on development of the African continent, and take a stand, in the multi-level governance of development cooperation, participating (or refraining from it) to the definition of the EU strategic engagement. Do International Non-Governmental Development Organisations and African-led Organisations attribute the same importance to the EU as a global developmental actor, particularly for Africa? SDG17 sets the legal (morally binding) framework under which supranational actors, among others, are warmly invited to contribute to reach Sustainable Development by 2030. The rhetoric of aid as redeeming for the poor and redemptive for the rich, in line with an updated ‘white man’s burden’, might be transubstantiated in the narrative of a new EU-AU ‘equal partnership’. Around the revision of the European Consensus on Development, EU-Africa relation configurations proposed by studied organisations range in a spectrum from enlightened Afro-EU dialogue to African self-reliance (and European disengagement).",
+      "date": "2017-12-31",
+      "journal": "Politics",
+      "publisher": "OpenEdition",
+      "url": "https://doi.org/10.4000/151gv",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.31175/hi.2018.01.05",
+      "title": "Post-Daesh Challenges for Europe",
+      "abstract": "Daesh is about to lose the whole territory it holds in Syria and Iraq once as big as the UK. The Salafi jihadist organization, ruling over 6 million population with an army of 30.000 in 2015, had benefited from sectarian and ethnic tensions and imposed its ideology to recruit and attract more than 40.000 foreign terrorist fighters from across the globe. The question that keeps busy most European capitals currently is; “What awaits Europe after Daesh loses all territory it controls?” The answer to this question will help show the next steps to neutralize its negative effects. Within the scope of this study, the trends shaping the flow of events have been studied to prescribe four future scenarios. Accordingly, the first scenario foresees that Daesh will revert gradually to terrorism from its proto-statehood. The second foresees that as long as it holds a social base, Daesh will survive and pose a real threat for Europe in the foreseeable future though in decreasing intensity. The third finds its transformation to a “Virtual Caliphate” a low probability. The fourth and last scenario finds the possibility of its replication in one of its eight provinces a small chance. At the end of each scenario policy recommendations have been made to reverse those trends.",
+      "date": "2018-02-28",
+      "journal": "Horizon Insights",
+      "publisher": "Beyond the Horizon International Strategic Studies Group",
+      "url": "https://doi.org/10.31175/hi.2018.01.05",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-07-2017-0039",
+      "title": "Do statistics need foresight?",
+      "abstract": "Purpose The purpose of this paper is to explore the relationship between foresight and official statistics in the context of sustainability and big-data. The aim is to draw ideas, guidance and lessons on how foresight could help national and international statistical offices deal with an increasingly turbulent and demanding environment. Design/methodology/approach The paper analyzes the challenges and opportunities posed by big data and sustainability for official statistics. Findings Drawing on the analysis of the BOHEMIA study – a foresight study launched by the European Commission to support its future policy for research and innovation – the paper proposes elements that could form a foresight programme for statistical offices. Originality/value Statistical offices and foresight have been worlds apart. The need to engage with each other is a recent and interesting phenomenon.",
+      "date": "2018-04-09",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-07-2017-0039",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/gcbb.12525",
+      "title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
+      "abstract": "Abstract This study presents supply scenarios of nonfood renewable jet fuel ( RJF ) in the European Union ( EU ) toward 2030, based on the anticipated regulatory context, availability of biomass and conversion technologies, and competing biomass demand from other sectors (i.e., transport, heat, power, and chemicals). A cost optimization model was used to identify preconditions for increased RJF production and the associated emission reductions, costs, and impact on competing sectors. Model scenarios show nonfood RJF supply could increase from 1 PJ in 2021 to 165–261 PJ /year (3.8–6.1 million tonne (Mt)/year) by 2030, provided advanced biofuel technologies are developed and adequate (policy) incentives are present. This supply corresponds to 6%–9% of jet fuel consumption and 28%–41% of total nonfood biofuel consumption in the EU . These results are driven by proposed policy incentives and a relatively high fossil jet fuel price compared to other fossil fuels. RJF reduces aviation‐related combustion emission by 12–19 Mt/year CO 2 ‐eq by 2030, offsetting 53%–84% of projected emission growth of the sector in the EU relative to 2020. Increased RJF supply mainly affects nonfood biofuel use in road transport, which remained relatively constant during 2021–2030. The cost differential of RJF relative to fossil jet fuel declines from 40 €/ GJ (1,740 €/t) in 2021 to 7–13 €/ GJ (280–540 €/t) in 2030, because of the introduction of advanced biofuel technologies, technological learning, increased fossil jet fuel prices, and reduced feedstock costs. The cumulative additional costs of RJF equal €7.7–11 billion over 2021–2030 or €1.0–1.4 per departing passenger (intra‐ EU ) when allocated to the aviation sector. By 2030, 109–213 PJ /year (2.5–4.9 Mt/year) RJF is produced from lignocellulosic biomass using technologies which are currently not yet commercialized. Hence, (policy) mechanisms that expedite technology development are cardinal to the feasibility and affordability of increasing RJF production.",
+      "date": "2018-06-21",
+      "journal": "GCB Bioenergy",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/gcbb.12525",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.22323/2.17030302",
+      "title": "Steering research and innovation through RRI. What horizon for Europe?",
+      "abstract": "Responsible Research and Innovation (RRI) is gaining momentum worldwide and is envisaged as a needed tool to properly govern controversial innovative technology (i.e. genome editing, AI). Europe is considered a leader in fostering such approach, notably through its institutionalization. Even so, the future of European Research and Innovation (R&I) seems to be designed without a central role for RRI. After long effort and so much public EU money to support projects to ground RRI principles and practices in key contexts for the flourishing of science and technology in Europe, such as the industrial realm and regional settings, this counter-intuitive decision could undermine the leadership of Europe in prioritizing civil and human rights and needs, values and expectations of its citizens when steering science and technology, that European R&I strongly need to go further.",
+      "date": "2018-09-03",
+      "journal": "Journal of Science Communication",
+      "publisher": "Sissa Medialab Srl",
+      "url": "https://doi.org/10.22323/2.17030302",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-12-2017-0074",
+      "title": "Technology roadmapping in security and defence foresight",
+      "abstract": "Purpose This paper aims to provide an analysis of Spanish Defence National Foresight Exercise. Design/methodology/approach The analysis is based on a content analysis of public domain Spanish Defence National Foresight Exercise, and a study directed to analyse the impact on defence technological and industrial base. Findings Foresight studies on the defence and security environment uses hybrid methodologies, but rarely involve all the stakeholders, and specially the citizens. The authors place a particular emphasis on the impact of these defence and security foresight studies, and following policies to increase the competitiveness and advanced technologies in the future. The analysis of the Spanish contractors allows an evaluation of the roadmaps as a policy instrument for the industrial defence industry. The main challenges for the next exercises in the European countries are to increase the interest in the firms’ intelligence systems, and the participation and representation of citizens as a way to guarantee their rights. Therefore, a technology roadmap must be complemented with other more participative foresight methods. Originality/value Foresight studies on the defence and security environment have been the subject of very few systematic analyses of impact. This paper makes a contribution to such analysis.",
+      "date": "2018-11-02",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-12-2017-0074",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1515/wrlae-2018-0024",
+      "title": "Cooperation between the European Union and European Mini-States – Possible Scenarios for Future Closer and Enhanced Integration with the European Union",
+      "abstract": "",
+      "date": "2019-01-03",
+      "journal": "Wroclaw Review of Law, Administration & Economics",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.1515/wrlae-2018-0024",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -106,6 +429,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1002/ffo2.23",
+      "title": "Horizon Scanning in Foresight – Why Horizon Scanning is only a part of the game",
+      "abstract": "Abstract Foresight and Horizon Scanning are often regarded as identical concepts with identical models and purposes. But they can be completely different activities, both in and for any kind of prospective activity as well as for strategy purposes. Scanning is no debate and no strategy building. Whereas Foresight is more process‐oriented and always includes a Horizon Scanning phase, Horizon Scanning is rather found at the beginning of any forward‐looking activity and can be an automatized stand‐alone approach for identifying “things to come” ‐ which often means the identification of new science and technology and providing information about them. This paper wants to shed light on some of the confusions in Foresight and Horizon Scanning (HS) that often occur in organizations, among researchers and practitioners being thus of practical and scientific relevance for using an integrated model. The contribution is backed up by a study conducted for the European Commission (Cuhls et al., 2015) conducted to clarify for the Commission’s Foresight department (A6) how the strategic intelligence part of a foresight, the Horizon Scanning, is intertwined with the sense‐making part in similar projects in other parts of the world. The contribution thus starts with a broad definition of Foresight and of Horizon Scanning, explains findings from the study on objectives, methods used and relates the discussion to the EU standard “Foresight Cycle” derived from EFFLA. The conclusions are relevant for decision‐making and strategy processes in the European Commission, for national foresight processes but also for company's and other users.",
+      "date": "2019-11-24",
+      "journal": "FUTURES & FORESIGHT SCIENCE",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/ffo2.23",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.21564/2414-990x.149.199902",
       "title": "Strategic autonomy of the European Union: on the way to «European Sovereignty» in defense?",
       "abstract": "2019 marked 20 years since EU Member States decided to create a joint EU approach to security and defense. The paper raises the question on finding new approaches to provide security and defense in Europe in the current context, as well as the formation of a new paradigm for research on regional security in Europe. Traditional approaches to the study of European integration (neofunctionalism and intergovernmentalism) are of little use for theorizing the development of European defense in conditions of new challenges and threats to national and regional security, as well as transatlantic solidarity violations. The article studies European Strategic Autonomy (ESA), which refers to the ability of the European Union, in conjunction with Member States, to independently determine its own priorities according to which to take decisions and implement them in the fields of foreign policy, security and defense. ESA is not synonymous with independence, nor does it deny membership in military-political alliances, since a more realistic scenario implies positioning itself as a European pillar of NATO. The implementation of the idea of building a \"european sovereignty\" in the field of security and defense implies that the European Union should take bigger responsibility for its own security, the security of its neighbors, andshould strengthen its role in transatlantic relations without opposing NATO. In order to move from rhetoric to concrete policy steps, the EU needs to develop a plan of measures for political, institutional and industrial action. It means that achieving real autonomy requires time and joint efforts by EU institutions and Member State governments. However, political and institutional autonomy can be built exclusively within the whole Union, while military-industrial autonomy can be initiated and implemented by a group of the most economically and technologically advanced EU Member States.",
@@ -140,6 +480,431 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.futures.2020.102634",
+      "title": "Towards a bifurcated future in the US-China relationship: What is in it for the EU?",
+      "abstract": "",
+      "date": "2021-01-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2020.102634",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.econmod.2020.11.015",
+      "title": "Disintegration scenarios in the European Union: A case study of Eastern European economies",
+      "abstract": "",
+      "date": "2021-02-28",
+      "journal": "Economic Modelling",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.econmod.2020.11.015",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2021.120577",
+      "title": "The impact of COVID-19 on the European football ecosystem – A Delphi-based scenario analysis",
+      "abstract": "",
+      "date": "2021-04-30",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2021.120577",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2021.120802",
+      "title": "Stakeholder inclusion in scenario planning—A review of European projects",
+      "abstract": "",
+      "date": "2021-08-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2021.120802",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/oet.12884",
+      "title": "European Union announces measures designed to cut emissions by 55% by 2030",
+      "abstract": "",
+      "date": "2021-09-17",
+      "journal": "Oil and Energy Trends",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/oet.12884",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1088/1755-1315/906/1/012017",
+      "title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
+      "abstract": "Abstract One of the most important goals of the European Union is to provide citizens of the Member States security and stability in fuel and electricity sectors. The United Nations has defined 17 goals and 169 actions to achieve sustainable development of the world. The goals were to improve the quality of life, reduce the level of poverty, inequalities in the world and sustainable development in terms of climate and environmental protection. The article presents an analysis of the implementation of one of the assumed goals, i.e., sustainable development in the field of Affordable and clean Energy in the European Union. This goal is to ensure that every citizen has access to stable, sustainable, and modern energy at an affordable price. Among others, indicators such as energy import dependency, energy productivity, share of renewable energy in gross final energy consumption, final energy consumption in households per capita were analysed. The authors analysed the trends of the above-mentioned indicators in the European Union, with particular emphasis on Poland. In order to be able to predict how the analysed phenomena will develop until 2030, the authors built forecasts. For this purpose, among others, ARIMA models were used. The authors created several dozen models, from among which model with the smallest ex post errors and the lowest value of information criteria were selected. The models allowed to determine the degree of achievement of the set goals. They also allowed the designation of scenarios for the potential development of the analysed indicators.",
+      "date": "2021-11-01",
+      "journal": "IOP Conference Series: Earth and Environmental Science",
+      "publisher": "IOP Publishing",
+      "url": "https://doi.org/10.1088/1755-1315/906/1/012017",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/healthcare9121741",
+      "title": "The European Health Union: European Union’s Concern about Health for All. Concepts, Definition, and Scenarios",
+      "abstract": "The COVID-19 pandemic brought visibility and intensified the discussions on the European Union’s (EU) health mandate. The proposals of the European Commission (EC) to move towards a European Health Union (EHU) can be seen as a starting point towards more integration in health. However, the definition of what the EHU will look like is not clear. This paper searches to find a common definition, and/or features for this EHU through a systematic literature review performed in May 2021. “European Union’s concern about health for all” is suggested as a definition. The main drivers identified to develop an EHU are: surveillance and monitoring, crisis preparedness, funding, political will, vision of public health expenditures, population’s awareness and interest, and global health. Based on these findings, five scenarios were developed: making a full move towards supranational action; improving efficiency in the actual framework; more coordination but no real change; in a full intergovernmentalism direction; and fragmentation of the EU. The scenarios show that the development of a EHU is possible inside the current legal framework. However, it will rely on increased coordination and has a focus on cross-border health threats. Any development will be strongly linked to political choices from Member States.",
+      "date": "2021-12-17",
+      "journal": "Healthcare",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/healthcare9121741",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/sd.2290",
+      "title": "How Sustainable Development Goals interlinkages influence European Union countries’ progress towards the 2030 Agenda",
+      "abstract": "Abstract The analysis of interlinkages between the sustainable development goals (SDGs) and the assessment of countries' progress towards the goals are two prominent research areas in the debate around the 2030 Agenda. The central questions are whether countries are progressing towards the goals at sufficient speed, and whether the SDGs can be achieved in their entirety. While it is evident that trade‐offs between the 2030 Agenda's objectives might prevent countries from achieving all 17 SDGs simultaneously, the extent to which interactions (synergies and trade‐offs) between the goals facilitate or hinder countries' progress towards achieving the 2030 Agenda has so far received little attention. The present study combines the two topics by linking the analysis of synergies and trade‐offs between the SDGs in the European Union (EU) member states with a longitudinal assessment of these countries' progress towards the goals. SDG interlinkages are assessed through Spearman's rank order correlation, while progress is calculated according to Eurostat's progress measure. Using regression analysis, we find a significant negative relationship between countries' progress and the shares of trade‐offs among SDG indicators and a moderate positive relationship between progress and synergies, suggesting that trade‐offs have a bigger influence on the pace of countries' progress towards the goals than synergies. In order to achieve the SDGs by 2030, it is thus crucial to not only exploit synergies between the goals but also to overcome trade‐offs.",
+      "date": "2022-01-18",
+      "journal": "Sustainable Development",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/sd.2290",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su14063563",
+      "title": "Towards the 2030 Agenda: Measuring the Progress of the European Union Countries through the SDGs Achievement Index",
+      "abstract": "The 2030 Agenda and Sustainable Development Goals were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. The success or failure in their implementation largely depends on the national implementation effort, measured within wide and compound indicator frameworks. Due to such complexity, providing a simple but comprehensive view on the progress to achieve the SDGs is a priority. Moreover, the measure of the progress allows the consistency among the different dimensions of sustainable development to be assessed. The purpose of this work is to evaluate the results accomplished by European Union Countries in achieving SDGs. In particular, the paper proposed the SDGs achievement index (SDG-AI), a multicriteria-based index, including six different dimensions and applied to EU countries. The SDG-AI allows the differences across the EU countries to be highlighted, and also assesses the contribution of the different dimensions to the final result. The use of such an index will also be useful to understand the effect of the pandemic on the development.",
+      "date": "2022-03-17",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su14063563",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1515/opag-2022-0071",
+      "title": "Efficiency of the European Union farm types: Scenarios with and without the 2013 CAP measures",
+      "abstract": "Abstract The European Union Farm Accountancy Data Network (FADN) publishes data for the representative farms of several European Union (EU) farm types, regions and countries. In this database, the published data for the farm types allow us to assess several agricultural policies. In fact, the FADN publishes data for the EU farming types and there are not many studies about these fields in the whole European context. This study aims to bring novelty for the whole spectrum of stakeholder types in these domains. The analysis of these impacts may bring relevant insights, especially, for adjustments in the design of future strategies and plans. We analyse the evolution of the EU farm types in the last two decades with significant scenario changes like two large common agricultural policy (CAP) reforms (2003 and 2013) and suggest new approaches to the design for future measures. Statistical information from the FADN over the period 2004–2018 is considered. In addition, efficiency and productivity assessments are carried out, to assess the implications of the most recent instruments of the CAP. The results show that the policy instruments in the framework of the 2013 CAP justify the use of more inputs (or at least at higher costs) for the same level of output. In fact, the subsidies given to the farmers since 2014 mask the inefficiencies underlying some farm types. A significant decrease in the total factor productivity confirmed this trend, despite positive growth rates for the total verified output for several farm types over the period.",
+      "date": "2022-03-23",
+      "journal": "Open Agriculture",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.1515/opag-2022-0071",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su14084728",
+      "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
+      "abstract": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050. This research aims to fill this gap, proposing a simple but exhaustive semantic scaling methodology that allows, for the first time, a quantitative evaluation of the quality of the National Plans based on European Commission assessments to measure their compliance with the European Green Deal objectives. Results show that Member States have more clearly set the Green Deal targets than the actions to deliver against those targets. Actions, in term of nationals policies and funds administration, are still immature and partially addressed.",
+      "date": "2022-04-14",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su14084728",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/reel.12448",
+      "title": "Achieving agricultural greenhouse gas emission reductions in the EU post‐2030: What options do we have?",
+      "abstract": "Abstract By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population. This article seeks to explore the EU's regulatory options to pursue these goals. Relying on the theoretical framework on smart environmental regulation by Gunningham, Grabosky and Sinclair, this article assesses recent proposals by the European Commission under its European Green Deal and Farm to Fork policies, as well as other regulatory instruments that need to be considered as part of the instrument mix. It concludes that regulatory intervention needs to be stepped up, particularly through using several opportunities that the EU emissions trading system offers to complement the regulatory toolbox.",
+      "date": "2022-06-30",
+      "journal": "Review of European, Comparative & International Environmental Law",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/reel.12448",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2478/picbe-2022-0042",
+      "title": "Organic farming in the European Union – perspectives for 2030",
+      "abstract": "Abstract Organic farming has emerged in the European Union as a necessity and an alternative to conventional agriculture. During the three programming periods that have been implemented so far, organic farming has benefited from increased attention with dedicated special programs and substantial allocations to support the development of this sector. This type of agriculture involves the use of a set of techniques and practices that result in yield that provides the food needed by the population considering the sustainable use of resources. Studies have shown that best agricultural practices are applied in organic farming, helping farmers to adapt to climate change by consolidating ecosystems, increasing soil structure quality, water management and water quality, while diversifying crop and animal production while building the knowledge base necessary for the development of a sustainable and environmentally friendly agriculture. The study analyzes the results obtained so far in the European Union, but at the same time addresses what is to be implemented to increase the sector for organic farming, focusing on the number of certified operators in organic farming and cultivated areas. At the same time, the objectives set by the European Community to be achieved by 2030 are presented. The main conclusion of the study is that organic farming has become an essential sector in the European Union with more and more funding from the European Commission.",
+      "date": "2022-08-08",
+      "journal": "Proceedings of the International Conference on Business Excellence",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.2478/picbe-2022-0042",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.enconman.2022.116160",
+      "title": "Projections of energy yield- and complementarity-driven wind energy expansion scenarios in the European Union",
+      "abstract": "",
+      "date": "2022-10-31",
+      "journal": "Energy Conversion and Management",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.enconman.2022.116160",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ijhydene.2022.08.170",
+      "title": "Competitive and secure renewable hydrogen markets: Three strategic scenarios for the European Union",
+      "abstract": "",
+      "date": "2022-10-31",
+      "journal": "International Journal of Hydrogen Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ijhydene.2022.08.170",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2022.121915",
+      "title": "Emerging smart city, transport and energy trends in urban settings: Results of a pan-European foresight exercise with 120 experts",
+      "abstract": "",
+      "date": "2022-10-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2022.121915",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su15086531",
+      "title": "The European Solar Communication—Will It Pave the Road to Achieve 1 TW of Photovoltaic System Capacity in the European Union by 2030?",
+      "abstract": "The urgency of a clean energy transition in the European Union is now not only driven by concerns about climate change, but also by using local renewable energy resources to reduce the dependency on foreign energy imports. Solar photovoltaic electricity generation is acknowledged as one of the pillars of this transition and various policy measures were implemented over the last two years to not only accelerate the deployment of solar photovoltaic electricity generation systems, but also to rebuild a competitive solar value chain in Europe to hedge against solar photovoltaic component supply chain disruptions. However, the current political ambitions still do not pay sufficient attention to the importance of solar photovoltaics as a major contributor to the necessary future renewable energy supply. According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030. At the moment, only seven member states have an installed capacity per capita higher than the average EU value.",
+      "date": "2023-04-12",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su15086531",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su151310582",
+      "title": "Organic Agriculture in the Context of 2030 Agenda Implementation in European Union Countries",
+      "abstract": "Organic agriculture is considered an important component of sustainable development because it promotes environmental sustainability and social responsibility, involving the use of practices that minimize the negative impact of agriculture on the environment and human health. Through this research, we aim to gain a more comprehensive understanding of the current state of and perspectives on specific indicators of organic agriculture from the perspective of the SDGs assumed by EU member countries in the context of the implementation of the 2030 Agenda for Sustainable Development. Based on Eurostat data covering the timeframe from 2008 to 2021, an ARIMA model was used to analyze the data and forecast trends in the selected indicators until 2030. The results of this unique study provide relevant information on the indicators and countries for which positive developments are expected up to 2030, as opposed to those indicators for which mixed or negative developments are forecast. The findings of this research empower policymakers, researchers, and other stakeholders to identify possible negative developments and take appropriate corrective action, with the aim of achieving the goals proposed in the 2030 Agenda for Sustainable Development.",
+      "date": "2023-07-05",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su151310582",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2023.103179",
+      "title": "A future EU overall strategy for agriculture and forest genetic resources management: Finding consensus through policymakers’ participation",
+      "abstract": "",
+      "date": "2023-08-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2023.103179",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/sd.2758",
+      "title": "Sustainable development according to 2030 agenda in European Union countries: Evidence of the enlargement policy",
+      "abstract": "Abstract This paper assesses the performance of European Union countries in achieving sustainable development using an assessment framework based on the 2030 Agenda. Through the application of the Spatial Sustainability Assessment Model, which integrates multi‐criteria analysis with the geographical tool QuantumGIS, European countries are classified according to the four basic dimensions of sustainability (social, economic, environmental, and institutional) organized into various sub‐dimensions, with reference to the year 2020. The results show that Northern countries have better overall sustainability performance in all dimensions except the environment. In contrast, Eastern European and Mediterranean countries perform worse, showing major weaknesses, especially in the economic and institutional dimensions, with a gap between the countries that joined the Union after 2004 and the other states. An in‐depth analysis was conducted to highlight the reasons behind these difficulties in order to give useful indications to public decision‐makers, as a tool for planning, on future choices.",
+      "date": "2023-09-14",
+      "journal": "Sustainable Development",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/sd.2758",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.12688/openreseurope.16016.1",
+      "title": "Understanding the importance of Gender Action Planning in EC Horizon projects: a case study",
+      "abstract": "Against a backdrop of continued gender challenges within the European manufacturing and technology domains, and wider society in general, such as gender balance and inequality, the gender pay gap, the glass ceiling/sticky floor, the glass cliff, the invisible woman and the under-representation of women in STEM careers and senior positions, and framed within the latest European Commission guidelines and requirements on equality, diversity and inclusion, this paper will report on the actions and research undertaken by the voluntary Gender Action Planning (GAP) team within a large, multinational, complex Industry4.0 Horizon2020 research and innovation project to try to address gender inequalities and gender balance, as well as to provide safe spaces, supportive communities and raised awareness of gender issues over the four year lifespan of the project. It is hoped that the learning from the GAP team may provide a good exemplar for future Horizon programme proposal submissions where a Gender Plan is now a mandated requirement.",
+      "date": "2023-09-21",
+      "journal": "Open Research Europe",
+      "publisher": "F1000 Research Ltd",
+      "url": "https://doi.org/10.12688/openreseurope.16016.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckad160.509",
+      "title": "8.F. Workshop: SDG indicators: country scenarios and the way towards 2030",
+      "abstract": "Abstract Background The UN 2030 Agenda for Sustainable Development is a global action plan aimed at achieving a better future for all. The 17 Sustainable Development Goals (SDGs) are at the core of this Agenda, balancing the economic, social and ecological dimensions of sustainable development. The 17 SDGs were adopted by the United Nations in 2015 as a blueprint for reducing inequalities, eliminating extreme poverty, rehabilitating the natural environment, ensuring access to justice for all, improving health and well-being, and building global partnerships supporting sustainable development. From the beginning, data availability was widely discussed. Previous have covered the issue of SDG data gaps; we will concentrate on SDG 3, Ensure healthy lives and promote well-being for all at all ages, though there are health-related indicators under other SDGs, e.g. 2.2.2 and 5.2.2. Developing SDG Indicators The UN General Assembly adopted the global indicator framework in 2017 with a set of 231 indicators, published in the UN SDG Reports, where countries are grouped according to geography. From the perspective of Europe, this makes sense, as i.e. neglected tropical diseases and births not attended by health personnel are uncommon. Indicators demonstrating social inequalities in health, or risk factors for non-communicable disease, such as insufficient physical activity and low fruit and vegetable consumption, are more relevant and demonstrate persistent threats to population health. In accordance with the UN's original mandate, some countries are therefore developing new local indicators. Addressing data gaps In the WHO European Region, the biggest challenge regarding SDG data is time lag. 6 of the 53 Member States (MS) in this region report mortality data from 2017 or earlier, and 39 MS have at least one year of missing mortality data, making it difficult to monitor demographic trends. Until MS are able to report timely and complete data, SDG reporting is unlikely to get better. Often flaws in the underlying health information systems (HISs) are the causes of the gaps. Major barriers to the optimal functioning of HISs are fragmentation of data sources, limited accessibility and unclear rules around use and reuse of data; barriers in the implementation of electronic health records; governance issues related to unclear responsibilities, including funding gaps and weak collaboration; legal gaps and misinterpretation of laws surrounding data protection, and limited number of skilled staff for implementation. These three abstracts show very different scenarios from three countries that illustrates how diverse the European Region is and how differently the countries work towards the SDGs, demonstrating what is currently happening in Europe regarding defining, collecting and reporting SDG indicators. Finally, WHO along with MS will offer some ideas for the best ways to optimize the years until the 2030 SDG achievement deadline. Key messages • Examples from three countries demonstrate challenges connected to SDG monitoring, including data gaps and reporting issues. • Flaws in HISs can lead to data gaps; WHO proposes some ways to alleviate this.",
+      "date": "2023-10-24",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckad160.509",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckad160.799",
+      "title": "Assessing and projecting the burden of diabetes mellitus in the European Union by 2030",
+      "abstract": "Abstract Background Although the upward trend in diabetes mellitus (DM) is known in many countries, there are considerable uncertainties in the forecasts. This study provides valuable insights into the potential development of DM in the European Union (EU) member states through past trends and future projections. Methods European Health Interview Survey (EHIS) 2015 and 2019 microdata from 27 EU countries were used. Finite mix model (fmm) was applied to identify subgroups within the population and obtain probability of risk factors within each group. Time indicator as interaction was added to obtain the developing trend of heterogeneous effects with socioeconomic and lifestyle risk factors that were included in the model. Forecasting was used to project probability of risk factors within each group up to 2030. Results Data included 500,840 participants (274,016 from 2015 and 226,824 from 2019). Fmm and forecasting results showed DM prevalence was 7.4% in 2015 and 8.4% in 2019 and expected to increase to 11.15% in 2030. High- and low-risk subgroups were identified. Most risk factors and lifestyle categories increased in the high-risk group in comparison to the low-risk group between 2015 and 2019. However, within the high risk group, the probability of living rural areas has decreased 2.7% 2015 vs. 2019 and is expected to further decrease by 10.2% up to 2030. Additionally, within the high-risk group, the likelihood of living in towns and suburbs, having a tertiary education and eating fruit and vegetables 1-6 times a week have increased by (3%, 5%, 1.7%, 4.4%) compared to other categories for each risk factor and are expected to be higher in 2030 by (11.6%, 18.6%, 5%, 16.3%). Conclusions According to EHIS data, from 2015 to 2030, the number of people with diabetes in the EU will change and increase by 3.8 %. This increase will vary by subgroup.More data on risk factors are needed to obtain more accurate estimates. Key messages • The future health and economic burden of diabetes on society, health systems and the national economy is expected to increase in the EU. • Implementing effective prevention strategies on a large scale can reduce the future burden of diabetes.",
+      "date": "2023-10-24",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckad160.799",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/ese3.1907",
+      "title": "Research on the risk spillover effect of carbon emission trading market and various industry markets in China and the European Union",
+      "abstract": "Abstract Widely concerns over the carbon emission problems have been aroused. Prior studies have documented the correlation between the carbon emission market and industries separately. This study compared the tail risks and risk spillover effect of the carbon emission and 11 industries markets in China and the European Union (EU) by using the multivariate multi‐quartile conditional autoregressive at‐risk model. Moreover, to evaluate the risk spillover of each market under extreme risk conditions in time domain and frequency domain, DY spillover index and BK spillover index were constructed via generalized forecast error variance decomposition and generalized causation spectrum, respectively. Findings are as follows: (1) The tail risks and fluctuation of the trend of Chinese industry markets reflects more higher and larger than those in the EU; (2) The EU suffers from smaller external shocks, while China has the opposite result and can recover relatively faster; (3) In China, energy, industrial, information technology, financial, real estate, consumer goods, carbon emissions, and discretionary consumption industries are risk spillover industries, while healthcare, materials, telecommunication services, and utilities industries are risk receiving industries. In contrast, the risk spillover industries in the EU remain consistent with those of the Chinese markets except for the materials, discretionary consumption, consumer goods, information technology and real estate industries. (4) On the short‐term, medium‐term and long‐term scales, the risk spillover of China's carbon emission trading market and various industries is basically consistent with that of the EU. These findings contribute to reducing greenhouse gas emissions and achieving the goal of carbon peak and carbon neutrality.",
+      "date": "2024-09-09",
+      "journal": "Energy Science & Engineering",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/ese3.1907",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1017/s026646232400237x",
+      "title": "PP66 International Horizon Scanning Initiative (IHSI) : Time to Review the Need for Stand-Alone National Horizon Scanning?",
+      "abstract": "Introduction Ireland is a member of the International Horizon Scanning Initiative (IHSI) and has access to the full horizon for medicines across multiple disease areas and specialized reports on high-impact technologies within disease areas (IHSI High Impact Reports [HIRs]). Health technology developers (HTDs) provide a notification to HTA agencies and payers on intent to seek reimbursement for a technology in the preceding two years. Methods Information on technologies submitted to the national HTA agency in 2023 was selected for comparison to information in the IHSI database. The IHSI system detects products prior to regulatory approval. The national notification system (NNS) can receive information post-licensing. We examined how many products were received in the NNS that were either in the regulatory process or licensed in the EU. We sought to compare key information in the NNS and the IHSI database to identify areas of duplication. Areas where information from NNS could complement the IHSI database were highlighted. HIRs were not included in this assessment. Results In 2023, 20 percent of products submitted by HTDs via the NNS were already licensed. To compare the information provided in IHSI and the NNS, a sample of 35 technologies common to both systems was selected. The IHSI and the NNS contain multiple data fields (154 in IHSI and 72 in NNS) across domains including information on product characteristics, regulatory information, clinical trial data, and cost. The exceptional fields specific to the Irish context were compassionate access scheme availability in Ireland, Ireland-specific patient population estimates, and local pricing and reimbursement proposals. Conclusions Receipt of information from HTDs remains important, particularly country-specific information. There are efficiencies in identifying technologies via an independent horizon scanning system, not reliant on submissions by HTDs. Such a system could facilitate joint assessment, joint early advice, and joint problem-solving between countries. Joint efforts can also facilitate broader scope on how horizon scanning can be used to increase health system preparedness.",
+      "date": "2025-01-07",
+      "journal": "International Journal of Technology Assessment in Health Care",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1017/s026646232400237x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s11625-024-01612-4",
       "title": "Developing an Agricultural Futures Framework to explore the option space for agricultural change in Europe under alternative value perspectives",
       "abstract": "",
@@ -154,6 +919,23 @@
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.47191/ijsshr/v8-i2-11",
+      "title": "Foresight For Digital Health 2030: Scenarios, Barriers, And Enablers for A Sustainable Future",
+      "abstract": "Digital health is rapidly transforming European healthcare systems, offering opportunities to improve patient outcomes, enhance service delivery, and drive innovation. However, its future is shaped by numerous uncertainties related to regulation, technological advancements, and societal acceptance. The CONNECTINGHEALTH project conducted a structured foresight exercise to explore these dynamics through a series of thematic workshops engaging key stakeholders from across the sector. Four future scenarios were developed, each reflecting different potential directions for digital health in Europe by 2030. These scenarios highlight the critical role of policy development and public empowerment in determining the pace and scope of digital health adoption. This paper presents the methodology, findings, and recommendations derived from the workshops, providing a roadmap for decision-makers aiming to navigate the evolving digital health landscape.",
+      "date": "2025-02-07",
+      "journal": "International Journal of Social Science and Human Research",
+      "publisher": "Everant Journals",
+      "url": "https://doi.org/10.47191/ijsshr/v8-i2-11",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -174,6 +956,159 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.esr.2025.101646",
+      "title": "Is Russian gas still needed in the European Union? Model-based analysis of long-term scenarios",
+      "abstract": "",
+      "date": "2025-03-31",
+      "journal": "Energy Strategy Reviews",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.esr.2025.101646",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/atmos16050508",
+      "title": "Carbon Neutrality and Resilient Districts, a Common Strategy in European Union Countries in 2050",
+      "abstract": "Confronted with the climate emergency, reducing CO2 emissions has become a priority for all nations of the world because the follow-up of humanity depends on it. Most European Union (EU) member states have pledged to cut their net greenhouse gas emissions by at least 55% by 2030 and reach full carbon neutrality by 2050, using 1990 as the baseline year. Despite this common effort, there is still a lack of effective decision-making on carbon neutrality strategies applied throughout the life cycle of a building in all EU countries. A common strategy is proposed in this study to fill this gap in the literature. The building sector is a real lever for reducing the carbon footprint and saving energy. Currently, the methodology for achieving large-scale carbon neutrality is well established. However, there is only a limited number of experts worldwide who have mastered this technology, making it challenging to develop a standardized approach for all nations. The absence of extensive, regular, and consistent data on carbon emissions has considerably hindered the understanding of the root causes of climate change at both the building and neighborhood levels. Is it not it time to break this barrier? With this in mind, this study was carried out with the intention of proposing a common method to achieve carbon neutrality at the neighborhood scale in European Union countries. The most significant parameters having a direct impact on carbon emissions have facilitated the adaptation of the three types of neighborhood in the different capitals of the EU countries, in particular, local building materials, microclimate, the energy mix of each country, and the mode of daily transport. The life cycle assessment of the three districts was conducted using the Plaides LCAv6.25.3 tool in combination with Meteonorm software version 8.2.0, considering a 100-year lifespan for the buildings. In addition, the cost of the various environmental impacts is assessed based on the monetary indicators for European Committee for Standardization indicators method. The main results showed that the distribution of carbon dioxide is 73.3% higher in urban areas than in sustainable neighborhoods and 39.0% higher in urban districts than in rural districts. Nearly zero emissions in the next decade are again possible by applying the scenario involves global warming combined with the complete (100%) renovation of all buildings and the transition to 100% electric vehicles along with the use of solar panels. This strategy makes it possible to reduce between 90.1% and 99.9% of the emission rate in residential districts regarding EU countries.",
+      "date": "2025-04-28",
+      "journal": "Atmosphere",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/atmos16050508",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s10668-025-06248-7",
+      "title": "European Union 2050 vision on building nearly zero energy neighbourhoods for the future",
+      "abstract": "",
+      "date": "2025-05-01",
+      "journal": "Environment, Development and Sustainability",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s10668-025-06248-7",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/reel.12615",
+      "title": "Future proofing EU law – Does the European Union have a legal obligation to protect future generations?",
+      "abstract": "Abstract This article analyses the normative landscape of future generations within the current body of European Union (EU) law, including the treaties, the EU Charter of Fundamental Rights, existing and potentially emerging general principles of EU law, as well as relevant international treaties and customary international law. The article argues that, even though there is currently no explicit legal obligation for EU institutions in the treaties founding the Union to respect and protect the long‐term needs of future generations, several legal hooks exist in the sources of EU law that invite an intergenerationally conscious reading and reinterpretation of EU obligations and competences. Such a reinterpretation could justify, or even prompt, stronger protection of future generations' interests across all EU policies. Future‐proofing EU law primarily depends on how EU institutions, including the Court of Justice of the European Union (CJEU), interpret intergenerational equity‐related concepts already embedded in primary EU legislation. Additionally, the contours of EU obligations towards future generations could be influenced by the dynamically evolving rules of international law.",
+      "date": "2025-05-21",
+      "journal": "Review of European, Comparative & International Environmental Law",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/reel.12615",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.47772/ijriss.2025.90500026",
+      "title": "Evaluating the European Union’s Green Deal Role in Climate Change Mitigation and Sustainability Transitions (2030-2050)",
+      "abstract": "The European Union’s Green Deal (EGD) represents one of the most ambitious policy frameworks aimed at addressing the pressing global challenges of climate change and environmental degradation. It is a very pivotal step that has been engaged towards addressing the concurrent challenges of desertification and climate change as the EU seeks to examine the structures put in place to ensure that they meet up with their objective of becoming carbon neutral by 2050. From a human forcing greenhouse gas theoretical position, this qualitative contribution making use of interviews and observation techniques by interrogating the actions and inactions of man as the main driver of climate change in Europe.\n\nSemi-structured interviews were conducted with a diverse group of stakeholders, including policymakers, environmental NGOs, industry representatives, and community leaders. In parallel, observation techniques were employed in both formal and informal settings such as public climate forums, municipal planning meetings, and grassroots environmental campaigns to document behaviours, interactions, and decision-making processes related to climate change mitigation and adaptation The study identifies that, in order to achieve the ambitious climate goals of the European Green Deal by 2050, the EU must strengthen its efforts in several key areas like: accelerating renewable energy deployment, improving energy efficiency, promoting sustainable agriculture, and enhancing climate adaptation measures are critical. We argue that, the EU in itself cannot achieve this goal unless they engage global climate governance. Climate change mitigation implementation mechanisms were studied from the different EU member countries. Lessons can be drawn from this ongoing policy in the EU which may be relevant to other researchers, practitioners, and policy formulators.",
+      "date": "2025-05-28",
+      "journal": "International Journal of Research and Innovation in Social Science",
+      "publisher": "RSIS International",
+      "url": "https://doi.org/10.47772/ijriss.2025.90500026",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su17135938",
+      "title": "Meeting 2030 Targets: Heat Pump Installation Scenarios in Italy",
+      "abstract": "The study examines the role of heat pumps (HPs) in achieving the targets set by the Italian National Integrated Energy and Climate Plan (PNIEC) for 2030, using official data and European-recognized calculation methodologies to quantify the renewable energy produced. Starting from the current stock analysis—21 million HPs installed in 2022, providing 39 GWth of thermal capacity—the research outlines potential growth scenarios based on installation trends from the past three years: Scenario A assumes 2.5 million HPs/year, (b) 2.2 million/year, and (c) 1.6 million/year. Only Scenario A, the most ambitious, achieves full compliance with 2030 targets by ensuring over 4723 ktoe of renewable energy produced. An additional Scenario D is analyzed, based on the lowest annual installed capacity observed in the past three years but with a modified technology mix emphasizing air-to-water (A/W) and ground-source water-to-water (W/W) HPs. This scenario still achieves the 2030 goals, reaching 66.04 GWth and 4859 ktoe of renewable energy. The results confirm that technology choices will be strategic to meet the targets. The study also highlights the importance of stable incentive policies, proper development of the industrial supply chain, and a plan for the technological upgrading of the existing systems stock.",
+      "date": "2025-06-27",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su17135938",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/02513625.2025.2518865",
+      "title": "European spatial visions – reflection on the scenarios and visions for Europe 2050",
+      "abstract": "",
+      "date": "2025-07-14",
+      "journal": "disP - The Planning Review",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/02513625.2025.2518865",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.energy.2025.136441",
+      "title": "Modelling in support of the European energy transition: Pathways towards the 2030 targets and the vision of climate neutrality by 2050",
+      "abstract": "",
+      "date": "2025-07-31",
+      "journal": "Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.energy.2025.136441",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.jclepro.2025.145849",
+      "title": "Towards sustainable phosphorus use in the European Union: Evaluating resource cap scenarios",
+      "abstract": "",
+      "date": "2025-07-31",
+      "journal": "Journal of Cleaner Production",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.jclepro.2025.145849",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1088/1748-9326/adf97e",
       "title": "Toward sustainability of territorial agro-food systems in Europe: indicators for assessing alternative scenarios",
       "abstract": "Abstract Describing territorial agro-food systems through nitrogen flows between agriculture, livestock farming, human consumption, and external trade represents a useful basis for assessing the environmental sustainability of these systems. The concepts of circularity and self-sufficiency are often put forward in assessments to complement indicators related to environmental impacts, such as nitrogen use efficiency, environmental N surplus, N losses. Here, we use these indicators to assess the environmental performance and sustainability of the agro-food systems of 127 regions in Europe in their current state as well as under two alternative scenarios of varying degrees of structural changes designed to reach sustainability. Both scenarios consider the projected European population at 2050, a dietary change toward less animal protein (30% and 20%, instead of 57% for the reference situation, Ref 2015–2019) and are based on the widespread use of organic crop rotations and the banning of synthetic fertilizers and feed imports. An Agro-Ecology scenario (AE) exploits crop and livestock production at optimal production capacity in the current agricultural areas of each region, thus maintaining the possibility of external trade, while a Radical Simplicity of lifestyle scenario (RS), limits production to regional requirements, with excess agricultural land set aside for reforestation and rewilding. AE and RS are able to feed Europe and greatly reduce environmental losses (more than 50% for both scenarios), but some not self-sufficient regions still necessitate interregional exchanges. Full circularity is theoretically not possible; it increases from 30% (Ref) to 43% (AE). At the European scale, N-food self-sufficiency remains over 1 (2.6 for Ref, 1.6–1.2 for AE and RS), while import dependency of European regions on commercial N-import for food delivery, currently over 2.7 as a mean, drops below 0.1 in both scenarios. The results illustrate the complex relationships between self-sufficiency, circularity, and the environmental impact of territorial agro-food systems.",
@@ -191,6 +1126,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/su17209055",
+      "title": "Non-Food Geographical Indications in the European Union: Comparative Indicators, Cluster Typologies, and Policy Scenarios Under Regulation (EU) 2023/2411",
+      "abstract": "Non-food geographical indications (GIs) are emerging as strategic policy instruments in the European Union after Regulation (EU) 2023/2411 extended protection to craft and industrial products. While the literature on agri-food GIs is extensive, empirical and comparative evidence on non-food GIs remains scarce and fragmented. This study addresses this gap by constructing a harmonised dataset, combining 132 registered and 380 potential non-food GIs identified by EUIPO (512 in total across the EU). Using secondary institutional data, descriptive and comparative statistics, and a hierarchical clustering (Ward, squared Euclidean distance) on normalised indicators total GIs, GIs per million inhabitants (GI/POP), and GIs per € billion of GDP (GI/GDP), the analysis identifies three country typologies differing by scale and intensity. Results reveal a strong geographical concentration in Southern Europe but also unexpectedly high intensity in smaller or mid-sized economies such as Portugal, Cyprus, and Slovenia. A forward-looking scenario analysis based on Cost of Non-Europe (CoNE) estimates suggests that the full implementation of the new Regulation could generate 284,000–338,000 new jobs and € 37–50 billion in additional intra-EU trade. The study contributes to EU policy debates by introducing comparative indicators (GI/POP, GI/GDP) as monitoring tools for evidence-based policymaking and by highlighting the role of non-food GIs as hybrid institutions connecting industrial competitiveness, cultural identity, and sustainability transitions.",
+      "date": "2025-10-13",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su17209055",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/14651165251395303",
+      "title": "The European Court of Justice and legal European integration",
+      "abstract": "This study examines the empirical implications of national and supranational signals for the separation of powers in legal European integration. The rulings of the European Court of Justice do not only resolve specific cases, but its dispositions also shape the scope of legal doctrine, requiring to anticipate the implications of rulings for future classifications of case facts by national courts. Drawing on data from the preliminary reference procedure, we estimate how the direction and strength of signals sent to the European Court of Justice shape the crafting of dispositions for legal European integration. Our findings show that strong supranational signals from the Commission and the Advocate General play a decisive role for crafting broad dispositions with clear thresholds for legal doctrine. Importantly, this influence holds regardless of the pro- or anti-integrationist direction, while signals from member states exert only a marginal impact for legal European integration.",
+      "date": "2025-12-17",
+      "journal": "European Union Politics",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/14651165251395303",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.sftr.2025.101504",
       "title": "Scenarios for embedding phosphorus recovery into the international regime through EU’s carbon border adjustment mechanism",
       "abstract": "",
@@ -204,6 +1173,74 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.4316/cc.2025.02.10",
+      "title": "Debates on Change in the European Union and Possible Scenarios: Strengthening Together or Divergence?",
+      "abstract": "",
+      "date": "2025-12-31",
+      "journal": "Codrul Cosminului",
+      "publisher": "Universitatea Stefan cel Mare din Suceava",
+      "url": "https://doi.org/10.4316/cc.2025.02.10",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/14651165251405487",
+      "title": "The politics of the Court of Justice of the European Union: A review",
+      "abstract": "This essay reviews recent research on how the Court of Justice of the European Union (CJEU) influences the development and enforcement of European Union (EU) law. First, we focus on the supply of cases and how the procedural routes to the court affect the impact of its rulings. Second, we discuss how the collective and individual preferences of the judges shape how they dispose of those cases. To that end, we present a measurement strategy and original dataset of ideological preferences on the court. Third, we examine the productivity of the court and the prospects for reducing the current backlog of the court. Finally, we present novel empirical analyses that connect these three sections and identify questions for future research.",
+      "date": "2026-01-08",
+      "journal": "European Union Politics",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/14651165251405487",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su18021043",
+      "title": "CO2 Emissions Scenarios in the European Union—The Urgency of Carbon Capture and Controlled Economic Growth",
+      "abstract": "Although greenhouse gas emissions have significantly reduced, the European Union still faces a major challenge in meeting its 2050 net-zero goal set under the European Green Deal. Focusing on the impacts of population, economic output, and carbon intensity of economy, this study employs Index Decomposition Analysis to estimate the reductions in carbon intensity needed to reach this target. The findings show that the extent of the technical effort required for decarbonization is much influenced by economic expansion. Under a 3% annual Gross Domestic Product growth scenario, the EU’s carbon intensity of economy must decline by 11.8% per year, which is a particularly demanding rate given the already low baseline. The decomposition also quantifies the technological challenge: under high growth, up to 5867 MtCO2 in reductions would be needed by 2050 (compared with 1990), with Carbon Capture and Storage (CCS) contributing only 10–15%. In contrast, in zero- or negative-growth scenarios, required reductions fall to 4923–4594 MtCO2, with CCS accounting for up to 50–90%. These results show that decarbonization in EU industrial sectors requires systemic transformations and strategic CCS deployment. A balanced approach, limiting economic growth and increasing innovation, appears essential to achieve the climate neutrality target.",
+      "date": "2026-01-20",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su18021043",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ijhydene.2026.153615",
+      "title": "Cost efficiency in clean urban mobility: TCO breakdown of hydrogen and electric buses in the European Union with projections for 2030 and 2050",
+      "abstract": "",
+      "date": "2026-02-28",
+      "journal": "International Journal of Hydrogen Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ijhydene.2026.153615",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     }
