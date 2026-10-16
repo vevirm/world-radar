@@ -1,9 +1,226 @@
 {
   "schema_version": 1,
-  "runs": 0,
-  "source_cursor": 0,
-  "verification_cursor": 0,
-  "archive_pages": {},
-  "documents": {},
-  "queue": []
+  "runs": 1,
+  "source_cursor": 6,
+  "verification_cursor": 1,
+  "archive_pages": {
+    "ec": {
+      "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      }
+    },
+    "ceps": {
+      "https://www.ceps.eu/publications/": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      }
+    },
+    "oecd": {
+      "https://www.oecd.org/en/about/programmes/strategic-foresight.html": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      }
+    },
+    "utu-ffrc": {
+      "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/news/publications": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      },
+      "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/research/previous-foresight": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      }
+    },
+    "fraunhofer": {
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight.html": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/politik-verwaltung.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/unternehmen-industrieverbaende.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/wissenschaft-zivilgesellschaft.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/futures-innovation.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/methoden/delphi-zukunftsbefragung.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      },
+      "https://www.isi.fraunhofer.de/en/competence-center/foresight/methoden.html": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      }
+    },
+    "fod": {
+      "https://foresight-on-demand.eu/publications-and-reports/": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      },
+      "https://foresight-on-demand.eu/projects/futures-garden/": {
+        "root": false,
+        "depth": 1,
+        "last_scan": null
+      }
+    }
+  },
+  "documents": {
+    "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2020-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://www.ceps.eu/ceps-publications/alternative-futures-of-eu-integration-after-the-covid-19-pandemic/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-10-18",
+      "reason": "HTTPSConnectionPool(host='www.ceps.eu', port=443): Read timed out. (read timeout=12)"
+    },
+    "https://www.oecd.org/en/publications/oecd-regional-outlook-2023_92cd40a0-en/full-report/component-8.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-10-18",
+      "reason": "403 Client Error: Forbidden for url: https://www.oecd.org/en/publications/oecd-regional-outlook-2023_92cd40a0-en/full-report/component-8.html"
+    },
+    "https://www.utu.fi/en/news/news/accelerating-the-green-transition-in-europe-through-foresight": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/politik-verwaltung.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/multi-agency-horizon-scanning-for-preparedness-and-future-proof-strategy-development-in-a-one-health-approach/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2021-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources"
+    },
+    "https://www.ceps.eu/ceps-publications/building-a-european-ai-ecosystem-of-excellence/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-10-18",
+      "reason": "HTTPSConnectionPool(host='www.ceps.eu', port=443): Read timed out. (read timeout=12)"
+    },
+    "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/unternehmen-industrieverbaende.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/the-future-of-ai-implications-for-europe-s-r-and-i-ecosystem-and-policy/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources"
+    },
+    "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/wissenschaft-zivilgesellschaft.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/foresight-on-climate-change-related-developments-and-crisis-part-i/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2023-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://www.isi.fraunhofer.de/en/competence-center/foresight/meldungen/2024/civilsocietyweek.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/scenarios-for-the-future-of-school-education-in-the-eu-a-foresight-study/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://foresight-on-demand.eu/projects/impact-of-covid-19-on-european-consumer-behaviour-foresight-study/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-planning/strategic-foresight/2023-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/foresight-towards-the-2nd-strategic-plan-for-horizon-europe/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://commission.europa.eu/strategy-and-policy/strategic-planning/strategic-foresight/2022-strategic-foresight-report_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/after-the-new-normal-scenarios-for-europe-in-the-post-covid-19-world/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    },
+    "https://foresight-on-demand.eu/projects/grassroots-horizon-scanning-guidance-on-how-to-conduct-and-communicate-the-results-of-a-systematic-horizon-scan-with-limited-resources/": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "no unambiguous original publication date"
+    }
+  },
+  "queue": [],
+  "last_discovery_utc": "2026-10-16T09:26:14.800348+00:00",
+  "last_verification_utc": "2026-10-16T09:26:49.012915+00:00"
 }
