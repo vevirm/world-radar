@@ -27,9 +27,9 @@ jobs:
           import sys
           sys.path.insert(0, 'scripts')
           import radar
-          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 2:
+          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 3:
               raise SystemExit('Outdated scripts/radar.py. Upload the new radar.py to the repository scripts folder before running.')
-          print('Verified fixed-window scanner protocol 2', flush=True)
+          print('Verified fixed-window scanner protocol 3', flush=True)
           PY
       - name: Scan rotating foresight sources for 15 full minutes
         shell: bash
