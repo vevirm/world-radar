@@ -1,1 +1,211 @@
-{"schema_version": 1, "updated_at": null, "leads": []}
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-16T12:57:05.351651+00:00",
+  "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
+  "leads": [
+    {
+      "doi": "10.1016/j.futures.2015.09.004",
+      "title": "A scenario discovery study of the impact of uncertainties in the global container transport system on European ports",
+      "abstract": "",
+      "date": "2016-08-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2015.09.004",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-06-2015-0036",
+      "title": "Strategic planning and foresight: the case of Smart Specialisation Strategy in Tuscany",
+      "abstract": "Purpose Within the theoretical framework of Regional Innovation Systems, the purpose of the paper is to introduce an innovative methodological scheme for strategic planning decisions in public administrations, based on foresight, roadmapping and large participation processes. Design/methodology/approach Starting from the main literature contribution on Regional Innovation Systems, foresight and decision-making processes, an innovative methodology has been elaborated for strategic planning, based on innovation and large participation processes. A practical application is also described with regards to strategic planning in Tuscany (IT) for Smart Specialisation Strategy (S3). Findings On a practitioner perspective, the methodology elaborated addresses strategic planning uncertainties, both when problem setting and in solution finding; a detailed application is provided, easily to be adapted to other regions, and main findings are related to regional innovation governance enforcement. Research limitations/implications Being the Tuscany S3 in the implementation phase, it is not possible to verify the adequacy of alternatives selected. Only mid-term evaluations will allow a deeper insight on the effectiveness of the methodology adopted. Practical implications The methodology represents a useful tool for public administrations in charge of strategic planning and in particular for S3, as an ex ante requirement for European Structural and Investment Funds. The description of the case of Tuscany provides practical hints for the methodology application. Social implications The methodology presents interesting social implications related to the large involvement of stakeholders and quadruple helix within regional strategic planning. Originality/value Within the framework of Regional Innovation Systems, strategic planning decisions are addressed with a scheme based on foresight and large participation processes. European Commission requirements are fully taken into consideration by the methodology. The methodology is easy to be adopted and customised to specific needs of other regions.",
+      "date": "2016-09-12",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-06-2015-0036",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-016-0102-4",
+      "title": "Twitter data analysis as contribution to strategic foresight-The case of the EU Research Project “Foresight and Modelling for European Health Policy and Regulations” (FRESHER)",
+      "abstract": "",
+      "date": "2016-12-08",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-016-0102-4",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.53532/ss.038.04.00136",
+      "title": "Post-Brexit Scenario: The European Union under Threat",
+      "abstract": "Around 60 years after signing of the Treaty of Rome, which led to the establishment of the European Economic Community (EEC), the European Union (EU) is struggling with the aftermath of eurozone and migration crisis and the rise of anti-EU and populist movements all across Europe. Britain’s decision to move out of the EU, further adds to the challenges faced by the EU and put its regional integration in question. This paper tries to expose the factors that led to Brexit, analyses whether the EU is headed towards disintegration and what reforms are needed to save the EU model of regional integration from disintegration. Brexit was a complex interplay of factors such as a threat to national identity and sovereignty, rising inequality and economic insecurity and Euroscepticism. The results indicate that in post-Brexit, support for the EU has increased in member states. The economic losses and political chaos that Britain had to undergo post-Brexit has united the EU members despite the rise of populist movements across Europe. However, the EU needs to bring in some structural reforms and make the EU institutions more democratic and flexible in order to sustain as a model of regional integration.",
+      "date": "2019-01-10",
+      "journal": "Strategic Studies",
+      "publisher": "Institute of Strategic Studies Islamabad (ISS)",
+      "url": "https://doi.org/10.53532/ss.038.04.00136",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1051/e3sconf/201911600053",
+      "title": "Alternative scenarios investigation of 1990..2016 CO 2 emission from Public Electricity and Heat Production sectors in Europe",
+      "abstract": "Proposed alternatives scenarios methodology allows retrospective analysing of decarbonisation processes in 26 national Public Electricity and Heat Production (PEHP) sectors in EU, based on 1990..2016 national CO 2 emission inventories. The CO 2 emission driving forces for PEHP sectors were defined and investigated in 26 years emission pathways approach. Graphical overview of 108 prepared (real and alternatives) emission pathways allow assessing CO 2 emission factors impact, pathways grouping and indicating the dominant pathway of 1990..2016 decarbonisation in EU national PEHP sectors. The alternatives scenarios methodology based on historical data enables to drawn lessons from past to move the European PEHP into a low-carbon future.",
+      "date": "2019-09-24",
+      "journal": "E3S Web of Conferences",
+      "publisher": "EDP Sciences",
+      "url": "https://doi.org/10.1051/e3sconf/201911600053",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2478/lasr-2019-0007",
+      "title": "European Security Architecture after the United Kingdom’s Withdrawal from the European Union: Future Scenarios",
+      "abstract": "",
+      "date": "2019-11-09",
+      "journal": "Lithuanian Annual Strategic Review",
+      "publisher": "General Jonas Zemaitis Military Academy of Lithuania",
+      "url": "https://doi.org/10.2478/lasr-2019-0007",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.21564/2414-990x.149.199902",
+      "title": "Strategic autonomy of the European Union: on the way to «European Sovereignty» in defense?",
+      "abstract": "2019 marked 20 years since EU Member States decided to create a joint EU approach to security and defense. The paper raises the question on finding new approaches to provide security and defense in Europe in the current context, as well as the formation of a new paradigm for research on regional security in Europe. Traditional approaches to the study of European integration (neofunctionalism and intergovernmentalism) are of little use for theorizing the development of European defense in conditions of new challenges and threats to national and regional security, as well as transatlantic solidarity violations. The article studies European Strategic Autonomy (ESA), which refers to the ability of the European Union, in conjunction with Member States, to independently determine its own priorities according to which to take decisions and implement them in the fields of foreign policy, security and defense. ESA is not synonymous with independence, nor does it deny membership in military-political alliances, since a more realistic scenario implies positioning itself as a European pillar of NATO. The implementation of the idea of building a \"european sovereignty\" in the field of security and defense implies that the European Union should take bigger responsibility for its own security, the security of its neighbors, andshould strengthen its role in transatlantic relations without opposing NATO. In order to move from rhetoric to concrete policy steps, the EU needs to develop a plan of measures for political, institutional and industrial action. It means that achieving real autonomy requires time and joint efforts by EU institutions and Member State governments. However, political and institutional autonomy can be built exclusively within the whole Union, while military-industrial autonomy can be initiated and implemented by a group of the most economically and technologically advanced EU Member States.",
+      "date": "2020-06-10",
+      "journal": "Problems of Legality",
+      "publisher": "Yaroslav Mudryi National Law University",
+      "url": "https://doi.org/10.21564/2414-990x.149.199902",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2020.102585",
+      "title": "Envisioning the future of health systems: Exploratory insights from European countries",
+      "abstract": "",
+      "date": "2020-08-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2020.102585",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s11625-024-01612-4",
+      "title": "Developing an Agricultural Futures Framework to explore the option space for agricultural change in Europe under alternative value perspectives",
+      "abstract": "",
+      "date": "2025-01-23",
+      "journal": "Sustainability Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s11625-024-01612-4",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/nutrit/nuae215",
+      "title": "Environmental Impact of Current Diets and Alternative Dietary Scenarios Worldwide: A Systematic Review",
+      "abstract": "Abstract Context Unhealthy and unsustainable diets are common worldwide. Health and sustainability need to be balanced because environmentally sustainable diets may lack macro- and/or micronutrients, resulting in nutrient deficiencies. Objective A systematic review was conducted following Preferred Reporting Items for Systematic Reviews and Meta-analysis guidelines to analyze the environmental impact of current diets and alternative dietary scenarios worldwide based on food-group consumption. Data Sources The Scopus, Web of Sciences, and PubMed literature databases were searched. Only studies quantifying the food composition of diets per food group and their environmental impact were eligible. Data Extraction Data were extracted for food groups as averages, means, or medians, depending on how they were reported in the original publication, for both environmental impact indicators and grams consumed. Data Analysis A total of 120 original articles from 41 countries were included and 703 diets were analyzed. Current diets were the most prevalent (42%). Among the environmental indicators, carbon footprint (CF) was the most reported (86% of diets), followed by land (36%), total freshwater (22%), blue water (15%), and cumulative energy use (14%). Data about food consumption and environmental impact were available mainly for European countries (n = 471 diets; 67%), and Africa was the most underrepresented continent, with data from only 2 countries. Conclusion The environmental impact of food consumption varied widely among diet types and continents, due to methodology heterogeneity of dietary assessment and different definitions of diets and food groups. Diets enhancing healthiness, such as the Mediterranean diet and food-based dietary guidelines, were associated with a higher CF than diets reducing meat consumption. Furthermore, diets including meat substitutes were associated with a higher CF than other plant-based diets that did not include them. Affordable diets involved more freshwater use, whereas acceptable diets that include high amounts of meat intake had a high CF. Finally, extensive research on dietary intake and environmental impact in low- and middle-income countries is required due to lack of available studies and data in these areas.",
+      "date": "2025-03-10",
+      "journal": "Nutrition Reviews",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/nutrit/nuae215",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1088/1748-9326/adf97e",
+      "title": "Toward sustainability of territorial agro-food systems in Europe: indicators for assessing alternative scenarios",
+      "abstract": "Abstract Describing territorial agro-food systems through nitrogen flows between agriculture, livestock farming, human consumption, and external trade represents a useful basis for assessing the environmental sustainability of these systems. The concepts of circularity and self-sufficiency are often put forward in assessments to complement indicators related to environmental impacts, such as nitrogen use efficiency, environmental N surplus, N losses. Here, we use these indicators to assess the environmental performance and sustainability of the agro-food systems of 127 regions in Europe in their current state as well as under two alternative scenarios of varying degrees of structural changes designed to reach sustainability. Both scenarios consider the projected European population at 2050, a dietary change toward less animal protein (30% and 20%, instead of 57% for the reference situation, Ref 2015–2019) and are based on the widespread use of organic crop rotations and the banning of synthetic fertilizers and feed imports. An Agro-Ecology scenario (AE) exploits crop and livestock production at optimal production capacity in the current agricultural areas of each region, thus maintaining the possibility of external trade, while a Radical Simplicity of lifestyle scenario (RS), limits production to regional requirements, with excess agricultural land set aside for reforestation and rewilding. AE and RS are able to feed Europe and greatly reduce environmental losses (more than 50% for both scenarios), but some not self-sufficient regions still necessitate interregional exchanges. Full circularity is theoretically not possible; it increases from 30% (Ref) to 43% (AE). At the European scale, N-food self-sufficiency remains over 1 (2.6 for Ref, 1.6–1.2 for AE and RS), while import dependency of European regions on commercial N-import for food delivery, currently over 2.7 as a mean, drops below 0.1 in both scenarios. The results illustrate the complex relationships between self-sufficiency, circularity, and the environmental impact of territorial agro-food systems.",
+      "date": "2025-08-22",
+      "journal": "Environmental Research Letters",
+      "publisher": "IOP Publishing",
+      "url": "https://doi.org/10.1088/1748-9326/adf97e",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.sftr.2025.101504",
+      "title": "Scenarios for embedding phosphorus recovery into the international regime through EU’s carbon border adjustment mechanism",
+      "abstract": "",
+      "date": "2025-12-31",
+      "journal": "Sustainable Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.sftr.2025.101504",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    }
+  ]
+}
