@@ -17,7 +17,8 @@
       "authors": "",
       "type": "Substantive foresight / futures study",
       "topic": "Geopolitics & security",
-      "finding": "Mainstream bureau - cracy’s implicit understanding of the fu - ture is linear – essentially, that tomorrow will be more of today.",
+      "finding": "Furthermore, while the 2018 revised EU Maritime Security Strategy Action Plan 7 called on member states to improve the resilience of maritime trans - port infrastructure by 2020, Zirta had a relatively small navy and an under-re - sourced ministry of defence.",
+      "claim_extraction_version": 2,
       "context": "original publisher explicitly confirms publication year",
       "url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf",
       "full_text_url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf",
@@ -52,7 +53,7 @@
         "verdict": "Not yet assessed",
         "assessment": "No independently verified later evidence has been linked yet."
       },
-      "checked_utc": "2026-10-16T08:56:34.694711+00:00",
+      "checked_utc": "2026-10-16T09:20:49.422792+00:00",
       "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
     }
   ]
