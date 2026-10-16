@@ -1,18 +1,19 @@
-name: World Radar — Discover and Verify
+name: European Foresight Radar — Research Discovery and Retrospective Verification
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0,6,12,18 * * *'
-      timezone: Europe/Helsinki
+    # Repeat through the day (UTC); each run is 15 min discovery + 10 min verification.
+    # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
+    - cron: '7,37 * * * *'
 permissions:
   contents: write
 concurrency:
-  group: world-radar-db
+  group: eu-foresight-radar-db
   cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,28 +21,32 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Discover new candidate publications (up to 15 min)
+      - name: Scan registered EU + external foresight research sources (15 minutes)
         run: python scripts/radar.py discover --minutes 15
-      - name: Verify publisher, source page, title and date (up to 10 min)
+      - name: Verify 2015+ full studies, research quality and evidence (10 minutes)
         run: python scripts/radar.py verify --minutes 10
-      - name: Ensure valid JSON
-        run: python -m json.tool findings.json > /dev/null
-      - name: Commit verified findings
+      - name: Validate JSON and age limits
         run: |
-          git config user.name 'world-radar-bot'
-          git config user.email 'world-radar-bot@users.noreply.github.com'
+          python -m json.tool findings.json > /dev/null
+          python -m json.tool actors.json > /dev/null
+          python -m json.tool scan-report.json > /dev/null
+          python scripts/check_data.py
+      - name: Commit only source-verified findings
+        run: |
+          git config user.name 'eu-foresight-radar-bot'
+          git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
           git add findings.json
           if ! git diff --cached --quiet; then
-            git commit -m 'World Radar: add source-verified publications'
+            git commit -m 'European Foresight Radar: update source-verified substantial reports'
             git push
           else
-            echo 'No new verified publications. Nothing to commit.'
+            echo 'No new qualifying research: keeping findings unchanged.'
           fi
-      - name: Upload verification audit (including rejected items)
+      - name: Retain scan and rejection audit
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-verification-audit-${{ github.run_id }}
+          name: eu-foresight-audit-${{ github.run_id }}
           path: |
             candidates.json
             scan-report.json
