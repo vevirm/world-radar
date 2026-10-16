@@ -21,10 +21,38 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Confirm fixed-window scanner is deployed
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          import radar
+          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 2:
+              raise SystemExit('Outdated scripts/radar.py. Upload the new radar.py to the repository scripts folder before running.')
+          print('Verified fixed-window scanner protocol 2', flush=True)
+          PY
       - name: Scan rotating foresight sources for 15 full minutes
-        run: python scripts/radar.py discover --minutes 15
+        shell: bash
+        run: |
+          started=$(date +%s)
+          python -u scripts/radar.py discover --minutes 15
+          elapsed=$(( $(date +%s) - started ))
+          echo "Actual discovery duration: ${elapsed}s (minimum 895s; nominal 900s)"
+          if (( elapsed < 895 )); then
+            echo "::error::Discovery returned early after ${elapsed}s. Scanner did not honor the full 15-minute phase."
+            exit 1
+          fi
       - name: Verify 2015+ studies for 10 full minutes
-        run: python scripts/radar.py verify --minutes 10
+        shell: bash
+        run: |
+          started=$(date +%s)
+          python -u scripts/radar.py verify --minutes 10
+          elapsed=$(( $(date +%s) - started ))
+          echo "Actual verification duration: ${elapsed}s (minimum 595s; nominal 600s)"
+          if (( elapsed < 595 )); then
+            echo "::error::Verification returned early after ${elapsed}s. Scanner did not honor the full 10-minute phase."
+            exit 1
+          fi
       - name: Validate JSON and age limits
         run: |
           python -m json.tool findings.json > /dev/null
