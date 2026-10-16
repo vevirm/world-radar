@@ -1,4 +1,4 @@
-name: European Foresight Radar — Research Discovery and Retrospective Verification
+name: European Foresight Radar — Scholarly Discovery and Retrospective Verification
 on:
   workflow_dispatch:
   schedule:
@@ -27,11 +27,13 @@ jobs:
           import sys
           sys.path.insert(0, 'scripts')
           import radar
-          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 3:
+          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 4:
               raise SystemExit('Outdated scripts/radar.py. Upload the new radar.py to the repository scripts folder before running.')
-          print('Verified fixed-window scanner protocol 3', flush=True)
+          print('Verified fixed-window + scholarly discovery protocol 4', flush=True)
           PY
       - name: Scan rotating foresight sources for 15 full minutes
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         shell: bash
         run: |
           started=$(date +%s)
@@ -59,12 +61,13 @@ jobs:
           python -m json.tool actors.json > /dev/null
           python -m json.tool scan-report.json > /dev/null
           python -m json.tool radar-state.json > /dev/null
+          python -m json.tool research-leads.json > /dev/null
           python scripts/check_data.py
       - name: Persist source rotation and source-verified findings
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add findings.json radar-state.json
+          git add findings.json radar-state.json research-leads.json
           if ! git diff --cached --quiet; then
             git commit -m 'European Foresight Radar: advance source rotation and verified findings'
             git push
@@ -79,5 +82,6 @@ jobs:
           path: |
             candidates.json
             scan-report.json
+            research-leads.json
           if-no-files-found: ignore
           retention-days: 30
