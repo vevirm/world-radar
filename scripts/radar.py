@@ -28,7 +28,8 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
-FIXED_PHASE_PROTOCOL = 2  # Workflow refuses old time-budget scanner versions.
+FIXED_PHASE_PROTOCOL = 3  # Full fixed windows + verified EU Cellar document resolution.
+RETRIEVAL_PROTOCOL = 2
 ROOT = Path(__file__).resolve().parents[1]
 AGENT = 'European-Foresight-Retrospective/3.0 (publisher and research verification)'
 TIMEOUT = (5, 12)
@@ -45,6 +46,43 @@ MAX_HISTORY = 12000
 START_DATE = date(2015, 1, 1)
 MIN_WORDS = 2600
 MIN_PDF_PAGES = 8
+VERIFIER_VERSION = 3
+# Cellar is the EU Publications Office's official dissemination repository.
+# These EXACT hosts may be followed as an EU publication download bridge;
+# original publisher domain requirements still apply to candidate landing pages.
+EU_DOCUMENT_HOSTS = frozenset({'op.europa.eu', 'publications.europa.eu',
+                              'research-and-innovation.ec.europa.eu',
+                              'ec.europa.eu', 'commission.europa.eu',
+                              'data.europa.eu'})
+CELLAR_ID = re.compile(r'(?i)(?:/publication/|/resource/cellar/)([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:[/?#]|$)')
+# These were discovered in the supplied October 2026 audit but erroneously
+# cooled down when the old verifier checked HTML catalogue summaries as papers.
+# They are leads only, never preapproved findings.
+REPAIR_LEADS = [
+ {'actor_id': 'ec-contracts', 'title': 'Foresight on demand: Foresight towards the 2nd Strategic Plan for Horizon Europe',
+  'url': 'https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-demand-foresight-towards-2nd-strategic-plan-horizon-europe_en',
+  'date_hint': '2023-12-14', 'topic': 'Science & technology'},
+ {'actor_id': 'ec-contracts', 'title': 'After the new normal: Scenarios for Europe in the post Covid-19 world',
+  'url': 'https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/after-new-normal-scenarios-europe-post-covid-19-world_en',
+  'date_hint': '2022-04-04', 'topic': 'EU strategic foresight'},
+ {'actor_id': 'ec-contracts', 'title': 'Foresight reports for Missions in Horizon Europe',
+  'url': 'https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-reports-missions-horizon-europe_en',
+  'date_hint': None, 'topic': 'EU strategic foresight'},
+ {'actor_id': 'ec-contracts', 'title': 'Strategic foresight in the Western Balkans',
+  'url': 'https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/strategic-foresight-western-balkans_en',
+  'date_hint': None, 'topic': 'EU strategic foresight'},
+ {'actor_id': 'ec-contracts', 'title': 'Strategic Intelligence Foresight System for European Union Research and Innovation (R&I) SAFIRE',
+  'url': 'https://op.europa.eu/en/publication-detail/-/publication/e436b4b6-fa50-11eb-b520-01aa75ed71a1/language-en/format-PDF/source-222702137',
+  'date_hint': None, 'topic': 'EU strategic foresight'},
+]
+
+class DocumentRetrievalError(ValueError):
+    """The full study could not be obtained or text-extracted: NOT a quality judgment."""
+
+
+class SubstantiveQualityError(ValueError):
+    """Full study is readable and fails the research-substance screen."""
+
 ARCHIVE_HINT = re.compile(r'\b(?:foresight|outlook|megatrends?|global trends|future shocks|future of|future risks?|scenario[s]?|skills forecast|state and outlook|strategic forecast|forward look|horizon scann(?:ing)?|to 20[345]\d)\b', re.I)
 STOP = {'the', 'and', 'with', 'for', 'towards', 'from', 'into', 'this', 'that', 'part', 'en', 'european', 'europe', 'report'}
 MONTHS = {n.lower(): i for i, n in enumerate(calendar.month_name) if n}
@@ -109,7 +147,11 @@ def get_page(url, allowed):
         for _ in range(5):
             if trusted_host(url) not in allowed:
                 raise ValueError('Unregistered publisher or off-site redirect')
-            with session.get(url, headers={'User-Agent': AGENT, 'Accept': 'text/html,application/pdf;q=0.8'},
+            is_cellar = urlparse(url).hostname == 'publications.europa.eu' and '/resource/cellar/' in urlparse(url).path
+            headers = {'User-Agent': AGENT, 'Accept': 'application/pdf' if is_cellar else 'text/html,application/pdf;q=0.8'}
+            if is_cellar:
+                headers['Accept-Language'] = 'eng'
+            with session.get(url, headers=headers,
                              timeout=TIMEOUT, allow_redirects=False, stream=True) as response:
                 if response.status_code in (301, 302, 303, 307, 308):
                     if not response.headers.get('Location'):
@@ -117,7 +159,7 @@ def get_page(url, allowed):
                     url = urljoin(url, response.headers['Location'])
                     continue
                 response.raise_for_status()
-                size = 12_000_000 if 'pdf' in response.headers.get('Content-Type', '').lower() or url.lower().split('?')[0].endswith('.pdf') else 2_500_000
+                size = 40_000_000 if (is_cellar or 'pdf' in response.headers.get('Content-Type', '').lower() or url.lower().split('?')[0].endswith('.pdf')) else 3_500_000
                 chunks = bytearray()
                 for chunk in response.iter_content(32_768):
                     chunks.extend(chunk)
@@ -175,11 +217,25 @@ def flatten_json_ld(node, dates):
 def page_info(raw, ctype='text/html', full_pdf=False):
     if raw[:4] == b'%PDF' or 'application/pdf' in ctype.lower():
         reader = PdfReader(io.BytesIO(raw), strict=False)
-        # Read the cover quickly for routine cataloguing; read deeper only when
-        # a specific retrospective quote must be verified on another page.
-        limit = min(len(reader.pages), 180 if full_pdf else 3)
-        pages = [p.extract_text() or '' for p in reader.pages[:limit]]
+        # For long studies, always include the end matter: methods and
+        # bibliographies may follow hundreds of pages of annexes/scenarios.
+        total_pages = len(reader.pages)
+        indices = (sorted(set(range(min(total_pages, 150))) |
+                          set(range(max(150, total_pages - 35), total_pages)))
+                   if full_pdf else list(range(min(total_pages, 3))))
+        pages = [reader.pages[i].extract_text() or '' for i in indices]
         text = ' '.join(pages)[:1200000 if full_pdf else 30000]
+        if full_pdf and len(text.split()) < 300 and len(reader.pages) >= MIN_PDF_PAGES:
+            # A text-bearing PDF may use encodings pypdf cannot decode.
+            # PyMuPDF is only a fallback; never OCR arbitrary scanned pages.
+            try:
+                import fitz
+                with fitz.open(stream=raw, filetype='pdf') as document:
+                    alternate = ' '.join(document[i].get_text('text') for i in indices)[:1200000]
+                    if len(alternate.split()) > len(text.split()):
+                        text = alternate
+            except (ImportError, RuntimeError, ValueError):
+                pass
         year_candidates = []
         year_forms = (
             r'\b(?:published|publication|copyright|©|EU|European Union)\s*(?:in\s*)?(20\d\d)\b',
@@ -233,7 +289,7 @@ def page_info(raw, ctype='text/html', full_pdf=False):
     # Anchor lists are only used for DISCOVERY; they are not proof of date or claim.
     links = [(a.get_text(' ', strip=True)[:190], a.get('href', '')) for a in main.select('a[href]')[:300]]
     years = set()
-    for match in re.finditer(r'\b(?:publication year|published in|©)\s*:?\s*(20\d\d)\b', visible[:10000], re.I):
+    for match in re.finditer(r'\b(?:publication year|published(?: in)?|released in|©)\s*:?\s*(20\d\d)\b', visible[:10000], re.I):
         years.add(int(match.group(1)))
     return {'titles': titles, 'dates': dates, 'years': years,
             'text': re.sub(r'\s+', ' ', visible)[:420000], 'links': links, 'pages': None, 'format': 'html'}
@@ -384,7 +440,12 @@ def offer_candidate(state, candidate, published_urls, today):
         return 'already-published'
     record = state['documents'].get(key, {})
     retry = record.get('retry_after')
-    if retry and retry > today.isoformat():
+    # Upgrade repair: re-examine catalogue-only quality failures that were
+    # incorrectly cooled down by the old PDF-only verifier. Once per version.
+    previous_bad_extraction = (record.get('status') == 'rejected' and
+                               record.get('reason', '').startswith('Quality gate failed') and
+                               int(record.get('verifier_version', 1)) < VERIFIER_VERSION)
+    if retry and retry > today.isoformat() and not previous_bad_extraction:
         return 'cooldown'
     if any(clean_url(item['url']) == key for item in state['queue']):
         return 'already-queued'
@@ -470,7 +531,11 @@ def discover(deadline, once=False):
             skipped = 0
             if pass_number == 1:
                 processed += 1
-                for seed in actor.get('seeds', []):
+                leads = list(actor.get('seeds', []))
+                if actor['id'] == 'ec-contracts':
+                    leads += [dict(title=x['title'], url=x['url'], date=x.get('date_hint'), topic=x['topic'])
+                              for x in REPAIR_LEADS]
+                for seed in leads:
                     candidate = {'title': seed['title'], 'url': clean_url(seed['url']),
                                  'date_hint': seed.get('date'), 'topic': seed['topic'],
                                  'source_mode': 'historic catalogue seed (unverified)', 'actor_id': actor['id']}
@@ -698,65 +763,160 @@ def quality_screen(full_info, actor, title):
         'actual_future_analysis': futures >= 4,
         'eu_europe_focus': focus,
     }
-    detail = {'quality_version': 1, 'word_count': total, 'distinct_terms': diverse_terms, 'pdf_pages': pages,
+    detail = {'quality_version': 2, 'word_count': total, 'distinct_terms': diverse_terms, 'pdf_pages': pages,
               'method_examples': sorted(methods)[:6], 'future_signal_count': futures,
               'citation_signals': {'bibliography_detected': bool(bibliography),
                                    'reference_years': cited_years, 'formal_citations': formal_cites},
               'checks': checks, 'status': 'automated research-substance screen passed' if all(checks.values()) else 'rejected'}
     if not all(checks.values()):
         failed = ', '.join(k for k, ok in checks.items() if not ok)
-        raise ValueError('Quality gate failed: ' + failed)
+        raise SubstantiveQualityError('Quality gate failed: ' + failed)
     return detail
 
 
-def full_document(url, info, raw, ctype, actor):
-    """Obtain an actual research study, not its short news/marketing landing page.
+def cellar_url(url):
+    """Convert official Publications Office work identifiers to the Cellar PDF REST route.
 
-    PDF links are host-allowlisted and tried individually. No arbitrary offsite
-    redirects. If no accessible PDF exists a long, fully documented HTML
-    research paper may pass independently.
+    Never interpret a random UUID on an unrelated research website as a Cellar ID.
+    """
+    if trusted_host(url) not in {'op.europa.eu', 'publications.europa.eu'}:
+        return None
+    match = CELLAR_ID.search(urlparse(url).path)
+    return ('https://publications.europa.eu/resource/cellar/' + match.group(1).lower()) if match else None
+
+
+def publication_download_links(url, html):
+    """Get explicit download links, including Commission Drupal /document/download URLs.
+
+    EU catalogue download links generally DON'T end with .pdf; they may redirect
+    through the Publications Office. Only explicit links count: no guessing URLs
+    and no unrestricted off-domain crawling.
+    """
+    soup = BeautifulSoup(html, 'html.parser')
+    choices = []
+    for element in soup.select('a[href], iframe[src], embed[src], object[data], link[href]'):
+        href = element.get('href') or element.get('src') or element.get('data') or ''
+        if not href or href.startswith(('javascript:', 'data:', '#')):
+            continue
+        target = clean_url(urljoin(url, href))
+        label = normal(element.get_text(' ', strip=True) + ' ' + str(element.get('title', '')) + ' ' +
+                       str(element.get('aria-label', '')) + ' ' + str(element.get('type', '')))
+        path = urlparse(target).path.lower()
+        pdf = path.endswith('.pdf') or 'format-pdf' in path
+        bridge = ('/document/download/' in path or '/publication-detail/' in path or
+                  '/resource/cellar/' in path or ('/publication/' in path and trusted_host(target) == 'op.europa.eu'))
+        labelled = bool(re.search(r'\b(?:download|full.text|pdf|complete (?:report|study)|read (?:report|study))\b', label))
+        if pdf or bridge or (labelled and ('/document/' in path or 'op.europa.eu' == trusted_host(target))):
+            score = 6 if pdf else 4 if bridge else 2
+            if labelled:
+                score += 3
+            choices.append((score, target))
+    return sorted(set(choices), reverse=True)
+
+
+def full_document(url, info, raw, ctype, actor):
+    """Retrieve the underlying study, including EU Commission -> OP -> Cellar.
+
+    A *failed retrieval* must never be marked a failed academic-quality screen.
+    We only evaluate a PDF/HTML study if its substantive body was retrieved.
     """
     if raw[:4] == b'%PDF' or 'application/pdf' in ctype.lower():
-        return url, page_info(raw, ctype, full_pdf=True)
-    choices = []
-    for label, href in info['links']:
-        target = clean_url(urljoin(url, href))
-        if trusted_host(target) not in actor['domain_hosts']:
-            continue
-        path = urlparse(target).path.lower()
-        if not path.endswith('.pdf'):
-            continue
-        # Prefer report full texts, then other linked PDFs; full-text quality
-        # determines acceptance. URLs shown as sources must still pass checks.
-        label_text = normal(label)
-        rank = (4 if any(x in label_text for x in ('download', 'report', 'publication', 'full text', 'study')) else 0)
-        rank += 3 if len(set(normal(info['titles'][0]).split()) & set(normal(label).split())) >= 2 else 0
-        choices.append((rank, target))
-    for _, target in sorted(set(choices), reverse=True)[:5]:
         try:
-            doc_url, doc_data, doc_type = get_page(target, set(actor['domain_hosts']))
-            if doc_data[:4] != b'%PDF':
-                continue
-            doc_info = page_info(doc_data, doc_type, full_pdf=True)
-            # Don't attach arbitrary PDF downloads that happen to contain
-            # generic method/citation language from an unrelated study.
-            title_text = ' '.join(doc_info['titles'])
-            if not title_match(info['titles'][0], title_text) and not title_match(info['titles'][0], doc_info['text'][:1400]):
-                continue
-            return doc_url, doc_info
-        except Exception:
+            parsed = page_info(raw, ctype, full_pdf=True)
+        except Exception as exc:
+            raise DocumentRetrievalError('Original PDF could not be text-extracted: ' + str(exc)[:100]) from exc
+        if len(parsed['text'].split()) < 300:
+            raise DocumentRetrievalError('PDF downloaded, but readable full text was not extracted')
+        return url, parsed
+
+    permitted = set(actor['domain_hosts']) | EU_DOCUMENT_HOSTS
+    queue = []
+    seen = {clean_url(url)}
+    attempted = 0
+    problems = []
+    is_research_page = trusted_host(url) in EU_DOCUMENT_HOSTS
+
+    def add(target, score):
+        target = clean_url(target)
+        host = trusted_host(target)
+        if host not in permitted:
+            return
+        # Official EU repository is only used when actually referenced from
+        # the publisher-provided landing/download page.
+        if target not in seen and not any(q[1] == target for q in queue):
+            queue.append((score, target))
+
+    if is_research_page:
+        c = cellar_url(url)
+        if c:
+            add(c, 12)
+    for score, target in publication_download_links(url, raw):
+        add(target, score)
+        if cellar_url(target):
+            add(cellar_url(target), score + 5)
+
+    for label, href in info.get('links', []):
+        target = clean_url(urljoin(url, href))
+        if urlparse(target).path.lower().endswith('.pdf'):
+            add(target, 7 if re.search(r'\b(?:report|study|download|full)\b', label, re.I) else 3)
+
+    while queue and attempted < 12:
+        queue.sort(reverse=True)
+        score, target = queue.pop(0)
+        if target in seen:
             continue
-    # Full HTML analysis itself can qualify, but snippets never pass word/source gates.
-    return url, info
+        seen.add(target)
+        attempted += 1
+        try:
+            doc_url, doc_data, doc_type = get_page(target, permitted)
+        except (requests.RequestException, ValueError) as exc:
+            problems.append(f'{trusted_host(target)}: {str(exc)[:90]}')
+            continue
+        if doc_data[:4] == b'%PDF' or 'application/pdf' in doc_type.lower():
+            try:
+                doc_info = page_info(doc_data, doc_type, full_pdf=True)
+            except Exception as exc:
+                problems.append('PDF parsing failed: ' + str(exc)[:100])
+                continue
+            if len(doc_info['text'].split()) < 300:
+                problems.append('PDF contains too little extractable text')
+                continue
+            cover = doc_info['text'][:2600]
+            # Confirm the full study is related to the requested publication;
+            # scenario titles may have supplementary subtitles on the cover.
+            source_titles = info.get('titles', [])
+            if (source_titles and not any(title_match(t, cover) for t in source_titles)
+                    and not title_match(actor.get('name', ''), cover)):
+                problems.append('Downloaded PDF does not corroborate requested report title')
+                continue
+            print(f'FULL STUDY: {doc_url} ({doc_info["pages"]} pages, '
+                  f'{len(doc_info["text"].split())} extracted words)', flush=True)
+            return doc_url, doc_info
+        # Some EU download links lead to a second HTML catalogue page.
+        if doc_data[:1] == b'<' and (trusted_host(doc_url) in EU_DOCUMENT_HOSTS):
+            if cellar_url(doc_url):
+                add(cellar_url(doc_url), 15)
+            for rank, dest in publication_download_links(doc_url, doc_data):
+                add(dest, rank)
+                if cellar_url(dest):
+                    add(cellar_url(dest), rank + 5)
+    # Long HTML academic studies can be full documents; a catalogue abstract can't.
+    if len(re.findall(r'\b[\wÀ-ÿ]+\b', info['text'])) >= MIN_WORDS:
+        return url, info
+    detail = '; '.join(problems[-3:]) if problems else 'no full-document link found'
+    raise DocumentRetrievalError('Full study not retrieved; landing page only (' + detail[:330] + ')')
 
 
 def verify_report(candidate, actors, reviews):
     actor = actors[candidate['actor_id']]
     if trusted_host(candidate['url']) not in actor['domain_hosts']:
         raise ValueError('Candidate is not published on the registered author/publisher domain')
-    url, raw, ctype = get_page(candidate['url'], set(actor['domain_hosts']))
+    url, raw, ctype = get_page(candidate['url'], set(actor['domain_hosts']) | EU_DOCUMENT_HOSTS)
     known_review = reviews.get(url) or reviews.get(candidate['url'])
-    info = page_info(raw, ctype)
+    try:
+        info = page_info(raw, ctype)
+    except Exception as exc:
+        raise DocumentRetrievalError('Original publisher document could not be parsed: ' + str(exc)[:100]) from exc
     if not any(title_match(candidate['title'], t) for t in info['titles']):
         raise ValueError('Title not corroborated by original publisher landing page or full text')
     published, precision, basis = select_publication_date(info, candidate.get('date_hint'))
@@ -769,6 +929,8 @@ def verify_report(candidate, actors, reviews):
         if full is not info:
             published, precision, basis = select_publication_date(full, candidate.get('date_hint'))
     if not published:
+        if full is info:
+            raise DocumentRetrievalError('Publisher date not verifiable; no original document corroboration: ' + basis)
         raise ValueError(basis)
     if published > cutoff(TODAY()):
         raise ValueError(f'Too recent: {published} (must be on/before {cutoff(TODAY())})')
@@ -871,12 +1033,16 @@ def verify_until(deadline, once=False):
         # assessment is available; the same PDF need not be downloaded again.
         needs_refresh = key in old and old[key].get('claim_extraction_version', 0) < CLAIM_VERSION
         if key in old and not needs_refresh and (key not in review_map or old[key].get('comparison', {}).get('verdict') != 'Not yet assessed'):
-            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat()}
+            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat(),
+                                       'verifier_version': VERIFIER_VERSION}
             continue
         cooldown = previous.get('retry_after')
         # Editorial follow-up should not be blocked by an earlier network cooldown.
         editorial_update = key in old and key in review_map
-        if cooldown and cooldown > today.isoformat() and not editorial_update:
+        upgraded_recheck = (previous.get('status') == 'rejected' and
+                            previous.get('reason', '').startswith('Quality gate failed') and
+                            int(previous.get('verifier_version', 1)) < VERIFIER_VERSION)
+        if cooldown and cooldown > today.isoformat() and not (editorial_update or upgraded_recheck):
             remaining.append(candidate)
             continue
         checked += 1
@@ -886,15 +1052,20 @@ def verify_until(deadline, once=False):
             if key not in old:
                 added += 1
             old[clean_url(report['url'])] = report
-            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat()}
+            state['documents'][key] = {'status': 'accepted', 'last_checked': today.isoformat(),
+                                       'verifier_version': VERIFIER_VERSION}
             print(f'ACCEPTED {candidate.get("actor_id")}: {candidate.get("title", "")[:100]}', flush=True)
         except Exception as exc:
-            retry = retry_after(exc, today)
-            state['documents'][key] = {'status': 'rejected', 'last_checked': today.isoformat(),
-                                       'retry_after': retry, 'reason': str(exc)[:250]}
+            is_retrieval = isinstance(exc, (DocumentRetrievalError, requests.RequestException))
+            retry = (today + timedelta(days=2)).isoformat() if is_retrieval else retry_after(exc, today)
+            status = 'retrieval_failed' if is_retrieval else 'rejected'
+            state['documents'][key] = {'status': status, 'last_checked': today.isoformat(),
+                                       'retry_after': retry, 'reason': str(exc)[:250],
+                                       'verifier_version': VERIFIER_VERSION}
             rejections.append({'actor': candidate.get('actor_id'), 'title': candidate.get('title'),
-                               'url': key, 'reason': str(exc)[:250], 'retry_after': retry})
-            print(f'REJECTED {candidate.get("actor_id")}: {str(exc)[:160]} '
+                               'url': key, 'reason': str(exc)[:250], 'retry_after': retry,
+                               'status': status})
+            print(f'{status.upper()} {candidate.get("actor_id")}: {str(exc)[:160]} '
                   f'(recheck after {retry})', flush=True)
     state['queue'] = remaining
     state['last_verification_utc'] = datetime.now(timezone.utc).isoformat()
@@ -913,16 +1084,18 @@ def verify_until(deadline, once=False):
         atomic_json(RESULTS, database)
     atomic_json(STATE, state)
     reason_counts = {}
+    status_counts = {}
     for rejected in rejections:
         reason = rejected['reason'].split(':')[0].strip()
         reason_counts[reason] = reason_counts.get(reason, 0) + 1
+        status_counts[rejected['status']] = status_counts.get(rejected['status'], 0) + 1
     atomic_json(AUDIT, {'checked_utc': state['last_verification_utc'],
                         'cutoff': cutoff(today).isoformat(), 'earliest_publication_date': START_DATE.isoformat(),
                         'sources_scanned': discovery.get('sources_this_run', []),
                         'candidates_new': len(discovery.get('candidates_new', [])),
                         'checked_count': checked, 'backlog_remaining': len(state['queue']),
                         'new_reports': added, 'total_reports': len(results), 'rejected': rejections,
-                        'rejection_reason_counts': reason_counts,
+                        'rejection_reason_counts': reason_counts, 'outcome_counts': status_counts,
                         'discovery_source_status': discovery.get('source_status', [])})
     print(f'VERIFIED: {added} new historical reports; {len(results)} total; {checked} reviewed; '
           f'{len(rejections)} rejected; {len(state["queue"])} queued for future runs', flush=True)
