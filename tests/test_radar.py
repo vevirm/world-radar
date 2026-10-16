@@ -371,8 +371,8 @@ def test_active_scan_follows_new_pagination_in_same_full_window(tmp_path):
 def test_workflow_fails_fast_if_old_python_file_still_deployed():
     from pathlib import Path
     workflow = (Path(__file__).resolve().parents[1] / '.github/workflows/update-radar.yml').read_text()
-    assert radar.FIXED_PHASE_PROTOCOL == 3
-    assert "getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 3" in workflow
+    assert radar.FIXED_PHASE_PROTOCOL == 4
+    assert "getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 4" in workflow
     assert 'python -u scripts/radar.py discover --minutes 15' in workflow
     assert 'python -u scripts/radar.py verify --minutes 10' in workflow
     assert 'elapsed < 895' in workflow
