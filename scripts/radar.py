@@ -27,9 +27,11 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlu
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+from scholarly import scholarly_scan
 
-FIXED_PHASE_PROTOCOL = 3  # Full fixed windows + verified EU Cellar document resolution.
+FIXED_PHASE_PROTOCOL = 4  # Full 15+10 windows + academic abstract discovery.
 RETRIEVAL_PROTOCOL = 2
+SCHOLARLY_DISCOVERY_PROTOCOL = 1
 ROOT = Path(__file__).resolve().parents[1]
 AGENT = 'European-Foresight-Retrospective/3.0 (publisher and research verification)'
 TIMEOUT = (5, 12)
@@ -1096,7 +1098,10 @@ def verify_until(deadline, once=False):
                         'checked_count': checked, 'backlog_remaining': len(state['queue']),
                         'new_reports': added, 'total_reports': len(results), 'rejected': rejections,
                         'rejection_reason_counts': reason_counts, 'outcome_counts': status_counts,
-                        'discovery_source_status': discovery.get('source_status', [])})
+                        'discovery_source_status': discovery.get('source_status', []),
+                        'scholarly_discovery': discovery.get('scholarly_discovery', {}),
+                        'abstract_leads_total': len(read_json(ROOT / 'research-leads.json').get('leads', []))
+                        if (ROOT / 'research-leads.json').exists() else 0})
     print(f'VERIFIED: {added} new historical reports; {len(results)} total; {checked} reviewed; '
           f'{len(rejections)} rejected; {len(state["queue"])} queued for future runs', flush=True)
 
@@ -1132,7 +1137,17 @@ if __name__ == '__main__':
         parser.error('--minutes cannot be negative')
     limit = time.monotonic() + minutes * 60
     if args.stage == 'discover':
+        scholarly_stats = {}
+        if not args.once:
+            # Reserve up to 4 minutes within (not in addition to) 15-minute
+            # scanning window for rotating bibliographic indexes.
+            scholarly_stats = scholarly_scan(STATE, ROOT / 'research-leads.json', cutoff(TODAY()),
+                                             min(limit, time.monotonic() + 240), max_queries=24)
         discover(limit, args.once)
+        if scholarly_stats and CANDIDATES.exists():
+            audit_discovery = read_json(CANDIDATES)
+            audit_discovery['scholarly_discovery'] = scholarly_stats
+            atomic_json(CANDIDATES, audit_discovery)
     else:
         verify_until(limit, args.once)
     hold_open_until(limit, args.stage, args.once)
