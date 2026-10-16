@@ -1,6 +1,6 @@
 {
   "start_date": "2026-10-01",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "findings": [
     {
       "id": "F001",
@@ -783,6 +783,25 @@
         "date_basis": "official publisher RSS (page date unavailable)",
         "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "checked_utc": "2026-10-15T23:42:15.434613+00:00"
+      }
+    },
+    {
+      "id": "WR-54fff0ed2f97a9",
+      "date": "2026-10-16",
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "source": "BBC News",
+      "authors": "",
+      "type": "News",
+      "topic": "Geopolitics & security",
+      "finding": "Publisher-confirmed publication: Ship attack reports near Hormuz reach record high as oil exports slow",
+      "context": "Headline and publisher checked against the original site. The article's factual assertions have not been independently fact-checked.",
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no",
+      "status": "Publisher URL and headline verified; date basis: official publisher RSS (page date unavailable)",
+      "verification": {
+        "method": "registered-publisher-feed+original-domain+headline",
+        "date_basis": "official publisher RSS (page date unavailable)",
+        "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "checked_utc": "2026-10-16T07:56:57.082861+00:00"
       }
     }
   ]
