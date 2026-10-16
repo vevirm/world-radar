@@ -2,7 +2,7 @@ name: European Foresight Radar — Research Discovery and Retrospective Verifica
 on:
   workflow_dispatch:
   schedule:
-    # Repeat through the day (UTC); each run is 15 min discovery + 10 min verification.
+    # Repeat through the day (UTC); each run is 15 min discovery budget + 10 min verification budget.
     # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
     - cron: '7,37 * * * *'
 permissions:
@@ -21,26 +21,27 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Scan registered EU + external foresight research sources (15 minutes)
+      - name: Rotate EU + external foresight research sources (up to 15 minutes)
         run: python scripts/radar.py discover --minutes 15
-      - name: Verify 2015+ full studies, research quality and evidence (10 minutes)
+      - name: Verify next queued 2015+ full studies (up to 10 minutes)
         run: python scripts/radar.py verify --minutes 10
       - name: Validate JSON and age limits
         run: |
           python -m json.tool findings.json > /dev/null
           python -m json.tool actors.json > /dev/null
           python -m json.tool scan-report.json > /dev/null
+          python -m json.tool radar-state.json > /dev/null
           python scripts/check_data.py
-      - name: Commit only source-verified findings
+      - name: Persist source rotation and source-verified findings
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add findings.json
+          git add findings.json radar-state.json
           if ! git diff --cached --quiet; then
-            git commit -m 'European Foresight Radar: update source-verified substantial reports'
+            git commit -m 'European Foresight Radar: advance source rotation and verified findings'
             git push
           else
-            echo 'No new qualifying research: keeping findings unchanged.'
+            echo 'No changes to source rotation or verified research.'
           fi
       - name: Retain scan and rejection audit
         if: always()
