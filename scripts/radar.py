@@ -3,7 +3,7 @@
 
 DISCOVER: rotate registered EU institutions, universities, independent think
 tanks, research institutes, international bodies and EU-funded project sites
-within a 15-minute budget. VERIFY new/deferred reports within 10 minutes. Report publication MUST be 2015 or later
+through a full 15-minute scan window. VERIFY new/deferred reports in a full 10-minute window. Report publication MUST be 2015 or later
 and six calendar months old or older on the current run. Full document must
 pass substantive foresight quality and evidence gates, not just a keyword/length
 check. A scenario is never automatically deemed to have come true.
@@ -16,6 +16,7 @@ import calendar
 import hashlib
 import io
 import json
+import math
 import os
 import re
 import time
@@ -27,6 +28,7 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
+FIXED_PHASE_PROTOCOL = 2  # Workflow refuses old time-budget scanner versions.
 ROOT = Path(__file__).resolve().parents[1]
 AGENT = 'European-Foresight-Retrospective/3.0 (publisher and research verification)'
 TIMEOUT = (5, 12)
@@ -392,83 +394,114 @@ def offer_candidate(state, candidate, published_urls, today):
     return 'queued'
 
 
-def discover(deadline, once=False):
-    """Each scheduled run picks up at the next source, never repeats a page in-run.
+def scan_archive(actor, archive, state, today, published_urls, new, diagnostics):
+    """Fetch one due archive, extend its historical trail, and mark it visited.
 
-    --minutes is a TIME BUDGET, not a mandate to waste 15 minutes repeating the
-    same URLs. Persistent history is committed together with verified findings.
+    Page cooldowns and domain allowlists remain enforced; a page is never
+    downloaded twice in one run, even when several exploration passes occur.
+    """
+    info = state['archive_pages'][actor['id']][archive]
+    info['last_scan'] = today.isoformat()
+    queued = 0
+    try:
+        url, raw, ctype = get_page(archive, set(actor['domain_hosts']))
+        if raw[:4] == b'%PDF' or 'application/pdf' in ctype.lower():
+            raise ValueError('Archive must be HTML')
+        parsed = page_info(raw, ctype)
+        found = candidates_from_archives(actor, url, parsed)
+        for c in found:
+            candidate = dict(c, actor_id=actor['id'])
+            outcome = offer_candidate(state, candidate, published_urls, today)
+            if outcome == 'queued':
+                queued += 1
+                new.append(candidate)
+        pages = state['archive_pages'][actor['id']]
+        depth = info.get('depth', 0)
+        for target in pagination_links(actor, url, parsed):
+            if len(pages) < MAX_PAGES_PER_ACTOR:
+                pages.setdefault(target, {'root': False, 'depth': depth, 'last_scan': None})
+        for target in archive_trail_links(actor, url, parsed, depth):
+            if len(pages) < MAX_PAGES_PER_ACTOR:
+                pages.setdefault(target, {'root': False, 'depth': depth + 1, 'last_scan': None})
+        diagnostics.append({'actor': actor['id'], 'archive': archive,
+                            'candidate_links': len(found), 'new_queue': queued})
+        print(f'SOURCE {actor["id"]}: {archive} | found {len(found)}, new {queued}, '
+              f'backlog {len(state["queue"])}', flush=True)
+    except Exception as exc:
+        diagnostics.append({'actor': actor['id'], 'archive': archive,
+                            'error': str(exc)[:170]})
+        print(f'SOURCE {actor["id"]}: archive unavailable: {str(exc)[:110]}', flush=True)
+    return queued
+
+
+def discover(deadline, once=False):
+    """Use the whole discovery phase on distinct, due publisher archive pages.
+
+    Iterate through the registered actors, then follow fresh pagination/research
+    collections discovered in earlier passes. Publisher pages under cooldown
+    are never fetched again. Once no further eligible pages exist, the stage
+    stays open with truthful idle heartbeats until the 15-minute deadline.
     """
     actors = get_registry()
     state = load_state()
     state['runs'] = int(state.get('runs', 0)) + 1
     today = TODAY()
-    publishers = next_actor_batch(actors, state, len(actors) if once else ACTORS_PER_RUN)
+    ordered = interleaved_actors(actors)
+    start_cursor = int(state.get('source_cursor', 0)) % max(1, len(ordered))
+    proposed = [ordered[(start_cursor + i) % len(ordered)] for i in range(len(ordered))]
     published_urls = {clean_url(x['url']) for x in read_json(RESULTS).get('findings', [])}
     diagnostics = []
     new = []
     processed = 0
-    for actor in publishers:
+    pages_attempted = 0
+    passes = 0
+
+    # One first pass across all sources, then progressively follow their
+    # *unvisited* archive/pagination trails while useful time remains.
+    for pass_number in range(1, MAX_PAGES_PER_ACTOR + 2):
         if not once and time.monotonic() >= deadline:
             break
-        processed += 1
-        added = 0
-        skipped = 0
-        # Historical starting leads are enqueued once, not in every pass.
-        for seed in actor.get('seeds', []):
-            candidate = {'title': seed['title'], 'url': clean_url(seed['url']),
-                         'date_hint': seed.get('date'), 'topic': seed['topic'],
-                         'source_mode': 'historic catalogue seed (unverified)', 'actor_id': actor['id']}
-            outcome = offer_candidate(state, candidate, published_urls, today)
-            if outcome == 'queued':
-                added += 1
-                new.append(candidate)
-            else:
-                skipped += 1
-        page_urls = page_queue(actor, state, today)
-        for archive in page_urls:
+        passes = pass_number
+        pass_pages = 0
+        for actor in proposed[:processed] if pass_number > 1 else proposed:
             if not once and time.monotonic() >= deadline:
                 break
-            info = state['archive_pages'][actor['id']][archive]
-            # Mark even failed pages as attempted, to avoid hammering broken sites.
-            info['last_scan'] = today.isoformat()
-            try:
-                url, raw, ctype = get_page(archive, set(actor['domain_hosts']))
-                if raw[:4] == b'%PDF' or 'application/pdf' in ctype.lower():
-                    raise ValueError('Archive must be HTML')
-                parsed = page_info(raw, ctype)
-                found = candidates_from_archives(actor, url, parsed)
-                queued = 0
-                for c in found:
-                    candidate = dict(c, actor_id=actor['id'])
+            added = 0
+            skipped = 0
+            if pass_number == 1:
+                processed += 1
+                for seed in actor.get('seeds', []):
+                    candidate = {'title': seed['title'], 'url': clean_url(seed['url']),
+                                 'date_hint': seed.get('date'), 'topic': seed['topic'],
+                                 'source_mode': 'historic catalogue seed (unverified)', 'actor_id': actor['id']}
                     outcome = offer_candidate(state, candidate, published_urls, today)
                     if outcome == 'queued':
-                        queued += 1
                         added += 1
                         new.append(candidate)
-                # Travel through pagination and research/foresight collections
-                # over later runs; never re-fetch these in the current run.
-                pages = state['archive_pages'][actor['id']]
-                depth = info.get('depth', 0)
-                for target in pagination_links(actor, url, parsed):
-                    if len(pages) < MAX_PAGES_PER_ACTOR:
-                        pages.setdefault(target, {'root': False, 'depth': depth, 'last_scan': None})
-                for target in archive_trail_links(actor, url, parsed, depth):
-                    if len(pages) < MAX_PAGES_PER_ACTOR:
-                        pages.setdefault(target, {'root': False, 'depth': depth + 1, 'last_scan': None})
-                diagnostics.append({'actor': actor['id'], 'archive': archive,
-                                    'candidate_links': len(found), 'new_queue': queued})
-                print(f'SOURCE {actor["id"]}: {archive} | found {len(found)}, new {queued}, '
-                      f'backlog {len(state["queue"])}', flush=True)
-            except Exception as exc:
-                diagnostics.append({'actor': actor['id'], 'archive': archive, 'error': str(exc)[:170]})
-                print(f'SOURCE {actor["id"]}: archive unavailable: {str(exc)[:110]}', flush=True)
-        print(f'ROTATION actor={actor["id"]} new={added} skipped_known={skipped} '
-              f'pages_due={len(page_urls)}', flush=True)
-    # Don't lose unvisited members of the chosen batch if a slow site exhausted
-    # the budget before we reached them.
-    state['source_cursor'] = (state['source_cursor'] - len(publishers) + processed) % len(actors)
+                    else:
+                        skipped += 1
+            page_urls = page_queue(actor, state, today)
+            for archive in page_urls:
+                if not once and time.monotonic() >= deadline:
+                    break
+                pass_pages += 1
+                pages_attempted += 1
+                added += scan_archive(actor, archive, state, today, published_urls, new, diagnostics)
+            if page_urls or (pass_number == 1 and (added or skipped)):
+                print(f'ROTATION pass={pass_number} actor={actor["id"]} '
+                      f'new={added} skipped_known={skipped} pages_due={len(page_urls)}', flush=True)
+        print(f'DISCOVERY PASS {pass_number}: {pass_pages} distinct archive pages visited; '
+              f'{len(new)} new candidates in total', flush=True)
+        # Diagnostic single-pass mode and tests with unbounded deadlines don't
+        # recursively browse an archive or wait for production windows.
+        if once or not math.isfinite(deadline) or pass_pages == 0:
+            break
+
+    # When the first pass ran out of clock time, resume with its first unvisited
+    # actor next run. When all were visited, shift the starting actor to avoid
+    # favouring the first institution in the registry.
+    state['source_cursor'] = (start_cursor + processed + (1 if processed == len(ordered) else 0)) % max(1, len(ordered))
     state['last_discovery_utc'] = datetime.now(timezone.utc).isoformat()
-    # Historical state is bounded; source rotation and outstanding queue are kept.
     if len(state['documents']) > MAX_HISTORY:
         excess = len(state['documents']) - MAX_HISTORY
         for key, _ in sorted(state['documents'].items(),
@@ -478,12 +511,16 @@ def discover(deadline, once=False):
     atomic_json(CANDIDATES, {'collected_at_utc': state['last_discovery_utc'],
                               'six_month_cutoff': cutoff(today).isoformat(),
                               'earliest_publication_date': START_DATE.isoformat(),
-                              'actor_count': len(actors), 'sources_this_run': [a['id'] for a in publishers],
+                              'actor_count': len(actors),
+                              'sources_this_run': [a['id'] for a in proposed[:processed]],
+                              'archive_passes': passes, 'archive_pages_visited': pages_attempted,
                               'candidates_new': new, 'backlog_count': len(state['queue']),
                               'source_status': diagnostics})
     print(f'DISCOVERED this run: {len(new)} new candidates from '
-          f'{len(publishers)} rotated publishers; {len(state["queue"])} awaiting verification; '
+          f'{processed} rotated publishers over {passes} exploration passes, '
+          f'{pages_attempted} archive pages; {len(state["queue"])} awaiting verification; '
           f'next source cursor {state["source_cursor"]}', flush=True)
+
 
 def select_publication_date(info, hinted):
     """Reject contradictions; year-only records are dated conservatively 31 Dec.
@@ -891,6 +928,26 @@ def verify_until(deadline, once=False):
           f'{len(rejections)} rejected; {len(state["queue"])} queued for future runs', flush=True)
 
 
+def hold_open_until(deadline, stage, once=False, heartbeat_seconds=30):
+    """Honor the full phase clock without retrying the same cooled-down URLs.
+
+    The 15/10-minute stage durations are mandatory, not an 'up to' option.
+    If unique work is exhausted early, we explicitly report that the phase is
+    idle and remain open until its deadline. This is *not* fake discovery.
+    Tests and manual diagnostic --once runs never sleep.
+    """
+    if once or not math.isfinite(deadline):
+        return
+    while True:
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
+        print(f'{stage.upper()} window: {remaining:.0f}s remaining; '
+              'eligible unique work exhausted; waiting, not repeating downloads.', flush=True)
+        time.sleep(min(heartbeat_seconds, remaining))
+    print(f'{stage.upper()} window completed (fixed duration).', flush=True)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('stage', choices=['discover', 'verify'])
@@ -905,3 +962,4 @@ if __name__ == '__main__':
         discover(limit, args.once)
     else:
         verify_until(limit, args.once)
+    hold_open_until(limit, args.stage, args.once)
