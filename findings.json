@@ -6,6 +6,108 @@
   "updated_at": "2026-10-16",
   "findings": [
     {
+      "id": "EUF-d25b681f22126b",
+      "date": "2025-09-09",
+      "date_precision": "day",
+      "title": "2025 Strategic Foresight Report",
+      "source": "European Commission — Secretariat-General",
+      "actor_id": "ec",
+      "source_category": "EU institution / agency",
+      "relationship_to_eu": "EU institutional publication",
+      "authors": "",
+      "type": "Substantive foresight / futures study",
+      "topic": "Governance & resilience",
+      "finding": "Healthy longevity offers various opportunities but also challenges, particularly when coupled with the parallel decline in fertility rates (32); the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
+      "claim_extraction_version": 2,
+      "context": "original publisher page explicitly contains the catalogue date",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/document/download/bdba60f0-abb3-42f8-b5be-fd35d693b289_en?filename=SFR2025-Report_web.pdf",
+      "quality": {
+        "quality_version": 2,
+        "word_count": 9200,
+        "distinct_terms": 1865,
+        "pdf_pages": 28,
+        "method_examples": [
+          "horizon scanning",
+          "modelling",
+          "participatory",
+          "systematic review"
+        ],
+        "future_signal_count": 20,
+        "citation_signals": {
+          "bibliography_detected": true,
+          "reference_years": 65,
+          "formal_citations": 46
+        },
+        "checks": {
+          "substantial_full_text": true,
+          "non_repetitive_analysis": true,
+          "meaningful_document_length": true,
+          "explicit_research_method": true,
+          "traceable_evidence_and_sources": true,
+          "actual_future_analysis": true,
+          "eu_europe_focus": true
+        },
+        "status": "automated research-substance screen passed"
+      },
+      "comparison": {
+        "verdict": "Not yet assessed",
+        "assessment": "No independently verified later evidence has been linked yet."
+      },
+      "checked_utc": "2026-10-16T12:17:02.091189+00:00",
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+    },
+    {
+      "id": "EUF-e4d2d411206647",
+      "date": "2023-07-06",
+      "date_precision": "day",
+      "title": "2023 Strategic Foresight Report",
+      "source": "European Commission — Secretariat-General",
+      "actor_id": "ec",
+      "source_category": "EU institution / agency",
+      "relationship_to_eu": "EU institutional publication",
+      "authors": "",
+      "type": "Substantive foresight / futures study",
+      "topic": "Economy & society",
+      "finding": "It will be key to reinforcing Europe’s long-term competitiveness and social model, and thus its global leadership in the new, net-zero economy, also by supporting other regions in building a sustainable future.",
+      "claim_extraction_version": 2,
+      "context": "original publisher page explicitly contains the catalogue date",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2023-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/document/download/ca1c61b7-e413-4877-970b-8ef619fc6b6c_en?filename=SFR-23-beautified-version_en_0.pdf",
+      "quality": {
+        "quality_version": 2,
+        "word_count": 11017,
+        "distinct_terms": 2009,
+        "pdf_pages": 36,
+        "method_examples": [
+          "backcasting",
+          "participatory"
+        ],
+        "future_signal_count": 20,
+        "citation_signals": {
+          "bibliography_detected": true,
+          "reference_years": 112,
+          "formal_citations": 130
+        },
+        "checks": {
+          "substantial_full_text": true,
+          "non_repetitive_analysis": true,
+          "meaningful_document_length": true,
+          "explicit_research_method": true,
+          "traceable_evidence_and_sources": true,
+          "actual_future_analysis": true,
+          "eu_europe_focus": true
+        },
+        "status": "automated research-substance screen passed"
+      },
+      "comparison": {
+        "verdict": "Not yet assessed",
+        "assessment": "No independently verified later evidence has been linked yet."
+      },
+      "checked_utc": "2026-10-16T12:16:46.688500+00:00",
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+    },
+    {
       "id": "EUF-c422737cb6b0f3",
       "date": "2019-12-31",
       "date_precision": "year",

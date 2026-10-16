@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "runs": 4,
-  "source_cursor": 0,
-  "verification_cursor": 4,
+  "runs": 5,
+  "source_cursor": 1,
+  "verification_cursor": 5,
   "archive_pages": {
     "ec": {
       "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
@@ -199,7 +199,8 @@
       "status": "rejected",
       "last_checked": "2026-10-16",
       "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "reason": "Quality gate failed: explicit_research_method, actual_future_analysis",
+      "verifier_version": 3
     },
     "https://www.ceps.eu/ceps-publications/alternative-futures-of-eu-integration-after-the-covid-19-pandemic/": {
       "status": "rejected",
@@ -235,7 +236,8 @@
       "status": "rejected",
       "last_checked": "2026-10-16",
       "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources"
+      "reason": "Quality gate failed: explicit_research_method",
+      "verifier_version": 3
     },
     "https://www.ceps.eu/ceps-publications/building-a-european-ai-ecosystem-of-excellence/": {
       "status": "rejected",
@@ -259,7 +261,8 @@
       "status": "rejected",
       "last_checked": "2026-10-16",
       "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources"
+      "reason": "Quality gate failed: explicit_research_method",
+      "verifier_version": 3
     },
     "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/wissenschaft-zivilgesellschaft.html": {
       "status": "rejected",
@@ -274,10 +277,9 @@
       "reason": "no unambiguous original publication date"
     },
     "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2023-strategic-foresight-report_en": {
-      "status": "rejected",
+      "status": "accepted",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "verifier_version": 3
     },
     "https://www.isi.fraunhofer.de/en/competence-center/foresight/meldungen/2024/civilsocietyweek.html": {
       "status": "rejected",
@@ -292,10 +294,9 @@
       "reason": "no unambiguous original publication date"
     },
     "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en": {
-      "status": "rejected",
+      "status": "accepted",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "verifier_version": 3
     },
     "https://foresight-on-demand.eu/projects/impact-of-covid-19-on-european-consumer-behaviour-foresight-study/": {
       "status": "rejected",
@@ -376,16 +377,18 @@
       "reason": "no unambiguous original publication date"
     },
     "https://www.eea.europa.eu/en/analysis/publications/the-european-environment-state-and-outlook-2015-synthesis-report": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://www.cedefop.europa.eu/en/publications/4213": {
       "status": "rejected",
       "last_checked": "2026-10-16",
       "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: explicit_research_method"
+      "reason": "Quality gate failed: explicit_research_method",
+      "verifier_version": 3
     },
     "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282021%29690029": {
       "status": "rejected",
@@ -394,10 +397,11 @@
       "reason": "Title not corroborated by original publisher landing page or full text"
     },
     "https://www.eea.europa.eu/en/analysis/publications/soer-2020": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://www.cedefop.europa.eu/en/datasets/dataset-skills-forecast": {
       "status": "rejected",
@@ -406,10 +410,11 @@
       "reason": "no unambiguous original publication date"
     },
     "https://www.eea.europa.eu/en/analysis/publications/imagining-a-sustainable-europe-in-2050": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://www.eea.europa.eu/en/analysis/publications/the-european-environment-state-and-outlook-2010-synthesis": {
       "status": "rejected",
@@ -424,37 +429,42 @@
       "reason": "Title not corroborated by original publisher landing page or full text"
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-demand-foresight-towards-2nd-strategic-plan-horizon-europe_en": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/after-new-normal-scenarios-europe-post-covid-19-world_en": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-reports-missions-horizon-europe_en": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/strategic-foresight-western-balkans_en": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
     },
     "https://op.europa.eu/en/publication-detail/-/publication/e436b4b6-fa50-11eb-b520-01aa75ed71a1/language-en/format-PDF/source-222702137": {
-      "status": "rejected",
+      "status": "retrieval_failed",
       "last_checked": "2026-10-16",
-      "retry_after": "2026-11-30",
-      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+      "retry_after": "2026-10-18",
+      "reason": "Full study not retrieved; landing page only (publications.europa.eu: Unregistered publisher or off-site redirect)",
+      "verifier_version": 3
     }
   },
   "queue": [],
-  "last_discovery_utc": "2026-10-16T11:10:29.679495+00:00",
-  "last_verification_utc": "2026-10-16T11:25:26.899791+00:00"
+  "last_discovery_utc": "2026-10-16T12:00:59.356116+00:00",
+  "last_verification_utc": "2026-10-16T12:17:02.091279+00:00"
 }
