@@ -366,3 +366,157 @@ def test_active_scan_follows_new_pagination_in_same_full_window(tmp_path):
         assert audit['archive_pages_visited'] == 2
         radar.discover(100)
         assert len(visited) == 2  # neither page re-fetched during cooldown
+
+
+def test_workflow_fails_fast_if_old_python_file_still_deployed():
+    from pathlib import Path
+    workflow = (Path(__file__).resolve().parents[1] / '.github/workflows/update-radar.yml').read_text()
+    assert radar.FIXED_PHASE_PROTOCOL == 3
+    assert "getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 3" in workflow
+    assert 'python -u scripts/radar.py discover --minutes 15' in workflow
+    assert 'python -u scripts/radar.py verify --minutes 10' in workflow
+    assert 'elapsed < 895' in workflow
+    assert 'elapsed < 595' in workflow
+
+# Cellar / EU Publications Office recovery tests: the October audit recorded
+# Commission HTML catalogue summaries incorrectly assessed as full studies.
+def test_cellar_url_is_an_official_work_identifier_not_any_uuid():
+    uuid = '7c3efc86-9a39-11ee-b164-01aa75ed71a1'
+    official = 'https://op.europa.eu/en/publication-detail/-/publication/' + uuid + '/language-en/format-PDF'
+    assert radar.cellar_url(official) == 'https://publications.europa.eu/resource/cellar/' + uuid
+    assert radar.cellar_url('https://example.org/publication/' + uuid) is None
+    assert radar.cellar_url('https://op.europa.eu/en/publication/no-uuid') is None
+
+
+def test_commission_html_download_not_restricted_to_pdf_extension():
+    url = 'https://research-and-innovation.ec.europa.eu/knowledge-publications/report_en'
+    landing = b'''<html><main><a href="/document/download/5f6e541e-c99a-407c-8971-0c1ba03eacd8_en">Download (391.3 KB - HTML)</a></main></html>'''
+    links = radar.publication_download_links(url, landing)
+    assert any('/document/download/5f6e' in u for _, u in links)
+
+
+def test_full_document_follows_commission_to_publications_office_to_cellar():
+    actor = next(a for a in radar.get_registry() if a['id'] == 'ec-contracts')
+    title = 'Foresight on demand: Foresight towards the 2nd Strategic Plan for Horizon Europe'
+    source = 'https://research-and-innovation.ec.europa.eu/knowledge-publications/report_en'
+    download = 'https://research-and-innovation.ec.europa.eu/document/download/5f6e541e-c99a-407c-8971-0c1ba03eacd8_en'
+    op = 'https://op.europa.eu/en/web/eu-law-and-publications/publication-detail/-/publication/7c3efc86-9a39-11ee-b164-01aa75ed71a1'
+    cellar = 'https://publications.europa.eu/resource/cellar/7c3efc86-9a39-11ee-b164-01aa75ed71a1'
+    landing = f'<html><main><h1>{title}</h1><a href="{download}">Download (HTML)</a></main></html>'.encode()
+    op_page = f'<html><main><h1>{title}</h1><p>PDF available in English</p></main></html>'.encode()
+    extracted = radar.page_info(landing)
+    study = full_study()
+    study['text'] = title + ' ' + study['text']
+    called = []
+    def mock_get(url, allowed):
+        called.append((url, allowed))
+        if url == download:
+            assert 'op.europa.eu' in allowed and 'publications.europa.eu' in allowed
+            return op, op_page, 'text/html'
+        if url == cellar:
+            return cellar, b'%PDF pretend bytes', 'application/pdf'
+        raise AssertionError('Unexpected URL '+url)
+    real_info = radar.page_info
+    def mock_info(data, ctype='text/html', full_pdf=False):
+        if data.startswith(b'%PDF'):
+            return study
+        return real_info(data, ctype, full_pdf)
+    with patch.object(radar, 'get_page', side_effect=mock_get), patch.object(radar, 'page_info', side_effect=mock_info):
+        target, result = radar.full_document(source, extracted, landing, 'text/html', actor)
+    assert target == cellar
+    assert result['format'] == 'pdf'
+    assert [u for u, _ in called] == [download, cellar]
+
+
+def test_html_abstract_is_retrieval_failure_not_low_quality_study():
+    actor = next(a for a in radar.get_registry() if a['id'] == 'ec-contracts')
+    url = 'https://research-and-innovation.ec.europa.eu/report'
+    landing = b'<html><main><h1>EU Foresight Scenarios</h1><p>Summary only.</p></main></html>'
+    with pytest.raises(radar.DocumentRetrievalError, match='landing page only'):
+        radar.full_document(url, radar.page_info(landing), landing, 'text/html', actor)
+
+
+def test_earlier_catalogue_rejections_get_one_upgrade_retry():
+    state = radar.empty_state()
+    candidate = next(x for x in radar.REPAIR_LEADS if 'After the new normal' in x['title'])
+    state['documents'][candidate['url']] = {
+        'status': 'rejected', 'reason': 'Quality gate failed: substantial_full_text',
+        'retry_after': '2026-11-30', 'last_checked': '2026-10-16'}
+    assert radar.offer_candidate(state, candidate, set(), date(2026, 10, 16)) == 'queued'
+    state['queue'] = []
+    state['documents'][candidate['url']]['verifier_version'] = radar.VERIFIER_VERSION
+    assert radar.offer_candidate(state, candidate, set(), date(2026, 10, 16)) == 'cooldown'
+
+
+def test_retrieval_error_does_not_become_quality_rejection(tmp_path):
+    from unittest.mock import patch
+    actor = next(a for a in radar.get_registry() if a['id'] == 'ec-contracts')
+    state = radar.empty_state()
+    candidate = dict(radar.REPAIR_LEADS[0], source_mode='publisher archive link')
+    state['queue'] = [candidate]
+    (tmp_path / 'radar-state.json').write_text(json.dumps(state))
+    (tmp_path / 'findings.json').write_text((radar.ROOT / 'findings.json').read_text())
+    (tmp_path / 'assessments.json').write_text('{"assessments": []}')
+    (tmp_path / 'candidates.json').write_text('{"sources_this_run": ["ec-contracts"]}')
+    with patch.multiple(radar, STATE=tmp_path/'radar-state.json', RESULTS=tmp_path/'findings.json',
+                        AUDIT=tmp_path/'scan-report.json', CANDIDATES=tmp_path/'candidates.json', ROOT=tmp_path), \
+         patch.object(radar, 'get_registry', return_value=[actor]), \
+         patch.object(radar, 'verify_report', side_effect=radar.DocumentRetrievalError('Full study not retrieved')), \
+         patch.object(radar, 'TODAY', return_value=date(2026, 10, 16)):
+        radar.verify_until(float('inf'))
+        item = radar.load_state()['documents'][candidate['url']]
+        report = json.loads((tmp_path/'scan-report.json').read_text())
+    assert item['status'] == 'retrieval_failed'
+    assert item['retry_after'] == '2026-10-18'
+    assert report['outcome_counts']['retrieval_failed'] == 1
+    assert report['new_reports'] == 0
+
+
+def test_full_study_quality_still_rejects_thin_reports():
+    actor = next(a for a in radar.get_registry() if a['id'] == 'ec')
+    with pytest.raises(radar.SubstantiveQualityError, match='substantial_full_text'):
+        radar.quality_screen(full_study(word_count=400), actor, 'EU Scenarios 2035')
+
+
+def test_cellar_api_requests_english_pdf_by_content_negotiation():
+    from unittest.mock import patch
+    cellar = 'https://publications.europa.eu/resource/cellar/7c3efc86-9a39-11ee-b164-01aa75ed71a1'
+    class Response:
+        status_code = 200
+        headers = {'Content-Type': 'application/pdf'}
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def raise_for_status(self): pass
+        def iter_content(self, size): yield b'%PDF-1.4\nknown bytes'
+    class Session:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def get(self, url, headers, **kwargs):
+            assert url == cellar
+            assert headers['Accept'] == 'application/pdf'
+            assert headers['Accept-Language'] == 'eng'
+            assert not kwargs['allow_redirects']
+            return Response()
+    with patch.object(radar.requests, 'Session', return_value=Session()):
+        out_url, content, mime = radar.get_page(cellar, {'publications.europa.eu'})
+    assert out_url == cellar
+    assert content.startswith(b'%PDF')
+    assert mime == 'application/pdf'
+
+
+def test_pdfs_include_final_bibliography_even_in_long_reports():
+    from unittest.mock import patch
+    class Page:
+        def __init__(self, num): self.num = num
+        def extract_text(self):
+            return ('Title of the study and executive summary 2020' if self.num == 0 else
+                    'References 2019 2020 2021 2022 2023 2024 2025' if self.num == 344 else
+                    'Scenario futures 2040 and research methodology')
+    class Reader:
+        pages = [Page(i) for i in range(345)]
+        def __init__(self, *args, **kwargs): pass
+    with patch.object(radar, 'PdfReader', Reader):
+        info = radar.page_info(b'%PDF fake', 'application/pdf', full_pdf=True)
+    assert info['pages'] == 345
+    assert 'References 2019' in info['text']
+    assert 'Title of the study' in info['text']
