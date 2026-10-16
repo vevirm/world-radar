@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "runs": 3,
-  "source_cursor": 18,
-  "verification_cursor": 3,
+  "runs": 4,
+  "source_cursor": 0,
+  "verification_cursor": 4,
   "archive_pages": {
     "ec": {
       "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
@@ -40,32 +40,32 @@
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/politik-verwaltung.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/unternehmen-industrieverbaende.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/wissenschaft-zivilgesellschaft.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/futures-innovation.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/methoden/delphi-zukunftsbefragung.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/methoden.html": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       }
     },
     "fod": {
@@ -76,7 +76,7 @@
       "https://foresight-on-demand.eu/projects/futures-garden/": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       }
     },
     "jrc": {
@@ -125,7 +125,7 @@
       "https://cadmus.eui.eu/search?f.itemtype=Technical+Report%2Cequals": {
         "root": false,
         "depth": 1,
-        "last_scan": null
+        "last_scan": "2026-10-16"
       }
     },
     "eprs": {
@@ -169,6 +169,27 @@
       },
       "https://www.cedefop.europa.eu/en/publications": {
         "root": true,
+        "last_scan": "2026-10-16"
+      }
+    },
+    "ec-contracts": {
+      "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight_en": {
+        "root": true,
+        "last_scan": "2026-10-16"
+      },
+      "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight/publications-about-foresight_en": {
+        "root": false,
+        "depth": 1,
+        "last_scan": "2026-10-16"
+      },
+      "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-reports-missions-horizon-europe_en": {
+        "root": false,
+        "depth": 2,
+        "last_scan": "2026-10-16"
+      },
+      "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/strategic-foresight-western-balkans_en": {
+        "root": false,
+        "depth": 2,
         "last_scan": "2026-10-16"
       }
     }
@@ -395,9 +416,45 @@
       "last_checked": "2026-10-16",
       "retry_after": "2026-11-30",
       "reason": "Publication predates 2015 minimum"
+    },
+    "https://www.isi.fraunhofer.de/en/competence-center/foresight/methoden/szenarien.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Title not corroborated by original publisher landing page or full text"
+    },
+    "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-demand-foresight-towards-2nd-strategic-plan-horizon-europe_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/after-new-normal-scenarios-europe-post-covid-19-world_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources"
+    },
+    "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-reports-missions-horizon-europe_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/strategic-foresight-western-balkans_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
+    },
+    "https://op.europa.eu/en/publication-detail/-/publication/e436b4b6-fa50-11eb-b520-01aa75ed71a1/language-en/format-PDF/source-222702137": {
+      "status": "rejected",
+      "last_checked": "2026-10-16",
+      "retry_after": "2026-11-30",
+      "reason": "Quality gate failed: substantial_full_text, non_repetitive_analysis, explicit_research_method, traceable_evidence_and_sources, actual_future_analysis"
     }
   },
   "queue": [],
-  "last_discovery_utc": "2026-10-16T09:44:27.824763+00:00",
-  "last_verification_utc": "2026-10-16T09:44:46.115285+00:00"
+  "last_discovery_utc": "2026-10-16T11:10:29.679495+00:00",
+  "last_verification_utc": "2026-10-16T11:25:26.899791+00:00"
 }
