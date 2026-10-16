@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T20:59:36.504524+00:00",
+  "updated_at": "2026-10-16T23:31:00.431722+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -276,6 +276,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/fs-07-2014-0048",
+      "title": "Strategies for emerging research and innovation futures",
+      "abstract": "Purpose This paper aims to present a set of strategic options for Research and Innovation (R&I) stakeholders in the light of new and emerging ways of organising and performing research. Design/methodology/approach The paper first reviews the evolution of the R&I landscape and identifies the most influential stakeholders engaged in R&I. In the light of the scenarios developed for the year 2030, a set of strategic options are identified and assessed for each stakeholder group. Findings R&I systems are now more complex than 50 years ago and will be even more in the future. Radical changes are expected in terms of the ways research is funded, organised and carried out. Some of these transformations are captured by the scenarios developed. The analysis of scenarios indicated that their feasibility and desirability differ across different sectors of industry, and research areas within the research landscape. Research limitations/implications Scenarios and strategies presented in the paper bring new considerations on the way research activities are practiced. Further research is considered to be useful on the new modes of research and implications for academia, industry, society and policy makers. Practical implications The discussion around the responses of different stakeholders vis-à-vis specific scenarios about the future in R&I practices and organisation gives a practical view about how to deal with associated emerging trends and issues. Social implications Society is a crucial stakeholder of all R&I activities. The transformative scenarios suggest that society will not only be playing a reactive role on the demand side but also more proactive role on the supply side in the decades to come. Originality/value The paper is based on work undertaken within the Research and Innovation (RIF) 2030 project. As R&I activities will be important for the development and competitiveness of the EU and its member states, the work presented here is considered to be of value by highlighting how to create more resilient strategies in a fast-changing R&I landscape.",
+      "date": "2016-06-13",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-07-2014-0048",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-10-2014-0063",
+      "title": "Futures of science with and for society: towards transformative policy orientations",
+      "abstract": "Purpose How to derive policy implications from five future scenarios of transformed research and innovation (R&I) systems? This paper analyzes methodological and content issues of five future scenarios of transformed R&I systems. The aim of this paper is to provide an outlook on strategic policies capable of facilitating or moderating these transformative changes in R&I practices is discussed in light of overarching intentions to foster “responsible” ambitions (in Europe and beyond, discussed as responsible research and innovation, RRI). Design/methodology/approach The paper elaborates a four-step methodology to assess the scenario’s policy implications: first, by articulating the scenario implications for six core dimensions of R&I systems; second, an RRI assessment framework is developed to assess in each scenario opportunities and limitations for transforming R&I systems towards responsibility goals; the third involves a cross-scenario analysis of similarities and differences between the scenarios, allowing the identification of robust policy options that make sense in more than one scenario. The last analytical step includes again the richness of the individual scenario assessments aiming to provide a broader outlook on transformative policy orientations. Findings The paper concludes with outlining the contours of a future-responsible R&I system together with some suggestions for transformative policy orientations that aim to govern the R&I system towards such a future, as a source of inspiration and reflection. Research limitations/implications The analysis is based on five future scenarios that do not systematically cover future developments external to the R&I system. Practical Implications An outlook of strategic policies capable of facilitating or moderating these transformative changes in R&I practices is discussed in light of the overarching European Union goal of encouraging the performance of RRI. Originality/value This paper provides inspirational anticipatory strategic intelligence for fostering the responsible ambitions of research with and for society.",
+      "date": "2016-06-13",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-10-2014-0063",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/sbm-10-2014-0043",
       "title": "The future of professional football",
       "abstract": "Purpose – The purpose of this paper is to explore the future of professional soccer by 2025. Scientific foresight studies on this industry do not yet exist despite its current position at a crossroads: toward further exploitation of profit potential? Or clear commitment to the traditional European Model of Sport? Design/methodology/approach – The authors conducted a Delphi-based scenario study. In total, 62 high-level experts from sport, business, and society evaluated the probability of occurrence, impact, and desirability of 15 future projections over at least two rounds. The resulting 5,940 quantitative judgments and 670 qualitative comments were condensed into probable scenarios and surprising wildcards. Findings – Two probable scenarios for European professional soccer by 2025 exist: in an extrapolation scenario, clubs will reap long-term gains from fulfilling public demands regarding stadium security, competitive balance, and social engagement. The less likely alternative is an extensive commercialization, including a short-term exploitation of all imaginable income sources, such as virtually augmented stadiums, financial investors, and league-owned broadcasting channels. Research limitations/implications – The findings are primarily based on qualitative research and an all-German sample. Further studies could incorporate additional quantitative data or might survey an international panel to increase predictive accuracy. Originality/value – The paper is novel in that it examines a yet unaddressed research gap – the future of professional soccer – with a common scientific foresight method that is already established in sport management research – the Delphi technique.",
@@ -458,7 +492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -531,6 +565,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1007/s40309-017-0118-4",
+      "title": "Drivers, trends and scenarios for the future of health in Europe. Impressions from the FRESHER project",
+      "abstract": "",
+      "date": "2018-01-10",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-017-0118-4",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.31175/hi.2018.01.05",
       "title": "Post-Daesh Challenges for Europe",
       "abstract": "Daesh is about to lose the whole territory it holds in Syria and Iraq once as big as the UK. The Salafi jihadist organization, ruling over 6 million population with an army of 30.000 in 2015, had benefited from sectarian and ethnic tensions and imposed its ideology to recruit and attract more than 40.000 foreign terrorist fighters from across the globe. The question that keeps busy most European capitals currently is; “What awaits Europe after Daesh loses all territory it controls?” The answer to this question will help show the next steps to neutralize its negative effects. Within the scope of this study, the trends shaping the flow of events have been studied to prescribe four future scenarios. Accordingly, the first scenario foresees that Daesh will revert gradually to terrorism from its proto-statehood. The second foresees that as long as it holds a social base, Daesh will survive and pose a real threat for Europe in the foreseeable future though in decreasing intensity. The third finds its transformation to a “Virtual Caliphate” a low probability. The fourth and last scenario finds the possibility of its replication in one of its eight provinces a small chance. At the end of each scenario policy recommendations have been made to reverse those trends.",
@@ -545,6 +596,74 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/1781685818764821",
+      "title": "The EU and artificial intelligence: A human-centred perspective",
+      "abstract": "This article analyses the potential benefits and drawbacks of artificial intelligence (AI). It argues that the EU should become a leading force in AI development. As a goal that captures the public imagination and mobilises a variety of actors, the EU should develop mission-based innovations that focus on using this technological leadership to solve the most pressing societal problems of our time whilst avoiding potential dangers and risks. This leadership could be achieved either by adapting the EU’s available instruments to focus on AI development or by designing new ones. Be it seeking a visionary future for AI or addressing concerns about it, progress should always be driven with the human-centred perspective in mind, that is, one that seeks to augment human intelligence and capacity, and not to supersede it.",
+      "date": "2018-03-15",
+      "journal": "European View",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/1781685818764821",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2017.04.006",
+      "title": "Friends. Foes. Frenemies? Unpacking the future of EU-Turkey relations",
+      "abstract": "",
+      "date": "2018-03-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2017.04.006",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2017.06.004",
+      "title": "The price of success, the benefit of setbacks: Alternative futures of EU-Ukraine relations",
+      "abstract": "",
+      "date": "2018-03-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2017.06.004",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2017.07.001",
+      "title": "Three scenarios for EU-China relations 2025",
+      "abstract": "",
+      "date": "2018-03-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2017.07.001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -781,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1177,6 +1296,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.32450/aacd.1439529",
+      "title": "Future of European Security Policies: Is Geopolitical Europe Possible?",
+      "abstract": "Since the aftermath of World War II, the pursuit of European autonomy in ensuring its security began with the 1950s French proposal for a pan-European defense force, though never realized. The Lisbon Treaty facilitated Union representation as a legal entity and introduced Permanent Structured Cooperation (PESCO) to deepen defense ties. Geopolitical ambitions increased with von Der Leyen's 2019 call for a Geopolitical Commission, preceding the Russia-Ukraine conflict. Global geopolitical shifts amplify the need for a robust European role. However, EU's historical struggle in forging a strong security policy fuels skepticism. This study assesses the EU's foreign policy in the Mediterranean and Black Sea amidst regional turmoil, employing a neo-classical realist lens and a global perspective.",
+      "date": "2023-11-25",
+      "journal": "Ankara Avrupa Calismalari Dergisi",
+      "publisher": "Ankara Avrupa Calismalari Dergisi",
+      "url": "https://doi.org/10.32450/aacd.1439529",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/jiel/jgad043",
+      "title": "Towards a ‘security-centred’ energy transition: balancing the European Union’s ambitions and geopolitical realities",
+      "abstract": "Abstract The European Union (EU) faces a pressing, multi-level energy crisis propelled by the perfect storm of Russia’s war in Ukraine and rapidly progressing climate change. As a result, the EU is scrambling to ensure it has sufficient energy supplies for the foreseeable future while reinventing its energy strategy in the long term. Since the EU is at a critical juncture for squaring EU energy security with European and international legal commitments, this article surveys this radical shift and its consequences. It analyses new EU-wide crisis-response tools and ad hoc bilateral arrangements with third countries against existing legal commitments. Recent developments are only the beginning of a much larger re-evaluation of core notions of the ‘trade-energy security’ nexus. To decarbonize, the EU must move towards a ‘security-centred’ energy transition, premised on ‘security first, compliance second’. This requires reassessing the notion of ‘protectionism’ in geopolitically sensitive areas and the current division of energy competences between the EU and its Member States.",
+      "date": "2023-12-19",
+      "journal": "Journal of International Economic Law",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/jiel/jgad043",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1002/ese3.1907",
       "title": "Research on the risk spillover effect of carbon emission trading market and various industry markets in China and the European Union",
       "abstract": "Abstract Widely concerns over the carbon emission problems have been aroused. Prior studies have documented the correlation between the carbon emission market and industries separately. This study compared the tail risks and risk spillover effect of the carbon emission and 11 industries markets in China and the European Union (EU) by using the multivariate multi‐quartile conditional autoregressive at‐risk model. Moreover, to evaluate the risk spillover of each market under extreme risk conditions in time domain and frequency domain, DY spillover index and BK spillover index were constructed via generalized forecast error variance decomposition and generalized causation spectrum, respectively. Findings are as follows: (1) The tail risks and fluctuation of the trend of Chinese industry markets reflects more higher and larger than those in the EU; (2) The EU suffers from smaller external shocks, while China has the opposite result and can recover relatively faster; (3) In China, energy, industrial, information technology, financial, real estate, consumer goods, carbon emissions, and discretionary consumption industries are risk spillover industries, while healthcare, materials, telecommunication services, and utilities industries are risk receiving industries. In contrast, the risk spillover industries in the EU remain consistent with those of the Chinese markets except for the materials, discretionary consumption, consumer goods, information technology and real estate industries. (4) On the short‐term, medium‐term and long‐term scales, the risk spillover of China's carbon emission trading market and various industries is basically consistent with that of the EU. These findings contribute to reducing greenhouse gas emissions and achieving the goal of carbon peak and carbon neutrality.",
@@ -1190,6 +1343,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.33067/se.3.2024.3",
+      "title": "The Inﬂuence of a New Geopolitical Environment on the Peace and Security of the Western Balkans",
+      "abstract": "Trends in the EU and NATO are certainly a part of global international efforts and communications along with being integral parts of the actions of those progressive forces that strive towards global peace, security, and social progress. Therefore, European trends cannot be taken out of the global context of international relationships or any other efforts to make positive changes in the world. The countries of the Western Balkans are faced with important political, economic, and security challenges, and should support one another in the process of their accessions to the EU and NATO and create the necessary conditions for the development of a better European defense and security relevant as regards the security interests of NATO. As part of democracy and humanity, their friends should help in the building of a safer geopolitical environment. In the search of a better solution, it is recommended to focus on the values and goals of all citizens and peoples of the Western Balkans. This primarily includes digniﬁed living in a modern, prosperous, and democratic country. A country of this kind in the Western Balkans can exist only by being fully integrated in the European and global organisations and by respecting contemporary global standards. The future of the countries of the Western Balkans cannot rely on negative, narrow-minded concepts or approaches. Their future should be founded on universal human values. And not only the future of the Western Balkans, but the entire region where it is situated. All of us should understand that happiness and prosperity of one people in this region should not be built upon the misfortune of others.",
+      "date": "2024-09-20",
+      "journal": "Studia Europejskie – Studies in European Affairs",
+      "publisher": "University of Warsaw",
+      "url": "https://doi.org/10.33067/se.3.2024.3",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1445,6 +1615,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2478/gssfj-2024-0012",
+      "title": "Quality Assurance in European Projects: Analysis, Challenges, and Best Practices",
+      "abstract": "Abstract Quality Assurance (QA) is an essential component for the success and effectiveness of European projects, which are characterized by intrinsic complexity, multinational collaborations, and the management of structural funds. This article explores the role of QA, outlining its theoretical framework, analyzing specific challenges, and presenting best practices adopted to mitigate them. Through the examination of case studies, the adaptability and relevance of QA in various sectors funded by the European Union are highlighted, integrating a critical reflection on the current debate regarding the upcoming Framework Programme 10 (Horizon Europe 2028–2034) and the positions of the European University Association. The article concludes with a discussion of future prospects and emerging areas of research, emphasizing how QA can act not only as a management tool but also as a systemic guarantee of autonomy, transparency, and scientific excellence.",
+      "date": "2025-11-27",
+      "journal": "Geopolitical, Social Security and Freedom Journal",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.2478/gssfj-2024-0012",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-16T23:31:00.431722+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
