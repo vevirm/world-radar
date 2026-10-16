@@ -1,0 +1,424 @@
+{
+  "description": "EU institutions AND external research producers of substantive foresight about/for the EU or Europe, from 2015 onward. Registry entries are discoverable leads only; age, provenance, European relevance and full-text research quality must be verified.",
+  "actors": [
+    {
+      "id": "ec",
+      "name": "European Commission — Secretariat-General",
+      "domain_hosts": [
+        "commission.europa.eu"
+      ],
+      "coverage": "Annual Strategic Foresight Reports and long-term policy scenarios",
+      "archives": [
+        "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en"
+      ],
+      "seeds": [
+        {
+          "title": "2020 Strategic Foresight Report",
+          "date": "2020-09-09",
+          "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2020-strategic-foresight-report_en",
+          "topic": "Governance & resilience"
+        },
+        {
+          "title": "2021 Strategic Foresight Report",
+          "date": "2021-09-08",
+          "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2021-strategic-foresight-report_en",
+          "topic": "Technology & geopolitics"
+        },
+        {
+          "title": "2022 Strategic Foresight Report",
+          "date": "2022-06-21",
+          "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+          "topic": "Climate & energy"
+        },
+        {
+          "title": "2023 Strategic Foresight Report",
+          "date": "2023-07-06",
+          "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2023-strategic-foresight-report_en",
+          "topic": "Economy & society"
+        },
+        {
+          "title": "2025 Strategic Foresight Report",
+          "date": "2025-09-09",
+          "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en",
+          "topic": "Governance & resilience"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "jrc",
+      "name": "European Commission — Joint Research Centre (JRC)",
+      "domain_hosts": [
+        "joint-research-centre.ec.europa.eu",
+        "publications.jrc.ec.europa.eu"
+      ],
+      "coverage": "Foresight science-for-policy reports, megatrends, alternative scenarios",
+      "archives": [
+        "https://joint-research-centre.ec.europa.eu/scientific-activities-z/foresight_en",
+        "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en"
+      ],
+      "seeds": [],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "espas",
+      "name": "European Strategy and Policy Analysis System (ESPAS)",
+      "domain_hosts": [
+        "espas.eu",
+        "www.espas.eu"
+      ],
+      "coverage": "Interinstitutional Global Trends Reports (2012, 2015, 2019, 2024) and historic horizon scans",
+      "archives": [
+        "https://espas.eu/gtr.html",
+        "https://espas.eu/"
+      ],
+      "seeds": [
+        {
+          "title": "Global Trends to 2040: Choosing Europe's Future",
+          "date": "2024-04-15",
+          "url": "https://www.espas.eu/files/espas_files/about/ESPAS-Global-Trends-to-2040-Choosing-Europes-Future.pdf",
+          "topic": "Geopolitics & security"
+        },
+        {
+          "title": "Global Trends to 2030: Can the EU meet the challenges ahead?",
+          "date": "2015-03-01",
+          "url": "https://espas.eu/files/espas_files/about/espas-report-2015.pdf",
+          "topic": "Geopolitics & security"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "eprs",
+      "name": "European Parliament — European Parliamentary Research Service (EPRS)",
+      "domain_hosts": [
+        "www.europarl.europa.eu",
+        "europarl.europa.eu"
+      ],
+      "coverage": "Future Shocks, Global Trends, policy foresight and risk studies",
+      "archives": [
+        "https://www.europarl.europa.eu/thinktank/en/home.html"
+      ],
+      "seeds": [
+        {
+          "title": "Future Shocks 2023: Anticipating and weathering the next storms",
+          "date": "2023-07-20",
+          "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282023%29751428",
+          "topic": "Geopolitics & security"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "stoa",
+      "name": "European Parliament — Panel for the Future of Science and Technology (STOA)",
+      "domain_hosts": [
+        "www.europarl.europa.eu",
+        "europarl.europa.eu"
+      ],
+      "coverage": "Commissioned technology-foresight studies and scenario research",
+      "archives": [
+        "https://www.europarl.europa.eu/stoa/en/home"
+      ],
+      "seeds": [
+        {
+          "title": "Innovative technologies shaping the 2040 battlefield",
+          "date": "2021-08-02",
+          "url": "https://www.europarl.europa.eu/stoa/en/document/EPRS_STU%282021%29690038",
+          "topic": "Technology & geopolitics"
+        },
+        {
+          "title": "A framework for foresight intelligence - Part 1: Horizon scanning tailored to STOA's needs",
+          "date": "2021-11-25",
+          "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282021%29690029",
+          "topic": "Science & technology"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "council",
+      "name": "General Secretariat of the Council of the EU",
+      "domain_hosts": [
+        "www.consilium.europa.eu",
+        "consilium.europa.eu"
+      ],
+      "coverage": "Long-term analysis, Forward Look and foresight issued by the Council Secretariat",
+      "archives": [
+        "https://www.consilium.europa.eu/en/documents-publications/"
+      ],
+      "seeds": [],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "euiss",
+      "name": "EU Institute for Security Studies (EUISS) / EEAS foresight",
+      "domain_hosts": [
+        "www.iss.europa.eu",
+        "iss.europa.eu",
+        "www.eeas.europa.eu",
+        "eeas.europa.eu"
+      ],
+      "coverage": "EUISS/EEAS strategic outlooks, geopolitical scenarios and future risks",
+      "archives": [
+        "https://www.iss.europa.eu/publications",
+        "https://www.eeas.europa.eu/eeas_en"
+      ],
+      "seeds": [
+        {
+          "title": "What if...? Scanning the horizon: 12 scenarios for 2021",
+          "date": "2019-01-25",
+          "url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf",
+          "topic": "Geopolitics & security"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "eea",
+      "name": "European Environment Agency (EEA)",
+      "domain_hosts": [
+        "www.eea.europa.eu",
+        "eea.europa.eu"
+      ],
+      "coverage": "State-of-the-environment outlooks, long-term sustainability foresight and scenarios",
+      "archives": [
+        "https://www.eea.europa.eu/en/topics/at-a-glance/state-of-europes-environment"
+      ],
+      "seeds": [
+        {
+          "title": "The European Environment - State and outlook 2015",
+          "date": "2015-02-27",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/the-european-environment-state-and-outlook-2015-synthesis-report",
+          "topic": "Climate & environment"
+        },
+        {
+          "title": "The European environment — state and outlook 2020",
+          "date": "2020-05-11",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/soer-2020",
+          "topic": "Climate & environment"
+        },
+        {
+          "title": "Imagining a sustainable Europe in 2050",
+          "date": "2025-04-10",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/imagining-a-sustainable-europe-in-2050",
+          "topic": "Climate & environment"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "cedefop",
+      "name": "Cedefop — European Centre for the Development of Vocational Training",
+      "domain_hosts": [
+        "www.cedefop.europa.eu",
+        "cedefop.europa.eu"
+      ],
+      "coverage": "Skills forecasts, occupational scenarios and labour-market outlooks",
+      "archives": [
+        "https://www.cedefop.europa.eu/en/projects/skills-forecast",
+        "https://www.cedefop.europa.eu/en/publications"
+      ],
+      "seeds": [
+        {
+          "title": "Skills in transition: the way to 2035",
+          "date": "2023-09-14",
+          "url": "https://www.cedefop.europa.eu/en/publications/4213",
+          "topic": "Skills & demographics"
+        }
+      ],
+      "category": "EU institution / agency",
+      "scope": "EU institutional foresight"
+    },
+    {
+      "id": "ceps",
+      "name": "Centre for European Policy Studies (CEPS)",
+      "category": "Independent think tank",
+      "scope": "Independent foresight on EU integration, policy futures and European social or technological transformation",
+      "domain_hosts": [
+        "www.ceps.eu",
+        "ceps.eu",
+        "cdn.ceps.eu"
+      ],
+      "archives": [
+        "https://www.ceps.eu/publications/"
+      ],
+      "seeds": [
+        {
+          "title": "Alternative Futures of EU Integration after the Covid-19 pandemic",
+          "date": "2023-02-28",
+          "url": "https://www.ceps.eu/ceps-publications/alternative-futures-of-eu-integration-after-the-covid-19-pandemic/",
+          "topic": "EU integration & governance"
+        },
+        {
+          "title": "Building a European AI Ecosystem of Excellence",
+          "url": "https://www.ceps.eu/ceps-publications/building-a-european-ai-ecosystem-of-excellence/",
+          "topic": "Technology & geopolitics"
+        }
+      ]
+    },
+    {
+      "id": "epc",
+      "name": "European Policy Centre (EPC)",
+      "category": "Independent think tank",
+      "scope": "Research-based alternative futures for the EU, not routine commentaries or opinion notes",
+      "domain_hosts": [
+        "epc.eu",
+        "www.epc.eu"
+      ],
+      "archives": [
+        "https://epc.eu/publications/"
+      ],
+      "seeds": [
+        {
+          "title": "Differentiated EUrope 2035: Elaboration and Evaluation of Five Potential Scenarios",
+          "date": "2021-09-29",
+          "url": "https://epc.eu/publication/Differentiated-EUrope-2035-Elaboration-and-Evaluation-of-Five-Potenti-425a54/",
+          "topic": "EU integration & governance"
+        }
+      ]
+    },
+    {
+      "id": "ecfr",
+      "name": "European Council on Foreign Relations (ECFR)",
+      "category": "Independent think tank",
+      "scope": "Methodologically developed scenarios on EU foreign policy, geopolitics and Europe’s global role",
+      "domain_hosts": [
+        "ecfr.eu",
+        "www.ecfr.eu"
+      ],
+      "archives": [
+        "https://ecfr.eu/publications/"
+      ],
+      "seeds": [
+        {
+          "title": "Rethinking European Futures: Eight Scenarios on European Foreign Policy Challenges 2025",
+          "url": "https://ecfr.eu/archive/page/-/170307_Rethinking_European_Futures.pdf",
+          "topic": "Geopolitics & security"
+        }
+      ]
+    },
+    {
+      "id": "oecd",
+      "name": "OECD — Strategic Foresight Unit",
+      "category": "International organisation",
+      "scope": "Only in-depth foresight directly about EU/Europe, European regions or policy decisions relevant to EU; not all global OECD work",
+      "domain_hosts": [
+        "www.oecd.org",
+        "oecd.org"
+      ],
+      "archives": [
+        "https://www.oecd.org/en/about/programmes/strategic-foresight.html"
+      ],
+      "seeds": [
+        {
+          "title": "OECD Regional Outlook 2023: The future(s) of OECD regions: Scenarios 2045",
+          "url": "https://www.oecd.org/en/publications/oecd-regional-outlook-2023_92cd40a0-en/full-report/component-8.html",
+          "topic": "Regional futures & cohesion"
+        }
+      ]
+    },
+    {
+      "id": "utu-ffrc",
+      "name": "University of Turku — Finland Futures Research Centre",
+      "category": "University / research centre",
+      "scope": "Peer-reviewed futures studies and rigorous project reports with demonstrated European/EU-policy relevance",
+      "domain_hosts": [
+        "www.utu.fi",
+        "utu.fi"
+      ],
+      "archives": [
+        "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/news/publications",
+        "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/research/previous-foresight"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "tuni",
+      "name": "Tampere University — Futures and transition research",
+      "category": "University / research centre",
+      "scope": "Peer-reviewed methodological foresight and Europe-focused scenario work, including EU-funded university research",
+      "domain_hosts": [
+        "researchportal.tuni.fi",
+        "www.tuni.fi",
+        "tuni.fi"
+      ],
+      "archives": [
+        "https://researchportal.tuni.fi/en/"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "eui",
+      "name": "European University Institute (EUI)",
+      "category": "University / research centre",
+      "scope": "Long-range research on European governance, integration and societal trajectories",
+      "domain_hosts": [
+        "www.eui.eu",
+        "eui.eu",
+        "cadmus.eui.eu"
+      ],
+      "archives": [
+        "https://cadmus.eui.eu/"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "fraunhofer",
+      "name": "Fraunhofer ISI — Foresight research",
+      "category": "Research institute",
+      "scope": "Robust European technology and innovation scenario studies; must concern Europe/EU",
+      "domain_hosts": [
+        "www.isi.fraunhofer.de",
+        "isi.fraunhofer.de"
+      ],
+      "archives": [
+        "https://www.isi.fraunhofer.de/en/competence-center/foresight.html"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "ec-contracts",
+      "name": "European Commission — externally commissioned / EU-funded foresight publications",
+      "category": "EU institution / agency",
+      "scope": "Full foresight studies issued on EU publisher sites, including externally conducted commissioned studies and projects",
+      "domain_hosts": [
+        "research-and-innovation.ec.europa.eu",
+        "op.europa.eu"
+      ],
+      "archives": [
+        "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight_en"
+      ],
+      "seeds": [
+        {
+          "title": "Foresight on demand: Foresight towards the 2nd Strategic Plan for Horizon Europe",
+          "date": "2023-12-14",
+          "url": "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-demand-foresight-towards-2nd-strategic-plan-horizon-europe_en",
+          "topic": "Science & technology"
+        }
+      ]
+    },
+    {
+      "id": "fod",
+      "name": "Foresight on Demand — research consortium for EU institutions",
+      "category": "EU-funded research consortium",
+      "scope": "Substantive commissioned futures/scenario final reports authored by consortium teams for EU institutions; reject short syntheses and promotional summaries",
+      "domain_hosts": [
+        "foresight-on-demand.eu",
+        "www.foresight-on-demand.eu"
+      ],
+      "archives": [
+        "https://foresight-on-demand.eu/publications-and-reports/"
+      ],
+      "seeds": []
+    }
+  ]
+}
