@@ -63,11 +63,13 @@ jobs:
           python -m json.tool radar-state.json > /dev/null
           python -m json.tool research-leads.json > /dev/null
           python scripts/check_data.py
+      - name: Build continuously refreshed master Excel workbook
+        run: python scripts/build_master_excel.py
       - name: Persist source rotation and source-verified findings
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add findings.json radar-state.json research-leads.json
+          git add findings.json radar-state.json research-leads.json WORLD_RADAR_MASTER.xlsx
           if ! git diff --cached --quiet; then
             git commit -m 'European Foresight Radar: advance source rotation and verified findings'
             git push
