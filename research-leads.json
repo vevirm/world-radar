@@ -1,8 +1,42 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T23:31:00.431722+00:00",
+  "updated_at": "2026-10-17T01:30:42.260492+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
+    {
+      "doi": "10.1177/1474904114565161",
+      "title": "On organizing educational research communication in Europe: Past experiences and possible futures",
+      "abstract": "In this note I will comment on the development of the European Educational Research Association (EERA) as a European educational research organization and the current situation. In doing so I will put forward a few matters concerning the social and intellectual organization of the EERA and the visibility of educational research in Europe.",
+      "date": "2015-01-28",
+      "journal": "European Educational Research Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/1474904114565161",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.agrformet.2015.07.057",
+      "title": "Peer review report 2 On “Calibration and bias correction of climate projections for crop modelling: An idealised case study over Europe”",
+      "abstract": "",
+      "date": "2015-01-31",
+      "journal": "Agricultural and Forest Meteorology",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.agrformet.2015.07.057",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
     {
       "doi": "10.3390/w7020716",
       "title": "Comparison of Water Flows in Four European Lagoon Catchments under a Set of Future Climate Scenarios",
@@ -18,6 +52,23 @@
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
       "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.4054/demres.2015.32.15",
+      "title": "Labor force projections up to 2053 for 26 EU countries, by age, sex, and highest level of educational attainment",
+      "abstract": "",
+      "date": "2015-02-17",
+      "journal": "Demographic Research",
+      "publisher": "Max Planck Institute for Demographic Research",
+      "url": "https://doi.org/10.4054/demres.2015.32.15",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -38,6 +89,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.17770/sie2015vol3.370",
+      "title": "Demographic Challenges in Central and Eastern Europe in 21st Century",
+      "abstract": "Due to the fact that the least favorable situation in terms of population is in the countries of Central and Eastern Europe, the article presents the demographic position of these countries, the challenges and risks associated with the demographic crisis, the existing policy guidelines for families and points to the long-term perspective to the next 60 years (graying society). The aim of this article is to present the scale of the demographic crisis but also describe the consequences associated with it, and the challenges faced by each country in the future in the relation to the aging population. The research methods used in this work is desk research, analysis and interpretation of available statistical data and descriptive method based on the available literature.",
+      "date": "2015-05-17",
+      "journal": "SOCIETY, INTEGRATION, EDUCATION. Proceedings of the International Scientific Conference",
+      "publisher": "Riga Technical University",
+      "url": "https://doi.org/10.17770/sie2015vol3.370",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.techfore.2014.06.009",
       "title": "The futures of the service economy in Europe: A foresight analysis",
       "abstract": "",
@@ -51,6 +119,57 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.12765/cpos-2015-06",
+      "title": "Consequences of Enduring Low Fertility – A German Case Study. Demographic Projections and Implications for Different Policy Fields",
+      "abstract": "Compared to all other countries in the world, Germany has been a “low-fertility country” for a longer period: the total fertility rate has been below 1.5 for four decades. Being the first to experience this development, a case study of Germany allows analysing the consequences of an enduring birth decline. In Germany, low fertility is also an increasingly big issue in politics as well as science, especially due to its extensive consequences on several policy fields that already become visible. However, the assessment of the consequences differs tremendously when it comes either to its intensity or to the question whether ageing or rather population decline is the more severe problem. Differentiated by these two processes, this article combines demographic analysis with the assessment of the consequences for different policy fields such as pensions, health, the economy, the labour market, culture, the EU, international relations and the party system.\r\nFor all these policy fields, the consequences are serious, and partly ambivalent but overall negative. The occurrence of the consequences and the different policy options how to deal with these consequences differ considerably between the policy fields. Ageing is a more severe problem than shrinking, because the severe changes in the age structure in the social security system that will take place until 2040 apply to most Germans and are inevitable. On the other hand, the population decline can still be avoided demographically and does not affect all inhabitants negatively. Regarding the consequences of a declining population, one has to differentiate between an individual and a national perspective. National consequences are rather negative due to a decline of international influence and power, especially within the European Union. The study also demonstrates that the long-term consequences of enduring low fertility are not necessarily negative for political competition, the culture, the labour market and the economy, if appropriate political action is taken. The analysis also identifies possible future demographic and political parameters. Thus, this case study is relevant for other low-fertility countries, which will have to face similar demographic processes in the future.",
+      "date": "2015-06-03",
+      "journal": "Comparative Population Studies",
+      "publisher": "German Federal Institute for Population Research",
+      "url": "https://doi.org/10.12765/cpos-2015-06",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3354/cr01309",
+      "title": "Sea level rise projections for northern Europe under RCP8.5",
+      "abstract": "",
+      "date": "2015-06-17",
+      "journal": "Climate Research",
+      "publisher": "Inter-Research Science Center",
+      "url": "https://doi.org/10.3354/cr01309",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-015-0065-x",
+      "title": "A resource-efficient and sufficient future mobility system for improved well-being in Europe",
+      "abstract": "",
+      "date": "2015-07-10",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-015-0065-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -140,6 +259,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1007/s40309-015-0072-y",
+      "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
+      "abstract": "",
+      "date": "2015-11-18",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-015-0072-y",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ocemod.2015.06.001",
+      "title": "Statistical multi-model climate projections of surface ocean waves in Europe",
+      "abstract": "",
+      "date": "2015-12-31",
+      "journal": "Ocean Modelling",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ocemod.2015.06.001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.20542/0131-2227-2015-2-58-67",
+      "title": "Centre-Periphery Relations in Europe: Demographic Aspect",
+      "abstract": "The paper deals with the impact of centre-periphery relations on the demographic change in Europe in the 21st century. The reasons why the projections presented by Statistics Netherlands and the Netherlands Interdisciplinary Demographic Institute in 1999 underestimated the future population growth in France, Italy, Spain and UK are analyzed. Current statistics and UN population projections (2012 revision) demonstrate that the idea of the total depopulation coming in Europe, commonly held there over the 20th century, is out of date. In fact, depopulation is far from being total; it is common only in peripheral countries of Europe, not in semi-peripheral and central ones (Germany is an exception). This conclusion is corroborated by the close positive correlation (r=0.754) between per capita GNI and the rate of population increase in 34 European countries between 2000 and 2012. The alarmist perspective of ageing is criticized. It is argued that ageing is often unreasonably blamed for negative effects which, in fact, are caused by other faults of socioeconomic system. So, the recent number of unemployed in Spain (5.7 millions) is four times more than the expected decrease in the number of people aged 20 to 64 between 2010 and 2030 (1.4 millions). The prospective institutional and structural consequences of the post-crisis shifting of immigration flows from Spain to Germany are considered. Given this shifting, the further expansion of the peripheral and semi-peripheral enclaves in German economy seems to be verisimilar. Nevertheless, the centripetal migration maintains, like before, the centre-peripheral differences in Europe. The centre concentrates knowledge-intensive services and attracts the most qualified migrants; semi-periphery receives the less qualified ones; the periphery is the source of labour force for both the centre and the semi-periphery.",
+      "date": "2015-12-31",
+      "journal": "World Economy and International Relations",
+      "publisher": "Primakov Institute of World Economy and International Relations",
+      "url": "https://doi.org/10.20542/0131-2227-2015-2-58-67",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s40309-015-0080-y",
       "title": "Futures of European welfare models and policies: seeking actual research questions, and new problem-solving arsenal for European welfare states",
       "abstract": "",
@@ -187,6 +357,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
       "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s00382-016-3019-5",
+      "title": "Projections of extreme storm surge levels along Europe",
+      "abstract": "",
+      "date": "2016-02-20",
+      "journal": "Climate Dynamics",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s00382-016-3019-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -306,6 +493,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1038/srep28334",
+      "title": "Record dry summer in 2015 challenges precipitation projections in Central Europe",
+      "abstract": "Abstract Central Europe was characterized by a humid-temperate climate in the 20 th century. Climate change projections suggest that climate in this area will shift towards warmer temperatures by the end of the 21 st century, while projected precipitation changes are highly uncertain. Here we show that the 2015 summer rainfall was the lowest on record since 1901 in Central Europe and that climate models that perform best in the three driest years of the historical time period 1901–2015 project stronger drying trends in the 21 st century than models that perform best in the remaining years. Analyses of precipitation and derived soil moisture reveal that the 2015 event was drier than both the recent 2003 or 2010 extreme summers in Central Europe. Additionally there are large anomalies in satellite-derived vegetation greenness. In terms of precipitation and temperature anomalies, the 2015 summer in Central Europe is found to lie between historical climate in the region and that characteristic of the Mediterranean area. Even though the models best capturing past droughts are not necessarily generally more reliable in the future, the 2015 drought event illustrates that potential future drying trends have severe implications and could be stronger than commonly assumed from the entire IPCC AR5 model ensemble.",
+      "date": "2016-06-21",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/srep28334",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -497,6 +701,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.14195/1647-6336_15-1_1",
+      "title": "The Futures of Portugal in and beyond Europe",
+      "abstract": "https://doi.org/10.14195/1647-6336_15-1_1",
+      "date": "2016-12-30",
+      "journal": "Debater a Europa",
+      "publisher": "Coimbra University Press",
+      "url": "https://doi.org/10.14195/1647-6336_15-1_1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1504/ijmbs.2016.077642",
       "title": "The unlawfulness of existing pre-departure integration conditions applied in family reunification scenarios - urgent need to change national laws in the European Union",
       "abstract": "",
@@ -531,6 +752,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.17265/2159-5526/2017.05.002",
+      "title": "Sustainable Futures: Comparing Methodologies for Analyzing Citizen Visions in Europe",
+      "abstract": "",
+      "date": "2017-05-28",
+      "journal": "Sociology Study",
+      "publisher": "David Publishing Company",
+      "url": "https://doi.org/10.17265/2159-5526/2017.05.002",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1136/vr.j3018",
+      "title": "Europe getting on board with Vet Futures",
+      "abstract": "",
+      "date": "2017-06-24",
+      "journal": "Veterinary Record",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1136/vr.j3018",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1175/jcli-d-16-0695.1",
+      "title": "Improved Consistency of Climate Projections over Europe after Accounting for Atmospheric Circulation Variability",
+      "abstract": "Abstract The influence of atmospheric circulation on winter temperature and precipitation trends over Europe in the period 2006–50 is investigated in a 21-member initial condition ensemble from a fully coupled global climate model and in a multimodel framework consisting of 40 different models. Five versions of a dynamical adjustment method based on empirical orthogonal function analysis of sea level pressure are introduced, and their performance in removing the effect of atmospheric circulation on temperature and precipitation is tested. The differences in atmospheric circulation as simulated by different models in their control runs and under the historical and representative concentration pathway 8.5 (RCP8.5) forcing scenarios are investigated. Dynamical adjustment is applied to the multimodel ensemble to demonstrate that a substantial fraction of the uncertainty in projected European temperature and precipitation trends is explained by atmospheric circulation variability. A statistically significant response of sea level pressure to anthropogenic forcing is identified in the multimodel ensemble under the RCP8.5 scenario. This forced response in atmospheric circulation is associated with a dynamical contribution to the long-term multimodel mean temperature and precipitation trends. The results highlight the importance of accounting for the impact of atmospheric circulation variability on trends in regional climate projections.",
+      "date": "2017-08-15",
+      "journal": "Journal of Climate",
+      "publisher": "American Meteorological Society",
+      "url": "https://doi.org/10.1175/jcli-d-16-0695.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.18096/tmp.2017.01.03",
       "title": "The Changing Role of Nuclear Power in the European Union: Reflections from Official Scenarios Released before and after the Fukushima Daiichi Accident",
       "abstract": "Nuclear energy plays an important role in the global and European energy sectors. The nuclear disaster of Fukushima Daiichi has amplified the debate on the potential future roles of nuclear energy in the EU and has had impacts on the European Member States’ energy policies; however, the reactions of the member states were vary. Concerns about common legislation, waste management, safety and risk management have also strengthened. Initiatives were taken at national, regional and international levels. The goal of this study is to highlight the main advantages and disadvantages of nuclear energy utilisation in the light of the official forecasts released before and after the Japanese accident.",
@@ -545,6 +817,40 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/2017jd027176",
+      "title": "Projections of Future Precipitation Extremes Over Europe: A Multimodel Assessment of Climate Simulations",
+      "abstract": "Abstract Projections of precipitation and its extremes over the European continent are analyzed in an extensive multimodel ensemble of 12 and 50 km resolution EURO‐CORDEX Regional Climate Models (RCMs) forced by RCP2.6, RCP4.5, and RCP8.5 (Representative Concentration Pathway) aerosol and greenhouse gas emission scenarios. A systematic intercomparison with ENSEMBLES RCMs is carried out, such that in total information is provided for an unprecedentedly large data set of 100 RCM simulations. An evaluation finds very reasonable skill for the EURO‐CORDEX models in simulating temporal and geographical variations of (mean and heavy) precipitation at both horizontal resolutions. Heavy and extreme precipitation events are projected to intensify across most of Europe throughout the whole year. All considered models agree on a distinct intensification of extremes by often more than +20% in winter and fall and over central and northern Europe. A reduction of rainy days and mean precipitation in summer is simulated by a large majority of models in the Mediterranean area, but intermodel spread between the simulations is large. In central Europe and France during summer, models project decreases in precipitation but more intense heavy and extreme rainfalls. Comparison to previous RCM projections from ENSEMBLES reveals consistency but slight differences in summer, where reductions in southern European precipitation are not as pronounced as previously projected. The projected changes of the European hydrological cycle may have substantial impact on environmental and anthropogenic systems. In particular, the simulations indicate a rising probability of summertime drought in southern Europe and more frequent and intense heavy rainfall across all of Europe.",
+      "date": "2017-10-23",
+      "journal": "Journal of Geophysical Research: Atmospheres",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1002/2017jd027176",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-017-0120-x",
+      "title": "Political and social trends in the future of global security. A meta-study on official perspectives in Europe and North America",
+      "abstract": "",
+      "date": "2017-12-05",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-017-0120-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -577,8 +883,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/cli6010006",
+      "title": "Multi-Model Projections of River Flood Risk in Europe under Global Warming",
+      "abstract": "Knowledge on the costs of natural disasters under climate change is key information for planning adaptation and mitigation strategies of future climate policies. Impact models for large scale flood risk assessment have made leaps forward in the past few years, thanks to the increased availability of high resolution climate projections and of information on local exposure and vulnerability to river floods. Yet, state-of-the-art flood impact models rely on a number of input data and techniques that can substantially influence their results. This work compares estimates of river flood risk in Europe from three recent case studies, assuming global warming scenarios of 1.5, 2, and 3 degrees Celsius from pre-industrial levels. The assessment is based on comparing ensemble projections of expected damage and population affected at country level. Differences and common points between the three cases are shown, to point out main sources of uncertainty, strengths, and limitations. In addition, the multi-model comparison helps identify regions with the largest agreement on specific changes in flood risk. Results show that global warming is linked to substantial increase in flood risk over most countries in Central and Western Europe at all warming levels. In Eastern Europe, the average change in flood risk is smaller and the multi-model agreement is poorer.",
+      "date": "2018-01-24",
+      "journal": "Climate",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/cli6010006",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -684,6 +1007,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/ia/iiy087",
+      "title": "Brexit and British politics; Brexit and beyond: rethinking the futures of Europe",
+      "abstract": "",
+      "date": "2018-05-01",
+      "journal": "International Affairs",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/ia/iiy087",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/1478210318777415",
+      "title": "Educational policies in Central and Eastern Europe: legacies of state socialism, modernization aspirations and challenges of semi-peripheral contexts",
+      "abstract": "The article introduces a special issue of Policy Futures in Education on changes and challenges in educational policies and systems of Central and Eastern Europe (CEE). The countries in the region share some characteristics, such as their historical experience with the authoritarian–socialist or communist rule and its impact on education policies, as well as their long-lasting economic semi-peripherality. Differences within the region are also discussed in the article: from macro-level economic gaps to relative dissimilarities of education systems’ structures, as well as international assessment benchmarks. The articles in this issue present analyses of educational policies in Belarus, Croatia, Hungary, Poland, Russia and Ukraine. A theme that emerges most clearly across these texts is the complexity of East–West relationships. Read together, the contributions serve as a call for a more nuanced and contextualized look at CEE. Transformation of educational systems that entails the interplay of past legacies and borrowed policies can bring about troubling outcomes, exacerbated by the entanglement of education in a wider agenda.",
+      "date": "2018-06-14",
+      "journal": "Policy Futures in Education",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/1478210318777415",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1111/gcbb.12525",
       "title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
       "abstract": "Abstract This study presents supply scenarios of nonfood renewable jet fuel ( RJF ) in the European Union ( EU ) toward 2030, based on the anticipated regulatory context, availability of biomass and conversion technologies, and competing biomass demand from other sectors (i.e., transport, heat, power, and chemicals). A cost optimization model was used to identify preconditions for increased RJF production and the associated emission reductions, costs, and impact on competing sectors. Model scenarios show nonfood RJF supply could increase from 1 PJ in 2021 to 165–261 PJ /year (3.8–6.1 million tonne (Mt)/year) by 2030, provided advanced biofuel technologies are developed and adequate (policy) incentives are present. This supply corresponds to 6%–9% of jet fuel consumption and 28%–41% of total nonfood biofuel consumption in the EU . These results are driven by proposed policy incentives and a relatively high fossil jet fuel price compared to other fossil fuels. RJF reduces aviation‐related combustion emission by 12–19 Mt/year CO 2 ‐eq by 2030, offsetting 53%–84% of projected emission growth of the sector in the EU relative to 2020. Increased RJF supply mainly affects nonfood biofuel use in road transport, which remained relatively constant during 2021–2030. The cost differential of RJF relative to fossil jet fuel declines from 40 €/ GJ (1,740 €/t) in 2021 to 7–13 €/ GJ (280–540 €/t) in 2030, because of the introduction of advanced biofuel technologies, technological learning, increased fossil jet fuel prices, and reduced feedstock costs. The cumulative additional costs of RJF equal €7.7–11 billion over 2021–2030 or €1.0–1.4 per departing passenger (intra‐ EU ) when allocated to the aviation sector. By 2030, 109–213 PJ /year (2.5–4.9 Mt/year) RJF is produced from lignocellulosic biomass using technologies which are currently not yet commercialized. Hence, (policy) mechanisms that expedite technology development are cardinal to the feasibility and affordability of increasing RJF production.",
@@ -698,6 +1055,23 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s13717-018-0135-7",
+      "title": "Forestry projections for species diversity-oriented management: an example from Central Europe",
+      "abstract": "",
+      "date": "2018-06-25",
+      "journal": "Ecological Processes",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s13717-018-0135-7",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -834,6 +1208,23 @@
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
       "last_seen": "2026-10-16T20:59:36.504524+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/21699763.2017.1411288",
+      "title": "The implications of demographic and economic projections on public pension spending in the European Union",
+      "abstract": "Abstract This paper analyses the implications that demographic and economic projections have on public pension spending in the European Union (EU). Using some stylised facts, we study the aging trends of the population, as well as labour force and employment projections. Indices of both demographic and economic dependence are built. All of this is used to determine the impact on public pension spending in the EU. Although we detect substantial heterogeneity of circumstances, we show that the states in which aging of the population weights more in explaining public pension expenditure growth as a percentage of gross domestic product (GDP) are generally the ones that make greater efforts to control this spending. Given the limited capacity of policies to increase active population or employment to offset the effects of aging, measures aimed at diminishing the generosity of the public pension system and at promoting private schemes have gained relevance.",
+      "date": "2020-03-09",
+      "journal": "Journal of International and Comparative Social Policy",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1080/21699763.2017.1411288",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1483,6 +1874,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1007/s12115-025-01104-w",
+      "title": "Demographic Projections and Migration Governance: How Law Shapes the Perception of “Too Many”",
+      "abstract": "Abstract Most European political debates about migration build on the narrative that there are “too many migrants,” despite restrictive migration governance for many years. The aims of deterrence and restriction are hardly questioned; images of packed boats and crowded camps fuel the idea that Europe is being “overrun.” The article critically examines how these perceptions of superfluity are situated in wider fears of demographic developments and what role the law plays in shaping those perceptions. Firstly, the strict regulation of mobility and the exclusion of emigration as a reaction to regional population growth is a relatively new and contingent idea, contrasting Europe’s own history of growth and emigration. Secondly, the legal regulation of migration significantly contributes to the impression of excess: it leads to the concentration of migrants on certain routes and in certain places; it creates redundancies through the transfers of migrants and inflates the perception of migrants as a burden. Ultimately, the paradigm of deterrence is increasingly at odds with demographic needs in Europe. The analysis applies the concept of the “internalization of borders.” On the level of demographic projections, borders are internalized in the assumption that people should remain in the place where they were born. And the political debates about migration reinforce the internalization of borders in blaming social problems on the influx of strangers. European societies economically and socially depend on immigration but cling to the narrative of “too many migrants” to justify ever more violent border regimes.",
+      "date": "2025-05-07",
+      "journal": "Society",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s12115-025-01104-w",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1111/reel.12615",
       "title": "Future proofing EU law – Does the European Union have a legal obligation to protect future generations?",
       "abstract": "Abstract This article analyses the normative landscape of future generations within the current body of European Union (EU) law, including the treaties, the EU Charter of Fundamental Rights, existing and potentially emerging general principles of EU law, as well as relevant international treaties and customary international law. The article argues that, even though there is currently no explicit legal obligation for EU institutions in the treaties founding the Union to respect and protect the long‐term needs of future generations, several legal hooks exist in the sources of EU law that invite an intergenerationally conscious reading and reinterpretation of EU obligations and competences. Such a reinterpretation could justify, or even prompt, stronger protection of future generations' interests across all EU policies. Future‐proofing EU law primarily depends on how EU institutions, including the Court of Justice of the European Union (CJEU), interpret intergenerational equity‐related concepts already embedded in primary EU legislation. Additionally, the contours of EU obligations towards future generations could be influenced by the dynamically evolving rules of international law.",
@@ -1514,6 +1922,40 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1086/735069",
+      "title": ": Monumental Times: Pasts, Presents, and Futures in the Prehistoric Construction Projects of Northern Europe and Western Europe",
+      "abstract": "",
+      "date": "2025-06-01",
+      "journal": "Journal of Anthropological Research",
+      "publisher": "University of Chicago Press",
+      "url": "https://doi.org/10.1086/735069",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/13501763.2025.2516120",
+      "title": "The asymmetry of EU socio-economic governance: theoretical fault lines and constructivist avenues for future research",
+      "abstract": "",
+      "date": "2025-06-10",
+      "journal": "Journal of European Public Policy",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13501763.2025.2516120",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1653,6 +2095,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.30687/lgsp/2785-2709/2025/02/005",
+      "title": "Speculative Futures: Digital Eco-Stories from an Environmental Humanities Teacher Training Program in Europe",
+      "abstract": "Amitav Ghosh’s declaration of “a crisis of the imagination” with regard to the current period on our planet is the venture point for our paper to present digital Eco-Storytelling as a speculative participatory approach useful for stimulating cultural imaginations of futurities and hence counteracting this crisis. Guided by ecopedagogy, which aims at constructing learning towards increased social and environmental justices, we will present and analyze findings from the EcoStories International Teacher Training Program carried out in 2025 with students from the University of Malaga, Ca’ Foscari University Venice, and University of Graz.",
+      "date": "2025-12-18",
+      "journal": "Lagoonscapes",
+      "publisher": "Edizioni Ca Foscari",
+      "url": "https://doi.org/10.30687/lgsp/2785-2709/2025/02/005",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.eplepsyres.2025.107689",
+      "title": "Trends, prescribing patterns and projections of antiseizure drug use in Europe",
+      "abstract": "",
+      "date": "2025-12-31",
+      "journal": "Epilepsy Research",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.eplepsyres.2025.107689",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.sftr.2025.101504",
       "title": "Scenarios for embedding phosphorus recovery into the international regime through EU’s carbon border adjustment mechanism",
       "abstract": "",
@@ -1735,6 +2211,23 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1038/s44304-025-00152-w",
+      "title": "Hydrological drought projections across Europe under climate change",
+      "abstract": "Abstract Although drought is a natural hazard, growing global concern surrounds its increasing frequency and severity due to climate change. Projections indicate that drought conditions are expected to intensify worldwide in the future, and Europe is no exception. Therefore, understanding the pattern and characteristics of future drought is crucial to developing region-specific adaptation strategies to enhance resilience. This study presents a comprehensive assessment of future hydrological drought dynamics across Europe using the standardized runoff index (SRI). SRI was calculated at 1- and 3-month timescales for the historical period (1990–2014) and near-future period (2015–2049) based on downscaled climate data from Coupled Model Intercomparison Project Phase 6 (CMIP6) under two emission scenarios: SSP1-2.6 and SSP5-8.5, where SSP stands for shared socioeconomic pathways. The findings reveal an intensification of hydrological drought conditions, particularly in southern Europe. Notable increases in the frequency, severity, and spatial extent of drought events are observed, especially in countries such as France, Spain, and the Balkans. Seasonal analysis highlights spring as the most drought-prone season under both scenarios. These results underscore the urgent need for seasonally adaptive water management strategies to better anticipate future drought risks and strengthen regional resilience.",
+      "date": "2026-03-26",
+      "journal": "npj Natural Hazards",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/s44304-025-00152-w",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     }
   ]
