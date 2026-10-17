@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T14:23:50.948226+00:00",
+  "updated_at": "2026-10-17T17:31:26.214242+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -1228,6 +1228,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.futures.2017.09.001",
+      "title": "Setting the scene for alternative futures for European Union’s foreign policy 2025",
+      "abstract": "",
+      "date": "2018-03-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2017.09.001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/fs-07-2017-0039",
       "title": "Do statistics need foresight?",
       "abstract": "Purpose The purpose of this paper is to explore the relationship between foresight and official statistics in the context of sustainability and big-data. The aim is to draw ideas, guidance and lessons on how foresight could help national and international statistical offices deal with an increasingly turbulent and demanding environment. Design/methodology/approach The paper analyzes the challenges and opportunities posed by big data and sustainability for official statistics. Findings Drawing on the analysis of the BOHEMIA study – a foresight study launched by the European Commission to support its future policy for research and innovation – the paper proposes elements that could form a foresight programme for statistical offices. Originality/value Statistical offices and foresight have been worlds apart. The need to engage with each other is a recent and interesting phenomenon.",
@@ -1313,6 +1330,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-018-0141-0",
+      "title": "European Business Ethics agenda based on a Delphi analysis",
+      "abstract": "",
+      "date": "2018-07-13",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-018-0141-0",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.22323/2.17030302",
       "title": "Steering research and innovation through RRI. What horizon for Europe?",
       "abstract": "Responsible Research and Innovation (RRI) is gaining momentum worldwide and is envisaged as a needed tool to properly govern controversial innovative technology (i.e. genome editing, AI). Europe is considered a leader in fostering such approach, notably through its institutionalization. Even so, the future of European Research and Innovation (R&I) seems to be designed without a central role for RRI. After long effort and so much public EU money to support projects to ground RRI principles and practices in key contexts for the flourishing of science and technology in Europe, such as the industrial realm and regional settings, this counter-intuitive decision could undermine the leadership of Europe in prioritizing civil and human rights and needs, values and expectations of its citizens when steering science and technology, that European R&I strongly need to go further.",
@@ -1361,6 +1395,23 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-018-0149-5",
+      "title": "Citizen visions for European futures—methodological considerations and implications",
+      "abstract": "",
+      "date": "2018-11-20",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-018-0149-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1802,6 +1853,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.46676/ij-fanres.v3i2.65",
+      "title": "Ensuring sustainable agriculture by analyzing the European Union and Romanian legislation on soil resources protection",
+      "abstract": "Soil is considered to be one of the most complex natural systems on the planet, a key component of the geographical environment, and a biological complex that is constantly changing. Also, the soil is a multifunctional system on which the essential functions of life on Earth are based. As such, soil protection must be a primary concern for the community, as the conservation of soil resources itself requires more than transposition in legislative terms. Thus, on the protection of soils from the point of view of the legislation of the EU and Romania, we set out to make an analysis noting in this paper the main provisions of the acquis communautaire (directives, strategies, decisions, etc.), which come to ensure an interface between the use of soils and their protection for future generations. As a result of the research undertaken we can conclude that both EU and Romanian legislation are still deficient in soil protection, it is not as protected as the other elements of the environment, water, air, and/or biodiversity.",
+      "date": "2022-08-22",
+      "journal": "International Journal on Food, Agriculture and Natural Resources",
+      "publisher": "International Journal on Food, Agriculture, and Natural Resources (IJFANRES), Jember University",
+      "url": "https://doi.org/10.46676/ij-fanres.v3i2.65",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-17T17:31:26.214242+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
