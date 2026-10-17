@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T01:30:42.260492+00:00",
+  "updated_at": "2026-10-17T06:07:12.959880+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -259,6 +259,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/fs-02-2015-0014",
+      "title": "The future multiple",
+      "abstract": "Purpose – This paper asks “Why is the future in futures studies plural?” The attitude toward inquiry, based on post-actor-network theory (ANT) literature, positions philosophical questions about the ontological character of the future within the context of “planning” for it (i.e. in practice). Multiplicity, as a post-ANT sensibility, helps one make sense of the empirical materials. This paper examines the possibility that rather than being alternatives to one another, plural futures and the singular future might co-exist in practice, and, thus, constitute a multiplicity. Design/methodology/approach – In this case study, “planning” is narrative scenario planning. The second author facilitates dialogue-based long-term strategic scenario planning processes, primarily in Scandinavia and Northern Europe, and contributes a wealth of professional experience to the project. The first author, an academic, shadows the second author. This paper examines experiential and observational data for evidence of the ontological character of the future. Elements of a typical scenario planning process, in this case, about the possibility of crewless (i.e. unmanned) shipping vessels are demonstrated – although, insight into the crewless ship is submerged by our analytical attentiveness to the ontology of the future. Findings – The findings bear on what sort of “object” the future is. Practices associated with planning for the future appear to transform it so that one future becomes many, and, without irony, managing the growing number of futures seems to be a core function of planning for the future. The implication is that neither plural futures nor the singular future is – individually – satisfactory to capture what is found in practice. It is both plural and singular; ontologically, it is the future multiple. Originality/value – The original contribution is in demonstrating how plural futures and the singular future co-exist in practice. Thus, an eclipse of the future by futures can only ever be partial. For “futures” to be conceptually potent, “the future” must be at least provisionally believable and occasionally useful. Otherwise, if “the future” were so preposterous an idea, then “futures” would cease to be a critical alternative to it. Futures needs the future; they are relationally bound together in a multiplicity. This paper considers what such a logical reality implies for a field that distances itself from the future and self-identifies with futures.",
+      "date": "2015-11-09",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-02-2015-0014",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s40309-015-0072-y",
       "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
       "abstract": "",
@@ -480,6 +497,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/fs-07-2014-0050",
+      "title": "New forms of innovation: critical issues for future pathways",
+      "abstract": "Purpose Although new forms of innovation such as open innovation, user innovation or crowdsourcing have been intensively discussed in the past decade, there is little systematic exploration of their wider positive and negative effects on economy, society and environment. Based on the recent debate in the literature and findings from a European foresight project, this paper aims to discuss the critical aspects of new forms of innovation such as increased participation, the use of information technologies and the increased pace of innovation and their challenges for innovation policy. Design/methodology/approach Based on a collection of international practice examples from industry and society, innovation visions have been generated and assessed by different experts across whole Europe. Findings A generic trend identified can be best described as open, distributed and networked innovation process. Although many new innovation models accelerate the innovation process, there are also some counter trends which in some fields may slow down the innovation process. In addition, the increased use of web-based tools, algorithms and information technologies raises new questions concerning the protection of intellectual property and data security. This reveals new questions for policymaking, which have not gained much attention on the European level so far. Originality/value Although there is an established discourse around potentially negative impacts of the outcomes of the innovation processes notably in the field of technology assessment, innovation capacity is usually seen as a desirable characteristic of innovation systems. In this paper, the possible negative aspects of new innovation models, an issue hardly addressed in the innovation literature so far, are discussed.",
+      "date": "2016-06-13",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-07-2014-0050",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/fs-10-2014-0063",
       "title": "Futures of science with and for society: towards transformative policy orientations",
       "abstract": "Purpose How to derive policy implications from five future scenarios of transformed research and innovation (R&I) systems? This paper analyzes methodological and content issues of five future scenarios of transformed R&I systems. The aim of this paper is to provide an outlook on strategic policies capable of facilitating or moderating these transformative changes in R&I practices is discussed in light of overarching intentions to foster “responsible” ambitions (in Europe and beyond, discussed as responsible research and innovation, RRI). Design/methodology/approach The paper elaborates a four-step methodology to assess the scenario’s policy implications: first, by articulating the scenario implications for six core dimensions of R&I systems; second, an RRI assessment framework is developed to assess in each scenario opportunities and limitations for transforming R&I systems towards responsibility goals; the third involves a cross-scenario analysis of similarities and differences between the scenarios, allowing the identification of robust policy options that make sense in more than one scenario. The last analytical step includes again the richness of the individual scenario assessments aiming to provide a broader outlook on transformative policy orientations. Findings The paper concludes with outlining the contours of a future-responsible R&I system together with some suggestions for transformative policy orientations that aim to govern the R&I system towards such a future, as a source of inspiration and reflection. Research limitations/implications The analysis is based on five future scenarios that do not systematically cover future developments external to the R&I system. Practical Implications An outlook of strategic policies capable of facilitating or moderating these transformative changes in R&I practices is discussed in light of the overarching European Union goal of encouraging the performance of RRI. Originality/value This paper provides inspirational anticipatory strategic intelligence for fostering the responsible ambitions of research with and for society.",
@@ -543,7 +577,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.4335/14.3.521-535(2016)",
+      "title": "From Classical Toward Experimental Federalism: Different Pathways for a More Inclusive and Balanced European Union",
+      "abstract": "A growing number of scholars, academics and policy-makers advocate substantial reforms of the existing European institutional architecture. Advocates of deepening the European integration recommend that the optimal development of the European Union (EU) would be to establish a fully developed banking union, an advanced form of fiscal union and to ultimately achieve a political union based on common economic governance. Accordingly, the ideal scenario for European integration would be to adopt, to the largest possible extent, a path toward the classical federal model. Leaving aside the practical feasibility of such a development, the purpose of this article is to explore whether a direction toward the model of classical federalism is the only possible way forward for European integration. Comparative constitutionalism has developed several substantially different models of federalism. Therefore, this article explores other possible trajectories for European integration while pointing to the limitations of classical federalism. In the face of the protracted social and economic crises in many European member states and their regions, article also examines the possibilities of establishing cooperative or even experimental federalism as a new model for European integration.",
+      "date": "2016-07-31",
+      "journal": "Lex localis - Journal of Local Self-Government",
+      "publisher": "UK Zhende Publishing Limited Company",
+      "url": "https://doi.org/10.4335/14.3.521-535(2016)",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -582,6 +633,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/fs-06-2015-0032",
+      "title": "Cities futures. A critical assessment of how future studies are applied to cities",
+      "abstract": "Purpose This paper aims to assess recent foresight exercises applied to cities by evaluating three major issues. Have foresight practitioners understood cities complexity? Have urban planners used adequate tools to generate plausible future visions? Are city policy makers using foresight studies to limit urban uncertainty? Design/methodology/approach In total, 20 city foresight examples were selected which either have international relevance or which constitute good examples of future-oriented initiatives. Case studies were classified into five taxonomies: European Union initiatives; local initiatives; academic initiatives; corporate initiatives; and architectural initiatives. A set of assessment criteria was established: city complexity conceptualization; methodological approach; and study impact. Findings Preliminary research outcomes show growing doubts about the appropriateness of the foresight tools used in cities and about the competency of foresight practitioners in understanding the complex and dynamic nature of contemporary cities. Furthermore, policy makers do not seem to grasp the potential of foresight to formulate urban strategies. Research limitations/implications Some of the initiatives studied are relatively recent, so impact analysis has been limited by available data. Mostly, secondary documented sources were used to validate cases’ assessment. Research suggests a number of areas in which foresight studies may have a practical application to the urban realm. Originality/value The value of the present work lies in the effort for assessing and improving forward-looking activities undertaken at cities through a set of criteria which take into consideration the complexity and diversity of contemporary cities.",
+      "date": "2016-09-12",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-06-2015-0032",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/fs-06-2015-0036",
       "title": "Strategic planning and foresight: the case of Smart Specialisation Strategy in Tuscany",
       "abstract": "Purpose Within the theoretical framework of Regional Innovation Systems, the purpose of the paper is to introduce an innovative methodological scheme for strategic planning decisions in public administrations, based on foresight, roadmapping and large participation processes. Design/methodology/approach Starting from the main literature contribution on Regional Innovation Systems, foresight and decision-making processes, an innovative methodology has been elaborated for strategic planning, based on innovation and large participation processes. A practical application is also described with regards to strategic planning in Tuscany (IT) for Smart Specialisation Strategy (S3). Findings On a practitioner perspective, the methodology elaborated addresses strategic planning uncertainties, both when problem setting and in solution finding; a detailed application is provided, easily to be adapted to other regions, and main findings are related to regional innovation governance enforcement. Research limitations/implications Being the Tuscany S3 in the implementation phase, it is not possible to verify the adequacy of alternatives selected. Only mid-term evaluations will allow a deeper insight on the effectiveness of the methodology adopted. Practical implications The methodology represents a useful tool for public administrations in charge of strategic planning and in particular for S3, as an ex ante requirement for European Structural and Investment Funds. The description of the case of Tuscany provides practical hints for the methodology application. Social implications The methodology presents interesting social implications related to the large involvement of stakeholders and quadruple helix within regional strategic planning. Originality/value Within the framework of Regional Innovation Systems, strategic planning decisions are addressed with a scheme based on foresight and large participation processes. European Commission requirements are fully taken into consideration by the methodology. The methodology is easy to be adopted and customised to specific needs of other regions.",
@@ -595,6 +663,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-07-2015-0040",
+      "title": "Global food security: assessing trends in view of guiding future EU policies",
+      "abstract": "Purpose A foresight process was put in place to examine potential developments that can affect the world food situation in 2030 to identify the most useful areas for European Union (EU) policy intervention. Design/methodology/approach Four interactive workshops involving over 100 experts were organised. The structure of the foresight was designed based on the following five objectives: envision the future of food systems, agree on the most crucial drivers of change affecting food security, reach a consensus on a likely vision for 2030, challenge this vision and analyse current policies and policy needs in terms of responsiveness and resilience to food security future challenges. Findings The study contains four key messages accompanied by several related policy recommendations for the immediate and medium term to enable the EU to contribute to achieving food security by 2030. These refer to the transformation of agriculture production systems, the enabling environment, trends in production and consumption and demand-driven food systems as important determinants of sustainable food security. The study recommends a stronger coherence and coordination between different EU policies impacting food security. The development of urban areas is an overlooked challenge for food security as well as the contribution of trade and demand-side dynamics. Originality/value This is one of the very few attempts to look at food security with a system approach. A new paradigm shift is proposed: securing “regular” access to adequate food for the majority of the 8-9 billion people who will live on earth in the period 2030-2050, while addressing the food insecurity of a fraction of that total, is how a future European food security policy should be approached.",
+      "date": "2016-09-12",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-07-2015-0040",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -752,6 +837,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1080/13691457.2017.1320053",
+      "title": "Current challenges and emerging signposts: the future of social work education in Europe",
+      "abstract": "",
+      "date": "2017-05-25",
+      "journal": "European Journal of Social Work",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13691457.2017.1320053",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.17265/2159-5526/2017.05.002",
       "title": "Sustainable Futures: Comparing Methodologies for Analyzing Citizen Visions in Europe",
       "abstract": "",
@@ -817,6 +919,23 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/03906701.2017.1378153",
+      "title": "Future perspectives on work and family dynamics in Southern Europe: the importance of culture and regional contexts",
+      "abstract": "",
+      "date": "2017-10-03",
+      "journal": "International Review of Sociology",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/03906701.2017.1378153",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1002,7 +1121,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1088,6 +1207,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/2500-2597.2018.3.20.28",
+      "title": "The Future of the Italian Electricity Generation Sector. An Analysis of the Possible Strategic Models",
+      "abstract": "The present paper investigates the possible future evolution of the Italian power system. In particular, the generation sector is considered by analyzing its recent development, which has been pushed forward by EU regulations which support the deployment of renewables-based power plants. These radical changes will determine a restructuring of the system and it is therefore of fundamental importance to try to understand which trajectories its possible evolution could take according to different market and economic conditions. To this aim, a scenario analysis is implemented in order to determine the strategic implications that the various situations can yield for the generators. As a result, four strategic models are envisaged, namely Traditional Generator, Innovative Generator, Green Generator, and Energy Service Provider.",
+      "date": "2018-09-10",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/2500-2597.2018.3.20.28",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1381,6 +1517,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/ijerph182010996",
+      "title": "Future Challenges for Work-Related Health Promotion in Europe: A Data-Based Theoretical Reflection",
+      "abstract": "This contribution is a theoretical reflection based on statistical and empirical data as well as concepts proposed by other authors or institutions. Based on the thesis that the respective social developments equally influence and limit the orientation and design of workplace health promotion, this article deals with the challenges that arise from the contemporary social, political and economic developments for a needs-oriented and effective workplace health promotion. On the basis of a historical review of the lines of development in workplace health promotion, beginning with the Ottawa Charter in 1986, the field of tension in which work-related health promotion approaches generally operate is first outlined. Based on the results of a keyword search in relevant European statistics databases and specialized databases on the topics of demographic change, labor migration and digitalization and flexibilization of work, current development trends in the world of work are traced, priority desiderata for a future design of health promotion are derived from these, and their chances of realization are reflected upon. On the basis of the data collected, it becomes clear that today’s world of work is characterized by multidimensional diversification processes, which are accompanied by the risk of worsening social inequalities. The conclusion is that future concepts of workplace health promotion must be more universal than previous approaches, which are often limited to the focus of individual behavioral prevention. The attempt to promote workplace health promotion with economic benefit arguments also runs the risk of reinforcing social inequality. The task of effective workplace health promotion, conversely, must be to initiate critical reflection on current priorities.",
+      "date": "2021-10-19",
+      "journal": "International Journal of Environmental Research and Public Health",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/ijerph182010996",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1088/1755-1315/906/1/012017",
       "title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
       "abstract": "Abstract One of the most important goals of the European Union is to provide citizens of the Member States security and stability in fuel and electricity sectors. The United Nations has defined 17 goals and 169 actions to achieve sustainable development of the world. The goals were to improve the quality of life, reduce the level of poverty, inequalities in the world and sustainable development in terms of climate and environmental protection. The article presents an analysis of the implementation of one of the assumed goals, i.e., sustainable development in the field of Affordable and clean Energy in the European Union. This goal is to ensure that every citizen has access to stable, sustainable, and modern energy at an affordable price. Among others, indicators such as energy import dependency, energy productivity, share of renewable energy in gross final energy consumption, final energy consumption in households per capita were analysed. The authors analysed the trends of the above-mentioned indicators in the European Union, with particular emphasis on Poland. In order to be able to predict how the analysed phenomena will develop until 2030, the authors built forecasts. For this purpose, among others, ARIMA models were used. The authors created several dozen models, from among which model with the smallest ex post errors and the lowest value of information criteria were selected. The models allowed to determine the degree of achievement of the set goals. They also allowed the designation of scenarios for the potential development of the analysed indicators.",
@@ -1411,6 +1564,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.15211/soveurope720215060",
+      "title": "New Strategic Foresight in EU",
+      "abstract": "The article deals with the consideration of the concept and practice of the new strategic foresight being developed in the European Union. It summarizes the EU's experience in clarifying the conceptual framework, in the conceptual apparatus, methodology and expected practice of using strategic foresight for the development and implementation of policies to achieve the declared goals of long-term development. The main attention is paid to the analysis of four interrelated factors assessed by the European Commission as determining its target setting for sustainable development: socio-economic, geopolitical, green and digital, as well as issues of political decisions monitoring. Based on the results of the work, conclusions were made that are of fundamental importance for the formation of the prognostic component of domestic policy, with a focus on the general socio-economic and political conditions necessary to create a strategic forecasting system that is not yet available in Russia, adequate to the requirements of modern development.",
+      "date": "2021-12-31",
+      "journal": "Contemporary Europe",
+      "publisher": "The Russian Academy of Sciences",
+      "url": "https://doi.org/10.15211/soveurope720215060",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-17T06:07:12.959880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
