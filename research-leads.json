@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T06:07:12.959880+00:00",
+  "updated_at": "2026-10-17T11:08:39.771139+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -89,6 +89,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1111/j.1564-913x.2015.00221.x",
+      "title": "Three scenarios for industrial relations in Europe",
+      "abstract": "Abstract The author outlines three scenarios for the future of industrial relations in Europe. The first – perhaps the most realistic – projects continuing erosion of national industrial relations systems and conditions of employment, in line with current trends. The second envisages that “elite reform” from above will succeed in re‐engineering industrial relations and workers' protection according to an ideal social policy agenda – an unlikely prospect given the overriding importance of financial considerations and globalized competition. The third scenario centres on a counter‐movement from below which presents trade unions with the daunting challenge of mobilizing the discontented far beyond their traditional constituency.",
+      "date": "2015-04-07",
+      "journal": "International Labour Review",
+      "publisher": "Open Library of the Humanities",
+      "url": "https://doi.org/10.1111/j.1564-913x.2015.00221.x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.17770/sie2015vol3.370",
       "title": "Demographic Challenges in Central and Eastern Europe in 21st Century",
       "abstract": "Due to the fact that the least favorable situation in terms of population is in the countries of Central and Eastern Europe, the article presents the demographic position of these countries, the challenges and risks associated with the demographic crisis, the existing policy guidelines for families and points to the long-term perspective to the next 60 years (graying society). The aim of this article is to present the scale of the demographic crisis but also describe the consequences associated with it, and the challenges faced by each country in the future in the relation to the aging population. The research methods used in this work is desk research, analysis and interpretation of available statistical data and descriptive method based on the available literature.",
@@ -118,7 +135,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -237,7 +254,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -412,6 +429,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.15199/62.2016.3.35",
+      "title": "Air pollution emission reduction scenarios for Europe Scenariusze ograniczania emisji zanieczyszczeń powietrza dla Europy",
+      "abstract": "",
+      "date": "2016-03-05",
+      "journal": "PRZEMYSŁ CHEMICZNY",
+      "publisher": "Wydawnictwo SIGMA-NOT, sp. z.o.o.",
+      "url": "https://doi.org/10.15199/62.2016.3.35",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.renene.2015.10.008",
       "title": "Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe – Scenarios for power sector and transmission infrastructure in 2030 and 2050",
       "abstract": "",
@@ -441,7 +475,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -458,7 +492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -548,6 +582,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.esr.2016.06.001",
+      "title": "Some future scenarios of Russian natural gas in Europe",
+      "abstract": "",
+      "date": "2016-06-30",
+      "journal": "Energy Strategy Reviews",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.esr.2016.06.001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/sbm-10-2014-0043",
       "title": "The future of professional football",
       "abstract": "Purpose – The purpose of this paper is to explore the future of professional soccer by 2025. Scientific foresight studies on this industry do not yet exist despite its current position at a crossroads: toward further exploitation of profit potential? Or clear commitment to the traditional European Model of Sport? Design/methodology/approach – The authors conducted a Delphi-based scenario study. In total, 62 high-level experts from sport, business, and society evaluated the probability of occurrence, impact, and desirability of 15 future projections over at least two rounds. The resulting 5,940 quantitative judgments and 670 qualitative comments were condensed into probable scenarios and surprising wildcards. Findings – Two probable scenarios for European professional soccer by 2025 exist: in an extrapolation scenario, clubs will reap long-term gains from fulfilling public demands regarding stadium security, competitive balance, and social engagement. The less likely alternative is an extensive commercialization, including a short-term exploitation of all imaginable income sources, such as virtually augmented stadiums, financial investors, and league-owned broadcasting channels. Research limitations/implications – The findings are primarily based on qualitative research and an all-German sample. Further studies could incorporate additional quantitative data or might survey an international panel to increase predictive accuracy. Originality/value – The paper is novel in that it examines a yet unaddressed research gap – the future of professional soccer – with a common scientific foresight method that is already established in sport management research – the Delphi technique.",
@@ -562,6 +613,23 @@
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
       "last_seen": "2026-10-16T17:41:12.313439+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3935/rsp.v23i2.1371",
+      "title": "Konferencija: Improving Poverty Reduction in Europe: Lessons from the Past, Scenarios for the Future",
+      "abstract": "",
+      "date": "2016-07-26",
+      "journal": "Revija za socijalnu politiku",
+      "publisher": "Pravni Fakultet Sveucilista u Zagrebu (Law School of the University of Zagreb)",
+      "url": "https://doi.org/10.3935/rsp.v23i2.1371",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -680,6 +748,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
       "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.25071/2369-7326.40256",
+      "title": "Imaginary scenarios: Literature and Democracy in Europe",
+      "abstract": "The main focus in this paper is on the European public intellectual: literary writers presenting their critical ideas and imaginaries on society, and critiquing the (dis)function and (dis)agreement in politics. The concept ‘imaginary scenario’ will be implemented to investigate imaginative scripts and settings constructed by authors to visualize democratic structures, as such commenting on political and social events and ideas. Two European writers from different nation-states, the French M. Houellebecq (Submission) and the Portugese Gonçalo M. Tavares (Learning to pray in the age of technique) build their novels around a Vorstellung of how (future) individuals and people in power could act and speak. Similarities and differences in these author’s strategies and visionaries will be examined. The ‘imaginary scenario’ is based on Charles Taylor (2004) and Elena Esposito (2007), and as surreal-perspective evidently tells something about the experience of the present. Our claim is that these European writers have to be considered in a critical context beyond the save haven of autonomy: in their novels they address the reader as citizen and invite him to reflect on democratic practices. Thus, these European scenarists prompt us to reconsider what it means to live in the EU and to reflect on its political realities and perspectives.",
+      "date": "2016-10-11",
+      "journal": "Pivot: A Journal of Interdisciplinary Studies and Thought",
+      "publisher": "York University Libraries",
+      "url": "https://doi.org/10.25071/2369-7326.40256",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T11:08:39.771139+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
