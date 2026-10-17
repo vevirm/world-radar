@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T11:08:39.771139+00:00",
+  "updated_at": "2026-10-17T14:23:50.948226+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -237,7 +237,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -480,6 +480,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1002/fut.21780",
+      "title": "Convenience Yields and Risk Premiums in the EU‐ETS—Evidence from the Kyoto Commitment Period",
+      "abstract": "Abstract We examine convenience yields and risk premiums in the EU‐wide emissions trading scheme (EU‐ETS) during the first Kyoto commitment period (2008–2012). We find that the market has changed from initial backwardation to contango with significantly negative convenience yields in futures contracts. We further examine the impact of interest rate levels in the Eurozone, the increasing level of surplus allowances and banking, as well as returns, variance, or skewness in the EU‐ETS spot market. Our findings suggest that the drop in risk‐free rates during and after the financial crisis has impacted on the deviation from the cost‐of‐carry relationship for emission allowances (EUA) futures contracts. Our results also illustrate a negative relationship between convenience yields and the increasing level of inventory during the first Kyoto commitment period, providing an explanation for the high negative convenience yields. Finally, we find that market participants are willing to pay an additional risk premium in the futures market for a hedge against increased volatility in EUA prices. Overall, our results contribute to the literature on the determinants and empirical properties of convenience yields and risk premiums for this relatively new class of assets. © 2016 Wiley Periodicals, Inc. Jrl Fut Mark 36:587–611, 2016",
+      "date": "2016-04-15",
+      "journal": "Journal of Futures Markets",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/fut.21780",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.31338/1641-2478pe.4.15.5",
       "title": "The state of democracy in the European Union in scenarios: federation, empire and Europe à la carte",
       "abstract": "The aim of the article is to present possible scenarios on maintaining democracy in the EU, while assuming different hypothetical directions in which it could develop as a federation, empire and Europe à la carte. Selected mechanisms, norms and values of the EU system that are crucial for the functioning of democracy in the European Union are the subject of this research. The abovementioned objective of scenario development is achieved through distinguishing the notions of policy, politics and polity in the research. In the analysis of the state of democracy in the European Union both the process (politics) and the normative approach (policy) have been adopted. The characterised norms, structures, values and democratic procedures in force in the EU will become a reference point for the projected scenarios. The projection refers to a situation when the existing polity transforms into a federation, empire or Europe à la carte. The article is to serve as a projection and is a part of a wider discussion on the future of the basis on which the European Union is build.",
@@ -526,7 +543,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -752,6 +769,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/jtf-05-2015-0033",
+      "title": "The geopolitics of future tourism development in an expanding EU",
+      "abstract": "Purpose The purpose of this paper is to assert the link between the process of EU accession, the consolidation of democratic processes and the improvement of economic and tourism infrastructure to incoming tourism flows. Design/methodology/approach The methodology of this paper involves explanation of an analysis exploring links between governmental systems and the order necessary for economic development and tourism. The argument is supported by the recent history of tourism development in three countries, two within the EU and one outside. Findings Accession to the EU (especially in the case of Eastern European countries) constitutes a way to emulate the democratic freedoms and greater economic prosperity of existing EU member states. Tourism is one of the areas of economy that benefits from the stability and growth EU membership can bring. Accession to the EU has had beneficial effects for acceding in terms of political stability and tourism growth. Originality/value The opportunities that EU membership can bring to tourism development for example (also strategies to exploit these opportunities) depend to a large degree on the international relations between the EU and its rivals. The extent to which tourism demands ebb and flow is governed by a range of factors, but the issues of conflict and security are game breakers. Understanding the factors and trends involved in the peaceful resolution of conflict (democratic model) or use of force to resolve conflict (military model) is key in the analysis of future tourism opportunities.",
+      "date": "2016-09-12",
+      "journal": "Journal of Tourism Futures",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/jtf-05-2015-0033",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.25071/2369-7326.40256",
       "title": "Imaginary scenarios: Literature and Democracy in Europe",
       "abstract": "The main focus in this paper is on the European public intellectual: literary writers presenting their critical ideas and imaginaries on society, and critiquing the (dis)function and (dis)agreement in politics. The concept ‘imaginary scenario’ will be implemented to investigate imaginative scripts and settings constructed by authors to visualize democratic structures, as such commenting on political and social events and ideas. Two European writers from different nation-states, the French M. Houellebecq (Submission) and the Portugese Gonçalo M. Tavares (Learning to pray in the age of technique) build their novels around a Vorstellung of how (future) individuals and people in power could act and speak. Similarities and differences in these author’s strategies and visionaries will be examined. The ‘imaginary scenario’ is based on Charles Taylor (2004) and Elena Esposito (2007), and as surreal-perspective evidently tells something about the experience of the present. Our claim is that these European writers have to be considered in a critical context beyond the save haven of autonomy: in their novels they address the reader as citizen and invite him to reflect on democratic practices. Thus, these European scenarists prompt us to reconsider what it means to live in the EU and to reflect on its political realities and perspectives.",
@@ -866,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1840,6 +1874,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.enpol.2023.113573",
+      "title": "Evaluating current effects of upcoming EU Carbon Border Adjustment Mechanism: Evidence from China's futures market",
+      "abstract": "",
+      "date": "2023-06-30",
+      "journal": "Energy Policy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.enpol.2023.113573",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su151310582",
       "title": "Organic Agriculture in the Context of 2030 Agenda Implementation in European Union Countries",
       "abstract": "Organic agriculture is considered an important component of sustainable development because it promotes environmental sustainability and social responsibility, involving the use of practices that minimize the negative impact of agriculture on the environment and human health. Through this research, we aim to gain a more comprehensive understanding of the current state of and perspectives on specific indicators of organic agriculture from the perspective of the SDGs assumed by EU member countries in the context of the implementation of the 2030 Agenda for Sustainable Development. Based on Eurostat data covering the timeframe from 2008 to 2021, an ARIMA model was used to analyze the data and forecast trends in the selected indicators until 2030. The results of this unique study provide relevant information on the indicators and countries for which positive developments are expected up to 2030, as opposed to those indicators for which mixed or negative developments are forecast. The findings of this research empower policymakers, researchers, and other stakeholders to identify possible negative developments and take appropriate corrective action, with the aim of achieving the goals proposed in the 2030 Agenda for Sustainable Development.",
@@ -1869,7 +1920,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1976,6 +2027,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.heliyon.2024.e33468",
+      "title": "Equilibrium bifurcation and extreme risk in the EU carbon futures market",
+      "abstract": "",
+      "date": "2024-07-31",
+      "journal": "Heliyon",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.heliyon.2024.e33468",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1002/ese3.1907",
       "title": "Research on the risk spillover effect of carbon emission trading market and various industry markets in China and the European Union",
       "abstract": "Abstract Widely concerns over the carbon emission problems have been aroused. Prior studies have documented the correlation between the carbon emission market and industries separately. This study compared the tail risks and risk spillover effect of the carbon emission and 11 industries markets in China and the European Union (EU) by using the multivariate multi‐quartile conditional autoregressive at‐risk model. Moreover, to evaluate the risk spillover of each market under extreme risk conditions in time domain and frequency domain, DY spillover index and BK spillover index were constructed via generalized forecast error variance decomposition and generalized causation spectrum, respectively. Findings are as follows: (1) The tail risks and fluctuation of the trend of Chinese industry markets reflects more higher and larger than those in the EU; (2) The EU suffers from smaller external shocks, while China has the opposite result and can recover relatively faster; (3) In China, energy, industrial, information technology, financial, real estate, consumer goods, carbon emissions, and discretionary consumption industries are risk spillover industries, while healthcare, materials, telecommunication services, and utilities industries are risk receiving industries. In contrast, the risk spillover industries in the EU remain consistent with those of the Chinese markets except for the materials, discretionary consumption, consumer goods, information technology and real estate industries. (4) On the short‐term, medium‐term and long‐term scales, the risk spillover of China's carbon emission trading market and various industries is basically consistent with that of the EU. These findings contribute to reducing greenhouse gas emissions and achieving the goal of carbon peak and carbon neutrality.",
@@ -1989,6 +2057,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12519",
+      "title": "Futures in EU governance: Anticipatory governance, strategic foresight and EU Better Regulation",
+      "abstract": "Abstract Contemporary politics require a swift and responsive policy‐making approach to respond to emergency situations quickly and to anticipate them in a strategic manner. Maintaining decision‐making agility in times of urgency makes it necessary to think ahead of stress‐impacting situations. To increase systemic resilience, policies must be designed in an adaptive way. Strategic options, futurity of policies and potential futures must be elaborated and kept in sight when developing policies. Anticipatory governance and strategic foresight activities are elements of such an adaptive governance mode. To transform decision‐making in a future‐oriented way, these forward‐planning elements need to be institutionalised to support governance resilience. This article asks how anticipatory governance and strategic foresight are embedded within EU multilevel governance. It investigates the EU Better Regulation Agenda to understand how anticipatory governance already contributes to EU governance. Additionally, it discusses how the institutionalisation of strategic foresight can contribute to EU anticipatory governance.",
+      "date": "2024-09-16",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12519",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2007,6 +2092,23 @@
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-16T23:31:00.431722+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.eneco.2024.107931",
+      "title": "Global spillovers of US climate policy risk: Evidence from EU carbon emissions futures",
+      "abstract": "",
+      "date": "2024-11-30",
+      "journal": "Energy Economics",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.eneco.2024.107931",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
