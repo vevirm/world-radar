@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T19:42:10.974894+00:00",
+  "updated_at": "2026-10-17T22:13:53.189031+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -135,7 +135,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -204,6 +204,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2015.06.005",
+      "title": "Global trends and the economic crisis: Future alternative European growth strategies",
+      "abstract": "",
+      "date": "2015-09-30",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2015.06.005",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1189,7 +1206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1206,7 +1223,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1223,7 +1240,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1495,7 +1512,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1614,7 +1631,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1632,6 +1649,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2020.102690",
+      "title": "Stakeholders’ preferences for the future of transport in Europe: Participatory evaluation of scenarios combining scenario planning and the multi-actor multi-criteria analysis",
+      "abstract": "",
+      "date": "2021-03-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2020.102690",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1755,6 +1789,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1590/01047760202127012517",
+      "title": "Potential distribution of two lynx species in europe under paleoclimatological scenarios and anthropogenic climate change scenarios",
+      "abstract": "",
+      "date": "2021-12-31",
+      "journal": "CERNE",
+      "publisher": "FapUNIFESP (SciELO)",
+      "url": "https://doi.org/10.1590/01047760202127012517",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1002/sd.2290",
       "title": "How Sustainable Development Goals interlinkages influence European Union countries’ progress towards the 2030 Agenda",
       "abstract": "Abstract The analysis of interlinkages between the sustainable development goals (SDGs) and the assessment of countries' progress towards the goals are two prominent research areas in the debate around the 2030 Agenda. The central questions are whether countries are progressing towards the goals at sufficient speed, and whether the SDGs can be achieved in their entirety. While it is evident that trade‐offs between the 2030 Agenda's objectives might prevent countries from achieving all 17 SDGs simultaneously, the extent to which interactions (synergies and trade‐offs) between the goals facilitate or hinder countries' progress towards achieving the 2030 Agenda has so far received little attention. The present study combines the two topics by linking the analysis of synergies and trade‐offs between the SDGs in the European Union (EU) member states with a longitudinal assessment of these countries' progress towards the goals. SDG interlinkages are assessed through Spearman's rank order correlation, while progress is calculated according to Eurostat's progress measure. Using regression analysis, we find a significant negative relationship between countries' progress and the shares of trade‐offs among SDG indicators and a moderate positive relationship between progress and synergies, suggesting that trade‐offs have a bigger influence on the pace of countries' progress towards the goals than synergies. In order to achieve the SDGs by 2030, it is thus crucial to not only exploit synergies between the goals but also to overcome trade‐offs.",
@@ -1820,6 +1871,23 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2022.102918",
+      "title": "Probability and desirability of future developments – Results of a large-scale Argumentative Delphi in support of Horizon Europe preparation",
+      "abstract": "",
+      "date": "2022-04-30",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2022.102918",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1937,7 +2005,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1971,7 +2039,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1988,7 +2056,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2005,7 +2073,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2039,7 +2107,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2056,7 +2124,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2095,6 +2163,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.gloenvcha.2023.102766",
+      "title": "Using the Nature Futures Framework as a lens for developing plural land use scenarios for Europe for 2050",
+      "abstract": "",
+      "date": "2023-12-31",
+      "journal": "Global Environmental Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.gloenvcha.2023.102766",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/challe15010008",
+      "title": "Re-Imagining Alternative Futures through Empowerment",
+      "abstract": "The physical conquest of European powers on the rest of the world for the imposition of an accumulation of wealth monopoly and the destruction of native societies remains the foundation of the current global economy. Despite concepts of human flourishing, a term connected to empowerment that acts as an architectural structure within the development and sustainability discourse, the destruction of our planet and collective human wellbeing is not at the forefront of international political agendas. Scholars argue that the development agenda is maldevelopment due to the unrequested interventions delivered to communities, mainly in the Global South. Thus, despite the Sustainable Development Goals (SDGs), the implementation of inner dimensions that facilitate empowerment and are an integral part of development is missing from these sophisticated global frameworks. This research article repositions empowerment and compassion at the centre of the sustainable development discourse by drawing on the Inner Development Framework, particularly goal one—Being—‘Relationship to Self’ and goal three—Relating—‘Caring for others and the World’ and the Capabilities Theory as a guiding theoretical underpinning. On this basis, this article presents a qualitative interpretative study that examines the lived experience of women and their journeys to empowerment. The key findings indicate an intricate relationship between wellbeing and empowerment and the realisation of inner development as a tool to re-imagine alternative futures. In addition, industries are profiteering from a sustainability and development agenda that is failing to address the disablement of communities by a paternalistic approach to empowerment.",
+      "date": "2024-02-20",
+      "journal": "Challenges",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/challe15010008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.heliyon.2024.e33468",
       "title": "Equilibrium bifurcation and extreme risk in the EU carbon futures market",
       "abstract": "",
@@ -2124,7 +2226,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2180,6 +2282,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.26754/ojs_zarch/zarch.20242311088",
+      "title": "KJELL NILLSSON, STEPHAN PAULEIT, SIMON BELL, CARMEN AALBERS Y THOMAS SICK NIELSEN (eds.)  - Peri-urban futures. Scenarios and models for land use change in Europe",
+      "abstract": "KJELL NILLSSON, STEPHAN PAULEIT, SIMON BELL, CARMEN AALBERS, THOMAS SICK NIELSEN (eds.) Peri-urban futures: Scenarios and models for land use change in Europe Springer, Berlín-Heidelberg, 2013, 453 pp. Tapa dura, 117,69 €Idioma: inglésISBN: 978-3-642-30528-3DOI: 10.1007/978-3-642-30529-0",
+      "date": "2024-12-26",
+      "journal": "ZARCH",
+      "publisher": "Universidad de Zaragoza",
+      "url": "https://doi.org/10.26754/ojs_zarch/zarch.20242311088",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1017/s026646232400237x",
       "title": "PP66 International Horizon Scanning Initiative (IHSI) : Time to Review the Need for Stand-Alone National Horizon Scanning?",
       "abstract": "Introduction Ireland is a member of the International Horizon Scanning Initiative (IHSI) and has access to the full horizon for medicines across multiple disease areas and specialized reports on high-impact technologies within disease areas (IHSI High Impact Reports [HIRs]). Health technology developers (HTDs) provide a notification to HTA agencies and payers on intent to seek reimbursement for a technology in the preceding two years. Methods Information on technologies submitted to the national HTA agency in 2023 was selected for comparison to information in the IHSI database. The IHSI system detects products prior to regulatory approval. The national notification system (NNS) can receive information post-licensing. We examined how many products were received in the NNS that were either in the regulatory process or licensed in the EU. We sought to compare key information in the NNS and the IHSI database to identify areas of duplication. Areas where information from NNS could complement the IHSI database were highlighted. HIRs were not included in this assessment. Results In 2023, 20 percent of products submitted by HTDs via the NNS were already licensed. To compare the information provided in IHSI and the NNS, a sample of 35 technologies common to both systems was selected. The IHSI and the NNS contain multiple data fields (154 in IHSI and 72 in NNS) across domains including information on product characteristics, regulatory information, clinical trial data, and cost. The exceptional fields specific to the Irish context were compassionate access scheme availability in Ireland, Ireland-specific patient population estimates, and local pricing and reimbursement proposals. Conclusions Receipt of information from HTDs remains important, particularly country-specific information. There are efficiencies in identifying technologies via an independent horizon scanning system, not reliant on submissions by HTDs. Such a system could facilitate joint assessment, joint early advice, and joint problem-solving between countries. Joint efforts can also facilitate broader scope on how horizon scanning can be used to increase health system preparedness.",
@@ -2226,7 +2345,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2260,7 +2379,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2277,7 +2396,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2294,7 +2413,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2328,7 +2447,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2345,7 +2464,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2396,7 +2515,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2413,7 +2532,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2430,7 +2549,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2447,7 +2566,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2481,7 +2600,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2515,7 +2634,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2583,7 +2702,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2600,7 +2719,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2617,7 +2736,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2634,7 +2753,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
