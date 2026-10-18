@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T16:51:25.738986+00:00",
+  "updated_at": "2026-10-18T19:23:54.762757+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -16,7 +16,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -378,6 +378,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3905/jot.2016.11.1.038",
+      "title": "Analysis of Execution Methods in U.S. and European Futures",
+      "abstract": "",
+      "date": "2015-12-31",
+      "journal": "The Journal of Trading",
+      "publisher": "Pageant Media US",
+      "url": "https://doi.org/10.3905/jot.2016.11.1.038",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s40309-015-0080-y",
       "title": "Futures of European welfare models and policies: seeking actual research questions, and new problem-solving arsenal for European welfare states",
       "abstract": "",
@@ -390,7 +407,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1002,7 +1019,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1461,7 +1478,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1563,7 +1580,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1614,7 +1631,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1665,7 +1682,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1818,7 +1835,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1937,7 +1954,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2107,7 +2124,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2175,7 +2192,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2532,7 +2549,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2583,7 +2600,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3115,6 +3132,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.12688/openreseurope.15906.1",
+      "title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "abstract": "Background: Our oceans remain one of the last untapped source of renewable energy. The predictability and reliability of ocean energy technologies could con- tribute significantly to the global energy transition. By 2022, ocean energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development. Methods: This study investigates the potential progression of the wave and tidal energy sector in the next three decades based on the offshore wind sector in the past three decades. Two different models were developed from the yearly capacity increase of offshore wind in Europe and applied to the wave and tidal energy sector. Results: According to both models, the 40 GW 2050 target for ocean energy set by the European Commission in 2020 could be reached if European coastal countries adopt supportive policies for both technologies immediately. A sensitivity analysis shows further that a small delay right now will have tremendous negative impacts to fulfill the EU goals and the contribution of ocean energy to the energy transition. Conclusions: In conclusion, the ocean energy sector shows a strong growth potential and is capable of supporting the European and global climate targets substantially by 2050. Learnings from the offshore wind sector can help scope and support the growth of ocean energy technologies.",
+      "date": "2023-06-20",
+      "journal": "Open Research Europe",
+      "publisher": "F1000 Research Ltd",
+      "url": "https://doi.org/10.12688/openreseurope.15906.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.enpol.2023.113573",
       "title": "Evaluating current effects of upcoming EU Carbon Border Adjustment Mechanism: Evidence from China's futures market",
       "abstract": "",
@@ -3200,6 +3234,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1038/s41597-023-02532-1",
+      "title": "Experts’ assessments of migration scenarios between the Middle East & North Africa and Europe",
+      "abstract": "Abstract We describe data collected among 138 migration experts about the repercussions of scenarios of social change on migration between the Middle East & North Africa and Europe, during the period 2021–2030. Scenarios include changes in the cultural, demographic, economic, and political determinants of migration in sending and receiving countries. Assessments focus on the change in the number of family, work, and return migrants, the number of refugees, and the likelihood of achieving safe, orderly, and regular migration. Experts were at the moment of the survey active in European research centers or European (supra-) national governmental or civil society organizations. The survey features a factorial design, which allows for identifying a causal relationship between the experts’ assessments and the scenarios of social change. Our data may be used to estimate projection models of future migration flows, map out what experts consider as critical migration issues for the region, and identify areas of agreement or disagreement between them. As such, our dataset may illuminate decision-making regarding migration policies in Europe and beyond.",
+      "date": "2023-09-20",
+      "journal": "Scientific Data",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/s41597-023-02532-1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.12688/openreseurope.16016.1",
       "title": "Understanding the importance of Gender Action Planning in EC Horizon projects: a case study",
       "abstract": "Against a backdrop of continued gender challenges within the European manufacturing and technology domains, and wider society in general, such as gender balance and inequality, the gender pay gap, the glass ceiling/sticky floor, the glass cliff, the invisible woman and the under-representation of women in STEM careers and senior positions, and framed within the latest European Commission guidelines and requirements on equality, diversity and inclusion, this paper will report on the actions and research undertaken by the voluntary Gender Action Planning (GAP) team within a large, multinational, complex Industry4.0 Horizon2020 research and innovation project to try to address gender inequalities and gender balance, as well as to provide safe spaces, supportive communities and raised awareness of gender issues over the four year lifespan of the project. It is hoped that the learning from the GAP team may provide a good exemplar for future Horizon programme proposal submissions where a Gender Plan is now a mandated requirement.",
@@ -3265,6 +3316,23 @@
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/21582041.2023.2289661",
+      "title": "EU enlargement in wartime Europe: three dimensions and scenarios",
+      "abstract": "",
+      "date": "2023-12-10",
+      "journal": "Contemporary Social Science",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/21582041.2023.2289661",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -3349,6 +3417,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.24084/repqj11.323",
+      "title": "Investment Scenarios for Low Carbon Electricity in Europe",
+      "abstract": "In a context of carbon emissions reduction, this article aims at widening the scope of the OECD - Nuclear Energy Agency (NEA) report entitled « The interaction of Nuclear Energy and Renewable: System Effects in Low Carbon Electricity System » (2012) to the European electric supply by studying the conditions of industrial investments in low carbon technologies over the next 30 years. These conditions can be either favorable or not to, on the one hand, the renewable energies and, on the other hand, the nuclear technologies, according to 3 main dynamically quantified drivers: 1. 2. 3. \"Technical change\", i.e. relative evolutions of efficiency and costs of available technologies (gas, coal, wind…); \"Policy\", i.e. incentive framework given by European energy policies (nuclear, climate...); \"Economic\", i.e. structure of electricity markets (level of centralization...). A total of 24 scenarios are developed using an imaginative approach, i.e. assuming different possibilities for the future change in 3 main drivers. Finally we have found: - 2 scenarios of them prove to be the most favorable to renewable energies; - 2 scenarios favorable to both renewable and nuclear, for the interaction of nuclear and renewable in the electricity system is not necessarily favorable to nuclear investment. These scenarios are then discussed in view of the quantitative drivers mentioned above.",
+      "date": "2024-01-24",
+      "journal": "RE&PQJ",
+      "publisher": "Cultech Publishing Sdn. Bhd.",
+      "url": "https://doi.org/10.24084/repqj11.323",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3642,6 +3727,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1002/for.3224",
+      "title": "Cross‐Learning With Panel Data Modeling for Stacking and Forecast Time Series Employment in Europe",
+      "abstract": "ABSTRACT This paper describes the use of cross‐learning with panel data modeling for stacking regressions of different predictive models for time series employment across occupations in Europe during the last 15 years. The ARIMA and state space models were used for the predictions on the first‐level model ensemble. On the second level, the time series predictions of these models were combined for stacking, using panel data estimators as a cross‐learner and also exploiting the strong hierarchical data structure (time series nested in occupational groups). Very few methods adopt stacking to generate ensembles for time series regressions. Indeed, to the best of our knowledge, panel data modeling has never before been used as a cross‐learner in staking strategies. Empirical application was used to fit employment by occupations in 30 European countries between 2010 Q1 and 2022 Q4, using the last year as the test set. The empirical results show that using panel data modeling as a multivariate time series cross‐learner that stacks univariate time series base models—especially when they do not produce accurate predictions—is an alternative worthy of consideration, also with respect to such classical aggregation schemes as optimal and equal weighting.",
+      "date": "2024-11-21",
+      "journal": "Journal of Forecasting",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/for.3224",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.54254/2753-8818/61/20241490",
       "title": "Impact and projections of heat waves and wildfires on societies in Western Europe",
       "abstract": "Due to climate change, heat waves and wildfires are frequent in Europe. Over the past few years, the number of days of heat waves has been significantly increased. Understanding the relationship between the occurrence of heat waves and the spread of wildfires, the reasons why Europe is the main disaster area, and the impact on its society are important to researchers and the public. This paper, through methods of literature review and case studies, analyzes the cases of 2022 Gironde wildfires in France, wildfires in Portugal, and extreme heat events in the United Kingdom. The paper recommends that countries should establish disaster prevention mechanisms to minimize the impact of extreme natural disasters, and should start reducing carbon emissions to control global warming to reduce the occurrence of extreme disasters such as wildfires and heat waves. This study also provides the analysis of future temperature trends in order to improve people's awareness of the global warming crisis, hoping that the earth will better, and human activities and global climate change will have a virtuous circle.",
@@ -3758,6 +3860,23 @@
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.12688/openreseurope.15906.2",
+      "title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "abstract": "Background Our oceans remain one of the last untapped large sources of renewable energy. The predictability and reliability of marine energy technologies could contribute significantly to the global energy transition. By 2022, marine energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development. Methods This study investigates the potential progression of the wave and tidal energy sector in the next three decades based on the offshore wind sector in the past three decades. Two different models were developed from the yearly capacity increase of offshore wind in Europe and applied to the wave and tidal energy sector. Results According to both models, the 40 GW 2050 target for marine energy set by the European Commission in 2020 could be reached if European coastal countries, including countries associated to the EU-27, adopt supportive policies for both technologies immediately. A sensitivity analysis shows further that a small delay right now will have tremendous negative impacts on fulfilling the EU goals and the contribution of marine energy to the energy transition. Conclusions The ocean energy sector shows a strong growth potential and is capable of supporting the European and global climate targets substantially by 2050. Lessons learned from the offshore wind sector can help scope and support the growth of marine energy technologies.",
+      "date": "2025-01-28",
+      "journal": "Open Research Europe",
+      "publisher": "F1000 Research Ltd",
+      "url": "https://doi.org/10.12688/openreseurope.15906.2",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -3893,6 +4012,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/forecast7020024",
+      "title": "Three Environments, One Problem: Forecasting Water Temperature in Central Europe in Response to Climate Change",
+      "abstract": "Water temperature is a fundamental parameter influencing a range of biotic and abiotic processes occurring within various components of the hydrosphere. This study presents a multi-step, data-driven predictive modeling framework to estimate water temperatures for the period 2021–2100 in three aquatic environments in Central Europe: the Odra River, the Szczecin Lagoon, and the Baltic Sea. The framework integrates Bayesian Model Averaging (BMA), Random Sample Consensus (RANSAC) regression, Gradient Boosting Regressor (GBR), and Random Forest (RF) machine learning models. To assess the performance of the models, the coefficient of determination (R2), mean absolute error (MAE), and root mean square error (RMSE) were used. The results showed that the application of statistical downscaling methods improved the prediction of air temperatures with respect to the BMA. Moreover, the RF method was used to predict water temperature. The best model performance was obtained for the Baltic Sea and the lowest for the Odra River. Under the SSP2-4.5 and SSP5-8.5 scenario-based simulations, projected air temperature increases in the period 2021–2100 could range from 1.5 °C to 1.7 °C and 4.7 to 5.1 °C. In contrast, the increase in water temperatures by 2100 will be between 1.2 °C and 1.6 °C (SSP2-4.5 scenario) and between 3.5 °C and 4.9 °C (SSP5-8.5).",
+      "date": "2025-05-29",
+      "journal": "Forecasting",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/forecast7020024",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4050,6 +4186,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.isci.2025.112943",
+      "title": "Scenarios for energy recovery from slaughterhouse wastes in Europe",
+      "abstract": "",
+      "date": "2025-07-31",
+      "journal": "iScience",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.isci.2025.112943",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.jclepro.2025.145849",
       "title": "Towards sustainable phosphorus use in the European Union: Evaluating resource cap scenarios",
       "abstract": "",
@@ -4080,6 +4233,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.12688/openreseurope.20255.1",
+      "title": "Improved local weather forecasting using machine learning",
+      "abstract": "In the context of island energy systems, the accurate forecasting of demand and supply is required for advanced energy management. Despite its primary reliance on mainland energy supplies, the German North Sea Island Borkum, integrates local renewable energy sources and storage solutions, aiming to phase out fossil fuel sources by 2030. This goal necessitates the precise modelling of energy demand and supply to optimize energy flows and ensure grid stability, especially during peak demand periods. The research focuses on improving forecasts for three key weather variables—outside air temperature, solar irradiance, and wind speed— owing to their direct impact on energy consumption and production. Statistical models were developed to improve the existing forecasts for these variables up to seven days in advance with hourly granularity. This study compiled over four years of historical data from January 2018 to June 2022, sourced from the German Meteorological Office (DWD), Météo-France, and the European Meteorological Office (ECMWF), encompassing in-situ measurements and numerical weather prediction (NWP) forecasts. The initial analysis compares external NWP forecasts with in-situ measurements, revealing that Météo-France’s AROME forecast has superior accuracy for short-term predictions. The study then proposed two methods for enhancing local weather forecasts on Borkum: machine learning models and dynamic weighting of third-party NWP forecasts. After rigorous selection and testing, Multilayer Perceptron models for air temperature and wind speed, along with a support vector machine regressor for solar irradiance, demonstrated significant improvements over NWP models in terms of mean absolute error (MAE) and mean bias error (MBE). The machine learning models notably outperformed NWP predictions, with wind speed forecasts showing a 35 to 50% improvement in MAE, air temperature forecasts achieving a 12 to 30% MAE reduction, and solar irradiance forecasts improving by 9 to 12%. In contrast, the dynamic weighting method only marginally increased short-term temperature forecast accuracy without outperforming all NWP models.",
+      "date": "2025-09-05",
+      "journal": "Open Research Europe",
+      "publisher": "F1000 Research Ltd",
+      "url": "https://doi.org/10.12688/openreseurope.20255.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4118,6 +4288,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.4467/2543859xpkg.24.010.22475",
+      "title": "Scenarios for the Development of Hydrogen Technology in Mobility in Europe",
+      "abstract": "This article aims to compare the time horizon of the EU hydrogen mobility policy with the potential commercialisation of this technology based on the law of market diffusion of innovation. There is growing discussion about using hydrogen as an alternative to fossil fuels in cars. This direction is further supported by EU policy and initiatives to ban the sale of new petrol and diesel cars from 2035. Alongside the development of electromobility, there is an intensification of research into technologies that will allow the widespread use of hydrogen-fuelled cars. The technology could become a future solution, primarily due to the zero-emission nature of the vehicles. However, the commercial potential of hydrogen-fuelled cars is a pertinent question. Can the interest in this technology grow sufficiently, and if so, when will it capture the early majority of the market? When can we expect hydrogen to gain a significant market share in the mobility sector? The Bass model, a reliable tool for forecasting, was used to answer these questions. The analysis of the diffusion of this innovation indicates that it is in its infancy, as its diffusion couldn’t be predicted within the time horizon adopted by the EU.",
+      "date": "2025-10-24",
+      "journal": "Prace Komisji Geografii Komunikacji PTG",
+      "publisher": "Uniwersytet Jagiellonski - Wydawnictwo Uniwersytetu Jagiellonskiego",
+      "url": "https://doi.org/10.4467/2543859xpkg.24.010.22475",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/land14112162",
       "title": "Contribution of European Agroforestry Systems to Climate Change Mitigation: Current and Future Land Use Scenarios",
       "abstract": "Agroforestry is a land use system that has recently been recognised as a strategic tool for greenhouse gas mitigation and as an integrated approach to sustainable land use due to its environmental benefits. Hence, information on its net carbon sequestration potential is crucial for future land use planning and sustainable development. This paper aims to estimate net emissions and removals from silvopastoral and silvoarable systems by quantifying their areas across the EU27, the UK, and Switzerland, utilising the Land-Use-based Integrated Sustainability Assessment land cover map and Copernicus high-resolution layers. The analysis identified a total of 9.2 Mha of silvopastoral and silvoarable areas across the study area, comprising approximately 6 Mha and 3.2 Mha, respectively, mainly clustered around the Mediterranean biogeographical region. Collectively, these land use systems could remove approximately 81.7 Mt of CO2 eq yr−1 while emitting roughly 49.9 Mt CO2 eq yr−1, resulting in a net removal of 31.8 Mt of CO2 eq yr−1. From a global perspective, the EU27 reported 3180.2 Mt of CO2 eq emissions in 2018, with the land use, land use change and forestry (LULUCF) sector acting as a net sink, removing 260.8 Mt CO2 eq, equivalent to −8.2% of total emissions. Agroforestry, when integrated within the agriculture sector, could further enhance its GHG mitigation, potentially offsetting the sector’s emissions by 54%. Additionally, expanding agroforestry systems on 30% of the identified target areas would sequester up to 49 Mt of CO2 eq yr−1 more and result in planting 1.7 billion trees more. These findings highlight the positive role of agroforestry systems in contributing to the EU’s 2030 emission reduction and tree planting targets and emphasise the need for integrated management approaches to enhance and maximise their mitigation potential.",
@@ -4131,6 +4318,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/app152111815",
+      "title": "Forecasting Renewable Scenarios and Uncertainty Analysis in Microgrids for Self-Sufficiency and Reliability: Estimation of Extreme Scenarios for 2040 in El Hierro (Spain)",
+      "abstract": "This study evaluates the feasibility of fully renewable energy systems on El Hierro, the smallest and most isolated Canary Archipelago Island (Spain), contributing to the broader effort to decarbonize the European economy. By 2040, the island’s energy demand is projected to reach 80–110 GWh annually, assuming full economic decarbonization. Currently, El Hierro faces challenges due to its dependence on fossil fuels and inherent variability of renewable sources. To ensure system reliability, the study emphasizes the integration of renewable and storage technologies. Two scenarios are modeled using HOMER Pro 3.18.4 software with probabilistic methods to capture variability in generation and demand. The first scenario, BAU, represents the current system enhanced with electric vehicles. While the second, Efficiency, incorporates energy efficiency improvements and collective mobility policies. Both prioritize electrification and derive an optimal generation mix based on economic and technical constraints, to minimize Levelized Cost Of Energy (LCOE). The approach takes advantage of El Hierro’s abundant solar and wind resources, complemented by reversible pumped hydro storage and megabatteries. Fully renewable systems can meet demand reliably, producing about 30% energy surplus with an LCOE of roughly 10 c€/kWh. The final BAU scenario includes 53 MW of solar PV, 16 MW of wind, and a storage system of 40 MW–800 MWh. The Efficiency scenario has 42 MW of solar PV, 11.5 MW of wind, and 35 MW–550 MWh of storage. Uncertainty analysis indicates that maintaining system reliability requires an approximate 10% increase in both installed capacity and costs. This translates into an additional 7 MW of solar PV and 6 MW–23.5 MWh of batteries in the BAU, and 6 MW and 4 MW–16 MWh in the Efficiency.",
+      "date": "2025-11-05",
+      "journal": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/app152111815",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4318,6 +4522,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.32819/202521",
+      "title": "Agro-ecological forecasting of rapeseed (Brassica napus) suitability in Ukraine under climate change scenarios",
+      "abstract": "Climate change poses increasing challenges to agricultural sustainability, particularly for crops such as rapeseed that are sensitive to thermal and hydrological conditions. The present study provides a spatially explicit forecast of rapeseed agro-ecological suitability across Ukraine under different climate change scenarios (SSP1–2.6, SSP2–4.5, and SSP5–8.5) and time frames (2021–2040, 2041–2060, 2081–2100). The utilisation of machine learning-based regression models, calibrated with historical yield data and a suite of bioclimatic and edaphic predictors, enabled the development of high-resolution suitability maps and the estimation of potential shifts in favourable cultivation areas. The analysis indicated a progressive decline in stable high-suitability zones, particularly under pessimistic emission pathways. The analysis identified thermal conditions, particularly the minimum temperature of the coldest month and the mean temperature of the wettest quarter, as leading climatic constraints. Furthermore, excessive moisture or heat stress during sensitive growth phases was identified as a further limiting factor. The soil characteristics of drainage class, granulometric composition, and organic matter content provided more stable spatial reference points of rapeseed compliance. However, regional interactions with climatic factors significantly modified the local outcomes. The findings indicate that the future spatial distribution of rapeseed suitability will be shaped by a complex interplay between scenario severity and temporal scale, resulting in spatial fragmentation and heightened regional contrasts. It is predicted that areas currently well-suited for cultivation may become marginal or unsuitable by the end of the century, particularly in southern and eastern regions. Under the most severe scenario (SSP5–8.5), favourable zones exhibit a substantial contraction and a north-westward shift, thereby narrowing the ecological niche of rapeseed. Conversely, under SSP1–2.6, certain regions may maintain or even expand their suitability in the short term, although long-term stability remains questionable. A comparison with recent studies from other European and temperate regions confirms the broader applicability of these trends. Our findings are consistent with previous research indicating that the combined effect of warming trends and precipitation variability will lead to increased instability in crop performance, unless adaptive strategies are implemented. The spatial projections are also in close correspondence with observed historical shifts in cultivation patterns, thus providing further validation for the modelling approach. The novelty of this study lies in its combined use of spatial regression forecasting, climate scenario modelling, and agro-ecological zoning to deliver actionable insights for regional planning and crop adaptation. The proposed methodology integrates climatic gradients, soil heterogeneity, and temporal uncertainty, thereby enabling more robust decision-making under future climate conditions. The approach facilitates not only the identification of climate-resilient zones but also the quantification of long-term transformation trajectories, rendering it a valuable tool for policymakers, agronomists, and land-use planners. In view of the projected spatial instability and narrowing of optimal growing zones, the development of targeted adaptation strategies is imperative for sustaining rapeseed production in Ukraine under accelerating environmental change. Such strategies may include cultivar selection, modified sowing dates, water management, and crop diversification.",
+      "date": "2026-01-19",
+      "journal": "Agrology",
+      "publisher": "Dnipro State Agrarian and Economic University",
+      "url": "https://doi.org/10.32819/202521",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T19:23:54.762757+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
