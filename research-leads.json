@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T22:13:53.189031+00:00",
+  "updated_at": "2026-10-18T00:15:02.472288+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -50,7 +50,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -84,7 +84,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -135,7 +135,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -271,7 +271,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -288,7 +288,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -492,7 +492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -543,7 +543,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -645,7 +645,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -866,7 +866,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -883,7 +883,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -973,6 +973,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.techfore.2016.09.007",
+      "title": "European sectoral innovation foresight: Identifying emerging cross-sectoral patterns and policy issues",
+      "abstract": "",
+      "date": "2017-02-28",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2016.09.007",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2016.08.032",
+      "title": "The technology foresight activities of European Union data protection authorities",
+      "abstract": "",
+      "date": "2017-03-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2016.08.032",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1080/13691457.2017.1320053",
       "title": "Current challenges and emerging signposts: the future of social work education in Europe",
       "abstract": "",
@@ -1021,6 +1055,23 @@
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/1758-5899.12438",
+      "title": "Towards the European Union's Foreign Policy 2025 – Taking Stock of the Dahrendorf Foresight Project",
+      "abstract": "Abstract After a decade of economic and political crises, the European Union has arrived at a critical juncture, as has its foreign policy. The long‐running debate on gaining more coherence in EU 's external action as a global security provider has gained more traction than ever before. The Union is weakened due to recent internal crises from which it is only slowly recovering: the trust placed in Brussels’ institutions by both European citizens and global partners is shrinking and the citizens of one of the EU 's largest member states, the United Kingdom, have just voted to leave. Based on an analysis of the current state of the Union, this paper takes stock of the outcomes of the Dahrendorf Foresight Project and looks ahead at the EU 's role in the world of 2025. By following the narrative of driving forces beyond the EU 's foreign policy, this article makes four policy recommendations for development within the next decade.",
+      "date": "2017-06-29",
+      "journal": "Global Policy",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/1758-5899.12438",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1106,6 +1157,23 @@
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/en11010020",
+      "title": "Pathways to Decarbonise the European Car Fleet: A Scenario Analysis Using the Backcasting Approach",
+      "abstract": "This paper analyses decarbonisation scenarios for the European passenger car fleet in 2050. The scenarios have been developed using the backcasting approach and aim to reduce greenhouse gas (GHG) emissions of passenger cars to a level defined in the Transport White paper that is 60% below 1990 levels. Considering the emission levels of 2010, a yearly reduction of 1.7% is required in order to achieve the target. Car emissions were decomposed into the main emission factors of mobility, efficiency and carbon intensity. How these factors change over time depends on various external factors: the pace of technological improvements, the future role of cars in society’s mobility system and the priority given to decarbonising energy demand. The analysis showed that if car mobility and ownership continue to increase as expected in a ‘business as usual’ case, a share of 97% plug-in hybrid or battery electric vehicles might be required by 2050, together with a substantial decrease in greenhouse gas emission from electricity production. A transition to more advanced car technology such as automated driving, advanced batteries or lightweight materials in vehicle production would raise vehicle efficiency. Should car mobility continue at a high level, an early technology transition will be required.",
+      "date": "2017-12-22",
+      "journal": "Energies",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/en11010020",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1274,7 +1342,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1410,7 +1478,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1466,6 +1534,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1017/s1574019619000038",
+      "title": "The Court of Justice and the Ban on Bulk Data Retention: Expansive Potential and Future Scenarios",
+      "abstract": "Data retention saga – Interpretative strategy of the Court of Justice – Expansive potential of the principles set by the Court of Justice – ‘Reverse’ effet utile and conflict of competence – EU acts under threat – Domino effect on national security measures – Future scenarios – Twilight of the model of bulk data retention – Modulation of the ban on bulk data retention according to the vulnerability of data processing or depending on the prior unknowability of the threats – Divergence from the European Court of Human Rights – Legitimisation of bulk data retention ‘ Equo ne credite, Teucri! Quidquid id est, timeo Danaos et dona ferentes ’ — Virgil, Aeneid , II, 48-49",
+      "date": "2019-03-04",
+      "journal": "European Constitutional Law Review",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1017/s1574019619000038",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/w11081720",
+      "title": "Extreme Floods and Droughts under Future Climate Scenarios",
+      "abstract": "Climate projections indicate that in many regions of the world the risk of increased flooding or more severe droughts will be higher in the future. To account for these trends, hydrologists search for the best planning and management measures in an increasingly complex and uncertain environment. The collection of manuscripts in this Special Issue quantifies the changes in projected hydroclimatic extremes and their impacts using a suite of innovative approaches applied to regions in North America, Asia, and Europe. To reduce the uncertainty and warrant the applicability of the research on projections of future floods and droughts, their continued development and testing using newly acquired observational data are critical.",
+      "date": "2019-08-19",
+      "journal": "Water",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/w11081720",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1051/e3sconf/201911600053",
       "title": "Alternative scenarios investigation of 1990..2016 CO 2 emission from Public Electricity and Heat Production sectors in Europe",
       "abstract": "Proposed alternatives scenarios methodology allows retrospective analysing of decarbonisation processes in 26 national Public Electricity and Heat Production (PEHP) sectors in EU, based on 1990..2016 national CO 2 emission inventories. The CO 2 emission driving forces for PEHP sectors were defined and investigated in 26 years emission pathways approach. Graphical overview of 108 prepared (real and alternatives) emission pathways allow assessing CO 2 emission factors impact, pathways grouping and indicating the dominant pathway of 1990..2016 decarbonisation in EU national PEHP sectors. The alternatives scenarios methodology based on historical data enables to drawn lessons from past to move the European PEHP into a low-carbon future.",
@@ -1495,7 +1597,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1534,6 +1636,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.2139/ssrn.3493688",
+      "title": "'What to Expect when You Are Expecting' a European Crowdfunding Regulation: The Current ‘Bermuda Triangle’ and Future Scenarios for Marketplace Lending and Investing in Europe",
+      "abstract": "",
+      "date": "2019-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.3493688",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1080/21699763.2017.1411288",
       "title": "The implications of demographic and economic projections on public pension spending in the European Union",
       "abstract": "Abstract This paper analyses the implications that demographic and economic projections have on public pension spending in the European Union (EU). Using some stylised facts, we study the aging trends of the population, as well as labour force and employment projections. Indices of both demographic and economic dependence are built. All of this is used to determine the impact on public pension spending in the EU. Although we detect substantial heterogeneity of circumstances, we show that the states in which aging of the population weights more in explaining public pension expenditure growth as a percentage of gross domestic product (GDP) are generally the ones that make greater efforts to control this spending. Given the limited capacity of policies to increase active population or employment to offset the effects of aging, measures aimed at diminishing the generosity of the public pension system and at promoting private schemes have gained relevance.",
@@ -1547,6 +1666,40 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3917/e.ris.117.0041",
+      "title": "China’s participation in European container ports: Drivers and possible future scenarios",
+      "abstract": "",
+      "date": "2020-03-19",
+      "journal": "Revue internationale et stratégique",
+      "publisher": "CAIRN.INFO",
+      "url": "https://doi.org/10.3917/e.ris.117.0041",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3917/ris.117.0041",
+      "title": "China’s Participation in European Container Ports: Drivers and Possible Future Scenarios",
+      "abstract": "Les prises de participation chinoises dans les ports à conteneurs européens représentent aujourd’hui 10 % des volumes totaux, là où elles étaient quasiment inexistantes il y a dix ans. Elles sont le fait de deux entreprises publiques : COSCO et China Merchants Group (CMG). Cet article revient sur les facteurs explicatifs de cette croissance et propose trois scénarios relatifs à ces prises de participation chinoises dans les ports à conteneurs européens en 2025.",
+      "date": "2020-03-19",
+      "journal": "Revue internationale et stratégique",
+      "publisher": "CAIRN",
+      "url": "https://doi.org/10.3917/ris.117.0041",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1568,6 +1721,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.dib.2020.105499",
+      "title": "Life Cycle Inventories datasets for future European electricity mix scenarios",
+      "abstract": "",
+      "date": "2020-06-30",
+      "journal": "Data in Brief",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.dib.2020.105499",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.futures.2020.102585",
       "title": "Envisioning the future of health systems: Exploratory insights from European countries",
       "abstract": "",
@@ -1581,6 +1751,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1371/journal.pone.0238565",
+      "title": "Assessing the future medical cost burden for the European health systems under alternative exposure-to-risks scenarios",
+      "abstract": "",
+      "date": "2020-09-11",
+      "journal": "PLOS ONE",
+      "publisher": "Public Library of Science (PLoS)",
+      "url": "https://doi.org/10.1371/journal.pone.0238565",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1682,7 +1869,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1699,7 +1886,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1784,7 +1971,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1988,7 +2175,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2090,7 +2277,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2311,7 +2498,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2345,7 +2532,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2503,6 +2690,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1002/ffo2.70013",
+      "title": "Spatial Scenarios With Real‐Time Spatial Delphi and Asymptotic Consensus Analysis: An Application to Ten European Coastal Cities",
+      "abstract": "ABSTRACT Recent climatic events, such as coastal erosion, floods, and elevated temperatures, threaten the planet's sustainability and the well‐being of European coastal cities. These events are expected to increase significantly, emphasizing the urgent need for careful analysis to inform policy development and prevent dystopian scenarios. In the Futures Studies (FS) context, the development of future scenarios is essential for depicting long‐term outcomes and facilitating effective planning, which can be achieved using various methods, including the Real‐Time Spatial Delphi. This paper applies to the Delphi‐based spatial scenario (DBSS), adopting a novel web‐based open platform, to obtain spatial convergence of opinions among a panel of experts using spatial analysis and statistical indicators. The DBSS method was applied to 10 European coastal areas in seven different countries, involving 167 experts to assess climate impacts in 2050. This paper introduces for the first time, the concept of Asymptotic Theoretical Consensus to obtain a deeper understanding of the dynamic process, including duration, smoothness of convergence, and stability. The identified scenarios validate the proposed method and provide significant benefits to stakeholders, policymakers, local authorities, and governmental bodies in formulating efficacious strategies and confronting the challenges presented by climate change.",
+      "date": "2025-06-19",
+      "journal": "FUTURES & FORESIGHT SCIENCE",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/ffo2.70013",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2478/he-2025-0014",
+      "title": "Future of the European Housing environment in Ukraine: Challenges, Directions and Reconstruction Scenarios (Part 2)",
+      "abstract": "Abstract The multifaceted and long-term consequences of the war in Ukraine present a significant challenge to the reconstruction of the housing environment. This is due to the fact that the process involves a variety of aspects and areas, including social, economic, political and environmental factors. In light of the mounting challenges, the overarching objective of the research was to develop a proposal for a novel, optimal and stable model of the housing environment by leveraging the potential of collaboration between international academic institutions, namely Lviv Polytechnic University (Ukraine) and Kielce University of Technology, in collaboration with an expert from the Cracow University of Technology, undertook an in-depth examination of the challenges associated with the reconstruction of lost architectural heritage, the creation of new living conditions, and the role of architecture in shaping identity and security. The study presented a series of optimised model solutions for the housing environment, taking into account the specific needs and interests of different user groups. In addition, it delineated a framework for the sustainable design of post-conflict cities. The study yielded several key findings, including the formulation of assumptions and postulates that collectively constitute a coherent vision of sustainable architecture and urbanisation. This vision is posited as a means of ensuring the stability of community life and functioning. Priorities for rational action were identified, and when integrated into a multi-pronged strategy, they have the potential to produce synergistic effects in the aftermath of conflict. The article concludes with a recommendation to adopt an interdisciplinary approach to reconstruction, integrating modern technologies and innovative architectural practices. This approach could inform potential projects in Ukraine, indicating further directions and strategies for action. Furthermore, additional phases of analysis were announced, which will serve to complement the results of the research to date.",
+      "date": "2025-06-26",
+      "journal": "Środowisko Mieszkaniowe/Housing Environment",
+      "publisher": "Uniwersytet Jagiellonski - Wydawnictwo Uniwersytetu Jagiellonskiego",
+      "url": "https://doi.org/10.2478/he-2025-0014",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su17135938",
       "title": "Meeting 2030 Targets: Heat Pump Installation Scenarios in Italy",
       "abstract": "The study examines the role of heat pumps (HPs) in achieving the targets set by the Italian National Integrated Energy and Climate Plan (PNIEC) for 2030, using official data and European-recognized calculation methodologies to quantify the renewable energy produced. Starting from the current stock analysis—21 million HPs installed in 2022, providing 39 GWth of thermal capacity—the research outlines potential growth scenarios based on installation trends from the past three years: Scenario A assumes 2.5 million HPs/year, (b) 2.2 million/year, and (c) 1.6 million/year. Only Scenario A, the most ambitious, achieves full compliance with 2030 targets by ensuring over 4723 ktoe of renewable energy produced. An additional Scenario D is analyzed, based on the lowest annual installed capacity observed in the past three years but with a modified technology mix emphasizing air-to-water (A/W) and ground-source water-to-water (W/W) HPs. This scenario still achieves the 2030 goals, reaching 66.04 GWth and 4859 ktoe of renewable energy. The results confirm that technology choices will be strategic to meet the targets. The study also highlights the importance of stable incentive policies, proper development of the industrial supply chain, and a plan for the technological upgrading of the existing systems stock.",
@@ -2516,6 +2737,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1029/2025ef006154",
+      "title": "Assessment of Global Dengue Transmission Risk Under Future Climate Scenarios",
+      "abstract": "Abstract Dengue is a climate‐sensitive mosquito‐borne infectious disease with a rapidly increasing incidence and global transmission. Climate change alters the suitability of mosquito vectors, affecting viral transmission. We assessed the global dengue transmission potential and suitable months under future climate scenarios by integrating the mosquito‐borne virus suitability index (Index P) with temperature and humidity projections from 12 global climate models. A substantial expansion of dengue risk zones from tropical to temperate regions was projected. The magnitude and pace of dengue risk escalation in China and the U.S. far exceed other temperate regions, with a considerable increase in at‐risk population and exposed land areas. In contrast, Europe exhibits a more delayed and moderate increase in dengue risk. In the SSP245 scenario for the 2050s, high dengue suitability zones are prominently located in Latin America, Southeast Asia, and sub‐Saharan Africa with emergent areas in southern North America and East Africa. By 2100, these zones expand to southern China and northern Australia. Under the SSP585 high‐emission scenario, the global dengue risk landscape shifts dramatically, with extensive risk zones emerging in the southeastern United States, China, and southern Europe, while some tropical regions such as Brazil and India experience a notable decline in transmission suitability due to extreme heat stress. By extending Index P to long‐term projections, this study uncovers both underappreciated early surges in temperate regions and unexpected declines in overheated tropics. These insights are critical for improving early warning systems in newly exposed populations.",
+      "date": "2025-07-04",
+      "journal": "Earth's Future",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2025ef006154",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2605,6 +2843,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/land14112162",
+      "title": "Contribution of European Agroforestry Systems to Climate Change Mitigation: Current and Future Land Use Scenarios",
+      "abstract": "Agroforestry is a land use system that has recently been recognised as a strategic tool for greenhouse gas mitigation and as an integrated approach to sustainable land use due to its environmental benefits. Hence, information on its net carbon sequestration potential is crucial for future land use planning and sustainable development. This paper aims to estimate net emissions and removals from silvopastoral and silvoarable systems by quantifying their areas across the EU27, the UK, and Switzerland, utilising the Land-Use-based Integrated Sustainability Assessment land cover map and Copernicus high-resolution layers. The analysis identified a total of 9.2 Mha of silvopastoral and silvoarable areas across the study area, comprising approximately 6 Mha and 3.2 Mha, respectively, mainly clustered around the Mediterranean biogeographical region. Collectively, these land use systems could remove approximately 81.7 Mt of CO2 eq yr−1 while emitting roughly 49.9 Mt CO2 eq yr−1, resulting in a net removal of 31.8 Mt of CO2 eq yr−1. From a global perspective, the EU27 reported 3180.2 Mt of CO2 eq emissions in 2018, with the land use, land use change and forestry (LULUCF) sector acting as a net sink, removing 260.8 Mt CO2 eq, equivalent to −8.2% of total emissions. Agroforestry, when integrated within the agriculture sector, could further enhance its GHG mitigation, potentially offsetting the sector’s emissions by 54%. Additionally, expanding agroforestry systems on 30% of the identified target areas would sequester up to 49 Mt of CO2 eq yr−1 more and result in planting 1.7 billion trees more. These findings highlight the positive role of agroforestry systems in contributing to the EU’s 2030 emission reduction and tree planting targets and emphasise the need for integrated management approaches to enhance and maximise their mitigation potential.",
+      "date": "2025-10-30",
+      "journal": "Land",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/land14112162",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.2478/gssfj-2024-0012",
       "title": "Quality Assurance in European Projects: Analysis, Challenges, and Best Practices",
       "abstract": "Abstract Quality Assurance (QA) is an essential component for the success and effectiveness of European projects, which are characterized by intrinsic complexity, multinational collaborations, and the management of structural funds. This article explores the role of QA, outlining its theoretical framework, analyzing specific challenges, and presenting best practices adopted to mitigate them. Through the examination of case studies, the adaptability and relevance of QA in various sectors funded by the European Union are highlighted, integrating a critical reflection on the current debate regarding the upcoming Framework Programme 10 (Horizon Europe 2028–2034) and the positions of the European University Association. The article concludes with a discussion of future prospects and emerging areas of research, emphasizing how QA can act not only as a management tool but also as a systemic guarantee of autonomy, transparency, and scientific excellence.",
@@ -2618,6 +2873,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/jfb.70303",
+      "title": "Past trends and future scenarios in the distribution of European catfish Silurus glanis in Spain",
+      "abstract": "Abstract The European catfish ( Silurus glanis ) is a giant Eurasian freshwater fish that has become a high‐impact invasive species in Western Europe. In Spain, it was first introduced in 1974 in the Ebro River for sport fishing, and has since spread to multiple river basins, despite bans. We compiled all known occurrence records in Spain (1974–2024) from scientific surveys, government databases and citizen science, standardizing them on a 10 × 10 km grid. Using first‐detection data per waterbody, we reconstructed the invasion timeline and calculated decadal expansion rates. We then applied nonlinear models to project future spread up to 2030. S. glanis now occupies seven major Iberian basins, expanding from one grid cell in the 1970s to 129 cells by 2024. The invasion was initially slow (1970s–1990s), followed by a rapid expansion from 2000 to 2009, when the area occupied increased six‐fold. Since 2010 its expansion has moderated, although new introductions in the Duero, Guadalquivir and Andalusian Mediterranean basins have driven localized explosive growth. Logistic and Gompertz models suggest the invasion may be approaching saturation in long‐invaded basins (e.g. Ebro), projecting only a slight increase in total area occupied by 2030. However, model confidence intervals remain broad, reflecting uncertainty due to potential illegal translocations and climate‐driven habitat changes in the future. Our findings underscore the urgent need for proactive management: preventing human‐mediated jump dispersal, enhancing monitoring for early detection and enforcing regulations. Continued data updates and risk modelling are vital to inform policy and targeted control against this high‐risk invader.",
+      "date": "2025-12-01",
+      "journal": "Journal of Fish Biology",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/jfb.70303",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2652,6 +2924,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/futuretransp6010001",
+      "title": "Complex Test Scenarios for Functional Validation Prior to Type Approval",
+      "abstract": "The continuous tightening of European regulatory requirements, particularly under the General Safety Regulation (GSR), has considerably increased the scope and cost of proving ground testing required for the validation of Advanced Driver Assistance Systems (ADASs) and Automated Driving Systems (ADSs). This study presents a methodology for constructing complex proving ground test scenarios aimed at supporting early-stage functional validation and cost-efficient preparation for type approval. The method is based on the systematic analysis of proving ground–relevant ADAS regulations and the classification of test case variations according to sensing, actuation, and execution complexity. By filtering and combining representative test cases, minimum and maximum complexity scenarios were developed and evaluated on the ZalaZONE proving ground in Hungary. The results demonstrate that the proposed approach can substantially reduce test duration, facility occupancy, and overall validation costs, while maintaining the representativeness and credibility of results. Beyond cost savings, the methodology offers a scalable and practical framework for physical validation, supporting manufacturers in achieving regulatory compliance with reduced time and expenditure.",
+      "date": "2025-12-19",
+      "journal": "Future Transportation",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/futuretransp6010001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2741,6 +3030,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1007/s11764-026-01972-z",
+      "title": "e-Delphi study on European expert views about “cancer survivor” and related terminologies",
+      "abstract": "Abstract Purpose Definitions of “cancer survivors” vary from individuals from diagnosis throughout their life, to individuals post-curative intent treatment. Attempts to categorise groups of people who have or had cancer also differ. This study aims to generate European expert consensus opinion about cancer survivor terminology and categorisation relevant to developing a model of care. Methods This was an electronic Delphi study where specialist palliative care (SPC) and oncology (ONC) European experts, including patient advocates, were purposively sampled to form two separate groups. Participants selected agreement with 105 questions/statements developed from literature reviews in round 1, and in subsequent rounds statements were modified/added according to feedback. The study was terminated when consensus (pre-defined as ≥ 75% within each group) and stability (determined by Spearman’s Rank Order Correlation) were reached for most statements. The Chi square test for goodness of fit compared agreement between groups. Results Eighty-six SPC experts from 19 countries/regions, and 54 ONC experts from 17 countries/regions began the process, with three rounds completed by 80 and 49 respectively. Eight statements about “cancer survivor” application reached consensus in both groups, demonstrating agreement that “cancer survivor” should be applied to people post-treatment with no evidence of disease. Two other statements reached consensus in only one group (with a significant difference). Two categorisations reached consensus in both groups. Conclusions These experts suggest that application of “cancer survivor” to people with active cancer should be reconsidered. Implications for Cancer Survivors Pragmatic categorisation of people who have/had cancer could help provide tailored care for different groups.",
+      "date": "2026-01-31",
+      "journal": "Journal of Cancer Survivorship",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s11764-026-01972-z",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.ijhydene.2026.153615",
       "title": "Cost efficiency in clean urban mobility: TCO breakdown of hydrogen and electric buses in the European Union with projections for 2030 and 2050",
       "abstract": "",
@@ -2772,6 +3078,23 @@
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-17T01:30:42.260492+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1038/s41597-026-07158-7",
+      "title": "High-Resolution Wave Climate Data under Future Climate Scenarios along the European Atlantic Coast",
+      "abstract": "",
+      "date": "2026-04-03",
+      "journal": "Scientific Data",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/s41597-026-07158-7",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     }
   ]
