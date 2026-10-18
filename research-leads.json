@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T05:05:09.946316+00:00",
+  "updated_at": "2026-10-18T09:31:43.843268+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -577,7 +577,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -611,7 +611,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -968,7 +968,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1308,7 +1308,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1359,7 +1359,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1376,7 +1376,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1393,7 +1393,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1410,7 +1410,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1925,6 +1925,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.37772/2309-9275-2020-1(14)-9",
+      "title": "Peculiarities of application of artificial intelligence in the financial services sector: EU experience",
+      "abstract": "Problem setting. Artificial intelligence is rapidly affecting the financial sector with countless potential benefits in terms of improving financial services and compliance. In the financial sector, artificial intelligence algorithms are already trusted to account for transactions, detect fraudulent schemes, assess customer creditworthiness, resource planning and reporting. But the introduction of such technologies entails new risks.\n\nAnalysis of resent researches and publications. The following scientists were engaged in research of the specified question: D.W. Arner, J. Barberis, R.P. Buckley, Jon Truby, Rafael Brown, Andrew Dahdal, O. A. Baranov, O. V. Vinnyk, I. V. Yakovyuk, A. P. Voloshin, A. O. Shovkun, N.B. Patsuriia.\n\nTarget of research. The aim of the article is to identify key strategic issues in developing mechanisms to ensure the effective implementation and use of artificial intelligence in the financial services market.\n\nArticle’s main body. The paper investigates an important scientific and practical problem of legal regulation of artificial intelligence used by financial services market participants. The legal risks associated with the use of artificial intelligence programs in a particular area are considered. The most pressing risks to address targeted AI regulation are fundamental rights, data confidentiality, security and effective performance, and accountability. This article argues that the best way to encourage a sustainable future in AI innovation in the financial sector is to support a proactive regulatory approach prior to any financial harm occurring.\n\nThis article argues that it would be optimal for policymakers to intervene early with targeted, proactive but balanced regulatory approaches to AI technology in the financial sector that are consistent with emerging internationally accepted principles on AI governance.\n\nConclusions and prospects for the development. The adoption of rational regulations that encourage innovation whilst ensuring adherence to international principles will significantly reduce the likelihood that AI-related risks will develop into systemic problems. Leaving the financial sector only with voluntary codes of practice may encourage experimentation that in turn may result in innovative benefits – but it will definitely render customers vulnerable, institutions exposed and the entire financial system weakened.",
+      "date": "2020-07-03",
+      "journal": "Law and innovative society",
+      "publisher": "Scientific and Research Institute of Providing Legal Framework for the Innovative Development",
+      "url": "https://doi.org/10.37772/2309-9275-2020-1(14)-9",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.futures.2020.102585",
       "title": "Envisioning the future of health systems: Exploratory insights from European countries",
       "abstract": "",
@@ -1988,8 +2005,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2139/ssrn.3524254",
+      "title": "Prospective Policy Study on Artificial Intelligence and EU Trade Policy",
+      "abstract": "",
+      "date": "2020-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.3524254",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2041,6 +2075,23 @@
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-021-00171-6",
+      "title": "Participatory foresight and reflexive innovation: setting policy goals and developing strategies in a bottom-up, mission-oriented, sustainable way",
+      "abstract": "Abstract The urgency of current social challenges is driving new approaches to framing and funding research, development, and innovation. The “mission-oriented” approach framing the EU’s New Horizons funding program is the latest institutional response to the pressing needs of large system transformations we are facing. We view the likely targets of mission-oriented programs as dynamic entities requiring both adaptive, inclusive responses, and anticipatory exploration. We demonstrate how participatory foresight methods provide an essential forum and process for the expression of plural, socio-technological imaginaries. As citizens and other stakeholder groups have demonstrated their myriad capacities to contribute to research and innovation agenda-setting processes in future-oriented citizen dialogs, we argue that such methods are the essential compliment to the mission-oriented framework coming into play. Participatory foresight engages citizens in critical thinking and creative activities to articulate the evolution of socio-technological issues over an extended time horizon, seeking diverse perspectives on what goals and priorities will come to define “missions.” Utilizing outputs from two recent projects, we argue that participatory foresight methods can play an essential role in bridging citizen needs with policy requirements, and will increase the reflexivity of innovation systems that invest the needed time and resources into exploring the depth of multi-actor interests and intersections. Finally, we outline possible impact pathways demonstrating how these “bottom-up” contributions could be integrated into the development of challenge-led innovation priorities.",
+      "date": "2021-04-01",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-021-00171-6",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2112,6 +2163,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1175/wcas-d-20-0142.1",
+      "title": "Future Projections of Heat Mortality Risk for Major European Cities",
+      "abstract": "Abstract Over the last few decades heat waves have intensified and have led to excess mortality. While the probability of being affected by heat stress has significantly increased, the risk of heat mortality is rarely quantified. This quantification of heat mortality risk is necessary for systematic adaptation measures. Furthermore, heat mortality records are sparse and short, which presents a challenge for assessing heat mortality risk for future climate projections. It is therefore crucial to derive indicators for a systematic heat mortality risk assessment. Here, risk indicators based on temperature and mortality data are developed and applied to major cities in Germany, France and Spain, using regional climate model simulations. Bias-corrected daily maximum, minimum and wet-bulb temperatures show increasing trends in future climate projections for most considered cities. Additionally, we derive a relationship between daily maximum temperatures and mortality for producing future projections of heat mortality risk due to extreme temperatures based on low (Representative Concentration Pathway; RCP2.6) and high (RCP8.5) emission scenario future climate projections. Our results illustrate that heat mortality increases by about 0.9%/decade in Germany, 1.7%/decade in France and 7.9%/decade in Spain for RCP8.5 by 2050. The future climate projections also show that wet-bulb temperatures above 30° C will be reached regularly with maxima above 40° C likely by 2050. Our results suggest a significant increase of heat mortality in the future, especially in Spain. On average, our results indicate that the mortality risk trend is almost twice as high in all three countries for the RCP8.5 scenario compared to RCP2.6.",
+      "date": "2021-07-16",
+      "journal": "Weather, Climate, and Society",
+      "publisher": "American Meteorological Society",
+      "url": "https://doi.org/10.1175/wcas-d-20-0142.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.techfore.2021.120802",
       "title": "Stakeholder inclusion in scenario planning—A review of European projects",
       "abstract": "",
@@ -2175,7 +2243,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2299,6 +2367,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1029/2021ef002602",
+      "title": "Population Exposure Projections to Intensified Summer Heat",
+      "abstract": "Abstract Population aging, an increasing share of the elderly to the total population, can exacerbate heat vulnerability to intensified heat hazards. However, the aging impacts on increases in exposure of the elderly to unprecedented hot summers (UHSs) could be variable in the warming climate. Here, we present considerable contribution of age structure changes to increases in the elders' exposure to intensified UHSs in countries with a high percentage of youth population, namely, China, India, and Brazil, by analyzing combined scenarios of climate change with population structure. In the aforementioned regions, increases in exposure to stronger UHSs relevant to rapid aging will exceed at least half of the warming impact, which primarily causes frequent occurrence of stronger UHSs. Conversely, the United States and Europe, which have already entered an aged society, show a negligible aging impact. These results suggest that the future evolution of a society's age structure is an important constraint for projecting population exposure to strengthened summer heat.",
+      "date": "2022-02-10",
+      "journal": "Earth's Future",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2021ef002602",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su14063563",
       "title": "Towards the 2030 Agenda: Measuring the Progress of the European Union Countries through the SDGs Achievement Index",
       "abstract": "The 2030 Agenda and Sustainable Development Goals were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. The success or failure in their implementation largely depends on the national implementation effort, measured within wide and compound indicator frameworks. Due to such complexity, providing a simple but comprehensive view on the progress to achieve the SDGs is a priority. Moreover, the measure of the progress allows the consistency among the different dimensions of sustainable development to be assessed. The purpose of this work is to evaluate the results accomplished by European Union Countries in achieving SDGs. In particular, the paper proposed the SDGs achievement index (SDG-AI), a multicriteria-based index, including six different dimensions and applied to EU countries. The SDG-AI allows the differences across the EU countries to be highlighted, and also assesses the contribution of the different dimensions to the final result. The use of such an index will also be useful to understand the effect of the pandemic on the development.",
@@ -2367,6 +2452,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1177/20319525221093487",
+      "title": "Introduction: The EU new economic governance, labour law and labour lawyers",
+      "abstract": "The new economic governance of the European Union emerged as an important legacy of the Eurozone crisis. Although its suspension during the COVID-19 pandemic has somewhat reduced its visibility, the process of the European Semester remains as central as ever in coordinating socio-economic policies of Member States, notably through its link with the Recovery and Resilience Facility. Two of the most relevant tools of the EU Economic Governance, notably Memoranda of Understanding and Country Specific Recommendations, focus, to an important degree, on labour law reforms. As such, it is important to question the role which these instruments have played, and will potentially play in the future, for national systems of labour law as well as for the evolution of EU labour law itself. To do so, it is necessary to go beyond quantitative or macro approaches to the content of the prescriptions of these tools, in order to analyse their impact on specific labour law systems and national contexts. This will generate a better understating of the relevance of the EU economic governance for the field of labour law.",
+      "date": "2022-04-18",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/20319525221093487",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1186/s40309-022-00195-6",
       "title": "(Re)politicization of climate change mitigating projects: environmental forms and motives of the Seine Nord Europe canal",
       "abstract": "Abstract Climate change adaptation and mitigation strategies are gaining visibility and support. Decision-makers are defending the extension of large infrastructures that are low greenhouse gas (GHG) emitters, as a way to act quickly and massively without calling into question existing economic models. This situation depoliticizes these projects, masking their other ecological consequences such as their impacts on biodiversity. This article examines how promoters of these projects depoliticized its socio-technical futures while other actors re-politicized them. Using the example of the Seine Nord Europe Canal project, we show a politicization of the territorial future and a depoliticization of the environmental future. This depoliticization is based on the techno-optimist discourse promoting large-scale infrastructures as the only possible solution to the global ecological and climate crisis. It uses a selective framing of the environment that makes some elements visible and others invisible. We conducted semi-structured interviews with biodiversity stakeholders in the territories that would be impacted by the canal. Based on the concepts of environmental forms and motives, we reconstructed the environmental ontologies ignored by the dominant discourse and assembled them into three alternative scenarios. We present the method of investigation and identification of these motives and discuss the likelihood of the constructed scenarios participating in a re-politicization based on the reactions of various actors.",
@@ -2379,7 +2481,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2605,6 +2707,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1029/2022ef003317",
+      "title": "Future Local Ground‐Level Ozone in the European Area From Statistical Downscaling Projections Considering Climate and Emission Changes",
+      "abstract": "Abstract Ground‐level ozone is a major air pollutant harmful to human health. In the scope of climate change, it is essential to provide high‐quality local‐scale assessments of the anticipated changes for public health and policy interventions. Assessments and projections of ground‐level ozone usually rely on numerical modeling, but statistical approaches are also available. The present study enhances the validity of statistical downscaling by taking climate change as well as air pollution changes into account. Besides considering meteorological predictors such as air temperature, short‐wave radiation, humidity, and wind, ozone trends from changes in precursor emissions were included in the statistical models. Meteorological and ozone predictor information extracted from reanalysis data for the observational period and output of seven Earth System Models (ESMs) for the projection periods were used, with three of them having interactive chemical modeling, while the other four used prescribed ozone changes. Ground‐level ozone, more precisely daily maximum 8‐hr running means (MDA8) as well as daily maximum 1‐hr values (MDA1), at 798 measurement stations across the European area in the “ozone season” from April to September were assessed. Results depended strongly on whether only meteorological information or additional information about emission changes were considered. As a general picture under the consideration of climate and emission changes, decreasing ground‐level ozone concentrations were projected under the moderate SSP2‐4.5 scenario, while for the more pessimistic scenario SSP3‐7.0 increasing ozone concentrations over Europe, especially at the end of the 21st century, were assessed.",
+      "date": "2023-02-13",
+      "journal": "Earth's Future",
+      "publisher": "American Geophysical Union (AGU)",
+      "url": "https://doi.org/10.1029/2022ef003317",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su15086531",
       "title": "The European Solar Communication—Will It Pave the Road to Achieve 1 TW of Photovoltaic System Capacity in the European Union by 2030?",
       "abstract": "The urgency of a clean energy transition in the European Union is now not only driven by concerns about climate change, but also by using local renewable energy resources to reduce the dependency on foreign energy imports. Solar photovoltaic electricity generation is acknowledged as one of the pillars of this transition and various policy measures were implemented over the last two years to not only accelerate the deployment of solar photovoltaic electricity generation systems, but also to rebuild a competitive solar value chain in Europe to hedge against solar photovoltaic component supply chain disruptions. However, the current political ambitions still do not pay sufficient attention to the importance of solar photovoltaics as a major contributor to the necessary future renewable energy supply. According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030. At the moment, only seven member states have an installed capacity per capita higher than the average EU value.",
@@ -2619,6 +2738,40 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/10242589231171091",
+      "title": "Poverty and social exclusion in the EU: third-order priorities, hybrid governance and the future potential of the field",
+      "abstract": "EU leaders have agreed to reduce the number of people who are at risk of poverty or social exclusion by 15 million (including at least five million children) by 2030. This article explores this ambitious target and analyses the positioning of the field throughout the EU’s broader governance hierarchy, as well as the governance arrangements within the field. It finds that throughout such governance arrangements, the issue of being at risk of poverty or social exclusion is largely dealt with by intergovernmental agreements and is thereby a third-order priority for the EU, with economic integration first-order and employment policy second-order. Meanwhile, within the field EU governance arrangements are currently being transformed to further encourage the Member States to take action. While this is a significant development, the overall ability of the EU to reduce the number of those at risk of poverty or social exclusion requires the field to move beyond its current third-order status.",
+      "date": "2023-05-13",
+      "journal": "Transfer: European Review of Labour and Research",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/10242589231171091",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.54648/ijcl2023007",
+      "title": "The Future of European Labour Law",
+      "abstract": "",
+      "date": "2023-06-01",
+      "journal": "International Journal of Comparative Labour Law and Industrial Relations",
+      "publisher": "Kluwer Law International BV",
+      "url": "https://doi.org/10.54648/ijcl2023007",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2788,6 +2941,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/20319525231221097",
+      "title": "The European Union's forced labour regulation: Putting the ‘brussels effect’ to work for international labour standards",
+      "abstract": "In September 2022, the Commission adopted a proposal for a Regulation on prohibiting products made with forced labour on the Union market. This arises in a context of rising concern over many years about breaches of workers’ fundamental rights and core standards of the International Labour Organization in supply chains of products that are marketed in Europe, particularly where multinational corporations have offshored production to states without the high labour standards enforced in the EU. There has also long been widespread concern, particularly from trade unions, that such offshoring enables manufacturers to undercut labour protections of European workers. Furthermore, the offshoring of manufacturing has enabled certain third countries to develop their industrial and technological capacities in ways that create geostrategic risks for the EU and its Member States, as these third countries become ‘systemic rivals’ of the Union. First, this article argues that the proposed Regulation fits with Anu Bradford's theory of the ‘Brussels Effect’ exposited in her 2019 book of that name, and that the Union should take advantage of Bradford's insights in developing the Regulation and future legal instruments. Bradford established the Brussels Effect as an empirical reality; this article makes a normative case that, in this instance, the EU institutions should actively embrace it as a means to advance its goals. The proposed Regulation is an example of the Union leveraging market power to accomplish normative goals, by exporting its values to third countries. This offers room for the EU to be a force for good in the world, answering some of the qualms raised in Bradford's work about the potential ‘imperialism’ of the Brussels Effect. The present article argues the Union should go further, try to ‘externalise’ more of the social acquis in the field of labour law, leveraging its international market power to both improve labour standards around the globe. This article challenges Bradford's original contention that the Brussels Effect does not apply to labour standards, arguing instead that it is possible, and normatively desirable, for the Union to follow this Regulation with a broader suite of measures aimed at globalising European labour standards, with benefits for both third-country nationals and citizens of the Union. Second, the article links the proposed Regulation to concern about the geostrategic vulnerability of Member States and the Union as a whole, where essential products are manufactured in third countries. This became apparent during the Covid-19 pandemic, with many critical supplies predominantly manufactured outside the Union. The ‘strategic autonomy’ agenda of the EU implies re-shoring of important industry, which is more easily accomplished where EU regulation lessens the ability of third countries to undercut the EU with low labour standards. This will have long-term economic benefits for the Union and its citizens, as well as depressing the potential for systemic rivals to the Union to develop their industrial and technological capacities at the expense of the Union and its Member States, and deprive governments that disregard fundamental rights of workers of revenues from investment, manufacturing and exports to the Union.",
+      "date": "2023-12-19",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/20319525231221097",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3081,6 +3251,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1177/20319525241295517",
+      "title": "Enforcement of EU Labour Law: Legal foundations and the role of the CJEU",
+      "abstract": "Labour law enforcement is crucial for achieving its social objectives, yet it often faces significant challenges in terms of its capacity to ensure the effective protection of labour rights. In the EU context, effective enforcement of labour law is further complicated by the absence of a sectoral, i.e., labour-specific, approach and the challenges in implementing EU substantive rules, often stipulated in Directives. The article assesses the enforcement landscape of EU labour law and particularly the legal foundations and the CJEU's role. Focusing on key enforcement issues, the analysis highlights how the constitutional right to an effective judicial remedy, as interpreted by the CJEU, and the inclusion of more comprehensive enforcement provisions in EU Directives are mitigating to some extent the existing fragmentation in the EU regulatory landscape, and concludes with considering future directions in EU labour law enforcement.",
+      "date": "2024-10-30",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/20319525241295517",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.eneco.2024.107931",
       "title": "Global spillovers of US climate policy risk: Evidence from EU carbon emissions futures",
       "abstract": "",
@@ -3111,6 +3298,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ets.2024.100007",
+      "title": "A review of the future transport labour market: An EU approach",
+      "abstract": "",
+      "date": "2024-12-31",
+      "journal": "European Transport Studies",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ets.2024.100007",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
