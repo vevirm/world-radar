@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T19:23:54.762757+00:00",
+  "updated_at": "2026-10-18T21:49:01.022028+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -69,6 +69,23 @@
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/jtf-12-2014-0020",
+      "title": "Investigating scenario planning – a European tourism perspective",
+      "abstract": "Purpose The purpose of this paper is to discuss the scenario planning approach developed and used by the European Tourism Futures Institute (ETFI). Design/methodology/approach This paper contains the following sections: mission and aims of the research group; epistemological and methodological positioning, conceptual framework and research lines for an applied scenario planning approach. Findings This paper highlights the research methodology of the scenario planning group of the European Tourism Research Institute. It provides insight in the research foundations of the scenario planning approach in a tourism context and ETFI's conceptual framework for scenario planning. Originality/value The paper provides an insight to how Europe's first tourism futures research centre developed and uses a conceptual framework for scenario planning thus demonstrating best practice success.",
+      "date": "2015-03-16",
+      "journal": "Journal of Tourism Futures",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/jtf-12-2014-0020",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -254,7 +271,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -560,7 +577,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -628,7 +645,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -900,7 +917,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1019,7 +1036,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1738,6 +1755,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.envsoft.2018.07.012",
+      "title": "A web based analysis and scenario tool for eutrophication of inland waters for Sweden and Europe",
+      "abstract": "",
+      "date": "2019-01-31",
+      "journal": "Environmental Modelling & Software",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.envsoft.2018.07.012",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1017/s1574019619000038",
       "title": "The Court of Justice and the Ban on Bulk Data Retention: Expansive Potential and Future Scenarios",
       "abstract": "Data retention saga – Interpretative strategy of the Court of Justice – Expansive potential of the principles set by the Court of Justice – ‘Reverse’ effet utile and conflict of competence – EU acts under threat – Domino effect on national security measures – Future scenarios – Twilight of the model of bulk data retention – Modulation of the ban on bulk data retention according to the vulnerability of data processing or depending on the prior unknowability of the threats – Divergence from the European Court of Human Rights – Legitimisation of bulk data retention ‘ Equo ne credite, Teucri! Quidquid id est, timeo Danaos et dona ferentes ’ — Virgil, Aeneid , II, 48-49",
@@ -1920,7 +1954,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2010,6 +2044,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/su12062517",
+      "title": "The Linkages of Carbon Spot-Futures: Evidence from EU-ETS in the Third Phase",
+      "abstract": "Based on the prices selected from European Energy Exchange (EEX) from 2013 to 2018, we investigate the inter-correlation of carbon spot and futures markets. Specifically, we adopt the widely used DCC-GARCH model and VAR-BEKK-GARCH model to conduct a comprehensive analysis on the carbon market, i.e., the dynamic correlation and volatility spillover between carbon spot and carbon futures. Moreover, we develop a hedge strategy based on the VAR-BEKK-GARCH model and calculate the hedging effectiveness (HE) value to evaluate the strategy performance. The empirical results show that (i) during our sample period, carbon spot and futures markets are highly correlated, (ii) carbon spot overflows to the futures market and vice versa, and (iii) the HE value is equal to 0.9370, indicating a good performance for the hedging strategy. Then, we provide further discussion on the relationship between carbon spot and futures markets by replacing our dataset with the data of phase II. The results do not change our conclusions on the dynamic correlation and volatility spillover. However, the HE value of phase III is higher than that of phase II, which indicates that the carbon futures market of phase III is not only an available market to hedge risk from the contemporaneous carbon spot market but also has a better hedge effectiveness than phase II.",
+      "date": "2020-03-23",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su12062517",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s10767-020-09351-x",
       "title": "“Brexit Futures: a Brexit World’s Anxieties, Fears and Hopes”: a Response to Shakuntala Banaji’s “A Review of Victor Seidler’s Making Sense of Brexit: Democracy, Europe and Uncertain Futures”",
       "abstract": "",
@@ -2040,6 +2091,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
       "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/2336825x20909945",
+      "title": "Brexit futures: Between a model and a martyr: An addendum to ‘Brexit and EU Legitimation’",
+      "abstract": "Brexit has a habit of rendering research redundant rapidly. Since I wrote ‘Brexit and EU Legitimation: Martyr for the EU Cause?’ (published in New Perspectives vol. 27 [3]), Boris Johnson has won a large majority on the back of his promise to ‘Get Brexit Done’ and his ability to pass a withdrawal agreement. As such the chances of a no-deal Brexit have receded (for now). This has not rendered my analysis obsolete, but reflecting upon Johnson’s slogan has led me to realise that my analysis could be broadened. In this addendum, I flesh out what is left ambiguous in the article and develop a more holistic framework for analysing the discursive effects of Brexit. In doing so, I make the argument that for the European Union (EU), Brexit will never be ‘done’, at least for the EU. Instead, Britain’s fortunes look set to become a bellwether for soft Eurosceptics considering turning hard. The extent to which Britain is perceived to bask in the ‘sunlit uplands’ or, conversely, to suffer economic and/or political disaster as a consequence of leaving the EU will inform whether Britain is used as a ‘model’ or a ‘martyr’ at any given time. Thus, Britain’s fortunes have thus become inextricably linked to the EU.",
+      "date": "2020-05-17",
+      "journal": "New Perspectives",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/2336825x20909945",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2175,7 +2243,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2192,7 +2260,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2210,6 +2278,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su122410540",
+      "title": "Modelling Bioeconomy Scenario Pathways for the Forest Products Markets with Emerging Lignocellulosic Products",
+      "abstract": "The forest-based sector plays diverse roles among the emerging bio-based industries. The goal of this study is to examine how forest product markets could develop in the face of a growing bioeconomy and which interdependencies occur between traditional and emerging forest-based sectors. Therefore, we analyze the development of dissolving pulp together with lignocellulose-based textile fibres and chemical derivatives in a partial equilibrium model. For this purpose, we extend the product structure of the Global Forest Products Model (GFPM) and analyze three different bioeconomy scenarios from 2015 to 2050. The simulation results show that, in a scenario where the world is changing toward a sustainable bio-economy, wood consumption patterns shift away from fuelwood (−30% by 2050) and classical paper products (−32% by 2050) towards emerging wood-based products. In this context, the dissolving pulp subsector could outpace the continuously shrinking paper pulp subsector by 2050. To develop in this way, the dissolving pulp subsector mainly uses released resources from the decreasing paper pulp production. Simultaneously, wood-based panels are finding increasing application (+196% by 2050) and thus are taking over potential markets for sawn wood, for which production growth remains limited. Our results also show that, until 2050, the production of many wood-based products will take place mainly in Asia instead of North America and Europe.",
+      "date": "2020-12-16",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su122410540",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2243,7 +2328,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2282,6 +2367,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.46364/ejwi.v6i2.881",
+      "title": "Editors comments Our Common Futures of Sustainable Work - Concluding Reflections",
+      "abstract": "These concluding remarks are divided into two sections and comprise both an overview of European policies on decent and sustainable work and a bird’s eye's view of the development of Swedish working life research in a European context. The concept of sustainable work has over the years encountered difficulties of being included in the Social Sustainability family. The launching of SDG 8 on Decent Work and Economic Growth with its focus on inclusive, and sustainable economic growth, full and productive employment, and decent work for all has given sustainable work a new and stronger position as a vision for good work. The launching of the consultation of European Pillar of Social Rights in 2017 highlights the importance of future of work and welfare systems in Europe. The role of the social dialogue for sustainable and greener jobs are crucial in a future perspective.  Sustainable welfare, social protection and social equality are prerequisites for decent and sustainable work. Working life research in Sweden has over the years interacted in various manners with the European policy and research communities. The Swedish National Institute for Working Life, abolished in 2006/07 created several European encounters, early in the new millennium, and the idea of sustainable work did have Swedish roots. Horizon Europe, current research on the Nordic labour market model and various European platforms and networks opens new windows for the social dialogue on the future European workplace. This policy discussion is urgently needed in times of Covid-19, digitalisation, and the Green Deal and pave the way for new European research programmes.",
+      "date": "2021-03-05",
+      "journal": "European Journal of Workplace Innovation",
+      "publisher": "University of Agder",
+      "url": "https://doi.org/10.46364/ejwi.v6i2.881",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.futures.2020.102690",
       "title": "Stakeholders’ preferences for the future of transport in Europe: Participatory evaluation of scenarios combining scenario planning and the multi-actor multi-criteria analysis",
       "abstract": "",
@@ -2311,7 +2413,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2362,7 +2464,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2379,7 +2481,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2415,6 +2517,23 @@
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3389/fenrg.2021.735665",
+      "title": "Research on the Correlation Between WTI Crude Oil Futures Price and European Carbon Futures Price",
+      "abstract": "In recent years, the rapid increase in CO 2 concentration has accelerated global warming. As a result, sea levels rise, glaciers melt, extreme weather occurs, and species become extinct. As the world’s largest CO 2 emission rights trading market, EU Emissions Trading System (EU-ETS) has reached 1.855 billion tons of quotas by 2019, influencing the development of the global carbon emission market. Crude oil, as one of the major fossil energy sources in the world, its price fluctuation is bound to affect the price of carbon emission rights. Therefore, this paper aims to reveal the correlation between crude oil futures prices and carbon emission rights futures prices by studying the price fluctuation. In this paper, the linkage between West Texas Intermediate (WTI) crude oil futures prices and European carbon futures prices was investigated. In addition, this paper selects continuous data of WTI crude oil futures prices and spot prices with European carbon futures prices from January 8, 2018 to November 27, 2020, and builds a smooth transformation regression (STR) model. The relationship between crude oil futures and carbon futures prices is studied in both forward and reversal linkage through empirical analysis. The results show that crude oil futures prices and carbon futures prices have a mutual effect on each other, and both linear and nonlinear correlations between the two prices exist. Based on the results of this research, some suggestions are provided.",
+      "date": "2021-08-20",
+      "journal": "Frontiers in Energy Research",
+      "publisher": "Frontiers Media SA",
+      "url": "https://doi.org/10.3389/fenrg.2021.735665",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2520,6 +2639,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1080/23299460.2021.1978692",
+      "title": "Multiple futures for society, research, and innovation in the European Union: jumping to 2038",
+      "abstract": "",
+      "date": "2021-10-06",
+      "journal": "Journal of Responsible Innovation",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/23299460.2021.1978692",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1186/s40309-021-00183-2",
       "title": "The future of polarisation in Europe: relative cosmopolitanism and democracy",
       "abstract": "Abstract One of the central features of our societies is an increasing polarisation between communitarian and cosmopolitan positions. The theoretically sound and differentiated concepts are increasingly being escalated and misused in political practice by authoritarian populists and polarising pushers who try to pull the undecided to their side and tear society apart. Two essential agreements of the post-war period are increasingly being called into question: The European consensus, which considers European unification as an essential achievement and goal of political actors, and the democratic consensus, which states that representative democracy is the undisputed best form of government. In this article, after an introductory definition of polarisation, two future scenarios are developed. In the scenario “Polarised Europe”, polarisation is extrapolated into the future and discussed with its serious consequences for the democratic and European consensus. The second scenario “Democratised Europe” shows how the concept of a relative cosmopolitanism can mitigate polarisation and what steps could possibly be taken to constructively turn it into a more democratic direction.",
@@ -2532,7 +2668,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2669,6 +2805,40 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
       "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/agr.21735",
+      "title": "Futures–spot price transmission in EU corn markets",
+      "abstract": "Abstract Price transmission between futures and spot prices is a relevant issue, dealing with derivatives exchange for price management practices and efficient price discovery. Indeed, due to the increased market orientation of the Common Agricultural Policy, the development of new market strategies is of utmost importance for European farmers. In this context, this study examines the degree of transmission for the corn commodity between global futures price in either the Chicago Board of Trade or Euronext and the spot prices for a selection of Member States of the European Union. This study provides critical insights into the shape of the futures–spot price transmission, confirming a long‐run relationship and a cointegrating behaviour of price sets. [EconLit Citations: Q02, Q14, E3].",
+      "date": "2022-02-28",
+      "journal": "Agribusiness",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/agr.21735",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5380/nocsi.v0i2.91156",
+      "title": "Anticipatory responsible innovation: Futures construction in the face of the techno-economic imperative",
+      "abstract": "The call for the development of more responsible research and innovation has increasingly permeated European Union research and development policies. Specifically, under the auspices of approaches such as “Responsible Research and Innovation” (RRI) and “Open Science”, these policies conceive of the need to make innovation dynamics radically open and debatable, even with regard to the underlying preferences and expectations shaping them. Responsibility has thus been conceived in eminently anticipatory terms, that is, in terms of collectively taking care in the present of the futures enabled through innovation practices. This normative conception, which emphasises the politicisation of the ways futures are constructed through innovation and goals they are oriented towards, is nonetheless realised within a context where the prevailing way of approaching the future with regard to innovation systems is highly committed to a capitalist imperative of technological progress and economic growth. This article argues that while anticipation – understood as an interventive practice – can deploy valuable responsibilisation heuristics, their degree of disruptiveness, or openness, may depend on how such interventive practice engaging with futures deals with this techno-economic commitment, or imperative.",
+      "date": "2022-02-28",
+      "journal": "NOvation - Critical Studies of Innovation",
+      "publisher": "Universidade Federal do Paraná",
+      "url": "https://doi.org/10.5380/nocsi.v0i2.91156",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2821,7 +2991,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2838,7 +3008,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2906,7 +3076,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3025,7 +3195,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3416,7 +3586,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3467,7 +3637,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3588,6 +3758,23 @@
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.frl.2024.105891",
+      "title": "The impact of global uncertainties on the spillover among the European carbon market, the Chinese oil futures market, and the international oil futures market",
+      "abstract": "",
+      "date": "2024-09-30",
+      "journal": "Finance Research Letters",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.frl.2024.105891",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -3841,7 +4028,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4266,7 +4453,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4351,7 +4538,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4387,6 +4574,23 @@
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/17579961.2025.2593772",
+      "title": "Innovations as imagined futures in EU sustainability policies",
+      "abstract": "",
+      "date": "2025-12-11",
+      "journal": "Law, Innovation and Technology",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/17579961.2025.2593772",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -4492,6 +4696,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1080/02619768.2025.2609638",
+      "title": "Re-imagining the professional status of teacher educators in Europe: insights from futures-oriented comparative research",
+      "abstract": "",
+      "date": "2026-01-06",
+      "journal": "European Journal of Teacher Education",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/02619768.2025.2609638",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1177/08883254251394658",
       "title": "A Paradigm Shift: The Geopolitical Awakening of the European Union and Central and Eastern Europe States as Full-Fledged Security Actors in the Context of Russia’s War in Ukraine",
       "abstract": "The Russian war has impacted not only Ukraine but also the whole European community—the European Union (EU) and especially Central and Eastern Europe (CEE), where the Russian threat has been looming for over three decades ever since the collapse of the Soviet Union. Now, having revisited their aggressive policies of the past, Russia’s actions have detrimental effects on the region not only through active warfare in Ukraine but also due to propaganda and disinformation campaigns in many EU states, as well as energy blackmail. The EU as a whole has also been deeply affected by the war in Ukraine. There was talk of a “paradigm shift” in France, of a “Zeitenwende” (end of an era) in Germany, of an “end to naivety.” The EU has not only emerged from its soft policy in the face of the Russian regime’s policies but also matured in its geopolitical awareness. The war in Ukraine has hit a trajectory that was already favorable to the EU’s geopolitical consolidation. Since 2014, European defense has been revived, at least in terms of capabilities, with joint funding for military research projects and the joint development of defense capabilities (in particular, the European Defense Fund with eight billion euro for 2021–2027). Undoubtedly, resolving the conflict is up to the Ukrainians and the Russians. Still, the process will directly or indirectly involve all actors interested in a global order. The axis of geopolitical world reconstruction is particularly important for Ukraine but is also vital for the future of the EU, CEE, and Poland. Therefore, it must be assumed that the EU’s approach and capabilities must be prepared diplomatically and militarily to respond to any potential future threats to maintain stability and peace in the region.",
@@ -4522,6 +4743,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/14782103261415981",
+      "title": "Reframing organisational sustainability in European University Alliances: From managerial models to policy futures",
+      "abstract": "What does organisational sustainability mean when environmental aspects are deliberately set aside? This paper reframes sustainability from a managerial model towards a policy-oriented understanding, focusing on organisational dimensions such as longevity, resilience, viability, adaptability, and persistence. As sustainability remains central to political and institutional agendas, an exclusive ecological focus constrains our ability to grasp how organisations – particularly in higher education – sustain continuity and strategic relevance under shifting socio-political and economic pressures. The paper examines European University Alliances (EUAs) – a flagship initiative of the European Commission that promotes transnational cooperation among higher education institutions. Conceptualised as meta-organisations (inter-organisational networks), EUAs encounter enduring challenges of governance, funding, coordination, and legitimacy. Analysing their sustainability, therefore, requires a framework that connects sustainability dimensions with enabling managerial, financial, legal, and ethical factors, while integrating meta-factors such as organisational culture, process management, and power dynamics. Based on an integrative review of literature across management, organisational studies, sociology, and higher education research, the paper synthesises existing conceptualisations of organisational sustainability and reinterprets them through the lens of European higher education policy. The findings reveal that managerial approaches to sustainability remain underdeveloped both in theory and practice. The paper proposes a conceptual framework for assessing the sustainability of European University Alliances. It provides policy-relevant insights for researchers, institutional leaders, and policymakers seeking to enhance the resilience and viability of complex higher education networks.",
+      "date": "2026-01-10",
+      "journal": "Policy Futures in Education",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/14782103261415981",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4625,6 +4863,23 @@
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/ffo2.70040",
+      "title": "Corporate Foresight and Innovation: The Mediating Role of Innovation Culture and the Moderating Effect of Environmental Uncertainty",
+      "abstract": "ABSTRACT To adapt to a swiftly evolving and unpredictable world, business leaders have strengthened their strategic planning approaches by incorporating corporate foresight to support innovation. However, questions remain regarding how effectively organizations utilize foresight to enhance product innovativeness. Further research is needed to explore this relationship. This manuscript seeks to fill this gap by answering the following research question: How does corporate foresight relate to new product portfolio innovativeness (NPI)? To address this question, this study formulates a model that connects corporate foresight to NPI. It also examines the mediating role of innovation culture and the moderating effect of environmental uncertainty, operationalized as perceived long‐horizon state uncertainty (EU), as these interacting factors provide further insights into this relationship. This empirical investigation employs a cross‐sectional quantitative, explanatory and predictive approach with a non‐experimental design. The hypotheses are evaluated through a survey of 113 companies in Colombia's food and beverage sector. The field results are analyzed using partial least squares structural equation modeling (PLS‐SEM). The results indicate a significant and positive association between corporate foresight and NPI, with innovation culture serving as a complementary but modest mediator. Moreover, corporate foresight is strongly and positively associated with innovation culture. However, no evidence was found for a moderating effect of EU. This study provides empirical evidence from a field setting that foresight‐driven capabilities, such as environmental scanning and strategic selection, are associated not only with NPI but also with an organizational culture that is willing to innovate. The paper concludes by proposing future research directions.",
+      "date": "2026-04-14",
+      "journal": "FUTURES & FORESIGHT SCIENCE",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/ffo2.70040",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     }
   ]
