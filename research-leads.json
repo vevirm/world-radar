@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T13:31:43.290240+00:00",
+  "updated_at": "2026-10-18T16:51:25.738986+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -2979,6 +2979,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1080/13501763.2022.2141303",
+      "title": "Next generation EU and the future of economic governance: towards a paradigm change or just a big one-off?",
+      "abstract": "",
+      "date": "2022-11-23",
+      "journal": "Journal of European Public Policy",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13501763.2022.2141303",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T16:51:25.738986+00:00",
+      "last_seen": "2026-10-18T16:51:25.738986+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.2139/ssrn.4170198",
       "title": "Global Spillovers of US Climate Policy Risk: Evidence from EU Carbon Emissions Futures",
       "abstract": "",
@@ -3387,6 +3404,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.2478/seeur-2024-0045",
+      "title": "Exploring the Role of the Migration Policy Resolution in Enabling Anticipatory Governance in North Macedonia",
+      "abstract": "Abstract The migration landscape is a dynamic phenomenon shaped by geopolitical shifts, economic transformations, and climate change. North Macedonia, located in the heart of the Balkan Peninsula, serves as a critical transit country for significant migration patterns due to its strategic location and political aspirations towards Europe. Facing internal demographic challenges such as population decline and aging, the country is transitioning towards attracting immigration and becoming a destination for migrants. The Mediterranean Crisis of 2015 highlighted North Macedonia's pivotal role in migration routes, with over 800,000 individuals crossing its borders amid Europe's refugee and migrant influx. Despite containment efforts, the country remains part of mixed-movement routes, with significant border crossings observed in subsequent years. The long-term suspicions of brain drain were confirmed when the demographic census of 2021 revealed a startling 10% population decline over nearly two decades, emphasizing persistent outmigration and aging trends. To address migration challenges, North Macedonia adopted the Resolution on Migration Policy 2021-2025, aiming to establish a robust framework for managing both legal and illegal migrations. Anticipatory governance emerges as a proactive approach to navigating migration complexities, incorporating foresight and policy integration to shape sustainable migration policies in the country. The development of an Anticipatory Migration Governance model that seeks to foster transformative mindset shifts among stakeholders and institutionalize forward-looking planning, ensuring the effectiveness of migration management strategies. Through capacity development, improving of data collection, and decisions based on data, North Macedonia aims to navigate migration dynamics and achieve economic development with future-looking inclusive policies and collaboration.",
+      "date": "2024-06-26",
+      "journal": "SEEU Review",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.2478/seeur-2024-0045",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T16:51:25.738986+00:00",
+      "last_seen": "2026-10-18T16:51:25.738986+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.heliyon.2024.e33468",
       "title": "Equilibrium bifurcation and extreme risk in the EU carbon futures market",
       "abstract": "",
@@ -3450,7 +3484,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T16:51:25.738986+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
