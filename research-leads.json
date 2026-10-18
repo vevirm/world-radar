@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T00:15:02.472288+00:00",
+  "updated_at": "2026-10-18T05:05:09.946316+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -237,7 +237,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -254,7 +254,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -407,7 +407,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -510,6 +510,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
       "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/atmos7040060",
+      "title": "Review on the Projections of Future Storminess over the North Atlantic European Region",
+      "abstract": "This is an overview of the results from previously published climate modeling studies reporting on projected aspects of future storminess over the North Atlantic European region (NAER) in the period 2020–2190. Changes in storminess are summarized for seven subregions in the study area and rated by a categorical evaluation scheme that takes into account emission scenarios and modeling complexity in the reviewed studies. Although many of the reviewed studies reported an increase in the intensity of high-impact wind speed and extreme cyclone frequency in the second half of the 21st century, the projections of aspects of future storminess over the NAER differed regionally. There is broad consensus that the frequency and intensity of storms, cyclones, and high-impact wind speed will increase over Central and Western Europe, and these changes will probably have the potential to produce more damage. In contrast, future extratropical storminess over Southern Europe is very likely to decrease. For Northern and Eastern Europe the results of the evaluation are inconclusive, because there is an indication of increasing as well as decreasing development of the evaluated aspects of future storminess. Concerning the storm track, we found indications of a likely north- and eastward shift in most assessed studies. Results from three studies suggest a northeastward shift of the North Atlantic Oscillation.",
+      "date": "2016-04-22",
+      "journal": "Atmosphere",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/atmos7040060",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -718,6 +735,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1177/201395251600700301",
+      "title": "Future Directions in EU Labour Law",
+      "abstract": "The present edition of the European Labour Law Journal presents the results of a yearlong research and policy engagement project funded by the British Academy. Future Directions in EU Labour Law brought together early career scholars in employment law from across the European Union with senior mentors and policy experts from across the European Institutions. This guest editorial set outs the background to the project, introduces and highlights the key themes of the papers to follow, and acknowledges the support that the project has enjoyed over the course of 2015.",
+      "date": "2016-09-01",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/201395251600700301",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/201395251600700311",
+      "title": "The Future of European Labour Law and the Right to Employability",
+      "abstract": "This paper sets out to provide an overview of European policies concerning validation of non-formal and informal learning, and to offer some reflections with regards to European governance modes in the field of educational and employment policies, and the consistency of policies for validating non-formal and informal learning with initiatives focused on occupational transitions. In view of an evaluation of the impact of the Council's Recommendation of December 2012 on the validation of informal and non-formal learning (as well as its possible review expected for 2019), the paper offers some preliminary elements for evaluating the relevance, the efficacy, and the consistency of European action in this field and speculates about the likely direction of future developments.",
+      "date": "2016-09-01",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/201395251600700311",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.5547/01956574.37.si3.poei.ojea",
       "title": "European Scenarios of CO2 Infrastructure Investment until 2050",
       "abstract": "",
@@ -849,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -917,7 +968,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -968,7 +1019,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.renene.2016.08.036",
+      "title": "Potential impacts of climate change on European wind energy resource under the CMIP5 future climate projections",
+      "abstract": "",
+      "date": "2017-02-28",
+      "journal": "Renewable Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.renene.2016.08.036",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1160,6 +1228,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1177/2031952517743860",
+      "title": "The future of labour law in Europe",
+      "abstract": "This contribution contains the text of the first Roger Blanpain Lecture held at the Law Faculty of the University of Leuven on 8 May 2017. The Roger Blanpain Lecture Series aims to bring a renowned expert in the field of labour law and labour relations to the Law Faculty of the KU Leuven once per year. The idea is to stay close to the academic approach of professor Blanpain and the Institute for Labour Law, which implies the study of labour law from an international, comparative and cross-disciplinary perspective. The lecture aims to offer a ‘window to the world’ to our students and the Institute’s academic and professional partners as well as the wider public.",
+      "date": "2017-12-19",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/2031952517743860",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/en11010020",
       "title": "Pathways to Decarbonise the European Car Fleet: A Scenario Analysis Using the Backcasting Approach",
       "abstract": "This paper analyses decarbonisation scenarios for the European passenger car fleet in 2050. The scenarios have been developed using the backcasting approach and aim to reduce greenhouse gas (GHG) emissions of passenger cars to a level defined in the Transport White paper that is 60% below 1990 levels. Considering the emission levels of 2010, a yearly reduction of 1.7% is required in order to achieve the target. Car emissions were decomposed into the main emission factors of mobility, efficiency and carbon intensity. How these factors change over time depends on various external factors: the pace of technological improvements, the future role of cars in society’s mobility system and the priority given to decarbonising energy demand. The analysis showed that if car mobility and ownership continue to increase as expected in a ‘business as usual’ case, a share of 97% plug-in hybrid or battery electric vehicles might be required by 2050, together with a substantial decrease in greenhouse gas emission from electricity production. A transition to more advanced car technology such as automated driving, advanced batteries or lightweight materials in vehicle production would raise vehicle efficiency. Should car mobility continue at a high level, an early technology transition will be required.",
@@ -1174,6 +1259,23 @@
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.34196/ijm.00180",
+      "title": "Female Labour Force Projections Using Microsimulation for Six EU Countries",
+      "abstract": "",
+      "date": "2017-12-31",
+      "journal": "International Journal of Microsimulation",
+      "publisher": "International Microsimulation Association",
+      "url": "https://doi.org/10.34196/ijm.00180",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1206,7 +1308,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1427,7 +1529,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1466,6 +1568,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-018-0144-x",
+      "title": "Analysing instability as a future for an institutionalization process: the EU, Turkey and the issue of migration",
+      "abstract": "",
+      "date": "2018-09-18",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-018-0144-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/2031952518799761",
+      "title": "A hypothesis on the economic nature of labour law",
+      "abstract": "This article aims to introduce in the scientific debate on the future of EU labour law and its relationship with human and fundamental rights, a redefinition of the collective labour rights in terms of ‘collective labour freedoms’. This redefinition is undertaken in different steps and initiates from the so-called ‘Laval doctrine’ that has emancipated the economic freedoms (mainly referred to as the freedoms of the employers) from the social rights (mainly referred to as the rights of workers and trade unions): collective labour freedoms do not question the outcome of the balance struck by the CJEU but the possibility of balancing per se. In order to do so, this contribution proposes a different methodology that synthesises a socio-historical analysis of social rights as materially considered and acted by social partners with a positive reading of fundamental charters and constitutions in which the freedom of association, the right to collective bargaining and industrial action are recognised as tools to regulate the interests of a social and economic nature (in form of an inseparable hendiadys) pursued by both sides of the labour market, employers and employees. Collective labour freedoms underline the inherent economic nature of labour law and, in line with the theoretical framework (but opposite in terms of political goals) with the German ordoliberals, they do not deny the freedom of market; moreover, they are valuable entitlements to achieve the social market economy as enshrined in Art. 3(3) of TEU. The article finally presents a possible outcome of the proposed methodology with an example taken from a pivotal case from the Italian Supreme Court on the limits to the exercise of the right to strike in non-standard forms.",
+      "date": "2018-09-27",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/2031952518799761",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1108/fs-12-2017-0074",
       "title": "Technology roadmapping in security and defence foresight",
       "abstract": "Purpose This paper aims to provide an analysis of Spanish Defence National Foresight Exercise. Design/methodology/approach The analysis is based on a content analysis of public domain Spanish Defence National Foresight Exercise, and a study directed to analyse the impact on defence technological and industrial base. Findings Foresight studies on the defence and security environment uses hybrid methodologies, but rarely involve all the stakeholders, and specially the citizens. The authors place a particular emphasis on the impact of these defence and security foresight studies, and following policies to increase the competitiveness and advanced technologies in the future. The analysis of the Spanish contractors allows an evaluation of the roadmaps as a policy instrument for the industrial defence industry. The main challenges for the next exercises in the European countries are to increase the interest in the firms’ intelligence systems, and the participation and representation of citizens as a way to guarantee their rights. Therefore, a technology roadmap must be complemented with other more participative foresight methods. Originality/value Foresight studies on the defence and security environment have been the subject of very few systematic analyses of impact. This paper makes a contribution to such analysis.",
@@ -1495,7 +1631,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1551,6 +1687,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.5194/hess-23-1533-2019",
+      "title": "Future projections of temperature and mixing regime of  European temperate lakes",
+      "abstract": "The physical response of lakes to climate warming is regionally\nvariable and highly dependent on individual lake characteristics, making\ngeneralizations about their development difficult. To qualify the role of\nindividual lake characteristics in their response to regionally homogeneous\nwarming, we simulated temperature, ice cover, and mixing in four intensively\nstudied German lakes of varying morphology and mixing regime with a\none-dimensional lake model. We forced the model with an ensemble of 12\nclimate projections (RCP4.5) up to 2100. The lakes were projected to warm at\n0.10–0.11 ∘ C decade −1 , which is 75 %–90 % of the\nprojected air temperature trend. In simulations, surface temperatures\nincreased strongly in winter and spring, but little or not at all in summer\nand autumn. Mean bottom temperatures were projected to increase in all lakes,\nwith steeper trends in winter and in shallower lakes. Modelled ice thaw and\nsummer stratification advanced by 1.5–2.2 and 1.4–1.8 days decade −1 respectively, whereas\nautumn turnover and winter freeze timing was less sensitive. The projected\nsummer mixed-layer depth was unaffected by warming but sensitive to changes\nin water transparency. By mid-century, the frequency of ice and\nstratification-free winters was projected to increase by about 20 %,\nmaking ice cover rare and shifting the two deeper dimictic lakes to a\npredominantly monomictic regime. The polymictic lake was unlikely to become\ndimictic by the end of the century. A sensitivity analysis predicted that\ndecreasing transparency would dampen the effect of warming on mean\ntemperature but amplify its effect on stratification. However, this\ninteraction was only predicted to occur in clear lakes, and not in the study\nlakes at their historical transparency. Not only lake morphology, but also\nmixing regime determines how heat is stored and ultimately how lakes respond\nto climate warming. Seasonal differences in climate warming rates are thus\nimportant and require more attention.",
+      "date": "2019-03-18",
+      "journal": "Hydrology and Earth System Sciences",
+      "publisher": "Copernicus GmbH",
+      "url": "https://doi.org/10.5194/hess-23-1533-2019",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/w11081720",
       "title": "Extreme Floods and Droughts under Future Climate Scenarios",
       "abstract": "Climate projections indicate that in many regions of the world the risk of increased flooding or more severe droughts will be higher in the future. To account for these trends, hydrologists search for the best planning and management measures in an increasingly complex and uncertain environment. The collection of manuscripts in this Special Issue quantifies the changes in projected hydroclimatic extremes and their impacts using a suite of innovative approaches applied to regions in North America, Asia, and Europe. To reduce the uncertainty and warrant the applicability of the research on projections of future floods and droughts, their continued development and testing using newly acquired observational data are critical.",
@@ -1602,6 +1755,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.33989/2075-146x.2019.23.183246",
+      "title": "EUROPEAN EXPERIENCE OF HUMANITARIAN AND LEGAL PREPARATION FOR FUTURE ENGINEERS",
+      "abstract": "",
+      "date": "2019-11-11",
+      "journal": "ТHE SOURCES OF PEDAGOGICAL SKILLS",
+      "publisher": "Poltava V.G.Korolenko National Pedagogical University",
+      "url": "https://doi.org/10.33989/2075-146x.2019.23.183246",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1002/ffo2.23",
       "title": "Horizon Scanning in Foresight – Why Horizon Scanning is only a part of the game",
       "abstract": "Abstract Foresight and Horizon Scanning are often regarded as identical concepts with identical models and purposes. But they can be completely different activities, both in and for any kind of prospective activity as well as for strategy purposes. Scanning is no debate and no strategy building. Whereas Foresight is more process‐oriented and always includes a Horizon Scanning phase, Horizon Scanning is rather found at the beginning of any forward‐looking activity and can be an automatized stand‐alone approach for identifying “things to come” ‐ which often means the identification of new science and technology and providing information about them. This paper wants to shed light on some of the confusions in Foresight and Horizon Scanning (HS) that often occur in organizations, among researchers and practitioners being thus of practical and scientific relevance for using an integrated model. The contribution is backed up by a study conducted for the European Commission (Cuhls et al., 2015) conducted to clarify for the Commission’s Foresight department (A6) how the strategic intelligence part of a foresight, the Horizon Scanning, is intertwined with the sense‐making part in similar projects in other parts of the world. The contribution thus starts with a broad definition of Foresight and of Horizon Scanning, explains findings from the study on objectives, methods used and relates the discussion to the EU standard “Foresight Cycle” derived from EFFLA. The conclusions are relevant for decision‐making and strategy processes in the European Commission, for national foresight processes but also for company's and other users.",
@@ -1631,7 +1801,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1700,6 +1870,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/2031952520922246",
+      "title": "A little less autonomy? The future of working time flexibility and its limits",
+      "abstract": "The European Court of Justice has recently issued rulings on the interpretation of the European Working Time Directive 2003/88, which appear to restrict flexible working time arrangements (especially Matzak C-518/15, Syndicat C-254/18 and CCOO C-55/18). Only a few months prior to the latter ruling of the CJEU, the Austrian legislator amended the Working Time Act in order to make it more flexible. The article argues that the measures taken by the Austrian legislator to enable more flexibility and autonomy can still be regarded as compatible with Union law. In general, the article tackles the question of possible further legislative developments in order to strike a balance between autonomy and the need for security of both parties to the employment relationship. Among other suggestions, the article introduces the concept of molecularisation of working time and examines whether work intensity should be introduced as a qualitative dimension to the concept of working time, thus deviating from the current European Working Time Directive. Finally, the article suggests security measures – often referring to Austria as a best practice example – in order to safeguard workers in view of working time flexibility.",
+      "date": "2020-05-12",
+      "journal": "European Labour Law Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/2031952520922246",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1784,7 +1971,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T20:59:36.504524+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1801,7 +1988,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1818,7 +2005,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1874,6 +2061,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.5547/01956574.42.3.faun",
+      "title": "Are Carbon Prices Redundant in the 2030 EU Climate and Energy Policy Package?",
+      "abstract": "In 2018, an agreement between the key EU institutions—the Commission, the European Parliament, and the European Council—was reached after a long-lasting discourse over the 2030 EU climate and energy policy package. This paper offers a comprehensive assessment of the EU package, with its three main targets: lower greenhouse gas emissions, higher renewable share in final energy consumption, and improved energy efficiency. We find that the renewable and energy efficiency targets have been set so high that the derived emissions reduction (50 percent) exceeds the EU climate target (40 percent). Hence, there is no need for an EU climate policy, for example, to use carbon prices to reach the EU climate goals. It is, however, not cost-efficient to achieve the climate target by imposing the three EU targets. We demonstrate that a cost-efficient policy that obtains a 50 percent GHG emissions reduction would increase annual welfare (relative to the Reference scenario) by an amount corresponding to 0.6 percent of GDP in Europe.",
+      "date": "2021-05-01",
+      "journal": "The Energy Journal",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.5547/01956574.42.3.faun",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-021-00174-3",
+      "title": "Democratising utopian thought in participatory agenda setting",
+      "abstract": "Abstract Engaging non-experts in matters of science and technology has been increasingly stressed in both rhetoric and action during the past decades. Under the call for moving participation upstream, agenda setting processes have been identified as viable entry point for laypeople’s experiential and value-based knowledge into science, technology and innovation governance (STI). Harnessing visioning for target setting promises to elicit such knowledge, whilst at the same time evading the dilemma of informing participants about STI that does not exist prior to engagement. To test such claims, we investigate a large-scale citizen-visioning exercise employed as an initiation of a transdisciplinary research and innovation agenda setting process, namely CIMULACT. In a comparable Europe-wide process, more than 1000 laypeople (citizens) produced 179 visions of desirable futures which built the basis for co-creating future research topics for advising the EU research and innovation programme Horizon 2020. We provide in depth insights into the visioning methodology for inclusion of citizens into STI agenda setting, and discuss room for methodological improvement regarding potential loss and gains of creativity and diversity of opinions considering empirical results of ex-post participant evaluation questionnaires (n ≈ 964). The discussed data shows a generally positive evaluation of the process and engagement, since citizens are in retrospective content with the process and visions, they would participate again in a similar event, and they are in favour of the EU to continue hosting such events in the future. However, citizens were rather sceptic whether the results actually (can/will) have an impact on the stated aim of integration in research and innovation agenda setting.",
+      "date": "2021-05-31",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-021-00174-3",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-021-00175-2",
+      "title": "Evidence-based narratives in European research programming",
+      "abstract": "Abstract The article introduces and exemplifies the approach of evidence-based narratives (EBN). The methodology is a product of co-design between policy-making and science, generating robust intelligence for evidence-based policy-making in the Directorate General for Research and Innovation of the European Commission (DG RTD) under the condition of high uncertainty and fragmented evidence. The EBN transdisciplinary approach tackles practical problems of future-oriented policy-making, in this case in the area of programming for research and innovation addressing the Grand Societal Challenge related to climate change and natural resources. Between 2013 and 2018, the EU-funded RECREATE project developed 20 EBNs in a co-development process between scientists and policy-makers. All EBNs are supported with evidence about the underlying innovation system applying the technological innovation systems (TIS) framework. Each TIS analysis features the innovation, its current state of market diffusion and a description of the innovation investment case. Indicators include potential future market sizes, effects on employment and environmental and social benefits. Based on the innovation and TIS function analyses, the EBNs offer policy recommendations. The article ends with a critical discussion of the EBN approach.",
+      "date": "2021-06-15",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-021-00175-2",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.techfore.2021.120802",
       "title": "Stakeholder inclusion in scenario planning—A review of European projects",
       "abstract": "",
@@ -1905,6 +2143,40 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17645/pag.v9i3.4320",
+      "title": "EU Climate and Energy Policy: How Myopic Is It?",
+      "abstract": "This article investigates the shortsightedness or myopia of recent climate and energy policy (CEP) in the EU. To this end, it develops and applies a measurement tool of short-termism composed of four key criteria: (1) the reflection of science-based long-term thinking in the policy process and its output; (2) the degree to which mid-term greenhouse gas emission targets and accompanying policies align with science-based long-term objectives; (3) the stringency of the legislation; and (4) its adaptability. We use these criteria to assess the levels of short-termism of the EU’s 2020 and 2030 CEP frameworks and the (still evolving) European Green Deal (EGD). Overall, we find that the level of myopia of EU CEP has fluctuated and has advanced far less than the development of the nominal mid-term emission targets might suggest. The EGD’s 55% emission reduction target for 2030 only constitutes a return to the levels of alignment with science-based long-term objectives existing in the 2020 Package (making good on the regression of the 2030 Framework). It is primarily due to the maturing of long-term thinking and a ratcheting mechanism, that EU climate policy under the EGD can be considered less myopic than the 2020 Package (although the assessment remains preliminary pending the adoption of further implementing legislation). These findings lay the ground for future research that not only investigates reasons for the general myopia of (EU) climate policy, but also the drivers of the fluctuations over time.",
+      "date": "2021-09-30",
+      "journal": "Politics and Governance",
+      "publisher": "Cogitatio",
+      "url": "https://doi.org/10.17645/pag.v9i3.4320",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-021-00183-2",
+      "title": "The future of polarisation in Europe: relative cosmopolitanism and democracy",
+      "abstract": "Abstract One of the central features of our societies is an increasing polarisation between communitarian and cosmopolitan positions. The theoretically sound and differentiated concepts are increasingly being escalated and misused in political practice by authoritarian populists and polarising pushers who try to pull the undecided to their side and tear society apart. Two essential agreements of the post-war period are increasingly being called into question: The European consensus, which considers European unification as an essential achievement and goal of political actors, and the democratic consensus, which states that representative democracy is the undisputed best form of government. In this article, after an introductory definition of polarisation, two future scenarios are developed. In the scenario “Polarised Europe”, polarisation is extrapolated into the future and discussed with its serious consequences for the democratic and European consensus. The second scenario “Democratised Europe” shows how the concept of a relative cosmopolitanism can mitigate polarisation and what steps could possibly be taken to constructively turn it into a more democratic direction.",
+      "date": "2021-10-10",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-021-00183-2",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2010,6 +2282,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/en15031118",
+      "title": "Can Education Save Money, Energy, and the Climate?— Assessing the Potential Impacts of Climate Change Education on Energy Literacy and Energy Consumption in the Light of the EU Energy Efficiency Directive and the Austrian Energy Efficiency Act",
+      "abstract": "The Austrian Education Energy Initiative ETSIT has been established as a response to the EU Energy Efficiency Directive and the Austrian Energy Efficiency Act. This paper investigates the energy literacy of its young participants, i.e., 6000 primary and secondary school students altogether, on a cognitive, affective and behavioural level, and it compares the putative energy-saving effectiveness of the workshops to that of conventional energy audits.For the current analysis, data from, 640 students who validly answered an online survey shortly after participating in one of the energy education workshops, and 353 students who validly answered the online survey approximately one year after having participated (overall n = 993) were analysed. The results indicate that ETSIT raises students’ energy literacy on a cognitive, affective and behavioural level with about three-quarters of participants claiming they will positively change their energy consumption behaviour in the future as a result of workshop participation. This is true shortly after participation in the workshops, and also at the 1-year follow-up. In its second impact perspective, this paper delivers an innovative attempt to look at education from a cost-benefit analysis. A default formula for energy audits is adopted to quantify the kilowatt hours (and thus emissions and costs) saved through workshop participation. Despite limitations, the surprising results show that such workshops can compete with conventional energy audits, and that education can, in fact, help save money, resources, and, most important of all, the climate.",
+      "date": "2022-02-02",
+      "journal": "Energies",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/en15031118",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su14063563",
       "title": "Towards the 2030 Agenda: Measuring the Progress of the European Union Countries through the SDGs Achievement Index",
       "abstract": "The 2030 Agenda and Sustainable Development Goals were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. The success or failure in their implementation largely depends on the national implementation effort, measured within wide and compound indicator frameworks. Due to such complexity, providing a simple but comprehensive view on the progress to achieve the SDGs is a priority. Moreover, the measure of the progress allows the consistency among the different dimensions of sustainable development to be assessed. The purpose of this work is to evaluate the results accomplished by European Union Countries in achieving SDGs. In particular, the paper proposed the SDGs achievement index (SDG-AI), a multicriteria-based index, including six different dimensions and applied to EU countries. The SDG-AI allows the differences across the EU countries to be highlighted, and also assesses the contribution of the different dimensions to the final result. The use of such an index will also be useful to understand the effect of the pandemic on the development.",
@@ -2023,6 +2312,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/en15062233",
+      "title": "Policy Modelling for Ambitious Energy Efficiency Investment in the EU Residential Buildings",
+      "abstract": "This paper presents the challenges of increasing the energy efficiency investments in European Union (EU) residential buildings in the context of achieving climate neutrality by 2050. The paper presents the results of the PRIMES buildings model in key energy policy applications to support cost-effective and fair policy making in buildings across Europe. The model covers, in detail, the building sector for all the EU Member States (MS), segmenting the buildings into many categories. The approach proposed includes non-market barriers in conventional microeconomic modelling, which combined with idiosyncratic preferences can capture poor energy efficiency choices and still represent rational behaviours. The model includes a detailed portrayal of policies specific to the sector, comprising economic and regulatory policies as well as institutional measures. The results of the model show that the removal of non-market barriers is of great importance in reducing energy consumption and increasing both the pace and the depth of renovation investment. However, the institutional measures alone are not enough to induce energy efficiency improvement to the scale required to achieve the climate neutrality objectives. Economic (i.e., subsidies) or regulatory measures (i.e., energy performance standards) are also required to decrease emissions and energy consumption in buildings and the paper compares different configurations thereof. The optimum policy mix obviously derives from a compromise among various aims including the cost-effectiveness of the policy budget and the distributional impacts across building and consumer types.",
+      "date": "2022-03-18",
+      "journal": "Energies",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/en15062233",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2061,6 +2367,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-022-00195-6",
+      "title": "(Re)politicization of climate change mitigating projects: environmental forms and motives of the Seine Nord Europe canal",
+      "abstract": "Abstract Climate change adaptation and mitigation strategies are gaining visibility and support. Decision-makers are defending the extension of large infrastructures that are low greenhouse gas (GHG) emitters, as a way to act quickly and massively without calling into question existing economic models. This situation depoliticizes these projects, masking their other ecological consequences such as their impacts on biodiversity. This article examines how promoters of these projects depoliticized its socio-technical futures while other actors re-politicized them. Using the example of the Seine Nord Europe Canal project, we show a politicization of the territorial future and a depoliticization of the environmental future. This depoliticization is based on the techno-optimist discourse promoting large-scale infrastructures as the only possible solution to the global ecological and climate crisis. It uses a selective framing of the environment that makes some elements visible and others invisible. We conducted semi-structured interviews with biodiversity stakeholders in the territories that would be impacted by the canal. Based on the concepts of environmental forms and motives, we reconstructed the environmental ontologies ignored by the dominant discourse and assembled them into three alternative scenarios. We present the method of investigation and identification of these motives and discuss the likelihood of the constructed scenarios participating in a re-politicization based on the reactions of various actors.",
+      "date": "2022-04-20",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-022-00195-6",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.futures.2022.102918",
       "title": "Probability and desirability of future developments – Results of a large-scale Argumentative Delphi in support of Horizon Europe preparation",
       "abstract": "",
@@ -2075,6 +2398,40 @@
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-022-00200-y",
+      "title": "Policymaking to support resilience in democratic countries: an examination of Sweden, Israel, and Australia",
+      "abstract": "Abstract The term ‘resilience’ has increasingly featured in foreign and security policy discourse, appearing in the 2016 European Union Global Strategy, the 2017 US National Security Strategy, and most recently in the UK’s 2021 Integrated Review. These strategies note the importance of preparing for, responding to, and recovering from crises that could affect civilian society. While these strategies agree on the importance of building resilience, they do not specify the concrete policies that would be required to do so. Through a comparison of three democratic countries that refer to resilience in their national security documents, Sweden, Israel, and Australia, this article will identify measures that contribute to resilience in democracies. It will also discuss how policymakers in democratic countries should anticipate emerging trends and future threats to enhance their resilience in an increasingly complex and dangerous security environment.",
+      "date": "2022-06-08",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-022-00200-y",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-022-00201-x",
+      "title": "A comprehensive review of Hungarian futures studies in light of international journal articles",
+      "abstract": "Abstract This article offers an overview of the evolution of Hungarian futures studies via a systematic literature review of articles with at least one Hungarian futurist (co-)author, published in high-ranking international or English-language Hungarian journals. The review reveals how researchers from a relatively small European country, where central planning had been applied for decades, have made their way to the pages of prestigious international journals and disseminated their results in a diverse range of articles to the global research community. The number of these publications has increased decade by decade. Results of statistical-based literature review demonstrate that research period and research topic are in strong association with the quality of journal articles, yet scientometric features of Hungarian futurist (co-)authors are not significant in this aspect. However, spectacular clustering of articles can be accomplished based on the citation statistics of Hungarian futurist (co-)authors.",
+      "date": "2022-06-23",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-022-00201-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2129,6 +2486,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-022-00209-3",
+      "title": "Politicizing the future: on lithium exploration in Portugal",
+      "abstract": "Abstract This text explores the meaning of the expression “mined future,” which has been used by local populations who oppose lithium production in Northern Portugal. We argue that the expression encapsulates the existence of a conflict for the “ownership” of future, unfolding a battle of visions of the future between local populations and governments. The local population sees the exploitation of lithium as a takeover of future. In contrast, the governments justify the project by promising a sociotechnical future in convergence with European green energy rhetoric. This article follows a grounded theory approach. It relies on information collected about the lithium exploration in Portugal, mainly through journalistic pieces and opinion articles disseminated between 2019 and 2020. In particular, the paper proposes that political action that involves large sociotechnical ventures with the potential of contamination needs to consider the local collective perceptions of the future.",
+      "date": "2022-10-13",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-022-00209-3",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckac129.203",
+      "title": "Foresight for policy – addressing the challenges for policy impact",
+      "abstract": "Abstract Background The role of policymaking is to create the future that we want. In its communication on Better Regulation, the European Commission recognises the need for strategic foresight to play a key role in helping to ‘future-proof’ EU policymaking. The aim is to ensure that decisions are grounded in a longer-term perspective. In times of rapid change, EU policymaking needs to have impact assessments, fitness checks and major regulatory evaluations informed by foresight. Strategic foresight is also a powerful way to engage with stakeholders and not only capture their perspectives, but also generate collective intelligence in the areas of policy interest. Lessons from EU policy making This fits within a broader effort at the Commission to be at the forefront of excellence in policymaking in Europe and worldwide. This is why the EU Policymaking Hub was launched 2020. It offers a platform for policymakers to learn, collaborate and share knowledge in EU policymaking, introducing new capacity building offers. It aims at strengthening the Commission's policymaking capacity through anticipating, developing, implementing, monitoring, and evaluating policies in an evidence-informed, transparent, and collaborative way with stakeholders, citizens and experts. Providing the policymaking community with a framework for long-term competence development will strengthen the profession, make it fit for the future, contribute to colleagues’ motivation and help the Commission to achieve its goals. Conclusions Being futures literate covers a range of skills from anticipation to the ability to run in-depth foresight processes. It spans a range of abilities from having an anticipatory mindset to scanning for change, understanding change and being able to influence change. Since its inception, this competence framework is at the base of an effort to train European civil servants in foresight and to increase foresight literacy for application in policymaking.",
+      "date": "2022-10-25",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckac129.203",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1163/18786561-12030003",
+      "title": "Climate, Energy – and Environment? Reconciliation of EU Environmental Law with the Implementation Realities of EU Climate Law",
+      "abstract": "Abstract Recognizing that significantly increased renewable-energy share ( res ) is a central component of both EU climate and environmental law, the focus of this paper is the point of intersection between these legal frameworks. Renewable-energy infrastructure projects are necessary for climate-mitigation purposes, but they give rise to significant local environmental impacts that have a negative effect on local communities and environmental conditions. The objective of environmental protection, ‘to preserve, protect and improve the quality of the environment’, does not fully align with the objectives of climate mitigation, which are designed to safeguard the needs of future generations and the long-term environment. While EU environmental policy encompasses ‘measures designed to combat climate change’, little attention has been afforded in relevant Directives to the impact of climate-mitigation measures on the environment. There is no provision for proportionate treatment of the impacts of these measures in environmental governance procedures. Analysis of the provisions of the eia and Habitats Directives, which directly impact the authorization of renewable-energy projects, reveals that climate as a component of EU environmental policy is dealt with via the limitation and control of greenhouse gas emissions, an incomplete approach that fails to provide for the development of new large-scale infrastructure that can mitigate the generation of greenhouse gas emissions through provision of sustainable energy sources. The European Union’s revised Trans European Network – Energy ( ten-E ) Regulation (June 2022) provides that energy infrastructure in the form of projects of common interest shall be deemed to be in the overriding public interest in the context of the Habitats Directive, an exception to that Directive’s prohibition on development that could negatively impact protected Natura 2000 features. A proposal pursuant to the EU Commission’s plan ‘REPowerEU’ recommends an amendment to the Renewable Energy Directive to introduce a similar overriding provision in respect of all renewable-energy infrastructure projects. These sidestepping provisions in climate-energy laws, made necessary by the failure of EU environmental law to incorporate effective provisions that promote climate change measures, are an incomplete solution that will limit the regulation of an environmentally responsible approach to increased res and are likely to be challenged.",
+      "date": "2022-10-26",
+      "journal": "Climate Law",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.1163/18786561-12030003",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.enconman.2022.116160",
       "title": "Projections of energy yield- and complementarity-driven wind energy expansion scenarios in the European Union",
       "abstract": "",
@@ -2175,7 +2583,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2139/ssrn.4170198",
+      "title": "Global Spillovers of US Climate Policy Risk: Evidence from EU Carbon Emissions Futures",
+      "abstract": "",
+      "date": "2022-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.4170198",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2227,6 +2652,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-023-00219-9",
+      "title": "The Mammoth prophecies: a role-playing game on controversies around a socio-technical innovation and its effects on students’ capacities to think about the future",
+      "abstract": "Abstract This article reports on a political game played between November 2021 and February 2022 at a European university in the frame of an elective course open to students from all disciplines. It started from a scenario that combined a real and ongoing innovation process—the use of CRISPR/Cas9 technology to introduce specific genes from unfrozen mammoths onto an elephant species to make it more resistant to cold—with a fictive joint project between a US-based company and the Russian government to release those mammoths on an island in the North-West of Russia. Almost no rules were given, and the students were distributed in nine groups to represent different actors deemed relevant to the scenario. These groups were the national governments of (1) Russia, (2) close neighboring states, (3) European countries farther away from the project location; (4) the company working on the innovation, dubbed HELIOS; (5) other market actors; civil society organizations concerned with (6) animal rights and (7) the environment; (8) the European Commission and the EU Parliament; and (9) media. The game was led by the course teacher and two student volunteers. Based on the results of both qualitative and quantitative forms of ex-post evaluation, we assess whether the Mammoth game meets the expectations that guided the game design process. Furthermore, we discuss whether the Mammoth game had a positive effect on students’ abilities to think about the future.",
+      "date": "2023-07-08",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-023-00219-9",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2367,6 +2809,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-023-00225-x",
+      "title": "Lives ‘on hold’ in Europe: an explorative review of literature on youth aspirations and futures in situations of migration and mobility",
+      "abstract": "Abstract This explorative literature review aims to examine the content and methodologies of recent empirical studies on the aspirations of youth in situations of migration in Europe. The search yielded 30 peer-reviewed social science publications in English for the period 2010–2022, including both intra-European migrants ages 10–24 and youth with backgrounds from outside Europe. Contextual analysis was used to analyse the content of the reviewed studies, while a typology developed by Beckert and Suckert was used to examine features of the future appearing in the studies’ research aims, methodology and findings. The analysis broadly situated the studies within constructivist traditions, occupying a mid-position between deterministic and agency-oriented epistemologies. All the features of the future listed by Beckert and Suckert were found in the material, but the categories 'Temporal configurations of the future' and 'Space of the future' showed greater complexities. Participants in the studies lived in different European countries and the study samples comprised a wide range of ages, socioeconomic backgrounds, and status of residence. Nevertheless, barriers linked to participants' position as migrants were tangible, while the ability these young people had to envisage the future was strongly affected by uncertainties linked to migration policy and administrative decisions on their status. A mismatch could notably be observed between youth aspirations and the opportunities offered by their life situation, which led to delays in life projects and the inability to plan ahead. Critical relevance statement By an analysis of social studies research on aspirations of youth in situations of migration in various European countries, this review highlights the need to consider implications for youth aspirations and life trajectories in both policy and practice Key points • Young people in situations of migration have high aspirations but confront substantial barriers • Uncertainties prevent youth from long-term planning and realising life projects • Current policies create conditions that are not consistent with European values and ambitions",
+      "date": "2024-01-08",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-023-00225-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/challe15010008",
       "title": "Re-Imagining Alternative Futures through Empowerment",
       "abstract": "The physical conquest of European powers on the rest of the world for the imposition of an accumulation of wealth monopoly and the destruction of native societies remains the foundation of the current global economy. Despite concepts of human flourishing, a term connected to empowerment that acts as an architectural structure within the development and sustainability discourse, the destruction of our planet and collective human wellbeing is not at the forefront of international political agendas. Scholars argue that the development agenda is maldevelopment due to the unrequested interventions delivered to communities, mainly in the Global South. Thus, despite the Sustainable Development Goals (SDGs), the implementation of inner dimensions that facilitate empowerment and are an integral part of development is missing from these sophisticated global frameworks. This research article repositions empowerment and compassion at the centre of the sustainable development discourse by drawing on the Inner Development Framework, particularly goal one—Being—‘Relationship to Self’ and goal three—Relating—‘Caring for others and the World’ and the Capabilities Theory as a guiding theoretical underpinning. On this basis, this article presents a qualitative interpretative study that examines the lived experience of women and their journeys to empowerment. The key findings indicate an intricate relationship between wellbeing and empowerment and the realisation of inner development as a tool to re-imagine alternative futures. In addition, industries are profiteering from a sustainability and development agenda that is failing to address the disablement of communities by a paternalistic approach to empowerment.",
@@ -2380,6 +2839,40 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
       "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-023-00224-y",
+      "title": "Farmers’ futures: an application of the Delphi method in the context of Finnish agriculture",
+      "abstract": "Abstract In Finland, agriculture is practiced in variable growing conditions that are further challenged by climate change and under external pressure caused by international competition, changing consumer preferences and demands, and the renewal of the European Union Common Agriculture Policy and Paris Agreement climate targets. Futures studies in agriculture have focused on scenario building with expert panels, though usually without farmers’ involvement. This study focuses on farmers’ views of shaping the future of Finnish agriculture. It builds on the disaggregative Delphi method and combines interviews and a representative survey of Finnish farmers. The study is based on a bottom-up process in which a farmer panel of 20 farms defined their views of the future in a semi-structured thematic interview. The views were turned into statements in a structured survey sent to the second panel, which comprised all Finnish farmers who had received agricultural subsidies in 2016, with 4401 respondents. The results were analyzed using quantitative factor analysis, which produced five future images for Finnish agriculture. The images were shown to the original farmer panel for reflection. They considered the probability of each future image and their own role in it. Technology solves as a future image was most favored by farmers, followed by Ecological and specializing small-scale production image. Business-as-usual was the least likely future images according to the interviewed farmers. This paper describes the process and discusses both methodological benefits and pitfalls, as well as farmers’ future views of the forthcoming decades.",
+      "date": "2024-03-01",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-023-00224-y",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-024-00233-5",
+      "title": "Hindsight to foresight: an AI-powered analysis of future events in EJFR in 10 years",
+      "abstract": "Abstract The world is changing increasingly faster, bringing uncertainty and complexity to many processes, and this acceleration leads to the rise of demand for studies regarding the future. Futures Studies have been widely used to support decision-making, emphasizing forecasting technologies’ timing, diffusion, and life cycle. Therefore, evaluating previous forecasts to understand their proposed scenarios better is often necessary. This work analyzes all articles published until the end of 2023 in one of the most relevant journals of this field of study, the European Journal of Futures Research (EJFR). The EJFR is among the main contributors to fostering dialogue among scholars, practitioners, and policymakers interested in anticipating and shaping the future. We streamlined the uncovering of future events written on EJFR articles using NERMAP, a software we designed to semi-automate the roadmapping process. We built five simple scenarios and associated each of the 214 future events found into a scenario. Then, we analyzed the 52 events that were supposed to happen until 2023 to discover how the expected possible events did occur in real life. Therefore, we expect to provide insights, better understand how expected possible events occur in real life, and write a novel way to understand the journal’s history. The methodology used in this study is novel and applicable to other studies to reduce the time and risk of errors when developing large-scale roadmaps. This work provides valuable information for decision-makers in organizations and governments. The Futures Research scientific community can use the results to improve their research frameworks.",
+      "date": "2024-05-27",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-024-00233-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2398,6 +2891,23 @@
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
       "last_seen": "2026-10-17T14:23:50.948226+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-024-00239-z",
+      "title": "Is high-intensity conflict escalation inevitable in the future? A two-level game analysis on the causes of US-Iran risky rivalry",
+      "abstract": "Abstract In recent years, there appears to be a growing consensus among policymakers in both the East and the West, that the decades of global peace after the Cold War has now come to an end, and that the world is facing mounting security risks to the future of humanity. Among those challenges, the ongoing U.S.-Iran conflict poses particularly significant risks to regional and global security, and is closely related to many other contemporary international crises involving European states and their allies, particularly the Russo-Ukrainian War, the nuclear proliferation in Europe, and the military disputes between the Iran-backed Houthis and EU forces. But why has the U.S.-Iran relationship deteriorated so dramatically over the past years, and what are the future risks its presents to the international community? While extensive scholarly works have been conducted to examine the ideological, historical, and geopolitical variables that fuel this observed escalating antagonism, no study to date has formal-modelled the complex interactions between Tehran and Washington into a two-level game. Utilizing an infinitely-repeated game theory approach, this research presents a comprehensive analytical framework that explains how interrelated political factors at both the international and the domestic level jointly shape the dynamic of this bilateral relationship. We contend that the domestic rally effect created by risk-oriented diplomacy, incompatible ideological stances and political values, the increasing polarization within U.S. Congress, and the mounting rivalry between Israel and the Iran-led Axis of Resistance convince policymakers from both sides that their utilities can be maximized in a non-cooperative game. Based on our models, it can be forecasted that there is hardly any chance Washington and Tehran will concede to the other’s security demands in the foreseeable future. Thus, the risks of high-intensity conflict escalation due to miscalculation will continue to upsurge in the future.",
+      "date": "2024-09-02",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-024-00239-z",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2430,7 +2940,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-17T14:23:50.948226+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2448,6 +2958,125 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
       "last_seen": "2026-10-16T23:31:00.431722+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12524",
+      "title": "European foresight (1950–2020): A history of contrasts. Intellectual inspirations and the political conditions for success",
+      "abstract": "Abstract Although foresight has played a central role in the history of European integration since its inception in the 1950s, it has not always had the same meaning, nor has it always been used in the same political way. This article looks at the genesis and development of foresight on a European scale between 1950 and 2020, analysing it as a specific public policy: such a perspective aims to highlight the differentiated relationships to time and future, the different conceptions of the respective roles of administration, politics and science, and the forms of competence on which successive foresight policies are based. It also enables us to identify the institutional and political factors that explain its development, and the particular forms it takes.",
+      "date": "2024-10-06",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12524",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12521",
+      "title": "Strategic foresight as a beacon for the new EU industrial policy",
+      "abstract": "Abstract This article assesses the impact of strategic foresight in shaping the European Commission’s new industrial policy. It argues that, since it was introduced by President von der Leyen as a political portfolio, foresight has contributed to mainstreaming the concepts of ‘resilience’ and ‘open strategic autonomy’ into the EU's industrial strategy, via the Strategic Foresight Reports and new participatory structures inside and outside the Commission. This responded to the need for building up preparedness in the face of ‘radical uncertainty’ on future supply chain disruptions. We conclude that strategic foresight—if supported by an effective governance—will play an increasingly large role in shaping the EU's future policymaking. In particular, the concepts of ‘competitive sustainability’ and people's wellbeing, advanced by the 2023 Strategic Foresight Report as pillars of open strategic autonomy, may help futureproof the EU's green industrial policy going forward.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12521",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12522",
+      "title": "Foresight in EU policy‐making: Purpose, mindsets and methods",
+      "abstract": "Abstract This article examines the foundational principles and methodologies of foresight and their integration into EU policy‐making. It explores how foresight can improve policy analysis to create future‐ready, resilient decisions amid uncertainties. By synthesising empirical evidence and interpreting multifaceted issues through an interdisciplinary lens, foresight provides EU policymakers with tools to make informed decisions that remain adaptable in the face of unpredictability. The author argues that foresight, through comprehensive analysis of trends, uncertainties and potential challenges, can guide policymakers in forming future‐focused strategies. Key foresight methods emphasised include horizon scanning, systems analysis, stakeholder engagement and scenario planning. The article advocates a holistic policy approach, urging analysts to acknowledge biases and assumptions while integrating diverse perspectives. Concluding with a framework for responsible policy‐making, the article argues that foresight can shape evidence‐based, inclusive and transparent strategies, ensuring that the EU will be prepared for unpredictable futures.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12522",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12523",
+      "title": "Dare scholars look to the future? Academia and strategic foresight for the European Union's foreign policy",
+      "abstract": "Abstract Drawing on examples of foresight projects situated at the interface between academia and foreign policy practice, this article reflects on the role of academics in informing the practice of foreign policy‐making in the EU. The study explores why academics have rarely engaged in foresight over the past two decades and why this has changed in recent years. It argues that this shift is triggered, on the one hand, by the strategic blunders of the last decade and, on the other hand, by the conceptual developments within the disciplines of political science or international relations. After demonstrating the growing trend of scholarly engagement in foresight with a series of illustrative examples, the article discusses the added value and limitations of academic‐generated foresight for EU foreign policy. Taking these into account, the analysis indicates best practice solutions, such as foresight exercises, with the joint involvement of researchers and policymakers.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12523",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12525",
+      "title": "The ESPAS network and the growth of EU foresight",
+      "abstract": "Abstract This article examines the European Strategy and Policy Analysis System (ESPAS) network and assesses its impact on efforts to embed strategic foresight in EU policy‐making. It analyses the development of the network through three stages: preparatory steps to 2014, quasi‐institutionalisation from 2015 and high‐level anchoring from 2019. Throughout, the view that a new approach to strategic analysis was needed met concerns about preserving institutional prerogatives and competences. The article suggests that this tension mitigated the network's impact, which has been more significant on matters of process than of substance. Achievements include the creation of foresight capacity and of dialogue across institutional and sectoral boundaries and greater appreciation of the interdependence of global challenges across different domains. Progress towards deeper engagement with worst‐case scenarios and with the challenge of societal fragmentation has been more limited.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12525",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12527",
+      "title": "Introduction: Future‐proofing policies – How foresight shapes European Union governance",
+      "abstract": "Abstract Introducing this issue, the present article notes how the growing political importance given to foresight in EU governance has so far only sparked limited interest among scholars of EU law and policy‐making. To address this gap, the article starts by clarifying concepts and defining the key terminology at the intersection between (strategic) foresight and EU governance ‘in the law’ (involving societal actors in law‐making processes) and ‘through law’ (governmental actors steering society via law). It then offers a comparative discussion of the main insights of the contributions to the issue, highlighting how and why foresight has become institutionalised and how it operates across EU institutions today. In the concluding section, the article turns to the future and calls for more research into how foresight shapes EU governance, setting a research agenda for the study of foresight as a practice informing law‐ and policy‐making in the European Union.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12527",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/eulj.12528",
+      "title": "What future for EU foresight? A critical perspective on the institutionalisation of foresight",
+      "abstract": "Abstract What are the potential strengths and weaknesses in the current reconstruction of foresight at the EU level? In questioning foresight's institutionalisation processes from both a historical and a political sociology perspective, the article claims that charting the future is an issue of political power and that, hence, foresight's institutionalisation can never be taken for granted. More precisely, we identify two factors that determine how such process plays out. First, it depends on the definition and importance of the future according to specific contexts (war, economic or health crisis, periods of growth, etc.). Second, this changing definition intertwines with socio‐institutional structures and agents that are crucial for this institutionalisation to be sustainable. The analysis is twofold. First, we provide an overview of past international experiences of projections into the future (both foresight and forecast). Second, we illustrate how these issues may resurface and rebound within the EU’s unique power context.",
+      "date": "2024-10-28",
+      "journal": "European Law Journal",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/eulj.12528",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2499,6 +3128,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-025-00247-7",
+      "title": "Psychotherapy boosting future risk research: the role of radical masculinities in social polarisation from a trauma-informed perspective",
+      "abstract": "Abstract This paper examines the potential integration of trauma-informed practices and Critical Studies on Men and Masculinities (CSMM) into global and European risk research, with a focus on foresight methodologies. It explores how the complex interplay between untreated trauma, rapid resource loss, radicalisation, and rigid masculine norms can potentially escalate societal risks. The study argues for the adoption of a more holistic approach in risk assessment and future planning, incorporating insights from trauma studies, masculinity research, and psychotherapy. The paper discusses the value of participatory foresight methods in capturing diverse perspectives and lived experiences, particularly those affected by toxic masculinity and radicalisation. We highlight the importance of considering intersectionality and the compounded traumas that may arise from the interaction of extremist masculine norms with other social factors. Current findings suggest that including psychotherapy scientists and practitioners in risk research could provide valuable insights into the psychological mechanisms underlying trauma, meaning-making, and identity formation. By adopting this interdisciplinary approach, the paper proposes that risk researchers may develop more comprehensive and nuanced understandings of societal risks, leading to more effective strategies for addressing the complex challenges posed by radicalisation, radical masculinity/ies, and the associated traumas in an increasingly uncertain world.",
+      "date": "2025-01-15",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-025-00247-7",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2826,6 +3472,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1186/s40309-025-00257-5",
+      "title": "A multi-level futures analysis of European teleophthalmology through 2040: development and application of a conceptual framework for healthcare transformation",
+      "abstract": "Abstract As Europe faces unprecedented demographic shifts and technological advancement, the future of eye care delivery stands at a critical juncture. This paper develops a comprehensive conceptual framework for understanding how teleophthalmology will transform European healthcare delivery through 2040. Drawing on futures studies methodology and healthcare innovation theory, we propose a multi-level framework that captures the dynamic interplay between technological innovation, social systems, and healthcare delivery models. The framework examines transformation across macro (landscape), meso (regime), and micro (niche) levels while incorporating temporal dimensions that reflect the evolutionary nature of healthcare innovation. Through analysis of current trends and emerging developments, we present three detailed scenarios for the future of European teleophthalmology: fully integrated digital eye care, hybrid model with regional variations, and technology-enabled traditional care. These scenarios explore how different combinations of technological capability, social acceptance, and institutional readiness might shape the evolution of eye care delivery. Our analysis reveals critical challenges and opportunities in implementing teleophthalmology across diverse European healthcare systems, including issues of healthcare equity, data governance, professional adaptation, and cross-border care delivery. The paper contributes to both theoretical understanding of healthcare futures and practical implementation of digital health solutions while considering the unique characteristics of European healthcare systems. The framework and scenarios presented provide valuable guidance for policymakers, healthcare providers, and technology developers in shaping the future of eye care delivery across Europe.",
+      "date": "2025-10-07",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-025-00257-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su17209055",
       "title": "Non-Food Geographical Indications in the European Union: Comparative Indicators, Cluster Typologies, and Policy Scenarios Under Regulation (EU) 2023/2411",
       "abstract": "Non-food geographical indications (GIs) are emerging as strategic policy instruments in the European Union after Regulation (EU) 2023/2411 extended protection to craft and industrial products. While the literature on agri-food GIs is extensive, empirical and comparative evidence on non-food GIs remains scarce and fragmented. This study addresses this gap by constructing a harmonised dataset, combining 132 registered and 380 potential non-food GIs identified by EUIPO (512 in total across the EU). Using secondary institutional data, descriptive and comparative statistics, and a hierarchical clustering (Ward, squared Euclidean distance) on normalised indicators total GIs, GIs per million inhabitants (GI/POP), and GIs per € billion of GDP (GI/GDP), the analysis identifies three country typologies differing by scale and intensity. Results reveal a strong geographical concentration in Southern Europe but also unexpectedly high intensity in smaller or mid-sized economies such as Portugal, Cyprus, and Slovenia. A forward-looking scenario analysis based on Cost of Non-Europe (CoNE) estimates suggests that the full implementation of the new Regulation could generate 284,000–338,000 new jobs and € 37–50 billion in additional intra-EU trade. The study contributes to EU policy debates by introducing comparative indicators (GI/POP, GI/GDP) as monitoring tools for evidence-based policymaking and by highlighting the role of non-food GIs as hybrid institutions connecting industrial competitiveness, cultural identity, and sustainability transitions.",
@@ -2857,6 +3520,23 @@
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1186/s40309-025-00261-9",
+      "title": "Europe’s AI future as a meta-sovereign imaginary: negotiating global norms, sovereign machines, and infrastructural futures through AI simulations",
+      "abstract": "",
+      "date": "2025-11-24",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1186/s40309-025-00261-9",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
