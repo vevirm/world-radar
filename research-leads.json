@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T00:10:19.715860+00:00",
+  "updated_at": "2026-10-19T05:15:20.429580+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -2775,6 +2775,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/eurpub/ckab164.177",
+      "title": "Using foresight methodologies to tackle SARS-COV-2 related health impacts",
+      "abstract": "Abstract Background A better understanding of possible future developments is essential for policy makers to anticipate and influence these trends. Public health foresight studies (PHFS) are tools to support this. The current health crisis makes clear that PHFS are necessary more than ever to target possible future impacts resulting from SARS-COV-2 induced changes in e.g. regular health care services, lifestyle and socio-economic developments. To support European countries in doing their own foresight studies, PHIRI aims to strengthen foresight capacity. Methods PHIRI follows a 4-step approach: 1. Making an inventory of current PHFS capacities and capacity needs across European countries using desk research and an online survey; 2. Providing PHFS capacity building via a training course and workshops; 3. Supporting the development of public health scenarios for the short term (0-5 years) and longer-term (5-20 years); 4. Supporting the identification of promising policy strategies, using policy dialogues. Results The online survey was completed by participants of 21 countries and shed light on existing national PHFS and needs for capacity building. It also provided a basis for the development of a professional network on PHFS within the project. Literature research revealed a range of studies using stakeholder involvement and scenario analysis to explore alternative futures. A PHFS capacity building course was developed consisting of three parts: a general, introductory module; three advanced modules deepening on several PHFS elements; and a final module evaluating and preparing countries for developing scenarios together. Conclusions There is a lot of interest in using foresight in public health, especially in these times of crisis. PHIRI provides more insight in the wider public health impacts of the SARS-COV-2 pandemic and in translating this into policy options.",
+      "date": "2021-10-20",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckab164.177",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1088/1755-1315/906/1/012017",
       "title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
       "abstract": "Abstract One of the most important goals of the European Union is to provide citizens of the Member States security and stability in fuel and electricity sectors. The United Nations has defined 17 goals and 169 actions to achieve sustainable development of the world. The goals were to improve the quality of life, reduce the level of poverty, inequalities in the world and sustainable development in terms of climate and environmental protection. The article presents an analysis of the implementation of one of the assumed goals, i.e., sustainable development in the field of Affordable and clean Energy in the European Union. This goal is to ensure that every citizen has access to stable, sustainable, and modern energy at an affordable price. Among others, indicators such as energy import dependency, energy productivity, share of renewable energy in gross final energy consumption, final energy consumption in households per capita were analysed. The authors analysed the trends of the above-mentioned indicators in the European Union, with particular emphasis on Poland. In order to be able to predict how the analysed phenomena will develop until 2030, the authors built forecasts. For this purpose, among others, ARIMA models were used. The authors created several dozen models, from among which model with the smallest ex post errors and the lowest value of information criteria were selected. The models allowed to determine the degree of achievement of the set goals. They also allowed the designation of scenarios for the potential development of the analysed indicators.",
@@ -2804,7 +2821,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3200,6 +3217,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/eurpub/ckac129.064",
+      "title": "Foresight and Preparedness Studies on COVID-19 in the World: A Systematic Literature Review",
+      "abstract": "Abstract A foresight study refers to a broad range of methodologies to describe possible futures. Also, foresight can be described as ‘a university human capacity that allows people to think ahead and consider, model, create and respond to future eventualities’ (Foresight International, 2006). Foresight studies in public health are research tools to support the understanding of possible future developments, which is essential for policy makers to anticipate and possibly influence trends. Therefore, we aimed at providing an overview of COVID-19's foresight activities across Europe and beyond. A systematic literature review was conducted following Preferred Reporting Items for Systematic Reviews and Meta-Analysis Methodology. The databases searched were Scopus and Web of Science Core Collection and the literature screening was conducted through March 2022. The exclusion and inclusion criteria were previously defined by the team and all the results had to be journal papers, published between 2019-2021 (except for “Foresight” query that was between 2015-2021) and written in English or Portuguese. The documents collected were only about Population Health and Non-Pharmaceutical Approaches. Among the topics under study (foresight, scenarios, modelling and preparation) it was possible to collect 9 550 articles. After removing duplicates and filtering out those that did not meet the inclusion criteria, 2 434 articles were selected for analysis. The literature review revealed that a large number of studies on the pandemic of COVID-19 have already been conducted using predictive methodologies, but that the focus of attention is on analysing how countries are prepared for the pandemic and what direction it will stat using mathematical modelling methods (e.g. in the short term). This study highlights the importance of predictive studies and that their use needs to be well-founded and cohesive if the conclusions drawn are to have impact and value in the future.",
+      "date": "2022-10-25",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckac129.064",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckac129.198",
+      "title": "3.Q. Workshop: Using foresight to anticipate future public health challenges",
+      "abstract": "Abstract The COVID-19 pandemic brought great uncertainty about current and future health impacts. Uncertainty about how the virus would directly impact our health. And uncertainty about indirect impacts of COVID-19 on long-term health and wellbeing, including consequences due to delayed prevention, diagnosis, and medical treatment. At this point in time, we know a lot more about the immediate mortality and morbidity aspects. How we fare on the wider impacts on the longer term is more difficult to say. A structured tool for gaining in sight in this, is foresight. We use this tool within the Population Health Information Research Infrastructure (PHIRI). PHIRI supports research across Europe through the identification, access, assessment and reuse of population health and non-health data to underpin public health policy decisions. PHIRI is a practical use case and lays the foundation for ultimately developing a Distributed Infrastructure on Population Health (DIPoH). The joint workshop aims to show ways to better understand the complexity of the wider impacts of the SARS-COV-2 virus on population health across Europe; show how a research infrastructure might help researchers in Europe build capacity and helping each other to achieve higher goals. The workshop will begin with a presentation providing a brief overview of the PHIRI foresight work. This will be followed by two researchers who participated in the PHIRI foresight training program and undertook their own Public Health Foresight study. In the last presentation of the session foresight will be reflected on from a policy perspective. How can researchers and health policy makers better interact to have better foresight-informed policy making. Interaction with the audience will be guaranteed using Mentimeter questions. With this interactive element, insights art obtained what people find the most important trends to act upon, what they consider most important future challenges and how researchers and policymakers can better interact. Key messages • Foresight studies are essential to be better prepared for and to anticipate to future challenges. • With foresight-informed policy making direct and indirect health impacts of COVID-19 are addressed.",
+      "date": "2022-10-25",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckac129.198",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckac129.199",
+      "title": "Using foresight methodologies to tackle SARS-COV-2 related health impacts",
+      "abstract": "Abstract Background A better understanding of possible future developments is essential for policy makers to anticipate and influence these trends. Public health foresight studies (PHFS) are tools to support this. The current health crisis makes clear that PHFS are necessary more than ever to target possible future impacts resulting from SARS-COV-2 induced changes in e.g. regular health care services, lifestyle and socio-economic developments. To support European countries in doing their own foresight studies, PHIRI aims to strengthen foresight capacity. Methods PHIRI follows a 4-step approach: 1. Making an inventory of current PHFS capacities and capacity needs across European countries using desk research and an online survey; 2. Providing PHFS capacity building via a training course and workshops; 3. Supporting the development of public health scenarios for the short term (0-5 years) and longer-term (5-20 years); 4. Supporting the identification of promising policy strategies, using policy dialogues. Results The online survey was completed by participants of 21 countries and shed light on existing national PHFS and needs for capacity building. It also provided a basis for the development of a professional network on PHFS within the project. A PHFS capacity building course was developed, including videos posted on the PHIRI website and a template structuring the different foresight elements. Around 15 researchers undertook their own PHFS, covering a wide range of public health topics, using the material provided during the course. In addition, a compact guide was developed and provided, explaining the different foresight elements. Based on these studies, common challenges and promising policies are identified. Conclusions Foresight in public health is gaining more and more interest, especially now in these times of crisis. PHIRI provides more insight in the wider public health impacts of the SARS-CoV-2 pandemic and in translating this into policy options.",
+      "date": "2022-10-25",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckac129.199",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1093/eurpub/ckac129.203",
       "title": "Foresight for policy – addressing the challenges for policy impact",
       "abstract": "Abstract Background The role of policymaking is to create the future that we want. In its communication on Better Regulation, the European Commission recognises the need for strategic foresight to play a key role in helping to ‘future-proof’ EU policymaking. The aim is to ensure that decisions are grounded in a longer-term perspective. In times of rapid change, EU policymaking needs to have impact assessments, fitness checks and major regulatory evaluations informed by foresight. Strategic foresight is also a powerful way to engage with stakeholders and not only capture their perspectives, but also generate collective intelligence in the areas of policy interest. Lessons from EU policy making This fits within a broader effort at the Commission to be at the forefront of excellence in policymaking in Europe and worldwide. This is why the EU Policymaking Hub was launched 2020. It offers a platform for policymakers to learn, collaborate and share knowledge in EU policymaking, introducing new capacity building offers. It aims at strengthening the Commission's policymaking capacity through anticipating, developing, implementing, monitoring, and evaluating policies in an evidence-informed, transparent, and collaborative way with stakeholders, citizens and experts. Providing the policymaking community with a framework for long-term competence development will strengthen the profession, make it fit for the future, contribute to colleagues’ motivation and help the Commission to achieve its goals. Conclusions Being futures literate covers a range of skills from anticipation to the ability to run in-depth foresight processes. It spans a range of abilities from having an anticipatory mindset to scanning for change, understanding change and being able to influence change. Since its inception, this competence framework is at the base of an effort to train European civil servants in foresight and to increase foresight literacy for application in policymaking.",
@@ -3212,7 +3280,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3404,6 +3472,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1108/fs-10-2021-0191",
+      "title": "Time to build a new practice of foresight for national economies? Ireland, and uncertain futures in forecasts and scenarios",
+      "abstract": "Purpose The literature on economic forecasting, is showing an increase in criticism, of the inaccuracy of forecasts, with major implications for economic, and fiscal policymaking. Forecasts are subject to the systemic uncertainty of human systems, considerable event-driven uncertainty, and show biases towards optimistic growth paths. The purpose of this study is to consider approaches to improve economic foresight. Design/methodology/approach This study describes the practice of economic foresight as evolving in two separate, non-overlapping branches, short-term economic forecasting, and long-term scenario analysis of development, the latter found in studies of climate change and sustainability. The unique case of Ireland is considered, a country that has experienced both steep growth and deep troughs, with uncertainty that has confounded forecasting. The challenges facing forecasts are discussed, with brief review of the drivers of growth, and of long-term economic scenarios in the global literature. Findings Economic forecasting seeks to manage uncertainty by improving the accuracy of quantitative point forecasts, and related models. Yet, systematic forecast failures remain, and the economy defies prediction, even in the near-term. In contrast, long-term scenario analysis eschews forecasts in favour of a set of plausible or possible alternative scenarios. Using alternative scenarios is a response to the irreducible uncertainty of complex systems, with sophisticated approaches employed to integrate qualitative and quantitative insights. Research limitations/implications To support economic and fiscal policymaking, it is necessary support advancement in approaches to economic foresight, to improve handling of uncertainty and related risk. Practical implications While European Union Regulation (EC) 1466/97 mandates pursuit of improved accuracy, in short-term economic forecasts, there is now a case for implementing advanced foresight approaches, for improved analysis, and more robust decision-making. Social implications Building economic resilience and adaptability, as part of a sustainable future, requires both long-term strategic planning, and short-term policy. A 21st century policymaking process can be better supported by analysis of alternative scenarios. Originality/value To the best of the authors’ knowledge, the article is original in considering the application of scenario foresight approaches, in economic forecasting. The study has value in improving the baseline forecast methods, that are fundamental to contemporary economics, and in bringing the field of economics into the heart of foresight.",
+      "date": "2023-06-05",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-10-2021-0191",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/atmos14061000",
       "title": "Extreme Heat Events over Southeast Europe Based on NEX-GDDP Ensemble: Present Climate Evaluation and Future Projections",
       "abstract": "Southeast Europe is considered one of the most vulnerable regions in the context of climate change, and projected future summer warming is expected to exceed global rates significantly. Despite the importance of this problem, there have been few studies that utilized Coupled Model Intercomparison Project Phase 5 (CMIP5) Global Circulation Models (GCMs) and the multi-model ensemble approach to examine extreme heat events on a regional scale. Additionally, the NEX-GDDP dataset, successfully applied in other parts of the world to assess extreme heat, has not yet been utilized for Southeast Europe. This study aims to fill that gap, presenting the time evolution and spatial distribution of extreme heat events in Southeast Europe for the historical period 1950–2005 and for the expected future climate up to the end of the 21st century based on the NEX-GDDP dataset. In order to leverage the strengths of the multi-model ensemble approach, a set of purpose-tailored indicators, such as the annual number of hot days, the maximum number of consecutive hot days, and hot spell duration at different thresholds, is computed by the daily maximum temperature data from all datasets, produced by NEX-GDDP (21 for the historical period and 42 for the future period). The E-OBS dataset is used as a reference for evaluating the NEX-GDDP’s capability to simulate the features of the observed historical extreme heat events. The results show that the multi-model ensemble can satisfactorily capture the occurrence of extreme heat events in the historical period, and therefore it is reasonable to assume that the NEX-GDDP dataset has the potential to reproduce such extremes in the projected future. The study provides clear evidence that the persistence and spatial extent of extreme heat will increase significantly. Some indicators that were not relevant for the historical period due to the high-temperature threshold will become helpful in assessing extreme heat in Southeast Europe in the latter part of the century. Thus, under the RCP8.5 scenario, the area-averaged duration of hot spells at 32 °C and 34 °C will increase from near zero in 1976–2005 to 60 and 45 days, respectively, by the end of the century. The indicators used in the study may be helpful for decision-makers to implement climate change mitigation strategies and actions adequately. The findings are consistent with general tendencies in maximum temperatures considered in our previous works but also with the outcomes of recent studies dedicated to the future climate of the region.",
@@ -3553,6 +3638,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckad160.235",
+      "title": "4.F. Workshop: Supporting present policy making to address future challenges: foresight and public health policies",
+      "abstract": "Abstract The COVID-19 pandemic and its impact on health showed that we were not prepared for uncertain health events and its uncertain consequences and impact in society. To be prepared for the uncertainty of the future, foresight provides a systematic, participatory, and vision-building process that explores the future to anticipate trends and support present-day actions. Foresight explores possible futures and their impact on society and population health. Foresight can enable better informed present-day decision-making and thereby better short-term and long-term preparedness in European Union (EU) Member States (MS) and the European region for possible future health crises. With foresight, experts and policy makers can explore long-term decisions that need to be made in the present to be prepared for the future. Using foresight to formulate long-term decisions can allow setting priorities, planning budgets and spending to address health threats and challenges, and learning how to cope with challenges while keeping resilient and sustainable health systems. In this workshop, we will focus on how foresight can be integrated into the policy cycle to support policy makers to be prepared for the future. It will provide an outlook on how a foresight exercise can provide insights into future challenges to provide recommendations and explore policy implications. The workshop will start with an interactive Mentimeter session to get a better view on how the audience is familiar with foresight in the policy cycle. Then, a brief presentation is given as introduction to foresight and its role in policy making. This is followed by a presentation of a Foresight study that provides recommendations for policy makers to address present and future challenges related to mental health. The second foresight study provides an example on how digitalization in primary healthcare can address present and future challenges. The last presentation gives an overview on the role that foresight can play in the policy cycle at different stages of the foresight exercise when discussing the use of personalized medicine in cancer prevention. The workshop will be concluded by a discussion with the four presenters on the lessons learned regarding foresight and policy making. Key messages • Foresight provides a systematic and participatory process to support policy making towards sustainable and resilient health systems. • Foresight can enable better informed present-day decision-making towards better short- and long-term preparedness in the European region and its Member States for possible future health challenges.",
+      "date": "2023-10-24",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckad160.235",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3914,6 +4016,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/eurpub/ckae144.472",
+      "title": "Experiences from the European Region: case studies and scenarios to inform ways forward in digital health",
+      "abstract": "Abstract Member States in the WHO European Region face similar challenges when it comes to strengthening their HIS and implementing digital health solutions. From WHO/Europe’s work with its Member States, several important preconditions have become apparent for successful and sustainable digital transformation. Firstly, the importance of recognising that implementing digital tools is not a one-off investment, but that this takes a long-term vision including long-term budgeting. Having business continuity plans also is a key element of sustainable implementation of digital tools, that is often not adequately addressed in practice. Secondly, the importance of comprehensive strategic planning. Implementing digital tools is not only about software and hardware, but also about people and processes. Here it is also crucial for policymakers to understand that, to be able to harvest the benefits of data that are gathered by means of digital tools, resources for data processing and analysis also need to be made available. Last but not least, an important precondition for successful digital transformation is stakeholder involvement. Often, new software is developed without adequately involving the end-user, resulting in for example apps that do not meet patients’ needs. Or in electronic health record systems that are not user-friendly for the healthcare staff that need to enter the data, with incomplete and low quality information as a consequence. Stakeholder involvement is essential in strategic planning for digital health as well. Think for example about standardization and accreditation agencies, and institutes that will be secondary users of data for statistics and research. In this presentation, several case studies from across the European Region will be presented, illustrating how digital transformation in health can be successfully and sustainably implemented.",
+      "date": "2024-10-28",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckae144.472",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckae144.477",
+      "title": "Climate change adaptation measures in the context of health promotion using participatory foresight",
+      "abstract": "Abstract Issue/problem Climate change is regarded as a big threat to human health (WHO 2023), requiring action to prepare our health systems. Using participatory foresight approach has the potential to increase capacities of communities and to sustain future health. The process is easily transferable to other regions or countries across Europe. The work is part of the Austrian “Climate-Resilience-Check Health for regions and municipalities”. Description of the problem We present an innovative qualitative method to contribute to a climate change and health vulnerability and adaptation assessment following WHO’s guidelines. Questions answered by the project were: • What measures can be taken to shape the regions’ potential for a health-promoting lifestyle and to increase climate resilience? • Does participatory foresight represent a well-suited method to develop climate adaptation measures which address local needs? Taking place between 10/23 to 12/23, the participatory foresight process consisted of (1) a foresight-workshop facilitating development of adaptation measures through the creation of personas and (2) intervention boards, which gave the broader population the opportunity to vote for measures developed in the workshop. The aim of the approach was to identify measures that receive approval within the population. Results The participatory foresight process highlighted the local populations’ wish of revitalizing village centers to strengthen social cohesion. Particular emphasis was placed on the establishment of a community center and the expansion of daycare services. Lessons The process will be conducted in further regions as part of the Climate-Resilience-Check Health for Austrian regions and provides lessons of good practice for roll-out across European countries aiming to bridge efforts for climate adaptation and health promotion at regional levels.",
+      "date": "2024-10-28",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckae144.477",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckae144.540",
+      "title": "Applying foresight methods at the national level in the field of substance use: Experience from the DRUG-PREP project",
+      "abstract": "Abstract This presentation will focus on the experience from the DRUG-PREP project. While foresight has been used in other sectors, its implementation in the drugs field has previously remained relatively limited. The application of foresight to the drugs sphere is important in recognition of the fast-changing and intersectional nature of drugs and addiction. At the European level, a futures exercise was organized by the EMCDDA (as of July 2024 the European Union Drugs Agency, EUDA) to explore the future of drugs at the European level until 2030. In this landscape, the DRUG-PREP project implemented foresight approaches at the national level, to support preparedness of national drug monitoring and response systems. The DRUG-PREP partners carried out individual national exercises in six countries: Belgium, Czechia, Finland, Ireland, the Netherlands, and Portugal. The link to policy was a key aspect of the project, with each country organising a national dialogue to directly engage policymakers. The presentation will focus on the Belgian research. Horizon Scanning was performed to identify trends and megatrends with potential implications on the national drugs ecosystem, through a literature review. An expert workshop was organized to validate the trends and explore their implications. Subsequently, a small scenario building exercise was organised to explore the consequences of a clearly defined ‘disruptor’: the ban on opium production in Afghanistan. Finally, a national dialogue allowed discussion with stakeholders on how foresight can be integrated more structurally in the drugs field in Belgium. A summary of the results will be presented. Policymakers across all levels (local, regional, federal) have been active participants in the foresight activities and workshops. The link to policymaking has been crystallized in the integration of foresight into the new Belgian National Drugs Strategy 2024-2025.",
+      "date": "2024-10-28",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckae144.540",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1111/eulj.12521",
       "title": "Strategic foresight as a beacon for the new EU industrial policy",
       "abstract": "Abstract This article assesses the impact of strategic foresight in shaping the European Commission’s new industrial policy. It argues that, since it was introduced by President von der Leyen as a political portfolio, foresight has contributed to mainstreaming the concepts of ‘resilience’ and ‘open strategic autonomy’ into the EU's industrial strategy, via the Strategic Foresight Reports and new participatory structures inside and outside the Commission. This responded to the need for building up preparedness in the face of ‘radical uncertainty’ on future supply chain disruptions. We conclude that strategic foresight—if supported by an effective governance—will play an increasingly large role in shaping the EU's future policymaking. In particular, the concepts of ‘competitive sustainability’ and people's wellbeing, advanced by the 2023 Strategic Foresight Report as pillars of open strategic autonomy, may help futureproof the EU's green industrial policy going forward.",
@@ -4011,7 +4164,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T05:15:20.429580+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
