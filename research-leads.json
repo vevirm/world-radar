@@ -1,8 +1,1130 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T16:40:08.005218+00:00",
+  "updated_at": "2026-10-19T17:55:22.706007+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
+    {
+      "doi": "10.1111/j.1746-692x.2011.00145.x",
+      "title": "Modelling Multifunctionality, Territorial Development, and Policy Scenarios in Rural Europe: an Alternative Perspective on CAP Reform Debates  Modéliser la multifonctionnalité, le développement territorial et les scénarios de politiques dans l’Europe rura",
+      "abstract": "",
+      "date": "2011-04-21",
+      "journal": "EuroChoices",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/j.1746-692x.2011.00145.x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:47:25.556216+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1038/ncomms1360",
+      "title": "Long-term projections and acclimatization scenarios of temperature-related mortality in Europe",
+      "abstract": "",
+      "date": "2011-06-21",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1038/ncomms1360",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.69554/wdbn2222",
+      "title": "Winter blues at European airports: The need for airport responsibility and corporate foresight",
+      "abstract": "The chaos at European airports, particularly London Heathrow, in the winter of 2010, wrought by pummelling snowstorms and ice, not only caused cancelled flights and stranded passengers but also resulted in a tremendous cost for the airport authorities. Airports operator BAA has released the figure of £24m (c. US$38m) as the cost incurred by the Spanish-owned firm which operates six airports in Britain. This cost includes a reduction in profit as a result of the decrease in passenger numbers by 11 per cent over a few days. As this paper discusses, the handling of the crisis by BAA drew widespread criticism from both legislators and airlines, the former considering the adoption of legislation against airports and the latter threatening to withhold charges due to the airports. It also asks whether airports should be held responsible for service failure brought about by a natural phenomenon and whether airports should have had what in modern business parlance is called ‘corporate foresight’ to deal with the natural phenomenon. This leads to a discussion on the kind of foresight an airport should have to deal with such situations as well as the obligations of a state to provide functional airport services in its territory. In conclusion, the paper posits that, as regards corporate foresight, an airport has to start with a culture of corporate foresight and adopt a dynamic and comprehensive emergency management process. More importantly, it recommends that airports work jointly and in partnership with airlines and air navigation service providers in developing their corporate foresight.",
+      "date": "2011-07-01",
+      "journal": "Journal of Airport Management",
+      "publisher": "Henry Stewart Publications",
+      "url": "https://doi.org/10.69554/wdbn2222",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:45:14.019050+00:00",
+      "last_seen": "2026-10-19T17:45:14.019050+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/14636681111153922",
+      "title": "The Mediterranean Union: what fate's in store?",
+      "abstract": "Purpose The aim of this editorial is to update an earlier paper published in foresight concerning the status and likely evolution of the proposed Union for the Mediterranean. Design/methodology/approach The critique reviews a series of pitfalls delaying or otherwise obstructing strategic planners and negotiators. Findings The paper analyzes briefly the status of the proposed alliance and what could retard, seriously alter, or preclude completion of a meaningful treaty. Research limitations/implications A principal hindrance to full scenario development by the European powers concerned is lagging unanimity and therefore enthusiasm, and among African/Near Eastern nations an atmosphere of exclusion, hostilities or terrorism. Practical implications The proposed agreement may be delayed in both the short and medium terms or else die a‐borning. Originality/value Examples of earlier international understandings provide minimal guidance to otherwise ambitious planners. Given the disruptions now affecting Arab States, entirely novel strategies may now be required.",
+      "date": "2011-07-19",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/14636681111153922",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:44:32.502457+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1127/0941-2948/2011/0286",
+      "title": "Analysis of uncertainty in large scale climate change projections over Europe",
+      "abstract": "",
+      "date": "2011-08-01",
+      "journal": "Meteorologische Zeitschrift",
+      "publisher": "Schweizerbart",
+      "url": "https://doi.org/10.1127/0941-2948/2011/0286",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2011.07.007",
+      "title": "Scenarios on European energy security: Outcomes of natural gas strategy in 2020",
+      "abstract": "",
+      "date": "2011-12-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2011.07.007",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:53:39.514356+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/02626667.2011.631188",
+      "title": "Broad-scale ecosystem services of European wetlands—overview of the current situation and future perspectives under different climate and water management scenarios",
+      "abstract": "",
+      "date": "2011-12-31",
+      "journal": "Hydrological Sciences Journal",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/02626667.2011.631188",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.giq.2011.08.006",
+      "title": "Digital Europe 2030: Designing scenarios for ICT in future governance and policy making",
+      "abstract": "",
+      "date": "2012-01-31",
+      "journal": "Government Information Quarterly",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.giq.2011.08.006",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.rhum.2011.10.008",
+      "title": "Enseignement de la rhumatologie pédiatrique en Europe : quelles projections dans le contexte français ?",
+      "abstract": "",
+      "date": "2012-01-31",
+      "journal": "Revue du Rhumatisme",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.rhum.2011.10.008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1525/phr.2012.81.1.133",
+      "title": "Review: Projections of Power: The United States and Europe in Colonial Southeast Asia, 1919–1941 , by Anne L. Foster",
+      "abstract": "",
+      "date": "2012-02-01",
+      "journal": "Pacific Historical Review",
+      "publisher": "University of California Press",
+      "url": "https://doi.org/10.1525/phr.2012.81.1.133",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/j.1468-2397.2012.00871.x",
+      "title": "Active ageing: A strategic policy solution to demographic ageing in the European Union",
+      "abstract": "Walker A, Maltby T. Active ageing: A strategic policy solution to demographic ageing in the European Union The ageing of European countries has widespread implications for current and future social and economic policies across the region. The major policy response to demographic ageing that has emerged over the past 10 years is called ‘active ageing’, yet there is little clarity in practice about what it means for individuals and society beyond a crude economic reduction in terms of working longer. The main purposes of this article are to explain why this strategy has emerged and its importance. Despite a great deal of positive political rhetoric, the response at all levels of policy making has been rather limited. An active social and public policy is required to mainstream active ageing as the leading paradigm for ageing policy across the European Union (EU). The designation of 2012 as the European Year of Active Ageing offers a potential focus for renewed policy action in the EU and is discussed in the context of our conclusions.",
+      "date": "2012-03-12",
+      "journal": "International Journal of Social Welfare",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/j.1468-2397.2012.00871.x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:44:32.502457+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/1995-459x.2012.1.74.85",
+      "title": "Technology Platforms, Long-Term S&T Forecasting and Foresight: A Week of International Workshops",
+      "abstract": "This is an overview of discussions held at three workshops at the Higher School of Economics from December 7 to 9, 2011. The events organized by the HSE Institute for Statistical Studies and Economics of Knowledge were attended by leading international experts in the field of Foresight and science, technology and innovation (STI) policy.\r\nInternational workshops on technology platforms (TPs) have been held at the HSE on a regular basis since 2010. They address Russian and international practices in the shaping and functioning of  TPs and the possibility of adapting international best practices in Russia, thus serving as a learning forum. In 2011 the discussion focused on practicalities of cooperation between Russian and European platforms, including an assessment of the prospects for increasing coordination and building communications. Special attention was paid to some general issues concerning the creation and operation of TPs, like the involvement of companies in pre-competitive research, the distribution of intellectual property rights between parties, the strengthening of university-industry relations as a key element of TPs,  the involvement of government in the establishment and operation of platforms, and the role of small and medium-sized enterprises. The workshop participants also discussed opportunities and threats of international cooperation in STI as well as the contribution of TPs to further development of cooperation. The objectives, framework, and interim results of selected Russian and European platforms were presented.\r\nThe second workshop reported the results of  the Russian Long-Term S&T Foresight 2030. Compared to previous rounds,  the coverage of economic sectors and pool of experts was significantly increased through expansion of industry-related research. The current round presumes the implementation of 17 projects to be integrated at the next stage. Its findings will form the basis of strategic recommendations for innovative development of selected sectors, and it will be embedded into elaboration of STI policy.\r\nThe third workshop was devoted to the development of methodologies and international practices of Foresight studies. Particular attention was paid to new Foresight tools (i.e. horizon scanning, modeling, and game theory) and the factors that foster influential outputs and outcomes in successful Foresight.",
+      "date": "2012-03-12",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/1995-459x.2012.1.74.85",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:45:14.019050+00:00",
+      "last_seen": "2026-10-19T17:45:14.019050+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.13128/bae-10768",
+      "title": "The Experience Economy as the Future for European Agriculture and Food?",
+      "abstract": "As recently as a century ago, one out of two people in Europe was employed in the agricultural sector. Today agriculture represents only a small fraction of total employment in most EU member states. What makes this decline in agricultural employment even more striking is that this evolution has occurred despite substantial EU subsidies to support farmers’ income. Given the apparent ineffectiveness of government support in keeping agricultural employment steady, it is worth considering which farming activities are likely to be successful in the economy of the 21st century. We argue in this paper that a potential growth path for European agriculture is the «experience economy» in which consumers are willing to pay premium prices for products and services that provide additional intangible ‘experiences’. We discuss the growth potential of the «experience economy» in the agricultural sector and conclude that it is worthwhile to consider the experience economy as a pathway for future farm growth.",
+      "date": "2012-03-22",
+      "journal": "Bio-based and Applied Economics",
+      "publisher": "Firenze University Press",
+      "url": "https://doi.org/10.13128/bae-10768",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:39.514356+00:00",
+      "last_seen": "2026-10-19T17:53:39.514356+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/13504509.2012.670670",
+      "title": "European Union agricultural policy scenarios' impacts on social sustainability of agricultural holdings",
+      "abstract": "",
+      "date": "2012-03-26",
+      "journal": "International Journal of Sustainable Development & World Ecology",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13504509.2012.670670",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1098/rsif.2012.0138",
+      "title": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios",
+      "abstract": "Abstract The Asian tiger mosquito (Aedes albopictus) is an invasive species that has the potential to transmit infectious diseases such as dengue and chikungunya fever. Using high-resolution observations and regional climate model scenarios for the future, we investigated the suitability of Europe for A. albopictus using both recent climate and future climate conditions. The results show that southern France, northern Italy, the northern coast of Spain, the eastern coast of the Adriatic Sea and western Turkey were climatically suitable areas for the establishment of the mosquito during the 1960–1980s. Over the last two decades, climate conditions have become more suitable for the mosquito over central northwestern Europe (Benelux, western Germany) and the Balkans, while they have become less suitable over southern Spain. Similar trends are likely in the future, with an increased risk simulated over northern Europe and slightly decreased risk over southern Europe. These distribution shifts are related to wetter and warmer conditions favouring the overwintering of A. albopictus in the north, and drier and warmer summers that might limit its southward expansion.",
+      "date": "2012-04-25",
+      "journal": "Journal of The Royal Society Interface",
+      "publisher": "The Royal Society",
+      "url": "https://doi.org/10.1098/rsif.2012.0138",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.apenergy.2011.11.074",
+      "title": "Road transport and power system scenarios for Northern Europe in 2030",
+      "abstract": "",
+      "date": "2012-04-30",
+      "journal": "Applied Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.apenergy.2011.11.074",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s12290-012-0210-x",
+      "title": "What We Hope, What We Fear, What We Expect: Possible Scenarios for the Future of the Eurozone",
+      "abstract": "Financial, economic and sovereign debt crises have called into question macro-economic and monetary integration in Europe in general, and the future of the eurozone in particular. It is possible that even the future of the European Union (EU) as a whole is at stake. Starting with the reforms of European economic governance hitherto agreed, this article develops three scenarios for the eurozone and explores their possible impact on the EU in general. The mix of procedures, both inside and outside the EU legislative framework and with varying groups of participants, offers a starting point for the emergence of an ‘Optimal Institutional Architecture’.",
+      "date": "2012-06-01",
+      "journal": "European View",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1007/s12290-012-0210-x",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/1995-459x.2012.2.56.74",
+      "title": "Mapping Futures Studies",
+      "abstract": "In recent decades Foresight and other forward-looking activities (FLA) gained ground as a tool of science, technology and innovation (STI) policy. The number of FLA studies is globally rising. To some extent, foresight is governed by context-depended issues; however there are also common features in the objectives, methodology, and recommendations made. Mapping allows codifying and analyzing a bulk of FLA experiences gained worldwide. This in turn will contribute to enhancing performance of such activities and therefore of STI policy as a whole. The paper provides rationales for Futures Studies mapping, considers related opportunities and challenges, reviews lessons learned from early mapping efforts. It focuses on the large-scale EU-funded mapping project “European Foresight Platform” (EFP). Using this project as illustration, the paper describes mapping routines, the selected indicators of mapped Foresight initiatives, including their objectives, participants, target groups, methodologies, outcomes and recommendations. It discusses the potential and the limitations of particular mapping tools as well as possible applications of gained knowledge. Basing on mapping results, policy-makers, for example, are able to identify gaps to be addressed with relevant policy tools, Mapping also allows Foresight practitioners to develop strategies for further research and shape expert networks for their implementation.",
+      "date": "2012-06-11",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/1995-459x.2012.2.56.74",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:45:14.019050+00:00",
+      "last_seen": "2026-10-19T17:45:14.019050+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5172/impp.2012.2461",
+      "title": "WEB 2.0 FORESIGHT FOR INNOVATION POLICY: A CASE OF STRATEGIC AGENDA SETTING IN EUROPEAN INNOVATION",
+      "abstract": "",
+      "date": "2012-06-22",
+      "journal": "Innovation: Management, Policy & Practice",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.5172/impp.2012.2461",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:44:32.502457+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/07075332.2012.697330",
+      "title": "Projections of Power: The United States and Europe in Colonial Southeast Asia, 1919–1941",
+      "abstract": "",
+      "date": "2012-06-30",
+      "journal": "The International History Review",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/07075332.2012.697330",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/fut.21581",
+      "title": "Long‐term Futures Curves and Seasonal Structures of Wheat in the European Union and the United States",
+      "abstract": "A two‐factor affine theoretical model is used to estimate the long‐term futures curves for wheat in the European Union and the United States, as represented by the Euronext and CME markets, respectively. The CME futures curve exhibits a long‐term equilibrium; in contrast, the Euronext futures curve does not show a tendency for futures to revert to a long‐term equilibrium value. The estimated seasonality is relatively similar for both markets. However, the seasonal minimum and maximum points in the futures curve occur one to two months later for Euronext compared to the CME. More importantly, the futures curve for Euronext has a much more marked seasonality than the CME futures curve. Credible intervals of the futures curves are also estimated. The width clearly increases for longer maturities, but it does so much faster for Euronext than for the CME. For long‐maturity futures, variability in the parameter estimates (as opposed to the residual errors) accounts for most of the width of the credible intervals, especially for Euronext. The proposed model can be used to price long‐term futures options, long‐term price insurance, and long‐term swaps, among other applications. © 2012 Wiley Periodicals, Inc. Jrl Fut Mark 33:1118–1142, 2013",
+      "date": "2012-08-16",
+      "journal": "Journal of Futures Markets",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/fut.21581",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:42:04.742043+00:00",
+      "last_seen": "2026-10-19T17:53:39.514356+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2012.04.006",
+      "title": "The future of employment supply and demand in social Europe",
+      "abstract": "",
+      "date": "2012-09-30",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2012.04.006",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:47:25.556216+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2012.04.010",
+      "title": "The future of European development aid",
+      "abstract": "",
+      "date": "2012-09-30",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2012.04.010",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:42:04.742043+00:00",
+      "last_seen": "2026-10-19T17:53:39.514356+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.22630/prs.2012.12.3.38",
+      "title": "The future of direct payments system in the EU agriculture; European Commission scenarios",
+      "abstract": "The paper deals with the future of direct payments system in the EU agriculture. Different scenarios of the current system adjustments, as proposed by the European Commission, are presented. Four possible scenarios are being discussed: An ‘EU flat rate’, a pragmatic approach, the use of objective criteria and a combination of a pragmatic approach and objective criteria. It seems that the best option for the New Member States are the flat rate or the pragmatic approach criteria.",
+      "date": "2012-09-30",
+      "journal": "Zeszyty Naukowe SGGW w Warszawie - Problemy Rolnictwa Światowego",
+      "publisher": "Warsaw University of Life Sciences - SGGW Press",
+      "url": "https://doi.org/10.22630/prs.2012.12.3.38",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/21632324.2012.740851",
+      "title": "Mobility partnerships - the future of European migration policy?",
+      "abstract": "",
+      "date": "2012-10-01",
+      "journal": "Migration and Development",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1080/21632324.2012.740851",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:42:21.450457+00:00",
+      "last_seen": "2026-10-19T17:53:39.514356+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ecolmodel.2012.03.034",
+      "title": "Comparison of modelling approaches to simulate the phenology of the European corn borer under future climate scenarios",
+      "abstract": "",
+      "date": "2012-10-31",
+      "journal": "Ecological Modelling",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ecolmodel.2012.03.034",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2139/ssrn.2005010",
+      "title": "Demographic Epidemiologic Projections of Long-Term Care Needs in Selected European Countries: Germany, Spain, the Netherlands and Poland",
+      "abstract": "",
+      "date": "2012-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.2005010",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/14636681311310123",
+      "title": "Foresight and “grand challenges” within research and innovation policies",
+      "abstract": "Purpose The paper seeks to discuss how foresight is used to understand the implications of global changes for research and innovation policies. It aims to present a recent Irish case study that identified grand challenges in the national context, with their implications for research and innovation. Design/methodology/approach The foresight project is described and provides knowledge and analysis for a broader, national research prioritisation exercise. The paper analyses the implementation of the Irish foresight exercise and the main outputs generated. It connects the results of the project with the literature on foresight, innovation and grand challenges. Findings The emergence of grand challenges within research and innovation policy discourse in Europe has refreshed key questions for foresight theory and practice. Although many grand challenges have relatively clear implications for research and innovation (investment), others do not. A bottom‐up, participatory process produced a broader set of grand challenges. Research limitations/implications The concept of grand challenges is still relatively new. Practical implications Not all research and innovation priorities are linked to grand challenges. National policies need to take account of grand challenges whilst continuing to support other research and innovation needs. Originality/value The paper introduces a novel approach for identifying grand challenges and responses within the research and innovation system through a bottom‐up process.",
+      "date": "2013-02-22",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/14636681311310123",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17265/1537-1514/2013.03.005",
+      "title": "Industrial Relations Foresight 2025: The European Union Member States and the Seven Other Major Economies",
+      "abstract": "",
+      "date": "2013-03-28",
+      "journal": "China-USA Business Review",
+      "publisher": "David Publishing Company",
+      "url": "https://doi.org/10.17265/1537-1514/2013.03.005",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.7256/2306-4226.2013.4.9399",
+      "title": "Байректаревич А.. Future of Europe (of Lisbon and generational interval)",
+      "abstract": "",
+      "date": "2013-04-30",
+      "journal": "NB: Международные отношения",
+      "publisher": "Aurora Group, s.r.o",
+      "url": "https://doi.org/10.7256/2306-4226.2013.4.9399",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:47:09.374729+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.actaastro.2012.11.021",
+      "title": "Outlook of possible European contributions to future exploration scenarios and architectures",
+      "abstract": "",
+      "date": "2013-07-31",
+      "journal": "Acta Astronautica",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.actaastro.2012.11.021",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/03601234.2013.780525",
+      "title": "European scenarios for exposure of soil organisms to pesticides",
+      "abstract": "",
+      "date": "2013-09-02",
+      "journal": "Journal of Environmental Science and Health, Part B",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/03601234.2013.780525",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-013-0010-9",
+      "title": "Scenarios for the future of the European process industry - the case of the chemical industry",
+      "abstract": "",
+      "date": "2013-09-24",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-013-0010-9",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2013.01.004",
+      "title": "The value contribution of strategic foresight: Insights from an empirical study of large European companies",
+      "abstract": "",
+      "date": "2013-10-31",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2013.01.004",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:41:15.303696+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/1995-459x.2013.4.60.69",
+      "title": "Future as Unexplored Domain: Сonnecting Foresight to the Making Strategic Decisions",
+      "abstract": "This paper is based on discussions in the framework of the World Future Studies Federation Conference held in Bucharest, Romania in June 2013. It suggests some reasons that decisions are often made with good backsight and less foresight. We consider the frameworks for organisational strategy adopted by many organisations, the roles of professionals in organisations. There are two distinct archetypes of people in terms of management style and approach to the professional duties — «foxes» and «hedgehogs». The «hedgehogs» make up the majority of employees. They prefer to follow the «proven» patterns enabling the operational activities of the organisation, but are weedy in adopting the changes. The «foxes» in their turn have a flexible mindset, they are suspicious of commitment to any single way of seeing an issue, and are relatively ready to recalibrate their view when unexpected events cast doubt on what they had previously believed to be true. Many futurists display «fox» -like characteristics. We describe the characteristics of an organisation able effectively to harness the potential of both archetypes and take foresight into its strategy.\r\nThe paper thus puts forward a framework for connecting foresight to strategic decisions in organisations, using the example of the work being done with the European Commission’s EFFLA (European Forum on Forward Looking Activities). We propose a four-stage strategy cycle process for aligning to the EC’s research and innovation policy cycle. The first two stages, strategic intelligence (horizon scanning) and sense-making, require individual expert contributions and are in focus by EFFLA. In turn, selecting priorities and implementation are up to the policy- and decision-makers. We consider the suggested steps at each stage and the linkages between them. In particular this scheme should allow the EC flexibly to adjust the milestones of the Horizon 2020 framework programme and to outline its successor, Horizon II.",
+      "date": "2013-12-12",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/1995-459x.2013.4.60.69",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.13031/trans.56.9961",
+      "title": "European Scenario Studies on Future In-Stream Nutrient Concentrations",
+      "abstract": "",
+      "date": "2013-12-18",
+      "journal": "Transactions of the ASABE",
+      "publisher": "American Society of Agricultural and Biological Engineers (ASABE)",
+      "url": "https://doi.org/10.13031/trans.56.9961",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1142/s2010007813400071",
+      "title": "MARKET DRIVEN POWER PLANT INVESTMENT PERSPECTIVES IN EUROPE: CLIMATE POLICY AND TECHNOLOGY SCENARIOS UNTIL 2050 IN THE MODEL EMELIE-ESY",
+      "abstract": "In the framework of the Energy Modeling Forum 28, we investigate how climate policy regimes affect market developments under different technology availabilities on the European power markets. We use the partial equilibrium model EMELIE-ESY with focus on electricity markets in order to determine how private investors optimize their generation capacity investment and operation over the horizon 2010 to 2050. For the year 2050, the model projects a minor increase of power consumption of 10% under current climate policy, and a balanced pathway for consumption under ambitious climate policy compared to 2010 levels. These results contrast with findings of POLES and PRIMES models that predict strong consumption increases of 44% to 48% by 2050 and claim competitiveness of nuclear power and CCS options. Under ambitious climate policy, our findings correspond with major increases of wholesale electricity market prices and comparatively less pronounced emission price increases, which trigger no investments into Carbon Capture and Storage (CCS) and a strongly diminishing share of nuclear energy.",
+      "date": "2013-12-19",
+      "journal": "Climate Change Economics",
+      "publisher": "World Scientific Pub Co Pte Ltd",
+      "url": "https://doi.org/10.1142/s2010007813400071",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.11610/isij.2901",
+      "title": "'FOCUS': Foresight Security Scenarios to Plan for Research to Support the 'EU 2035' as a Comprehensive Security Provider",
+      "abstract": "",
+      "date": "2013-12-31",
+      "journal": "Information & Security: An International Journal",
+      "publisher": "Procon, Ltd.",
+      "url": "https://doi.org/10.11610/isij.2901",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2139/ssrn.2337564",
+      "title": "Forecasting Employment in Europe: Are Survey Results Helpful?",
+      "abstract": "",
+      "date": "2013-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.2337564",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2298/soc1302169a",
+      "title": "Immigration and integration scenarios in global Europe: Forward-looking up to 2050",
+      "abstract": "The author develops a forward-looking approach to immigration and integration\n   of immigrants in global Europe. She discusses population prospects in the\n   light of several migration hypotheses including ?business as usual?,\n   replacement migration, and recruitment of immigrants to fill in the gaps in\n   the labour supply. She develops ?No immigration into European Union? as shock\n   hypothesis for the forward-looking storyline and identifies the key social\n   consequences of zero immigration desired in some policy circles. She proposes\n   addressing integration of immigrants scenarios alongside demographic\n   projections and labour market needs for future assessments of needs for\n   immigrants and for responsible governance.",
+      "date": "2013-12-31",
+      "journal": "Sociologija",
+      "publisher": "National Library of Serbia",
+      "url": "https://doi.org/10.2298/soc1302169a",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3828/tpr.2014.36",
+      "title": "Urban-nature relationships in urban planning foresight in Europe: contributions from the Concours Internationale du Grand Paris",
+      "abstract": "",
+      "date": "2014-01-31",
+      "journal": "Town Planning Review",
+      "publisher": "Liverpool University Press",
+      "url": "https://doi.org/10.3828/tpr.2014.36",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-05-2012-0039",
+      "title": "The future of financial markets and regulation: what strategy for Europe?",
+      "abstract": "Purpose – This article aims to provide insight into the future of financial markets and regulation in order to define what would be the best strategy for Europe. Design/methodology/approach – First the authors define the potential changes in financial markets and then the tools available for the regulator to tame them. Finally, they build five scenarios according to the main evolutions observed on the financial markets and on the tools used by the regulator to modify these trends. Findings – Among the five scenarios defined, two present highly unstable features since the regulator refuses to choose between financial opening and independently determining how to regulate finance in order to preserve financial stability. Three of them achieve financial stability. However, they are more or less efficient or feasible. In terms of market efficiency, the multi-polar scenario is the best and the fragmentation scenario is the worst, since gains of integration depend on the size of the new capital market. Regarding sovereignty of regulation, fragmentation is the best scenario and the multi-polar scenario is the worst, because it necessitates coordination at the global level which implies moving further away from respective national preferences. However, the more realistic option seems to be the regionalisation scenario: this level of coordination seems much more realistic than the global one; the market should be of sufficient size to enjoy substantial benefits of integration. Nevertheless, the “European government” might gradually increase the degree of financial integration outside Europe in line with the degree of cooperation with the rest of the world. Originality/value – Foresight studies on financial markets and regulation are quite rare. This may be explained by the difficulty to forecast what will be their evolution in the coming decades, not least because finance is fundamentally unstable. This paper provides a framework to consider what could be the best strategy of regulators in such an unstable environment.",
+      "date": "2014-04-08",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-05-2012-0039",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-05-2012-0041",
+      "title": "Innovation systems dynamics and the positioning of Europe. A review and critique of recent Foresight studies",
+      "abstract": "Purpose – The purpose of this paper is to shed light on innovation systems dynamics and the positioning of Europe in a longer term perspective, with special attention to the international governance of the major challenges which humanity is facing. Design/methodology/approach – The method used is based on a secondary analysis and interpretation of Foresight studies. The underlying assumption is that Foresight exercises can be considered as the scene where techno-economic systems and trajectories are proposed, discussed and shaped. Findings – Foresights can be distinguished by the challenges and issues they focus on: – the innovation race: competitiveness and influence through innovation, – the thematic concerns: the stakes of global public goods, – the normative perspectives: a new style of development in the making. The question to know whether Europe can be a world driver in fostering responsible innovation models and cooperative modes of knowledge circulation and global challenges handling through relevant social and technological innovations. Originality/value – This paper reviews and puts in perspective Foresight exercises in an original way, this on two grounds: first, it includes exercises fostered at national, regional (in particular the EU) and global (UN system) levels – this to account for the emerging multi-level governance and, second, it classifies them according to their major focus, namely the innovation race, the thematic concerns (global public goods) and the normative perspectives (new style of development). It provides to the actors of innovation in both the public and private sector an understanding of the current key-concerns and visions on innovation systems and the position of Europe.",
+      "date": "2014-04-08",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-05-2012-0041",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-06-2012-0044",
+      "title": "The future of global trade and the WTO",
+      "abstract": "Purpose – The global governance of trade is in a deadlock and the WTO is suffering from a long standing crisis of legitimacy. This paper aims to analyse the main issues which might influence the governance of world trade from now until 2030 and present quantitative projections of international trade. Design/methodology/approach – The research on the main issues which might influence the governance of world trade from now until 2030 draws on a detailed analysis of the WTO and trade policies. Four scenarios of the world economy are presented, which are derived from the international AUGUR research project “Challenges for Europe in the world in 2030” coordinated by Paris Nord University. The analysis takes into account econometric forecasting of world trade conducted in the framework of this project. Findings – First, the failure of the Doha Round of multilateral trade negotiations to reach its ambitious agenda derives from the discrepancy between the governance of world trade and the new power relationship prevailing in the world economy, with new emerging powers (China, India, etc.) rapidly increasing their share of world trade. Second, the continuous restructuring of world trade and economy, which goes together with new forms of globalization, will increase pressure for a profound reform of the governance of world trade in the next few years. Research limitations/implications – This paper calls for a reform of world trade governance, especially of the missions of WTO within a renovated economic world order. Future research could investigate more deeply the potential for regional trade integration, which is reinforced by international production networks. Regional trade agreements might be an increasing alternative to multilateral trade agreements. Originality/value – This paper brings new ideas by raising the issue of the governance of world trade using a prospective approach, with the aim to identify the key channels through which international trade integration will impact the world economy. This study bases its analysis on potential scenarios from now on until 2030, each of these scenarios corresponding to a specific institutional configuration.",
+      "date": "2014-04-08",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-06-2012-0044",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:47:09.374729+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-06-2012-0045",
+      "title": "International migration by 2030: impact of immigration policies scenarios on growth and employment",
+      "abstract": "Purpose – The aim of this paper is to estimate the dynamic of international migration between the different regions of the world for 2030 and to measure the impact of different kind of migration policies on the economic and social evolution. Design/methodology/approach – The change and migration forecasting are estimated for regions of the world using macroeconomic Cambridge Alphametrics Model. Findings – The crisis and its aggravation thus clearly favour scenarios of immigration policy along the “zero migration” or “constant migration”. These choices of migration policies reinforce the deflationary process resulting in reduced opportunities for renewed growth in industrial areas and are not offset by the dynamism of growth in emerging countries. Paradoxically, the developed countries which are most durably affected by the crisis are also those that have ageing population and are in high need of skilled and unskilled labor. Practical implications – Three options are possible: one going along the depressive process by espousing restrictive immigration policies that remain expensive. The second involves a highly selective immigration policy. Under these conditions the demographic revival already appearing would be reinforced by a rejuvenation of the population brought about by a more open immigration policy. Political and institutional factors play a fundamental role in the emergence of this optimistic assumption and the rise of isolationism in Europe and the ghettoization of suburban areas can hinder the application of such a policy of openness to migration. The third scenario, the mass migration scenario, allows letting go of the growth related constraints and getting out of the deflationist spiral. This pro-active approach could cause public opinions to change in line with public interest. This scenario of mass migration has more of a chance to see the light under a growth hypothesis. However, restrictive policies weaken the prospects of sustainable recovery causing a vicious cycle that can only be broken by pro-active policies or by irresistible shocks. Originality/value – From specific estimations, four immigration regimes have been built that cut across the major regions of the model: the “core skill replacement migration regime” based on selective policies using migration to fill high-skilled labor needs (United Kingdom, West and Northern Europe, Canada, Australia, and USA), “mass immigration and replacement” applies to South Europe, East Asia High Income, and part of West Asia (Gulf countries), “big fast-growing emerging regions of future mass immigration,” notably China, India and “South-South migration” based on forced migration much of it by climate change, which may likely occur in South Asia, part of West Asia, and, most of Africa (without South Africa). Migrations in transit countries (Central America to USA, and East Europe to UK and West Europe) are based on low skilled migrants in labor-intensive sectors.",
+      "date": "2014-04-08",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-06-2012-0045",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:16.039762+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0039-4",
+      "title": "European packaging industry foresight study—identifying global drivers and driven packaging industry implications of the global megatrends",
+      "abstract": "",
+      "date": "2014-04-10",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0039-4",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/13501763.2014.897747",
+      "title": "Enlargement and the anticipatory deepening of European integration",
+      "abstract": "",
+      "date": "2014-04-28",
+      "journal": "Journal of European Public Policy",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13501763.2014.897747",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:16.039762+00:00",
+      "last_seen": "2026-10-19T17:50:00.419384+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/13691457.2014.912202",
+      "title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "abstract": "",
+      "date": "2014-05-07",
+      "journal": "European Journal of Social Work",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/13691457.2014.912202",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:47:09.374729+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/1995-459x.2014.4.6.15",
+      "title": "International Foresight of the 2000s: A Comparative Analysis",
+      "abstract": "Since the early 1990s technology forecasts play an increasingly important role in the S&T and innovation policies at the international, country, regional and corporate levels. In this regard, significant attention is given to monitoring and evaluation of such activities to improve their efficiency and quality of outputs. Since 2004, the VDI Technology Centre (Germany) conducts a comparative analysis of technology Foresight studies implemented in China, Japan, France, UK, the USA and the EU using 16 selected technology topics. Despite the many differences observed between the studies, we note some significant common issues: all the foresight studies we analysed deal in detail with the issues of energy, health / medicine / nutrition, biotechnology / life sciences and nano- / microsystems technology, and also with ICT, electronics, manufacturing, process and material technology, environment, defence and space technologies. Herewith, all the technology forecasts we compared assumed that progression in sustainability /environment and ICT was a prerequisite for progress in other areas.",
+      "date": "2014-06-11",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/1995-459x.2014.4.6.15",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s10584-014-1164-6",
+      "title": "Interactively modelling land profitability to estimate European agricultural and forest land use under future scenarios of climate, socio-economics and adaptation",
+      "abstract": "",
+      "date": "2014-07-01",
+      "journal": "Climatic Change",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s10584-014-1164-6",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.4018/ijtd.2014070103",
+      "title": "Forecasting the Diffusion of Gigabit Home Networking In Europe",
+      "abstract": "The steady growth of broadband penetration and the ongoing progress in networking technologies have increased the importance of home networks in the provision of high quality internet services. Market stakeholders have cooperated to evolve home networking towards an integrated, converged Gigabit technology, which will completely change the Home Area Networks (HANs) landscape and will enable a wave of possibilities. As Gigabit HAN technologies have just been launched in the market, there is a necessity of studying their future penetration. However, the lack of historical data on which such a forecast could be based presents a barrier that existing literature has not successfully addressed. The present paper attempts to analyze and forecast the diffusion of Gigabit HANs by suggesting a novel approach that overcomes the limitations of previous works. The proposed methodology is based on historical analogies and employs an objective and statistically reliable approach to investigate the degree of analogy and influence between services that drive the diffusion of broadband and home networking. The data used in this work were extracted from Eurostat's database and the final results, in terms of expected HAN penetration, are quite optimistic.",
+      "date": "2014-07-01",
+      "journal": "International Journal of Technology Diffusion",
+      "publisher": "IGI Global Scientific Publishing",
+      "url": "https://doi.org/10.4018/ijtd.2014070103",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-05-2012-0037",
+      "title": "Road-mapping the business potential of sustainability within the European manufacturing industry",
+      "abstract": "Purpose – The purpose of this study is to explore the required changes, outline business potential and envisage the key steps that a networked manufacturing industry needs to take to reach more sustainably performing manufacturing in the future. Design/methodology/approach – The paper utilises a visionary road-mapping approach to study the required changes and the business potential related to sustainable development in the manufacturing industry. Findings – The results were summarised in three sub-roadmaps empowerment of stakeholders, increase efficiency and creation of new performance criteria. On the basis of the summary of the sub-roadmaps, the framework was configured to describe the opportunities and challenges of sustainable business development in the European manufacturing industry. Research limitations/implications – A clear implication of this study is that a more system-oriented approach, new models for collaboration between network actors and transparently shared network-level KPIs are required before further steps towards a sustainable manufacturing industry can be taken. In addition, sustainability-driven business models are required to specify these changes concretely. Practical implications – The presented sub-roadmaps and framework summarising them could provide new insights to business practitioners exploring business potential of sustainability. Social implications – Understanding about the road-mapping process as tool that enables interaction and envisioning between different stakeholders could also have social implications supporting shared industry-level learning processes. Originality/value – Studies of sustainability within the manufacturing industry have focused mainly on green issues in supply-chain management or corporation-level governance models and reporting practices. The paper presents a broader view of sustainable development and recognises networked business as part of the solution.",
+      "date": "2014-08-05",
+      "journal": "Foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-05-2012-0037",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:16.039762+00:00",
+      "last_seen": "2026-10-19T17:44:16.039762+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/s1351-4210(14)70249-5",
+      "title": "The European scenario for fatty acids",
+      "abstract": "",
+      "date": "2014-08-31",
+      "journal": "Focus on Surfactants",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/s1351-4210(14)70249-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1136/ejhpharm-2014-000520",
+      "title": "The European Statements of Hospital Pharmacy: achieving consensus using Delphi and World Café methodologies",
+      "abstract": "",
+      "date": "2014-09-19",
+      "journal": "European Journal of Hospital Pharmacy",
+      "publisher": "BMJ",
+      "url": "https://doi.org/10.1136/ejhpharm-2014-000520",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.emj.2014.05.003",
+      "title": "Sustainable fashion supply chain management: the European scenario",
+      "abstract": "",
+      "date": "2014-10-31",
+      "journal": "European Management Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.emj.2014.05.003",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.jhydrol.2014.01.010",
+      "title": "Bringing politics back into water planning scenarios in Europe",
+      "abstract": "",
+      "date": "2014-10-31",
+      "journal": "Journal of Hydrology",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.jhydrol.2014.01.010",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1002/fut.21701",
+      "title": "Credit‐Implied Equity Volatility—Long‐Term Forecasts and Alternative Fear Gauges",
+      "abstract": "This study discusses how to compute and forecast long‐term stock return volatilities, typically with a five‐year horizon or longer, using credit derivatives, and how such volatilities can be used in different areas ranging from the valuation of employee stock options and other long‐term derivatives to the construction of market‐based fear gauges in selected countries or market segments. In the empirical part of the paper I focus on the European financial sector and find the credit‐implied volatilities and fear gauges to behave well. The forecasting accuracy of the credit‐implied volatilities is found to be better than that of horizon‐matched historical volatilities. © 2014 The Authors. Journal of Futures Markets Published by Wiley Periodicals, Inc. Jrl Fut Mark 35:753–775, 2015",
+      "date": "2014-11-17",
+      "journal": "Journal of Futures Markets",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/fut.21701",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:52:28.306596+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0057-2",
+      "title": "Neglected futures. Considering overlooked poverty in Europe",
+      "abstract": "",
+      "date": "2014-12-06",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0057-2",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:52:28.306596+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0055-4",
+      "title": "Foresight in support of European research and innovation policies: The European Commission is preparing the funding of grand societal challenges",
+      "abstract": "",
+      "date": "2014-12-10",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0055-4",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0052-7",
+      "title": "Two futures: EU-Russia relations in the context of Ukraine.",
+      "abstract": "",
+      "date": "2014-12-11",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0052-7",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:52:44.609176+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17323/1995-459x.2014.4.54.63",
+      "title": "Can Basic Research Prevent Economic Stagnation?",
+      "abstract": "Trends of stagnation in highly developed innovative systems are actively debated nowadays. The paper analyses the important role played by fundamental research in preventing such a negative scenario. It explains the essence of the so-called ‘European paradox’, whereby Europe, despite a higher scientific potential than the US, is much less efficient in innovation.\r\nEvidence from Austria shows the current system of fundamental research has several drawbacks. These weaknesses could prevent it from being a driver of breakthrough innovations. One problem is the contradictions in career development mechanisms in academia and the lack of accumulated research competencies in the form of large academic entities that are funded on an ongoing basis. Compared with other countries, Austria has little attraction for highly qualified specialists and, respectively, for the dynamic high-tech sectors.\r\nIn order to remedy the situation, it is recommended to particularly develop projects that aim to find answers to the ‘grand challenges’, in parallel to curiosity-driven research. In addition, we recommend creating organizations with sufficient administrative capacities and autonomy to attract qualified staff and funding with a view to implementing innovation over a long term horizon (10-20 years).",
+      "date": "2014-12-12",
+      "journal": "Foresight and STI Governance",
+      "publisher": "National Research University, Higher School of Economics (HSE)",
+      "url": "https://doi.org/10.17323/1995-459x.2014.4.54.63",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:15.303696+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0049-2",
+      "title": "The future of European education: A political strategy & four action areas",
+      "abstract": "",
+      "date": "2014-12-16",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0049-2",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:52:44.609176+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5172/impp.2012.14.3.446",
+      "title": "Web 2.0 foresight for innovation policy: A case of strategic agenda setting in European innovation",
+      "abstract": "",
+      "date": "2014-12-17",
+      "journal": "Innovation",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.5172/impp.2012.14.3.446",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:32.502457+00:00",
+      "last_seen": "2026-10-19T17:44:32.502457+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.futures.2014.10.008",
+      "title": "A new state in Europe? Scenarios for Catalan self-determination",
+      "abstract": "",
+      "date": "2014-12-31",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2014.10.008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/s1473-3099(14)70834-5",
+      "title": "Dengue and dengue vectors in the WHO European region: past, present, and scenarios for the future",
+      "abstract": "",
+      "date": "2014-12-31",
+      "journal": "The Lancet Infectious Diseases",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/s1473-3099(14)70834-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:43:59.603728+00:00",
+      "last_seen": "2026-10-19T17:55:21.817488+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.2139/ssrn.2506531",
+      "title": "Carbon Emissions Scenarios in Europe Based on an Endogenous Growth Model",
+      "abstract": "",
+      "date": "2014-12-31",
+      "journal": "SSRN Electronic Journal",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.2139/ssrn.2506531",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:31.873996+00:00",
+      "last_seen": "2026-10-19T17:41:31.873996+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
     {
       "doi": "10.1177/1474904114565161",
       "title": "On organizing educational research communication in Europe: Past experiences and possible futures",
@@ -16,7 +1138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -33,7 +1155,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -67,7 +1189,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -84,7 +1206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:49:25.823278+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -118,8 +1240,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s40309-014-0046-5",
+      "title": "The future of individualization in Europe: changing configurations in employment and governance",
+      "abstract": "",
+      "date": "2015-04-15",
+      "journal": "European Journal of Futures Research",
+      "publisher": "Springer Science and Business Media LLC",
+      "url": "https://doi.org/10.1007/s40309-014-0046-5",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:52:28.306596+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -135,7 +1274,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -152,7 +1291,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -169,7 +1308,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -186,7 +1325,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -203,7 +1342,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -220,7 +1359,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -288,7 +1427,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -305,7 +1444,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -339,7 +1478,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -373,8 +1512,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1007/s12290-015-0376-0",
+      "title": "Beyond Economics: The Geopolitical Importance of the Transatlantic Trade and Investment Partnership",
+      "abstract": "With the Transatlantic Trade and Investment Partnership, Europe has a decisive opportunity to define the direction of future global trade. However, concluding the biggest agreement of its kind seems to be trying the internal unity of the Union. A wave of protests has swept across Europe as many fear the hidden costs behind regulatory cooperation with our neighbours across the Atlantic. Getting sceptics on board will require more than economic reasoning. The hidden value of the free trade agreement is its geopolitical importance and the historic opportunity it offers for the West. Sealing the deal with the US would strengthen Euro-Atlantic cooperation, counter the influence of China, diminish European dependency on Russia's energy imports and promote the Western economic model. Should the negotiations fail, mutual blame and internal frustration will isolate the EU.",
+      "date": "2015-12-01",
+      "journal": "European View",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1007/s12290-015-0376-0",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:46:20.204509+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -390,7 +1546,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -407,7 +1563,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -424,7 +1580,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -441,7 +1597,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -458,7 +1614,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -492,7 +1648,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -509,7 +1665,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-19T17:51:55.426389+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -526,7 +1682,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -560,7 +1716,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -577,7 +1733,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -594,7 +1750,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -611,7 +1767,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -628,7 +1784,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -645,7 +1801,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -662,7 +1818,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -679,7 +1835,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -696,7 +1852,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -713,7 +1869,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -730,7 +1886,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -764,7 +1920,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -781,7 +1937,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -832,7 +1988,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -849,7 +2005,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -866,7 +2022,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -883,7 +2039,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -900,7 +2056,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:51:55.426389+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -917,7 +2073,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -934,7 +2090,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -951,7 +2107,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T17:52:11.792449+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -968,7 +2124,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1036,7 +2192,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1053,7 +2209,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T17:55:01.840461+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1070,7 +2226,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:46:20.204509+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1087,7 +2243,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1126,6 +2282,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1017/s1867299x00000593",
+      "title": "Regulating the Use of Bisphenol A in Baby and Children's Products in the European Union: Current Developments and Scenarios for the Regulatory Future",
+      "abstract": "Parents of newborns and small children have recently been confronted with labels indicating that their purchases of a baby bottle, teethers or sippy cups are now ‘Bisphenol A-free’ (BPA). A synthetic chemical used in the production process of polycarbonate (plastics), Bisphenol A is currently making headline news in the US and the EU. Its questioned safety in food plastics, baby bottles and children's toys has turned plastics into a political issue as it is systematically framed as a risk in media coverage. Apart from regulatory exposure limits (Tolerable Daily Intake levels (TDI), Bisphenol A is currently not subject to any restrictions in use yet (although BPA will be subject to a ban on the EU level from spring 2011 onwards). However, with the REACH framework (Registration, Evaluation, Authorisation of Chemicals), a new regulatory framework for EU's chemical policy in place since June 2007, these exposure limits may be reviewed and BPA may face regulatory action. This article aims to analyse the regulatory process of Bisphenol A in the EU as an example of an uncertain risk dossier. On the basis of document and media analysis and interviews, the main aim is to gain an understanding of how uncertain risks are being regulated in the European Union. To that end, the self-regulatory behavior of industry is also considered. On the basis of the current regulatory tools in place and the current state of affairs, as well as developments in the controversy around BPA, the paper concludes by presenting four scenarios that illustrate the dynamics of the case and its possible regulatory outcomes.",
+      "date": "2017-01-20",
+      "journal": "European Journal of Risk Regulation",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1017/s1867299x00000593",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:41:48.356919+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.renene.2016.08.036",
       "title": "Potential impacts of climate change on European wind energy resource under the CMIP5 future climate projections",
       "abstract": "",
@@ -1155,7 +2328,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1172,7 +2345,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1189,7 +2362,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:38.921609+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1228,7 +2401,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:48:31.597112+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1245,7 +2418,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1262,7 +2435,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1279,7 +2452,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1318,7 +2491,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:38.921609+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1335,7 +2508,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1413,7 +2586,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:48:31.597112+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1430,7 +2603,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1481,7 +2654,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1515,7 +2688,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:45:30.475537+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1605,7 +2778,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1622,7 +2795,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1639,7 +2812,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:53:55.898901+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1707,7 +2880,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:06.080696+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1724,7 +2897,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:06.080696+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1741,7 +2914,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1758,7 +2931,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1797,7 +2970,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1831,7 +3004,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1870,7 +3043,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1887,7 +3060,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1904,7 +3077,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:48:53.093399+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1921,7 +3094,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:53:55.898901+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1938,7 +3111,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:48:31.597112+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1989,7 +3162,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2006,7 +3179,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2028,7 +3201,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2045,7 +3218,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2079,7 +3252,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2147,7 +3320,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:38.921609+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2208,7 +3381,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2252,7 +3425,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2308,7 +3481,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-19T17:51:06.080696+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2330,7 +3503,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:45:30.475537+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2347,7 +3520,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2398,7 +3571,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:53:55.898901+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2454,7 +3627,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2471,7 +3644,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:45:30.475537+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2505,7 +3678,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T17:51:22.527598+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2522,7 +3695,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2539,7 +3712,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2668,7 +3841,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2775,7 +3948,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T17:48:14.969689+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2809,7 +3982,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2826,7 +3999,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2848,7 +4021,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2870,7 +4043,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:45:30.475537+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2887,7 +4060,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2931,7 +4104,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:51:38.921609+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2982,7 +4155,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3033,7 +4206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3067,7 +4240,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3089,7 +4262,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:46:03.398621+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3140,7 +4313,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3157,7 +4330,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3174,7 +4347,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3230,7 +4403,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3349,7 +4522,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3366,7 +4539,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3400,7 +4573,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:40:58.525880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3434,7 +4607,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:40:58.525880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3519,7 +4692,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3536,7 +4709,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3553,7 +4726,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3694,7 +4867,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T17:54:45.543714+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3745,7 +4918,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3762,7 +4935,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3830,7 +5003,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3864,7 +5037,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T17:54:28.958902+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3881,7 +5054,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:43:43.036142+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3898,7 +5071,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:40:58.525880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3915,7 +5088,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:40:58.525880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3932,7 +5105,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:40:58.525880+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3949,7 +5122,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:51:55.426389+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4085,7 +5258,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:40:56.378891+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4136,7 +5309,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4187,7 +5360,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4255,7 +5428,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4289,7 +5462,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:49:44.197520+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4306,7 +5479,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4357,7 +5530,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4374,7 +5547,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4391,7 +5564,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4408,7 +5581,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4442,7 +5615,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4493,7 +5666,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4544,7 +5717,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4561,7 +5734,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4578,7 +5751,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4595,7 +5768,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T16:51:25.738986+00:00",
-      "last_seen": "2026-10-18T16:51:25.738986+00:00",
+      "last_seen": "2026-10-19T17:50:00.419384+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4646,7 +5819,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4663,7 +5836,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-18T16:51:25.738986+00:00",
+      "last_seen": "2026-10-19T17:50:00.419384+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4680,7 +5853,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4714,7 +5887,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4731,7 +5904,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4748,7 +5921,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4765,7 +5938,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4782,7 +5955,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4799,7 +5972,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4816,7 +5989,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4833,7 +6006,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4850,7 +6023,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T17:46:52.710683+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4867,7 +6040,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-19T05:15:20.429580+00:00",
+      "last_seen": "2026-10-19T17:50:16.915692+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4952,7 +6125,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:52:28.306596+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.ecolmodel.2024.110884",
+      "title": "High-resolution spatiotemporal forecasting of the European crane migration",
+      "abstract": "",
+      "date": "2024-12-31",
+      "journal": "Ecological Modelling",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.ecolmodel.2024.110884",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4971,6 +6161,23 @@
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
       "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.18174/odjar.v10i0.16398",
+      "title": "A daily time-step observed and scenario climate dataset on a European grid for crop modelling applications",
+      "abstract": "This paper describes a daily time-step observed and scenario climate dataset on a European grid with 25 km x 25 km spatial resolution. The dataset was developed for crop modelling applications in the MACSUR project. The dataset covers the period 1980-2010 for observations; this is, for a baseline period of 1981-2010 and the year 1980 for crop model simulations with sowing dates in the autumn. It also covers the periods 2040-2069 and 2070-2099 for 5 Global Climate Models (GCMs) x 2 forcing scenarios (RCP4.5 and RCP8.5) and 2 GCMs with RCP2.6. The Joint Research Centre's (JRC) Agri4Cast gridded dataset was used for the baseline. The scenarios have been calculated using an enhanced delta change method that applies changes in aspects of temperature and precipitation variability in addition to changes in mean climate.",
+      "date": "2024-12-31",
+      "journal": "Open Data Journal for Agricultural Research",
+      "publisher": "Wageningen University and Research",
+      "url": "https://doi.org/10.18174/odjar.v10i0.16398",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -5003,7 +6210,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5054,8 +6261,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1017/elo.2024.55",
+      "title": "The ‘hungry beast’ of migration control and the future of the superdiverse European migration law",
+      "abstract": "",
+      "date": "2025-02-12",
+      "journal": "European Law Open",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1017/elo.2024.55",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -5071,7 +6295,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.33067/se.1.2025.10",
+      "title": "Embedding the Future in the European Union: Advancing Towards Strategic Foresight",
+      "abstract": "This article seeks to shed light on how the EU and its institutions are dealing with the future, an increasingly relevant dimension of policy-making. Interest in the future as a temporal and political dimension derives from increasing general international attention to anticipatory governance, this being a proactive approach to policy-making with the aim of anticipating disruptions and critical events. The possible integration of future-oriented thinking into decision-making processes along with the normalisation of anticipatory governance in order to contain the effects of unexpected events can be an asset for many polities struggling with creeping, perma-poly-crises. The article also connects crises with the EU’s commitment to so-called “strategic foresight”, a structured and systematic approach of exploring plausible version of the future which can support better policy-making and incentivise forms of anticipatory governance. What has emerged so far is a multi-level yet fragmented form of European governance attempting to deal with the future. It is not yet clear how Member States are adjusting to the EU’s commitment to the future and to the impact the organisation can have on their headway, considering that the aforementioned strategic foresight may be an obstacle for politicians seeking an easy and immediate consensus.",
+      "date": "2025-03-25",
+      "journal": "Studia Europejskie – Studies in European Affairs",
+      "publisher": "University of Warsaw",
+      "url": "https://doi.org/10.33067/se.1.2025.10",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5088,7 +6329,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5105,7 +6346,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5122,7 +6363,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5139,7 +6380,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5156,7 +6397,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5173,7 +6414,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5207,7 +6448,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5224,7 +6465,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-17T01:30:42.260492+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5241,7 +6482,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T17:47:58.512084+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5292,7 +6533,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5309,7 +6550,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:53:22.632372+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5343,7 +6584,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5360,7 +6601,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5394,7 +6635,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5411,7 +6652,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5433,6 +6674,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.14207/ejsd.2025.v14n3p103",
+      "title": "Modeling the Green Transition in the European Union: An Organic Market-Oriented Perspective",
+      "abstract": "In the context created by the short-term energy market disruptions generated by the war in Ukraine and the longer-term concern for achieving a climate-neutral continent by 2050, the European Commission issued, in May 2022, the REPowerEU plan aiming to reduce significantly the dependence on fossil-based energy sources by 2027. Despite the increasing employment of renewables, the green transition faced important challenges and did not generate results consistent with the proposed objectives.\r\nThe nature of the transitional process explains the gap between objectives and results suggesting that an organic transition to clean sources of energy could be a more effective strategy allowing a gradual reduction of the share of the still important conventional sources in energy production and final consumption and their corresponding balanced replacement with renewables ones.\r\nThe paper presents the results of an exploratory assessment based on the secondary data and from a market-oriented perspective of the evolution of final energy consumption and energy production structures, weighing the shares of renewables and conventional energy in the last three decades, regarded as the background of the future modeling attempts, in connection to the relevant economic, social, and environmental dimensions of the sustainable development in the EU Member States.\r\n \r\n \r\nKeywords: Green transition, Renewable energy, Energy market, European Union, Sustainable development",
+      "date": "2025-10-01",
+      "journal": "European Journal of Sustainable Development",
+      "publisher": "European Center of Sustainable Development",
+      "url": "https://doi.org/10.14207/ejsd.2025.v14n3p103",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:53.577774+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1186/s40309-025-00257-5",
       "title": "A multi-level futures analysis of European teleophthalmology through 2040: development and application of a conceptual framework for healthcare transformation",
       "abstract": "Abstract As Europe faces unprecedented demographic shifts and technological advancement, the future of eye care delivery stands at a critical juncture. This paper develops a comprehensive conceptual framework for understanding how teleophthalmology will transform European healthcare delivery through 2040. Drawing on futures studies methodology and healthcare innovation theory, we propose a multi-level framework that captures the dynamic interplay between technological innovation, social systems, and healthcare delivery models. The framework examines transformation across macro (landscape), meso (regime), and micro (niche) levels while incorporating temporal dimensions that reflect the evolutionary nature of healthcare innovation. Through analysis of current trends and emerging developments, we present three detailed scenarios for the future of European teleophthalmology: fully integrated digital eye care, hybrid model with regional variations, and technology-enabled traditional care. These scenarios explore how different combinations of technological capability, social acceptance, and institutional readiness might shape the evolution of eye care delivery. Our analysis reveals critical challenges and opportunities in implementing teleophthalmology across diverse European healthcare systems, including issues of healthcare equity, data governance, professional adaptation, and cross-border care delivery. The paper contributes to both theoretical understanding of healthcare futures and practical implementation of digital health solutions while considering the unique characteristics of European healthcare systems. The framework and scenarios presented provide valuable guidance for policymakers, healthcare providers, and technology developers in shaping the future of eye care delivery across Europe.",
@@ -5445,7 +6703,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5462,7 +6720,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5480,6 +6738,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
       "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckaf161.355",
+      "title": "Strategic Foresight Innovation: A Co-Design Framework for Resilient Technology Development",
+      "abstract": "Abstract Designing technologies for high-stakes environments (such as emergency response, healthcare, and defense) requires more than technical excellence. It demands close collaboration between end users and developers, and design processes that can keep pace with uncertainty, complexity, and rapid change. While co-design methods offer a valuable way to bridge user needs and technical development, traditional approaches often fall short in addressing the unpredictability and pressures of these settings. This presentation explores how integrating foresight into co-design processes can better prepare technologies for future challenges. Building on insights from the CARMA project, which developed robotic solutions for emergency responders, we present a structured co-design framework that incorporates scenario-based thinking to improve adaptability and long-term relevance. The approach includes tailored workshops that bring together users and developers to explore future contexts, anticipate emerging needs, and collaboratively shape technology pathways. A pilot test of the framework (conducted with emergency response teams) demonstrates how foresight methods can strengthen collaboration, surface hidden assumptions, and enhance design resilience. While initially applied in emergency robotics, the principles and framework are transferable to health policy innovation, supporting the design of interventions and systems that must evolve alongside shifting societal, technological, and environmental conditions. This work contributes a scalable, future-ready co-design approach that aligns with strategic foresight principles, offering practical tools for anticipating emerging challenges and building resilience into technology and policy development. This work was supported by national funds through Fundação para a Ciência e a Tecnologia (FCT) with reference UIDB/50021/2020 - DOI: 10.54499/UIDB/50021/2020 and the Horizon Europe Project CARMA (Agreement nº 101168355)",
+      "date": "2025-10-27",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckaf161.355",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5518,6 +6793,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.34659/eis.2025.94.3.1046",
+      "title": "The evolution of agricultural energy transition in Eastern European Union countries between 1993 and 2022",
+      "abstract": "The issue of greenhouse gas emissions from energy consumption has remained a major challenge for the European Union. In response, the EU has set itself the target of reducing greenhouse gas emissions by 55% by 2030 and becoming completely carbon neutral by 2050. Energy transition is crucial for reducing greenhouse gas emissions, ensuring agricultural sustainability, and improving energy security. The main aim of this study is to assess the progress made in the transition to renewable energy sources in agriculture in the Eastern European Union countries. This study has used a data review method to examine the transition to renewable energy in agriculture in the Eastern European Union countries, including Bulgaria, Croatia, Czechia, Estonia, Hungary, Latvia, Lithuania, Poland, Romania and Slovakia, for the period between 1993 and 2022. The results have shown that the transition to renewable energy in agriculture has been relatively slow in Romania, Croatia, Estonia, Bulgaria, and Hungary.",
+      "date": "2025-11-11",
+      "journal": "Economics and Environment",
+      "publisher": "Fundacja Ekonomistow Srodowiska i Zasobow Naturalnych",
+      "url": "https://doi.org/10.34659/eis.2025.94.3.1046",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:53.577774+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1186/s40309-025-00261-9",
       "title": "Europe’s AI future as a meta-sovereign imaginary: negotiating global norms, sovereign machines, and infrastructural futures through AI simulations",
       "abstract": "",
@@ -5530,7 +6822,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5547,7 +6839,58 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:52:44.609176+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.31338/1641-2478pe.3.25.1",
+      "title": "European Union policy on Strategic Lawsuits Against Public Participation (SLAPP) in the media",
+      "abstract": "Freedom of expression is a value of the European Union that requires special protection in view of the emergence of new threats. The significant ones of these threats are SLAPP lawsuits. The aim of this article is to present the European Union's policy on SLAPP (Strategic Lawsuits Against Public Participation). The following research questions are addressed in this study: (1) to what extent do SLAPP lawsuits restrict freedom of expression and public debate? (2) what is the EU’s policy on restricting and counteracting SLAPP? The analysis is based on a review of the literature on the subject and official EU legal acts and documents. The study identified the objectives, actors and instruments of EU policy implementation. The research outcomes demonstrate that the main objective of EU policy towards SLAPP is to counteract the occurrence of such lawsuits and to protect defendants. Various instruments are used for this purpose, the most important of which are legal regulations. Financial mechanisms and, in the future, monitoring are also important. The European Union implements its policy on SLAPP in cooperation with Member States and with significant involvement of non-governmental organisations. The biggest limitation in the fight against SLAPP is that EU policy refers to cross-border SLAPP, while the phenomenon itself most often occurs at the national level.",
+      "date": "2025-11-28",
+      "journal": "Przegląd Europejski",
+      "publisher": "University of Warsaw",
+      "url": "https://doi.org/10.31338/1641-2478pe.3.25.1",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.70852/tmj.1786306",
+      "title": "Health Technology Assessment and Horizon Scanning: A Review",
+      "abstract": "Concerns and uncertainties about the future have always posed challenges for societies. Identifying potential risks and taking preventive measures constitute key responsibilities for decision-makers. Horizon Scanning Systems are defined as tools that provide scientific foresight and guidance for policymakers. These systems are utilized not only in health but also in education, agriculture, and other sectors through technological assessment. Globally, horizon scanning has attracted particular attention in oncology, public health, and medical sciences more broadly. Designed to generate scientific insights into uncertainties and to guide preventive strategies, these systems play a critical role in the development of new technologies, especially in pharmaceuticals and medical devices. Horizon scanning has also been increasingly applied in stem cell research, occupying a notable place in literature. This study seeks to explore how horizon scanning systems, as information providers and analyzers, have been employed in the literature. A review was conducted, focusing on the past 25 years, during a period of rapid technological and scholarly advancement. In addition to global activities, studies carried out in Türkiye were also examined. Findings indicate that institutionalized and concrete efforts are particularly concentrated in the European region. Regarding the research question on Türkiye, no web-based studies specifically addressing the national context were identified. While institutional sources show that the topic has been recognized in Türkiye, a systematic structure has not yet been established. Official sources reveal an expressed interest in the subject; however, concrete steps are still required.",
+      "date": "2025-11-28",
+      "journal": "Türk Tıp Dergisi",
+      "publisher": "Yildirim Beyazit University Yenimahalle Education and Research Hospital",
+      "url": "https://doi.org/10.70852/tmj.1786306",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.34021/ve.2025.08.03(2)",
+      "title": "Strategic Foresight for Sustainable Development in the European Union: The Role of Entrepreneurship",
+      "abstract": "Sustainable development has become a strategic priority for the European Union (EU), requiring coordinated institutional, economic and entrepreneurial transformations. While a growing body of literature recognises entrepreneurship as an important mechanism for advancing sustainability objectives, empirical evidence on how structural features of the business environment influence sustainability trajectories at the macroeconomic level remains fragmented. In particular, the dynamic relationships among sustainable development, business regulation and market openness across EU countries remain insufficiently understood. The objective of this study is to analyse how business regulation and market openness influence entrepreneurship-driven progress towards sustainable development in the European Union and to examine the dynamic interactions among these institutional and economic dimensions. The empirical analysis employs an annual panel dataset covering 27 EU member states for the period 2010–2024. The study applies a panel vector autoregression (PVAR) framework combined with Granger causality testing and impulse response analysis to capture short-run and long-run relationships among sustainable development, regulatory quality and market openness. The results reveal strong persistence and path dependence in sustainable development trajectories. Business regulation does not exert statistically significant short-term effects on sustainability outcomes. Conversely, sustainable development Granger-causes changes in regulatory quality, indicating feedback processes in which sustainability progress stimulates institutional adaptation. Market openness demonstrates the strongest long-term positive effect on sustainability, although short-term impacts appear negative, reflecting transitional adjustment costs. These findings suggest that sustainable development, regulatory quality and market openness form a dynamically interconnected system characterised by temporal asymmetries and feedback effects. The results highlight the importance of gradual, learning-based regulatory reforms and deeper integration into global innovation and investment networks to support sustainable entrepreneurial ecosystems in the European Union. The study also acknowledges limitations related to the selected indicators and modelling framework, which provide avenues for further research.",
+      "date": "2025-11-30",
+      "journal": "Virtual Economics",
+      "publisher": "The London Academy of Science and Business Limited",
+      "url": "https://doi.org/10.34021/ve.2025.08.03(2)",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5586,6 +6929,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1002/ffo2.70024",
+      "title": "Strategic Foresight for Emerging Defense Technologies: Impact on STI Policies and Diffusion Timelines Across Short, Medium, and Long‐Term Horizons",
+      "abstract": "ABSTRACT From past to present, the defense industry has consistently driven technological innovation, acting as a catalyst for breakthroughs that extend beyond military applications. As global defense strategies increasingly rely on cutting‐edge technologies, identifying areas of investment that align with Science, Technology, and Innovation (STI) policies has become crucial. Using the Delphi method, this study gathers insights from 74 Turkish defense‐sector professionals—academics, engineers, and military officers—to evaluate 14 priority technology domains defined by the European Defense Agency taxonomy. Türkiye's short‐, medium‐, and long‐term roadmap for digital transformation emphasizes immediate‐impact areas, including cybersecurity, sensor systems, and design technologies, as well as long‐horizon priorities, including photonics, advanced materials, and propulsion systems. Cybersecurity stands out as a disruptive, high‐impact domain, reshaping both Türkiye's defense capabilities and the global security paradigm. The results function as a policy roadmap, allowing decision‐makers to reconcile near‐term readiness with long‐term strategic autonomy by aligning investments, regulatory frameworks, and innovation incentives. These technologies challenge existing norms and demand adaptive policy frameworks that can anticipate and regulate their influence on national security. The integration of such technologies into defense frameworks represents a paradigmatic shift, reshaping military strategies and global power dynamics. The findings of this study contribute to ongoing discussions about the foresight of emerging technologies and their strategic implications within the defense industry, positioning it at the forefront of global technological transformation.",
+      "date": "2025-12-07",
+      "journal": "FUTURES & FORESIGHT SCIENCE",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1002/ffo2.70024",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1080/17579961.2025.2593772",
       "title": "Innovations as imagined futures in EU sustainability policies",
       "abstract": "",
@@ -5615,7 +6975,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5632,7 +6992,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.56043/reveco-2025-0018",
+      "title": "ENERGY TRANSITION IN ROMANIA AND THE EUROPEAN UNION: DEVELOPMENTS, CHALLENGES AND PERSPECTIVES",
+      "abstract": "Energy is considered the driving force of society, a fundamental pillar that supports economic development, improves living standards, and enables the transformations of the digital age. Over time, it has been both the subject and the object of profound structural and technological change. The Member States of the European Union, including Romania, have committed to ambitious environmental protection goals, united under the shared objective of achieving climate neutrality by 2050. Within this context, the energy sector is undergoing a process of transformation, marked by a rapid shift toward electricity generation from renewable sources. A critical question emerges: can Romania keep pace with these dynamic developments while ensuring the availability of green energy in sufficient quantities and at sustainable costs? Failure to do so may result in significant economic and social pressures stemming from the misalignment between environmental objectives and the structural realities of the national energy market. This study analyzes the evolution of Romania’s energy mix, with a particular focus on electricity production, import dependency, the phasing out of fossil fuels, and the integration of renewable resources. It further evaluates the challenges, strategic responses, and future prospects of Romania’s energy transition within the broader framework of European energy policy and recent geopolitical developments, including the war in Ukraine.",
+      "date": "2025-12-18",
+      "journal": "Revista Economica",
+      "publisher": "Lucian Blaga University of Sibiu",
+      "url": "https://doi.org/10.56043/reveco-2025-0018",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:53.577774+00:00",
+      "last_seen": "2026-10-19T17:44:53.577774+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5654,6 +7031,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.32084/tkp.9640",
+      "title": "Artificial Intelligence in the Public Sphere: Legal and Security Culture in the EU",
+      "abstract": "This article analyzes the impact of the development of artificial intelligence (AI) on the public sphere and its consequences for political, security, and legal culture. The paper describes how the advancement of AI forces a reinterpretation of existing legal, ethical, and philosophical assumptions. It focuses on the new European Union regulation concerning AI, which balances the need for innovation with the obligation to protect citizens’ rights, highlighting AI’s role in shaping international interactions and public policy. The article also addresses challenges related to disinformation, human rights, and the potential future risks associated with the use of AI.",
+      "date": "2025-12-29",
+      "journal": "Teka Komisji Prawniczej PAN Oddział w Lublinie",
+      "publisher": "Stowarzyszenie Absolwentow i Przyjaciol Wydzialu Prawa Katolickiego Uniwersytetu Lubelskiego",
+      "url": "https://doi.org/10.32084/tkp.9640",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.eplepsyres.2025.107689",
       "title": "Trends, prescribing patterns and projections of antiseizure drug use in Europe",
       "abstract": "",
@@ -5666,7 +7060,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5683,7 +7077,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5700,8 +7094,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5937/straman2400022b",
+      "title": "Socially responsible behavior of companies from the young generation perspective: An empiric study from four European Union member states",
+      "abstract": "Background: Since adopting the Non-Financial Reporting Directive, companies have been required to report information on environmental, social, and employee matters. After adopting the Corporate Sustainability Reporting Directive and its gradual transposition into the European Union (EU) Member States' national legislation, the Environmental Social, and Governance (ESG) reporting requirements are becoming stricter to ensure transparency and comparability of reported sustainability information, to prevent greenwashing, and to ensure that companies behave in a socially responsible manner to the environment, society, and governance, and report this information in the Sustainability Report. Purpose: The paper aims to analyze how the young generation from four different EU member states perceives companies' socially responsible behavior and what importance they give to various attributes of corporate social responsibility. Study design/methodology/approach: To meet the paper's purpose, a standard methodology of legislation and literature review was performed. Afterward, a questionnaire survey was conducted in which the attitudes of the young generation to the socially responsible behavior of companies were investigated. Software SAS Enterprise Guide and SAS programming language have been used for the analysis. Findings/conclusions: The research results showed that the young generation perceives social responsibility in companies' behavior and takes it as a competitive advantage in the market. The results, among others, showed which aspects of responsible business are the most important for the young generation. The young people were able to name socially responsible companies, and according to their responses, they would prefer to buy products or services from companies that behave responsibly to society and the environment, even if these products or services were more expensive. Limitations/future research: The paper analyzes the attitudes only of the young generation which can be a limited factor in the research. More detailed analysis within all the age groups could bring different results. The number of respondents is another limitation.",
+      "date": "2025-12-31",
+      "journal": "Strategic Management",
+      "publisher": "Centre for Evaluation in Education and Science (CEON/CEES)",
+      "url": "https://doi.org/10.5937/straman2400022b",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:00.910524+00:00",
+      "last_seen": "2026-10-19T17:53:00.910524+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -5734,7 +7145,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:53:22.632372+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5751,7 +7162,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5769,6 +7180,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
       "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1017/s0266462325103358",
+      "title": "Evaluating international collaboration on horizon scanning for pharmaceuticals: developing key performance indicators for the international horizon scanning initiative",
+      "abstract": "Abstract Introduction Many European countries independently conduct horizon scanning activities. However, the costs, time, and resources required can be prohibitive. To address this, the International Horizon Scanning Initiative (IHSI) was launched in 2019. IHSI aims to facilitate decision-makers and payers in negotiating fair prices and preparing for potentially disruptive pharmaceuticals. IHSI developed the Joint Horizon Scanning Database, a repository of pharmaceuticals expected to enter the European market, and initiated a series of High Impact Reports (HIRs) to highlight pharmaceuticals that have the potential to significantly impact healthcare systems. This paper outlines the development of key performance indicators (KPIs) that can be used to evaluate IHSI’s work. Results In close collaboration with representatives from IHSI member countries and its Executive Committee, the following KPIs were developed: “Number of IHSI member countries”, “Embedding of IHSI in national health technology assessment procedures”, “Database coverage”, “Data completeness”, “Data timeliness”, “Accuracy of identifying disruptive pharmaceuticals”, “Accuracy of identifying non-disruptive pharmaceuticals”, “Use of HIRs in preparing for disruption to the healthcare system”, and “Use of HIRs in price negotiations and financial arrangements”. Among these, “Accuracy of identifying disruptive pharmaceuticals” was considered most important, followed by “Data timeliness” and “Data completeness”. Additionally, based on consultations with nonmember countries, strategies for improvement were identified should the KPIs reveal areas for improvement. These include involving patients in the selection of pharmaceuticals and conducting reputation surveys alongside measuring KPIs. While the KPIs and strategies for improvement are specific to IHSI, they can be tailored to support other (international) horizon scanning initiatives.",
+      "date": "2026-01-19",
+      "journal": "International Journal of Technology Assessment in Health Care",
+      "publisher": "Cambridge University Press (CUP)",
+      "url": "https://doi.org/10.1017/s0266462325103358",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:53:04.077877+00:00",
+      "last_seen": "2026-10-19T17:53:04.077877+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5802,7 +7230,24 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.17645/pag.10468",
+      "title": "Citizenwashing EU Tech Policy: EU Deliberative Mini‐Publics on Virtual Worlds and Artificial Intelligence",
+      "abstract": "Over the last decade, the use of deliberative mini-publics as a democratic innovation to complement policymaking has flourished. The EU is no exception to this trend, holding large-scale transnational exercises such as the Conference on the Future of Europe (CoFoE) and the European Citizens’ Panels. Digital technology has emerged as a topic in this type of participatory exercise, conducted alongside prolific public policy activity by the EU institutions in this domain. In this article, we ask: How did post-CoFoE citizen panels on EU tech policy play out? We examine the 2023 European Citizens’ Panel on Virtual Worlds, organised by the European Commission, and the 2024 Citizen Panel on Artificial Intelligence organised by the Belgian Presidency of the Council of the EU. Through participant observation and an interpretivist framework, we argue that while the panels were presented as giving voice to “everyday citizens” and improving democratic legitimacy in policymaking, in practice, they served to build support for current policy that replicates the interests of big tech. Consequently, the outcomes of the panels were largely in line with recent EU public policy on further investment into emerging digital technology and public-private partnerships. We suggest that deliberative mini-publics that seek to influence EU policymaking currently (a) constitute a form of citizenwashing by aligning participant input by design with dominant private, economic, and political interests and (b) demonstrate a strategic effort to institutionalise this form of exercise as a public engagement and legitimacy-building activity in EU-level policymaking.",
+      "date": "2026-01-22",
+      "journal": "Politics and Governance",
+      "publisher": "Cogitatio",
+      "url": "https://doi.org/10.17645/pag.10468",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T17:44:48.775919+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5836,7 +7281,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T17:41:48.356919+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5853,7 +7298,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T17:44:48.775919+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5870,7 +7315,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T17:47:58.512084+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
