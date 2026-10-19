@@ -124,3 +124,31 @@ The scan artifact now includes `rejection_reason_counts`, and Actions prints eac
 - **A DOI metadata check is NOT full text verification** and does not indicate that a forecast came true. Distinguish `verification_status` from `accuracy_verdict`.
 - The shortlist is prioritised for retrospective research, not an objectively validated top-50 ranking and not 50 completed outcome evaluations. For genuine 'landed' assessments, quote the dated original claim and record an independent post-publication observation in the workbook's **Retrospective Checks** tab before assigning a verdict. Scenarios must be treated as conditional possibilities.
 - Downloadable workbook: `stuff/WORLD_RADAR_MASTER.xlsx`, with the shortlist, evidence worksheet, DOI check log and full raw library. It is regenerated on each scheduled run.
+
+## Simple outcome tracker (June 2026 onward)
+
+A **separate, lightweight** workflow `.github/workflows/update-outcomes.yml` runs daily and can be launched via **Actions → Accumulate post-June evidence → Run workflow**. It does not change the original foresight scan or its workbook.
+
+- Edit `future-ideas.json` to add an idea (`id`, `target_year`, `title`, `claim`, `source_url`, `search_query`, `match_phrases`). Two sample ideas are included, taken from the current findings. If the original report did not specify a precise target year, the sample uses a **tracking horizon**, not an attributed report deadline.
+- Each run searches news RSS for items dated **June 1, 2026 or later**, appends only new URLs to `outcome-history.json`, and preserves older matches. RSS results may miss some older or blocked articles and only screen *headlines*; it is not a full-text web verification engine.
+- Read `stuff/FUTURE_IDEAS_WHAT_HAPPENED.docx`: an **Idea** sentence and **What happened** sentence for each tracked idea, plus URLs.
+- **Evidence to review** means relevant headlines were found, **not** that the forecast came true. **Not confirmed** means no independently checked proof, **not** disproven. You can set `reviewed_verdict` to `Confirmed`, `Partly confirmed`, or `Not confirmed` and `reviewed_note` in `future-ideas.json` after manually checking original and later primary sources.
+- Run locally with `pip install python-docx` then `python scripts/outcome_tracker.py`; use `--offline` to regenerate the Word document from saved history with no network requests.
+
+
+### Future-idea outcome score (rough 1–100)
+
+`python scripts/outcome_tracker.py` gathers post-2026-06-01 RSS leads and updates
+`stuff/FUTURE_IDEAS_WHAT_HAPPENED.docx`. Each idea has `support_signals` and
+`refute_signals` in `future-ideas.json`: literal phrases to seek in headlines.
+The script starts at **50 (unknown)**, adds 10 per unambiguous supporting headline
+and subtracts 10 per contradicting headline, capped to **10–90** for automatic
+headline-only scores. Ambiguous/mixed headlines do not change the score.
+**50 without evidence is not a conclusion that a prediction is half true.**
+These matches are directional leads, NOT verified confirmation/falsification;
+news aggregators may show duplicates or misleading headlines. For an actual
+source-checked judgment, add `"reviewed_score": 75` and a concise
+`"reviewed_note": "reason, date and source"` to an idea: the report then
+uses that human-reviewed score instead. Score labels range from mostly
+contradicted to mostly supported. For future-dated predictions, any current
+score is necessarily provisional until the outcome date.

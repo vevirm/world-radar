@@ -1,0 +1,60 @@
+[
+  {
+    "id": "eu-working-age-2040",
+    "target_year": 2040,
+    "title": "EU working-age population",
+    "claim": "The EU is projected to have 17 million fewer people of working age in 2040 than in 2023",
+    "source_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en",
+    "search_query": "EU Eurostat working age population projections 2040",
+    "match_phrases": [
+      "working-age",
+      "working age",
+      "labour force",
+      "labor force",
+      "population projections"
+    ],
+    "support_signals": [
+      "working-age population declines",
+      "working age population declines",
+      "working-age population shrinks",
+      "working age population shrinking",
+      "working-age population falls",
+      "working-age population drop"
+    ],
+    "refute_signals": [
+      "working-age population grows",
+      "working age population grows",
+      "working-age population rises",
+      "working age population increases"
+    ]
+  },
+  {
+    "id": "eu-employment-after-2025",
+    "target_year": 2030,
+    "title": "European employment growth",
+    "claim": "European employment growth was expected to be moderate and to slow considerably after 2025",
+    "source_url": "",
+    "search_query": "Europe EU employment growth slows labour market 2026 2027",
+    "match_phrases": [
+      "employment",
+      "labour market",
+      "labor market",
+      "job growth"
+    ],
+    "support_signals": [
+      "employment growth slows",
+      "job growth slows",
+      "employment growth weakens",
+      "employment growth moderates",
+      "slowing employment",
+      "weaker job growth"
+    ],
+    "refute_signals": [
+      "employment growth accelerates",
+      "job growth accelerates",
+      "employment growth surges",
+      "employment growth rebounds",
+      "stronger employment growth"
+    ]
+  }
+]
