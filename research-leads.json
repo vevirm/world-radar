@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T09:29:47.756252+00:00",
+  "updated_at": "2026-10-19T16:40:08.005218+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -50,7 +50,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -101,7 +101,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -152,7 +152,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -208,6 +208,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/cjres/rsv023",
+      "title": "After crisis scenarios for Europe: alternative evolutions of structural adjustments",
+      "abstract": "",
+      "date": "2015-08-26",
+      "journal": "Cambridge Journal of Regions, Economy and Society",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/cjres/rsv023",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s10530-015-0986-0",
       "title": "Trans-national horizon scanning for invasive non-native species: a case study in western Europe",
       "abstract": "",
@@ -220,7 +237,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -237,7 +254,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -305,7 +322,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -356,7 +373,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -441,7 +458,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -543,7 +560,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -611,7 +628,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T11:08:39.771139+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -628,7 +645,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -730,7 +747,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -764,7 +781,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T06:07:12.959880+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -798,7 +815,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T12:57:05.351651+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -849,7 +866,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -883,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-16T17:41:12.313439+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -951,7 +968,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -985,7 +1002,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1002,7 +1019,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1019,7 +1036,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1070,7 +1087,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2965,7 +2982,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3033,7 +3050,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3058,6 +3075,23 @@
       "metadata_error": "",
       "metadata_checked_at": "2026-10-19T08:34:59.999817+00:00",
       "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.1016/j.futures.2021.102725",
+      "title": "The future of the forest-based bioeconomy in selected southeast European countries",
+      "abstract": "",
+      "date": "2021-04-30",
+      "journal": "Futures",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.futures.2021.102725",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
     },
     {
       "doi": "10.1016/j.techfore.2021.120577",
@@ -3163,6 +3197,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1080/23745118.2021.1965405",
+      "title": "More or less integration? Examining support for different EU future scenarios in Austria",
+      "abstract": "",
+      "date": "2021-08-14",
+      "journal": "European Politics and Society",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/23745118.2021.1965405",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3315,7 +3366,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3417,7 +3468,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3592,6 +3643,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/h11020055",
+      "title": "Future with a Past: Future Scenarios of Development in Yucatan in ¿Qué les pasó a las abejas?",
+      "abstract": "Since the Green Revolution, the development of agriculture has been measured by the relation between the chemical input (fertilizers and pesticides) and yield. Other factors, such as deforestation, water pollution, biodiversity loss and the loss of human health, were not part of these calculations. With the advent of genetically modified monocrops in the 1990s, GM soy in particular, plantations took over larger surfaces of land, accelerating these negative processes on a previously unknown scale. It has become clear that if this type of agriculture persists, toxic plantations will soon consume the planet. One of the phenomena prompting this awareness in different places of the world was the death of bees. ¿Qué les pasó a las abejas?, directed by Adriana Otero and Robín Canul, relates the environmental conflict between GM soy growers in the Yucatan Peninsula, Mexico, and Mayan beekeepers. Not long after the arrival of GM soy to Yucatan, the bees began to die. When their honey was rejected by the EU authorities due to contamination with transgenic pollen, Mayan beekeepers realized that not only their bees, but also their water and their bodies were poisoned by GM soy agriculture, while their forests were cut for new plantations. The Maya demanded that the state prohibit the planting of GM soy on their land. ¿Qué les pasó a las abejas? is a character-driven documentary featuring leaders of the Maya beekeepers’ movement, including the recipient of the Goldman Environmental Prize 2020, Leydy Pech. Maya Land; Listening to the Bees, my own documentary, reflects on the same environmental conflict and asks what the future would look like if bee health was considered a criterion of sustainable development. A vision of an alternative future emerges in both films through a series of interviews with Mayan beekeepers, scientists, and policy makers; bees are healthy, water is clean, and agriculture incorporates a mixture of ancient techniques and cutting-edge technologies that assist humans in rethinking their relationships with land and plants.",
+      "date": "2022-04-14",
+      "journal": "Humanities",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/h11020055",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su14084728",
       "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
       "abstract": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050. This research aims to fill this gap, proposing a simple but exhaustive semantic scaling methodology that allows, for the first time, a quantitative evaluation of the quality of the National Plans based on European Commission assessments to measure their compliance with the European Green Deal objectives. Results show that Member States have more clearly set the Green Deal targets than the actions to deliver against those targets. Actions, in term of nationals policies and funds administration, are still immature and partially addressed.",
@@ -3660,7 +3728,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3968,6 +4036,40 @@
       "first_seen": "2026-10-18T16:51:25.738986+00:00",
       "last_seen": "2026-10-18T16:51:25.738986+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.14311/app.2022.38.0002",
+      "title": "A fossil free future - scenarios for Austria - implications for Europe",
+      "abstract": "If the energy transition completely away from fossil fuels to renewable energies due to climate change and to reduce the dependency from not or semi democratic countries is taken serious, many implications and needed measures have to be faced. In the keynote a general approach with the options reduction of energy demand, generation of renewables within the countries and, if not enough renewable energy is available locally, where could the additional renewable energy be imported from, will be shown. Additionally, the question of energy storage is tackled to overcome the timely variation of the production of renewable energy carriers and the demand. The whole process is shown in detail for the province of Tyrol/Austria, where the possible potential of renewables is compared to the energy need after possible reduction of the energy demand in the whole energy system. The sectors housing, mobility/transportation and industry are included. It will be shown, that the energy efficiency of the whole system needs to be as high as possible and that not only technologic measures are needed but also many other aspects like laws, democracy, micro- and macroeconomics etc. have to be looked at and several dilemmas have to be solved. Concerning the cost it has to be stated that no transition if the energy system will become far more expensive due to the costs of climate change compared to the costs for the energy change, which ranges in about 1 %/GNP.",
+      "date": "2022-12-21",
+      "journal": "Acta Polytechnica CTU Proceedings",
+      "publisher": "Czech Technical University in Prague - Central Library",
+      "url": "https://doi.org/10.14311/app.2022.38.0002",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.21128/1812-7126-2022-1-14-42",
+      "title": "The Conference on the Future of Europe: possible scenarios of the forthcoming European Perestroika",
+      "abstract": "A Pan-European discussion on the future of Europe was officially initiated by European authorities after Brexit — the shocking decision by the UK to withdraw from the European Union after its referendum of June 23, 2016. This debate covered all the most vital aspects of the European integration project: the nature of European identity, the prospects for integration, democracy deficits, the future of multi-layer constitutionalism, mechanisms of power and the decision-making process, conflicts between European institutions and national governments and elites, and the problem of uneven European leadership. At the core of the debate is the question of the legitimacy of the whole integration project — the eroding support for that idea in society and among elites and experts; the growing divide between Euro-optimist, Euro-pessimist, and Euro-realist trends; and the varying interpretations of an “ever closer union”. These varying directions within the EU establishment demonstrated by this discussion create a pressing need to find some common, compromise solutions between European elites on such questions as the renovation of the European project, the scope of amendments to the foundational treaties, delineation of alternative strategies of reforms, and a choice between different future options and potential outcomes. In some way, this problem-set is similar to that of the Soviet Union’s Perestroika debates. The main institutional vehicle for developing this European constitutional reform program was a two-year All-European Conference on the Future of Europe initiated in 2019 by the European institutions of Parliament, Council and Commission as well as by leaders of some European countries. This Conference, projected initially for 2020, was postponed because of the pandemic and finally opened in Strasbourg on the Day of Europe (May 9, 2021) under the auspices of the EU’s leaders. However, in spite of all its exaggerated expectations, the Conference still has not produced any clear vision of Europe’s future and has not succeeded in mobilizing and coordinating the broad spectrum of European civil organizations and political forces which represent quite different visions of the integration process and ways to implement it. Why has this been the result and what is its meaning for the legitimacy of the European Project? The goal of this article is to understand the potential of the Conference for the future transformation/Perestroika of the EU and to analyze the polar opposite visions of its future, the contradictions underlying this event, and possible outcomes for the constitutional reestablishment of the European integration project.",
+      "date": "2022-12-31",
+      "journal": "Sravnitel noe konstitucionnoe obozrenie",
+      "publisher": "Center for Constitutional Studies",
+      "url": "https://doi.org/10.21128/1812-7126-2022-1-14-42",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T16:40:08.005218+00:00",
+      "last_seen": "2026-10-19T16:40:08.005218+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
