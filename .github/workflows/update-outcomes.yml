@@ -1,30 +1,61 @@
 name: Radar 2 - outcomes and Word report
+
 on:
   workflow_dispatch:
   schedule:
-    # Twice daily, well after Radar 1 (01:17 and 13:17 UTC).
+    # Twice daily, after Radar 1 (01:17 and 13:17 UTC).
     - cron: '17 4,16 * * *'
+
 permissions:
   contents: write
-# Identical concurrency group across BOTH workflows: never overlap.
+
+# Keep Radar 1 and Radar 2 from running at the same time.
 concurrency:
   group: radar-shared-single-runner
   cancel-in-progress: false
+
 jobs:
   outcomes:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install "python-docx>=1.1,<2"
-      - name: Independently research observed outcomes and generate Word
+      - name: Install Word report dependency
+        run: pip install "python-docx>=1.1,<2"
+
+      - name: Run Radar 2 and enforce a minimum 20-minute job step
+        shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RADAR_OUTCOME_MODEL: gpt-4.1-mini
-        run: python -u scripts/retrospective_radar.py --minutes 18 --max-claims 16
+        run: |
+          started_at=$(date +%s)
+          minimum_seconds=1200
+
+          echo "Starting Radar 2. This step will run for at least 20 minutes."
+          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+            echo "NOTICE: No API key is available to this job; the research script may skip API-powered research."
+          fi
+
+          # Keep the real research failure code, even if a subsequent wait is needed.
+          set +e
+          python -u scripts/retrospective_radar.py --minutes 18 --max-claims 16
+          research_status=$?
+          set -e
+
+          elapsed=$(( $(date +%s) - started_at ))
+          if (( elapsed < minimum_seconds )); then
+            remaining=$(( minimum_seconds - elapsed ))
+            echo "Research script stopped after ${elapsed}s. Waiting ${remaining}s to meet the 20-minute minimum."
+            sleep "$remaining"
+          fi
+
+          echo "Minimum 20-minute step duration reached. Research exit code: ${research_status}."
+          exit "$research_status"
+
       - name: Commit report and accumulated assessments
         run: |
           git config user.name 'eu-foresight-radar-bot'
