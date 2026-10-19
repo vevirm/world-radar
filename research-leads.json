@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T09:03:53.758911+00:00",
+  "updated_at": "2026-10-19T09:29:47.756252+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -1155,8 +1155,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1111/imig.12340",
+      "title": "Italian Scientists Abroad in Europe's Scientific Research Scenario: High skill migration as a resource for development in Italy",
+      "abstract": "Abstract In recent years, the brain drain issue has gained such momentum that it has become necessary to adopt tools and methods to take a picture of a phenomenon that is, by its very nature, dynamic and changeable (Portes, ; Meyer, ; Ackers, 2005 Scott, ). This particular study focuses on clarifying the reasons why Italian scientists choose to look elsewhere for the best place to conduct their scientific research, and in what way their scientific experience abroad shapes the image of the Italian scientific system. A first exploratory analysis involving 83 in‐depth interviews with Italian scientists (mathematicians, engineers and physicists) working in Europe was conducted based on qualitative and quantitative analytical methods, and the content emerging from these interviews was used for a systematic mapping of the situation that provided the foundations for our preparation of a second tool – a questionnaire – that was subsequently used to conduct a much more broad‐based survey that involved 602 respondents. While our findings add complexity to existing theories on the brain drain and brain circulation, they also confirm the potential of highly skilled migration to improve the national development of Italian academic system.",
+      "date": "2017-05-09",
+      "journal": "International Migration",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/imig.12340",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1245,7 +1262,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1253,6 +1270,40 @@
       "metadata_error": "",
       "metadata_checked_at": "2026-10-19T08:35:04.357854+00:00",
       "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.1108/jtf-01-2017-0001",
+      "title": "Conditional forecasts of tourism exports and tourism export prices of the EU-15 within a global vector autoregression framework",
+      "abstract": "Purpose The purpose of this paper is to analyze the ex ante projected future trajectories of real tourism exports and relative tourism export prices of the EU-15, conditional on expert real gross domestic product growth forecasts for the global economy provided by the Organisation for Economic Co-operation and Development for the years 2013-2017. Design/methodology/approach To this end, the global vector autoregression (GVAR) framework is applied to a comprehensive panel data set ranging from 1994Q1 to 2013Q3 for a cross-section of 45 countries. This approach allows for interdependencies between countries that are assumed to be equally affected by common global developments. Findings In line with economic theory, growing global tourist income combined with decreasing relative destination price ensures, in general, increasing tourism demand for the politically and macroeconomically distressed EU-15. However, the conditional forecast increases in tourism demand are under-proportional for some EU-15 member countries. Practical implications Rather than simply relying on increases in tourist income, the low price competitiveness of the EU-15 member countries should also be addressed by tourism planners and developers in order to counter the rising competition for global market shares and ensure future tourism export earnings. Originality/value One major contribution of this research is that it applies the novel GVAR framework to a research question in tourism demand analysis and forecasting. Furthermore, the analysis of the ex ante conditionally projected future trajectories of real tourism exports and relative tourism export prices of the EU-15 is a novel aspect in the tourism literature since conditional forecasting has rarely been performed in this discipline to date, in particular, in combination with ex ante forecasting.",
+      "date": "2017-07-27",
+      "journal": "Journal of Tourism Futures",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/jtf-01-2017-0001",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5553/ejlr/138723702017019102002",
+      "title": "Regulatory Review of European Commission Impact Assessments",
+      "abstract": "Regulatory Review of European Commission Impact Assessments: What Kind for Which Better Regulation Scenario? The article maps the various ways in which review of Commission impact assessments takes place by the Regulatory Scrutiny Board, the European Ombudsman, the European Court of Auditors, and the Court of Justice of the European Union, among others, and assesses the effect these review activities have on the framework and functioning of this primary Better Regulation tool.",
+      "date": "2017-07-31",
+      "journal": "European Journal of Law Reform",
+      "publisher": "Koninklijke Boom uitgevers",
+      "url": "https://doi.org/10.5553/ejlr/138723702017019102002",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
     },
     {
       "doi": "10.1175/jcli-d-16-0695.1",
@@ -1314,6 +1365,23 @@
       "metadata_error": "",
       "metadata_checked_at": "2026-10-19T09:03:53.758864+00:00",
       "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.3390/su9101789",
+      "title": "Volatility Spillovers and Causality of Carbon Emissions, Oil and Coal Spot and Futures for the EU and USA",
+      "abstract": "Recent research shows that the efforts to limit climate change should focus on reducing the emissions of carbon dioxide over other greenhouse gases or air pollutants. Many countries are paying substantial attention to carbon emissions to improve air quality and public health. The largest source of carbon emissions from human activities in some countries in Europe and elsewhere is from burning fossil fuels for electricity, heat, and transportation. The prices of fuel and carbon emissions can influence each other. Owing to the importance of carbon emissions and their connection to fossil fuels, and the possibility of [1] Granger (1980) causality in spot and futures prices, returns, and volatility of carbon emissions, crude oil and coal have recently become very important research topics. For the USA, daily spot and futures prices are available for crude oil and coal, but there are no daily futures prices for carbon emissions. For the European Union (EU), there are no daily spot prices for coal or carbon emissions, but there are daily futures prices for crude oil, coal and carbon emissions. For this reason, daily prices will be used to analyse Granger causality and volatility spillovers in spot and futures prices of carbon emissions, crude oil, and coal. As the estimators are based on quasi-maximum likelihood estimators (QMLE) under the incorrect assumption of a normal distribution, we modify the likelihood ratio (LR) test to a quasi-likelihood ratio test (QLR) to test the multivariate conditional volatility Diagonal BEKK model, which estimates and tests volatility spillovers, and has valid regularity conditions and asymptotic properties, against the alternative Full BEKK model, which also estimates volatility spillovers, but has valid regularity conditions and asymptotic properties only under the null hypothesis of zero off-diagonal elements. Dynamic hedging strategies by using optimal hedge ratios are suggested to analyse market fluctuations in the spot and futures returns and volatility of carbon emissions, crude oil, and coal prices.",
+      "date": "2017-10-02",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su9101789",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
     },
     {
       "doi": "10.1080/03906701.2017.1378153",
@@ -1520,7 +1588,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1605,7 +1673,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1622,7 +1690,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1639,7 +1707,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1656,7 +1724,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1673,7 +1741,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1695,7 +1763,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1714,6 +1782,23 @@
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-19T08:48:53.093399+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/su10051641",
+      "title": "Toward a Socially Desirable EU Research and Innovation Agenda on Urban Waste: A Transnational EU Citizen Consultation",
+      "abstract": "Growing waste production has become a global sustainability challenge that is in need of innovative solutions. It has been argued that greater public engagement in science and technology policy could stimulate new directions for innovation and provide orientation for the development of more acceptable, sustainable, and desirable innovations that address societal needs. In 2013, the European Commission (EC) piloted a EU-wide study to engage citizens in setting the research and innovation (R&I) agenda on urban waste. This yielded the question: ‘To what extent are the proposed ideas considered innovative, feasible, and meaningful for the EC R&I agenda?’ This article addresses the outcomes of 100 focus group discussions held in 27 European Union (EU) countries in which 992 citizens were consulted. Citizens discussed a number of (self-experienced) barriers and concerns regarding waste management, and proposed and prioritized over 350 ideas to realize a (near) zero-waste society. Although citizens found it complex to propose innovative and feasible ideas, their priorities were consistent with current EU research policy areas of importance (e.g., reduce packaging, stimulate recycling), and in addition, citizens proposed various new ways to strengthen current waste management (e.g., innovations to enhance convenience in household waste management). We argue that citizen involvement in EC R&I agenda-setting across the EU is feasible, and leads to meaningful input. However, in making sense of this input, it is essential to take contextual differences into account. Various recommendations are given for future agenda-setting activities at the EU level.",
+      "date": "2018-05-19",
+      "journal": "Sustainability",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/su10051641",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1785,7 +1870,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1853,7 +1938,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1904,7 +1989,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -1926,7 +2011,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1943,7 +2028,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1977,7 +2062,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2045,7 +2130,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2228,7 +2313,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2369,7 +2454,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2639,7 +2724,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2707,7 +2792,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2724,7 +2809,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2746,7 +2831,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2768,7 +2853,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2785,7 +2870,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2829,7 +2914,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3665,6 +3750,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1177/14651165221120370",
+      "title": "European Union, transnational terrorism and the strategic choice of counterterrorism policies in democratic countries",
+      "abstract": "There are two main categories of counterterrorism policies: proactive and defensive measures. Proactive policies directly target terrorists and, by weakening their ability, share public good features. Defensive measures, on the other hand, seek to protect a potential target. Unilateral defensive measures may induce terrorists to replace one target with another, possibly a foreign one, as confirmed by the succession of terrorist attacks in the European Union over the last 20 years. We analyse different institutional frameworks to determine the best one for interstate cooperation considering the externationalites of various counterterrorism measures. This article highlights the combined effect of voter propensity towards defensive policies, certain intelligence policies and different institutional scenarios on the (in)efficient strategic choice of counterterrorism defensive policies in democratic countries, where efficiency means maximising the joint welfare of countries. We consider four different institutional scenarios: decentralisation, intelligence cooperation, unanimous political cooperation and full political union. We model these situations as a three-stage signalling game and show that, surprisingly, intelligence cooperation increases the probability of efficient defensive policies more than unanimous political cooperation.",
+      "date": "2022-08-22",
+      "journal": "European Union Politics",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/14651165221120370",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.46676/ij-fanres.v3i2.65",
       "title": "Ensuring sustainable agriculture by analyzing the European Union and Romanian legislation on soil resources protection",
       "abstract": "Soil is considered to be one of the most complex natural systems on the planet, a key component of the geographical environment, and a biological complex that is constantly changing. Also, the soil is a multifunctional system on which the essential functions of life on Earth are based. As such, soil protection must be a primary concern for the community, as the conservation of soil resources itself requires more than transposition in legislative terms. Thus, on the protection of soils from the point of view of the legislation of the EU and Romania, we set out to make an analysis noting in this paper the main provisions of the acquis communautaire (directives, strategies, decisions, etc.), which come to ensure an interface between the use of soils and their protection for future generations. As a result of the research undertaken we can conclude that both EU and Romanian legislation are still deficient in soil protection, it is not as protected as the other elements of the environment, water, air, and/or biodiversity.",
@@ -3678,6 +3780,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
       "last_seen": "2026-10-17T17:31:26.214242+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.15210/rsulacp.v8i1.21382",
+      "title": "The role of the European Union in the Brazilian foreign policy",
+      "abstract": "This article aims to discuss the role of the European Union (EU) in Brazilian foreign policy by analyzing the Brazil-European Union Strategic Partnership. To do so, this investigation involves the use of qualitative data, literature review, and documentary research. Both Brazil and the EU do not present precise definitions for what they understand as strategic partnerships and, hence, this phenomenon must be framed through structural elements in these actors’ foreign policy. The European bloc is an important actor in Brazilian foreign policy, given the historic evolution of Brazil-EU relations, the establishment of the Strategic Partnership, and the EU’s economic relevance for the country. In turn, the current locus of the EU in Brazilian foreign policy is still unclear, due to overlapping levels of interaction between Brazil and the EU and to the difficulties in the domestic scenarios of both actors.",
+      "date": "2022-09-09",
+      "journal": "Revista Sul-Americana de Ciência Política",
+      "publisher": "Universidade Federal de Pelotas",
+      "url": "https://doi.org/10.15210/rsulacp.v8i1.21382",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T09:29:47.756252+00:00",
+      "last_seen": "2026-10-19T09:29:47.756252+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
