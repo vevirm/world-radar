@@ -40,7 +40,7 @@ def openalex_item():
 def test_extracts_crossref_abstract_markup_and_date():
     lead = scholarly.crossref_lead(crossref_item())
     assert 'jats:' not in lead['abstract']
-    assert scholarly.credible_abstract(lead, date(2015,1,1), date(2026,4,16))
+    assert scholarly.credible_abstract(lead, date(2011,10,19), date(2026,4,16))
     assert lead['journal'] == 'Futures'
     assert lead['date'] == '2020-06-01'
 
@@ -69,15 +69,15 @@ def test_rejects_abstract_with_no_european_or_futures_relevance():
     record = scholarly.crossref_lead(crossref_item())
     record['title'] = 'Trends in food pricing'
     record['abstract'] = 'Food market practices can influence local business conditions. ' * 14
-    assert not scholarly.credible_abstract(record, date(2015,1,1), date(2026,4,16))
+    assert not scholarly.credible_abstract(record, date(2011,10,19), date(2026,4,16))
 
 
 def test_date_window_and_undated_crossref_metadata_are_strict():
     assert scholarly.year_windows(date(2026,4,16))[-1] == ('2025-01-01', '2026-04-16')
-    assert not scholarly.credible_abstract(scholarly.crossref_lead(crossref_item(year=2014)),
-                                           date(2015,1,1), date(2026,4,16))
+    assert not scholarly.credible_abstract(scholarly.crossref_lead(crossref_item(year=2010)),
+                                           date(2011,10,19), date(2026,4,16))
     assert not scholarly.credible_abstract(scholarly.crossref_lead(crossref_item(year=2026)),
-                                           date(2015,1,1), date(2026,4,16))
+                                           date(2011,10,19), date(2026,4,16))
     x = crossref_item()
     x.pop('published')
     assert scholarly.crossref_lead(x) is None
@@ -137,8 +137,8 @@ def test_journals_and_abstracts_visible_separate_from_findings():
 
 def test_title_only_doi_lead_remains_unverified():
     record = scholarly.crossref_lead(crossref_item(abstract=''))
-    assert scholarly.credible_bibliographic_lead(record, date(2015,1,1), date(2026,4,16))
-    assert not scholarly.credible_abstract(record, date(2015,1,1), date(2026,4,16))
+    assert scholarly.credible_bibliographic_lead(record, date(2011,10,19), date(2026,4,16))
+    assert not scholarly.credible_abstract(record, date(2011,10,19), date(2026,4,16))
     stored = scholarly.merge_lead(None, record, '2026-10-16')
     assert stored['status'] == 'DOI/title indexed — abstract not in metadata'
     assert stored['claim_status'] == 'No retrospective verdict'
@@ -153,7 +153,7 @@ def test_abstract_enrichment_upgrades_metadata_only_lead():
 def test_weak_title_does_not_enter_metadata_only_discovery():
     candidate = scholarly.crossref_lead(crossref_item(abstract=''))
     candidate['title'] = 'New EU Policy'
-    assert not scholarly.credible_bibliographic_lead(candidate, date(2015,1,1), date(2026,4,16))
+    assert not scholarly.credible_bibliographic_lead(candidate, date(2011,10,19), date(2026,4,16))
 
 
 def test_page_can_show_title_only_leads_and_browse_more_than_40():

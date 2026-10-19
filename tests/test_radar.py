@@ -30,7 +30,7 @@ def full_study(eu=True, word_count=3500, pages=25, bibliography=True):
 
 
 def test_calendar_window_and_hard_start():
-    assert radar.START_DATE == date(2015, 1, 1)
+    assert radar.START_DATE == radar.earliest_date(radar.TODAY())
     assert radar.cutoff(date(2026, 10, 16)) == date(2026, 4, 16)
     assert radar.cutoff(date(2026, 8, 31)) == date(2026, 2, 28)
     assert radar.cutoff(date(2026, 3, 31)) == date(2025, 9, 30)
@@ -107,7 +107,7 @@ def test_non_eu_full_report_passes_without_unproven_actualization():
     assert result['full_text_url'].endswith('full.pdf')
 
 
-@pytest.mark.parametrize('report_date, expected', [('2026-08-01','Too recent'),('2014-12-31','predates 2015')])
+@pytest.mark.parametrize('report_date, expected', [('2026-08-01','Too recent'),('2010-12-31','predates rolling 15-year')])
 def test_window_bounds_reject(report_date, expected):
     actors = {a['id']: a for a in radar.get_registry()}
     candidate = fake_verify_candidate(date_hint=report_date)
@@ -137,7 +137,7 @@ def test_source_date_from_publisher_document_download():
 def test_previous_joke_findings_cannot_reenter_published_data():
     data = radar.read_json(radar.RESULTS)
     assert data['schema_version'] == 2
-    assert data['earliest_publication_date'] == '2015-01-01'
+    assert data['earliest_publication_date'] == radar.START_DATE.isoformat()
     assert all(x['id'].startswith('EUF-') and x['quality']['status'] == 'automated research-substance screen passed' for x in data['findings'])
 
 

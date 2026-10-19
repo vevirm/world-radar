@@ -1,24 +1,24 @@
 # European Foresight Radar — Looking Back at the Future
 
-The original static website, dark/amber design, password gate, Findings/Bibliography page, search, topic/actor/assessment filters and GitHub Pages deployment shape remain intact. All former World Radar “joke”/headline/test findings were erased. `findings.json` is **deliberately empty** until the new scanner qualifies historical, source-verified *full studies*. The site is not a daily news tracker.
+The original static website, dark/amber design, password gate, Findings/Bibliography page, search, topic/actor/assessment filters and GitHub Pages deployment shape remain intact. All former World Radar “joke”/headline/test findings were erased. `findings.json` retains only source-linked studies which passed the automated full-study quality screen (3 in the supplied starting snapshot). The site is not a daily news tracker.
 
 ## Core question
 
-**What did EU institutions and independent futures researchers foresee about Europe, and how well do those claims hold up later?** The radar discovers source research, retains verified original wording and links, and distinguishes forecasts from projections, exploratory scenarios, aspirations and warnings. An unobserved scenario is **not** classified as an incorrect prediction.
+**What did EU institutions and independent futures researchers foresee about Europe, and how well do those claims hold up later?** The radar discovers source research, records candidate original wording and links, and distinguishes forecasts from projections, exploratory scenarios, aspirations and warnings. An unobserved scenario is **not** classified as an incorrect prediction.
 
 ## Precise rolling date range
 
 The **original publication date** must satisfy:
 
 ```
-2015-01-01 <= original_publication_date <= (today - 6 calendar months)
+(today - 15 calendar years) <= original_publication_date <= (today - 6 calendar months)
 ```
 
-On **16 October 2026**, the newest permitted date is **16 April 2026**. Dates are recalculated **at every scan**; the upper bound advances automatically. Work from 2014 or earlier is excluded even if otherwise excellent. Older reports are prioritised in verification because retrospective comparison is the purpose; pre-2020 studies are particularly interesting. A website's update/discovery timestamp does not make a new paper old. Year-only dating is conservatively treated as 31 December of that year, and the UI displays just the year. Ambiguous or uncorroborated original publication dates are rejected.
+On **19 October 2026**, the newest permitted date is **19 April 2026**. Dates are recalculated **at every scan**; the upper bound advances automatically. Work older than 15 calendar years is excluded; a 2014 study remains eligible in October 2026. Older reports are prioritised in verification because retrospective comparison is the purpose; pre-2020 studies are particularly interesting. A website's update/discovery timestamp does not make a new paper old. Year-only dating is conservatively treated as 31 December of that year, and the UI displays just the year. Ambiguous or uncorroborated original publication dates are rejected.
 
 ## Sources — EU institutions **plus** external foresight creators
 
-The `actors.json` registry is operational: **19 publisher/source groups**, official HTTPS host allowlists, archive pages and selected historical catalogue leads. These are *discovery sources*, **not a guaranteed admission whitelist for all their work**.
+The `actors.json` registry is operational: **22 publisher/source groups**, official HTTPS host allowlists, archive pages and selected historical catalogue leads. These are *discovery sources*, **not a guaranteed admission whitelist for all their work**.
 
 | Category | Registered organisations and programmes |
 |---|---|
@@ -114,3 +114,13 @@ The incremental update is supplied **without `findings.json` or `index.html`**, 
 A report must remain substantial research with cited sources. The new verifier attempts to corroborate missing webpage dates using the original publisher-hosted full PDF before declaring the publication undated. It ranks original forward-looking passages rather than publishing the first vague sentence with the word "will". Existing records with an old extractor version are queued for review on a subsequent workflow run. This passage extraction remains an automated **candidate claim**, not a validated prediction or a statement that it came true.
 
 The scan artifact now includes `rejection_reason_counts`, and Actions prints each rejection reason. If acceptance is still implausibly low, inspect the audit archive under the workflow run's **Artifacts** section; its per-document errors tell us whether the cause is genuine quality failure, missing publication metadata, download failures or overly restrictive parsing. Do not count candidate links as accepted academic studies.
+
+
+## Rebuilt historical priority shortlist (October 2026)
+
+- Publication window: rolling 15 years; the first ranking emphasises publications 5–10 years old (approximately 2016–2021).
+- Each 15-minute discover run refreshes `priority-50.json` from original institutional reports (`priority-sources.json`) and relevant academic DOI records (`research-leads.json`).
+- Each subsequent 10-minute checking run now consumes the academic shortlist: `scripts/check_priorities.py` cross-checks DOI/title/year with Crossref and records the outcome. Institutional publisher full-text screening continues separately through the existing registered-domain verifier.
+- **A DOI metadata check is NOT full text verification** and does not indicate that a forecast came true. Distinguish `verification_status` from `accuracy_verdict`.
+- The shortlist is prioritised for retrospective research, not an objectively validated top-50 ranking and not 50 completed outcome evaluations. For genuine 'landed' assessments, quote the dated original claim and record an independent post-publication observation in the workbook's **Retrospective Checks** tab before assigning a verdict. Scenarios must be treated as conditional possibilities.
+- Downloadable workbook: `stuff/WORLD_RADAR_MASTER.xlsx`, with the shortlist, evidence worksheet, DOI check log and full raw library. It is regenerated on each scheduled run.

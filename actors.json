@@ -1,5 +1,5 @@
 {
-  "description": "EU institutions AND external research producers of substantive foresight about/for the EU or Europe, from 2015 onward. Registry entries are discoverable leads only; age, provenance, European relevance and full-text research quality must be verified.",
+  "description": "Credible EU / Europe foresight research publishers, rolling 15-year window with priority on studies 5–10 years old; original-study gate remains required.",
   "actors": [
     {
       "id": "ec",
@@ -392,7 +392,8 @@
       "scope": "Full foresight studies issued on EU publisher sites, including externally conducted commissioned studies and projects",
       "domain_hosts": [
         "research-and-innovation.ec.europa.eu",
-        "op.europa.eu"
+        "op.europa.eu",
+        "ec.europa.eu"
       ],
       "archives": [
         "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight_en"
@@ -419,6 +420,50 @@
         "https://foresight-on-demand.eu/publications-and-reports/"
       ],
       "seeds": []
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank — macroeconomic projections",
+      "domain_hosts": [
+        "www.ecb.europa.eu",
+        "ecb.europa.eu"
+      ],
+      "coverage": "Euro-area economic and inflation projections published before actual outcomes",
+      "archives": [
+        "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html"
+      ],
+      "seeds": [],
+      "category": "EU institution / agency",
+      "scope": "EU institutional macroeconomic forecasts"
+    },
+    {
+      "id": "eurofound",
+      "name": "Eurofound — future of work and manufacturing",
+      "domain_hosts": [
+        "www.eurofound.europa.eu",
+        "eurofound.europa.eu"
+      ],
+      "coverage": "EU research on jobs, manufacturing and social change",
+      "archives": [
+        "https://www.eurofound.europa.eu/en/publications"
+      ],
+      "seeds": [],
+      "category": "EU institution / agency",
+      "scope": "EU labour market foresight"
+    },
+    {
+      "id": "ecfin",
+      "name": "European Commission — Economy and Finance",
+      "domain_hosts": [
+        "economy-finance.ec.europa.eu"
+      ],
+      "coverage": "Ageing and budgetary projections for EU countries",
+      "archives": [
+        "https://economy-finance.ec.europa.eu/publications_en"
+      ],
+      "seeds": [],
+      "category": "EU institution / agency",
+      "scope": "EU public finance projections"
     }
   ]
 }

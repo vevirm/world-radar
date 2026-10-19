@@ -175,7 +175,7 @@ def lead_status(lead):
 def year_windows(latest):
     # The upper bound is a rolling six-calendar-month cutoff supplied by radar.
     result = []
-    for y in range(2015, latest.year + 1, 2):
+    for y in range(latest.year - 15, latest.year + 1, 2):
         start = date(y, 1, 1)
         end = min(date(y + 1, 12, 31), latest)
         if start <= end:
@@ -252,7 +252,10 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     Queries may fail independently; a response error never masquerades as a
     scientifically rejected document. The original state history is preserved.
     """
-    from_date = date(2015, 1, 1)
+    try:
+        from_date = latest.replace(year=latest.year-15)
+    except ValueError:
+        from_date = latest.replace(year=latest.year-15, day=28)
     state = json.loads(Path(state_path).read_text(encoding='utf-8')) if Path(state_path).exists() else {
         'schema_version': 1, 'runs': 0, 'source_cursor': 0, 'verification_cursor': 0,
         'archive_pages': {}, 'documents': {}, 'queue': []}
@@ -266,6 +269,14 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     targeted = [('Crossref', term, start, end, journal)
                 for journal in JOURNALS for term in ('European futures', 'Europe scenarios', 'EU foresight')
                 for start, end in windows]
+    # Put 5–10-year-old publications first in each rotation, without excluding
+    # exceptional work from the wider (rolling) 15-year period.
+    def preferred_year(job):
+        midpoint = (int(job[2][:4])+int(job[3][:4]))/2
+        age = latest.year-midpoint
+        return (0 if 5 <= age <= 10 else 1, abs(age-7.5))
+    broad.sort(key=preferred_year)
+    targeted.sort(key=preferred_year)
     # Alternate general research discovery with journal-specific discovery;
     # a search must not depend on a publisher linking to its own catalogue.
     tasks = [job for pair in zip_longest(broad, targeted) for job in pair if job]

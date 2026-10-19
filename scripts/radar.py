@@ -3,7 +3,7 @@
 
 DISCOVER: rotate registered EU institutions, universities, independent think
 tanks, research institutes, international bodies and EU-funded project sites
-through a full 15-minute scan window. VERIFY new/deferred reports in a full 10-minute window. Report publication MUST be 2015 or later
+through a full 15-minute scan window. VERIFY new/deferred reports in a full 10-minute window. Report publication MUST be no more than 15 years old
 and six calendar months old or older on the current run. Full document must
 pass substantive foresight quality and evidence gates, not just a keyword/length
 check. A scenario is never automatically deemed to have come true.
@@ -28,6 +28,8 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 from scholarly import scholarly_scan
+from priority import refresh as refresh_priorities
+from check_priorities import check_indexed_leads
 
 FIXED_PHASE_PROTOCOL = 4  # Full 15+10 windows + academic abstract discovery.
 RETRIEVAL_PROTOCOL = 2
@@ -45,7 +47,13 @@ PAGES_PER_ACTOR = 2
 MAX_PAGES_PER_ACTOR = 36
 MAX_BACKLOG = 2500
 MAX_HISTORY = 12000
-START_DATE = date(2015, 1, 1)
+def earliest_date(today):
+    try:
+        return today.replace(year=today.year-15)
+    except ValueError:  # 29 February
+        return today.replace(year=today.year-15, day=28)
+
+START_DATE = earliest_date(TODAY())
 MIN_WORDS = 2600
 MIN_PDF_PAGES = 8
 VERIFIER_VERSION = 3
@@ -515,6 +523,20 @@ def discover(deadline, once=False):
     published_urls = {clean_url(x['url']) for x in read_json(RESULTS).get('findings', [])}
     diagnostics = []
     new = []
+    # Hand off curated studies directly to the same persistent verification queue.
+    # Publication links are candidates, not endorsed findings.
+    curated_queued=0
+    for source in read_json(ROOT/'priority-sources.json')['sources']:
+        host=trusted_host(source['url'])
+        actor=next((x for x in actors if host in x['domain_hosts']), None)
+        if not actor: continue
+        candidate={'url':clean_url(source['url']), 'title':source['title'],
+                   'date_hint':source['date'], 'topic':source.get('topic','EU futures'),
+                   'source_mode':'curated retrospective priority (unverified)',
+                   'actor_id':actor['id']}
+        if offer_candidate(state,candidate,published_urls,today)=='queued':
+            new.append(candidate); curated_queued+=1
+    print(f'CONNECTED HANDOFF: {curated_queued} publisher-linked priority candidates placed in verification queue', flush=True)
     processed = 0
     pages_attempted = 0
     passes = 0
@@ -937,7 +959,7 @@ def verify_report(candidate, actors, reviews):
     if published > cutoff(TODAY()):
         raise ValueError(f'Too recent: {published} (must be on/before {cutoff(TODAY())})')
     if published < START_DATE:
-        raise ValueError('Publication predates 2015 minimum')
+        raise ValueError(f'Publication predates rolling 15-year minimum {START_DATE}')
     if not (ARCHIVE_HINT.search(candidate['title']) or candidate.get('source_mode') == 'historic catalogue seed (unverified)'):
         raise ValueError('Not a discoverable foresight/futures-oriented study')
     if full is None:
@@ -975,9 +997,15 @@ def verification_order(queue, actors, state):
         if c.get('actor_id') in buckets:
             buckets[c['actor_id']].append(c)
     for bucket in buckets.values():
-        # Favour older work within each publisher, without excluding undated leads.
-        bucket.sort(key=lambda c: (c.get('date_hint') is None,
-                                   c.get('date_hint') or '9999', c.get('first_seen', '')))
+        # Prefer queued historical priority sources from the 15-minute stage;
+        # otherwise favour 5–10-year-old work with other years still eligible.
+        def priority_key(c):
+            year=int((c.get('date_hint') or '0000')[:4]) if str(c.get('date_hint') or '')[:4].isdigit() else 0
+            age=TODAY().year-year if year else 0
+            preferred=5 <= age <= 10
+            return (0 if c.get('source_mode','').startswith('curated retrospective priority') else 1,
+                    0 if preferred else 1, abs(age-8) if age else 99, c.get('first_seen',''))
+        bucket.sort(key=priority_key)
     offset = int(state.get('verification_cursor', 0)) % max(1, len(actor_order))
     ordered = actor_order[offset:] + actor_order[:offset]
     state['verification_cursor'] = (offset + 1) % max(1, len(actor_order))
@@ -1009,6 +1037,13 @@ def verify_until(deadline, once=False):
     added = 0
     checked = 0
     today = TODAY()
+    # The 15-minute phase produced a ranked, DOI-backed shortlist.
+    # Spend real verification time on those academic leads before the publisher backlog.
+    # Metadata checking does not certify the full study or a forecast's accuracy.
+    priority_check_stats = {'checked': 0}
+    if not once and (ROOT/'priority-50.json').exists():
+        priority_check_stats = check_indexed_leads(min(deadline-60, time.monotonic()+200))
+        refresh_priorities(today)
     # New human-supplied retrospective assessments are the one reason to
     # revisit an already accepted study: verify the exact original quotation.
     queued_urls = {clean_url(c['url']) for c in state['queue']}
@@ -1080,7 +1115,7 @@ def verify_until(deadline, once=False):
         database['findings'] = results
         database['updated_at'] = today.isoformat()
         database['schema_version'] = 2
-        database['scope'] = 'EU and independent European foresight retrospective (2015 onward)'
+        database['scope'] = 'EU and independent European foresight retrospective (rolling 15 years; prioritise 5–10 years old)'
         database['minimum_age_months'] = 6
         database['earliest_publication_date'] = START_DATE.isoformat()
         atomic_json(RESULTS, database)
@@ -1100,6 +1135,7 @@ def verify_until(deadline, once=False):
                         'rejection_reason_counts': reason_counts, 'outcome_counts': status_counts,
                         'discovery_source_status': discovery.get('source_status', []),
                         'scholarly_discovery': discovery.get('scholarly_discovery', {}),
+                        'priority_metadata_checks': priority_check_stats,
                         'abstract_leads_total': len(read_json(ROOT / 'research-leads.json').get('leads', []))
                         if (ROOT / 'research-leads.json').exists() else 0})
     print(f'VERIFIED: {added} new historical reports; {len(results)} total; {checked} reviewed; '
@@ -1144,10 +1180,12 @@ if __name__ == '__main__':
             scholarly_stats = scholarly_scan(STATE, ROOT / 'research-leads.json', cutoff(TODAY()),
                                              min(limit, time.monotonic() + 240), max_queries=24)
         discover(limit, args.once)
+        refresh_priorities(TODAY())
         if scholarly_stats and CANDIDATES.exists():
             audit_discovery = read_json(CANDIDATES)
             audit_discovery['scholarly_discovery'] = scholarly_stats
             atomic_json(CANDIDATES, audit_discovery)
     else:
         verify_until(limit, args.once)
+        refresh_priorities(TODAY())
     hold_open_until(limit, args.stage, args.once)

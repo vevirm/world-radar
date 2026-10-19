@@ -9,8 +9,8 @@ import radar
 report = radar.read_json(radar.RESULTS)
 actors = {a['id']: a for a in radar.get_registry()}
 assert report['schema_version'] == 2
-assert report['scope'] == 'EU and independent European foresight retrospective (2015 onward)'
-assert report['earliest_publication_date'] == '2015-01-01'
+assert report['scope'] == 'EU and independent European foresight retrospective (rolling 15 years; prioritise 5–10 years old)'
+assert report['earliest_publication_date'] == radar.START_DATE.isoformat()
 seen = set()
 for finding in report['findings']:
     assert finding['id'].startswith('EUF-'), finding['id']
@@ -29,4 +29,4 @@ for finding in report['findings']:
     assert finding['source_category'] == actor['category'], finding['id']
     cmp = finding['comparison']
     assert cmp['verdict'] == 'Not yet assessed' or cmp['evidence_url'], finding['id']
-print(f'Data check passed: {len(seen)} substantive European foresight studies (2015 onwards), no legacy records.')
+print(f'Data check passed: {len(seen)} substantive European foresight studies (rolling 15-year window), no legacy records.')
