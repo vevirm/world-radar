@@ -11,19 +11,19 @@ concurrency:
 jobs:
   outcomes:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 22
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install "python-docx>=1.1,<2"
-      - run: python scripts/outcome_tracker.py
+      - run: python -u scripts/outcome_discovery.py --minutes 19 --max-queries 500
       - name: Save cumulative evidence and new Word report
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add outcome-history.json stuff/FUTURE_IDEAS_WHAT_HAPPENED.docx
+          git add outcome-history.json outcome-ideas-auto.json stuff/FUTURE_IDEAS_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Accumulate retrospective evidence and refresh Word report'
             git pull --rebase
