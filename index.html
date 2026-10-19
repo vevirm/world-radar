@@ -38,7 +38,7 @@ html:not(.radar-unlocked) body > :not(#visitor-gate){display:none!important}
 <script>
 // Only a casual deterrent; raw files remain public on GitHub Pages.
 (function(){const key='world-radar-visitor-open';if(sessionStorage.getItem(key)==='yes')document.documentElement.classList.add('radar-unlocked');
-const hash='8dae88d48586e24c324fcce5201ec3a110edb71dc71bd6aae43b9a8ff96c19d0';
+const hash='5f7bb077e35998af0dd6afa5b986804871f9cb9d420128e263bcf8c3cc20f85f';
 document.addEventListener('DOMContentLoaded',()=>document.getElementById('gate-form').addEventListener('submit',async e=>{e.preventDefault();const value=document.getElementById('gate-password').value;const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));const actual=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');if(actual===hash){sessionStorage.setItem(key,'yes');document.documentElement.classList.add('radar-unlocked');document.getElementById('gate-password').value='';}else{document.getElementById('gate-error').textContent='Incorrect password.';}}));})();
 </script>
 <header class="top"><div class="shell"><a class="brand" href="./">European Foresight Radar</a><span class="nav"><a href="#top50">Priority 50</a> · <a href="#stuff">Stuff — Everything Collected</a> · <a href="#scholarly-leads">Research leads</a> · <a href="#bibliography">Bibliography</a></span></div></header>
