@@ -31,7 +31,7 @@ from scholarly import scholarly_scan
 from priority import refresh as refresh_priorities
 from check_priorities import check_indexed_leads
 
-FIXED_PHASE_PROTOCOL = 4  # Full 15+10 windows + academic abstract discovery.
+FIXED_PHASE_PROTOCOL = 5  # Continuous academic rotation + publisher scan, followed by verification.
 RETRIEVAL_PROTOCOL = 2
 SCHOLARLY_DISCOVERY_PROTOCOL = 1
 ROOT = Path(__file__).resolve().parents[1]
@@ -1180,6 +1180,33 @@ if __name__ == '__main__':
             scholarly_stats = scholarly_scan(STATE, ROOT / 'research-leads.json', cutoff(TODAY()),
                                              min(limit, time.monotonic() + 240), max_queries=24)
         discover(limit, args.once)
+        # Continue rotating distinct scholarly topic/year/journal combinations after
+        # the publisher archives have exhausted their due URLs. Previously the
+        # process merely slept for the remainder of the 15-minute phase.
+        # scholarly_scan persists its cursor after each batch and never treats
+        # abstract-index leads as verified research.
+        if not args.once:
+            batches = 0
+            while time.monotonic() < limit - 25:
+                before = time.monotonic()
+                more = scholarly_scan(STATE, ROOT / 'research-leads.json',
+                                     cutoff(TODAY()), min(limit - 8, before + 135),
+                                     max_queries=16)
+                batches += 1
+                for field in ('queries', 'indexed_records_examined', 'new_leads', 'provider_errors'):
+                    if field == 'provider_errors':
+                        scholarly_stats.setdefault(field, []).extend(more.get(field, []))
+                    else:
+                        scholarly_stats[field] = scholarly_stats.get(field, 0) + more.get(field, 0)
+                scholarly_stats['total_leads'] = more.get('total_leads', scholarly_stats.get('total_leads', 0))
+                scholarly_stats['next_query_cursor'] = more.get('next_query_cursor')
+                if not more.get('queries'):
+                    print('No further index queries completed this batch; keeping a short retry delay.', flush=True)
+                    time.sleep(min(12, max(0, limit - time.monotonic())))
+                # A failed upstream index must not induce a rapid flood of requests.
+                if more.get('provider_errors') and len(more['provider_errors']) >= more.get('queries', 0):
+                    time.sleep(min(15, max(0, limit - time.monotonic())))
+            scholarly_stats['additional_batches'] = batches
         refresh_priorities(TODAY())
         if scholarly_stats and CANDIDATES.exists():
             audit_discovery = read_json(CANDIDATES)
