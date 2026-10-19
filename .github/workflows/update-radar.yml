@@ -27,9 +27,9 @@ jobs:
           import sys
           sys.path.insert(0, 'scripts')
           import radar
-          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 4:
+          if getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 5:
               raise SystemExit('Outdated scripts/radar.py. Upload the new radar.py to the repository scripts folder before running.')
-          print('Verified fixed-window + scholarly discovery protocol 4', flush=True)
+          print('Verified fixed-window + scholarly discovery protocol 5', flush=True)
           PY
       - name: Scan rotating foresight sources for 15 full minutes
         env:
@@ -74,6 +74,7 @@ jobs:
           git add findings.json radar-state.json research-leads.json priority-50.json stuff/WORLD_RADAR_MASTER.xlsx
           if ! git diff --cached --quiet; then
             git commit -m 'European Foresight Radar: advance source rotation and verified findings'
+            git pull --rebase
             git push
           else
             echo 'No changes to source rotation or verified research.'
