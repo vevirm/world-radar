@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T21:49:01.022028+00:00",
+  "updated_at": "2026-10-19T00:10:19.715860+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -526,7 +526,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1036,7 +1036,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1138,7 +1138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1206,7 +1206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1376,7 +1376,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1512,7 +1512,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1682,7 +1682,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1700,6 +1700,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
       "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/cky212.321",
+      "title": "Stakeholders’ views on scenarios on EU child healthcare systems and how changes might be achieved",
+      "abstract": "",
+      "date": "2018-11-21",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/cky212.321",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2248,6 +2265,57 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1093/eurpub/ckaa165.1286",
+      "title": "28.G. Workshop: Foresight studies at the global, European and national level: what can we learn from them?",
+      "abstract": "Abstract Foresight studies provide valuable information for (strategic) policy-making. They provide insights into the most important future trends and challenges, which is essential for well-informed policy-making. The number of foresight studies in the field of Public Health was limited but the number of studies is growing rapidly over last years. With these studies becoming available, their findings might become a more a regular component of population health monitoring activities. Given the relatively early stage of development of foresight studies in the field of Public health, a proper understanding and interpretation of the future studies might need some further guidance. How to deal with an (uncertain) future in the policy making process is one of the issues that needs to be addressed. This workshop starts with an interactive session to get a better understanding of the level of knowledge and needs regarding foresight studies, followed by the presentations of four different applications of foresight studies. The first one is at the global level from the institute for health metrics and evaluation (IHME) who has a long track record regarding public health data gathering and applying these, for example, to calculate the Global Burden of Disease. Next, EURO-HEALTHY project will present the Scenarios for population health inequalities in 2030 in Europe, partly based on a Web-Delphi process with a multidisciplinary panel. The third presentation will be from Public Health Wales on Futures for Wales which puts future health in the broader perspective of wellbeing. The last presentation will also be a national one, the Public Health foresight study, which has been conducted for more than 2025 years with an update published in 2020. After these presentations, ample time will be reserved for discussion on how these studies could best contribute to better public health policy making. Workshop participants will be informed about the main results of recent foresight studies, allowing them to reflect on these from their own perspective. They will get insight into the approaches and methods used in these recent studies, which may be helpful or inspiring for their own practice. Key messages Public health foresight studies are done more frequently and their findings can influence public health policy making. In this workshop, the methodology and findings of foresight studies at the global, European, and national level will be discussed.",
+      "date": "2020-09-30",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckaa165.1286",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckaa165.1288",
+      "title": "Scenarios for population health inequalities in 2030 in Europe",
+      "abstract": "Abstract Health inequalities have been consistently reported across and within European countries and continue to pose major challenges to policy-making. In the EURO-HEALTHY project, funded by Horizon 2020, three 2030 time-horizon scenarios were developed, depicting the key factors that may affect the evolution of PH inequalities across European regions. A three-stage socio-technical approach was applied: i) identification of drivers (key factors expected to affect the evolution of PH inequalities across European regions until 2030) - this stage engaged in a Web-Delphi process a multidisciplinary panel of 51 experts and other stakeholders representing the different perspectives regarding PH inequalities; ii) generation of scenario structures - different drivers' configurations (i.e. their hypotheses for evolution) were organised into coherent scenarios using the Extreme-World Method; and iii) validation of scenario structures and generation of scenario narratives. Stages ii) and iii) were conducted in two workshops with a strategic group of 13 experts with a comprehensive view about PH inequalities. Three scenarios were developed for the evolution of PH inequalities in Europe until 2030: 'Failing Europe' (worst-case but plausible scenario), 'Sustainable Prosperity' (best-case), and an interim scenario 'Being Stuck' depicting a 'to the best of our knowledge' evolution. These scenarios show the extent to which a combination of Political, Economic, Social, Technological, Legal and Environmental drivers shape future health inequalities, providing information for European policy-makers to reflect upon whether and how to design robust policy solutions to tackle PH inequalities. The work presented owes its innovation to the use of a technological platform to interact with participants for idea-generation, together with the use of future-oriented evidence within a face-to-face environment to trigger discussion among a small strategic group to enrich the scenario narratives.",
+      "date": "2020-09-30",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckaa165.1288",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1093/eurpub/ckaa165.298",
+      "title": "Energy and Climate Change Scenarios in the Mediterranean: An opportunity for cooperation",
+      "abstract": "Abstract Background Climate change is modifying weather patterns, producing far-reaching effects on the environment, the economy and society as a whole, endangering global livelihoods, health, food and energy security, and water resources. Europe, and the Mediterranean will not escape the effects of climate change, which will aggravate risks and threats to human security (mainly public health) and regional stability. Actual cooperation and appropriate instruments are needed to address these threats. In this context, higher temperatures and extreme weather phenomena, such as severe droughts and heat waves will inevitably cause water scarcity in these regions and significant health issues. The degradation of the environment will foreseeably create security and health crisis scenarios, arising from energy shortages, air quality, water stress and food supply problems. Methods A scenario analysis was designed to address the relation between security, healthcare, energy and climate change, which contains multiple dimensions. We did a review of the literature and use it to feed the scenario analysis development, to better describe a phenomenon that is complex, with many possible paths and outcomes. Results Among the possible scenarios, two were considered: one based on collaboration and the other, on conflict. Several dimensions were examined to address both cooperation instruments and the consequences of non-cooperation: Energy production (e.g., conventional versus renewable) and use; water resources and food security; the environment (air quality) and the impact on health; Population and migration flow. Conclusions Climate change is a serious threat. To achieve and implement cooperation, there must be multilateral collaboration between the EU and the other Mediterranean countries, including stronger investment flows from north to south, in conjunction with the promotion of both energy efficiency policies and better healthcare system in the south.",
+      "date": "2020-09-30",
+      "journal": "European Journal of Public Health",
+      "publisher": "Oxford University Press (OUP)",
+      "url": "https://doi.org/10.1093/eurpub/ckaa165.298",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1186/s40309-020-00167-8",
       "title": "Post-normal times: re-thinking the futures of the EU-Africa relationship",
       "abstract": "Abstract The nature of the relationship between the European Union (EU) and Africa is in permanent evolution. Historically, the EU mostly dominated the relationship while Africa developed adaptive/reactive strategies. With the establishment of new powers as well as efforts to decolonise the thought and practise of North-South interactions, it is crucial to understand what the future of the relationship could be. The purpose of this paper is to draw lessons from the “Broadening the debate on EU-Africa relations” workshop whose aim was to advance perspectives on EU-Africa relations from the point of view of African scholars. The process consisted of identifying major influential factors in the relationship and assessing what role they played in the past and what role they could play in the future. The results indicate a decline of the importance of EU-dominated factors and the emergence of African agency related factors. We interpret these results as a transformation of this relationship, using the concept “post-normal” to highlight indeterminacy, insolvability and irreversibility as the new context. Implications are discussed regarding the type of research that needs to be developed in order to further investigate this transformation, particularly the meaning of a shifting focus from (normal times) EU-Africa relationship to (post-normal times) Africa-EU relationships.",
@@ -2261,6 +2329,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
       "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/ijerph17238941",
+      "title": "Foresight for the Fitness Sector: Results from a European Delphi Study and Its Relevance in the Time of COVID-19",
+      "abstract": "The fitness sector is an essential player in the promotion of physical activity and healthy behaviour in Europe. However, the sector is confronted with numerous socio-demographic trends that will shape its ability to be financially successful and contribute to public health. The sector must understand current drivers of change and the skills its workforce needs to navigate them. As such, using the results of a 2019 Delphi Survey of over 50 fitness experts from 26 countries, we aim to define the drivers of change facing the sector and identify the skills needed by the fitness workforce to navigate these changes. We find that several technological, social, health and economic trends affect the sector. As a result, so-called soft skills such as communication or customer service, along with digital technology skills, are becoming increasingly important. There is also growing recognition that fitness professionals need to be trained to work with a number of special populations. Furthermore, we argue that many of the trends identified here—such as the increasing use of technology or the focus on individual customer needs—have been accelerated by the COVID-19 pandemic. We conclude by arguing that well-developed, pan-European qualifications are needed to address these common issues.",
+      "date": "2020-12-01",
+      "journal": "International Journal of Environmental Research and Public Health",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/ijerph17238941",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2843,6 +2928,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1080/09654313.2022.2045571",
+      "title": "A scenario planning framework for (post-)pandemic tourism in European destinations",
+      "abstract": "",
+      "date": "2022-03-02",
+      "journal": "European Planning Studies",
+      "publisher": "Informa UK Limited",
+      "url": "https://doi.org/10.1080/09654313.2022.2045571",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.3390/su14063563",
       "title": "Towards the 2030 Agenda: Measuring the Progress of the European Union Countries through the SDGs Achievement Index",
       "abstract": "The 2030 Agenda and Sustainable Development Goals were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. The success or failure in their implementation largely depends on the national implementation effort, measured within wide and compound indicator frameworks. Due to such complexity, providing a simple but comprehensive view on the progress to achieve the SDGs is a priority. Moreover, the measure of the progress allows the consistency among the different dimensions of sustainable development to be assessed. The purpose of this work is to evaluate the results accomplished by European Union Countries in achieving SDGs. In particular, the paper proposed the SDGs achievement index (SDG-AI), a multicriteria-based index, including six different dimensions and applied to EU countries. The SDG-AI allows the differences across the EU countries to be highlighted, and also assesses the contribution of the different dimensions to the final result. The use of such an index will also be useful to understand the effect of the pandemic on the development.",
@@ -3026,6 +3128,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1177/01979183221115148",
+      "title": "How Much Does Migration Affect Labor Supply in Europe? Methodological Insights and Contemporary Evidence from the European Union and Selected European Countries",
+      "abstract": "In Europe, the slowdown in working-age population growth and population aging pose challenges, particularly vis-à-vis the current and future volume of labor supply. Throughout the 2010s, these demographic transformations took place against a backdrop of increasing migration flows and stocks. This IMR Research Note aims to enrich the discussion of the aforementioned issues and to provide methodological and empirical evidence on the role of migration stocks in shaping changes over time in two main aspects of the European labor supply: the size of the labor force and aggregate labor force participation rates from 2006 to 2018. Based on annual LFS data, we use a mixed standardization and decomposition method to determine to what extent trends in the European labor supply are driven over time by changes in population or in labor force participation rates within specific groups selected on the basis of age, gender, birth country (native- versus foreign-born), and origin country (European Union versus non-European Union). Our Research Note points out that, despite the upward trend in the labor force participation rates of native-born women and of native-born persons aged 55 years and over, the increase in labor supply in the European Union and in the 10 European countries under study in this article between 2006 and 2018 was driven by foreign-born persons. These developments suggest that, in a context of political desire for less migration, international migration has become a structural feature of European labor markets.",
+      "date": "2022-08-02",
+      "journal": "International Migration Review",
+      "publisher": "SAGE Publications",
+      "url": "https://doi.org/10.1177/01979183221115148",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4254,6 +4373,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.3390/systems13060469",
+      "title": "Informational Approaches in Modelling Social and Economic Relations: Study on Migration and Access to Services in the European Union",
+      "abstract": "The study analyses at the information level the impact of the main economic indicators on migration and access to services in the European Union, using methods specific to intelligent information systems. The research is based on the correlations between gross value added (GVA), gross fixed capital formation (GFCF), greenhouse gas emissions (GHGE), health expenditure (SHA11), and migration rates (MIGR). The applied methodology includes attribute distribution analysis, identification of hidden patterns through clustering algorithms (K-Means and Expectation-Maximisation) and training of classifiers using regression decision trees with linear leaf models (M5P) corresponding to interdependent data processing and integration modules, exploratory analysis module, machine learning and decision-making modules, oriented to support public policies through explainable scenarios and predictive-evaluative structures. The results highlight the superiority of the EM model in detecting relevant clusters and the usefulness of M5P trees in highlighting complex economic influences on population mobility. The study proposes the integration of these methods into an intelligent analysis framework aimed at reducing disparities and optimising socio-economic sustainability. The EM model demonstrated a superior ability to detect subgroups within the dataset, revealing four distinct clusters with specific characteristics. Furthermore, the M5P tree analysis allowed the extraction of significant non-linear relationships between economic variables and the migration phenomenon. The study emphasises the importance of public policies aimed at reducing regional economic disparities and increasing social and economic sustainability. By integrating these results into a well-structured information system, it provides a robust analytical framework that supports policy makers and researchers in designing effective public policies on population mobility and its related economic impact in the EU Member States.",
+      "date": "2025-06-14",
+      "journal": "Systems",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/systems13060469",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1002/ffo2.70013",
       "title": "Spatial Scenarios With Real‐Time Spatial Delphi and Asymptotic Consensus Analysis: An Application to Ten European Coastal Cities",
       "abstract": "ABSTRACT Recent climatic events, such as coastal erosion, floods, and elevated temperatures, threaten the planet's sustainability and the well‐being of European coastal cities. These events are expected to increase significantly, emphasizing the urgent need for careful analysis to inform policy development and prevent dystopian scenarios. In the Futures Studies (FS) context, the development of future scenarios is essential for depicting long‐term outcomes and facilitating effective planning, which can be achieved using various methods, including the Real‐Time Spatial Delphi. This paper applies to the Delphi‐based spatial scenario (DBSS), adopting a novel web‐based open platform, to obtain spatial convergence of opinions among a panel of experts using spatial analysis and statistical indicators. The DBSS method was applied to 10 European coastal areas in seven different countries, involving 167 experts to assess climate impacts in 2050. This paper introduces for the first time, the concept of Asymptotic Theoretical Consensus to obtain a deeper understanding of the dynamic process, including duration, smoothness of convergence, and stability. The identified scenarios validate the proposed method and provide significant benefits to stakeholders, policymakers, local authorities, and governmental bodies in formulating efficacious strategies and confronting the challenges presented by climate change.",
@@ -4453,7 +4589,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4573,6 +4709,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
       "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.3390/agriculture15232504",
+      "title": "Assessment of Competitiveness and Complementarity in Agri-Food Trade Between the European Union and Mercosur Countries",
+      "abstract": "The EU–Mercosur agri-food trade is characterized by strong asymmetries reflecting long-standing structural differences between the two blocs. With the EU–Mercosur Agreement moving toward ratification, assessing these long-term trade patterns is essential for anticipating how liberalization may reshape comparative advantages and adjustment pressures in agri-food sectors. The analysis applies four quantitative indicators: the Revealed Comparative Advantage index (RCA), the Trade Complementarity Index (TCI), the Trade Intensity Index (TII), and the Export Similarity Index (ESI). Mercosur shows strong comparative advantages in raw and semi-processed commodities such as soybeans, meat, sugar and maize, while the EU specializes in higher value-added processed foods. High TCI values indicate strong alignment between Mercosur’s export structure and EU import demand, while low ESI values reveal limited direct competition. Low TII values suggest unrealized cooperation potential. Findings highlight both opportunities and vulnerabilities for agri-food sectors under future trade liberalization.",
+      "date": "2025-12-01",
+      "journal": "Agriculture",
+      "publisher": "MDPI AG",
+      "url": "https://doi.org/10.3390/agriculture15232504",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4759,7 +4912,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4845,6 +4998,23 @@
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.58603/lztk6918",
+      "title": "Populism in Power? Romania 2035: Scenario Analysis of Coalition Governance, Minority Rights, and European Values",
+      "abstract": "Leaving behind the last decades of intensive European integration, Romania currently faces many challenges stemming from populist nationalist-movements. Movements like these have the capacity to mobilise civil society in a way that brings forth anti-EU sentiment. Research indicates that in some regions of Europe, there is a regression with respect to democracy, the rule of law, and the rights of minorities. This present study concerning the subject of populism in 2026 is structured on three forward-looking scenarios. The time horizon sought under this analysis is by the year 2035. The methodological design is based on the following distinct scenarios: a radical-right populist party enters government through a coalition with a populist presidential candidate. The analysis also includes important junctures between electoral processes, political parties’ alliances within the process of coalition bargaining, as well as media narrative/media control implications. The scope of this exploration is to examine and debate upon far-right political shifts that come after major fiscal/judiciary policy changes that affect reform capacity and institutional trust. The three scenarios’ outcomes are meant to show how early-warning indicators for democratic backsliding can be considered for Romanian policy makers alongside civil society and their EU partners.",
+      "date": "2026-03-31",
+      "journal": "Inclusivity",
+      "publisher": "Department of International Relations and European Studies, University of Oradea",
+      "url": "https://doi.org/10.58603/lztk6918",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
