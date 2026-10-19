@@ -17,7 +17,7 @@ concurrency:
 jobs:
   outcomes:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 27
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,35 +26,22 @@ jobs:
       - name: Install Word report dependency
         run: pip install "python-docx>=1.1,<2"
 
-      - name: Run Radar 2 and enforce a minimum 20-minute job step
+      - name: Start 25-minute Radar 2 clock
+        shell: bash
+        run: echo "RADAR_CLOCK_START=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Research outcomes (up to 23 minutes)
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RADAR_OUTCOME_MODEL: gpt-4.1-mini
         run: |
-          started_at=$(date +%s)
-          minimum_seconds=1200
-
-          echo "Starting Radar 2. This step will run for at least 20 minutes."
+          # Reserve time for report commit and final 25-minute clock alignment.
+          echo "Radar 2 research budget: 23 minutes; total job target: ~25 minutes."
           if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-            echo "NOTICE: No API key is available to this job; the research script may skip API-powered research."
+            echo "::warning::OPENAI_API_KEY absent; AI-based independent research may be skipped."
           fi
-
-          # Keep the real research failure code, even if a subsequent wait is needed.
-          set +e
-          python -u scripts/retrospective_radar.py --minutes 18 --max-claims 16
-          research_status=$?
-          set -e
-
-          elapsed=$(( $(date +%s) - started_at ))
-          if (( elapsed < minimum_seconds )); then
-            remaining=$(( minimum_seconds - elapsed ))
-            echo "Research script stopped after ${elapsed}s. Waiting ${remaining}s to meet the 20-minute minimum."
-            sleep "$remaining"
-          fi
-
-          echo "Minimum 20-minute step duration reached. Research exit code: ${research_status}."
-          exit "$research_status"
+          python -u scripts/retrospective_radar.py --minutes 23 --max-claims 100
 
       - name: Commit report and accumulated assessments
         run: |
@@ -65,4 +52,20 @@ jobs:
             git commit -m 'Radar 2: update retrospective Word report'
             git pull --rebase
             git push
+          fi
+      - name: Finish Radar 2 at approximately 25 minutes
+        if: always() && !cancelled()
+        shell: bash
+        run: |
+          if [[ -z "${RADAR_CLOCK_START:-}" ]]; then
+            echo "Clock was not started; cannot enforce target runtime."
+            exit 1
+          fi
+          elapsed=$(( $(date +%s) - RADAR_CLOCK_START ))
+          if (( elapsed < 1500 )); then
+            remaining=$(( 1500 - elapsed ))
+            echo "Radar 2 elapsed ${elapsed}s; waiting ${remaining}s to complete 25-minute window."
+            sleep "$remaining"
+          else
+            echo "Radar 2 already ran ${elapsed}s (past 25-minute target)."
           fi

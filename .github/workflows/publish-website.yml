@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'retrospective-results.json'
+      - 'stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx'
       - '.github/workflows/publish-website.yml'
   workflow_run:
     workflows:

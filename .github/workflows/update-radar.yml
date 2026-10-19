@@ -2,7 +2,7 @@ name: European Foresight Radar — Scholarly Discovery and Retrospective Verific
 on:
   workflow_dispatch:
   schedule:
-    # Two runs daily (UTC), with connected 15-minute discovery and 10-minute verification.
+    # Two runs daily (UTC), with 14-minute discovery, 9-minute verification, and publishing / housekeeping within ~25-minute job.
     # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
     - cron: '17 1,13 * * *'
 permissions:
@@ -13,7 +13,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 27
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,28 +31,31 @@ jobs:
               raise SystemExit('Outdated scripts/radar.py. Upload the new radar.py to the repository scripts folder before running.')
           print('Verified fixed-window + scholarly discovery protocol 5', flush=True)
           PY
-      - name: Scan rotating foresight sources for 15 full minutes
+      - name: Start 25-minute Radar 1 clock
+        shell: bash
+        run: echo "RADAR_CLOCK_START=$(date +%s)" >> "$GITHUB_ENV"
+      - name: Scan rotating foresight sources for 14 full minutes
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         shell: bash
         run: |
           started=$(date +%s)
-          python -u scripts/radar.py discover --minutes 15
+          python -u scripts/radar.py discover --minutes 14
           elapsed=$(( $(date +%s) - started ))
-          echo "Actual discovery duration: ${elapsed}s (minimum 895s; nominal 900s)"
-          if (( elapsed < 895 )); then
-            echo "::error::Discovery returned early after ${elapsed}s. Scanner did not honor the full 15-minute phase."
+          echo "Actual discovery duration: ${elapsed}s (minimum 835s; nominal 840s)"
+          if (( elapsed < 835 )); then
+            echo "::error::Discovery returned early after ${elapsed}s. Scanner did not honor the full 14-minute phase."
             exit 1
           fi
-      - name: Verify prioritised studies and scholarly metadata for 10 full minutes
+      - name: Verify prioritised studies and scholarly metadata for 9 full minutes
         shell: bash
         run: |
           started=$(date +%s)
-          python -u scripts/radar.py verify --minutes 10
+          python -u scripts/radar.py verify --minutes 9
           elapsed=$(( $(date +%s) - started ))
-          echo "Actual verification duration: ${elapsed}s (minimum 595s; nominal 600s)"
-          if (( elapsed < 595 )); then
-            echo "::error::Verification returned early after ${elapsed}s. Scanner did not honor the full 10-minute phase."
+          echo "Actual verification duration: ${elapsed}s (minimum 535s; nominal 540s)"
+          if (( elapsed < 535 )); then
+            echo "::error::Verification returned early after ${elapsed}s. Scanner did not honor the full 9-minute phase."
             exit 1
           fi
       - name: Validate JSON and age limits
@@ -90,3 +93,19 @@ jobs:
             research-leads.json
           if-no-files-found: ignore
           retention-days: 30
+      - name: Finish Radar 1 at approximately 25 minutes
+        if: always() && !cancelled()
+        shell: bash
+        run: |
+          if [[ -z "${RADAR_CLOCK_START:-}" ]]; then
+            echo "Clock was not started; cannot enforce target runtime."
+            exit 1
+          fi
+          elapsed=$(( $(date +%s) - RADAR_CLOCK_START ))
+          if (( elapsed < 1500 )); then
+            remaining=$(( 1500 - elapsed ))
+            echo "Radar 1 elapsed ${elapsed}s; waiting ${remaining}s to complete 25-minute window."
+            sleep "$remaining"
+          else
+            echo "Radar 1 already ran ${elapsed}s (past 25-minute target)."
+          fi
