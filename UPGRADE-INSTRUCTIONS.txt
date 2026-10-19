@@ -26,3 +26,9 @@ Expected:
   still require later, independent evidence.
 
 This change has offline tests but has not been deployed to GitHub for you.
+
+OCTOBER 2026 SCHEDULE CHANGE:
+- Four GitHub Actions runs per day at 00:17, 06:17, 12:17 and 18:17 UTC.
+- Replace the existing .github/workflows/update-radar.yml; DO NOT create a second workflow.
+- Each run retains 15 minutes for discovery followed by 10 for checking.
+- 22 registered source groups rotate using persisted radar-state.json and source cooldowns.

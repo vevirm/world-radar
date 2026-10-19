@@ -63,9 +63,9 @@ Each published record stores `quality.checks`, estimated word count, PDF pages, 
 
 ## Recurring schedule — exactly the same durations
 
-The GitHub Actions scheduled run repeats at **:07 and :37 UTC** (nominally every **30 minutes**):
+The GitHub Actions scheduled run repeats at **00:17, 06:17, 12:17 and 18:17 UTC** (**4 cycles per day**, spaced six hours apart):
 
-- **15-minute scanning budget:** rotate six publisher groups each run, discovering studies from different registered institutions, university collections, think tanks, research institutes, OECD and consortia. Never repeatedly fetch the same archive during a run.
+- **15-minute scanning window:** rotate through registered publishers as time and source cooldowns allow, discovering studies from institutions, university collections, think tanks, research institutes, OECD and consortia. Never repeatedly fetch the same archive during a run.
 - **10-minute verification budget:** process the next pending reports fairly across publishers, confirm dates and full studies, enforce research quality and evidence checks, and carry any remaining reports forward. New rejections go to the audit.
 
 The workflow has a 35-minute total ceiling including setup. **These are maximum phase budgets, not enforced waiting periods:** when there is no due source or pending candidate, a phase finishes early instead of pretending to search. GitHub cron is **best-effort** and may be delayed. Not a continuously running hosted worker.
@@ -74,7 +74,7 @@ The workflow has a 35-minute total ceiling including setup. **These are maximum 
 
 The tracked **`radar-state.json` is necessary**. Upload it to the repository **root**, together with `actors.json`, `findings.json`, `scripts/` and other files. The workflow commits it back to GitHub after every run **even if no findings qualified**. Keep the existing `.github/workflows/update-radar.yml` in its workflow directory.
 
-- **Publisher fairness:** 19 registered source groups are interleaved by type (EU, think tank, university, institute, etc.). Each run works on the *next six groups*, rather than restarting from the Commission. The rotation position persists across all scheduled runs.
+- **Publisher fairness:** 22 registered source groups are interleaved by type (EU, think tank, university, institute, etc.). Each run resumes at the next due group, working through as many groups as the 15-minute window permits rather than restarting from the Commission. The rotation position persists across all scheduled runs.
 - **Archive material rotation:** newly encountered older/paginated archive pages and linked publisher research collections become a follow-up queue. Each selected source checks at most two archive pages in a run, choosing unvisited pages before repeats. Root landing pages are rechecked no more than once daily, deeper archive pages no more than once every 30 days.
 - **Persistent verification backlog:** candidate URLs found in one run remain queued for later runs. The verifier interleaves work across publishers so a large single source cannot dominate the entire verification budget. Old original reports are prioritised *within* a publisher.
 - **No endless rejections:** failed methodological-quality/date checks are recorded with a **45-day cooldown**; transient site/network failures wait **2 days**. Already accepted studies are not re-downloaded unless a new editorial retrospective assessment is added.
@@ -101,7 +101,7 @@ python scripts/check_data.py
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000/` (the `file://` protocol can block the JSON loader). In GitHub Actions use the unchanged `--minutes 15` and `--minutes 10` time budgets; stages end early if no distinct work remains. The audit artifacts are retained for 30 days; `findings.json` is committed only when it changes, and `radar-state.json` is committed whenever rotation or queue/history changes.
+Open `http://localhost:8000/` (the `file://` protocol can block the JSON loader). In GitHub Actions use the unchanged `--minutes 15` and `--minutes 10` windows; if no distinct work remains, the stage reports idle time until its window closes. The audit artifacts are retained for 30 days; `findings.json` is committed only when it changes, and `radar-state.json` is committed whenever rotation or queue/history changes.
 
 ### Deployment and honesty notes
 
