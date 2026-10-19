@@ -59,6 +59,21 @@
       "score": null,
       "status": "not_yet_assessed",
       "evidence": []
+    },
+    "finding-0ada38963765a386": {
+      "id": "finding-0ada38963765a386",
+      "expected": "the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
+      "source_url": "https://commission.europa.eu/document/download/bdba60f0-abb3-42f8-b5be-fd35d693b289_en?filename=SFR2025-Report_web.pdf",
+      "title": "2025 Strategic Foresight Report",
+      "target_year": 2040,
+      "original_publication": "2025-09-09",
+      "topic": "Governance & resilience",
+      "publisher": "European Commission — Secretariat-General",
+      "what_expected": "the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
+      "what_happened": "The forecast year has not arrived, so the outcome is not yet known.",
+      "score": null,
+      "status": "too_early",
+      "evidence": []
     }
   }
 }
