@@ -8,9 +8,9 @@
       "target_year": 2040,
       "what_expected": "The EU is projected to have 17 million fewer people of working age in 2040 than in 2023",
       "what_happened": "The forecast year has not arrived, so the outcome is not yet known.",
-      "score": null,
       "status": "too_early",
-      "evidence": []
+      "evidence": [],
+      "counterevidence": []
     },
     "finding-dd6fba4a99fc3312": {
       "id": "finding-dd6fba4a99fc3312",
@@ -20,9 +20,9 @@
       "target_year": null,
       "what_expected": "Healthy longevity offers various opportunities but also challenges, particularly when coupled with the parallel decline in fertility rates (32); the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
       "what_happened": "No independently verified outcome yet.",
-      "score": null,
       "status": "not_yet_assessed",
-      "evidence": []
+      "evidence": [],
+      "counterevidence": []
     },
     "finding-f6fa8d371cffd345": {
       "id": "finding-f6fa8d371cffd345",
@@ -32,9 +32,9 @@
       "target_year": null,
       "what_expected": "It will be key to reinforcing Europe’s long-term competitiveness and social model, and thus its global leadership in the new, net-zero economy, also by supporting other regions in building a sustainable future.",
       "what_happened": "No independently verified outcome yet.",
-      "score": null,
       "status": "not_yet_assessed",
-      "evidence": []
+      "evidence": [],
+      "counterevidence": []
     },
     "finding-c0eafb1058bcd532": {
       "id": "finding-c0eafb1058bcd532",
@@ -44,9 +44,9 @@
       "target_year": null,
       "what_expected": "Furthermore, while the 2018 revised EU Maritime Security Strategy Action Plan 7 called on member states to improve the resilience of maritime trans - port infrastructure by 2020, Zirta had a relatively small navy and an under-re - sourced ministry of defence.",
       "what_happened": "No independently verified outcome yet.",
-      "score": null,
       "status": "not_yet_assessed",
-      "evidence": []
+      "evidence": [],
+      "counterevidence": []
     },
     "finding-99364e12c9507a3f": {
       "id": "finding-99364e12c9507a3f",
@@ -56,9 +56,9 @@
       "target_year": null,
       "what_expected": "Prospects for employment and labour force trends in Europe Key messages Employment growth is expected to be moderate over the medium term, slowing down considerably after 2025.",
       "what_happened": "No independently verified outcome yet.",
-      "score": null,
       "status": "not_yet_assessed",
-      "evidence": []
+      "evidence": [],
+      "counterevidence": []
     },
     "finding-0ada38963765a386": {
       "id": "finding-0ada38963765a386",
@@ -70,10 +70,10 @@
       "topic": "Governance & resilience",
       "publisher": "European Commission — Secretariat-General",
       "what_expected": "the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
-      "what_happened": "The forecast year has not arrived, so the outcome is not yet known.",
-      "score": null,
-      "status": "too_early",
-      "evidence": []
+      "what_happened": "No independently verified outcome yet.",
+      "status": "not_yet_assessed",
+      "evidence": [],
+      "counterevidence": []
     }
   }
 }

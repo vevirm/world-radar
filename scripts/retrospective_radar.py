@@ -1,6 +1,6 @@
 """Radar 2: source-grounded, clearly *informal* retrospective judgments.
 
-Requires OPENAI_API_KEY for new research. Without it, preserves past reports
+Requires OPENAI_API_KEY for AI-assisted web research. Without it, preserves past reports
 and marks newly found claims as unassessed; never manufactures outcomes/scores.
 """
 import argparse
@@ -108,9 +108,23 @@ def route_for(entry):
 def retrieve_assessment(claim, key, route=0):
     now = dt.date.today().isoformat()
     route_name, route_sources = EVIDENCE_ROUTES[route % len(EVIDENCE_ROUTES)]
-    prompt = f'''Evidence discovery route: {route_name}. Start with {route_sources}. If they do not cover the claim, widen to other independently dated primary evidence rather than returning a weak verdict. Seek at least two independent evidence sources where feasible; don't fabricate a second citation. Cross-check conflicting evidence and identify incompatible geographies, units, baselines, or definitions. Rotate search terms across exact quantities, topic synonyms, locations, time periods, and actual observed series. For projected percentages or amounts, find real comparable values and distinguish absolute vs relative changes. Do not infer that a forecast was correct just because later articles repeat it.
+    prompt = f'''Research route: {route_name}. Start with {route_sources}, then broaden as needed. Today: {now}.
+Investigate whether a specific European foresight claim shows observable signs of happening. Use WEB SEARCH for independently dated evidence AFTER the original publication. Search for both positive signals and counterevidence. Distinguish actual deployment or measured change from investment announcements, plans, ambitions, scenarios, and publicity. A future target date DOES NOT prevent assessment of current signals; it only prevents calling the final outcome realized prematurely.
+Original foresight: {claim['expected']}
+Original study: {claim['source_url']}
+Original publication: {claim.get('original_publication')}
+Target year: {claim.get('target_year')}
 
-Today: {now}. Investigate this historical European forecast using WEB SEARCH and reliable, independently dated evidence (Eurostat, ECB, OECD, national statistics, institutional publications first). Use outcome evidence for the ORIGINAL target time, including years before 2026; don't limit yourself to recent news. Do not treat re-statements of the forecast, predictions, headlines alone, or unverified secondary guesses as outcomes. Do not fabricate citations.\n\nOriginal claim: {claim['expected']}\nOriginal research: {claim['source_url']}\nTarget year if known: {claim.get('target_year')}\n\nSearch for the exact target year and outcome, not just current headlines. Use the original publication date to establish what was actually predicted before the event. Prefer dated independent statistical series and primary reporting; cite what was observed, with its year. Return ONLY a JSON object with fields: status (assessed / too_early / insufficient_evidence), what_expected (ONE sentence faithful to the original; don't invent specificity), what_happened (ONE sentence summarizing demonstrable outcome, or clearly saying not yet known), score (integer 1-100 ONLY for assessed, otherwise null), evidence (array of objects each with url, date, finding; at least one trustworthy URL for assessed), reasoning (brief). Score is an informal rough judgment of foresight accuracy, NOT a rigorous numeric metric. 1 means completely wrong, 100 means exceptionally accurate. Do not score an uncompleted forecast or evidence too thin to compare. Do not use the original forecast source as sole outcome evidence. If ambiguous or non-testable, return insufficient_evidence.''' 
+Return ONLY one JSON object with:
+status: exactly one of realized, materializing, early_signals, no_clear_evidence, contradicted, too_early, insufficient_evidence.
+what_expected: faithful concise description.
+what_happened: concise observed developments, or clearly say none established.
+evidence: list of objects with url, date, finding (dated independent sources; preferably two if feasible).
+counterevidence: list of objects with url, date, finding when found.
+reasoning: how evidence supports status, limitations and differences in baselines/time/geography.
+watch_next: specific observable developments or measurable milestones to check.
+
+Rules: 'realized' requires clear completed outcome with direct evidence; 'materializing' requires significant observed implementation; 'early_signals' requires credible observable indications, not mere publicity; 'contradicted' requires direct material counterevidence; 'no_clear_evidence' is only for a genuine search without convincing signals; 'too_early' means a judgment is premature AND there are no present signals sufficient to classify; 'insufficient_evidence' means research failed to establish reliable support. Future scenario narratives should not be treated as promised predictions. Never fabricate citations. Do not cite the original publication as the ONLY later evidence.'''
     request = {'model': MODEL, 'tools': [{'type': 'web_search'}],
                'input': prompt, 'max_output_tokens': 1800}
     req = urllib.request.Request('https://api.openai.com/v1/responses',
@@ -133,58 +147,75 @@ def single_sentence(value):
     return re.split(r'(?<=[.!?])\s+(?=[A-Z])', value, maxsplit=1)[0].rstrip('.!?') + '.'
 
 
-def normalize(claim, result):
-    status = result.get('status', 'insufficient_evidence')
-    if status not in ('assessed', 'too_early', 'insufficient_evidence'):
-        status = 'insufficient_evidence'
-    evidence = []
-    for e in result.get('evidence', []):
+STATUS_LABELS = {
+    'realized': 'Realized', 'materializing': 'Materializing',
+    'early_signals': 'Early signals', 'no_clear_evidence': 'No clear evidence',
+    'contradicted': 'Contradicted', 'too_early': 'Too early to tell',
+    'insufficient_evidence': 'Insufficient evidence',
+    'not_yet_assessed': 'Not yet investigated',
+}
+
+
+def clean_evidence(claim, values):
+    sources = []
+    for e in values if isinstance(values, list) else []:
         if not isinstance(e, dict):
             continue
         url = str(e.get('url', '')).strip()
-        if not re.match(r'^https://[^\s/]+/', url) or url.rstrip('/') == claim['source_url'].rstrip('/'):
+        if (not re.match(r'^https?://[^\s/]+', url)
+                or url.rstrip('/') == claim['source_url'].rstrip('/')
+                or not e.get('finding') or not e.get('date')):
             continue
-        if not e.get('finding') or not e.get('date'):
-            continue
-        evidence.append({'url': url, 'date': str(e['date'])[:40],
-                         'finding': concise(e['finding'])[:500]})
-    score = result.get('score')
+        sources.append({'url': url, 'date': str(e['date'])[:40], 'finding': concise(e['finding'])[:500]})
+    return sources[:8]
+
+
+def normalize(claim, result):
+    status = result.get('status', 'insufficient_evidence')
+    if status not in STATUS_LABELS or status == 'not_yet_assessed':
+        status = 'insufficient_evidence'
+    evidence = clean_evidence(claim, result.get('evidence'))
+    counter = clean_evidence(claim, result.get('counterevidence'))
+    # No definite conclusion without independently dated supporting evidence.
+    if status in ('realized', 'materializing', 'early_signals', 'contradicted') and not evidence and not counter:
+        status = 'insufficient_evidence'
     target = claim.get('target_year')
-    if target is not None and target > dt.date.today().year:
-        status = 'too_early'
-    if not isinstance(score, int) or isinstance(score, bool) or not 1 <= score <= 100 or not evidence:
-        status = 'insufficient_evidence' if status == 'assessed' else status
-    if status != 'assessed':
-        score = None
-        result['what_happened'] = ('The forecast horizon has not been reached.' if status == 'too_early'
-                                   else 'The observed outcome is not independently established.')
-    return {**claim, 'what_expected': single_sentence(result.get('what_expected') or claim['expected']),
-            'what_happened': single_sentence(result.get('what_happened') or 'No independently established outcome yet.'),
-            'status': status, 'score': score, 'evidence': evidence,
+    if target and int(target) > dt.date.today().year and status == 'realized':
+        # Only allow realization if the research actually demonstrates early completion.
+        if not evidence:
+            status = 'insufficient_evidence'
+    return {**claim, 'what_expected': concise(result.get('what_expected') or claim['expected']),
+            'what_happened': concise(result.get('what_happened') or 'No independently established observations yet.'),
+            'status': status, 'evidence': evidence, 'counterevidence': counter,
             'reasoning': concise(result.get('reasoning', '')),
+            'watch_next': concise(result.get('watch_next', '')),
             'checked_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
 
 
 def build_word(entries):
     from docx import Document
-    from docx.shared import Inches, Pt
+    from docx.shared import Inches
     doc = Document()
     sec = doc.sections[0]
     sec.top_margin = sec.bottom_margin = Inches(.75)
-    doc.add_heading('What was expected — what happened', 0)
-    doc.add_paragraph('Radar 2 | Informal historical foresight review | ' + dt.date.today().isoformat())
-    doc.add_paragraph('Scores are rough editorial estimates, not scientific measurements. Unresolved predictions receive no score.')
+    doc.add_heading('Foresight: signs of realization', 0)
+    doc.add_paragraph('Radar 2 | Evidence-based monitoring | ' + dt.date.today().isoformat())
+    doc.add_paragraph('Question: Is there credible evidence that foresight is happening, beginning to happen, or being contradicted? No numerical accuracy scores are used. A scenario is not a prediction. Evidence and remaining uncertainty are shown separately.')
+    doc.add_paragraph('Statuses: Realized · Materializing · Early signals · No clear evidence · Contradicted · Too early to tell · Insufficient evidence · Not yet investigated.')
     if not entries:
-        doc.add_paragraph('No source-linked predictions are available from Radar 1 yet.')
+        doc.add_paragraph('No source-linked foresight claims were extracted from the screened studies yet.')
     for n, item in enumerate(entries, 1):
-        doc.add_heading(f'{n}. {item.get("title") or "Prediction"}', level=2)
-        doc.add_paragraph('What was expected: ' + single_sentence(item.get('what_expected') or item['expected']))
-        doc.add_paragraph('What happened: ' + single_sentence(item.get('what_happened') or 'Not yet assessed.'))
-        doc.add_paragraph('Foresight score: ' + (f"{item['score']}/100 (rough estimate)" if item.get('score') is not None else 'Not scored — ' + item.get('status', 'not yet assessed').replace('_', ' ')))
-        p = doc.add_paragraph('Original: ' + item['source_url']); p.style = 'Caption'
-        for e in item.get('evidence', [])[:3]:
-            p = doc.add_paragraph('Outcome evidence: ' + e['url'] + (' (' + str(e.get('date')) + ')' if e.get('date') else ''))
-            p.style = 'Caption'
+        doc.add_heading(f'{n}. {item.get("title") or "Foresight claim"}', level=2)
+        doc.add_paragraph('Original foresight: ' + concise(item.get('what_expected') or item['expected']))
+        doc.add_paragraph('Published: ' + str(item.get('original_publication', 'Unknown')) + ' | Horizon: ' + str(item.get('target_year') or 'Not specified'))
+        doc.add_paragraph('Realization status: ' + STATUS_LABELS.get(item.get('status'), 'Not yet investigated'))
+        doc.add_paragraph('Observed developments: ' + concise(item.get('what_happened') or 'Not independently established.'))
+        doc.add_paragraph('Assessment and limits: ' + concise(item.get('reasoning') or 'No conclusive assessment available.'))
+        doc.add_paragraph('What to watch next: ' + concise(item.get('watch_next') or 'Further independently dated observations.'))
+        doc.add_paragraph('Original study: ' + item['source_url'])
+        for caption, field in [('Supporting evidence', 'evidence'), ('Counterevidence', 'counterevidence')]:
+            for e in item.get(field, [])[:5]:
+                doc.add_paragraph(f'{caption} ({e.get("date", "undated")}): {e.get("finding", "")} | {e.get("url", "")}')
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(REPORT)
 
@@ -198,6 +229,14 @@ def main():
     stored = read_json(OUTPUT, {'entries': {}})
     entries = stored.setdefault('entries', {})
     found = claims()
+    # Legacy numeric scores are not evidence of realization; migrate safely.
+    for entry in entries.values():
+        entry.pop('score', None)
+        if entry.get('status') == 'assessed':
+            entry['status'] = 'not_yet_assessed'
+            entry['what_happened'] = 'Legacy numerical judgment removed; awaiting evidence-based review.'
+            entry['reasoning'] = ''
+        entry.setdefault('counterevidence', [])
     key = os.getenv('OPENAI_API_KEY', '')
     deadline = time.monotonic() + max(0, args.minutes) * 60
     worked = 0
@@ -206,14 +245,14 @@ def main():
         if claim['id'] not in entries:
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
                                    'what_happened': 'No independently verified outcome yet.',
-                                   'score': None, 'status': 'not_yet_assessed', 'evidence': []}
+                                   'status': 'not_yet_assessed', 'evidence': [], 'counterevidence': []}
     # First cover unassessed claims; then revisit old/weak assessments.
     # Tie-breakers rotate fairly across source organisations and forecast years,
     # rather than allowing one publisher to fill the entire time budget.
     def priority(c):
         e = entries[c['id']]
         status = e.get('status')
-        tier = 0 if status in ('not_yet_assessed', 'insufficient_evidence') else 1
+        tier = 0 if status in ('not_yet_assessed', 'insufficient_evidence', 'too_early', 'no_clear_evidence') else 1
         return (tier, e.get('checked_utc', ''), c['id'])
     ordered = sorted(found, key=priority)
     groups = {}
@@ -226,9 +265,6 @@ def main():
             if groups[host]:
                 queue.append(groups[host].pop(0))
     for claim in queue:
-        if claim.get('target_year') is not None and str(claim['target_year']).isdigit() and int(claim['target_year']) > dt.date.today().year:
-            entries[claim['id']].update(status='too_early', score=None, what_happened='The forecast year has not arrived, so the outcome is not yet known.')
-            continue
         if args.offline or not key or worked >= args.max_claims or time.monotonic() >= deadline - 110:
             break
         try:
@@ -242,13 +278,13 @@ def main():
             assessed['research_attempts'] = previous['research_attempts']
             assessed['last_route'] = EVIDENCE_ROUTES[route][0]
             # Do not replace a supported previous outcome with an unsupported one.
-            if previous.get('status') == 'assessed' and assessed['status'] != 'assessed':
+            if previous.get('status') in ('realized', 'materializing', 'early_signals', 'contradicted') and assessed['status'] == 'insufficient_evidence':
                 previous['checked_utc'] = assessed['checked_utc']
                 previous['last_route'] = assessed['last_route']
             else:
                 entries[claim['id']] = assessed
             worked += 1
-            if entries[claim['id']]['status'] == 'assessed':
+            if entries[claim['id']]['status'] in ('realized', 'materializing', 'early_signals', 'contradicted'):
                 completed += 1
             print('Assessed:', claim['id'], entries[claim['id']]['status'], flush=True)
         except (urllib.error.URLError, ValueError, KeyError, json.JSONDecodeError, TimeoutError) as exc:
@@ -260,7 +296,7 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
-    print(f'Radar 2: {len(found)} source-anchored predictions, {worked} research attempts, {completed} scored outcomes this run; Word: {REPORT}', flush=True)
+    print(f'Radar 2: {len(found)} source-anchored predictions, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
     if not key and not args.offline:
         print('OPENAI_API_KEY missing: generated honest unassessed report; automatic outcome verification requires key.', flush=True)
 
