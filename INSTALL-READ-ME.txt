@@ -1,0 +1,15 @@
+WORLD RADAR - TWO RADARS, UPDATE FILES ONLY
+
+Contains Radar 1, Radar 2, their supporting Python scripts, both research workflows, and requirements.txt.
+No historical research data, findings, state JSON files, Word reports, Excel workbooks, or website files are included. This avoids overwriting accumulated research.
+
+Upload the contents directly to the root of your existing GitHub repository, preserving scripts/ and .github/workflows/ paths.
+
+Radar 1: scripts/radar.py + .github/workflows/update-radar.yml
+Radar 2: scripts/retrospective_radar.py + .github/workflows/update-outcomes.yml
+Supporting scripts: other scripts/*.py
+Python dependencies: requirements.txt
+
+The Radar 2 implementation is taken from the latest 16-route expanded rotation ZIP. Radar 1 comes from the latest three-file Radar 1 rotation fix.
+
+No live GitHub Action or live evidence investigation has been verified in this packaging step. OPENAI_API_KEY may be required for Radar 2.
