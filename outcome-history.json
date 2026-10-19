@@ -3,72 +3,24 @@
   "ideas": {
     "eu-working-age-2040": {
       "evidence": [],
-      "last_checked_utc": "2026-10-19T14:43:26+00:00"
+      "last_checked_utc": "2026-10-19T14:26:04+00:00"
     },
     "eu-employment-after-2025": {
-      "evidence": [
-        {
-          "date": "2026-06-03",
-          "headline": "India: Robust growth, but AI poses challenges for employment - Etudes Economiques – BNP Paribas",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVklRVUZ0MnRyMm01a2JobG9OWW5MZUR6S0kwX2ZITW5iclJ4ck5haDdvWHB0bmFVUndfMmgzUW02dXBhcWVYQXkySjAtdW1iTkJhRFJxM05fRDZaeEJSekZqOTFnSXMwQ0lRZzFVdjU1a0dURGdvLUlnek9xM0xWWUlYWTVYQzBtcXNxN3pWOXMzc1NZeGloZ3FadXFPaUs1aE1VSFQ5STI0TWxlcG5NOGFReEM2SnAx?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-06-09",
-          "headline": "From graduate squeeze to labour market slowdown: What happens next? - SEC Newgate UK",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNGlDSTI2MnN1ZEJ2SHFYYUZJV25naWViaWJPeENOVEdvRnhIWXB4NFdFWGRodmNUSUJhNkVtMTlpUnBQWTZxbC0teVp4T1k5eXd3OHYzUDFMaHptZ1MtRlNTYXNmYW1Pejk2TF92NTJ4aUNsZDhEbjJVaVdpdGtpR2ZRM3h4eTNYaVYxaFNCeFg5T05uRFhFWldaeUFKOFVE?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-07",
-          "headline": "French Unemployment Rises to 8.3% as Labour-Market Weakness Broadens - EU Today",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LZGVENzhxaXF1VHJzcUYxdzNvY0dfMXA0ekZTNVJqQzlIaTdPOWd0TF9kRnI2N1NoNWJ2X0FONHJzUUltOTMtS3pZSnVmYnFTbnQ4SkVJQmhDSktv?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-14",
-          "headline": "What low breakeven employment growth means for the US labour market - Oxford Economics",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVFZ6c0Y3aGxreWdMOXBZWFppZHgxbFlzVl9MVE4wU1hfQkNRZURUeWtLWm1CVHVWX2dzN0RjUjlZOWRoSzYyY3NiLVY4bW9wdklPLTVVTThDVGdEYWJEU09tMjhuTEdZbkhIcE1ONnhfd0RzRi1DTkFVQzFERXM0Vk5SQnBlYW1HVW91Y3VWbnhDcVVfX1ZkMlJscUFFZmNqbzJ3dElNc1NUQkJNN3c?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-18",
-          "headline": "UK labour market loses more momentum in second quarter - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUlRRR1AxZ0pxYnZKZVVFcEVPYU81WmVTX2s4VV80emhDeFZxUDVrM0Jlb2lvNUJPX1lEczE5VWQwdVVEQ2Q5SURObmJaeWYtM0dHUTc1a2dtXzhmQTlLSTI0THVYNVJ0MUpBaTIzZkFMS1dHMTNJY3NxWEpQeTJFdW5wMA?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-18",
-          "headline": "Sterling dips after data points to cooling UK labour market - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdFFRUVduVVVkcmlwelFRcGl5NFIxc3ZKRi1leHg0eXZUY3ROaUxCWWJFaFBYbGRELUc3MDV1THJrV0xpTmNGdVY2MnJkLWtNQ3Y3U1hMRzJWa042dFhyQjlYMWJvQUkwYmZzU2VMY1p1NGVKZVJ0MmZVNHAwRm1BQVVpVDUyanc1YmhQc2gxRnhkaFNBcE44Ni1UVGdJM25oMmNr?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-19",
-          "headline": "Hungary records Europe's sharpest employment decline as labour shortages reshape regional job markets, study.. - hrme.economictimes.indiatimes.com",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUnVIVU9TU3NwQ2hPVU5mQ2hzNlIxRmtYNl85ZnFsX2dBWVdRbTVTN1hNNnVveWFDYWJiZG9oVUxGUDUzWTFJWl9LdGtQSWpQajlvc3VjcHR6ejNWWkhXY2NNRnNZdlRlNzZaTUlheWVYVHB2aEhtSDBJYjNwVW1zc1hKNWxLVnNPTzNPcjVBOUhJUkZIRlFnbk9VZ0w0WWstNzkyMUx4NUpNbVhxRWIxZnRsQUk3aTlOS003Y1lCVU11SFBvNG1jRlRMSFNsbzlZVENybzFDaFYzVW5UOVkxY09SZHBMMzJudE9BSUxfb0VXeTFpZENHWEdiczJGNVRjeXl5UzZzMkhjZ2V0czBR0gGPAkFVX3lxTE5SdUhVT1NTc3BDaE9VTmZDaHM2UjFGa1g2XzlmcWxfZ0FZV1FtNVM3WE02dW95YUNhYmJkb2hVTEZQNTNZMUlaX0t0a1BJalBqOW9zdWNwdHp6M1ZaSFdjY01Gc1l2VGU3NlpNSWF5ZVhUcHZoSG1IMEliM3BVbXNzWEo1bEtWc09PM09yNUE5SElSRkhGUWduT1VnTDRZay03OTIxTHg1Sk1tWHFFYjFmdGxBSTdpOU5LTTdjWUJVTXVIUG80bWNGVExIU2xvOVlUQ3JvMUNoVjNVblQ5WTFjT1JkcEwzMm50T0FJTF9vRVd5MWlkQ0dYR2JzMkY1VGN5eXlTNnMySGNnZXRzMFE?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-08-20",
-          "headline": "US Labor Market Tracker – Weak hiring, fewer job seekers bring balance - Oxford Economics",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLVYzN3N1SE5DQnJmeTljUjVNcHZfazVZUFpIRjZJSWV1TDhmSm0yMmZBNkdpMkFhOXJNVFhQeDVaeTZnd1ZYRkktZ1NxMS1FQUI1VUdySE1Fd2FkWTBhb0pxT3NpSVZweXFaU2FSbTRPbWxnOFhoa242aHl1MjlnZ0IyUklLRHBIWmxsV2RKREszY3BXaUlUdXREM2pRWFRTd1hVSHRjWUR4b1pLbFE?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-10-02",
-          "headline": "September's jobs report misses: US added just 29,000 jobs, unemployment ticked up - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdGlTVU4zMkVqbk03bEVYXzJKc3hJTndLVWZjdFl0ZUFCTHg2cEgtYWNlWlRIOWgyUGRqME00b3Q4NThmREJkR0RsUURLQlpDbC1lQUxxTmVqSGlpTGd4VXB3Xy12bGtoX2FFdUI1aThGbm1Od0FpaGFIZ0tqbnlsTlF2SUZqZVJoVWM4dldsZW4xRm1ISWxzU2xBVTZjN2dmNjNBZzhXR24xNTNVRXNsejhmaWhYcXBqUFcxM2JtQWJreGtxRHUxTFA0cHFld3NPVHYwMXVzNXE?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        },
-        {
-          "date": "2026-10-02",
-          "headline": "US job growth undershoots expectations in September, but labor market remains stable - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQmltMmFiSHRscEo3QjJKNWdUYW5QM3NIVVM5OEhtOFMzekduZlEyTHA3amZSM3VvVmF1V3hZeWtLdDJ5TVdIQ0gzaVl6WlhBZm9hUDFDQXZKTF9RN3ZEWHlFZGZpMENOQUpoRVM4RXpaOFJCa2tZa1ZibmRhTzVObHJOTG1zaFdobmhrSDl3VXNJRmhiRzF1NnE5a1VIMmdPV2dnUE13M1dIbXpNdVE?oc=5",
-          "collected_utc": "2026-10-19T14:43:26+00:00"
-        }
-      ],
-      "last_checked_utc": "2026-10-19T14:43:26+00:00"
+      "evidence": [],
+      "last_checked_utc": "2026-10-19T14:26:04+00:00"
     }
+  },
+  "discoveries": [],
+  "query_log": {},
+  "query_cursor": 0,
+  "last_run_utc": "2026-10-19T14:50:03+00:00",
+  "last_scan": {
+    "attempted_queries": 0,
+    "successful_queries": 0,
+    "failed_queries": 0,
+    "new_items": 0,
+    "seconds": 0.0,
+    "ideas": 6,
+    "unverified_discoveries": 0
   }
 }
