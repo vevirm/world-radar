@@ -1,0 +1,23 @@
+WHAT WE ESTABLISHED
+The queued jobs shown are GitHub's automatic 'pages build and deployment' workflow,
+not either radar. GitHub says branch-based Pages publishing starts builds when
+changes are pushed to its publishing branch. The previous ZIP contained no Pages
+workflow; this replacement adds a controlled workflow so routine file uploads do
+not spawn a separate Pages build for every commit.
+
+ONE REQUIRED GITHUB SETTING (ONCE ONLY)
+Repository > Settings > Pages > Build and deployment > Source > GitHub Actions.
+This is essential: uploading the YAML alone cannot disable the OLD automatically
+created branch-based Pages workflow. After switching, cancel any OLD queued
+'pages build and deployment' runs in Actions.
+
+Then: Actions > Publish radar website (controlled) > Run workflow (once).
+The website will subsequently republish when index.html changes or Radar 1
+finishes successfully. Radar 2 updates its separate Word file in the repository.
+
+Radar 1 and Radar 2 are unchanged, share a concurrency group and remain twice a day.
+
+LIMITS
+We can establish which workflow was queued, not the precise reason GitHub's
+runner/deployment service delayed it. A custom Pages workflow reduces unnecessary
+builds; it cannot guarantee GitHub's runner service is always immediate.
