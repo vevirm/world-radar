@@ -3,7 +3,7 @@
   "scope": "EU and independent European foresight retrospective (rolling 15 years; prioritise 5–10 years old)",
   "minimum_age_months": 6,
   "earliest_publication_date": "2011-10-19",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-19",
   "findings": [
     {
       "id": "EUF-d25b681f22126b",
@@ -156,6 +156,57 @@
         "assessment": "No independently verified later evidence has been linked yet."
       },
       "checked_utc": "2026-10-16T09:20:49.422792+00:00",
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+    },
+    {
+      "id": "EUF-5e181c3e9845ad",
+      "date": "2018-12-31",
+      "date_precision": "year",
+      "title": "Skills forecast: trends and challenges to 2030",
+      "source": "Cedefop — European Centre for the Development of Vocational Training",
+      "actor_id": "cedefop",
+      "source_category": "EU institution / agency",
+      "relationship_to_eu": "EU institutional publication",
+      "authors": "",
+      "type": "Substantive foresight / futures study",
+      "topic": "Jobs and skills",
+      "finding": "Prospects for employment and labour force trends in Europe Key messages Employment growth is expected to be moderate over the medium term, slowing down considerably after 2025.",
+      "claim_extraction_version": 2,
+      "context": "original publisher explicitly confirms publication year",
+      "url": "https://www.cedefop.europa.eu/en/publications/3077",
+      "full_text_url": "https://www.cedefop.europa.eu/files/3077_en.pdf",
+      "quality": {
+        "quality_version": 2,
+        "word_count": 34085,
+        "distinct_terms": 2171,
+        "pdf_pages": 140,
+        "method_examples": [
+          "forecasting model",
+          "modelling",
+          "survey of"
+        ],
+        "future_signal_count": 33,
+        "citation_signals": {
+          "bibliography_detected": true,
+          "reference_years": 96,
+          "formal_citations": 77
+        },
+        "checks": {
+          "substantial_full_text": true,
+          "non_repetitive_analysis": true,
+          "meaningful_document_length": true,
+          "explicit_research_method": true,
+          "traceable_evidence_and_sources": true,
+          "actual_future_analysis": true,
+          "eu_europe_focus": true
+        },
+        "status": "automated research-substance screen passed"
+      },
+      "comparison": {
+        "verdict": "Not yet assessed",
+        "assessment": "No independently verified later evidence has been linked yet."
+      },
+      "checked_utc": "2026-10-19T08:35:11.263184+00:00",
       "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
     }
   ]

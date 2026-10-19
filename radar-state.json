@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "runs": 26,
-  "source_cursor": 3,
-  "verification_cursor": 7,
+  "runs": 27,
+  "source_cursor": 4,
+  "verification_cursor": 8,
   "archive_pages": {
     "ec": {
       "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
@@ -191,6 +191,24 @@
         "root": false,
         "depth": 2,
         "last_scan": "2026-10-16"
+      }
+    },
+    "ecb": {
+      "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html": {
+        "root": true,
+        "last_scan": "2026-10-19"
+      }
+    },
+    "eurofound": {
+      "https://www.eurofound.europa.eu/en/publications": {
+        "root": true,
+        "last_scan": "2026-10-19"
+      }
+    },
+    "ecfin": {
+      "https://economy-finance.ec.europa.eu/publications_en": {
+        "root": true,
+        "last_scan": "2026-10-19"
       }
     }
   },
@@ -469,12 +487,157 @@
       "retry_after": "2026-10-20",
       "reason": "Full study not retrieved; landing page only (publications.europa.eu: Unregistered publisher or off-site redirect)",
       "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2018": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.cedefop.europa.eu/en/publications/3077": {
+      "status": "accepted",
+      "last_checked": "2026-10-19",
+      "verifier_version": 3
+    },
+    "https://ec.europa.eu/assets/epsc/pages/espas/index.html": {
+      "status": "retrieval_failed",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-10-21",
+      "reason": "Full study not retrieved; landing page only (ec.europa.eu: 404 Client Error: (Not Found) for url: https://ec.europa.eu/epsc/sites/epsc/files/espas_re; ec.europa.eu: 404 Client Error: (Not Found) for url: https://ec.europa.eu/epsc/sites/epsc/files/esp",
+      "verifier_version": 3
+    },
+    "https://www.ecb.europa.eu/pub/pdf/other/ecb.projections201812_eurosystemstaff.en.pdf": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.eurofound.europa.eu/en/publications/all/future-manufacturing-europe": {
+      "status": "retrieval_failed",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-10-21",
+      "reason": "429 Client Error: Too Many Requests for url: https://www.eurofound.europa.eu/en/publications/all/future-manufacturing-europe",
+      "verifier_version": 3
+    },
+    "https://economy-finance.ec.europa.eu/publications/2018-ageing-report-economic-and-budgetary-projections-eu-member-states-2016-2070_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://commission.europa.eu/publications/white-paper-future-europe_en": {
+      "status": "retrieval_failed",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-10-21",
+      "reason": "Full study not retrieved; landing page only (Downloaded PDF does not corroborate requested report title; Downloaded PDF does not corroborate requested report title; Downloaded PDF does not corroborate requested report title)",
+      "verifier_version": 3
+    },
+    "https://publications.jrc.ec.europa.eu/repository/handle/JRC116711": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "publisher does not corroborate catalogue publication date",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-the": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://op.europa.eu/en/publication-detail/-/publication/aed45f8e-63e3-47fb-9440-a0a14370f243": {
+      "status": "retrieval_failed",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-10-21",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "verifier_version": 3
+    },
+    "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://economy-finance.ec.europa.eu/publications/2021-ageing-report-economic-and-budgetary-projections-eu-member-states-2019-2070_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://publications.jrc.ec.europa.eu/repository/handle/JRC118592": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/publications/trends-and-projections-in-europe/trends-and-projections-in-europe-2017": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.ecb.europa.eu/press/projections/html/ecb.projections202012_eurosystemstaff~bf8254a10a.en.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://joint-research-centre.ec.europa.eu/projects-and-activities/global-energy-and-climate-outlook/past-geco-editions/geco-2020_en": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Title not corroborated by original publisher landing page or full text",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-1": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.ecb.europa.eu/press/projections/html/ecb.projections202112_eurosystemstaff~32e481d712.en.html": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2016": {
+      "status": "retrieval_failed",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-10-21",
+      "reason": "404 Client Error: Not Found for url: https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2016",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2020": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
+    },
+    "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2021": {
+      "status": "rejected",
+      "last_checked": "2026-10-19",
+      "retry_after": "2026-12-03",
+      "reason": "Not a discoverable foresight/futures-oriented study",
+      "verifier_version": 3
     }
   },
   "queue": [],
-  "last_discovery_utc": "2026-10-19T05:15:24.442629+00:00",
-  "last_verification_utc": "2026-10-19T05:30:20.697563+00:00",
-  "scholarly_cursor": 12,
-  "last_scholarly_scan_utc": "2026-10-19T05:15:20.429580+00:00",
-  "scholarly_queries_completed": 504
+  "last_discovery_utc": "2026-10-19T08:21:19.208551+00:00",
+  "last_verification_utc": "2026-10-19T08:37:11.723034+00:00",
+  "scholarly_cursor": 36,
+  "last_scholarly_scan_utc": "2026-10-19T08:19:59.134365+00:00",
+  "scholarly_queries_completed": 528
 }

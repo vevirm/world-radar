@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T05:15:20.429580+00:00",
+  "updated_at": "2026-10-19T08:35:04.497144+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -1092,6 +1092,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1111/ecog.02223",
+      "title": "European human‐dominated landscapes provide ample space for the recolonization of large carnivore populations under future land change scenarios",
+      "abstract": "Europe is currently being re‐colonized by large carnivore species such as brown bear Ursus arctos , Eurasian lynx Lynx lynx and grey wolf Canis lupus . Approximately one‐third of Europe currently hosts at least one of these large carnivore species: they show permanent occurrence in some regions and sporadic occurrence without reproduction in others. We investigated potential future range expansions of these three large carnivores using three different analyses. First, we compared niche overlap between the historical, current permanent and current sporadic occurrences using n‐dimensional hypervolumes. Second, we identified the environmental variables that best explain differences between current sporadic and permanent occurrences through multi‐model inference. Third, we projected permanent occurrences into the future across a range of land‐use change scenarios. We also determined future refuges (i.e. sub‐optimal habitat in the environmental model, good habitat in the human disturbance model) and ecological traps (i.e. good habitat in the environmental model, sub‐optimal habitat in the human disturbance model). In the three large carnivore species, ecological niche overlap was higher between historical and current permanent occurrences than between historical and current sporadic occurrences, and we also found low ecological niche overlap between current permanent and sporadic occurrences. Between 20 and 24% (corresponding to 86 800 to 173 200 km 2 ) of the current sporadic occurrences could result in permanent settlement of large carnivores in the year 2040, while 17–24% (corresponding to 122 200 to 104 100 km 2 ) and 2.7–4.6% (corresponding to 11 800 to 28 400 km 2 ) of the current sporadic occurrences are likely to become refuges and ecological traps, respectively. Factors affecting range expansion are human activities, which were negatively related to permanent occurrences of all three species. In light of our results, human‐dominated European landscapes provide ample space for the future recolonization of large carnivores.",
+      "date": "2017-01-19",
+      "journal": "Ecography",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1111/ecog.02223",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1016/j.renene.2016.08.036",
       "title": "Potential impacts of climate change on European wind energy resource under the CMIP5 future climate projections",
       "abstract": "",
@@ -1104,7 +1121,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1121,7 +1138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1138,9 +1155,31 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.5194/bg-14-2387-2017",
+      "title": "The European forest sector: past and future carbon budget and fluxes under different management scenarios",
+      "abstract": "Abstract. The comprehensive analysis of carbon stocks and fluxes of managed European forests is a prerequisite to quantify their role in biomass production and climate change mitigation. We applied the Carbon Budget Model (CBM) to 26 European countries, parameterized with country information on the historical forest age structure, management practices, harvest regimes and the main natural disturbances. We modeled the C stocks for the five forest pools plus harvested wood products (HWPs) and the fluxes among these pools from 2000 to 2030. The aim is to quantify, using a consistent modeling framework for all 26 countries, the main C fluxes as affected by land-use changes, natural disturbances and forest management and to assess the impact of specific harvest and afforestation scenarios after 2012 on the mitigation potential of the EU forest sector. Substitution effects and the possible impacts of climate are not included in this analysis.  Results show that for the historical period from 2000 to 2012 the net primary productivity (NPP) of the forest pools at the EU level is on average equal to 639 Tg C yr−1. The losses are dominated by heterotrophic respiration (409 Tg C yr−1) and removals (110 Tg C yr−1), with direct fire emissions being only 1 Tg C yr−1, leading to a net carbon stock change (i.e., sink) of 110 Tg C yr−1. Fellings also transferred 28 Tg C yr−1 of harvest residues from biomass to dead organic matter pools. The average annual net sector exchange (NSE) of the forest system, i.e., the carbon stock changes in the forest pools including HWP, equals a sink of 122 Tg C yr−1 (i.e., about 19 % of the NPP) for the historical period, and in 2030 it reaches 126, 101 and 151 Tg C yr−1, assuming constant, increasing (+20 %) and decreasing (−20 %) scenarios, respectively, of both harvest and afforestation rates compared to the historical period. Under the constant harvest rate scenario, our findings show an incipient aging process of the forests existing in 1990: although NPP increases (+7 %), heterotrophic respiration increases at a greater rate (+13 %) and this leads to a decrease in the sink in the forest pools (−6 %) in 2030 compared to the historical period.  By comparing the evolution of the biomass as a function of the NPP (i.e., the turnover time) for each country, we highlighted at least three groups of countries and turnover times. This means that, contrary to the assumptions proposed by other authors, this relationship cannot be assumed as a constant for all the EU countries, but specific conditions, such as the harvest rate, the current age structure and the forest composition, may contribute to the country-specific evolution of biomass stocks.  The detailed picture of the C fluxes condensed in this study, and their evolution under different harvest scenarios, may represent both a benchmark for similar studies and a basis for broader analyses (e.g., including substitution effects of wood) on the mitigation potential of the EU forest sector.",
+      "date": "2017-05-11",
+      "journal": "Biogeosciences",
+      "publisher": "Copernicus GmbH",
+      "url": "https://doi.org/10.5194/bg-14-2387-2017",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:04.497114+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1080/13691457.2017.1320053",
@@ -1206,9 +1245,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:04.357854+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1175/jcli-d-16-0695.1",
@@ -1242,7 +1286,12 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:04.211837+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1080/03906701.2017.1378153",
@@ -1279,6 +1328,23 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.egypro.2017.09.705",
+      "title": "A Simulation and Mapping Tool for the Evaluation of Building Systems for Future Climate Scenarios on European Scale",
+      "abstract": "",
+      "date": "2017-10-31",
+      "journal": "Energy Procedia",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.egypro.2017.09.705",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1007/s40309-017-0120-x",
       "title": "Political and social trends in the future of global security. A meta-study on official perspectives in Europe and North America",
       "abstract": "",
@@ -1291,7 +1357,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-18T13:31:43.290240+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1308,7 +1374,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1325,8 +1391,30 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:03.856295+00:00",
+      "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.1553/giscience2017_01_s341",
+      "title": "Assessment of Future Heat Stress Risk in European Regions: Towards a better Integration of Socio-economic Scenarios",
+      "abstract": "",
+      "date": "2017-12-31",
+      "journal": "GI_Forum",
+      "publisher": "Osterreichische Akademie der Wissenschaften",
+      "url": "https://doi.org/10.1553/giscience2017_01_s341",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1342,7 +1430,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1376,7 +1464,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1410,7 +1498,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1427,7 +1515,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1444,7 +1532,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1461,7 +1549,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1478,7 +1566,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1512,8 +1600,30 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:03.636486+00:00",
+      "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.1016/j.enpol.2018.01.008",
+      "title": "Temporal restrictions on emissions trading and the implications for the carbon futures market: Lessons from the EU emissions trading scheme",
+      "abstract": "",
+      "date": "2018-04-30",
+      "journal": "Energy Policy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.enpol.2018.01.008",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1565,7 +1675,12 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:34:59.780807+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1186/s13717-018-0135-7",
@@ -1597,7 +1712,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1614,7 +1729,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1648,7 +1763,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1665,8 +1780,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2018.06.002",
+      "title": "Nowcasting and forecasting aquaponics by Google Trends in European countries",
+      "abstract": "",
+      "date": "2018-09-30",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2018.06.002",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -1682,9 +1814,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T00:10:19.715860+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:03.483123+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1186/s40309-018-0149-5",
@@ -1699,7 +1836,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1721,6 +1858,40 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.1016/j.energy.2018.08.070",
+      "title": "Cost optimal scenarios of a future highly renewable European electricity system: Exploring the influence of weather data, cost parameters and policy constraints",
+      "abstract": "",
+      "date": "2018-11-30",
+      "journal": "Energy",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.energy.2018.08.070",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.geoforum.2018.08.021",
+      "title": "A threat to climate-secure European futures? Exploring racial logics and climate-induced migration in US and EU climate security discourses",
+      "abstract": "",
+      "date": "2018-11-30",
+      "journal": "Geoforum",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.geoforum.2018.08.021",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
+      "claim_status": "No retrospective verdict"
+    },
+    {
       "doi": "10.1515/wrlae-2018-0024",
       "title": "Cooperation between the European Union and European Mini-States – Possible Scenarios for Future Closer and Enhanced Integration with the European Union",
       "abstract": "",
@@ -1733,7 +1904,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-16T13:31:20.068460+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1789,6 +1960,50 @@
       "claim_status": "No retrospective verdict"
     },
     {
+      "doi": "10.2478/iclr-2018-0042",
+      "title": "Euratom and Brexit: Could the United Kingdom Maintain One Foot in the European Union? Current Scenarios and Future Prospects of British withdrawal from the EAEC",
+      "abstract": "Abstract The paper focuses on the very topical issue of conclusion of the membership of the State, namely the United Kingdom, in European integration structures. The ques­tion of termination of membership in European Communities and European Union has not been tackled for a long time in the sources of European law. With the adop­tion of the Treaty of Lisbon (2009), the institute of 'unilateral' withdrawal was intro­duced. It´s worth to say that exit clause was intended as symbolic in its nature, in fact underlining the status of Member States as sovereign entities. That is why this institute is very general and the legal regulation of the exercise of withdrawal contains many gaps. One of them is a question of absolute or relative nature of exiting from integration structures. Today’s “exit clause” (Art. 50 of Treaty on European Union) regulates only the termination of membership in the European Union and is silent on the impact of such a step on membership in the European Atomic Energy Community. The presented paper offers an analysis of different variations of the interpretation and solution of the problem. It´s based on the independent solution thesis and therefore rejects an automa­tism approach. The paper and topic is important and original especially because in the multitude of scholarly writings devoted to Brexit questions, vast majority of them deals with institutional questions, the interpretation of Art. 50 of Treaty on European Union; the constitutional matters at national UK level; future relation between EU and UK and political bargaining behind such as all that. The question of impact on withdrawal on Euratom membership is somehow underrepresented. Present paper attempts to fill this gap and accelerate the scholarly debate on this matter globally, because all consequences of Brexit already have and will definitely give rise to more world-wide effects.",
+      "date": "2019-02-05",
+      "journal": "International and Comparative Law Review",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.2478/iclr-2018-0042",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "Metadata cross-check inconclusive · full text unverified",
+      "metadata_check_result": "inconclusive",
+      "metadata_error": "DOI publication year disagrees with indexed year",
+      "metadata_checked_at": "2026-10-19T08:35:03.100403+00:00",
+      "metadata_check_attempts": 1
+    },
+    {
+      "doi": "10.2478/jlecol-2018-0020",
+      "title": "Future Scenarios of European Forests",
+      "abstract": "Abstract Scenarios based on contrasting storylines can be used as a tool to explore the different ways in which the future may develop and their impacts on the sustainability of European forestry. These scenarios are neither predictions nor forecasts, but are used to create a consistent image of a future, and to help decision makers and other actors in making well informed choices. Each storyline assumes a distinctly different direction for future developments. Here we discuss characteristics of scenario studies forest large scale forest resources in general and focus on a few recent trends and their long term impact on European forests, as e.g. nature oriented management, carbon credits, and extra demand for bioenergy.",
+      "date": "2019-02-14",
+      "journal": "Journal of Landscape Ecology",
+      "publisher": "Walter de Gruyter GmbH",
+      "url": "https://doi.org/10.2478/jlecol-2018-0020",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "Metadata cross-check inconclusive · full text unverified",
+      "metadata_check_result": "inconclusive",
+      "metadata_error": "DOI publication year disagrees with indexed year",
+      "metadata_checked_at": "2026-10-19T08:35:02.813495+00:00",
+      "metadata_check_attempts": 1
+    },
+    {
       "doi": "10.1017/s1574019619000038",
       "title": "The Court of Justice and the Ban on Bulk Data Retention: Expansive Potential and Future Scenarios",
       "abstract": "Data retention saga – Interpretative strategy of the Court of Justice – Expansive potential of the principles set by the Court of Justice – ‘Reverse’ effet utile and conflict of competence – EU acts under threat – Domino effect on national security measures – Future scenarios – Twilight of the model of bulk data retention – Modulation of the ban on bulk data retention according to the vulnerability of data processing or depending on the prior unknowability of the threats – Divergence from the European Court of Human Rights – Legitimisation of bulk data retention ‘ Equo ne credite, Teucri! Quidquid id est, timeo Danaos et dona ferentes ’ — Virgil, Aeneid , II, 48-49",
@@ -1801,9 +2016,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:02.609535+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.5194/hess-23-1533-2019",
@@ -1818,9 +2038,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:02.309532+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.3390/w11081720",
@@ -1835,9 +2060,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:02.152744+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.9785/ag-2019-641806",
@@ -1871,7 +2101,12 @@
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
       "last_seen": "2026-10-16T12:57:05.351651+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:01.980702+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1186/s40309-019-0158-z",
@@ -1886,7 +2121,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1903,7 +2138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1920,7 +2155,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1954,9 +2189,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-17T22:13:53.189031+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:01.818487+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1016/j.enpol.2019.111063",
@@ -1971,7 +2211,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1988,7 +2228,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2005,8 +2245,25 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-18T19:23:54.762757+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1016/j.techfore.2017.10.024",
+      "title": "Aligning integrated assessment modelling with socio-technical transition insights: An application to low-carbon energy scenario analysis in Europe",
+      "abstract": "",
+      "date": "2020-02-29",
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "url": "https://doi.org/10.1016/j.techfore.2017.10.024",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
     {
@@ -2039,7 +2296,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2056,9 +2313,14 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:01.423497+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.3390/su12062517",
@@ -2107,7 +2369,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-18T05:05:09.946316+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2127,6 +2389,28 @@
       "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
+    },
+    {
+      "doi": "10.1108/fs-03-2020-0022",
+      "title": "Educating researchers in the metadiscipline of foresight",
+      "abstract": "Purpose The science of Foresight differs from the commonplace notion of what a science is because it is a metadiscipline – a logical type of science higher than the logical type of disciplinary sciences. It is practical, uses transdisciplinary processes that combine scientific disciplines and often examines counterfactuals in a scientific manner. This study aims to demonstrate that Foresight is a science, by presenting a number of best practices and potential innovations in higher education that could facilitate obtaining skills for Foresight science. Design/methodology/approach The methods of scientific education that have served us well in the past are inadequate for metadisciplinary sciences such as Foresight. The paper discusses what metadisciplinarity is, using a variety of examples, and distinguishes it from disciplines and ways of crossing disciplinary boundaries. Understanding the essential characteristics of Foresight as a metadisciplinary science leads to identifying current best practices and possible educational innovations in undergraduate education that will facilitate obtaining Foresight skills. Throughout the paper, examples are drawn from the education and professional experience of the author in the USA and Europe. Findings This paper demonstrates that Foresight is a science and presents a number of best practices and potential innovations in higher education that could facilitate obtaining skills for Foresight science. It identifies barriers to those innovations and approaches to overcome them. Originality/value This viewpoint paper clarifies the meaning of the terms interdisciplinarity, transdisciplinarity and metadisciplinarity to identify the essential characteristics of Foresight as a science. Then, it identifies and advocates needed changes in North American higher education to provide earlier and more efficient opportunities for Foresight researchers and users to obtain the skills they need.",
+      "date": "2020-06-05",
+      "journal": "foresight",
+      "publisher": "Emerald",
+      "url": "https://doi.org/10.1108/fs-03-2020-0022",
+      "indexes": [
+        "Crossref"
+      ],
+      "open_access_pdf": null,
+      "first_seen": "2026-10-19T08:19:59.134365+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
+      "status": "Abstract indexed — full study unverified",
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:01.296987+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.21564/2414-990x.149.199902",
@@ -2158,7 +2442,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2175,7 +2459,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2243,7 +2527,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-18T00:15:02.472288+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2260,7 +2544,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2296,7 +2580,12 @@
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
       "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:34:59.627894+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1093/eurpub/ckaa165.298",
@@ -2313,7 +2602,12 @@
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
       "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:01.089479+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1186/s40309-020-00167-8",
@@ -2328,7 +2622,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-18T21:49:01.022028+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2347,7 +2641,12 @@
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
       "last_seen": "2026-10-19T00:10:19.715860+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:00.607622+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1038/s41597-020-00763-0",
@@ -2364,7 +2663,12 @@
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
       "last_seen": "2026-10-18T13:31:43.290240+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:00.443105+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.3390/su122410540",
@@ -2396,7 +2700,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-18T09:31:43.843268+00:00",
+      "last_seen": "2026-10-19T08:19:59.134365+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2500,7 +2804,12 @@
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
       "last_seen": "2026-10-18T21:49:01.022028+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:34:59.999817+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1016/j.techfore.2021.120577",
@@ -2585,7 +2894,12 @@
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
       "last_seen": "2026-10-18T09:31:43.843268+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:00.266870+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1016/j.gloenvcha.2021.102321",
@@ -3044,7 +3358,12 @@
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
       "last_seen": "2026-10-16T13:31:20.068460+00:00",
       "status": "Abstract indexed — full study unverified",
-      "claim_status": "No retrospective verdict"
+      "claim_status": "No retrospective verdict",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "metadata_check_result": "passed",
+      "metadata_error": "",
+      "metadata_checked_at": "2026-10-19T08:35:00.135070+00:00",
+      "metadata_check_attempts": 1
     },
     {
       "doi": "10.1177/20319525221093487",
