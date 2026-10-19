@@ -1,31 +1,37 @@
-name: Accumulate post-June evidence and update Word report
+name: Radar 2 - outcomes and Word report
 on:
   workflow_dispatch:
   schedule:
-    - cron: '37 7 * * *'
+    # Twice daily, well after Radar 1 (01:17 and 13:17 UTC).
+    - cron: '17 4,16 * * *'
 permissions:
   contents: write
+# Identical concurrency group across BOTH workflows: never overlap.
 concurrency:
-  group: eu-foresight-outcomes
+  group: radar-shared-single-runner
   cancel-in-progress: false
 jobs:
   outcomes:
     runs-on: ubuntu-latest
-    timeout-minutes: 22
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install "python-docx>=1.1,<2"
-      - run: python -u scripts/outcome_discovery.py --minutes 19 --max-queries 500
-      - name: Save cumulative evidence and new Word report
+      - name: Independently research observed outcomes and generate Word
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RADAR_OUTCOME_MODEL: gpt-4.1-mini
+        run: python -u scripts/retrospective_radar.py --minutes 18 --max-claims 16
+      - name: Commit report and accumulated assessments
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add outcome-history.json outcome-ideas-auto.json stuff/FUTURE_IDEAS_WHAT_HAPPENED.docx
+          git add retrospective-results.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
-            git commit -m 'Accumulate retrospective evidence and refresh Word report'
+            git commit -m 'Radar 2: update retrospective Word report'
             git pull --rebase
             git push
           fi

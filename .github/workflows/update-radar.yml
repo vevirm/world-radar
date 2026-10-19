@@ -2,13 +2,13 @@ name: European Foresight Radar — Scholarly Discovery and Retrospective Verific
 on:
   workflow_dispatch:
   schedule:
-    # Four evenly spaced runs daily (UTC), with connected 15-minute discovery and 10-minute verification.
+    # Two runs daily (UTC), with connected 15-minute discovery and 10-minute verification.
     # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
-    - cron: '17 */6 * * *'
+    - cron: '17 1,13 * * *'
 permissions:
   contents: write
 concurrency:
-  group: eu-foresight-radar-db
+  group: radar-shared-single-runner
   cancel-in-progress: false
 jobs:
   update:
