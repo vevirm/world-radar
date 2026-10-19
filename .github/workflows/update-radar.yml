@@ -44,7 +44,7 @@ jobs:
             echo "::error::Discovery returned early after ${elapsed}s. Scanner did not honor the full 15-minute phase."
             exit 1
           fi
-      - name: Verify 2015+ studies for 10 full minutes
+      - name: Verify prioritised studies and scholarly metadata for 10 full minutes
         shell: bash
         run: |
           started=$(date +%s)
@@ -62,6 +62,8 @@ jobs:
           python -m json.tool scan-report.json > /dev/null
           python -m json.tool radar-state.json > /dev/null
           python -m json.tool research-leads.json > /dev/null
+          python -m json.tool priority-50.json > /dev/null
+          python -m json.tool priority-sources.json > /dev/null
           python scripts/check_data.py
       - name: Build continuously refreshed master Excel workbook
         run: python scripts/build_master_excel.py
@@ -69,7 +71,7 @@ jobs:
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add findings.json radar-state.json research-leads.json WORLD_RADAR_MASTER.xlsx
+          git add findings.json radar-state.json research-leads.json priority-50.json stuff/WORLD_RADAR_MASTER.xlsx
           if ! git diff --cached --quiet; then
             git commit -m 'European Foresight Radar: advance source rotation and verified findings'
             git push
