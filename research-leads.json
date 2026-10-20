@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20T07:02:53.712590+00:00",
+  "updated_at": "2026-10-20T11:06:08.603758+00:00",
   "status": "Journal leads from DOI/title and available abstracts; full text and forecasts unverified",
   "leads": [
     {
@@ -16,7 +16,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -33,7 +33,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -50,7 +50,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -67,7 +67,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:45:14.019050+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -84,7 +84,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:57:54.921563+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -101,7 +101,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -118,7 +118,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:18.187992+00:00",
-      "last_seen": "2026-10-20T06:58:15.956105+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -135,7 +135,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -152,7 +152,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -169,7 +169,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -186,7 +186,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -203,7 +203,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -220,7 +220,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -237,7 +237,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -254,7 +254,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -271,7 +271,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -288,7 +288,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:15.910032+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -305,7 +305,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -322,7 +322,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:57:54.921563+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -339,7 +339,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -356,7 +356,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:45:14.019050+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -373,7 +373,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:39.514356+00:00",
-      "last_seen": "2026-10-20T06:53:53.067255+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -390,7 +390,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -407,7 +407,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -424,7 +424,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -441,7 +441,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -458,7 +458,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -475,7 +475,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:45:14.019050+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -492,7 +492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:57:54.921563+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -509,7 +509,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -526,7 +526,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -543,7 +543,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:42:04.742043+00:00",
-      "last_seen": "2026-10-20T06:59:58.242953+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -560,7 +560,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -577,7 +577,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -594,7 +594,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:42:04.742043+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -611,7 +611,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -628,7 +628,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:42:21.450457+00:00",
-      "last_seen": "2026-10-20T06:51:55.626579+00:00",
+      "last_seen": "2026-10-20T11:06:07.019356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -645,7 +645,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -662,7 +662,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -679,7 +679,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:18.187992+00:00",
-      "last_seen": "2026-10-20T06:58:15.956105+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -696,7 +696,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -713,7 +713,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:43.467189+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -730,7 +730,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:02:05.986927+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -747,7 +747,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -764,7 +764,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -781,7 +781,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -798,7 +798,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:55.556971+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -815,7 +815,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T06:53:27.140618+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -832,7 +832,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:00:08.272571+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -849,7 +849,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -866,7 +866,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -883,7 +883,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T06:59:35.974308+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -900,7 +900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:08:10.555454+00:00",
-      "last_seen": "2026-10-20T07:02:29.227574+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -917,7 +917,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -951,7 +951,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -968,7 +968,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:55.556971+00:00",
-      "last_seen": "2026-10-20T06:56:08.403925+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -985,7 +985,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1002,7 +1002,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1019,7 +1019,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1036,7 +1036,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1053,7 +1053,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T06:59:35.974308+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1070,7 +1070,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1087,7 +1087,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1104,7 +1104,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1121,7 +1121,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:02:05.986927+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1138,7 +1138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1155,7 +1155,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1172,7 +1172,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T06:53:27.140618+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1189,7 +1189,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:16.039762+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1206,7 +1206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1223,7 +1223,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:16.039762+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1240,7 +1240,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1257,7 +1257,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T06:53:27.140618+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1274,7 +1274,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1291,7 +1291,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1308,7 +1308,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1325,7 +1325,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:16.039762+00:00",
-      "last_seen": "2026-10-20T06:56:26.337335+00:00",
+      "last_seen": "2026-10-20T11:02:01.830957+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1342,7 +1342,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1359,7 +1359,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1376,7 +1376,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1393,7 +1393,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T06:59:35.974308+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1410,7 +1410,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:04:56.952339+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1427,7 +1427,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1444,7 +1444,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1461,7 +1461,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:52:28.306596+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1478,7 +1478,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:58:16.610870+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1495,7 +1495,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:52:28.306596+00:00",
-      "last_seen": "2026-10-20T07:02:29.227574+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1512,7 +1512,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1529,7 +1529,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:55:57.917064+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1546,7 +1546,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:52:44.609176+00:00",
-      "last_seen": "2026-10-20T07:02:29.227574+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1563,7 +1563,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:15.303696+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1580,7 +1580,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:52:44.609176+00:00",
-      "last_seen": "2026-10-20T07:02:29.227574+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1597,7 +1597,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:32.502457+00:00",
-      "last_seen": "2026-10-20T06:57:54.921563+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1614,7 +1614,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:04:56.952339+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1631,7 +1631,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1648,7 +1648,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:43:59.603728+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1665,7 +1665,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:31.873996+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1682,7 +1682,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1699,7 +1699,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1716,7 +1716,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1733,7 +1733,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1750,7 +1750,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1767,7 +1767,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1784,7 +1784,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1801,7 +1801,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:52:28.306596+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1818,7 +1818,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1835,7 +1835,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1852,7 +1852,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1869,7 +1869,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1886,7 +1886,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1903,7 +1903,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:21.545336+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1920,7 +1920,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1937,7 +1937,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -1954,7 +1954,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T06:58:56.328787+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1971,7 +1971,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -1988,7 +1988,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2005,7 +2005,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2022,7 +2022,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:01:13.267610+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2039,7 +2039,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:01:13.267610+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2056,7 +2056,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2073,7 +2073,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:46:20.204509+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2090,7 +2090,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2107,7 +2107,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2124,7 +2124,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2141,7 +2141,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2158,7 +2158,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2175,7 +2175,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T06:58:56.328787+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2192,7 +2192,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2209,7 +2209,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2226,7 +2226,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2243,7 +2243,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2260,7 +2260,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2277,7 +2277,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2294,7 +2294,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2311,7 +2311,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2328,7 +2328,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2345,7 +2345,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2362,7 +2362,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2379,7 +2379,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T06:59:14.179335+00:00",
+      "last_seen": "2026-10-20T10:57:23.776387+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2396,7 +2396,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2413,7 +2413,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2430,7 +2430,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2447,7 +2447,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2464,7 +2464,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2481,7 +2481,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2498,7 +2498,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T10:57:05.627997+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2515,7 +2515,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T06:58:49.720214+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2532,7 +2532,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2549,7 +2549,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2566,7 +2566,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2583,7 +2583,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T06:59:14.179335+00:00",
+      "last_seen": "2026-10-20T10:57:23.776387+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2600,7 +2600,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2617,7 +2617,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T06:59:14.179335+00:00",
+      "last_seen": "2026-10-20T10:57:23.776387+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2634,7 +2634,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2651,7 +2651,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T11:08:39.771139+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2668,7 +2668,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2685,7 +2685,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T06:58:56.328787+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2702,7 +2702,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2719,7 +2719,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T17:41:12.313439+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2736,7 +2736,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2753,7 +2753,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2770,7 +2770,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:59:06.553899+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2787,7 +2787,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2804,7 +2804,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T06:58:56.328787+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2821,7 +2821,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2838,7 +2838,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:41:48.356919+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2855,7 +2855,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2872,7 +2872,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2889,7 +2889,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2906,7 +2906,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:03:00.402027+00:00",
-      "last_seen": "2026-10-20T06:56:59.304672+00:00",
+      "last_seen": "2026-10-20T11:03:16.943196+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2923,7 +2923,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -2940,7 +2940,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -2962,7 +2962,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T07:00:33.239456+00:00",
+      "last_seen": "2026-10-20T11:00:00.698572+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2979,7 +2979,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -2996,7 +2996,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3013,7 +3013,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3035,7 +3035,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3052,7 +3052,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3069,7 +3069,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3086,7 +3086,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3130,7 +3130,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3147,7 +3147,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T07:00:33.239456+00:00",
+      "last_seen": "2026-10-20T11:00:00.698572+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3164,7 +3164,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3198,7 +3198,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3232,7 +3232,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3249,7 +3249,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3266,7 +3266,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3288,7 +3288,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3322,7 +3322,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3339,7 +3339,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3356,7 +3356,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3373,7 +3373,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3390,7 +3390,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3424,7 +3424,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3441,7 +3441,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3458,7 +3458,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3475,7 +3475,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3492,7 +3492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3509,7 +3509,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3531,7 +3531,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T07:00:40.707106+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3548,7 +3548,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3565,7 +3565,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3582,7 +3582,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T09:29:47.756252+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3599,7 +3599,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3616,7 +3616,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3638,7 +3638,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3655,7 +3655,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3672,7 +3672,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:48:53.093399+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3689,7 +3689,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3706,7 +3706,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T07:00:33.239456+00:00",
+      "last_seen": "2026-10-20T11:03:16.943196+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3723,7 +3723,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3740,7 +3740,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3757,7 +3757,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3774,7 +3774,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3796,7 +3796,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3813,7 +3813,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3830,7 +3830,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3847,7 +3847,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3864,7 +3864,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3881,7 +3881,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:16.943196+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -3898,7 +3898,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3915,7 +3915,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -3932,7 +3932,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "Metadata cross-check inconclusive · full text unverified",
@@ -3954,7 +3954,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "Metadata cross-check inconclusive · full text unverified",
@@ -3976,7 +3976,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -3998,7 +3998,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:29.138144+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4020,7 +4020,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4042,7 +4042,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4059,7 +4059,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4081,7 +4081,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:48:53.093399+00:00",
-      "last_seen": "2026-10-20T07:00:29.138144+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4098,7 +4098,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4137,7 +4137,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4159,7 +4159,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4176,7 +4176,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4193,7 +4193,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:29.138144+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4210,7 +4210,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4227,7 +4227,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4249,7 +4249,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4283,7 +4283,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4300,7 +4300,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4317,7 +4317,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:50:57.054166+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T10:53:22.922667+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4334,7 +4334,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4351,7 +4351,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T06:57:11.930727+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4368,7 +4368,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4385,7 +4385,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4407,7 +4407,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4424,7 +4424,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4441,7 +4441,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4458,7 +4458,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:29.138144+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4475,7 +4475,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:00:16.213793+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4492,7 +4492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T08:19:59.134365+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4514,7 +4514,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:16.943196+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4531,7 +4531,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4548,7 +4548,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4587,7 +4587,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4604,7 +4604,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4621,7 +4621,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4638,7 +4638,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4655,7 +4655,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4672,7 +4672,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:00:24.585308+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4689,7 +4689,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:46.651397+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4723,7 +4723,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4767,7 +4767,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T20:59:36.504524+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4806,7 +4806,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-19T08:48:53.093399+00:00",
+      "last_seen": "2026-10-20T11:03:57.947725+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4828,7 +4828,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:00:40.707106+00:00",
+      "last_seen": "2026-10-20T11:04:16.157628+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4845,7 +4845,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T06:58:30.668922+00:00",
+      "last_seen": "2026-10-20T10:59:53.250396+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4879,7 +4879,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4896,7 +4896,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4930,7 +4930,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -4947,7 +4947,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -4964,7 +4964,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -4986,7 +4986,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:21.545336+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5003,7 +5003,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5020,7 +5020,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5037,7 +5037,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5054,7 +5054,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:09:15.889203+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:57:05.627997+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5071,7 +5071,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5088,7 +5088,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -5110,7 +5110,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5127,7 +5127,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5144,7 +5144,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5161,7 +5161,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:09:15.889203+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:57:05.627997+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5178,7 +5178,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5195,7 +5195,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5229,7 +5229,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5246,7 +5246,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5263,7 +5263,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5280,7 +5280,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5297,7 +5297,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5314,7 +5314,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T06:56:00.183950+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5331,7 +5331,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5365,7 +5365,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:50.101804+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5382,7 +5382,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T06:07:12.959880+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5399,7 +5399,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:00:27.663236+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5416,7 +5416,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:51.136284+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:54:05.334808+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5450,7 +5450,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5467,7 +5467,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5484,7 +5484,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5501,7 +5501,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5518,7 +5518,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5552,7 +5552,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5586,7 +5586,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5603,7 +5603,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5620,7 +5620,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:57:05.627997+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
@@ -5642,7 +5642,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5659,7 +5659,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5676,7 +5676,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5693,7 +5693,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5710,7 +5710,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5744,7 +5744,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5795,7 +5795,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T17:31:26.214242+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5812,7 +5812,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:51.136284+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:54:05.334808+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5846,7 +5846,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:09:15.889203+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:57:05.627997+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -5863,7 +5863,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:01:20.323238+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5880,7 +5880,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5897,7 +5897,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5914,7 +5914,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5931,7 +5931,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:04:47.375432+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5948,7 +5948,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T10:56:43.043364+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -5999,7 +5999,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6016,7 +6016,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T16:51:25.738986+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:04:38.531333+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6033,7 +6033,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6050,7 +6050,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:51.136284+00:00",
-      "last_seen": "2026-10-20T07:01:29.356301+00:00",
+      "last_seen": "2026-10-20T10:54:05.334808+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6067,7 +6067,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T16:40:08.005218+00:00",
-      "last_seen": "2026-10-20T07:00:59.049382+00:00",
+      "last_seen": "2026-10-20T11:00:36.810469+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6084,7 +6084,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:35.755506+00:00",
+      "last_seen": "2026-10-20T11:04:42.406595+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6101,7 +6101,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:01:14.559321+00:00",
+      "last_seen": "2026-10-20T11:00:57.777225+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6118,7 +6118,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6135,7 +6135,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6152,7 +6152,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6169,7 +6169,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6186,7 +6186,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:51:33.444620+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6203,7 +6203,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T19:07:23.044061+00:00",
-      "last_seen": "2026-10-20T07:00:17.705610+00:00",
+      "last_seen": "2026-10-20T11:03:27.886405+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6220,7 +6220,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6237,7 +6237,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6254,7 +6254,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6271,7 +6271,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6288,7 +6288,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6305,7 +6305,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6322,7 +6322,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6339,7 +6339,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6356,7 +6356,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6373,7 +6373,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6390,7 +6390,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:58.427864+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6407,7 +6407,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6424,7 +6424,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6441,7 +6441,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6458,7 +6458,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:24.174557+00:00",
+      "last_seen": "2026-10-20T11:01:43.847092+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6475,7 +6475,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6492,7 +6492,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6509,7 +6509,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:57:48.870657+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6526,7 +6526,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6543,7 +6543,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:51:33.444620+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6560,7 +6560,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6577,7 +6577,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6594,7 +6594,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6611,7 +6611,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6628,7 +6628,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6645,7 +6645,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6662,7 +6662,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6679,7 +6679,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:56.442359+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6696,7 +6696,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6713,7 +6713,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6730,7 +6730,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6747,7 +6747,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6764,7 +6764,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6781,7 +6781,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6815,7 +6815,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:51:33.444620+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6832,7 +6832,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:56.442359+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:01:43.847092+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6849,7 +6849,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:51:33.444620+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6866,7 +6866,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:49:23.339158+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:55.388888+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6900,7 +6900,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:59:56.442359+00:00",
-      "last_seen": "2026-10-20T06:59:19.400921+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -6917,7 +6917,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:50:00.068817+00:00",
-      "last_seen": "2026-10-20T06:59:31.371194+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6934,7 +6934,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6951,7 +6951,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6968,7 +6968,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -6985,7 +6985,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7002,7 +7002,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T06:56:30.835767+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7019,7 +7019,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7036,7 +7036,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:51:33.444620+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7053,7 +7053,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:50:00.068817+00:00",
-      "last_seen": "2026-10-20T06:59:31.371194+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7070,7 +7070,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7087,7 +7087,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7104,7 +7104,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T05:15:20.429580+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7121,7 +7121,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7138,7 +7138,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7155,7 +7155,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7172,7 +7172,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7189,7 +7189,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7206,7 +7206,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7223,7 +7223,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7240,7 +7240,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:24.360906+00:00",
+      "last_seen": "2026-10-20T10:58:29.733098+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7257,7 +7257,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T13:31:43.290240+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7274,7 +7274,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T14:23:50.948226+00:00",
-      "last_seen": "2026-10-20T07:01:55.398831+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7291,7 +7291,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T22:13:53.189031+00:00",
-      "last_seen": "2026-10-20T07:01:46.793627+00:00",
+      "last_seen": "2026-10-20T11:01:31.844104+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7325,7 +7325,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T09:31:43.843268+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:04:59.430299+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7359,7 +7359,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:50:00.068817+00:00",
-      "last_seen": "2026-10-20T06:59:31.371194+00:00",
+      "last_seen": "2026-10-20T10:58:22.464441+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7376,7 +7376,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:24.174557+00:00",
+      "last_seen": "2026-10-20T11:01:43.847092+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7393,7 +7393,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7427,7 +7427,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7444,7 +7444,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7461,7 +7461,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7495,7 +7495,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7512,7 +7512,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7529,7 +7529,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7546,7 +7546,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7563,7 +7563,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7580,7 +7580,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7597,7 +7597,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7614,7 +7614,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7631,7 +7631,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7648,7 +7648,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7665,7 +7665,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7682,7 +7682,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7699,7 +7699,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7716,7 +7716,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T06:58:15.956105+00:00",
+      "last_seen": "2026-10-20T11:06:07.019356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7733,7 +7733,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7750,7 +7750,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:14.726798+00:00",
-      "last_seen": "2026-10-20T07:00:14.098803+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7767,7 +7767,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7784,7 +7784,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7818,7 +7818,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7835,7 +7835,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7852,7 +7852,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7869,7 +7869,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7886,7 +7886,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7903,7 +7903,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7920,7 +7920,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7937,7 +7937,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7954,7 +7954,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -7971,7 +7971,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -7988,7 +7988,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:53.577774+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8005,7 +8005,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8022,7 +8022,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8039,7 +8039,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8056,7 +8056,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:14.726798+00:00",
-      "last_seen": "2026-10-20T07:00:14.098803+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8073,7 +8073,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:14.726798+00:00",
-      "last_seen": "2026-10-20T07:00:14.098803+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8090,7 +8090,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T07:00:14.098803+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8107,7 +8107,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8124,7 +8124,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:14.726798+00:00",
-      "last_seen": "2026-10-20T07:00:14.098803+00:00",
+      "last_seen": "2026-10-20T10:59:27.065400+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8141,7 +8141,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8175,7 +8175,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T05:05:09.946316+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8192,7 +8192,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T23:31:00.431722+00:00",
-      "last_seen": "2026-10-20T07:02:10.846262+00:00",
+      "last_seen": "2026-10-20T11:05:12.395972+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8209,7 +8209,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8226,7 +8226,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8243,7 +8243,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8260,7 +8260,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8277,7 +8277,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8294,7 +8294,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T06:53:53.067255+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8311,7 +8311,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8328,7 +8328,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:00:05.314402+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8345,7 +8345,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8362,7 +8362,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8396,7 +8396,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8413,7 +8413,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T06:59:53.093120+00:00",
+      "last_seen": "2026-10-20T10:55:24.642281+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8430,7 +8430,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8447,7 +8447,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T12:57:05.351651+00:00",
-      "last_seen": "2026-10-20T07:02:32.588971+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8464,7 +8464,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8481,7 +8481,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:00.910524+00:00",
-      "last_seen": "2026-10-20T06:59:38.801140+00:00",
+      "last_seen": "2026-10-20T10:58:35.935977+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8498,7 +8498,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-19T19:02:39.024146+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8532,7 +8532,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-19T19:02:30.447725+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8549,7 +8549,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T06:58:15.956105+00:00",
+      "last_seen": "2026-10-20T11:02:58.701356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8566,7 +8566,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:53:04.077877+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8583,7 +8583,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T19:23:54.762757+00:00",
-      "last_seen": "2026-10-20T07:02:53.712590+00:00",
+      "last_seen": "2026-10-20T10:59:11.510599+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8600,7 +8600,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8617,7 +8617,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8634,7 +8634,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T17:44:48.775919+00:00",
-      "last_seen": "2026-10-20T06:59:53.093120+00:00",
+      "last_seen": "2026-10-20T10:55:24.642281+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8651,7 +8651,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8668,7 +8668,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8685,7 +8685,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8702,7 +8702,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8719,7 +8719,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-16T13:31:20.068460+00:00",
-      "last_seen": "2026-10-20T06:59:44.842186+00:00",
+      "last_seen": "2026-10-20T10:58:41.663417+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8736,7 +8736,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8753,7 +8753,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8770,7 +8770,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8787,7 +8787,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-17T01:30:42.260492+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8804,7 +8804,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:57:10.430939+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8821,7 +8821,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T00:10:19.715860+00:00",
-      "last_seen": "2026-10-20T06:58:15.956105+00:00",
+      "last_seen": "2026-10-20T11:06:07.019356+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8838,7 +8838,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-19T18:56:08.507692+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8855,7 +8855,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T00:15:02.472288+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:35.676612+00:00",
       "status": "DOI/title indexed — abstract not in metadata",
       "claim_status": "No retrospective verdict"
     },
@@ -8872,7 +8872,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-18T21:49:01.022028+00:00",
-      "last_seen": "2026-10-20T07:02:37.184329+00:00",
+      "last_seen": "2026-10-20T11:05:43.039958+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     },
@@ -8889,7 +8889,7 @@
       ],
       "open_access_pdf": null,
       "first_seen": "2026-10-20T06:50:30.515230+00:00",
-      "last_seen": "2026-10-20T07:02:46.680110+00:00",
+      "last_seen": "2026-10-20T10:58:57.459612+00:00",
       "status": "Abstract indexed — full study unverified",
       "claim_status": "No retrospective verdict"
     }
