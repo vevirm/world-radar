@@ -2,8 +2,11 @@ name: Radar 2 - outcomes and Word report
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 'European Foresight Radar — Scholarly Discovery and Retrospective Verification'
+    types: [completed]
   schedule:
-    # Twice daily, after Radar 1 (01:17 and 13:17 UTC).
     - cron: '17 4,16 * * *'
 
 permissions:
@@ -16,33 +19,27 @@ concurrency:
 
 jobs:
   outcomes:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 27
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Install Word report dependency
         run: pip install "python-docx>=1.1,<2"
 
-      - name: Start 25-minute Radar 2 clock
-        shell: bash
-        run: echo "RADAR_CLOCK_START=$(date +%s)" >> "$GITHUB_ENV"
-
-      - name: Research Scanner 1 leads (up to 23 minutes)
-        shell: bash
+      - name: Scanner 1 to Scanner 2 (free OpenAlex follow-up + Word)
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          RADAR_OUTCOME_MODEL: gpt-4.1-mini
+          MAILTO: ${{ secrets.MAILTO }}
         run: |
-          # Reserve time for report commit and final 25-minute clock alignment.
-          echo "Radar 2 research budget: 23 minutes; total job target: ~25 minutes."
-          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-            echo "::error::OPENAI_API_KEY missing. Add it under repository Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-          python -u scripts/retrospective_radar.py --minutes 23 --max-claims 100
+          python -u scripts/retrospective_radar.py --provider free --minutes 4 --max-claims 100
+          python -m json.tool retrospective-results.json > /dev/null
+          python -m json.tool outlook-summary.json > /dev/null
+          test -s stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
 
       - name: Commit report and accumulated assessments
         run: |
@@ -53,20 +50,4 @@ jobs:
             git commit -m 'Radar 2: update retrospective Word report'
             git pull --rebase
             git push
-          fi
-      - name: Finish Radar 2 at approximately 25 minutes
-        if: always() && !cancelled()
-        shell: bash
-        run: |
-          if [[ -z "${RADAR_CLOCK_START:-}" ]]; then
-            echo "Clock was not started; cannot enforce target runtime."
-            exit 1
-          fi
-          elapsed=$(( $(date +%s) - RADAR_CLOCK_START ))
-          if (( elapsed < 1500 )); then
-            remaining=$(( 1500 - elapsed ))
-            echo "Radar 2 elapsed ${elapsed}s; waiting ${remaining}s to complete 25-minute window."
-            sleep "$remaining"
-          else
-            echo "Radar 2 already ran ${elapsed}s (past 25-minute target)."
           fi
