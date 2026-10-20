@@ -36,7 +36,7 @@ jobs:
         env:
           MAILTO: ${{ secrets.MAILTO }}
         run: |
-          python -u scripts/retrospective_radar.py --provider free --minutes 4 --max-claims 100
+          python -u scripts/retrospective_radar.py --provider free --minutes 23 --max-claims 515
           python -m json.tool retrospective-results.json > /dev/null
           python -m json.tool outlook-summary.json > /dev/null
           test -s stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
