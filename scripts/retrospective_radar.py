@@ -152,6 +152,9 @@ def free_follow_up(claim, timeout=12):
     email = os.getenv('MAILTO', '').strip() or os.getenv('OPENALEX_EMAIL', '').strip()
     if email and '@' in email:
         params['mailto'] = email
+    api_key = os.getenv('OPENALEX_API_KEY', '').strip()
+    if api_key:
+        params['api_key'] = api_key
     url = 'https://api.openalex.org/works?' + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={
         'User-Agent': f'WorldRadar/3.0 (mailto:{email})' if '@' in email else 'WorldRadar/3.0'})
@@ -165,6 +168,8 @@ def free_follow_up(claim, timeout=12):
         fallback = {'search': ' '.join(title.split()[:8]), 'per_page': 10}
         if email and '@' in email:
             fallback['mailto'] = email
+        if api_key:
+            fallback['api_key'] = api_key
         req = urllib.request.Request('https://api.openalex.org/works?' + urllib.parse.urlencode(fallback),
                                      headers={'User-Agent': 'WorldRadar/3.0'})
         with urllib.request.urlopen(req, timeout=timeout) as response:
@@ -325,11 +330,12 @@ def main():
     key = os.getenv('OPENAI_API_KEY', '')
     if args.provider == 'openai' and not args.offline and not key:
         raise SystemExit('OpenAI provider explicitly selected but OPENAI_API_KEY is missing.')
-    print(f'Radar 2 start: {len(found)} research leads; provider={args.provider}', flush=True)
+    print(f'Radar 2 start: {len(found)} research leads; provider={args.provider}; OpenAlex API key configured={bool(os.getenv("OPENALEX_API_KEY", "").strip())}', flush=True)
     deadline = time.monotonic() + max(0, args.minutes) * 60
     worked = 0
     completed = 0
     failed = 0
+    throttled = False
     for claim in found:
         if claim['id'] not in entries:
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
@@ -378,6 +384,12 @@ def main():
                 previous['what_happened'] = ('Found ' + str(len(related)) + ' potentially related later publications; real-world outcome remains unverified.' if related else 'No sufficiently similar later publications found in this search; real-world outcome remains unverified.')
                 worked += 1
                 print('Checked:', claim['id'], 'follow-up publications:', len(related), flush=True)
+                # Successful free-provider results must also reach the checkpoint block.
+                if worked % 20 == 0:
+                    OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+                    print(f'Progress: {worked}/{min(len(found), args.max_claims)} attempts, {failed} failed', flush=True)
+                # Avoid exhausting the account's requests-per-second allowance.
+                time.sleep(0.45)
                 continue
             result = retrieve_assessment(claim, key, route=route)
             assessed = normalize(claim, result)
@@ -401,6 +413,10 @@ def main():
             failed += 1
             entries[claim['id']]['last_error'] = str(exc)[:250]
             worked += 1
+            if isinstance(exc, urllib.error.HTTPError) and exc.code == 429:
+                throttled = True
+                print('OPENALEX RATE LIMIT: stopping early, preserving results; check account quota and rerun after reset.', flush=True)
+                break
         if worked and worked % 20 == 0:
             OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
             print(f'Progress: {worked}/{min(len(found), args.max_claims)} attempts, {failed} failed', flush=True)
@@ -408,8 +424,12 @@ def main():
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
     print(f'Radar 2: {len(found)} source records, {worked} attempts, {failed} failures, {sum(bool(x.get("checked_utc")) for x in entries.values())} successfully checked total, {completed} new evidence-backed classifications; Word: {REPORT}', flush=True)
+    summary_file = os.getenv('GITHUB_STEP_SUMMARY')
+    if summary_file:
+        with open(summary_file, 'a', encoding='utf-8') as summary:
+            summary.write(f'## Radar 2 follow-up\n\n- Leads: {len(found)}\n- Attempts this run: {worked}\n- Failed this run: {failed}\n- Successful checks saved: {sum(bool(x.get("checked_utc")) for x in entries.values())}\n- OpenAlex throttled: {throttled}\n- Word report generated: {REPORT}\n')
     if not args.offline and (worked == 0 or worked == failed) and found:
-        raise SystemExit('RADAR 2 FAILED: no research attempted; review logs and time budget.')
+        raise SystemExit('RADAR 2 FAILED: no successful research checks; Word report preserved. Review API key/quota logs.')
 
 
 if __name__ == '__main__':

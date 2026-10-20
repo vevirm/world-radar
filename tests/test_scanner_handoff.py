@@ -43,3 +43,20 @@ class HandoffTests(TestCase):
                     radar.build_word([])
                     self.assertGreater((Path(td) / 'report.docx').stat().st_size, 10000)
                     self.assertTrue((Path(td) / 'outlook.json').exists())
+
+    def test_openalex_key_is_attached_to_follow_up_request(self):
+        from urllib.parse import parse_qs, urlparse
+        claim = {'title': 'Long-term projections of European coastal flooding and sea level',
+                 'source_url': 'https://doi.org/10.1234/original', 'original_publication': '2011-01-01'}
+        captured = []
+        class Reply:
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self): return b'{"results": []}'
+        def fake_open(req, timeout=12):
+            captured.append(parse_qs(urlparse(req.full_url).query))
+            return Reply()
+        with patch.dict(radar.os.environ, {'OPENALEX_API_KEY': 'dummy-test-key'}):
+            with patch.object(radar.urllib.request, 'urlopen', side_effect=fake_open):
+                radar.free_follow_up(claim)
+        self.assertEqual(captured[0]['api_key'], ['dummy-test-key'])
