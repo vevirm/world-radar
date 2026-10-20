@@ -32,21 +32,34 @@ jobs:
       - name: Install Word report dependency
         run: pip install "python-docx>=1.1,<2"
 
-      - name: Scanner 2 (forecast screening + authenticated scholarly follow-up + evidence report)
+      - name: Scanner 2 (source-reviewed outcome audit + Word; no false matches)
         env:
           MAILTO: ${{ secrets.MAILTO }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
-          python -u scripts/retrospective_radar.py --provider free --minutes 23 --max-claims 515
+          python -u scripts/retrospective_radar.py --provider evidence --minutes 23 --max-claims 515
           python -m json.tool retrospective-results.json > /dev/null
           python -m json.tool outlook-summary.json > /dev/null
           test -s stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          python -m json.tool scanner2-audit.json > /dev/null
+          python -m json.tool outcome-review-queue.json > /dev/null
+          python - <<'PYCODE'
+          import json, os
+          a = json.load(open("scanner2-audit.json"))
+          if not a["outcome_verification_complete"]:
+              print("::warning title=Outcome verification incomplete::No source-verified Expected vs Happened cases. This run generated a research queue and Word evidence audit, NOT a completed outcome analysis.")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n## Verification gate\n")
+              f.write(f"- Source-verified forecast outcomes: **{a['reviewed_verdicts']}**\n")
+              f.write(f"- Forecast passages pending original-text review: **{a['candidate_forecasts']}**\n")
+              f.write("- **Incomplete outcome research** until source-verified comparisons exist.\n" if not a["outcome_verification_complete"] else "- Source-verified comparisons available.\n")
+          PYCODE
 
       - name: Commit report and accumulated assessments
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json outlook-summary.json outcome-observations.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          git add retrospective-results.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: update retrospective Word report'
             git pull --rebase
