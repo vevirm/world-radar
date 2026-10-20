@@ -53,18 +53,6 @@ def claims():
                            'publisher': lead.get('publisher') or lead.get('journal') or '',
                            'lead_status': lead.get('status') or 'Discovered lead',
                            'is_lead': True}
-    # Include vetted full-text findings even if their URLs are not in the lead index.
-    for finding in read_json(ROOT / 'findings.json', {}).get('findings', []):
-        url = concise(finding.get('url') or finding.get('full_text_url'))
-        if not url:
-            continue
-        identifier = 'lead-' + hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16]
-        if identifier not in out:
-            out[identifier] = {'id': identifier, 'expected': concise(finding.get('finding') or finding.get('title')),
-                               'source_url': url, 'title': finding.get('title', ''),
-                               'target_year': None, 'original_publication': finding.get('date') or 'Unknown',
-                               'topic': finding.get('topic') or 'Foresight research',
-                               'publisher': finding.get('source') or '', 'lead_status': 'Full-text screened', 'is_lead': True}
     return list(out.values())
 
 

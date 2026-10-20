@@ -21,7 +21,6 @@ def safe(value):
 
 def create():
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    findings = load('findings.json', 'findings', [])
     priorities = load('priority-50.json', 'items', [])
     leads = load('research-leads.json', 'leads', [])
     actors = load('actors.json', 'actors', [])
@@ -40,10 +39,6 @@ def create():
         url = lead.get('url', '')
         if url:
             merged[url.rstrip('/').lower()] = dict(title=lead.get('title',''), type='Research lead', date=lead.get('date',''), publisher=lead.get('publisher') or lead.get('journal',''), status=lead.get('status','Full study unverified'), detail=lead.get('abstract',''),url=url)
-    for finding in findings:
-        url = finding.get('url','')
-        if url:
-            merged[url.rstrip('/').lower()] = dict(title=finding.get('title',''), type='Verified finding', date=finding.get('date',''), publisher=finding.get('source',''),status='Quality screen passed',detail=finding.get('finding',''),url=url)
     items = sorted(merged.values(),key=lambda x:(x['date'],x['title']),reverse=True)
     wb = xlsxwriter.Workbook(str(OUT), {'strings_to_urls':False})
     header = wb.add_format({'bold':True,'font_color':'#FFFFFF','bg_color':'#16324F','text_wrap':True,'valign':'vcenter'})
@@ -64,14 +59,12 @@ def create():
     tab('Top 50 Priorities', priorities)
     tab('Retrospective Checks', [{'rank': x['review_priority'], 'title': x['title'], 'publication': x['date'], 'target_year': x.get('target_year',''), 'type': x.get('method',''), 'original_claim': '', 'exact_original_quote': '', 'source_url': x['url'], 'actual_observation': '', 'later_evidence_url': '', 'verdict': 'Not evaluated', 'confidence': '', 'explanation': ''} for x in priorities])
     tab('Everything Collected',items)
-    tab('Verified Findings',findings)
-    tab('Research Leads',leads)
     tab('Metadata Checks', [x for x in leads if x.get('metadata_checked_at')])
     tab('Scanned Documents',[{'url':url,**obj} for url,obj in state.items()])
     tab('Verification Queue',queue)
     tab('Research Sources',actors)
     tab('Assessments',assessments)
     wb.close()
-    print(f'Built {OUT.name}: {len(items)} unique URLs, {len(findings)} findings, {len(leads)} leads')
+    print(f'Built {OUT.name}: {len(items)} unique URLs, {len(leads)} leads')
 
 if __name__=='__main__': create()
