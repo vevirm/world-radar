@@ -32,9 +32,10 @@ jobs:
       - name: Install Word report dependency
         run: pip install "python-docx>=1.1,<2"
 
-      - name: Scanner 1 to Scanner 2 (free OpenAlex follow-up + Word)
+      - name: Scanner 1 to Scanner 2 (authenticated OpenAlex follow-up + Word)
         env:
           MAILTO: ${{ secrets.MAILTO }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           python -u scripts/retrospective_radar.py --provider free --minutes 23 --max-claims 515
           python -m json.tool retrospective-results.json > /dev/null
