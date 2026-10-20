@@ -1,11 +1,12 @@
 {
-  "generated_utc": "2026-10-20 09:24 UTC",
+  "generated_utc": "2026-10-20 12:17 UTC",
   "headline": "EU foresight — short outlook",
   "verdict": "European foresight research is being collected, but independently sourced follow-up developments have not yet been established.",
   "study_count": 515,
   "lead_count": 515,
   "tracked_count": 515,
   "checked_count": 0,
+  "follow_up_count": 0,
   "evidence_backed_count": 0,
   "topic_counts": {
     "European Journal of Futures Research": 37,
@@ -67,5 +68,5 @@
     }
   ],
   "interpretation": "This is a small overview of the research being monitored and independently observed changes, not a claim that every research lead made a testable prediction.",
-  "next_step": "Watch for new observations supported by dated external sources. Scanner 2 revisits the oldest unexamined leads first."
+  "next_step": "Scanner 2 checked 0 leads; 0 have possible later research links. These are research trails, not observed real-world outcomes."
 }

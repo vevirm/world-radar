@@ -133,6 +133,52 @@ Rules: 'realized' requires clear completed outcome with direct evidence; 'materi
     return json.loads(match.group())
 
 
+def free_follow_up(claim, timeout=12):
+    """Look for subsequent scholarship in OpenAlex (free; not outcome verification).
+
+    A discovered paper is a research follow-up, NOT evidence a scenario happened.
+    """
+    import difflib
+    original = claim.get('original_publication', '')[:4]
+    year = int(original) if original.isdigit() else 0
+    if not year:
+        return []
+    title = concise(claim['title'])[:150]
+    if not title:
+        return []
+    params = {'search': title, 'per-page': 12, 'filter': f'from_publication_date:{year + 1}-01-01',
+              'select': 'id,doi,title,publication_year,primary_location'}
+    email = os.getenv('MAILTO', '').strip() or os.getenv('OPENALEX_EMAIL', '').strip()
+    if email and '@' in email:
+        params['mailto'] = email
+    req = urllib.request.Request('https://api.openalex.org/works?' + urllib.parse.urlencode(params),
+                                 headers={'User-Agent': 'WorldRadar/2.0 (scholarly follow-up)'})
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        items = json.load(response).get('results', [])
+    stopwords = {'study','research','scenarios','europe','european','future','towards','policy','analysis','perspective','development','modelling'}
+    def tokens(t):
+        return {w for w in re.findall(r'[a-z]{4,}', t.lower()) if w not in stopwords}
+    original_tokens = tokens(title)
+    found = []
+    for work in items:
+        wtitle = concise(work.get('title'))
+        if not wtitle or wtitle.lower() == title.lower():
+            continue
+        terms = tokens(wtitle)
+        overlap = len(terms & original_tokens)
+        # Conservative relatedness: do not treat generic papers as follow-ups.
+        if overlap < 3 or overlap / max(1, min(len(terms), len(original_tokens))) < .35:
+            continue
+        link = work.get('doi') or work.get('id')
+        if not link or not link.startswith('https://') or link.rstrip('/') == claim['source_url'].rstrip('/'):
+            continue
+        found.append({'title': wtitle, 'url': link, 'year': work.get('publication_year'),
+                      'note': 'Potentially related later publication; outcome not independently verified'})
+        if len(found) >= 3:
+            break
+    return found
+
+
 def single_sentence(value):
     value = concise(value)
     if not value:
@@ -202,7 +248,7 @@ def build_word(entries):
     doc.add_paragraph(outlook['verdict'])
     doc.add_paragraph(outlook['interpretation'])
     doc.add_heading('What the scanners are following', level=1)
-    doc.add_paragraph(f"Scanner 1 has {outlook['lead_count']} indexed research leads. Scanner 2 has researched {outlook['checked_count']} of these leads with follow-up evidence; {outlook['evidence_backed_count']} have cited later observations. The numbers describe the collection, not EU foresight accuracy.")
+    doc.add_paragraph(f"Scanner 1 has {outlook['lead_count']} indexed research leads. Scanner 2 has checked {outlook['checked_count']} leads; {outlook['follow_up_count']} have potentially related later publications. Independently verified outcomes: {outlook['evidence_backed_count']}. Later research papers are not proof that a scenario came true.")
     for theme in outlook['themes'][:5]:
         doc.add_paragraph(f"• {theme['topic']}: {theme['study_count']} research leads")
     doc.add_heading('What has been happening', level=1)
@@ -214,6 +260,15 @@ def build_word(entries):
             if source: doc.add_paragraph('  Evidence: ' + source)
     else:
         doc.add_paragraph('No independently sourced later developments are recorded yet. Scanner 2 will add short evidence-linked observations as research completes. This report does not invent updates.')
+    doc.add_heading('Later research found (not confirmed outcomes)', level=1)
+    followups = [e for e in entries if e.get('follow_up_publications')]
+    if followups:
+        for e in sorted(followups, key=lambda x:x.get('checked_utc',''), reverse=True)[:12]:
+            doc.add_paragraph('Original: ' + concise(e.get('title'))[:110])
+            for w in e['follow_up_publications'][:2]:
+                doc.add_paragraph(f"• {w['year']}: {w['title'][:150]} — {w['url']}")
+    else:
+        doc.add_paragraph('No later scholarly follow-ups catalogued so far.')
     doc.add_heading('What to watch next', level=1)
     doc.add_paragraph(outlook['next_step'])
     doc.add_paragraph('Method: Scanner 1 leads are included without the old full-study acceptance gate. Indexed metadata is not proof of a full-text review. Scenarios are possible futures, not predictions. For the full source list, see WORLD_RADAR_MASTER.xlsx.')
@@ -226,6 +281,7 @@ def main():
     ap.add_argument('--minutes', type=float, default=18)
     ap.add_argument('--max-claims', type=int, default=16)
     ap.add_argument('--offline', action='store_true')
+    ap.add_argument('--provider', choices=['free', 'openai'], default='free')
     args = ap.parse_args()
     stored = read_json(OUTPUT, {'entries': {}})
     entries = stored.setdefault('entries', {})
@@ -239,9 +295,9 @@ def main():
             entry['reasoning'] = ''
         entry.setdefault('counterevidence', [])
     key = os.getenv('OPENAI_API_KEY', '')
-    if not args.offline and not key:
-        raise SystemExit('RADAR 2 FAILED: OPENAI_API_KEY is missing. Set the GitHub Actions repository secret; no leads were researched.')
-    print(f'Radar 2 start: {len(found)} available research leads; AI credential present: {bool(key)}', flush=True)
+    if args.provider == 'openai' and not args.offline and not key:
+        raise SystemExit('OpenAI provider explicitly selected but OPENAI_API_KEY is missing.')
+    print(f'Radar 2 start: {len(found)} research leads; provider={args.provider}', flush=True)
     deadline = time.monotonic() + max(0, args.minutes) * 60
     worked = 0
     completed = 0
@@ -274,14 +330,25 @@ def main():
             if groups[host]:
                 queue.append(groups[host].pop(0))
     for claim in queue:
-        if args.offline or not key or worked >= args.max_claims or time.monotonic() >= deadline - 110:
+        if args.offline or worked >= args.max_claims or time.monotonic() >= deadline - 8:
             break
         try:
             previous = entries[claim['id']]
             route = route_for(previous)
-            print('Research route:', EVIDENCE_ROUTES[route][0], 'for', claim['id'], flush=True)
+            print('Research:', args.provider, claim['id'], flush=True)
             # Increment even on errors so next scan explores different sources.
             previous['research_attempts'] = int(previous.get('research_attempts', 0)) + 1
+            if args.provider == 'free':
+                related = free_follow_up(claim)
+                previous['follow_up_publications'] = related
+                previous['checked_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+                previous['last_route'] = 'OpenAlex later-publication discovery'
+                if previous.get('status') == 'not_yet_assessed':
+                    previous['status'] = 'insufficient_evidence'
+                previous['what_happened'] = ('Found ' + str(len(related)) + ' potentially related later publications; real-world outcome remains unverified.' if related else 'No sufficiently similar later publications found in this search; real-world outcome remains unverified.')
+                worked += 1
+                print('Checked:', claim['id'], 'follow-up publications:', len(related), flush=True)
+                continue
             result = retrieve_assessment(claim, key, route=route)
             assessed = normalize(claim, result)
             assessed['research_attempts'] = previous['research_attempts']
@@ -306,8 +373,8 @@ def main():
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
     print(f'Radar 2: {len(found)} source records, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
-    if not args.offline and worked == 0:
-        raise SystemExit('RADAR 2 FAILED: no research was attempted despite having an API key. Check scanner logs.')
+    if not args.offline and worked == 0 and found:
+        raise SystemExit('RADAR 2 FAILED: no research attempted; review logs and time budget.')
 
 
 if __name__ == '__main__':
