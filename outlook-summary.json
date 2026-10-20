@@ -1,14 +1,67 @@
 {
-  "generated_utc": "2026-10-20 14:52 UTC",
+  "generated_utc": "2026-10-20 15:19 UTC",
   "headline": "EU foresight — evidence review",
-  "verdict": "European foresight research is being collected, but independently sourced follow-up developments have not yet been established.",
+  "verdict": "515 European research leads compared with later scholarship; 97 have related papers, 8 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
+  "literature_compared_count": 515,
+  "later_abstract_result_count": 8,
+  "later_empirical_abstract_count": 8,
+  "theme_comparisons": [
+    {
+      "topic": "Other European foresight research",
+      "compared": 233,
+      "with_related_later_study": 26,
+      "with_later_abstract_result": 3
+    },
+    {
+      "topic": "Climate and energy",
+      "compared": 123,
+      "with_related_later_study": 39,
+      "with_later_abstract_result": 4
+    },
+    {
+      "topic": "Population and work",
+      "compared": 36,
+      "with_related_later_study": 6,
+      "with_later_abstract_result": 0
+    },
+    {
+      "topic": "Economy and finance",
+      "compared": 35,
+      "with_related_later_study": 7,
+      "with_later_abstract_result": 1
+    },
+    {
+      "topic": "Technology and digital",
+      "compared": 27,
+      "with_related_later_study": 10,
+      "with_later_abstract_result": 0
+    },
+    {
+      "topic": "Health and society",
+      "compared": 23,
+      "with_related_later_study": 3,
+      "with_later_abstract_result": 0
+    },
+    {
+      "topic": "Environment and food",
+      "compared": 21,
+      "with_related_later_study": 5,
+      "with_later_abstract_result": 0
+    },
+    {
+      "topic": "Security and governance",
+      "compared": 17,
+      "with_related_later_study": 1,
+      "with_later_abstract_result": 0
+    }
+  ],
   "study_count": 515,
   "lead_count": 515,
   "tracked_count": 515,
-  "checked_count": 0,
-  "bibliography_checked_count": 200,
+  "checked_count": 515,
+  "bibliography_checked_count": 515,
   "forecast_candidate_count": 28,
-  "follow_up_count": 87,
+  "follow_up_count": 97,
   "evidence_backed_count": 0,
   "topic_counts": {
     "European Journal of Futures Research": 37,
@@ -69,6 +122,6 @@
       "signal": "Research lead; see the Excel catalogue."
     }
   ],
-  "interpretation": "This is a small overview of the research being monitored and independently observed changes, not a claim that every research lead made a testable prediction.",
-  "next_step": "28 original abstracts contain potential forecast passages requiring validation. 200 leads received bibliographic searches; 0 have later dated outcome evidence. Bibliographic searches are not outcome verification."
+  "interpretation": "Thematic comparisons are from scientific abstracts; some describe modeled futures, not observed real-world outcomes. Research about Europe is not necessarily EU-institution-authored foresight. Neither topic matches nor abstract results are forecast accuracy verdicts.",
+  "next_step": "515 records now have qualitative comparisons with later scholarly papers, including 8 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 28 original abstracts contain potential forecast passages requiring validation. 515 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
 }

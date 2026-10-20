@@ -1,0 +1,41 @@
+IMPORTANT OCTOBER 2026: The latest OpenAlex-first Radar 2 update supersedes older OpenAI-key instructions below. Read START-HERE-OPENALEX-RADAR-2.md. OPENAI_API_KEY is NOT needed for the default workflow.
+
+WORLD RADAR 2 — HOW TO FIX THE GREEN RUN WITH NO DOWNLOAD
+=============================================================
+
+Your GitHub Actions run #15 completed in 20 seconds with:
+- Artifacts: – (nothing published for downloading from the run)
+- OPENAI_API_KEY is missing; no live research was performed.
+
+This package fixes both ways the workflow could appear successful without doing
+what you expected. The Word report is always generated, validated and published
+as a run artifact if document generation succeeds. Research is explicitly checked
+separately after upload, so a missing key or failed API request does not get a
+misleading green check. The Word report will still be downloadable.
+
+INSTALL
+1. Unzip this repo. Upload its changed files to the GitHub repository's main
+   branch, INCLUDING the hidden .github/workflows directory.
+   Use git commit/push from a local clone or GitHub's Add file → Upload files.
+2. In your GitHub repo: Settings → Secrets and variables → Actions → New
+   repository secret: OPENAI_API_KEY. Paste the key as the secret value.
+   ChatGPT Plus and OpenAI API billing are separate. You need active API billing.
+3. In Settings → Actions → General → Workflow permissions choose Read and
+   write permissions (needed to commit the report back to main).
+4. Actions → Radar 2 - outcomes and Word report → Run workflow.
+   Keep the 'allow_offline_report' checkbox OFF for real research.
+5. When the run finishes, scroll to Artifacts → Radar-2-Word-and-Audit.
+   Download the ZIP; inside it, open
+   stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+
+IF THE RUN IS RED: the report artifact should still be available, but live
+research either did not run or all checks failed. Read the job log and summary.
+For offline-only refresh choose 'allow_offline_report' to get a green run and
+saved-data report without using the OpenAI API.
+
+IMPORTANT: The generated Word distinguishes forecast candidates, independently
+documented policy developments and source-reviewed verdicts. It does not invent
+historical outcomes when evidence is missing. AI-derived observations are marked
+as provisional, not as independently validated forecasts.
+
+Previous run URL: https://github.com/vevirm/world-radar/actions/runs/39443110417

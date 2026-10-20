@@ -1,3 +1,5 @@
+IMPORTANT OCTOBER 2026: The latest OpenAlex-first Radar 2 update supersedes older OpenAI-key instructions below. Read START-HERE-OPENALEX-RADAR-2.md. OPENAI_API_KEY is NOT needed for the default workflow.
+
 WORLD RADAR — COMPLETE REPAIRED REPOSITORY (OCTOBER 2026)
 
 This is a full repository archive, not a code-only patch. It INCLUDES historical JSON research data, website, Excel workbooks and Word reports as well as scripts, tests, and .github/workflows.

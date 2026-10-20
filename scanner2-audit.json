@@ -5,11 +5,14 @@
   "invalid_cases": [],
   "outcome_verification_complete": false,
   "run": {
-    "provider": "evidence",
-    "attempts": 0,
+    "provider": "catalogue",
+    "attempts": 515,
     "failed": 0,
     "new_evidence_assessments": 0,
-    "note": "No OPENAI_API_KEY configured: report regenerated from saved evidence; no new research."
+    "literature_comparisons": 515,
+    "literature_studies_found": 150,
+    "note": "Compared genuine existing scholarly records offline; no new external request."
   },
-  "generated_utc": "2026-10-20T14:52:03.300665+00:00"
+  "literature_compared_total": 515,
+  "generated_utc": "2026-10-20T15:19:51.035706+00:00"
 }

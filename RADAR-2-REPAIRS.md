@@ -1,3 +1,5 @@
+IMPORTANT OCTOBER 2026: The latest OpenAlex-first Radar 2 update supersedes older OpenAI-key instructions below. Read START-HERE-OPENALEX-RADAR-2.md. OPENAI_API_KEY is NOT needed for the default workflow.
+
 # Radar 2 Word generation — verified repair
 
 ## What was broken
