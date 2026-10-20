@@ -239,6 +239,9 @@ def main():
             entry['reasoning'] = ''
         entry.setdefault('counterevidence', [])
     key = os.getenv('OPENAI_API_KEY', '')
+    if not args.offline and not key:
+        raise SystemExit('RADAR 2 FAILED: OPENAI_API_KEY is missing. Set the GitHub Actions repository secret; no leads were researched.')
+    print(f'Radar 2 start: {len(found)} available research leads; AI credential present: {bool(key)}', flush=True)
     deadline = time.monotonic() + max(0, args.minutes) * 60
     worked = 0
     completed = 0
@@ -303,8 +306,8 @@ def main():
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
     print(f'Radar 2: {len(found)} source records, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
-    if not key and not args.offline:
-        print('OPENAI_API_KEY missing: generated honest unassessed report; automatic outcome verification requires key.', flush=True)
+    if not args.offline and worked == 0:
+        raise SystemExit('RADAR 2 FAILED: no research was attempted despite having an API key. Check scanner logs.')
 
 
 if __name__ == '__main__':
