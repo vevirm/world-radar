@@ -1991,11 +1991,11 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Purpose – The aim of this paper is to estimate the dynamic of international migration between the different regions of the world for 2030 and to measure the impact of different kind of migration policies on the economic and social evolution.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "follow_up_publications": [
         {
           "title": "The Impact of Migration of Highly Skilled Workers on The Country’s Competitiveness and Economic Growth",
@@ -2009,8 +2009,7 @@
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Purpose – The aim of this paper is to estimate the dynamic of international migration between the different regions of the world for 2030 and to measure the impact of different kind of migration policies on the economic and social evolution.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:48.691023+00:00"
+      "candidate_year": 2030
     },
     "lead-b4fa93b35a3ef871": {
       "id": "lead-b4fa93b35a3ef871",
@@ -3932,19 +3931,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This study develops water footprint scenarios for Europe for 2050, at the country level, based on projections regarding population and economic growth, production and trade patterns, consumption patterns (diets and bioenergy use) and technological development.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:11.326632+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Contradictory evidence",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "This study develops water footprint scenarios for Europe for 2050, at the country level, based on projections regarding population and economic growth, production and trade patterns, consumption patterns (diets and bioenergy use) and technological development.",
-      "candidate_year": 2050,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:32.019644+00:00"
+      "candidate_year": 2050
     },
     "lead-5c1c14ede59783f2": {
       "id": "lead-5c1c14ede59783f2",
@@ -5319,20 +5317,20 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This paper analyses decarbonisation scenarios for the European passenger car fleet in 2050.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
+      "research_attempts": 2,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:23:20.439756+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Technology and digital",
       "last_attempt_utc": "2026-10-20T12:48:19.447273+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "The analysis showed that if car mobility and ownership continue to increase as expected in a ‘business as usual’ case, a share of 97% plug-in hybrid or battery electric vehicles might be required by 2050, together with a substantial decrease in greenhouse gas emission from electricity production.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:38.127044+00:00"
+      "candidate_year": 2050
     },
     "lead-72ca81101443645e": {
       "id": "lead-72ca81101443645e",
@@ -5864,19 +5862,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract This study presents supply scenarios of nonfood renewable jet fuel ( RJF ) in the European Union ( EU ) toward 2030, based on the anticipated regulatory context, availability of biomass and conversion technologies, and competing biomass demand from other sectors (i.e., transport, heat, power, and chemicals).",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:47:58.565851+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Labour and demography",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "RJF reduces aviation‐related combustion emission by 12–19 Mt/year CO 2 ‐eq by 2030, offsetting 53%–84% of projected emission growth of the sector in the EU relative to 2020.",
-      "candidate_year": 2030,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:27.459077+00:00"
+      "candidate_year": 2030
     },
     "lead-a91fa67f6a579c73": {
       "id": "lead-a91fa67f6a579c73",
@@ -6634,20 +6631,39 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The paper contributes to a discussion on developments in output for the EU-27 group over the next 11 years, up to year 2030.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
-      "follow_up_publications": [],
+      "research_attempts": 2,
+      "follow_up_publications": [
+        {
+          "title": "Analyzing the Level of Digitalization among the Enterprises of the European Union Member States and Their Impact on Economic Growth",
+          "url": "https://doi.org/10.3390/joitmc8020070",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Energy Transition in the Context of the Determinants of Long-Term Economic Growth in the European Union",
+          "url": "https://doi.org/10.33067/se.1.2026.8",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "CO2 Emissions Scenarios in the European Union—The Urgency of Carbon Capture and Controlled Economic Growth",
+          "url": "https://doi.org/10.3390/su18021043",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:23:35.822034+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Member-state data",
       "last_attempt_utc": "2026-10-20T12:48:22.418859+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Feeding the estimated production function for the 2018-2030 forecast has employed projected population by Eurostat, while private capital investment has been generated by an ARIMA model.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:40.685487+00:00"
+      "candidate_year": 2030
     },
     "lead-a1d08f7baf2b5f8d": {
       "id": "lead-a1d08f7baf2b5f8d",
@@ -7127,19 +7143,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "In December 2018, the European Union (EU) adopted a recast of the Renewable Energy Directive (RED II), which introduces a new target of 32 percent renewable energy to be reached at the EU level by 2030.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:47:43.427675+00:00",
       "last_route": "OpenAlex later-publication discovery",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "In December 2018, the European Union (EU) adopted a recast of the Renewable Energy Directive (RED II), which introduces a new target of 32 percent renewable energy to be reached at the EU level by 2030.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:49.577968+00:00"
+      "candidate_year": 2030
     },
     "lead-eee837689230c817": {
       "id": "lead-eee837689230c817",
@@ -7518,19 +7533,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Foresight studies provide valuable information for (strategic) policy-making.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:46:49.522059+00:00",
       "last_route": "OpenAlex later-publication discovery",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Next, EURO-HEALTHY project will present the Scenarios for population health inequalities in 2030 in Europe, partly based on a Web-Delphi process with a multidisciplinary panel.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:46.998603+00:00"
+      "candidate_year": 2030
     },
     "lead-e6a1640859c81427": {
       "id": "lead-e6a1640859c81427",
@@ -7695,26 +7709,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The forest-based sector plays diverse roles among the emerging bio-based industries.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:15.895468+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "EU data",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Simultaneously, wood-based panels are finding increasing application (+196% by 2050) and thus are taking over potential markets for sawn wood, for which production growth remains limited.",
-      "candidate_year": 2050,
-      "follow_up_publications": [
-        {
-          "title": "Forest Bioeconomy in Brazil: Potential Innovative Products from the Forest Sector",
-          "url": "https://doi.org/10.3390/land11081297",
-          "year": 2022,
-          "note": "Potentially related later publication; outcome not independently verified"
-        }
-      ],
-      "bibliography_checked_utc": "2026-10-20T13:58:35.326127+00:00"
+      "candidate_year": 2050
     },
     "lead-ecb292fe1fcabe06": {
       "id": "lead-ecb292fe1fcabe06",
@@ -8145,11 +8151,11 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Over the last few decades heat waves have intensified and have led to excess mortality.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
+      "research_attempts": 2,
       "follow_up_publications": [
         {
           "title": "Future Projections of Heat Waves and Associated Mortality Risk in a Coastal Mediterranean City",
@@ -8162,16 +8168,22 @@
           "url": "https://doi.org/10.5194/nhess-24-331-2024",
           "year": 2024,
           "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Economic valuation of temperature-related mortality attributed to urban heat islands in European cities",
+          "url": "https://doi.org/10.1038/s41467-023-43135-z",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
         }
       ],
       "checked_utc": "2026-10-20T12:23:48.039696+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Health and society",
       "last_attempt_utc": "2026-10-20T12:48:24.570498+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Our results illustrate that heat mortality increases by about 0.9%/decade in Germany, 1.7%/decade in France and 7.9%/decade in Spain for RCP8.5 by 2050.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:44.226966+00:00"
+      "candidate_year": 2050
     },
     "lead-f0df57f043c7d84f": {
       "id": "lead-f0df57f043c7d84f",
@@ -8927,20 +8939,39 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This paper presents the challenges of increasing the energy efficiency investments in European Union (EU) residential buildings in the context of achieving climate neutrality by 2050.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
-      "follow_up_publications": [],
+      "research_attempts": 2,
+      "follow_up_publications": [
+        {
+          "title": "Design of an Energy Policy for the Decarbonisation of Residential and Service Buildings in Northern Portugal",
+          "url": "https://doi.org/10.3390/en16052239",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Energy Efficiency in the EU Residential Sector: Integrating Multiple Benefits into Socioeconomic and Investment Decisions",
+          "url": "https://doi.org/10.1051/e3sconf/202565403002",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Drivers and barriers to the energy renovation of residential buildings in the EU: a systematic literature review",
+          "url": "https://doi.org/10.1016/j.enbuild.2026.117923",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:23:37.894843+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Agriculture and biodiversity",
       "last_attempt_utc": "2026-10-20T12:48:22.765204+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "This paper presents the challenges of increasing the energy efficiency investments in European Union (EU) residential buildings in the context of achieving climate neutrality by 2050.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:41.531271+00:00"
+      "candidate_year": 2050
     },
     "lead-12aa4ca470b0e24f": {
       "id": "lead-12aa4ca470b0e24f",
@@ -9038,11 +9069,11 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
+      "research_attempts": 2,
       "follow_up_publications": [
         {
           "title": "Investigating Africa’s decarbonization strategies: evaluating the pathway to net-zero by 2050–2060",
@@ -9055,16 +9086,22 @@
           "url": "https://doi.org/10.1007/s43979-025-00129-8",
           "year": 2025,
           "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Decarbonization of Shipping: International Maritime Organization’s Uncertain Pathway Towards Carbon Neutrality",
+          "url": "https://doi.org/10.33093/ajlp.2026.8",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
         }
       ],
       "checked_utc": "2026-10-20T12:23:54.079298+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Agriculture and biodiversity",
       "last_attempt_utc": "2026-10-20T12:48:26.041497+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:45.854386+00:00"
+      "candidate_year": 2030
     },
     "lead-2cc4a05cb6da3a22": {
       "id": "lead-2cc4a05cb6da3a22",
@@ -9219,19 +9256,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:47:44.438062+00:00",
       "last_route": "OpenAlex later-publication discovery",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Abstract By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:50.801056+00:00"
+      "candidate_year": 2030
     },
     "lead-eeb228d0dbb26bc5": {
       "id": "lead-eeb228d0dbb26bc5",
@@ -9574,10 +9610,10 @@
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
-      "last_attempt_utc": "2026-10-20T13:58:34.070200+00:00",
-      "last_route": "OpenAlex later-publication discovery",
-      "last_error": "HTTP Error 400: Bad Request",
+      "research_attempts": 1,
+      "last_attempt_utc": "2026-10-20T12:48:12.960111+00:00",
+      "last_route": "Peer-reviewed follow-up",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "The European Union’s revised Trans European Network – Energy ( ten-E ) Regulation (June 2022) provides that energy infrastructure in the form of projects of common interest shall be deemed to be in the overriding public interest in the context of the Habitats Directive, an exception to that Directive’s prohibition on development that could negatively impact protected Natura 2000 features.",
@@ -9897,19 +9933,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The urgency of a clean energy transition in the European Union is now not only driven by concerns about climate change, but also by using local renewable energy resources to reduce the dependency on foreign energy imports.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:18.837620+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Contradictory evidence",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030.",
-      "candidate_year": 2022,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:37.336868+00:00"
+      "candidate_year": 2022
     },
     "lead-460ee633216d8868": {
       "id": "lead-460ee633216d8868",
@@ -9980,26 +10015,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "EU leaders have agreed to reduce the number of people who are at risk of poverty or social exclusion by 15 million (including at least five million children) by 2030.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:12.597246+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Global datasets",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "EU leaders have agreed to reduce the number of people who are at risk of poverty or social exclusion by 15 million (including at least five million children) by 2030.",
-      "candidate_year": 2030,
-      "follow_up_publications": [
-        {
-          "title": "Poverty and Social Exclusion in European Countries",
-          "url": "https://doi.org/10.2478/foli-2024-0014",
-          "year": 2024,
-          "note": "Potentially related later publication; outcome not independently verified"
-        }
-      ],
-      "bibliography_checked_utc": "2026-10-20T13:58:32.946284+00:00"
+      "candidate_year": 2030
     },
     "lead-7d1718b4bb8841ed": {
       "id": "lead-7d1718b4bb8841ed",
@@ -10097,26 +10124,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Background: Our oceans remain one of the last untapped source of renewable energy.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:02.487316+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Agriculture and biodiversity",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "By 2022, ocean energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development.",
-      "candidate_year": 2022,
-      "follow_up_publications": [
-        {
-          "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
-          "url": "https://doi.org/10.21956/openreseurope.19897.r50469",
-          "year": 2025,
-          "note": "Potentially related later publication; outcome not independently verified"
-        }
-      ],
-      "bibliography_checked_utc": "2026-10-20T13:58:29.352528+00:00"
+      "candidate_year": 2022
     },
     "lead-ac707597ca8b2948": {
       "id": "lead-ac707597ca8b2948",
@@ -12022,19 +12041,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Background Our oceans remain one of the last untapped large sources of renewable energy.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:06.942217+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "EU data",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "By 2022, marine energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development.",
-      "candidate_year": 2022,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:30.921029+00:00"
+      "candidate_year": 2022
     },
     "lead-7b6934efbf3159fd": {
       "id": "lead-7b6934efbf3159fd",
@@ -12223,19 +12241,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Confronted with the climate emergency, reducing CO2 emissions has become a priority for all nations of the world because the follow-up of humanity depends on it.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:47:59.291696+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Member-state data",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Most European Union (EU) member states have pledged to cut their net greenhouse gas emissions by at least 55% by 2030 and reach full carbon neutrality by 2050, using 1990 as the baseline year.",
-      "candidate_year": 2030,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:28.466574+00:00"
+      "candidate_year": 2030
     },
     "lead-f6f6492e1ec580dd": {
       "id": "lead-f6f6492e1ec580dd",
@@ -12325,19 +12342,25 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The European Union’s Green Deal (EGD) represents one of the most ambitious policy frameworks aimed at addressing the pressing global challenges of climate change and environmental degradation.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
-      "follow_up_publications": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Role of the Circular Economy Framework for Sustainable Waste Management and Climate Change Mitigation",
+          "url": "https://doi.org/10.3390/su18041946",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:46:56.504220+00:00",
       "last_route": "OpenAlex later-publication discovery",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "In parallel, observation techniques were employed in both formal and informal settings such as public climate forums, municipal planning meetings, and grassroots environmental campaigns to document behaviours, interactions, and decision-making processes related to climate change mitigation and adaptation The study identifies that, in order to achieve the ambitious climate goals of the European Green Deal by 2050, the EU must strengthen its efforts in several key areas like: accelerating renewable energy deployment, improving energy efficiency, promoting sustainable agriculture, and enhancing climate adaptation measures are critical.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:47.863738+00:00"
+      "candidate_year": 2050
     },
     "lead-2357941ad4f9482d": {
       "id": "lead-2357941ad4f9482d",
@@ -12351,20 +12374,39 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Water temperature is a fundamental parameter influencing a range of biotic and abiotic processes occurring within various components of the hydrosphere.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
-      "follow_up_publications": [],
+      "research_attempts": 2,
+      "follow_up_publications": [
+        {
+          "title": "Island water stress: analyzing the Canary Islands’ hydrological response to climate change",
+          "url": "https://doi.org/10.1007/s10661-026-15219-y",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Climate change is a human problem: Finding the voices of climate resilience",
+          "url": "https://doi.org/10.62372/rlas1190",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Increased water requirements for avocado, chayote and coffee due to climate change in central Mexico",
+          "url": "https://doi.org/10.1016/j.agwat.2026.110768",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:23:42.772990+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Policy and law",
       "last_attempt_utc": "2026-10-20T12:48:23.732606+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Under the SSP2-4.5 and SSP5-8.5 scenario-based simulations, projected air temperature increases in the period 2021–2100 could range from 1.5 °C to 1.7 °C and 4.7 to 5.1 °C.",
-      "candidate_year": 2021,
-      "bibliography_checked_utc": "2026-10-20T13:58:43.359333+00:00"
+      "candidate_year": 2021
     },
     "lead-ceb1e578a38af1de": {
       "id": "lead-ceb1e578a38af1de",
@@ -12728,20 +12770,27 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Describing territorial agro-food systems through nitrogen flows between agriculture, livestock farming, human consumption, and external trade represents a useful basis for assessing the environmental sustainability of these systems.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
-      "follow_up_publications": [],
+      "research_attempts": 2,
+      "follow_up_publications": [
+        {
+          "title": "Toward a New Agro-Urban Paradigm: Networked Systems for Sustainable Futures",
+          "url": "https://doi.org/10.3390/urbansci10070382",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:23:31.832345+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "EU data",
       "last_attempt_utc": "2026-10-20T12:48:21.662317+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Both scenarios consider the projected European population at 2050, a dietary change toward less animal protein (30% and 20%, instead of 57% for the reference situation, Ref 2015–2019) and are based on the widespread use of organic crop rotations and the banning of synthetic fertilizers and feed imports.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:39.823321+00:00"
+      "candidate_year": 2050
     },
     "lead-fa5cb605216e0fbe": {
       "id": "lead-fa5cb605216e0fbe",
@@ -12755,19 +12804,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "In the context of island energy systems, the accurate forecasting of demand and supply is required for advanced energy management.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:18.084269+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Health and society",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "Despite its primary reliance on mainland energy supplies, the German North Sea Island Borkum, integrates local renewable energy sources and storage solutions, aiming to phase out fossil fuel sources by 2030.",
-      "candidate_year": 2030,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:36.175563+00:00"
+      "candidate_year": 2030
     },
     "lead-ea305784f98c07a8": {
       "id": "lead-ea305784f98c07a8",
@@ -12831,19 +12879,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "In the context created by the short-term energy market disruptions generated by the war in Ukraine and the longer-term concern for achieving a climate-neutral continent by 2050, the European Commission issued, in May 2022, the REPowerEU plan aiming to reduce significantly the dependence on fossil-based energy sources by 2027.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:47:46.914028+00:00",
       "last_route": "OpenAlex later-publication discovery",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "In the context created by the short-term energy market disruptions generated by the war in Ukraine and the longer-term concern for achieving a climate-neutral continent by 2050, the European Commission issued, in May 2022, the REPowerEU plan aiming to reduce significantly the dependence on fossil-based energy sources by 2027.",
-      "candidate_year": 2050,
-      "bibliography_checked_utc": "2026-10-20T13:58:51.627391+00:00"
+      "candidate_year": 2050
     },
     "lead-1d6b65469630aedb": {
       "id": "lead-1d6b65469630aedb",
@@ -13043,20 +13090,20 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "ABSTRACT The use of green hydrogen has emerged as a promising avenue for facilitating the decarbonization of society.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
+      "research_attempts": 2,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:23:48.266710+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Historical archives",
       "last_attempt_utc": "2026-10-20T12:48:24.629472+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "This study intends to provide stakeholders a deep understanding of the factors influencing green hydrogen's role in Portugal's push towards a sustainable energy landscape by 2030.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:45.041958+00:00"
+      "candidate_year": 2030
     },
     "lead-e7c8bbe28e0cd82b": {
       "id": "lead-e7c8bbe28e0cd82b",
@@ -13070,19 +13117,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This study evaluates the feasibility of fully renewable energy systems on El Hierro, the smallest and most isolated Canary Archipelago Island (Spain), contributing to the broader effort to decarbonize the European economy.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:15.492258+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "EU policy evaluations",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "By 2040, the island’s energy demand is projected to reach 80–110 GWh annually, assuming full economic decarbonization.",
-      "candidate_year": 2040,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:34.432963+00:00"
+      "candidate_year": 2040
     },
     "lead-1d7fb660477c5368": {
       "id": "lead-1d7fb660477c5368",
@@ -13096,20 +13142,27 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The issue of greenhouse gas emissions from energy consumption has remained a major challenge for the European Union.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
-      "follow_up_publications": [],
+      "research_attempts": 2,
+      "follow_up_publications": [
+        {
+          "title": "Low-Carbon Economic Growth and Bio-Renewable Energy Efficiency in Top High-Income European Union (EU) Countries: Role of Bank-Based Financial Development",
+          "url": "https://doi.org/10.52642/susbed.1777331",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
       "checked_utc": "2026-10-20T12:23:38.601963+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Historical archives",
       "last_attempt_utc": "2026-10-20T12:48:22.878175+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "In response, the EU has set itself the target of reducing greenhouse gas emissions by 55% by 2030 and becoming completely carbon neutral by 2050.",
-      "candidate_year": 2030,
-      "bibliography_checked_utc": "2026-10-20T13:58:42.462238+00:00"
+      "candidate_year": 2030
     },
     "lead-643f0bdabdfc966e": {
       "id": "lead-643f0bdabdfc966e",
@@ -14038,19 +14091,18 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The EU has adopted a comprehensive set of laws aiming to reduce EU greenhouse gas emissions by at least 55% by 2030 and achieve climate neutrality by 2050.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
+      "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 2,
+      "research_attempts": 1,
       "last_attempt_utc": "2026-10-20T12:48:04.117401+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Health and society",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "The EU has adopted a comprehensive set of laws aiming to reduce EU greenhouse gas emissions by at least 55% by 2030 and achieve climate neutrality by 2050.",
-      "candidate_year": 2030,
-      "follow_up_publications": [],
-      "bibliography_checked_utc": "2026-10-20T13:58:30.130836+00:00"
+      "candidate_year": 2030
     },
     "lead-9d025fc728fd4aa3": {
       "id": "lead-9d025fc728fd4aa3",
@@ -14114,20 +14166,20 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Although drought is a natural hazard, growing global concern surrounds its increasing frequency and severity due to climate change.",
-      "what_happened": "No independently verified outcome. Bibliography is stored separately.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
       "counterevidence": [],
-      "research_attempts": 3,
+      "research_attempts": 2,
       "follow_up_publications": [],
       "checked_utc": "2026-10-20T12:23:24.271102+00:00",
-      "last_route": "OpenAlex later-publication discovery",
+      "last_route": "Member-state data",
       "last_attempt_utc": "2026-10-20T12:48:20.168234+00:00",
+      "last_error": "HTTP Error 429: Too Many Requests",
       "screening_status": "candidate_needs_validation",
       "screening_reason": "Original abstract includes date, forward-looking wording and an observable theme; full-text validation still required.",
       "candidate_excerpt": "SRI was calculated at 1- and 3-month timescales for the historical period (1990–2014) and near-future period (2015–2049) based on downscaled climate data from Coupled Model Intercomparison Project Phase 6 (CMIP6) under two emission scenarios: SSP1-2.6 and SSP5-8.5, where SSP stands for shared socioeconomic pathways.",
-      "candidate_year": 2049,
-      "bibliography_checked_utc": "2026-10-20T13:58:39.000390+00:00"
+      "candidate_year": 2049
     },
     "lead-9ec0858de2a10a58": {
       "id": "lead-9ec0858de2a10a58",

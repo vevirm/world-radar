@@ -287,6 +287,7 @@ def build_word(entries):
     from docx import Document
     from docx.shared import Inches, Pt
     from outlook_summary import create
+    from outcome_verification import assemble, write_queue
     outlook = create(entries)
     doc = Document()
     sec = doc.sections[0]
@@ -296,21 +297,28 @@ def build_word(entries):
     doc.add_paragraph('EU foresight | Evidence review | ' + dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))
     doc.add_paragraph('Scope: indexed sources are research leads, not necessarily predictions. No title similarity or later scholarly publication alone counts as evidence that an outcome occurred.')
     screening = Counter(e.get('screening_status', 'unscreened') for e in entries)
-    verified = [e for e in entries if e.get('status') in ('realized','materializing','early_signals','contradicted') and (e.get('evidence') or e.get('counterevidence'))]
+    verified, rejected = assemble(entries)
+    review_queue = write_queue(entries)
     candidates = [e for e in entries if e.get('screening_status') == 'candidate_needs_validation']
     doc.add_heading('Research audit', 1)
-    doc.add_paragraph(f"Scanner 1 leads: {len(entries)} | Forecast candidates requiring validation: {len(candidates)} | Full text needed: {screening['full_text_required']} | No testable prediction in metadata: {screening['no_testable_prediction_in_metadata']} | Evidence-backed assessments: {len(verified)}.")
+    doc.add_paragraph(f"Scanner 1 leads: {len(entries)} | Forecast candidates requiring validation: {len(candidates)} | Full text needed: {screening['full_text_required']} | No testable prediction in metadata: {screening['no_testable_prediction_in_metadata']} | Source-reviewed, validated outcome cases: {len(verified)}.")
+    if rejected:
+        doc.add_paragraph(f'{len(rejected)} proposed cases rejected by source/evidence checks. Details are retained in the JSON log.')
     if not verified:
         doc.add_paragraph('No verified Expected → Happened comparisons are available from the current evidence. The report does not manufacture them or equate bibliographic searches with observed outcomes.')
     else:
         doc.add_heading('Expected → Happened | independently sourced', 1)
-        for e in verified[:30]:
-            doc.add_heading(concise(e.get('title'))[:140], 2)
-            doc.add_paragraph('Expected: ' + concise(e.get('what_expected'))[:600])
-            doc.add_paragraph('Happened: ' + concise(e.get('what_happened'))[:600])
-            doc.add_paragraph('Verdict: ' + STATUS_LABELS.get(e.get('status'), 'Unverified'))
-            for source in (e.get('evidence') or [])[:3] + (e.get('counterevidence') or [])[:2]:
-                doc.add_paragraph('Evidence (' + concise(source.get('date')) + '): ' + concise(source.get('finding'))[:260] + ' — ' + concise(source.get('url')))
+        for case in verified[:30]:
+            orig, obs = case['original'], case['observation']
+            doc.add_heading(concise(next((e['title'] for e in entries if e['id'] == case['lead_id']), case['lead_id']))[:140], 2)
+            doc.add_paragraph('Expected, quoted from original: ' + orig['verbatim_passage'])
+            doc.add_paragraph('Original: ' + orig['url'] + ' | published: ' + orig['published_on'] + ' | target: ' + orig['target_date'])
+            doc.add_paragraph('Happened: ' + obs['what_happened'])
+            doc.add_paragraph('Verdict: ' + case['verdict'].replace('_', ' ').capitalize())
+            doc.add_paragraph('Comparison: ' + obs['same_metric_and_geography_explained'])
+            doc.add_paragraph('Limitations: ' + case['limitations'])
+            for source in obs['sources']:
+                doc.add_paragraph('Independent evidence (' + source['date'] + '): ' + source['finding'] + ' — ' + source['url'])
     observations = read_json(ROOT / 'outcome-observations.json', {}).get('observations', [])
     if observations:
         doc.add_heading('Observed developments | primary sources', 1)
@@ -346,7 +354,7 @@ def main():
     ap.add_argument('--minutes', type=float, default=18)
     ap.add_argument('--max-claims', type=int, default=515)
     ap.add_argument('--offline', action='store_true')
-    ap.add_argument('--provider', choices=['free', 'openai'], default='free')
+    ap.add_argument('--provider', choices=['free', 'openai', 'evidence'], default='evidence')
     args = ap.parse_args()
     stored = read_json(OUTPUT, {'entries': {}})
     entries = stored.setdefault('entries', {})
@@ -388,7 +396,7 @@ def main():
         status = e.get('status')
         tier = 0 if status in ('not_yet_assessed', 'insufficient_evidence', 'too_early', 'no_clear_evidence') else 1
         return (tier, e.get('checked_utc', ''), c['id'])
-    ordered = sorted((c for c in found if c.get('screening_status') == 'candidate_needs_validation'), key=priority) if args.provider == 'free' else sorted(found, key=priority)
+    ordered = ([] if args.provider == 'evidence' else sorted((c for c in found if c.get('screening_status') == 'candidate_needs_validation'), key=priority)) if args.provider != 'openai' else sorted(found, key=priority)
     groups = {}
     for claim in ordered:
         host = urllib.parse.urlparse(claim['source_url']).hostname or ''
@@ -460,12 +468,17 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
+    from outcome_verification import assemble
+    valid_cases, invalid_cases = assemble([entries[c['id']] for c in found])
+    audit = {'research_leads': len(found), 'candidate_forecasts': sum(c.get('screening_status') == 'candidate_needs_validation' for c in found), 'reviewed_verdicts': len(valid_cases), 'invalid_cases': invalid_cases, 'outcome_verification_complete': bool(valid_cases)}
+    (ROOT / 'scanner2-audit.json').write_text(json.dumps(audit, indent=2)+'\n', encoding='utf-8')
+    print('OUTCOME AUDIT:', json.dumps(audit), flush=True)
     print(f'Radar 2: {len(found)} source records, {worked} bibliography attempts, {failed} failures, {sum(bool(x.get("evidence") or x.get("counterevidence")) for x in entries.values())} entries with dated evidence; Word: {REPORT}', flush=True)
     summary_file = os.getenv('GITHUB_STEP_SUMMARY')
     if summary_file:
         with open(summary_file, 'a', encoding='utf-8') as summary:
-            summary.write(f'## Radar 2 follow-up\n\n- Leads: {len(found)}\n- Attempts this run: {worked}\n- Failed this run: {failed}\n- Successful checks saved: {sum(bool(x.get("checked_utc")) for x in entries.values())}\n- OpenAlex throttled: {throttled}\n- Word report generated: {REPORT}\n')
-    if not args.offline and (worked == 0 or worked == failed) and found:
+            summary.write(f'## Radar 2 follow-up\n\n- Leads: {len(found)}\n- Attempts this run: {worked}\n- Failed this run: {failed}\n- Successful checks saved: {sum(bool(x.get("checked_utc")) for x in entries.values())}\n- OpenAlex throttled: {throttled}\n- Source-reviewed forecast comparisons: {len(valid_cases)}\n- Outcome verification complete: {bool(valid_cases)}\n- Word report generated: {REPORT}\n')
+    if not args.offline and args.provider != 'evidence' and (worked == 0 or worked == failed) and found:
         raise SystemExit('RADAR 2 FAILED: no successful research checks; Word report preserved. Review API key/quota logs.')
 
 
