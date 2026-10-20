@@ -63,10 +63,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The chaos at European airports, particularly London Heathrow, in the winter of 2010, wrought by pummelling snowstorms and ice, not only caused cancelled flights and stranded passengers but also resulted in a tremendous cost for the airport authorities.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:27.445434+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-a9bb6a1af8714172": {
       "id": "lead-a9bb6a1af8714172",
@@ -97,10 +101,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Analysis of uncertainty in large scale climate change projections over Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Review of trend analysis and climate change projections of extreme precipitation and floods in Europe",
+          "url": "https://doi.org/10.1016/j.jhydrol.2014.11.003",
+          "year": 2014,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Atmospheric circulation as a source of uncertainty in climate change projections",
+          "url": "https://doi.org/10.1038/ngeo2253",
+          "year": 2014,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Projections and Uncertainties about Climate Change in an Era of Minimal Climate Policies",
+          "url": "https://doi.org/10.1257/pol.20170046",
+          "year": 2018,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:29.778086+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-fe8f2029ac7c691c": {
       "id": "lead-fe8f2029ac7c691c",
@@ -301,10 +328,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Scenarios of the organic food market in Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Dynamic Development of the Global Organic Food Market and Opportunities for Ukraine",
+          "url": "https://doi.org/10.3390/su12176963",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "A Market Study of Organic Food Products Available in Udaipur City, India",
+          "url": "https://doi.org/10.20546/ijcmas.2018.708.095",
+          "year": 2018,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "A Market Study of Organic Food and Products Available in Hyderabad City, India",
+          "url": "https://doi.org/10.20546/ijcmas.2019.806.031",
+          "year": 2019,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:44.870472+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-21feeb9e263ec6f1": {
       "id": "lead-21feeb9e263ec6f1",
@@ -318,10 +368,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Walker A, Maltby T.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Impact of demographic change on society: active ageing, silver economy and strategic business",
+          "url": "https://doi.org/10.25019/str/2023.036",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "National strategic policy for active ageing : Malta 2014-2020",
+          "url": "https://openalex.org/W1875181672",
+          "year": 2013,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Demographic ageing and vulnerability in the European Union: a brief analysis of the challenges and opportunities it poses",
+          "url": "https://doi.org/10.21814/unio.8.1.3920",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:41.659128+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-3f0d2e991e5ae8cd": {
       "id": "lead-3f0d2e991e5ae8cd",
@@ -352,10 +425,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This is an overview of discussions held at three workshops at the Higher School of Economics from December 7 to 9, 2011.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:42.018440+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-9a1d428e36cc7a72": {
       "id": "lead-9a1d428e36cc7a72",
@@ -420,10 +497,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Road transport and power system scenarios for Northern Europe in 2030.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Including road transport in the EU ETS (European Emissions Trading System): A model-based analysis of the German electricity and transport sector",
+          "url": "https://doi.org/10.1016/j.energy.2014.03.061",
+          "year": 2014,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Modelling the integrated power and transport energy system: The role of power-to-gas and hydrogen in long-term scenarios for Italy",
+          "url": "https://doi.org/10.1016/j.energy.2018.04.089",
+          "year": 2018,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Hydrogen Road Transport Analysis in the Energy System: A Case Study for Germany through 2050",
+          "url": "https://doi.org/10.3390/en14113166",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:24.758011+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-27990e771f15fc46": {
       "id": "lead-27990e771f15fc46",
@@ -437,10 +537,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Nonlinearities in carbon spot-futures price relationships during Phase II of the EU ETS.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "The Linkages of Carbon Spot-Futures: Evidence from EU-ETS in the Third Phase",
+          "url": "https://doi.org/10.3390/su12062517",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Carbon futures price forecasting based with ARIMA-CNN-LSTM model",
+          "url": "https://doi.org/10.1016/j.procs.2019.11.254",
+          "year": 2019,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "What determines the price of carbon? New evidence from phase III and IV of the EU ETS",
+          "url": "https://doi.org/10.1016/j.jclimf.2025.100070",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:46.361329+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-df3054fc1f018c10": {
       "id": "lead-df3054fc1f018c10",
@@ -556,10 +679,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Setting priorities for supporting prospective technologies and activities is a key issue for science, technology and innovation (STI) policy.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Government Share Ownership and Innovation: Evidence from European Listed Firms",
+          "url": "https://doi.org/10.1016/j.jbankfin.2026.107826",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Unveiling ESG Dynamics: Lessons from Their Impact on Sustainable Business Performance in the European Union",
+          "url": "https://doi.org/10.1007/978-981-97-8588-9_30",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The Effects of Decentralization on Local Governance: Evidence From Ukraine",
+          "url": "https://doi.org/10.1177/00104140261455878",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:32.794231+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-c33854069537a0c5": {
       "id": "lead-c33854069537a0c5",
@@ -627,7 +773,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:50.101511+00:00",
+      "last_route": "Policy and law"
     },
     "lead-216bd87ac7c8633c": {
       "id": "lead-216bd87ac7c8633c",
@@ -641,10 +790,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Comparison of modelling approaches to simulate the phenology of the European corn borer under future climate scenarios.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "sympatric voltinetypes and their response to climate warming in Asian corn borer",
+          "url": "https://doi.org/10.21203/rs.3.rs-2559250/v1",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Evolutionary Shift of Insect Diapause Strategy in a Warming Climate: An Intra-Population Evidence from Asian Corn Borer",
+          "url": "https://doi.org/10.3390/biology12060762",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Effects of Temperature, Phenology, and Geography on Butterfly Population Dynamics under Climate Change.",
+          "url": "https://openalex.org/W3012951853",
+          "year": 2019,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:41.231351+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-edb0247629edf754": {
       "id": "lead-edb0247629edf754",
@@ -675,10 +847,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "The Relationship between Spot and Futures CO2 Emission Allowance Prices in the EU-ETS.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "The Relationship between Spot and Futures CO2 Emission Allowance Prices in the EU ETS",
+          "url": "https://doi.org/10.7551/mitpress/9780262029285.003.0008",
+          "year": 2015,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The Relationship between Spot and Futures CO2 Emission Allowance Prices in the EU ETS",
+          "url": "https://doi.org/10.7551/mitpress/10358.003.0014",
+          "year": 2015,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Convenience Yields for Co2 Emission Allowance Futures Contracts",
+          "url": "https://doi.org/10.2139/ssrn.2894390",
+          "year": 2017,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:21.098079+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-49d077fbb4c45502": {
       "id": "lead-49d077fbb4c45502",
@@ -998,10 +1193,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "European Scenario Studies on Future In-Stream Nutrient Concentrations.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:19.829055+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-37cd494e4fdbea45": {
       "id": "lead-37cd494e4fdbea45",
@@ -1069,7 +1268,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:27.108994+00:00",
+      "last_route": "Health and society"
     },
     "lead-b198165b58978f39": {
       "id": "lead-b198165b58978f39",
@@ -1287,10 +1489,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Interactively modelling land profitability to estimate European agricultural and forest land use under future scenarios of climate, socio-economics and adaptation.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "A Random Forest-Cellular Automata modelling approach to explore future land use/cover change in Attica (Greece), under different socio-economic realities and scales",
+          "url": "https://doi.org/10.1016/j.scitotenv.2018.07.302",
+          "year": 2018,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:51.616998+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-9aded314619f1865": {
       "id": "lead-9aded314619f1865",
@@ -1321,10 +1534,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Purpose – The purpose of this study is to explore the required changes, outline business potential and envisage the key steps that a networked manufacturing industry needs to take to reach more sustainably performing manufacturing in the future.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Impact Assessment of Additive Manufacturing on Sustainable Business Models in Industry 4.0 Context",
+          "url": "https://doi.org/10.3390/su12177066",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Exploring the Relationship Between Business Model Innovation, Corporate Sustainability, and Organisational Values within the Fashion Industry",
+          "url": "https://doi.org/10.1007/s10551-016-3044-7",
+          "year": 2016,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Identifying the Equilibrium Point between Sustainability Goals and Circular Economy Practices in an Industry 4.0 Manufacturing Context Using Eco-Design",
+          "url": "https://doi.org/10.3390/socsci8080241",
+          "year": 2019,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:31.441835+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-839306899323e859": {
       "id": "lead-839306899323e859",
@@ -1746,10 +1982,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Purpose The purpose of this paper is to discuss the scenario planning approach developed and used by the European Tourism Futures Institute (ETFI).",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Identify Appropriate Variables Through Scenario Planning Perspective for Creative Tourism in Iran",
+          "url": "https://doi.org/10.24193/subbgeogr.2023.2.01",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The future of tourism: evolution and future of scenario planning and strategic foresight in tourism with Albert Postma",
+          "url": "https://doi.org/10.1108/jtf-09-2024-0213",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The COVID-19 Pandemic and Nature-Based Tourism, Scenario Planning Approach (Case Study of Nature-Based Tourism in Iran)",
+          "url": "https://doi.org/10.3390/su14073954",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:45.856814+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-b5be30517cc965d5": {
       "id": "lead-b5be30517cc965d5",
@@ -1797,10 +2056,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "The future of individualization in Europe: changing configurations in employment and governance.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:28.140690+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-a1335d679db1e2cc": {
       "id": "lead-a1335d679db1e2cc",
@@ -1848,10 +2111,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Compared to all other countries in the world, Germany has been a “low-fertility country” for a longer period: the total fertility rate has been below 1.5 for four decades.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:52.818206+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-527d51b7f5272906": {
       "id": "lead-527d51b7f5272906",
@@ -2069,10 +2336,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "With the Transatlantic Trade and Investment Partnership, Europe has a decisive opportunity to define the direction of future global trade.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "The Public Debate over Transatlantic Trade and Investment Partnership and Its Underlying Assumptions",
+          "url": "https://doi.org/10.54648/trad2017002",
+          "year": 2017,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Supporters’ responses to contested trade negotiations: the European Commission’s rhetoric on the Transatlantic Trade and Investment Partnership",
+          "url": "https://doi.org/10.1080/09557571.2018.1461807",
+          "year": 2017,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The Impacts of Transatlantic Trade and Investment Partnership (TTIP) Initiative on Turkey’s Foreign Trade",
+          "url": "https://openalex.org/W2972212452",
+          "year": 2019,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:44.171804+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-5b0ac84cd8c6c9cf": {
       "id": "lead-5b0ac84cd8c6c9cf",
@@ -2188,10 +2478,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Projections of extreme storm surge levels along Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "A High-Resolution Global Dataset of Extreme Sea Levels, Tides, and Storm Surges, Including Future Projections",
+          "url": "https://doi.org/10.3389/fmars.2020.00263",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Extreme sea levels on the rise along Europe's coasts",
+          "url": "https://doi.org/10.1002/2016ef000505",
+          "year": 2017,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Extreme Storm Surge estimates and projection through the Metastatistical Extreme Value Distribution",
+          "url": "https://doi.org/10.5194/egusphere-egu21-10706",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:23.338357+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d8f728e60d9f32d7": {
       "id": "lead-d8f728e60d9f32d7",
@@ -2256,10 +2569,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe – Scenarios for power sector and transmission infrastructure in 2030 and 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Renewable energy in North Africa: Modeling of future electricity scenarios and the impact on manufacturing and employment",
+          "url": "https://doi.org/10.24406/publica-fhg-280508",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Opportunities and Challenges of Renewable Energy Production in Ethiopia",
+          "url": "https://doi.org/10.3390/su131810381",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Timmermans’ dream: An electricity and hydrogen partnership between Europe and North Africa",
+          "url": "https://doi.org/10.1016/j.enpol.2021.112613",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:47.537767+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-3a4f302b20098141": {
       "id": "lead-3a4f302b20098141",
@@ -2375,10 +2711,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Purpose Although new forms of innovation such as open innovation, user innovation or crowdsourcing have been intensively discussed in the past decade, there is little systematic exploration of their wider positive and negative effects on economy, society and environment.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:33.975356+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ebf8899eb4143676": {
       "id": "lead-ebf8899eb4143676",
@@ -2426,10 +2766,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Some future scenarios of Russian natural gas in Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:33.429396+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ea8272b2c000e732": {
       "id": "lead-ea8272b2c000e732",
@@ -2460,10 +2804,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Konferencija: Improving Poverty Reduction in Europe: Lessons from the Past, Scenarios for the Future.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "SPACE – LESSONS FROM THE PAST AND A LOOK TOWARDS THE FUTURE",
+          "url": "https://doi.org/10.34660/inf.2025.91.54.015",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:25.035927+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ff226387b619fece": {
       "id": "lead-ff226387b619fece",
@@ -2511,10 +2866,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "A scenario discovery study of the impact of uncertainties in the global container transport system on European ports.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Strategic Modeling of Global Container Transport Networks",
+          "url": "https://doi.org/10.4233/uuid:1dbabb9d-a825-4dc0-9927-d1bf8d03ae93",
+          "year": 2017,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:40.220390+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-e2575682b0faef52": {
       "id": "lead-e2575682b0faef52",
@@ -2596,10 +2962,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Purpose Within the theoretical framework of Regional Innovation Systems, the purpose of the paper is to introduce an innovative methodological scheme for strategic planning decisions in public administrations, based on foresight, roadmapping and large participation processes.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:48.805429+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d12c36487dd710a7": {
       "id": "lead-d12c36487dd710a7",
@@ -2732,10 +3102,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "European Scenarios of CO2 Infrastructure Investment until 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:37.476558+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-6628c7731526691a": {
       "id": "lead-6628c7731526691a",
@@ -2868,10 +3242,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "European sectoral innovation foresight: Identifying emerging cross-sectoral patterns and policy issues.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:43.818582+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-c205d1ee2eb36f1d": {
       "id": "lead-c205d1ee2eb36f1d",
@@ -3038,10 +3416,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Regulatory Review of European Commission Impact Assessments: What Kind for Which Better Regulation Scenario.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:22.346925+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-c67e69f26329dd5a": {
       "id": "lead-c67e69f26329dd5a",
@@ -3157,10 +3539,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "THE PROS AND CONS OF INTEGRATION VS.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:48.542239+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-e6706b1a00b3c6a1": {
       "id": "lead-e6706b1a00b3c6a1",
@@ -3225,10 +3611,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This contribution contains the text of the first Roger Blanpain Lecture held at the Law Faculty of the University of Leuven on 8 May 2017.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:24.037590+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-028df65d690e3e7c": {
       "id": "lead-028df65d690e3e7c",
@@ -3242,10 +3632,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This paper analyses decarbonisation scenarios for the European passenger car fleet in 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:20.439756+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-72ca81101443645e": {
       "id": "lead-72ca81101443645e",
@@ -3344,10 +3738,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Knowledge on the costs of natural disasters under climate change is key information for planning adaptation and mitigation strategies of future climate policies.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Cost-effective adaptation strategies to rising river flood risk in Europe",
+          "url": "https://doi.org/10.1038/s41558-022-01540-0",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Projected changes in Rhine River flood seasonality under global warming",
+          "url": "https://doi.org/10.5194/hess-25-2353-2021",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Global warming and population change both heighten future risk of human displacement due to river floods",
+          "url": "https://doi.org/10.1088/1748-9326/abd26c",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:40.712181+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ee37fbf1060c0e75": {
       "id": "lead-ee37fbf1060c0e75",
@@ -3446,10 +3863,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Three scenarios for EU-China relations 2025.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:52.414925+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-c684209368408c7c": {
       "id": "lead-c684209368408c7c",
@@ -3500,7 +3921,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:25.278731+00:00",
+      "last_route": "Member-state data"
     },
     "lead-faa3a3f10c09a17c": {
       "id": "lead-faa3a3f10c09a17c",
@@ -3616,10 +4040,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "European Business Ethics agenda based on a Delphi analysis.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "GovTech in Europe between public- and privateness—A Delphi-based research agenda",
+          "url": "https://doi.org/10.1007/s12525-026-00913-z",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:36.115926+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-3d056093618515d8": {
       "id": "lead-3d056093618515d8",
@@ -3752,10 +4187,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Citizen visions for European futures—methodological considerations and implications.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Participatory utopian sketching: A methodological framework for collaborative citizen (re)imagination of urban spatial futures",
+          "url": "https://doi.org/10.1016/j.futures.2022.102938",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:21.446583+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-7ecef88b235d1ac6": {
       "id": "lead-7ecef88b235d1ac6",
@@ -3854,10 +4300,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Robustness and Scalability of Regional Climate Projections Over Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Regional climate downscaling over Europe: perspectives from the EURO-CORDEX community",
+          "url": "https://doi.org/10.1007/s10113-020-01606-9",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Extreme wind projections over Europe from the Euro-CORDEX regional climate models",
+          "url": "https://doi.org/10.1016/j.wace.2021.100363",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Assessment of the European Climate Projections as Simulated by the Large EURO‐CORDEX Regional and Global Climate Model Ensemble",
+          "url": "https://doi.org/10.1029/2019jd032356",
+          "year": 2020,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:27.867621+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-63cec6325faedc47": {
       "id": "lead-63cec6325faedc47",
@@ -4024,10 +4493,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "SIX erteilt SARON-Lizenz an ICE Futures Europe.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:38.913799+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-14855d6622f798ad": {
       "id": "lead-14855d6622f798ad",
@@ -4041,10 +4514,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Proposed alternatives scenarios methodology allows retrospective analysing of decarbonisation processes in 26 national Public Electricity and Heat Production (PEHP) sectors in EU, based on 1990..2016 national CO 2 emission inventories.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Perspectives of Electricity Production from Biogas in the European Union",
+          "url": "https://doi.org/10.3390/en17051169",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:34.574987+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-17247b800a737172": {
       "id": "lead-17247b800a737172",
@@ -4058,10 +4542,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The paper contributes to a discussion on developments in output for the EU-27 group over the next 11 years, up to year 2030.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Analyzing the Level of Digitalization among the Enterprises of the European Union Member States and Their Impact on Economic Growth",
+          "url": "https://doi.org/10.3390/joitmc8020070",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Energy Transition in the Context of the Determinants of Long-Term Economic Growth in the European Union",
+          "url": "https://doi.org/10.33067/se.1.2026.8",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "CO2 Emissions Scenarios in the European Union—The Urgency of Carbon Capture and Controlled Economic Growth",
+          "url": "https://doi.org/10.3390/su18021043",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:35.822034+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-a1d08f7baf2b5f8d": {
       "id": "lead-a1d08f7baf2b5f8d",
@@ -4092,10 +4599,27 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "European Security Architecture after the United Kingdom’s Withdrawal from the European Union: Future Scenarios.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 2 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "United Kingdom-European Union policing and law enforcement cooperation in the post-Brexit era",
+          "url": "https://doi.org/10.1080/10439463.2024.2442714",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Foreign policy identity of the United Kingdom after Brexit",
+          "url": "https://doi.org/10.46493/2663-2675.34(5).2024.101",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:45.499531+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-569b661ef58be0df": {
       "id": "lead-569b661ef58be0df",
@@ -4228,10 +4752,27 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "The impact of Russian sanctions on the return of agricultural commodity futures in the EU.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 2 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Impact of economic sanctions on net commodity-producing and net commodity-consuming countries",
+          "url": "https://doi.org/10.1590/0034-7329202300101",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Financial Speculation Impact on Agricultural and Other Commodity Return Volatility: Implications for Sustainable Development and Food Security",
+          "url": "https://doi.org/10.3390/agriculture12111892",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:47.076211+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-dc45ab8fc164eb85": {
       "id": "lead-dc45ab8fc164eb85",
@@ -4262,10 +4803,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract This paper analyses the implications that demographic and economic projections have on public pension spending in the European Union (EU).",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "The Impact of the Demographic Ice Age on Economic Growth, Public Policy, and the Sustainability of Pension Systems",
+          "url": "https://doi.org/10.54237/profnet.2024.tbdecce_9",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Demographic change will hit public debt sustainability in European Union countries",
+          "url": "https://doi.org/10.1016/j.jpolmod.2025.09.004",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "A golden rule for migration? Demographic adjustment and public debt sustainability in the European Union",
+          "url": "https://doi.org/10.1016/j.iref.2026.105930",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:49.924912+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ceba67e1f67d9ef7": {
       "id": "lead-ceba67e1f67d9ef7",
@@ -4313,10 +4877,27 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Based on the prices selected from European Energy Exchange (EEX) from 2013 to 2018, we investigate the inter-correlation of carbon spot and futures markets.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 2 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Investor attention and carbon return: evidence from the EU-ETS",
+          "url": "https://doi.org/10.1080/1331677x.2021.1931914",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Re-examining the efficiency of the EU carbon futures market in phase Ⅱ: price discovery and intertemporal arbitrage",
+          "url": "https://doi.org/10.3389/fenrg.2023.1236488",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:32.261974+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-4ee81b6c33301b90": {
       "id": "lead-4ee81b6c33301b90",
@@ -4585,10 +5166,27 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "EU land use futures: modelling food, bioenergy and carbon dynamics.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 2 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Weighing the Value of Bioenergy — Accounting for Land Carbon and the Timing of Emissions",
+          "url": "https://openalex.org/W7210664393",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Exploring the option space for land system futures at regional to global scales: The diagnostic agro-food, land use and greenhouse gas emission model BioBaM-GHG 2.0",
+          "url": "https://doi.org/10.1016/j.ecolmodel.2021.109729",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:21.730491+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-36723a2cc127b300": {
       "id": "lead-36723a2cc127b300",
@@ -4738,10 +5336,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Forecasting Loan Default in Europe with Machine Learning.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Application of Machine Learning in Loan Default Forecasting",
+          "url": "https://doi.org/10.63282/3050-9262.ijaidsml-v3i4p114",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Loan Default Prediction Based on Machine Learning Methods",
+          "url": "https://doi.org/10.4108/eai.2-12-2022.2328740",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Loan default prediction of Chinese P2P market: a machine learning methodology",
+          "url": "https://doi.org/10.1038/s41598-021-98361-6",
+          "year": 2021,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:53.154934+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-3deb626cc75d5d7e": {
       "id": "lead-3deb626cc75d5d7e",
@@ -4789,10 +5410,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Disintegration scenarios in the European Union: A case study of Eastern European economies.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:39.864220+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-7722fd5a515937f3": {
       "id": "lead-7722fd5a515937f3",
@@ -4840,10 +5465,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract The urgency of current social challenges is driving new approaches to framing and funding research, development, and innovation.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Mission-Oriented Innovation Policy for Sustainable Development: A Systematic Literature Review",
+          "url": "https://doi.org/10.3390/su151713101",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Mission-oriented scenarios: a new method for urban foresight",
+          "url": "https://doi.org/10.1108/fs-06-2023-0119",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Towards a Mission-oriented Innovation Systems (MIS) approach, application for Dutch sustainable maritime shipping",
+          "url": "https://doi.org/10.1371/journal.pstr.0000075",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:28.551128+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d2dd8910139ab602": {
       "id": "lead-d2dd8910139ab602",
@@ -4874,10 +5522,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "The impact of COVID-19 on the European football ecosystem – A Delphi-based scenario analysis.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "COVID-19’s Financial Impact on UK Football Clubs",
+          "url": "https://doi.org/10.3390/encyclopedia5010017",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The future of blockchain-enabled tokenization in infrastructure investment and development: A Delphi-based scenario analysis",
+          "url": "https://doi.org/10.48550/arxiv.2208.04710",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "What’s next in hospital digitization? A Delphi-based scenario study",
+          "url": "https://doi.org/10.1186/s40309-023-00222-0",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:43.443968+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-94aecf48beb96f26": {
       "id": "lead-94aecf48beb96f26",
@@ -4942,10 +5613,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract The article introduces and exemplifies the approach of evidence-based narratives (EBN).",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:26.042868+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-2a9619dedd222d88": {
       "id": "lead-2a9619dedd222d88",
@@ -4959,10 +5634,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Over the last few decades heat waves have intensified and have led to excess mortality.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Future Projections of Heat Waves and Associated Mortality Risk in a Coastal Mediterranean City",
+          "url": "https://doi.org/10.3390/su16031072",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "High-resolution projections of ambient heat for major European cities using different heat metrics",
+          "url": "https://doi.org/10.5194/nhess-24-331-2024",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Economic valuation of temperature-related mortality attributed to urban heat islands in European cities",
+          "url": "https://doi.org/10.1038/s41467-023-43135-z",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:48.039696+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-f0df57f043c7d84f": {
       "id": "lead-f0df57f043c7d84f",
@@ -5027,10 +5725,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Sustainable renewable energy supply networks optimization – The gradual transition to a renewable energy system within the European Union by 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Sustainable Energy Transition for Renewable and Low Carbon Grid Electricity Generation and Supply",
+          "url": "https://doi.org/10.3389/fenrg.2021.743114",
+          "year": 2022,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Sustainable Long-Term Energy Supply and Demand: The Gradual Transition to a New and Renewable Energy System in Indonesia by 2050",
+          "url": "https://doi.org/10.14710/ijred.2023.50361",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The challenges of sustainable energy transition: A focus on renewable energy",
+          "url": "https://doi.org/10.59429/ace.v7i2.2084",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:54.541481+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-4e7a0145ec33a4df": {
       "id": "lead-4e7a0145ec33a4df",
@@ -5132,7 +5853,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:25.446872+00:00",
+      "last_route": "Health and society"
     },
     "lead-fc41e378a5793cbe": {
       "id": "lead-fc41e378a5793cbe",
@@ -5265,10 +5989,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Potential distribution of two lynx species in europe under paleoclimatological scenarios and anthropogenic climate change scenarios.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:53.741601+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-8ec2c55af8a5c34d": {
       "id": "lead-8ec2c55af8a5c34d",
@@ -5333,10 +6061,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Population aging, an increasing share of the elderly to the total population, can exacerbate heat vulnerability to intensified heat hazards.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Future Urban Heat Risk Assessment in Sydney: Integrating Satellite-Derived UTCI with Population Projections",
+          "url": "https://doi.org/10.5194/isprs-annals-xii-4-w2-2026-137-2026",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Beyond Daytime Thresholds: Downscaled Population Exposure and Compound Heat Hazard Projections in Andhra Pradesh, India",
+          "url": "https://doi.org/10.21203/rs.3.rs-11063888/v1",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Changing patterns of heat waves and population exposure in India, 1980-2024",
+          "url": "https://doi.org/10.21203/rs.3.rs-10806998/v1",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:35.458562+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-db3cb7126bc69061": {
       "id": "lead-db3cb7126bc69061",
@@ -5384,10 +6135,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "A scenario planning framework for (post-)pandemic tourism in European destinations.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "A Framework for Understanding Travel Intention Post-Pandemic to International Tourist Destinations",
+          "url": "https://doi.org/10.37741/t.71.2.10",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Reframing Slow Tourism in the Post-Pandemic Era: A Systematic Review and Regenerative Framework for Smart–Slow Destinations",
+          "url": "https://doi.org/10.35313/jtospolban.v5i5.194",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Post-pandemic tourism in Longyearbyen",
+          "url": "https://doi.org/10.24425/ppr.2024.150024",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:29.295041+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-f351f32cbb6bc455": {
       "id": "lead-f351f32cbb6bc455",
@@ -5418,10 +6192,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This paper presents the challenges of increasing the energy efficiency investments in European Union (EU) residential buildings in the context of achieving climate neutrality by 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Design of an Energy Policy for the Decarbonisation of Residential and Service Buildings in Northern Portugal",
+          "url": "https://doi.org/10.3390/en16052239",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Energy Efficiency in the EU Residential Sector: Integrating Multiple Benefits into Socioeconomic and Investment Decisions",
+          "url": "https://doi.org/10.1051/e3sconf/202565403002",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Drivers and barriers to the energy renovation of residential buildings in the EU: a systematic literature review",
+          "url": "https://doi.org/10.1016/j.enbuild.2026.117923",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:37.894843+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-12aa4ca470b0e24f": {
       "id": "lead-12aa4ca470b0e24f",
@@ -5435,10 +6232,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract The European Union Farm Accountancy Data Network (FADN) publishes data for the representative farms of several European Union (EU) farm types, regions and countries.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Ranking farm types in the European Union according to investment activity: The I-distance approach",
+          "url": "https://doi.org/10.5937/intrev2504097i",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:31.099702+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-f74c3888144efee7": {
       "id": "lead-f74c3888144efee7",
@@ -5486,10 +6294,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Investigating Africa’s decarbonization strategies: evaluating the pathway to net-zero by 2050–2060",
+          "url": "https://doi.org/10.1007/s44274-025-00287-7",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "An in-depth review of key technologies and pathways to carbon neutrality: classification and assessment of decarbonization technologies",
+          "url": "https://doi.org/10.1007/s43979-025-00129-8",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Decarbonization of Shipping: International Maritime Organization’s Uncertain Pathway Towards Carbon Neutrality",
+          "url": "https://doi.org/10.33093/ajlp.2026.8",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:54.079298+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-2cc4a05cb6da3a22": {
       "id": "lead-2cc4a05cb6da3a22",
@@ -5503,10 +6334,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The new economic governance of the European Union emerged as an important legacy of the Eurozone crisis.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Trade unions, labour governance and economic upgradation in value chains",
+          "url": "https://doi.org/10.54394/xtnw2213",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:49.355501+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-6dc5aba0393aa3ca": {
       "id": "lead-6dc5aba0393aa3ca",
@@ -5656,10 +6498,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Soil is considered to be one of the most complex natural systems on the planet, a key component of the geographical environment, and a biological complex that is constantly changing.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:22.977833+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-dc3f554a9bbc78b4": {
       "id": "lead-dc3f554a9bbc78b4",
@@ -5741,10 +6587,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract A foresight study refers to a broad range of methodologies to describe possible futures.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Pandemic Preparedness: A Scoping Review of Best and Worst Practices from COVID-19",
+          "url": "https://doi.org/10.3390/healthcare11182572",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Crisis Management, School Leadership in Disruptive Times and the Recovery of Schools in the Post COVID-19 Era: A Systematic Literature Review",
+          "url": "https://doi.org/10.3390/educsci13020118",
+          "year": 2023,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Corporate foresight and intellectual capital robustness: a literature review",
+          "url": "https://doi.org/10.24023/futurejournal/2175-5825/2025.v17i1.932",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:36.458569+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d6d62b2ccdefadea": {
       "id": "lead-d6d62b2ccdefadea",
@@ -5792,10 +6661,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Background The role of policymaking is to create the future that we want.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:19.389573+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d8ade010ab9b2aa7": {
       "id": "lead-d8ade010ab9b2aa7",
@@ -5928,10 +6801,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "A Pan-European discussion on the future of Europe was officially initiated by European authorities after Brexit — the shocking decision by the UK to withdraw from the European Union after its referendum of June 23, 2016.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:45.202094+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-f34e561d5b16330e": {
       "id": "lead-f34e561d5b16330e",
@@ -6132,10 +7009,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Southeast Europe is considered one of the most vulnerable regions in the context of climate change, and projected future summer warming is expected to exceed global rates significantly.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:30.787237+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-8808a009711261de": {
       "id": "lead-8808a009711261de",
@@ -6251,10 +7132,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Introduction: Carbon futures market plays an important role in energy conservation and emission reduction of energy-intensive firms, and its efficiency is largely reflected by the dynamic relationship between carbon spot and futures prices.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:26.919984+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-44e691e3fb616d9d": {
       "id": "lead-44e691e3fb616d9d",
@@ -6302,10 +7187,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract We describe data collected among 138 migration experts about the repercussions of scenarios of social change on migration between the Middle East & North Africa and Europe, during the period 2021–2030.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Governing for Sustainable Prosperity in the Middle East and North Africa",
+          "url": "https://doi.org/10.1787/d0da1d30-en",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Geopolitics of Renewable Energy in the Middle East and North Africa Region",
+          "url": "https://doi.org/10.2991/978-94-6463-646-8_5",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Understanding wheat farmers’ climate change adaptation in the Middle East and North Africa: The role of socioeconomic factors and perceptions in decision-making",
+          "url": "https://doi.org/10.1016/j.jafr.2025.102290",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:50.539989+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-9fa5d613fb762b53": {
       "id": "lead-9fa5d613fb762b53",
@@ -6424,7 +7332,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:26.208932+00:00",
+      "last_route": "Technology and digital"
     },
     "lead-8bba5be12dc09e1a": {
       "id": "lead-8bba5be12dc09e1a",
@@ -6472,10 +7383,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "In September 2022, the Commission adopted a proposal for a Regulation on prohibiting products made with forced labour on the Union market.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "EU Recent Initiatives on \"Decent Work for All\": The Regulation on forced labour-free products",
+          "url": "https://openalex.org/W7217747990",
+          "year": 2024,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:44.514463+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-e50ab97d48495ee9": {
       "id": "lead-e50ab97d48495ee9",
@@ -6557,10 +7479,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "In a context of carbon emissions reduction, this article aims at widening the scope of the OECD - Nuclear Energy Agency (NEA) report entitled « The interaction of Nuclear Energy and Renewable: System Effects in Low Carbon Electricity System » (2012) to the European electric supply by studying the conditions of industrial investments in low carbon technologies over the next 30 years.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Carbon Pricing and Renewable Investment Incentives: A Study of the Italian Electricity Market",
+          "url": "https://doi.org/10.1007/s40797-026-00404-2",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:20.758696+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-239941be066f3077": {
       "id": "lead-239941be066f3077",
@@ -6574,10 +7507,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Real-world clinical scenarios during introduction of trastuzumab biosimilar for HER2-positive breast cancer in the European Union.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Efficacy and safety of biosimilar trastuzumab (HLX02) in patients with HER2-positive advanced breast cancer: a retrospective real-world analysis",
+          "url": "https://doi.org/10.3389/fonc.2025.1622854",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:43.154700+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ff20969c7a4351d5": {
       "id": "lead-ff20969c7a4351d5",
@@ -6676,10 +7620,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Exposure to chemical hazards in the workplace has been and remains a key concern of the European Union (EU) and Member State (MS) authorities.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:39.551947+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-521eb2db7a3baee8": {
       "id": "lead-521eb2db7a3baee8",
@@ -6710,10 +7658,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Background Exposure to work-related psychosocial risks (PSR) can result in various negative outcomes for individual workers and organizations.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:30.210150+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-cd53deb676af707a": {
       "id": "lead-cd53deb676af707a",
@@ -6798,7 +7750,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:22.534579+00:00",
+      "last_route": "EU policy evaluations"
     },
     "lead-51cc72134098f9de": {
       "id": "lead-51cc72134098f9de",
@@ -6829,10 +7784,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Contemporary politics require a swift and responsive policy‐making approach to respond to emergency situations quickly and to anticipate them in a strategic manner.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Governance logics and foresight functions: European strategic foresight in contrastive perspective",
+          "url": "https://doi.org/10.1186/s40309-026-00278-8",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The New Anticipatory Governance Culture for Innovation: Regulatory Foresight, Regulatory Experimentation and Regulatory Learning",
+          "url": "https://doi.org/10.1007/s40804-025-00348-7",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The New Anticipatory Governance Culture for Innovation: Regulatory Foresight, Regulatory Experimentation and Regulatory Learning",
+          "url": "https://doi.org/10.48550/arxiv.2501.05921",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:37.091918+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-d5927ae7bbcf2c3b": {
       "id": "lead-d5927ae7bbcf2c3b",
@@ -6863,10 +7841,33 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "The impact of global uncertainties on the spillover among the European carbon market, the Chinese oil futures market, and the international oil futures market.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Research on the risk spillover effect between China’s national carbon emissions trading market and crude oil futures market",
+          "url": "https://doi.org/10.1371/journal.pone.0316353",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "The dynamic impact of investor climate sentiment on the crude oil futures market: Evidence from the Chinese market",
+          "url": "https://doi.org/10.1371/journal.pone.0314579",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Risk spillover between the carbon market and financial market in China",
+          "url": "https://doi.org/10.1007/s44176-025-00039-0",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:42.362639+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-28dd95c5bc5b0426": {
       "id": "lead-28dd95c5bc5b0426",
@@ -6880,10 +7881,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Although foresight has played a central role in the history of European integration since its inception in the 1950s, it has not always had the same meaning, nor has it always been used in the same political way.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:46.725948+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-b9da84dad592990c": {
       "id": "lead-b9da84dad592990c",
@@ -6931,10 +7936,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Member States in the WHO European Region face similar challenges when it comes to strengthening their HIS and implementing digital health solutions.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Advancements in digital health across the Nordic region",
+          "url": "https://doi.org/10.6027/temanord2025-573",
+          "year": 2025,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Advancing Public Health Preparedness and Response in the Eastern Mediterranean Region: Challenges, Opportunities, and Ways Forward – Insights from the 8th EMPHNET Regional Conference",
+          "url": "https://doi.org/10.3389/978-2-8325-8548-1",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "A Co-Creation Framework for Developing Digital Technology-Assisted Policy Adoption Roadmaps: Evidence from European Public Sector Case Studies",
+          "url": "https://doi.org/10.3390/app16073400",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:28.939843+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-f733fbe9213315fa": {
       "id": "lead-f733fbe9213315fa",
@@ -7186,10 +8214,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "A review of the future transport labour market: An EU approach.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:34.881852+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-b8f54d344dff5660": {
       "id": "lead-b8f54d344dff5660",
@@ -7254,10 +8286,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract This paper examines the potential integration of trauma-informed practices and Critical Studies on Men and Masculinities (CSMM) into global and European risk research, with a focus on foresight methodologies.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:50.831583+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-324415ff942bb83c": {
       "id": "lead-324415ff942bb83c",
@@ -7271,10 +8307,21 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Developing an Agricultural Futures Framework to explore the option space for agricultural change in Europe under alternative value perspectives.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Mapping Agricultural Impact Investing for Climate Change Mitigation: A Bibliometric Analysis under the SDGs Framework",
+          "url": "https://doi.org/10.36899/japs.2026.6.0145",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:51.247390+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-c080f9e25809c670": {
       "id": "lead-c080f9e25809c670",
@@ -7495,7 +8542,10 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "checked_utc": "2026-10-20T12:23:40.874786+00:00",
+      "last_route": "EU policy evaluations"
     },
     "lead-38f454a96ad46ad3": {
       "id": "lead-38f454a96ad46ad3",
@@ -7526,10 +8576,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Water temperature is a fundamental parameter influencing a range of biotic and abiotic processes occurring within various components of the hydrosphere.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Island water stress: analyzing the Canary Islands’ hydrological response to climate change",
+          "url": "https://doi.org/10.1007/s10661-026-15219-y",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Climate change is a human problem: Finding the voices of climate resilience",
+          "url": "https://doi.org/10.62372/rlas1190",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Increased water requirements for avocado, chayote and coffee due to climate change in central Mexico",
+          "url": "https://doi.org/10.1016/j.agwat.2026.110768",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:42.772990+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ceb1e578a38af1de": {
       "id": "lead-ceb1e578a38af1de",
@@ -7781,10 +8854,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Describing territorial agro-food systems through nitrogen flows between agriculture, livestock farming, human consumption, and external trade represents a useful basis for assessing the environmental sustainability of these systems.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Toward a New Agro-Urban Paradigm: Networked Systems for Sustainable Futures",
+          "url": "https://doi.org/10.3390/urbansci10070382",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:31.832345+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-fa5cb605216e0fbe": {
       "id": "lead-fa5cb605216e0fbe",
@@ -7866,10 +8950,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract As Europe faces unprecedented demographic shifts and technological advancement, the future of eye care delivery stands at a critical juncture.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:38.222840+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ae475a44be532770": {
       "id": "lead-ae475a44be532770",
@@ -7900,10 +8988,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This article aims to compare the time horizon of the EU hydrogen mobility policy with the potential commercialisation of this technology based on the law of market diffusion of innovation.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:39.207990+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-9e50d5b1e7e0b7e4": {
       "id": "lead-9e50d5b1e7e0b7e4",
@@ -7985,10 +9077,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "ABSTRACT The use of green hydrogen has emerged as a promising avenue for facilitating the decarbonization of society.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:48.266710+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-e7c8bbe28e0cd82b": {
       "id": "lead-e7c8bbe28e0cd82b",
@@ -8019,10 +9115,21 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The issue of greenhouse gas emissions from energy consumption has remained a major challenge for the European Union.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 1 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Low-Carbon Economic Growth and Bio-Renewable Energy Efficiency in Top High-Income European Union (EU) Countries: Role of Bank-Based Financial Development",
+          "url": "https://doi.org/10.52642/susbed.1777331",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:38.601963+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-643f0bdabdfc966e": {
       "id": "lead-643f0bdabdfc966e",
@@ -8053,10 +9160,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Quality Assurance (QA) is an essential component for the success and effectiveness of European projects, which are characterized by intrinsic complexity, multinational collaborations, and the management of structural funds.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Assessment of best practices for quality assurance in laboratories in Portuguese-speaking countries.",
+          "url": "https://openalex.org/W7154926324",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "What are the main challenges auditors faced in providing assurance under the CSRD, and what best practices can help in overcoming these challenges?",
+          "url": "https://openalex.org/W7203807372",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Poultry Farming in the Republic of Moldova: Current Trends, Best Practices, Product Quality Assurance, and Sustainable Development Strategies",
+          "url": "https://doi.org/10.3390/su18020626",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:26.597499+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-5f149e8a90ea6710": {
       "id": "lead-5f149e8a90ea6710",
@@ -8104,10 +9234,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Projections of current and future European potential vegetation types.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:23.683770+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-734a798435b546a8": {
       "id": "lead-734a798435b546a8",
@@ -8189,10 +9323,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Innovations as imagined futures in EU sustainability policies.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:53.431772+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-681fa46a9cc19b16": {
       "id": "lead-681fa46a9cc19b16",
@@ -8240,10 +9378,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Energy is considered the driving force of society, a fundamental pillar that supports economic development, improves living standards, and enables the transformations of the digital age.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "Carbon power flow and Romania’s energy transition: Challenges and opportunities",
+          "url": "https://doi.org/10.1051/epjconf/202637206013",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Carbon power flow and Romania’s energy transition: Challenges and opportunities",
+          "url": "https://doi.org/10.1051/epjconf/202637206013/pdf",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "An Empirical Assessment of the Green Energy Transition, Sustainable Development, and Socioeconomic Impacts Under the New Normal Framework in the European Union",
+          "url": "https://doi.org/10.3390/en19030807",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:49.621336+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-ca6cdd55426b0f8e": {
       "id": "lead-ca6cdd55426b0f8e",
@@ -8274,10 +9435,33 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This article analyzes the impact of the development of artificial intelligence (AI) on the public sphere and its consequences for political, security, and legal culture.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "Found 3 potentially related later publications; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [
+        {
+          "title": "The Multi-Level Legal Development of Artificial Intelligence: Opportunities and Threats",
+          "url": "https://doi.org/10.22133/mtlj.2026.526396.1483",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "THE IMPACT OF ARTIFICIAL INTELLIGENCE ON INTERNAL SECURITY",
+          "url": "https://openalex.org/W7163604290",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        },
+        {
+          "title": "Role of Artificial Intelligence in Legal Education",
+          "url": "https://doi.org/10.3126/tulj.v2i01.93201",
+          "year": 2026,
+          "note": "Potentially related later publication; outcome not independently verified"
+        }
+      ],
+      "checked_utc": "2026-10-20T12:23:36.748877+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-a2e0133b9da6e752": {
       "id": "lead-a2e0133b9da6e752",
@@ -8359,10 +9543,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Re-imagining the professional status of teacher educators in Europe: insights from futures-oriented comparative research.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:35.153805+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-2bf875b23a4f62dd": {
       "id": "lead-2bf875b23a4f62dd",
@@ -8376,10 +9564,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "The Russian war has impacted not only Ukraine but also the whole European community—the European Union (EU) and especially Central and Eastern Europe (CEE), where the Russian threat has been looming for over three decades ever since the collapse of the Soviet Union.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:49.037646+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-3395ed0f96f40b66": {
       "id": "lead-3395ed0f96f40b66",
@@ -8393,10 +9585,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "This essay reviews recent research on how the Court of Justice of the European Union (CJEU) influences the development and enforcement of European Union (EU) law.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:51.833501+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-5d9566a29a92609e": {
       "id": "lead-5d9566a29a92609e",
@@ -8461,10 +9657,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Although greenhouse gas emissions have significantly reduced, the European Union still faces a major challenge in meeting its 2050 net-zero goal set under the European Green Deal.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:20.125249+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-11446fa2a2b9b3c8": {
       "id": "lead-11446fa2a2b9b3c8",
@@ -8478,10 +9678,14 @@
       "lead_status": "DOI/title indexed — abstract not in metadata",
       "is_lead": true,
       "what_expected": "Co-creating the European Transition Pathway for Tourism: a transition management approach through participatory backcasting.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:30.469866+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-91776b163ad32af6": {
       "id": "lead-91776b163ad32af6",
@@ -8648,10 +9852,14 @@
       "lead_status": "Abstract indexed — full study unverified",
       "is_lead": true,
       "what_expected": "Abstract Although drought is a natural hazard, growing global concern surrounds its increasing frequency and severity due to climate change.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
+      "what_happened": "No sufficiently similar later publications found in this search; real-world outcome remains unverified.",
+      "status": "insufficient_evidence",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "follow_up_publications": [],
+      "checked_utc": "2026-10-20T12:23:24.271102+00:00",
+      "last_route": "OpenAlex later-publication discovery"
     },
     "lead-9ec0858de2a10a58": {
       "id": "lead-9ec0858de2a10a58",
