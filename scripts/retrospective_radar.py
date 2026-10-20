@@ -4,6 +4,9 @@ Requires OPENAI_API_KEY for AI-assisted web research. Without it, preserves past
 and marks newly found claims as unassessed; never manufactures outcomes/scores.
 """
 import argparse
+import http.client
+import random
+import socket
 import datetime as dt
 import hashlib
 import json
@@ -138,7 +141,6 @@ def free_follow_up(claim, timeout=12):
 
     A discovered paper is a research follow-up, NOT evidence a scenario happened.
     """
-    import difflib
     original = claim.get('original_publication', '')[:4]
     year = int(original) if original.isdigit() else 0
     if not year:
@@ -148,32 +150,53 @@ def free_follow_up(claim, timeout=12):
         return []
     # A simpler OpenAlex query avoids invalid select/filter combinations on
     # heterogeneous records. Filter the dates locally, including future years.
-    params = {'search': title, 'per_page': 15}
+    params = {'search': title, 'per_page': 5}
     email = os.getenv('MAILTO', '').strip() or os.getenv('OPENALEX_EMAIL', '').strip()
     if email and '@' in email:
         params['mailto'] = email
     api_key = os.getenv('OPENALEX_API_KEY', '').strip()
     if api_key:
         params['api_key'] = api_key
-    url = 'https://api.openalex.org/works?' + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={
-        'User-Agent': f'WorldRadar/3.0 (mailto:{email})' if '@' in email else 'WorldRadar/3.0'})
+    def fetch_works(query_params):
+        """Retry transport failures, but never retry authorization/quota failures blindly."""
+        url = 'https://api.openalex.org/works?' + urllib.parse.urlencode(query_params)
+        req = urllib.request.Request(url, headers={
+            'User-Agent': f'WorldRadar/3.1 (mailto:{email})' if '@' in email else 'WorldRadar/3.1',
+            'Accept': 'application/json', 'Accept-Encoding': 'identity'})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as response:
+                    # Read the entire response inside the protected retry block.
+                    payload = response.read()
+                data = json.loads(payload)
+                if not isinstance(data, dict) or not isinstance(data.get('results'), list):
+                    raise ValueError('OpenAlex returned an unexpected results payload')
+                return data['results']
+            except urllib.error.HTTPError as exc:
+                # A 400 may be fixed by the simplified search below. A 429 may
+                # indicate daily quota exhaustion: do not spend requests retrying.
+                if exc.code not in (408, 500, 502, 503, 504):
+                    raise
+            except (http.client.IncompleteRead, http.client.RemoteDisconnected,
+                    ConnectionResetError, BrokenPipeError, TimeoutError,
+                    socket.timeout, urllib.error.URLError) as exc:
+                print(f'OpenAlex transient transport error ({type(exc).__name__}); retry {attempt + 1}/4', flush=True)
+            if attempt == 3:
+                break
+            time.sleep(min(8, 1.5 * (2 ** attempt)) + random.uniform(0, 0.3))
+        raise ConnectionError('OpenAlex response incomplete or unavailable after 4 attempts')
+
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            items = json.load(response).get('results', [])
+        items = fetch_works(params)
     except urllib.error.HTTPError as exc:
-        # A bad input must not poison the rest of the 515-item queue.
         if exc.code != 400:
             raise
-        fallback = {'search': ' '.join(title.split()[:8]), 'per_page': 10}
+        fallback = {'search': ' '.join(title.split()[:8]), 'per_page': 5}
         if email and '@' in email:
             fallback['mailto'] = email
         if api_key:
             fallback['api_key'] = api_key
-        req = urllib.request.Request('https://api.openalex.org/works?' + urllib.parse.urlencode(fallback),
-                                     headers={'User-Agent': 'WorldRadar/3.0'})
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            items = json.load(response).get('results', [])
+        items = fetch_works(fallback)
     stopwords = {'study','research','scenarios','europe','european','future','towards','policy','analysis','perspective','development','modelling'}
     def tokens(t):
         return {w for w in re.findall(r'[a-z]{4,}', t.lower()) if w not in stopwords}
@@ -405,14 +428,16 @@ def main():
             if entries[claim['id']]['status'] in ('realized', 'materializing', 'early_signals', 'contradicted'):
                 completed += 1
             print('Assessed:', claim['id'], entries[claim['id']]['status'], flush=True)
-        except (urllib.error.URLError, ValueError, KeyError, json.JSONDecodeError, TimeoutError) as exc:
+        except (urllib.error.URLError, ValueError, KeyError, json.JSONDecodeError, TimeoutError, ConnectionError, http.client.IncompleteRead, http.client.RemoteDisconnected, ConnectionResetError) as exc:
             print('Assessment failed; prior result kept:', claim['id'], str(exc)[:250], flush=True)
             # Do not repeatedly select the same failing record within a subsequent run.
             entries[claim['id']]['last_attempt_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
-            entries[claim['id']]['last_route'] = EVIDENCE_ROUTES[route][0]
+            entries[claim['id']]['last_route'] = ('OpenAlex later-publication discovery' if args.provider == 'free' else EVIDENCE_ROUTES[route][0])
             failed += 1
             entries[claim['id']]['last_error'] = str(exc)[:250]
             worked += 1
+            # Checkpoint immediately on failure, even when halting on rate limits.
+            OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
             if isinstance(exc, urllib.error.HTTPError) and exc.code == 429:
                 throttled = True
                 print('OPENALEX RATE LIMIT: stopping early, preserving results; check account quota and rerun after reset.', flush=True)
