@@ -146,21 +146,37 @@ def free_follow_up(claim, timeout=12):
     title = concise(claim['title'])[:150]
     if not title:
         return []
-    params = {'search': title, 'per-page': 12, 'filter': f'from_publication_date:{year + 1}-01-01',
-              'select': 'id,doi,title,publication_year,primary_location'}
+    # A simpler OpenAlex query avoids invalid select/filter combinations on
+    # heterogeneous records. Filter the dates locally, including future years.
+    params = {'search': title, 'per_page': 15}
     email = os.getenv('MAILTO', '').strip() or os.getenv('OPENALEX_EMAIL', '').strip()
     if email and '@' in email:
         params['mailto'] = email
-    req = urllib.request.Request('https://api.openalex.org/works?' + urllib.parse.urlencode(params),
-                                 headers={'User-Agent': 'WorldRadar/2.0 (scholarly follow-up)'})
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        items = json.load(response).get('results', [])
+    url = 'https://api.openalex.org/works?' + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={
+        'User-Agent': f'WorldRadar/3.0 (mailto:{email})' if '@' in email else 'WorldRadar/3.0'})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            items = json.load(response).get('results', [])
+    except urllib.error.HTTPError as exc:
+        # A bad input must not poison the rest of the 515-item queue.
+        if exc.code != 400:
+            raise
+        fallback = {'search': ' '.join(title.split()[:8]), 'per_page': 10}
+        if email and '@' in email:
+            fallback['mailto'] = email
+        req = urllib.request.Request('https://api.openalex.org/works?' + urllib.parse.urlencode(fallback),
+                                     headers={'User-Agent': 'WorldRadar/3.0'})
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            items = json.load(response).get('results', [])
     stopwords = {'study','research','scenarios','europe','european','future','towards','policy','analysis','perspective','development','modelling'}
     def tokens(t):
         return {w for w in re.findall(r'[a-z]{4,}', t.lower()) if w not in stopwords}
     original_tokens = tokens(title)
     found = []
     for work in items:
+        if (work.get('publication_year') or 0) <= year:
+            continue
         wtitle = concise(work.get('title'))
         if not wtitle or wtitle.lower() == title.lower():
             continue
@@ -269,6 +285,18 @@ def build_word(entries):
                 doc.add_paragraph(f"• {w['year']}: {w['title'][:150]} — {w['url']}")
     else:
         doc.add_paragraph('No later scholarly follow-ups catalogued so far.')
+    doc.add_heading('Research register | all successfully checked leads', level=1)
+    doc.add_paragraph('Each entry lists its original source, latest search result and possible follow-up publications. A link to later scholarship is NOT proof of a realized prediction.')
+    checked_entries = [e for e in entries if e.get('checked_utc')]
+    for number, e in enumerate(sorted(checked_entries, key=lambda x: x.get('title','').lower()), 1):
+        doc.add_heading(f"{number}. {concise(e.get('title'))[:125]}", level=2)
+        doc.add_paragraph('Original: ' + concise(e.get('source_url')))
+        doc.add_paragraph('Last checked: ' + str(e.get('checked_utc', ''))[:10] + ' | Status: ' + STATUS_LABELS.get(e.get('status'), e.get('status', 'Unknown')))
+        doc.add_paragraph(concise(e.get('what_happened', '')))
+        for paper in e.get('follow_up_publications', [])[:3]:
+            doc.add_paragraph('Related research (' + str(paper.get('year', '?')) + '): ' + concise(paper.get('title')) + ' — ' + concise(paper.get('url')))
+        for evidence in (e.get('evidence') or [])[:3]:
+            doc.add_paragraph('Outcome evidence: ' + concise(evidence.get('finding')) + ' — ' + concise(evidence.get('url')))
     doc.add_heading('What to watch next', level=1)
     doc.add_paragraph(outlook['next_step'])
     doc.add_paragraph('Method: Scanner 1 leads are included without the old full-study acceptance gate. Indexed metadata is not proof of a full-text review. Scenarios are possible futures, not predictions. For the full source list, see WORLD_RADAR_MASTER.xlsx.')
@@ -279,7 +307,7 @@ def build_word(entries):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--minutes', type=float, default=18)
-    ap.add_argument('--max-claims', type=int, default=16)
+    ap.add_argument('--max-claims', type=int, default=515)
     ap.add_argument('--offline', action='store_true')
     ap.add_argument('--provider', choices=['free', 'openai'], default='free')
     args = ap.parse_args()
@@ -301,6 +329,7 @@ def main():
     deadline = time.monotonic() + max(0, args.minutes) * 60
     worked = 0
     completed = 0
+    failed = 0
     for claim in found:
         if claim['id'] not in entries:
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
@@ -342,6 +371,7 @@ def main():
                 related = free_follow_up(claim)
                 previous['follow_up_publications'] = related
                 previous['checked_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+                previous.pop('last_error', None)
                 previous['last_route'] = 'OpenAlex later-publication discovery'
                 if previous.get('status') == 'not_yet_assessed':
                     previous['status'] = 'insufficient_evidence'
@@ -366,14 +396,19 @@ def main():
         except (urllib.error.URLError, ValueError, KeyError, json.JSONDecodeError, TimeoutError) as exc:
             print('Assessment failed; prior result kept:', claim['id'], str(exc)[:250], flush=True)
             # Do not repeatedly select the same failing record within a subsequent run.
-            entries[claim['id']]['checked_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+            entries[claim['id']]['last_attempt_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
             entries[claim['id']]['last_route'] = EVIDENCE_ROUTES[route][0]
+            failed += 1
+            entries[claim['id']]['last_error'] = str(exc)[:250]
             worked += 1
+        if worked and worked % 20 == 0:
+            OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+            print(f'Progress: {worked}/{min(len(found), args.max_claims)} attempts, {failed} failed', flush=True)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
-    print(f'Radar 2: {len(found)} source records, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
-    if not args.offline and worked == 0 and found:
+    print(f'Radar 2: {len(found)} source records, {worked} attempts, {failed} failures, {sum(bool(x.get("checked_utc")) for x in entries.values())} successfully checked total, {completed} new evidence-backed classifications; Word: {REPORT}', flush=True)
+    if not args.offline and (worked == 0 or worked == failed) and found:
         raise SystemExit('RADAR 2 FAILED: no research attempted; review logs and time budget.')
 
 
