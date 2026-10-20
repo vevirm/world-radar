@@ -1111,7 +1111,8 @@ def verify_until(deadline, once=False):
            and x.get('quality', {}).get('status') == 'automated research-substance screen passed'
            and x.get('actor_id') in actors)}
     results = sorted(old.values(), key=lambda x: (x['date'], x['id']), reverse=True)
-    if results != database.get('findings', []):
+    if (results != database.get('findings', [])
+            or database.get('earliest_publication_date') != START_DATE.isoformat()):
         database['findings'] = results
         database['updated_at'] = today.isoformat()
         database['schema_version'] = 2
