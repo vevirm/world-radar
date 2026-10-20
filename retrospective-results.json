@@ -1,53 +1,5 @@
 {
   "entries": {
-    "eu-working-age-2040": {
-      "id": "eu-working-age-2040",
-      "expected": "The EU is projected to have 17 million fewer people of working age in 2040 than in 2023",
-      "source_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2025-strategic-foresight-report_en",
-      "title": "EU working-age population",
-      "target_year": 2040,
-      "what_expected": "The EU is projected to have 17 million fewer people of working age in 2040 than in 2023",
-      "what_happened": "The forecast year has not arrived, so the outcome is not yet known.",
-      "status": "too_early",
-      "evidence": [],
-      "counterevidence": []
-    },
-    "finding-dd6fba4a99fc3312": {
-      "id": "finding-dd6fba4a99fc3312",
-      "expected": "Healthy longevity offers various opportunities but also challenges, particularly when coupled with the parallel decline in fertility rates (32); the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
-      "source_url": "https://commission.europa.eu/document/download/bdba60f0-abb3-42f8-b5be-fd35d693b289_en?filename=SFR2025-Report_web.pdf",
-      "title": "2025 Strategic Foresight Report",
-      "target_year": null,
-      "what_expected": "Healthy longevity offers various opportunities but also challenges, particularly when coupled with the parallel decline in fertility rates (32); the EU is projected to have 17 million fewer people of working age by 2040 than in 2023 (33).",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
-      "evidence": [],
-      "counterevidence": []
-    },
-    "finding-f6fa8d371cffd345": {
-      "id": "finding-f6fa8d371cffd345",
-      "expected": "It will be key to reinforcing Europe’s long-term competitiveness and social model, and thus its global leadership in the new, net-zero economy, also by supporting other regions in building a sustainable future.",
-      "source_url": "https://commission.europa.eu/document/download/ca1c61b7-e413-4877-970b-8ef619fc6b6c_en?filename=SFR-23-beautified-version_en_0.pdf",
-      "title": "2023 Strategic Foresight Report",
-      "target_year": null,
-      "what_expected": "It will be key to reinforcing Europe’s long-term competitiveness and social model, and thus its global leadership in the new, net-zero economy, also by supporting other regions in building a sustainable future.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
-      "evidence": [],
-      "counterevidence": []
-    },
-    "finding-c0eafb1058bcd532": {
-      "id": "finding-c0eafb1058bcd532",
-      "expected": "Furthermore, while the 2018 revised EU Maritime Security Strategy Action Plan 7 called on member states to improve the resilience of maritime trans - port infrastructure by 2020, Zirta had a relatively small navy and an under-re - sourced ministry of defence.",
-      "source_url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf",
-      "title": "What if...? Scanning the horizon: 12 scenarios for 2021",
-      "target_year": null,
-      "what_expected": "Furthermore, while the 2018 revised EU Maritime Security Strategy Action Plan 7 called on member states to improve the resilience of maritime trans - port infrastructure by 2020, Zirta had a relatively small navy and an under-re - sourced ministry of defence.",
-      "what_happened": "No independently verified outcome yet.",
-      "status": "not_yet_assessed",
-      "evidence": [],
-      "counterevidence": []
-    },
     "finding-99364e12c9507a3f": {
       "id": "finding-99364e12c9507a3f",
       "expected": "Prospects for employment and labour force trends in Europe Key messages Employment growth is expected to be moderate over the medium term, slowing down considerably after 2025.",

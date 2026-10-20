@@ -53,12 +53,29 @@ def claims():
                 continue
             if not re.search(r'\b(projected|predicted|forecast|expected|will|would|by 20\d\d|likely to)\b', text, re.I):
                 continue
+            # Avoid treating policy prescriptions and fictional scenarios as forecasts.
+            if re.search(r'\b(will be key|should|must|what if|zirta)\b', text, re.I):
+                continue
             target = re.search(r'\b(?:by|in|before|until|around|through)\s+(20\d{2})\b', text, re.I)
             year = int(target.group(1)) if target else None
             key = 'finding-' + hashlib.sha256((source + text).encode()).hexdigest()[:16]
             out[key] = {'id': key, 'expected': text, 'source_url': source,
                         'title': finding.get('title', ''), 'target_year': year,
                         'original_publication': finding['date'], 'topic': finding.get('topic', ''), 'publisher': finding.get('source', '')}
+    # Include manually curated claims only when an actual original source is provided.
+    # These are separately labelled; search vocabulary alone is not an original forecast.
+    for idea in read_json(ROOT / 'future-ideas.json', []):
+        source = concise(idea.get('source_url'))
+        expected = concise(idea.get('claim'))
+        if not source.startswith(('https://', 'http://')) or len(expected) < 35:
+            continue
+        if any('17 million fewer' in expected.lower() and '17 million fewer' in existing['expected'].lower() for existing in out.values()):
+            continue
+        key = 'curated-' + hashlib.sha256((source + expected).encode()).hexdigest()[:16]
+        out[key] = {'id': key, 'expected': expected, 'source_url': source,
+                    'title': idea.get('title', ''), 'target_year': idea.get('target_year'),
+                    'original_publication': 'Check original source', 'topic': '',
+                    'publisher': 'Manually curated; source date not confirmed'}
     return list(out.values())
 
 
@@ -194,22 +211,30 @@ def normalize(claim, result):
 
 def build_word(entries):
     from docx import Document
-    from docx.shared import Inches
+    from docx.shared import Inches, Pt
     doc = Document()
+    doc.styles["Normal"].font.size = Pt(9)
+    doc.styles["Normal"].paragraph_format.space_after = Pt(4)
     sec = doc.sections[0]
-    sec.top_margin = sec.bottom_margin = Inches(.75)
-    doc.add_heading('Foresight: signs of realization', 0)
-    doc.add_paragraph('Radar 2 | Evidence-based monitoring | ' + dt.date.today().isoformat())
+    sec.top_margin = sec.bottom_margin = Inches(.62)
+    doc.add_heading('What was expected vs. what happened', 0)
+    doc.add_paragraph('Radar 2 | Report regenerated (UTC): ' + dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M'))
     doc.add_paragraph('Question: Is there credible evidence that foresight is happening, beginning to happen, or being contradicted? No numerical accuracy scores are used. A scenario is not a prediction. Evidence and remaining uncertainty are shown separately.')
     doc.add_paragraph('Statuses: Realized · Materializing · Early signals · No clear evidence · Contradicted · Too early to tell · Insufficient evidence · Not yet investigated.')
+    assessed_count = sum(bool(item.get('evidence') or item.get('counterevidence')) for item in entries)
+    doc.add_paragraph(f'Tracked claims: {len(entries)} | Claims with cited outcome leads: {assessed_count} | Without cited outcomes: {len(entries) - assessed_count}. Source URLs are research leads, not independently verified by this document.')
     if not entries:
         doc.add_paragraph('No source-linked foresight claims were extracted from the screened studies yet.')
     for n, item in enumerate(entries, 1):
         doc.add_heading(f'{n}. {item.get("title") or "Foresight claim"}', level=2)
-        doc.add_paragraph('Original foresight: ' + concise(item.get('what_expected') or item['expected']))
-        doc.add_paragraph('Published: ' + str(item.get('original_publication', 'Unknown')) + ' | Horizon: ' + str(item.get('target_year') or 'Not specified'))
+        doc.add_paragraph('WHAT WAS EXPECTED: ' + concise(item['expected']))
+        doc.add_paragraph('Published: ' + str(item.get('original_publication') or 'Unknown') + ' | Horizon: ' + str(item.get('target_year') or 'Not specified'))
         doc.add_paragraph('Realization status: ' + STATUS_LABELS.get(item.get('status'), 'Not yet investigated'))
-        doc.add_paragraph('Observed developments: ' + concise(item.get('what_happened') or 'Not independently established.'))
+        has_sources = bool(item.get('evidence') or item.get('counterevidence'))
+        happened = concise(item.get('what_happened')) if has_sources else 'No independently sourced observed outcome recorded yet.'
+        doc.add_paragraph('WHAT ACTUALLY HAPPENED: ' + happened)
+        doc.add_paragraph('Last evidence search (UTC): ' + str(item.get('checked_utc') or 'Never; awaiting research'))
+        doc.add_paragraph('Research attempts: ' + str(item.get('research_attempts', 0)))
         doc.add_paragraph('Assessment and limits: ' + concise(item.get('reasoning') or 'No conclusive assessment available.'))
         doc.add_paragraph('What to watch next: ' + concise(item.get('watch_next') or 'Further independently dated observations.'))
         doc.add_paragraph('Original study: ' + item['source_url'])
@@ -246,6 +271,11 @@ def main():
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
                                    'what_happened': 'No independently verified outcome yet.',
                                    'status': 'not_yet_assessed', 'evidence': [], 'counterevidence': []}
+    # Keep the JSON limited to current candidates: legacy/orphaned entries previously
+    # made the stored report appear more complete than its live extraction pipeline.
+    active_ids = {claim['id'] for claim in found}
+    entries = {key: value for key, value in entries.items() if key in active_ids}
+    stored['entries'] = entries
     # First cover unassessed claims; then revisit old/weak assessments.
     # Tie-breakers rotate fairly across source organisations and forecast years,
     # rather than allowing one publisher to fill the entire time budget.
