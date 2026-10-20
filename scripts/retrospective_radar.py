@@ -17,6 +17,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+try:
+    from forecast_screening import screen
+except ModuleNotFoundError:
+    from scripts.forecast_screening import screen
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'retrospective-results.json'
@@ -44,6 +48,7 @@ def claims():
     out = {}
     leads = read_json(ROOT / 'research-leads.json', {}).get('leads', [])
     for lead in leads:
+        screening = screen(lead)
         url = concise(lead.get('url'))
         title = concise(lead.get('title'))
         if not url or not title:
@@ -55,7 +60,7 @@ def claims():
                            'topic': lead.get('journal') or 'Foresight research',
                            'publisher': lead.get('publisher') or lead.get('journal') or '',
                            'lead_status': lead.get('status') or 'Discovered lead',
-                           'is_lead': True}
+                           'is_lead': True, **screening}
     return list(out.values())
 
 
@@ -277,57 +282,61 @@ def normalize(claim, result):
 
 
 def build_word(entries):
-    """Readable short update; never produce hundreds of empty assessment pages."""
-    from outlook_summary import create
-    outlook = create(entries)
+    """Publish an honest decision-oriented report, NOT a 90-page bibliography."""
+    from collections import Counter
     from docx import Document
     from docx.shared import Inches, Pt
+    from outlook_summary import create
+    outlook = create(entries)
     doc = Document()
     sec = doc.sections[0]
-    sec.top_margin = sec.bottom_margin = Inches(.75)
+    sec.top_margin = sec.bottom_margin = Inches(.8)
     doc.styles['Normal'].font.size = Pt(10)
-    doc.add_heading('EU foresight | Short outlook', 0)
-    doc.add_paragraph('Updated: ' + outlook['generated_utc'])
-    doc.add_heading('At a glance', level=1)
-    doc.add_paragraph(outlook['verdict'])
-    doc.add_paragraph(outlook['interpretation'])
-    doc.add_heading('What the scanners are following', level=1)
-    doc.add_paragraph(f"Scanner 1 has {outlook['lead_count']} indexed research leads. Scanner 2 has checked {outlook['checked_count']} leads; {outlook['follow_up_count']} have potentially related later publications. Independently verified outcomes: {outlook['evidence_backed_count']}. Later research papers are not proof that a scenario came true.")
-    for theme in outlook['themes'][:5]:
-        doc.add_paragraph(f"• {theme['topic']}: {theme['study_count']} research leads")
-    doc.add_heading('What has been happening', level=1)
-    observed = [e for e in entries if e.get('evidence') or e.get('counterevidence')]
-    if observed:
-        for e in sorted(observed, key=lambda x:x.get('checked_utc',''), reverse=True)[:6]:
-            doc.add_paragraph(f"• {concise(e.get('title'))[:95]} — {concise(e.get('what_happened'))[:320]}")
-            source = (e.get('evidence') or e.get('counterevidence') or [{}])[0].get('url','')
-            if source: doc.add_paragraph('  Evidence: ' + source)
+    doc.add_heading('What was expected — what actually happened?', 0)
+    doc.add_paragraph('EU foresight | Evidence review | ' + dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))
+    doc.add_paragraph('Scope: indexed sources are research leads, not necessarily predictions. No title similarity or later scholarly publication alone counts as evidence that an outcome occurred.')
+    screening = Counter(e.get('screening_status', 'unscreened') for e in entries)
+    verified = [e for e in entries if e.get('status') in ('realized','materializing','early_signals','contradicted') and (e.get('evidence') or e.get('counterevidence'))]
+    candidates = [e for e in entries if e.get('screening_status') == 'candidate_needs_validation']
+    doc.add_heading('Research audit', 1)
+    doc.add_paragraph(f"Scanner 1 leads: {len(entries)} | Forecast candidates requiring validation: {len(candidates)} | Full text needed: {screening['full_text_required']} | No testable prediction in metadata: {screening['no_testable_prediction_in_metadata']} | Evidence-backed assessments: {len(verified)}.")
+    if not verified:
+        doc.add_paragraph('No verified Expected → Happened comparisons are available from the current evidence. The report does not manufacture them or equate bibliographic searches with observed outcomes.')
     else:
-        doc.add_paragraph('No independently sourced later developments are recorded yet. Scanner 2 will add short evidence-linked observations as research completes. This report does not invent updates.')
-    doc.add_heading('Later research found (not confirmed outcomes)', level=1)
-    followups = [e for e in entries if e.get('follow_up_publications')]
-    if followups:
-        for e in sorted(followups, key=lambda x:x.get('checked_utc',''), reverse=True)[:12]:
-            doc.add_paragraph('Original: ' + concise(e.get('title'))[:110])
-            for w in e['follow_up_publications'][:2]:
-                doc.add_paragraph(f"• {w['year']}: {w['title'][:150]} — {w['url']}")
-    else:
-        doc.add_paragraph('No later scholarly follow-ups catalogued so far.')
-    doc.add_heading('Research register | all successfully checked leads', level=1)
-    doc.add_paragraph('Each entry lists its original source, latest search result and possible follow-up publications. A link to later scholarship is NOT proof of a realized prediction.')
-    checked_entries = [e for e in entries if e.get('checked_utc')]
-    for number, e in enumerate(sorted(checked_entries, key=lambda x: x.get('title','').lower()), 1):
-        doc.add_heading(f"{number}. {concise(e.get('title'))[:125]}", level=2)
-        doc.add_paragraph('Original: ' + concise(e.get('source_url')))
-        doc.add_paragraph('Last checked: ' + str(e.get('checked_utc', ''))[:10] + ' | Status: ' + STATUS_LABELS.get(e.get('status'), e.get('status', 'Unknown')))
-        doc.add_paragraph(concise(e.get('what_happened', '')))
-        for paper in e.get('follow_up_publications', [])[:3]:
-            doc.add_paragraph('Related research (' + str(paper.get('year', '?')) + '): ' + concise(paper.get('title')) + ' — ' + concise(paper.get('url')))
-        for evidence in (e.get('evidence') or [])[:3]:
-            doc.add_paragraph('Outcome evidence: ' + concise(evidence.get('finding')) + ' — ' + concise(evidence.get('url')))
-    doc.add_heading('What to watch next', level=1)
-    doc.add_paragraph(outlook['next_step'])
-    doc.add_paragraph('Method: Scanner 1 leads are included without the old full-study acceptance gate. Indexed metadata is not proof of a full-text review. Scenarios are possible futures, not predictions. For the full source list, see WORLD_RADAR_MASTER.xlsx.')
+        doc.add_heading('Expected → Happened | independently sourced', 1)
+        for e in verified[:30]:
+            doc.add_heading(concise(e.get('title'))[:140], 2)
+            doc.add_paragraph('Expected: ' + concise(e.get('what_expected'))[:600])
+            doc.add_paragraph('Happened: ' + concise(e.get('what_happened'))[:600])
+            doc.add_paragraph('Verdict: ' + STATUS_LABELS.get(e.get('status'), 'Unverified'))
+            for source in (e.get('evidence') or [])[:3] + (e.get('counterevidence') or [])[:2]:
+                doc.add_paragraph('Evidence (' + concise(source.get('date')) + '): ' + concise(source.get('finding'))[:260] + ' — ' + concise(source.get('url')))
+    observations = read_json(ROOT / 'outcome-observations.json', {}).get('observations', [])
+    if observations:
+        doc.add_heading('Observed developments | primary sources', 1)
+        doc.add_paragraph('These are documented real-world observations relevant to Scanner 1 topics. A policy target is not a scientific prediction, and progress toward a future target is not proof of future success.')
+        for item in observations:
+            doc.add_heading(concise(item.get('topic')), 2)
+            matching = next((e for e in entries if item.get('original_lead_title_contains', '').lower() in e.get('title', '').lower()), None)
+            if matching:
+                doc.add_paragraph('Original monitored research: ' + concise(matching.get('title')) + ' — ' + concise(matching.get('source_url')))
+            doc.add_paragraph('Expected / target: ' + concise(item.get('expected')))
+            doc.add_paragraph('Actually observed: ' + concise(item.get('happened')))
+            doc.add_paragraph('Assessment: ' + concise(item.get('verdict')))
+            for src in item.get('sources', []):
+                doc.add_paragraph('Source (' + concise(src.get('date')) + '): ' + concise(src.get('finding')) + ' — ' + concise(src.get('url')))
+    doc.add_heading('Original-source forecast candidates — not verified', 1)
+    doc.add_paragraph('These phrases are copied from indexed abstracts, not independently validated against full original publications. They are NOT outcome verdicts. Full-text review and later independent observations are required.')
+    for e in candidates[:30]:
+        doc.add_heading(concise(e.get('title'))[:130], 2)
+        doc.add_paragraph('Candidate original wording: ' + concise(e.get('candidate_excerpt'))[:650])
+        doc.add_paragraph('Original source: ' + concise(e.get('source_url')))
+        doc.add_paragraph('Observed outcome: Not established. Next: verify full source and locate an official dated measurement or evaluation.')
+    if len(candidates)>30:
+        doc.add_paragraph(f'{len(candidates)-30} additional candidates are saved in retrospective-results.json for separate validation.')
+    doc.add_heading('What is needed for real retrospective findings', 1)
+    doc.add_paragraph('For each candidate: original document passage; publication date; quantified or observable prediction, geography and target date; then independent dated outcome evidence with direct source links and contrary evidence when available. Unverified items must remain unverified.')
+    doc.add_paragraph('The entire collection remains available in research-leads.json and retrospective-results.json. Unverified entries are intentionally excluded from this Word report rather than expanded into hundreds of empty verdicts.')
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(REPORT)
 
@@ -369,6 +378,8 @@ def main():
     active_ids = {claim['id'] for claim in found}
     entries = {key: value for key, value in entries.items() if key in active_ids}
     stored['entries'] = entries
+    for claim in found:
+        entries[claim['id']].update({k: claim[k] for k in ('screening_status','screening_reason','candidate_excerpt','candidate_year')})
     # First cover unassessed claims; then revisit old/weak assessments.
     # Tie-breakers rotate fairly across source organisations and forecast years,
     # rather than allowing one publisher to fill the entire time budget.
@@ -377,7 +388,7 @@ def main():
         status = e.get('status')
         tier = 0 if status in ('not_yet_assessed', 'insufficient_evidence', 'too_early', 'no_clear_evidence') else 1
         return (tier, e.get('checked_utc', ''), c['id'])
-    ordered = sorted(found, key=priority)
+    ordered = sorted((c for c in found if c.get('screening_status') == 'candidate_needs_validation'), key=priority) if args.provider == 'free' else sorted(found, key=priority)
     groups = {}
     for claim in ordered:
         host = urllib.parse.urlparse(claim['source_url']).hostname or ''
@@ -399,12 +410,13 @@ def main():
             if args.provider == 'free':
                 related = free_follow_up(claim)
                 previous['follow_up_publications'] = related
-                previous['checked_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+                previous['bibliography_checked_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
                 previous.pop('last_error', None)
                 previous['last_route'] = 'OpenAlex later-publication discovery'
-                if previous.get('status') == 'not_yet_assessed':
-                    previous['status'] = 'insufficient_evidence'
-                previous['what_happened'] = ('Found ' + str(len(related)) + ' potentially related later publications; real-world outcome remains unverified.' if related else 'No sufficiently similar later publications found in this search; real-world outcome remains unverified.')
+                # Later papers do not constitute an outcome check.
+                if previous.get('status') in ('not_yet_assessed', 'insufficient_evidence'):
+                    previous['status'] = 'not_yet_assessed'
+                previous['what_happened'] = 'No independently verified outcome. Bibliography is stored separately.'
                 worked += 1
                 print('Checked:', claim['id'], 'follow-up publications:', len(related), flush=True)
                 # Successful free-provider results must also reach the checkpoint block.
@@ -448,7 +460,7 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
-    print(f'Radar 2: {len(found)} source records, {worked} attempts, {failed} failures, {sum(bool(x.get("checked_utc")) for x in entries.values())} successfully checked total, {completed} new evidence-backed classifications; Word: {REPORT}', flush=True)
+    print(f'Radar 2: {len(found)} source records, {worked} bibliography attempts, {failed} failures, {sum(bool(x.get("evidence") or x.get("counterevidence")) for x in entries.values())} entries with dated evidence; Word: {REPORT}', flush=True)
     summary_file = os.getenv('GITHUB_STEP_SUMMARY')
     if summary_file:
         with open(summary_file, 'a', encoding='utf-8') as summary:

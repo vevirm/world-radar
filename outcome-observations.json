@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-20",
+  "method": "Editor-reviewed primary-source observations, not automated matching and not verified forecasts unless the original contains an explicit prediction.",
+  "observations": [
+    {
+      "topic": "EU renewable energy share, 2030 target",
+      "kind": "policy_target_progress_not_prediction",
+      "original_lead_title_contains": "Fifty shades of binding",
+      "expected": "The 2018 Renewable Energy Directive originally set a binding EU renewable-energy share target of at least 32% by 2030. This was a policy target, not a prediction that 32% would be achieved.",
+      "happened": "The 2030 binding target was raised to at least 42.5% in 2023. Eurostat reported a 25.2% renewables share of EU gross final energy consumption for 2024, leaving a 17.3-percentage-point gap to the revised 2030 target.",
+      "verdict": "Progress observed; 2030 target not yet due; no claim of final realization.",
+      "sources": [
+        {
+          "date": "2018-12-21",
+          "url": "https://commission.europa.eu/news-and-media/news/new-renewables-energy-efficiency-and-governance-legislation-comes-force-24-december-2018-2018-12-21_en",
+          "finding": "Original binding 32% target"
+        },
+        {
+          "date": "2023-11-20",
+          "url": "https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules/renewable-energy-targets_en",
+          "finding": "Directive revision raises target to at least 42.5%"
+        },
+        {
+          "date": "2025-12-18",
+          "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20251218-2",
+          "finding": "Eurostat reports 25.2% renewable share for 2024"
+        }
+      ]
+    },
+    {
+      "topic": "EU net greenhouse gas reduction toward 2030",
+      "kind": "policy_target_progress_not_prediction",
+      "original_lead_title_contains": "Carbon Neutrality and Resilient Districts",
+      "expected": "The EU policy objective is to reduce net greenhouse gas emissions by at least 55% by 2030 relative to 1990, and become climate neutral by 2050. These are targets, not predictions.",
+      "happened": "The European Commission reported that provisional EU net greenhouse gas emissions in 2024 were 37.2% below 1990, within the scope of the EU climate target. The 2030 objective is not yet due.",
+      "verdict": "Observed emissions reductions; 2030 and 2050 objectives not yet verifiable as completed.",
+      "sources": [
+        {
+          "date": "2025",
+          "url": "https://climate.ec.europa.eu/areas-action/climate-strategies-targets/progress-climate-action/eu-climate-action-progress-report-2025/chapter-1-climate-action-advances-and-challenges_en",
+          "finding": "European Commission 2025 progress report gives 2024 net emissions reduction of 37.2% versus 1990"
+        },
+        {
+          "date": "2025",
+          "url": "https://www.eea.europa.eu/en/newsroom/news/trends-and-projections-greenhouse-gas-emissions-largely-on-track-to-2030-targets",
+          "finding": "EEA says 2024 estimated net GHG emissions 37% below 1990; 55% 2030 goal not yet due"
+        }
+      ]
+    }
+  ]
+}
