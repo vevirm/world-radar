@@ -6,6 +6,9 @@ on:
     paths:
       - 'index.html'
       - 'retrospective-results.json'
+      - 'outlook-summary.json'
+      - 'research-leads.json'
+      - 'stuff/WORLD_RADAR_MASTER.xlsx'
       - 'stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx'
       - '.github/workflows/publish-website.yml'
   workflow_run:

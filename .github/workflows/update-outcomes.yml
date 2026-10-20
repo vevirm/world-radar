@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: echo "RADAR_CLOCK_START=$(date +%s)" >> "$GITHUB_ENV"
 
-      - name: Research outcomes (up to 23 minutes)
+      - name: Research Scanner 1 leads (up to 23 minutes)
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          git add retrospective-results.json outlook-summary.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: update retrospective Word report'
             git pull --rebase

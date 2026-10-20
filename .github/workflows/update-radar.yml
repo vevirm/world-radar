@@ -68,7 +68,7 @@ jobs:
           python -m json.tool priority-50.json > /dev/null
           python -m json.tool priority-sources.json > /dev/null
           python scripts/check_data.py
-      - name: Build continuously refreshed master Excel workbook
+      - name: Build all Scanner 1 leads Excel workbook
         run: python scripts/build_master_excel.py
       - name: Persist source rotation and source-verified findings
         run: |
