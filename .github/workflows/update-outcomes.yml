@@ -39,7 +39,8 @@ jobs:
           # Reserve time for report commit and final 25-minute clock alignment.
           echo "Radar 2 research budget: 23 minutes; total job target: ~25 minutes."
           if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-            echo "::warning::OPENAI_API_KEY absent; AI-based independent research may be skipped."
+            echo "::error::OPENAI_API_KEY missing. Add it under repository Settings > Secrets and variables > Actions."
+            exit 1
           fi
           python -u scripts/retrospective_radar.py --minutes 23 --max-claims 100
 
