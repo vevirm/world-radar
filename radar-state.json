@@ -1,41 +1,41 @@
 {
   "schema_version": 1,
-  "runs": 32,
-  "source_cursor": 9,
-  "verification_cursor": 13,
+  "runs": 33,
+  "source_cursor": 10,
+  "verification_cursor": 14,
   "archive_pages": {
     "ec": {
       "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "ceps": {
       "https://www.ceps.eu/publications/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "oecd": {
       "https://www.oecd.org/en/about/programmes/strategic-foresight.html": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "utu-ffrc": {
       "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/news/publications": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://www.utu.fi/en/university/turku-school-of-economics/finland-futures-research-centre/research/previous-foresight": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "fraunhofer": {
       "https://www.isi.fraunhofer.de/en/competence-center/foresight.html": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://www.isi.fraunhofer.de/en/competence-center/foresight/geschaeftsfelder/politik-verwaltung.html": {
         "root": false,
@@ -71,7 +71,7 @@
     "fod": {
       "https://foresight-on-demand.eu/publications-and-reports/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://foresight-on-demand.eu/projects/futures-garden/": {
         "root": false,
@@ -82,45 +82,45 @@
     "jrc": {
       "https://joint-research-centre.ec.europa.eu/scientific-activities-z/foresight_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "epc": {
       "https://epc.eu/publications/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "tuni": {
       "https://researchportal.tuni.fi/en/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "espas": {
       "https://espas.eu/gtr.html": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://espas.eu/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "ecfr": {
       "https://ecfr.eu/publications/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "eui": {
       "https://cadmus.eui.eu/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://cadmus.eui.eu/search?f.itemtype=Technical+Report%2Cequals": {
         "root": false,
@@ -131,51 +131,51 @@
     "eprs": {
       "https://www.europarl.europa.eu/thinktank/en/home.html": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "stoa": {
       "https://www.europarl.europa.eu/stoa/en/home": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "council": {
       "https://www.consilium.europa.eu/en/documents-publications/": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "euiss": {
       "https://www.iss.europa.eu/publications": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://www.eeas.europa.eu/eeas_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "eea": {
       "https://www.eea.europa.eu/en/topics/at-a-glance/state-of-europes-environment": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "cedefop": {
       "https://www.cedefop.europa.eu/en/projects/skills-forecast": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://www.cedefop.europa.eu/en/publications": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "ec-contracts": {
       "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       },
       "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/foresight/publications-about-foresight_en": {
         "root": false,
@@ -196,19 +196,19 @@
     "ecb": {
       "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "eurofound": {
       "https://www.eurofound.europa.eu/en/publications": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     },
     "ecfin": {
       "https://economy-finance.ec.europa.eu/publications_en": {
         "root": true,
-        "last_scan": "2026-10-19"
+        "last_scan": "2026-10-20"
       }
     }
   },
@@ -221,16 +221,16 @@
       "verifier_version": 3
     },
     "https://www.ceps.eu/ceps-publications/alternative-futures-of-eu-integration-after-the-covid-19-pandemic/": {
-      "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
-      "reason": "403 Client Error: Forbidden for url: https://www.ceps.eu/ceps-publications/alternative-futures-of-eu-integration-after-the-covid-19-pandemic/",
+      "status": "rejected",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-12-04",
+      "reason": "publisher does not corroborate catalogue publication date",
       "verifier_version": 3
     },
     "https://www.oecd.org/en/publications/oecd-regional-outlook-2023_92cd40a0-en/full-report/component-8.html": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "403 Client Error: Forbidden for url: https://www.oecd.org/en/publications/oecd-regional-outlook-2023_92cd40a0-en/full-report/component-8.html",
       "verifier_version": 3
     },
@@ -358,15 +358,15 @@
     },
     "https://epc.eu/publication/Differentiated-EUrope-2035-Elaboration-and-Evaluation-of-Five-Potenti-425a54/": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "403 Client Error: Forbidden for url: https://epc.eu/publication/Differentiated-EUrope-2035-Elaboration-and-Evaluation-of-Five-Potenti-425a54/",
       "verifier_version": 3
     },
     "https://espas.eu/files/espas_files/about/espas-report-2015.pdf": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "HTTPSConnectionPool(host='espas.eu', port=443): Max retries exceeded with url: /files/espas_files/about/espas-report-2015.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get l",
       "verifier_version": 3
     },
@@ -378,8 +378,8 @@
     },
     "https://www.espas.eu/files/espas_files/about/ESPAS-Global-Trends-to-2040-Choosing-Europes-Future.pdf": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "HTTPSConnectionPool(host='www.espas.eu', port=443): Max retries exceeded with url: /files/espas_files/about/ESPAS-Global-Trends-to-2040-Choosing-Europes-Future.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cert",
       "verifier_version": 3
     },
@@ -403,8 +403,8 @@
     },
     "https://www.eea.europa.eu/en/analysis/publications/the-european-environment-state-and-outlook-2015-synthesis-report": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
@@ -423,8 +423,8 @@
     },
     "https://www.eea.europa.eu/en/analysis/publications/soer-2020": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
@@ -436,9 +436,9 @@
     },
     "https://www.eea.europa.eu/en/analysis/publications/imagining-a-sustainable-europe-in-2050": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
-      "reason": "HTTPSConnectionPool(host='www.eea.europa.eu', port=443): Read timed out. (read timeout=12)",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
+      "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
     "https://www.eea.europa.eu/en/analysis/publications/the-european-environment-state-and-outlook-2010-synthesis": {
@@ -455,37 +455,37 @@
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-demand-foresight-towards-2nd-strategic-plan-horizon-europe_en": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/after-new-normal-scenarios-europe-post-covid-19-world_en": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
-      "reason": "Full study not retrieved; landing page only (no full-document link found)",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
+      "reason": "Full study not retrieved; landing page only (research-and-innovation.ec.europa.eu: HTTPSConnectionPool(host='op.europa.eu', port=443): Read timed out. (read timeout=12))",
       "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/foresight-reports-missions-horizon-europe_en": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
     "https://research-and-innovation.ec.europa.eu/knowledge-publications-tools-and-data/publications/all-publications/strategic-foresight-western-balkans_en": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
       "reason": "Full study not retrieved; landing page only (no full-document link found)",
       "verifier_version": 3
     },
     "https://op.europa.eu/en/publication-detail/-/publication/e436b4b6-fa50-11eb-b520-01aa75ed71a1/language-en/format-PDF/source-222702137": {
       "status": "retrieval_failed",
-      "last_checked": "2026-10-18",
-      "retry_after": "2026-10-20",
-      "reason": "Full study not retrieved; landing page only (publications.europa.eu: Unregistered publisher or off-site redirect)",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-10-22",
+      "reason": "Full study not retrieved; landing page only (publications.europa.eu: Unregistered publisher or off-site redirect; op.europa.eu: HTTPSConnectionPool(host='op.europa.eu', port=443): Read timed out. (read timeout=12))",
       "verifier_version": 3
     },
     "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2018": {
@@ -632,12 +632,19 @@
       "retry_after": "2026-12-03",
       "reason": "Not a discoverable foresight/futures-oriented study",
       "verifier_version": 3
+    },
+    "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;callCode=null;freeTextSearchKeyword=foresight;matchWholeText=true;typeCodes=1,0;statusCodes=31094501,31094502,31094503;programmePeriod=2021%20-%202027;programCcm2Id=43108390;programDivisionCode=null;focusAreaCode=null;destination=null;mission=null;geographicalZonesCode=null;programmeDivisionProspect=null;startDateLte=null;startDateGte=null;crossCuttingPriorityCode=null;cpvCode=null;performanceOfDelivery=null;sortQuery=sortStatus;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState": {
+      "status": "rejected",
+      "last_checked": "2026-10-20",
+      "retry_after": "2026-12-04",
+      "reason": "Title not corroborated by original publisher landing page or full text",
+      "verifier_version": 3
     }
   },
   "queue": [],
-  "last_discovery_utc": "2026-10-19T18:56:02.588074+00:00",
-  "last_verification_utc": "2026-10-19T19:09:58.431852+00:00",
-  "scholarly_cursor": 172,
-  "last_scholarly_scan_utc": "2026-10-19T19:09:20.514224+00:00",
-  "scholarly_queries_completed": 5256
+  "last_discovery_utc": "2026-10-20T06:50:00.063042+00:00",
+  "last_verification_utc": "2026-10-20T07:04:46.930311+00:00",
+  "scholarly_cursor": 299,
+  "last_scholarly_scan_utc": "2026-10-20T07:02:53.712590+00:00",
+  "scholarly_queries_completed": 7679
 }
