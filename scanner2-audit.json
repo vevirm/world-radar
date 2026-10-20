@@ -1,18 +1,18 @@
 {
-  "research_leads": 515,
-  "candidate_forecasts": 28,
+  "research_leads": 1366,
+  "candidate_forecasts": 143,
   "reviewed_verdicts": 0,
   "invalid_cases": [],
   "outcome_verification_complete": false,
   "run": {
-    "provider": "catalogue",
-    "attempts": 515,
+    "provider": "openalex",
+    "attempts": 12,
     "failed": 0,
     "new_evidence_assessments": 0,
-    "literature_comparisons": 515,
-    "literature_studies_found": 150,
-    "note": "Compared genuine existing scholarly records offline; no new external request."
+    "literature_comparisons": 12,
+    "literature_studies_found": 35,
+    "note": "OpenAlex similar-study comparisons; academic abstracts are provisional, not verified outcomes."
   },
-  "literature_compared_total": 515,
-  "generated_utc": "2026-10-20T15:19:51.035706+00:00"
+  "literature_compared_total": 527,
+  "generated_utc": "2026-10-20T19:59:50.289888+00:00"
 }

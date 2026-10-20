@@ -1,5 +1,1436 @@
 {
   "schema_version": 1,
-  "candidate_count": 0,
-  "candidates": []
+  "candidate_count": 143,
+  "candidates": [
+    {
+      "lead_id": "lead-db27f0b5db88f6cf",
+      "title": "Shaping Tourism Higher Education Curriculum-Strategy to Develop Skills for Tomorrow's Jobs",
+      "source_url": "https://doi.org/10.1016/s2212-5671(12)00297-3",
+      "original_publication": "2012-01-01",
+      "candidate_excerpt": "The CEDEFOP study conclusions: ‘Skills supply and demand in Europe: medium - term forecast up to 2020’ act as an alarm sign to prevent incoherence between labour market skills forecast demand and curriculum supply.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-09ec2fafdad52ccc",
+      "title": "The Environmental balance sheet of nations: reflections on global climate change scenarios",
+      "source_url": "https://doi.org/10.15728/bbr.2012.9.1.4",
+      "original_publication": "2012-03-30",
+      "candidate_excerpt": "We consider the stock of forest resources and the residual balance between emission and capture of carbon or greenhouse gases (GHGs) estimated for each country in 2020 and 2050, according to the two editions (A1B1 and A2B2) of theSpecial Report on Emission Scenarios (SRES).",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-82c1209865f3a053",
+      "title": "Impact of climate change on ozone-related mortality and morbidity in Europe",
+      "source_url": "https://doi.org/10.1183/09031936.00210411",
+      "original_publication": "2012-06-27",
+      "candidate_excerpt": "Comparing the baseline period and the future periods (2021-2050 and 2041-2060), much larger increases in ozone-related mortality and morbidity are projected for Belgium, France, Spain and Portugal, with the impact being stronger using the climate projection from ECHAM4 (A2).",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-837d2983618062a6",
+      "title": "Foresighting addiction and lifestyles in Europe 2030+",
+      "source_url": "https://doi.org/10.1007/s40309-013-0019-0",
+      "original_publication": "2013-10-05",
+      "candidate_excerpt": "The project invited 17 European and three international drug disorder experts to provide an initial vision and a reframing as to how scientific, technological and social advancement may impact on our understanding of addictions and lifestyles over the next 20 years («Vision 2030+»).",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b5bed476a396528c",
+      "title": "Scenarios for renewable energy deployment in North African countries and electricity exchange with Europe – A modelbased analysis for 2050",
+      "source_url": "https://doi.org/10.12720/sgce.3.3.299-306",
+      "original_publication": "2014-01-01",
+      "candidate_excerpt": "Deployment of renewable energy technologies in North Africa has large potentials for both, the coverage of the growing local electricity demand and for export of electricity to neighboring regions such as Europe.The presented research analyzes four scenarios with high shares of renewable energies in electricity generation (regional average 83-98%) in five North African countries and evaluates the opportunities and technical challenges for exchange of electricity within the region and with Europe.It was found that extensive grid reinforcements would be required to realize the presented scenarios.With respect to inner-regional transmission capa",
+      "target_year_candidate": null,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-571fb03297fcebcc",
+      "title": "International migration by 2030: impact of immigration policies scenarios on growth and employment",
+      "source_url": "https://doi.org/10.1108/fs-06-2012-0045",
+      "original_publication": "2014-04-08",
+      "candidate_excerpt": "Purpose – The aim of this paper is to estimate the dynamic of international migration between the different regions of the world for 2030 and to measure the impact of different kind of migration policies on the economic and social evolution.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-6d7b733143608169",
+      "title": "Modelling Soil Organic Carbon Changes Under Different Maize Cropping Scenarios for Cellulosic Ethanol in Europe",
+      "source_url": "https://doi.org/10.1007/s12155-014-9529-2",
+      "original_publication": "2014-10-01",
+      "candidate_excerpt": "ha −1 year −1 , considering a continuous biofuel scenario by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b048eef096e4dc98",
+      "title": "Losses of Ammonia and Nitrate from Agriculture and Their Effect on Nitrogen Recovery in the European Union and the United States between 1900 and 2050",
+      "source_url": "https://doi.org/10.2134/jeq2014.03.0102",
+      "original_publication": "2015-01-05",
+      "candidate_excerpt": "In the United States, environmental N loads will remain substantially smaller than in the European Union, whereas agricultural production in 2050 in the United States will increase by 30% relative to 2005, as compared with an increase of 8% in the European Union.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-616c0b7511591643",
+      "title": "Microgrids: Enhancing the Resilience of the European Megagrid",
+      "source_url": "https://doi.org/10.1109/mpe.2015.2397336",
+      "original_publication": "2015-04-21",
+      "candidate_excerpt": "By 2020, 20% of the European electricity demand will be met by renewable generation while, by 2030, a substantial proportion of the electricity generation would become largely decarbonized.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-c58a6b59f8f84186",
+      "title": "Ocean energy development in Europe: Current status and future perspectives",
+      "source_url": "https://doi.org/10.1016/j.ijome.2015.05.001",
+      "original_publication": "2015-06-06",
+      "candidate_excerpt": "In the EU, the aim is to reach 100 GW of combined wave and tidal capacity installed by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-7880897cf17032ca",
+      "title": "Ensemble flood risk assessment in Europe under high end climate scenarios",
+      "source_url": "https://doi.org/10.1016/j.gloenvcha.2015.09.004",
+      "original_publication": "2015-09-24",
+      "candidate_excerpt": "When coherent socio-economic development pathways are included in the assessment, central estimates of population annually affected by floods range between 500,000 and 640,000 in 2050, and between 540,000 and 950,000 in 2080, as compared to 216,000 in the current climate.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-02f61428c3b8a630",
+      "title": "Demographic and Human Capital Heterogeneity in Selected Provinces of Turkey: A Scenario Analysis Using Multi-dimensional Population Projection Model",
+      "source_url": "https://doi.org/10.14254/2071-789x.2015/8-3/16",
+      "original_publication": "2015-10-20",
+      "candidate_excerpt": "Turkey is a geographically diverse country and two important components of that diversity is demographic and the level of education.Regions of the country vary markedly in the age structure of the population and even more conspicuously in such characteristics as fertility, mortality, and migration and the level of educational attainment.The purpose of this study is mainly to explore the effect of various demographic and education scenarios on the size and the structure of the population in five selected provinces that are representative of four fertility regions of Turkey.Three scenarios were defined namely: \"Euro\" in which Turkey joins Europ",
+      "target_year_candidate": null,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-726d2d4ffd64aca7",
+      "title": "How far away is hydrogen? Its role in the medium and long-term decarbonisation of the European energy system",
+      "source_url": "https://doi.org/10.1016/j.ijhydene.2015.09.004",
+      "original_publication": "2015-11-07",
+      "candidate_excerpt": "In the CAP scenario, the share of hydrogen in the final energy consumption of the transport and industry sectors reaches 5% and 6% by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ae9b4a7c5b09efdb",
+      "title": "Assessing the impacts of technology improvements on the deployment of marine energy in Europe with an energy system perspective",
+      "source_url": "https://doi.org/10.1016/j.renene.2015.11.076",
+      "original_publication": "2015-12-23",
+      "candidate_excerpt": "Ensuring the cost-effectiveness of tidal power by 2030 requires efficiency improvements by 40% above current expectations or cost reductions by 50%.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-c1783f3097630508",
+      "title": "STRATEGIC DIRECTIONS OF DEVELOPMENT OF THE POLISH POWER SECTOR IN THE LIGHT OF CLIMATE AND ENERGY POLICY OF THE EUROPEAN UNION",
+      "source_url": "https://doi.org/10.7862/rz.2016.hss.18",
+      "original_publication": "2016-01-01",
+      "candidate_excerpt": "The paper analyzes the possible directions of development of the Polish electricity sector by 2050 in terms of its adaptation to the EU requirements.The analysis was performed for different scenarios of development of CCS technology, nuclear energy development conditions and forecasted fuel prices on the domestic market, assuming the EU's targets for energy and climate policy.Strategic directions of sector development, taking into account investments in gas-fired and nuclear power plants were considered.Position of coal in the future fuel structure of Polish electricity generation and its conditions were discussed.The costs of electricity pro",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-cd0f14dcc327f5bb",
+      "title": "European Water Footprint Scenarios for 2050",
+      "source_url": "https://doi.org/10.3390/w8060226",
+      "original_publication": "2016-05-27",
+      "candidate_excerpt": "This study develops water footprint scenarios for Europe for 2050, at the country level, based on projections regarding population and economic growth, production and trade patterns, consumption patterns (diets and bioenergy use) and technological development.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-8764ef9faf9878eb",
+      "title": "Dynamics of the land use, land use change, and forestry sink in the European Union: the impacts of energy and climate targets for 2030",
+      "source_url": "https://doi.org/10.1007/s10584-016-1729-7",
+      "original_publication": "2016-07-08",
+      "candidate_excerpt": "The main elements are a binding 40 % greenhouse gas (GHG) reduction target compared to 1990, a renewable energy share of 27 %, and an energy savings target of at least 27 % by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-522b185c7816c0b0",
+      "title": "Decarbonizing the EU energy system by 2050: an important role for BECCS",
+      "source_url": "https://doi.org/10.1080/14693062.2016.1242058",
+      "original_publication": "2016-11-29",
+      "candidate_excerpt": "Such a value is within the (wide) range of marginal carbon prices produced by comparable scenarios in other studies.Policy relevanceThe EU has set itself a target of reducing its greenhouse gas emissions by at least 80% by 2050, against 1990 levels.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b7e2b55f27c109e6",
+      "title": "Prospects of labour migration pressure in Algeria, Morocco, Tunisia and Turkey",
+      "source_url": "https://doi.org/10.1186/s41118-016-0015-x",
+      "original_publication": "2016-12-01",
+      "candidate_excerpt": "Subsequently, storylines are operationalized, leading to scenario estimates of migration pressure up to 2035.",
+      "target_year_candidate": 2035,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-33bfe1fdbb6ec2d0",
+      "title": "Realising transition pathways for a more electric, low-carbon energy system in the United Kingdom: Challenges, insights and opportunities",
+      "source_url": "https://doi.org/10.1177/0957650917695448",
+      "original_publication": "2017-03-26",
+      "candidate_excerpt": "The United Kingdom has placed itself on a transition towards a low-carbon economy and society, through the imposition of a legally-binding goal aimed at reducing its ‘greenhouse gas’ emissions by 80% by 2050 against a 1990 baseline.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1adc6161d5c8ecb4",
+      "title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
+      "source_url": "https://doi.org/10.3390/f8120484",
+      "original_publication": "2017-12-06",
+      "candidate_excerpt": "The Climate and Energy Framework aims at a total emission reduction of 40% by 2030 for all sectors together as part of the Paris Agreement.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-028df65d690e3e7c",
+      "title": "Pathways to Decarbonise the European Car Fleet: A Scenario Analysis Using the Backcasting Approach",
+      "source_url": "https://doi.org/10.3390/en11010020",
+      "original_publication": "2017-12-22",
+      "candidate_excerpt": "The analysis showed that if car mobility and ownership continue to increase as expected in a ‘business as usual’ case, a share of 97% plug-in hybrid or battery electric vehicles might be required by 2050, together with a substantial decrease in greenhouse gas emission from electricity production.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fa4c0bc478a22ef9",
+      "title": "Climate change mitigation: evidences from the European scenario",
+      "source_url": "https://doi.org/10.1504/ijmne.2018.095079",
+      "original_publication": "2018-01-01",
+      "candidate_excerpt": "By 2050, the EU aims to reduce its greenhouse gas emissions by 80%-95% compared with 1990 levels.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-6654b9f74ab1e48b",
+      "title": "Climate change mitigation: evidences from the European scenario",
+      "source_url": "https://doi.org/10.1504/ijmne.2018.10016474",
+      "original_publication": "2018-01-01",
+      "candidate_excerpt": "By 2050, the EU aims to reduce its greenhouse gas emissions by 80%-95% compared with 1990 levels.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-28bf50d1dbdc929f",
+      "title": "Estimation and Forecasts for the Share of Renewable Energy Consumption in Final Energy Consumption by 2020 in the European Union",
+      "source_url": "https://doi.org/10.3390/su10051515",
+      "original_publication": "2018-05-10",
+      "candidate_excerpt": "European Union Directive 2009/28/EC established that the share of renewable energy in the final energy consumption should reach a target of 20% by 2020 in European Union (EU) countries.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-05b4d0da9087d2c6",
+      "title": "Public health air pollution impacts of pathway options to meet the 2050 UK Climate Change Act target: a modelling study",
+      "source_url": "https://doi.org/10.3310/phr06070",
+      "original_publication": "2018-06-01",
+      "candidate_excerpt": "London: The Stationery Office; 2008) requires a reduction of 80% in carbon dioxide-equivalent emissions by 2050 on a 1990 base.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-6cccc09a4b8f972d",
+      "title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
+      "source_url": "https://doi.org/10.1111/gcbb.12525",
+      "original_publication": "2018-06-21",
+      "candidate_excerpt": "RJF reduces aviation‐related combustion emission by 12–19 Mt/year CO 2 ‐eq by 2030, offsetting 53%–84% of projected emission growth of the sector in the EU relative to 2020.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-768fcbcee09ee4a5",
+      "title": "South East Europe electricity roadmap – modelling energy transition in the electricity sectors",
+      "source_url": "https://doi.org/10.1080/14693062.2018.1532390",
+      "original_publication": "2018-10-10",
+      "candidate_excerpt": "One of the most important challenges for the South East Europe region will be replacing more than 30% of its presently installed fossil fuel generation capacity by the end of 2030, and more than 95% by 2050 if its age structure is considered.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-4f6abbc5e583c8f0",
+      "title": "A forecast of international migration flows into EU countries until 2050",
+      "source_url": "https://doi.org/10.14746/pp.2018.23.4.6",
+      "original_publication": "2018-12-28",
+      "candidate_excerpt": "The data used for the forecast is UN data on migration flows in 1990-2015, and the UN’s predictions regarding changes in population between now and 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-c3ed81bbdd7ea933",
+      "title": "Environmental and resource burdens associated with low carbon, more electric transition pathways to 2050: Footprint components from carbon emissions and land use to waste arisings and water consumption",
+      "source_url": "https://doi.org/10.1016/j.glt.2019.01.001",
+      "original_publication": "2019-01-01",
+      "candidate_excerpt": "Electricity demand was projected to decrease significantly under the TF pathway by 2050, but its total environmental footprint (EF) was greater than either that under the MR or CC pathways.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-a25159c76b7dc62d",
+      "title": "Flexible electricity generation, grid exchange and storage for the transition to a 100% renewable energy system in Europe",
+      "source_url": "https://doi.org/10.1016/j.renene.2019.02.077",
+      "original_publication": "2019-02-15",
+      "candidate_excerpt": "Two transition pathways towards a 100% renewable energy (RE) power sector by 2050 are simulated for Europe using the LUT Energy System Transition model.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fd8a9cd9b99cde71",
+      "title": "Amplification of future energy demand growth due to climate change",
+      "source_url": "https://doi.org/10.1038/s41467-019-10399-3",
+      "original_publication": "2019-06-24",
+      "candidate_excerpt": "We combine econometrically estimated responses of energy use to income, hot and cold days with future projections of spatial population and national income under five socioeconomic scenarios and temperature increases around 2050 for two emission scenarios simulated by 21 Earth System Models (ESMs).",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-406dc047a4125339",
+      "title": "Pathway Analysis of a Zero-Emission Transition in the Nordic-Baltic Region",
+      "source_url": "https://doi.org/10.3390/en12173337",
+      "original_publication": "2019-08-29",
+      "candidate_excerpt": "The energy system optimizations indicate that most of the investments needed for the zero-emission pathway until 2050 would take place already by 2030.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-25b32b7e3de43383",
+      "title": "Soft-linking of a behavioral model for transport with energy system cost optimization applied to hydrogen in EU",
+      "source_url": "https://doi.org/10.1016/j.rser.2019.109349",
+      "original_publication": "2019-09-06",
+      "candidate_excerpt": "The focus is on an energy system with 95% CO2 reduction by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-17247b800a737172",
+      "title": "ECONOMIC GROWTH PROJECTION FOR EUROPEAN UNION BY 2030",
+      "source_url": "https://doi.org/10.5755/j01.eis.0.13.23709",
+      "original_publication": "2019-10-29",
+      "candidate_excerpt": "Feeding the estimated production function for the 2018-2030 forecast has employed projected population by Eurostat, while private capital investment has been generated by an ARIMA model.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1bfed8720d732f4f",
+      "title": "Life cycle assessment integration into energy system models: An application for Power-to-Methane in the EU",
+      "source_url": "https://doi.org/10.1016/j.apenergy.2019.114160",
+      "original_publication": "2019-11-25",
+      "candidate_excerpt": "This study does an ex-post LCA analysis of results from JRC-EU-TIMES and estimates the environmental impact indicators across 18 categories in scenarios that achieve 80–95% CO2 emission reduction by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ffab88a52fdaccfb",
+      "title": "From bioethanol containing fuels towards a fuel economy that includes methanol derived from renewable sources and the impact on European Union decision-making on transition pathways",
+      "source_url": "https://doi.org/10.1016/j.rser.2019.109667",
+      "original_publication": "2019-12-19",
+      "candidate_excerpt": "Decision-making on the optimum transition pathway to an energy economy that meets agreed carbon reduction goals in the European Union (EU) by 2050 is challenging, because of the size of the infrastructural legacy, technological uncertainties, affordability and assumptions on future energy demand.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1c5f03d3f5bb2693",
+      "title": "A comparison of three transformation pathways towards a sustainable European society - An integrated analysis from an energy system perspective",
+      "source_url": "https://doi.org/10.1016/j.esr.2020.100461",
+      "original_publication": "2020-02-04",
+      "candidate_excerpt": "To realise this transition, a reduction in greenhouse gas emissions of at least 80% from 1990 levels by 2050 is required.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-96c91c2ae48c3be6",
+      "title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
+      "source_url": "https://doi.org/10.1016/j.enpol.2019.111224",
+      "original_publication": "2020-02-19",
+      "candidate_excerpt": "To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ef20e9d73d222ce7",
+      "title": "How photovoltaics can contribute to GHG emission reductions of 55% in the EU by 2030",
+      "source_url": "https://doi.org/10.1016/j.rser.2020.109836",
+      "original_publication": "2020-03-31",
+      "candidate_excerpt": "This implies a compound annual growth rate between 12 and 15% in the timeframe 2020–203 to increase the annual PV market from approximately 16.5 GW in 2019 to 50–80 GW by 2030.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-598fc95682126a61",
+      "title": "Fifty shades of binding: Appraising the enforcement toolkit for the EU’s 2030 renewable energy targets",
+      "source_url": "https://doi.org/10.1111/reel.12330",
+      "original_publication": "2020-04-14",
+      "candidate_excerpt": "In December 2018, the European Union (EU) adopted a recast of the Renewable Energy Directive (RED II), which introduces a new target of 32 percent renewable energy to be reached at the EU level by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1c7c0d8eaaff4d30",
+      "title": "Burden of Stroke in Europe",
+      "source_url": "https://doi.org/10.1161/strokeaha.120.029606",
+      "original_publication": "2020-07-10",
+      "candidate_excerpt": "By 2047, we estimated an additional 40 000 incident strokes (+3%) and 2.58 million prevalent cases (+27%).",
+      "target_year_candidate": 2047,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e449946e8e33439f",
+      "title": "Assessing the future medical cost burden for the European health systems under alternative exposure-to-risks scenarios",
+      "source_url": "https://doi.org/10.1371/journal.pone.0238565",
+      "original_publication": "2020-09-11",
+      "candidate_excerpt": "In the all the countries, 605 billion Euros can be saved by 2050 if BCP is realized compared to the BAU, while excess spending under the WCP is forecast to be around 350 billion.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-8d9e862717a7549a",
+      "title": "ENERGY: DEVELOPMENT FORECASTS, BIFURCATION POINTS (OVERVIEW)",
+      "source_url": "https://doi.org/10.31472/ttpe.4.2020.7",
+      "original_publication": "2020-09-25",
+      "candidate_excerpt": "Suggestions are made for the need to support the energy strategy, including the energy strategy adopted in Ukraine in 2017 for the period up to 2035, by working documents - operational sliding forecast plans (roadmaps) to manage and monitor its implementation at intermediate time intervals, creating perhaps a specialized structure for these purposes.",
+      "target_year_candidate": 2035,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-36723a2cc127b300",
+      "title": "28.G. Workshop: Foresight studies at the global, European and national level: what can we learn from them?",
+      "source_url": "https://doi.org/10.1093/eurpub/ckaa165.1286",
+      "original_publication": "2020-09-30",
+      "candidate_excerpt": "Next, EURO-HEALTHY project will present the Scenarios for population health inequalities in 2030 in Europe, partly based on a Web-Delphi process with a multidisciplinary panel.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1bead0573364c03a",
+      "title": "The awareness, visibility and support for young carers across Europe: a Delphi study",
+      "source_url": "https://doi.org/10.1186/s12913-020-05780-8",
+      "original_publication": "2020-10-07",
+      "candidate_excerpt": "The study forms part of an EU Horizon 2020 funded research project on AYCs aged 15-17 years old.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-add17575cc4a9009",
+      "title": "Quantifying the sensitivity of european power systems to energy scenarios and climate change projections",
+      "source_url": "https://doi.org/10.1016/j.renene.2020.09.125",
+      "original_publication": "2020-10-09",
+      "candidate_excerpt": "We show for the first time how a set of divergent future power system scenarios lead to marked differences in Europe’s total energy balance (demand-net-renewable supply) by 2050, which dominate over the uncertainty associated with climate change (∼50% and ∼5% respectively).",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-de3edf9e56cf3057",
+      "title": "The Untapped Area Potential for Photovoltaic Power in the European Union",
+      "source_url": "https://doi.org/10.3390/cleantechnol2040027",
+      "original_publication": "2020-10-16",
+      "candidate_excerpt": "The aim is to reduce up to 55% the greenhouse gas emissions by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-4f49768461354e38",
+      "title": "The Impact of Decarbonization Scenarios on Air Quality and Human Health in Poland—Analysis of Scenarios up to 2050",
+      "source_url": "https://doi.org/10.3390/atmos11111222",
+      "original_publication": "2020-11-13",
+      "candidate_excerpt": "The three scenarios of the REFLEX Project focused on the reduction of CO2 emissions up to 2050 from various sectors, mainly by the means of fuel and technological switches.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-8a8fe53e9fb0871c",
+      "title": "The role of gases in the European energy transition",
+      "source_url": "https://doi.org/10.32609/j.ruje.6.55105",
+      "original_publication": "2020-12-11",
+      "candidate_excerpt": "Maximum availability of biomethane and hydrogen from power to gas is estimated at 100–150 billion cubic meters by 2050 (or around 25–30% of gas demand in the late 2010s.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e9d4f5b8b4bd55fc",
+      "title": "Modelling Bioeconomy Scenario Pathways for the Forest Products Markets with Emerging Lignocellulosic Products",
+      "source_url": "https://doi.org/10.3390/su122410540",
+      "original_publication": "2020-12-16",
+      "candidate_excerpt": "Simultaneously, wood-based panels are finding increasing application (+196% by 2050) and thus are taking over potential markets for sawn wood, for which production growth remains limited.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2abe3091e5c34f8a",
+      "title": "Burden of pancreatic cancer along with attributable risk factors in Europe between 1990 and 2019, and projections until 2039",
+      "source_url": "https://doi.org/10.1002/ijc.33617",
+      "original_publication": "2021-05-03",
+      "candidate_excerpt": "At the same time, our models only predicted a mild increase in the ASR of mortality until 2039.",
+      "target_year_candidate": 2039,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-90f34517465f7357",
+      "title": "Cross-border climate vulnerabilities of the European Union to drought",
+      "source_url": "https://doi.org/10.1038/s41467-021-23584-0",
+      "original_publication": "2021-06-15",
+      "candidate_excerpt": "The drought severity in production locations of the agricultural imports in 2050 will increase by 35% compared to current levels of drought severity.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e9877321b6c3f8f1",
+      "title": "Where is the EU headed given its current climate policy? A stakeholder-driven model inter-comparison",
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2021.148549",
+      "original_publication": "2021-06-21",
+      "candidate_excerpt": "We find that Europe is currently on track to overperforming its pre-2020 40% target yet far from its newest ambition of 55% emissions cuts by 2030, as well as looking at a 1.0–2.35 GtCO2 emissions range in 2050.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-588d7a6adb65ea78",
+      "title": "Are the European manufacturing and energy sectors on track for achieving net-zero emissions in 2050? An empirical analysis",
+      "source_url": "https://doi.org/10.1016/j.enpol.2021.112464",
+      "original_publication": "2021-07-13",
+      "candidate_excerpt": "The findings highlight that achieving net-zero emissions by 2050 will require additional policies that are tailored to super-polluters and also support installations that have not started their decarbonisation pathway.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2a9619dedd222d88",
+      "title": "Future Projections of Heat Mortality Risk for Major European Cities",
+      "source_url": "https://doi.org/10.1175/wcas-d-20-0142.1",
+      "original_publication": "2021-07-16",
+      "candidate_excerpt": "Our results illustrate that heat mortality increases by about 0.9%/decade in Germany, 1.7%/decade in France and 7.9%/decade in Spain for RCP8.5 by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-5d1c5db468da2961",
+      "title": "Scenario forecasting of consumption of main organic livestock products in Ukraine",
+      "source_url": "https://doi.org/10.51599/are.2021.07.03.02",
+      "original_publication": "2021-09-20",
+      "candidate_excerpt": "According to the systemic variant in Ukraine for the period up to 2025 the forecasted capacity of the internal market for organic meat and meat products (in terms of meat) will amount to 3.26 bln UAH; organic milk, dairy products and butter (in terms of milk) will amount to 2.65 bln UAH; organic eggs will amount to 0.47 bln UAH.",
+      "target_year_candidate": 2025,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-58dacbd3357f6622",
+      "title": "Decoupling transport-related greenhouse gas emissions and economic growth in the European Union countries",
+      "source_url": "https://doi.org/10.13044/j.sdewes.d9.0411",
+      "original_publication": "2021-09-21",
+      "candidate_excerpt": "As the European Union declares its ambition to become the first climate-neutral continent by 2050, it is more than important to monitor and analyse developments in greenhouse gas emissions in individual sectors, including transport.The paper aims to assess using the decoupling method, the relationship between transport-related greenhouse gas emissions and the economic growth of the EU countries.The results indicate that the countries achieved different stages of decoupling within the individual monitored periods, with relative decoupling (55%) and absolute decoupling (34%) being the most common.However, in the long run (20 year study period 1",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-49f32f0c0d218cf0",
+      "title": "Hydrogen in the Strategies of the European Union Member States",
+      "source_url": "https://doi.org/10.24425/gsm.2021.138660",
+      "original_publication": "2021-09-29",
+      "candidate_excerpt": "By 2030, some of the countries plan to become a leader not only in the field of hydrogen production or RES development aimed at this process but also in the areas of research and development (R&D), sales of new technologies, and international cooperation.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fc1312f15268cd69",
+      "title": "Integrated assessment of the role of bioenergy within the EU energy transition targets to 2050",
+      "source_url": "https://doi.org/10.1111/gcbb.12908",
+      "original_publication": "2021-10-29",
+      "candidate_excerpt": "We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-6cab35459f195163",
+      "title": "The role of district heating systems to provide balancing services in the European Union",
+      "source_url": "https://doi.org/10.1016/j.rser.2021.111853",
+      "original_publication": "2021-11-12",
+      "candidate_excerpt": "Specifically, the aFRR technical potential is currently 32 GW — 4 times the aFRR contracted in 2019 in the EU — and it only slightly decreases by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-a3b553a6c6c2e448",
+      "title": "The Role of BECCS in Achieving Climate Neutrality in the European Union",
+      "source_url": "https://doi.org/10.3390/en14237842",
+      "original_publication": "2021-11-23",
+      "candidate_excerpt": "The achievement of climate neutrality in the European Union by 2050 will not be possible solely through a reduction in fossil fuels and the development of energy generation from renewable sources.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e9020122f054144e",
+      "title": "EFFECTS OF HYDROGEN PRODUCTION ON ECONOMIC GROWTH IN THE EUROPEAN UNION",
+      "source_url": "https://doi.org/10.47535/1991auoes30(2)003",
+      "original_publication": "2021-12-01",
+      "candidate_excerpt": "Decarbonisation leads to a significant increase in the role of electricity, which can cover the demand of over 50% of final energy by 2050, compared to about 20% today.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2e71832feeeec664",
+      "title": "Energy Portfolio of the Eastern Poland Macroregion in the European Union",
+      "source_url": "https://doi.org/10.3390/en14248426",
+      "original_publication": "2021-12-14",
+      "candidate_excerpt": "It is predicted that by 2030, the following sources will change their positions within the portfolio for the Eastern Poland macroregion: solar energy, wind energy and bioenergy.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-04d3e94234f12c42",
+      "title": "EUROPEAN UNION STRATEGIC AUTONOMY IN THE CONTEXT OF THE CONFERENCE ON THE FUTURE OF EUROPE",
+      "source_url": "https://doi.org/10.61801/auoc-sp.2021.04",
+      "original_publication": "2021-12-31",
+      "candidate_excerpt": "The main goal of this paper is to discuss the need for EU to achieve strategic autonomy in the upcoming years and shed light on how this concept is shaping EU's future.The question underpinning this research is focused on the reasons why strengthening EU's strategic autonomy matters so much in shaping said future.Strategic autonomy cannot be limited only to security and defense, as many more fields need to embed this concept in 2021.In this sense, the paper does not address directly the complementarity with NATO and the defense and security dimension of strategic autonomy, but rather focuses on the political and economic implications of EU's ",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-d2cf56f80625ac64",
+      "title": "Convergence of Population Structures of the European Union Member States—The Past and the Future",
+      "source_url": "https://doi.org/10.3390/su14021024",
+      "original_publication": "2022-01-17",
+      "candidate_excerpt": "The Eurostat projections indicate that, by 2050, most of the European Union member states will see a fall in their population size, a drop in the share of young people, and a simultaneous rise in the share of elderly persons.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-06faebddb068f670",
+      "title": "On the Future(s) of Energy Communities in the German Energy Transition: A Derivation of Transformation Pathways",
+      "source_url": "https://doi.org/10.3390/su14063169",
+      "original_publication": "2022-03-08",
+      "candidate_excerpt": "However, it is expected that the majority of EU households will be active in some form in the generation of energy by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1b36b990af26004c",
+      "title": "Policy Modelling for Ambitious Energy Efficiency Investment in the EU Residential Buildings",
+      "source_url": "https://doi.org/10.3390/en15062233",
+      "original_publication": "2022-03-18",
+      "candidate_excerpt": "This paper presents the challenges of increasing the energy efficiency investments in European Union (EU) residential buildings in the context of achieving climate neutrality by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-35f5d2691eae7d98",
+      "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
+      "source_url": "https://doi.org/10.3390/su14084728",
+      "original_publication": "2022-04-14",
+      "candidate_excerpt": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-599226b2261894b9",
+      "title": "Achieving agricultural greenhouse gas emission reductions in the EU post‐2030: What options do we have?",
+      "source_url": "https://doi.org/10.1111/reel.12448",
+      "original_publication": "2022-06-30",
+      "candidate_excerpt": "Abstract By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-70fa57366957de41",
+      "title": "Eliciting knowledge from stakeholders to identify critical issues of the transition to climate neutrality in Greece, the Nordic Region, and the European Union",
+      "source_url": "https://doi.org/10.1016/j.erss.2022.102836",
+      "original_publication": "2022-10-23",
+      "candidate_excerpt": "The European Union's commitment to climate neutrality by 2050 requires a better understanding of the energy transition in different contexts and scales to improve cooperation of involved actors.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-d8ade010ab9b2aa7",
+      "title": "Climate, Energy – and Environment? Reconciliation of EU Environmental Law with the Implementation Realities of EU Climate Law",
+      "source_url": "https://doi.org/10.1163/18786561-12030003",
+      "original_publication": "2022-10-26",
+      "candidate_excerpt": "The European Union’s revised Trans European Network – Energy ( ten-E ) Regulation (June 2022) provides that energy infrastructure in the form of projects of common interest shall be deemed to be in the overriding public interest in the context of the Habitats Directive, an exception to that Directive’s prohibition on development that could negatively impact protected Natura 2000 features.",
+      "target_year_candidate": 2022,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-3e12875a25c17c55",
+      "title": "Towards a decarbonised building stock by 2050: The meaning and the role of zero emission buildings (ZEBs) in Europe",
+      "source_url": "https://doi.org/10.1016/j.esr.2022.101009",
+      "original_publication": "2022-11-01",
+      "candidate_excerpt": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-50f72cb48c24f6fc",
+      "title": "Past and Future Trends in Refugee Migration on the Regional Level in Germany – An Analysis and Projection of Labor Market Effects",
+      "source_url": "https://doi.org/10.12765/cpos-2022-17",
+      "original_publication": "2022-12-07",
+      "candidate_excerpt": "Next, we calculate corresponding future employment effects conditional on our projected refugee figures, our estimation results, and official regional demographic forecasts until 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b9e9fcde33d584d8",
+      "title": "Fit for social innovation? Policy reflections for EU energy and climate policy making",
+      "source_url": "https://doi.org/10.1093/ooenergy/oiac010",
+      "original_publication": "2023-01-01",
+      "candidate_excerpt": "Abstract Achieving climate-neutrality by mid-century and its intermediary reduction targets for 2030, notably the EU’s greenhouse gas emissions reduction of 55% by 2030, requires an accelerated transformation of our systems of production and consumption.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-681e99c9eb46d039",
+      "title": "Investigating pathways to a net-zero emissions building sector in the European Union: what role for the energy efficiency first principle?",
+      "source_url": "https://doi.org/10.1007/s12053-023-10100-0",
+      "original_publication": "2023-03-17",
+      "candidate_excerpt": "This study contributes to the quantitative evidence on the relevance of EE1st by modelling the impact of moderate to ambitious end-use energy efficiency measures on energy supply and the associated system cost under a net-zero greenhouse gas emissions constraint by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-0edf61de1cd8d669",
+      "title": "CROATIA - Migration and demographic patterns in Central-Eastern Europe",
+      "source_url": "https://doi.org/10.5281/zenodo.7778343",
+      "original_publication": "2023-03-28",
+      "candidate_excerpt": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-507cb6d11f4cf2ef",
+      "title": "ESTONIA - Migration and demographic patterns in Central-Eastern Europe",
+      "source_url": "https://doi.org/10.5281/zenodo.7778435",
+      "original_publication": "2023-03-28",
+      "candidate_excerpt": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e6a2784803a21dda",
+      "title": "Lithium‐ion battery cell production in Europe: Scenarios for reducing energy consumption and greenhouse gas emissions until 2030",
+      "source_url": "https://doi.org/10.1111/jiec.13386",
+      "original_publication": "2023-03-29",
+      "candidate_excerpt": "Studies have predicted a growth of 600% in LIB demand by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-23c4604397be9fdb",
+      "title": "LATVIA - Migration and demographic patterns in Central-Eastern Europe",
+      "source_url": "https://doi.org/10.5281/zenodo.7782042",
+      "original_publication": "2023-03-29",
+      "candidate_excerpt": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b524c1b8c001c76a",
+      "title": "Production of Electricity at the European Union Level vs. Romania",
+      "source_url": "https://doi.org/10.56578/jgelcd020102",
+      "original_publication": "2023-03-29",
+      "candidate_excerpt": "The purpose of this paper is to carry out a quantitative analysis of the electricity production at the level of the European Union (EU) and in Romania, in the period of 2011-2020.To address the current environmental concerns, the package \"Fit for 55\" proposes that by 2050, most of the energy production will have to come from renewable sources, but the question is whether this desideratum can indeed be achieved.Among the methods used in scientific research, the quantitative analysis was selected and applied in this paper, in order to carry out a detailed statistical analysis on the trend of increase or decrease in the electricity production fr",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-916854372823e2bd",
+      "title": "ROMANIA - Migration and demographic patterns in Central-Eastern Europe",
+      "source_url": "https://doi.org/10.5281/zenodo.7784650",
+      "original_publication": "2023-03-30",
+      "candidate_excerpt": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1f1647b7606a7539",
+      "title": "SLOVENIA - Migration and demographic patterns in Central-Eastern Europe",
+      "source_url": "https://doi.org/10.5281/zenodo.7785750",
+      "original_publication": "2023-04-03",
+      "candidate_excerpt": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fc9dab91b8988543",
+      "title": "The European Solar Communication—Will It Pave the Road to Achieve 1 TW of Photovoltaic System Capacity in the European Union by 2030?",
+      "source_url": "https://doi.org/10.3390/su15086531",
+      "original_publication": "2023-04-12",
+      "candidate_excerpt": "According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030.",
+      "target_year_candidate": 2022,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-295bfd60f18088d3",
+      "title": "Prospective life cycle assessment of European cement production",
+      "source_url": "https://doi.org/10.1016/j.resconrec.2023.106998",
+      "original_publication": "2023-04-23",
+      "candidate_excerpt": "emissions by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-d612e50295f98cb9",
+      "title": "Poverty and social exclusion in the EU: third-order priorities, hybrid governance and the future potential of the field",
+      "source_url": "https://doi.org/10.1177/10242589231171091",
+      "original_publication": "2023-05-13",
+      "candidate_excerpt": "EU leaders have agreed to reduce the number of people who are at risk of poverty or social exclusion by 15 million (including at least five million children) by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fc106fbcd3784be8",
+      "title": "Managing the EU energy crisis and greenhouse gas emissions: Seasonal ARIMA forecast",
+      "source_url": "https://doi.org/10.21511/ppm.21(2).2023.37",
+      "original_publication": "2023-05-22",
+      "candidate_excerpt": "This study focuses on forecasting greenhouse gas emissions in the EU until 2030 and uses the Seasonal ARIMA model based on quarterly time series in the EU27.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-0c30bd11b87904ea",
+      "title": "Unveiling the hidden economic toll of biological invasions in the European Union",
+      "source_url": "https://doi.org/10.1186/s12302-023-00750-3",
+      "original_publication": "2023-06-08",
+      "candidate_excerpt": "Using future projections of current estimates, we also identified a substantial increase in costs and costly species (US$148.2 billion) by 2040.",
+      "target_year_candidate": 2040,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-8808a009711261de",
+      "title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "source_url": "https://doi.org/10.12688/openreseurope.15906.1",
+      "original_publication": "2023-06-20",
+      "candidate_excerpt": "By 2022, ocean energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development.",
+      "target_year_candidate": 2022,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-a15893f9d7710d96",
+      "title": "The Environmental Sustainability of the European Union Countries: Collective Identity as a Stratum for Decarbonization",
+      "source_url": "https://doi.org/10.1017/s1062798723000133",
+      "original_publication": "2023-07-11",
+      "candidate_excerpt": "Thus, the objective of this study is to explore how different EU countries (Poland, Italy, and Germany) employ three decarbonization pillars: waste recycling, eco-innovation, and policy innovation (WEP) as a yardstick to mitigate global warming and attain the EU’s ‘net-zero’ emissions by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-3969c73d095a5d8d",
+      "title": "Scenario Analysis of the Development of the Polish Power System towards Achieving Climate Neutrality in 2050",
+      "source_url": "https://doi.org/10.3390/en16165918",
+      "original_publication": "2023-08-10",
+      "candidate_excerpt": "The two scenarios show relatively similar pathways for CO2 emission reductions by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-816d55d9b1750421",
+      "title": "RETRACTED ARTICLE: Sustainable development economy and the development of green economy in the European Union",
+      "source_url": "https://doi.org/10.1186/s13705-023-00410-7",
+      "original_publication": "2023-08-22",
+      "candidate_excerpt": "The EU has set ambitious targets for reducing greenhouse gas emissions, aiming for at least a 40% reduction by 2030 compared to 1990 levels and becoming carbon-neutral by 2050.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-199c3f2ed2cf20a7",
+      "title": "Mapping the Future of Green Hydrogen: Integrated Analysis of Poland and the EU’s Development Pathways to 2050",
+      "source_url": "https://doi.org/10.3390/en16176261",
+      "original_publication": "2023-08-28",
+      "candidate_excerpt": "Hydrogen usage in the energy sector is projected to range from 67 to 76 PJ/y for Poland and from 1066 to 1601 PJ/y for EU+ by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ba4bac25a879c8dd",
+      "title": "The potential role of biomethane for the decarbonization of transport: An analysis of 2030 scenarios in Italy",
+      "source_url": "https://doi.org/10.1016/j.apenergy.2023.122322",
+      "original_publication": "2023-11-16",
+      "candidate_excerpt": "Based on current estimates for sustainable biomethane potential by 2030, ranging from 2.3 to 7.6 billion cubic meters depending on the scenario, the analysis compares technologies for the generation, distribution and final use of biomethane.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-d15ad51824d93d64",
+      "title": "Climate Velocity and Species Migration Corridors",
+      "source_url": "https://doi.org/10.5281/zenodo.19465668",
+      "original_publication": "2023-12-02",
+      "candidate_excerpt": "This study mapped climate velocity at 1 km resolution across Europe under threeCMIP6 scenarios (SSP1-2.6, SSP2-4.5, SSP5-8.5) for 2050 and 2070, and integrated climate velocity maps with speciesdistribution models (SDMs; MaxEnt; n = 284 vertebrate species) and landscape connectivity models (Circuitscape) toidentify priority migration corridors where current protected area networks are insufficient to facilitate species range shiftsat the pace required by projected climate velocity.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-bc3c12993a32ffc9",
+      "title": "The European Market for Guarantees of Origin for Green Electricity: A Scenario-Based Evaluation of Trading under Uncertainty",
+      "source_url": "https://doi.org/10.3390/en17010104",
+      "original_publication": "2023-12-23",
+      "candidate_excerpt": "The findings indicate that GO prices can be expected to increase on average in the next years, with prices ranging from 1.77 to 3.36 EUR/MWh in 2040.",
+      "target_year_candidate": 2040,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-6825bf4a0f5b1cf8",
+      "title": "Transformation of Peatland Management Toward Climate Targets in Europe",
+      "source_url": "https://doi.org/10.34133/ehs.0239",
+      "original_publication": "2024-01-01",
+      "candidate_excerpt": "The transformation of peatland management toward “wet” land use takes on an increasingly critical role in achieving zero net carbon emissions by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-5ae98e0d378ef1d9",
+      "title": "Evolution of the European offshore renewable energy resource under multiple climate change scenarios and forecasting horizons via CMIP6",
+      "source_url": "https://doi.org/10.1016/j.enconman.2023.118058",
+      "original_publication": "2024-01-05",
+      "candidate_excerpt": "The present study aims at assessing the evolution of the European offshore wave/wind resource under low- and high-emissions scenarios based on Shared Socioeconomic Pathways, and three forecasting horizons including near- (2023-2032), mid- (2041-2050) and long-term (2091-2100).",
+      "target_year_candidate": 2023,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-aaff1d4425d6bb00",
+      "title": "Modelling flexibility requirements in deep decarbonisation scenarios: The role of conventional flexibility and sector coupling options in the European 2050 energy system",
+      "source_url": "https://doi.org/10.1016/j.esr.2024.101322",
+      "original_publication": "2024-02-08",
+      "candidate_excerpt": "To support a fully decarbonised European energy system by 2050, both temporal and spatial flexibility will be needed.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-567b242f91862852",
+      "title": "Burden of intracerebral haemorrhage in Europe: forecasting incidence and mortality between 2019 and 2050",
+      "source_url": "https://doi.org/10.1016/j.lanepe.2024.100842",
+      "original_publication": "2024-02-09",
+      "candidate_excerpt": "Individuals aged ≥80 years are expected to contribute significantly to the burden, comprising 62.7% of the cases in 2050, up from 40% in 2019, and 72.5% of deaths, up from 50.5%.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-780761202236a577",
+      "title": "Exploring the Rapid Growth of Solar Photovoltaics in the European Union",
+      "source_url": "https://doi.org/10.65998/ijees.v2i1.78",
+      "original_publication": "2024-02-29",
+      "candidate_excerpt": "The implementation of policy initiatives across various European nations has necessitated a revision of our projections regarding renewable capacity additions within the European Union (EU) for the years 2023 and 2024, resulting in an upward adjustment by 40% compared to pre-existing estimates.",
+      "target_year_candidate": 2023,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e3ba97717400adb7",
+      "title": "Perspectives of Electricity Production from Biogas in the European Union",
+      "source_url": "https://doi.org/10.3390/en17051169",
+      "original_publication": "2024-03-01",
+      "candidate_excerpt": "According to our prognosis, the global production of biogas will increase from 62.300 TWh to 64.000 TWh in 2019–2026 (2.7% increase).",
+      "target_year_candidate": 2026,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-06644b004e7d1169",
+      "title": "Forecasting Energy Poverty in European Countries: The Effect of Increasing Energy Commodities Prices",
+      "source_url": "https://doi.org/10.3390/en17051224",
+      "original_publication": "2024-03-04",
+      "candidate_excerpt": "The outcomes show that the overall rise in energy prices (in particular gas) that unexpectedly affected European countries modifies the forecast scenarios, delaying, at best, the first improvements, initially expected as early as 2021, until after 2022.",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-aaabb337d485912d",
+      "title": "Gravity Models for Global Migration Flows: A Predictive Evaluation",
+      "source_url": "https://doi.org/10.1007/s11113-024-09867-6",
+      "original_publication": "2024-04-01",
+      "candidate_excerpt": "We explore the quantitative effects of various socioeconomic, demographic, and geographic factors on migration and illustrate its use to obtain scenario-driven projections of bilateral migration, assessing the potential contributions of migration to population and GDP dynamics in Germany and Portugal for the period 2021–2025.",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-f05299f203391599",
+      "title": "Assessing environmental and market implications of steel decarbonisation strategies: a hybrid input-output model for the European union",
+      "source_url": "https://doi.org/10.1088/1748-9326/ad5bf1",
+      "original_publication": "2024-06-26",
+      "candidate_excerpt": "In 2020 the European Union (EU) set a net-zero emissions target by 2050, fostering innovation in the steel industry to reduce its environmental impact.",
+      "target_year_candidate": 2020,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-bcd11e5aaaec626b",
+      "title": "Sustainable negative emissions in Europe: evaluating scenarios to meet carbon neutrality by 2050",
+      "source_url": "https://doi.org/10.1088/1748-9326/ad71e1",
+      "original_publication": "2024-08-21",
+      "candidate_excerpt": "The results show that the demand for NETPs could be on a gigaton scale to reach carbon neutrality in Europe by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-c1f3a4f37c507ba3",
+      "title": "The impact of national policies on Europe-wide power system transition towards net-zero 2050",
+      "source_url": "https://doi.org/10.1016/j.energy.2024.133216",
+      "original_publication": "2024-09-19",
+      "candidate_excerpt": "Specifically, it analyses the effects of policies on the power sector, by evaluating capacity expansion portfolios, import reliance, and costs by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-5e51b6e2373cc55e",
+      "title": "Regulatory framework for the promotion of heat pumps in the European Union",
+      "source_url": "https://doi.org/10.1016/j.egyr.2024.11.043",
+      "original_publication": "2024-11-28",
+      "candidate_excerpt": "Heat pumps (HPs) are viewed by the European Union (EU) as a decisive instrument for accomplishing the goals of net zero emissions by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-a9bc87b156673489",
+      "title": "Challenges and Opportunities in the Renewable Energy Transition in Europe",
+      "source_url": "https://doi.org/10.33727/jriss.2024.2.36:339-351",
+      "original_publication": "2024-11-30",
+      "candidate_excerpt": "This article examines the challenges and opportunities associated with the EU's target of achieving at least 42.5% renewable energy consumption by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b7374c315fbe485b",
+      "title": "Decarbonisation scenarios for the European residential sector",
+      "source_url": "https://doi.org/10.1016/j.buildenv.2024.112408",
+      "original_publication": "2024-12-04",
+      "candidate_excerpt": "We find that, by 2030, residential buildings can realize up to 3000 PJ in overall energy savings.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-324415ff942bb83c",
+      "title": "Developing an Agricultural Futures Framework to explore the option space for agricultural change in Europe under alternative value perspectives",
+      "source_url": "https://doi.org/10.1007/s11625-024-01612-4",
+      "original_publication": "2025-01-23",
+      "candidate_excerpt": "We operationalise the AFF scenarios in the CLUMondo land-change model and simulate how these alternative value perspectives could reshape land systems in Europe by 2050, accounting for future demands for food production, carbon sequestration, nature restoration, and nitrogen emission reduction.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ab28c1cb58b91544",
+      "title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "source_url": "https://doi.org/10.12688/openreseurope.15906.2",
+      "original_publication": "2025-01-28",
+      "candidate_excerpt": "By 2022, marine energy, and in particular wave and tidal energy have reached a pre-commercial phase in their development.",
+      "target_year_candidate": 2022,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-ada9bf743981b484",
+      "title": "Examining pathways for a climate neutral Europe by 2050; A model comparison analysis including integrated assessment models and energy system models",
+      "source_url": "https://doi.org/10.1016/j.energy.2025.134809",
+      "original_publication": "2025-02-06",
+      "candidate_excerpt": "Both scenarios project reduced final energy consumption by 2050, driven by increased electrification and decreased fossil fuel usage.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-0cfc31b1a9963bc8",
+      "title": "Forecasting Battery Cell Production in Europe: A Risk Assessment Model",
+      "source_url": "https://doi.org/10.3390/batteries11020076",
+      "original_publication": "2025-02-14",
+      "candidate_excerpt": "This has motivated the announcement of a large number of production projects of over 2 TWh by 2030, which would mean overcapacity compared to projected European cell demand.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-89bfe967b3041fa1",
+      "title": "ANALYSIS OF THE IMPACT OF ARTIFICIAL INTELLIGENCE ON THE LABOR MARKET IN THE EUROPEAN UNION",
+      "source_url": "https://doi.org/10.4316/ejafb.2025.13101",
+      "original_publication": "2025-02-28",
+      "candidate_excerpt": "The impact of Artificial Intelligence (AI) in the European Union (EU) is profound and is felt in all sectors.AI, a branch of computer science that mimics human intelligence, is transforming the work landscape through automation and innovation.In the EU, governments promote public-private collaboration to integrate AI into different industries, from healthcare to sustainable agriculture.Automation frees up human resources for strategic activities but also reconfigures the requirements of the labor market, generating new jobs such as data analysis.However, evolution also brings challenges related to employment, requiring investment in lifelong ",
+      "target_year_candidate": null,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-46d052cdcc8acf4d",
+      "title": "A Transition Pathways Approach for Energy Renovation in EU Building Market Ecosystems",
+      "source_url": "https://doi.org/10.3390/su17052219",
+      "original_publication": "2025-03-04",
+      "candidate_excerpt": "The European Union aims to achieve climate neutrality by 2050, prioritizing energy efficiency particularly in the building sector.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-75c6966d5dc562e9",
+      "title": "The Role of Foreign Workers in the Evolution of Employment in the Construction Sector: A Comparative Analysis of Selected Central European Countries",
+      "source_url": "https://doi.org/10.23762/fso_vol13_no1_2",
+      "original_publication": "2025-03-29",
+      "candidate_excerpt": "Data for 2024 were estimated based on trends from 2014–2023, considering migration, policies, and demand for skills in sustainable construction.",
+      "target_year_candidate": 2024,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e4509310c2ae8166",
+      "title": "Bibliometric review of digital transformation in agriculture: innovations, trends and sustainable futures",
+      "source_url": "https://doi.org/10.1108/jadee-02-2025-0083",
+      "original_publication": "2025-04-15",
+      "candidate_excerpt": "Food production is estimated to increase by 70% by 2050, thus supporting this growth.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2019e1a7a693a45d",
+      "title": "An empirical analysis of net-zero emission targets of Canada and the European Union",
+      "source_url": "https://doi.org/10.21622/maci.2025.02.1.1252",
+      "original_publication": "2025-04-27",
+      "candidate_excerpt": "In the case of the EU27, it is shown that the proposed path to a condition of net zero emissions in 2050 is not a plausible scenario and that emissions of greenhouse gases in that year are likely to be more than three times higher than the level projected by the European Commission.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-744516bba3c04e67",
+      "title": "Carbon Neutrality and Resilient Districts, a Common Strategy in European Union Countries in 2050",
+      "source_url": "https://doi.org/10.3390/atmos16050508",
+      "original_publication": "2025-04-28",
+      "candidate_excerpt": "Most European Union (EU) member states have pledged to cut their net greenhouse gas emissions by at least 55% by 2030 and reach full carbon neutrality by 2050, using 1990 as the baseline year.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-aa24ca5ecb7eaaaf",
+      "title": "Airport noise forecasting to 2050: Integrating the Blended Wing Body concept",
+      "source_url": "https://doi.org/10.1016/j.apacoust.2025.110815",
+      "original_publication": "2025-05-28",
+      "candidate_excerpt": "Area and population exposure estimates are presented for 2050 and compared to 2023.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-38f454a96ad46ad3",
+      "title": "Evaluating the European Union’s Green Deal Role in Climate Change Mitigation and Sustainability Transitions (2030-2050)",
+      "source_url": "https://doi.org/10.47772/ijriss.2025.90500026",
+      "original_publication": "2025-05-28",
+      "candidate_excerpt": "In parallel, observation techniques were employed in both formal and informal settings such as public climate forums, municipal planning meetings, and grassroots environmental campaigns to document behaviours, interactions, and decision-making processes related to climate change mitigation and adaptation The study identifies that, in order to achieve the ambitious climate goals of the European Green Deal by 2050, the EU must strengthen its efforts in several key areas like: accelerating renewable energy deployment, improving energy efficiency, promoting sustainable agriculture, and enhancing climate adaptation measures are critical.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2357941ad4f9482d",
+      "title": "Three Environments, One Problem: Forecasting Water Temperature in Central Europe in Response to Climate Change",
+      "source_url": "https://doi.org/10.3390/forecast7020024",
+      "original_publication": "2025-05-29",
+      "candidate_excerpt": "Under the SSP2-4.5 and SSP5-8.5 scenario-based simulations, projected air temperature increases in the period 2021–2100 could range from 1.5 °C to 1.7 °C and 4.7 to 5.1 °C.",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-45f5cc03e8cf1ace",
+      "title": "From grey to “Green”: Modelling the non-energy uses of hydrogen for the EU energy transition",
+      "source_url": "https://doi.org/10.1016/j.apenergy.2025.126325",
+      "original_publication": "2025-06-26",
+      "candidate_excerpt": "Our results indicate that, assuming continued H 2 demand trends and large-scale electrolytic H 2 deployment by 2030, grid decarbonisation in the EU must accelerate to ensure green H 2 for industrial feedstock emits less CO 2 than fossil fuel methods, doubling the current pace.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-f45b460a1bba2d5d",
+      "title": "European energy vision 2050 and beyond: Designing scenarios for Europe’s energy transition",
+      "source_url": "https://doi.org/10.1016/j.rser.2025.116074",
+      "original_publication": "2025-08-02",
+      "candidate_excerpt": "• Net-zero emissions by 2050 and the EU Green Deal goals face major uncertainties.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-9325f0ced46785a8",
+      "title": "Coal Energy in the European Union in the Context of Energy Transition and Anti-Russian Sanctions",
+      "source_url": "https://doi.org/10.15688/jvolsu4.2025.3.19",
+      "original_publication": "2025-08-14",
+      "candidate_excerpt": "However, forecasts that the situation will gradually level off are reasonable, and the soaring price level has already dropped significantly, albeit still above the 2017–2021 levels.",
+      "target_year_candidate": 2021,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-130c5b7396af44e7",
+      "title": "Toward sustainability of territorial agro-food systems in Europe: indicators for assessing alternative scenarios",
+      "source_url": "https://doi.org/10.1088/1748-9326/adf97e",
+      "original_publication": "2025-08-22",
+      "candidate_excerpt": "Both scenarios consider the projected European population at 2050, a dietary change toward less animal protein (30% and 20%, instead of 57% for the reference situation, Ref 2015–2019) and are based on the widespread use of organic crop rotations and the banning of synthetic fertilizers and feed imports.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-fa5cb605216e0fbe",
+      "title": "Improved local weather forecasting using machine learning",
+      "source_url": "https://doi.org/10.12688/openreseurope.20255.1",
+      "original_publication": "2025-09-05",
+      "candidate_excerpt": "Despite its primary reliance on mainland energy supplies, the German North Sea Island Borkum, integrates local renewable energy sources and storage solutions, aiming to phase out fossil fuel sources by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-58e4083807f51d0b",
+      "title": "Future copper loads into the European aquatic environment",
+      "source_url": "https://doi.org/10.1093/inteam/vjaf050",
+      "original_publication": "2025-09-11",
+      "candidate_excerpt": "By 2050, there was a predicted increase of copper loads to the European Union aquatic environment to 16,193 tonnes per annum, approximately 24%.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-65381db7cf0a26fc",
+      "title": "RENEWABLE ENERGY AS A MECHANISM FOR THE TRANSITION TO GREEN TRADE IN THE EUROPEAN UNION",
+      "source_url": "https://doi.org/10.14258/epb202548",
+      "original_publication": "2025-09-15",
+      "candidate_excerpt": "EU initiatives, like the Renewable Energy Directive (RED II) and the Carbon Border Adjustment Mechanism (CBAM), have markedly expedited the transition to sustainable energy, bolstering the EU's pledge for climate neutrality by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-5af07a1f0e6225c6",
+      "title": "Modeling the Green Transition in the European Union: An Organic Market-Oriented Perspective",
+      "source_url": "https://doi.org/10.14207/ejsd.2025.v14n3p103",
+      "original_publication": "2025-10-01",
+      "candidate_excerpt": "In the context created by the short-term energy market disruptions generated by the war in Ukraine and the longer-term concern for achieving a climate-neutral continent by 2050, the European Commission issued, in May 2022, the REPowerEU plan aiming to reduce significantly the dependence on fossil-based energy sources by 2027.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-2a9ce9a57273be45",
+      "title": "Foresighting Scenarios for Green Hydrogen in Portugal: Systematization of Potential Futures and Identification of Bottlenecks and Constraints",
+      "source_url": "https://doi.org/10.1002/ffo2.70022",
+      "original_publication": "2025-11-03",
+      "candidate_excerpt": "This study intends to provide stakeholders a deep understanding of the factors influencing green hydrogen's role in Portugal's push towards a sustainable energy landscape by 2030.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e7c8bbe28e0cd82b",
+      "title": "Forecasting Renewable Scenarios and Uncertainty Analysis in Microgrids for Self-Sufficiency and Reliability: Estimation of Extreme Scenarios for 2040 in El Hierro (Spain)",
+      "source_url": "https://doi.org/10.3390/app152111815",
+      "original_publication": "2025-11-05",
+      "candidate_excerpt": "By 2040, the island’s energy demand is projected to reach 80–110 GWh annually, assuming full economic decarbonization.",
+      "target_year_candidate": 2040,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-e8e37af2ce67bf0c",
+      "title": "Land-based carbon neutrality efficiency in the European Union",
+      "source_url": "https://doi.org/10.1186/s13021-025-00345-w",
+      "original_publication": "2025-11-07",
+      "candidate_excerpt": "The European Union (EU) has promised to achieve net-zero emissions via carbon neutrality by 2050.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1d7fb660477c5368",
+      "title": "The evolution of agricultural energy transition in Eastern European Union countries between 1993 and 2022",
+      "source_url": "https://doi.org/10.34659/eis.2025.94.3.1046",
+      "original_publication": "2025-11-11",
+      "candidate_excerpt": "In response, the EU has set itself the target of reducing greenhouse gas emissions by 55% by 2030 and becoming completely carbon neutral by 2050.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-280b8936cbd992bf",
+      "title": "From net-zero to zero-fossil in transforming the EU energy system",
+      "source_url": "https://doi.org/10.1038/s41467-025-66682-z",
+      "original_publication": "2025-12-10",
+      "candidate_excerpt": "Using an integrated assessment model, we quantify the additional effort needed to achieve a nearly complete EU-wide phase-out of fossil fuels by 2050 compared to a least-cost net-zero scenario.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-1acfbdea13d6c610",
+      "title": "Enhancing electricity mix forecasting with artificial neural networks: A case study of the EU27",
+      "source_url": "https://doi.org/10.2298/tsci250929008g",
+      "original_publication": "2026-01-01",
+      "candidate_excerpt": "The model estimates plant capacities required to meet projected electricity demand in 2050 while considering direct capital expenditures for new constructions and decommissioning.",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-91f94010ac44e0db",
+      "title": "The Extraterritorial Effects of EU Energy and Climate Law",
+      "source_url": "https://doi.org/10.3366/gels.2026.0150",
+      "original_publication": "2026-02-28",
+      "candidate_excerpt": "The EU has adopted a comprehensive set of laws aiming to reduce EU greenhouse gas emissions by at least 55% by 2030 and achieve climate neutrality by 2050.",
+      "target_year_candidate": 2030,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-f7fd6a2bcb2fc7d7",
+      "title": "Impact of sufficiency on achieving the EU's 2030 and 2050 greenhouse gas emissions targets",
+      "source_url": "https://doi.org/10.1016/j.sftr.2026.101791",
+      "original_publication": "2026-03-14",
+      "candidate_excerpt": "• Dietary shifts and less air travel cut GHG emissions most (up to 650 Mt CO2e by 2050).",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-55df93d3de75b7f7",
+      "title": "Exploring potential food self-sufficiency across alternative dietary futures",
+      "source_url": "https://doi.org/10.1016/j.gfs.2026.100908",
+      "original_publication": "2026-03-20",
+      "candidate_excerpt": "We use the global biophysical optimisation model CiFoS (Circular Food Systems) to evaluate the potential for self-sufficient production of multiple food groups and nutrients in 70 regions by 2050 under a business-as-usual diet (BAU-MinTrade) and a Planetary Health Diet (PHD-MinTrade).",
+      "target_year_candidate": 2050,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-0864c33482e1f4fd",
+      "title": "Hydrological drought projections across Europe under climate change",
+      "source_url": "https://doi.org/10.1038/s44304-025-00152-w",
+      "original_publication": "2026-03-26",
+      "candidate_excerpt": "SRI was calculated at 1- and 3-month timescales for the historical period (1990–2014) and near-future period (2015–2049) based on downscaled climate data from Coupled Model Intercomparison Project Phase 6 (CMIP6) under two emission scenarios: SSP1-2.6 and SSP5-8.5, where SSP stands for shared socioeconomic pathways.",
+      "target_year_candidate": 2049,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-4a110ca6e06ad526",
+      "title": "Spatiotemporal dynamics of leptospirosis in Europe: a retrospective observational study with prospective projections",
+      "source_url": "https://doi.org/10.1016/j.lanepe.2026.101671",
+      "original_publication": "2026-04-06",
+      "candidate_excerpt": "Finally, under future climate scenarios, we found that leptospirosis incidence rate is projected to increase, particularly under high greenhouse gas (GHG) emissions, with larger rises expected in the long-term period (2081-2100) than in the short-term period (2041-2060).",
+      "target_year_candidate": 2041,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    },
+    {
+      "lead_id": "lead-b888efdfa5087aee",
+      "title": "Backcasting the Trust Gap: A Strategic Road Map for Clinician Adoption of AI Diagnostics by 2040",
+      "source_url": "https://doi.org/10.2196/94234",
+      "original_publication": "2026-04-10",
+      "candidate_excerpt": "This Viewpoint applies backcasting, a normative futures methodology with a 4-decade evidence base in energy policy and public governance, to the specific challenge of clinician adoption of AI diagnostics, with the aim of identifying the structural interventions required to achieve durable trust by 2040.",
+      "target_year_candidate": 2040,
+      "next_action": "Read original text and verify exact prediction, geography, metric and date; then obtain independent official outcome measurement.",
+      "state": "requires_original_and_evidence_review"
+    }
+  ]
 }

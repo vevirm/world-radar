@@ -1,34 +1,34 @@
 {
-  "generated_utc": "2026-10-20 15:19 UTC",
+  "generated_utc": "2026-10-20 19:59 UTC",
   "headline": "EU foresight — evidence review",
-  "verdict": "515 European research leads compared with later scholarship; 97 have related papers, 8 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
-  "literature_compared_count": 515,
-  "later_abstract_result_count": 8,
-  "later_empirical_abstract_count": 8,
+  "verdict": "527 European research leads compared with later scholarship; 108 have related papers, 14 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
+  "literature_compared_count": 527,
+  "later_abstract_result_count": 14,
+  "later_empirical_abstract_count": 14,
   "theme_comparisons": [
     {
       "topic": "Other European foresight research",
-      "compared": 233,
-      "with_related_later_study": 26,
-      "with_later_abstract_result": 3
-    },
-    {
-      "topic": "Climate and energy",
-      "compared": 123,
-      "with_related_later_study": 39,
+      "compared": 234,
+      "with_related_later_study": 27,
       "with_later_abstract_result": 4
     },
     {
+      "topic": "Climate and energy",
+      "compared": 130,
+      "with_related_later_study": 45,
+      "with_later_abstract_result": 7
+    },
+    {
       "topic": "Population and work",
-      "compared": 36,
-      "with_related_later_study": 6,
-      "with_later_abstract_result": 0
+      "compared": 38,
+      "with_related_later_study": 8,
+      "with_later_abstract_result": 1
     },
     {
       "topic": "Economy and finance",
-      "compared": 35,
-      "with_related_later_study": 7,
-      "with_later_abstract_result": 1
+      "compared": 36,
+      "with_related_later_study": 8,
+      "with_later_abstract_result": 2
     },
     {
       "topic": "Technology and digital",
@@ -50,78 +50,78 @@
     },
     {
       "topic": "Security and governance",
-      "compared": 17,
-      "with_related_later_study": 1,
+      "compared": 18,
+      "with_related_later_study": 2,
       "with_later_abstract_result": 0
     }
   ],
-  "study_count": 515,
-  "lead_count": 515,
-  "tracked_count": 515,
-  "checked_count": 515,
-  "bibliography_checked_count": 515,
-  "forecast_candidate_count": 28,
-  "follow_up_count": 97,
+  "study_count": 1366,
+  "lead_count": 1366,
+  "tracked_count": 1366,
+  "checked_count": 527,
+  "bibliography_checked_count": 527,
+  "forecast_candidate_count": 143,
+  "follow_up_count": 108,
   "evidence_backed_count": 0,
   "topic_counts": {
-    "European Journal of Futures Research": 37,
-    "European Journal of Public Health": 20,
-    "Futures": 18,
+    "European Journal of Futures Research": 52,
+    "Sustainability": 35,
+    "European Journal of Public Health": 29,
+    "Energies": 28,
+    "Futures": 24,
+    "Zenodo (CERN European Organization for Nuclear Research)": 17,
+    "Energy Policy": 16,
+    "Technological Forecasting and Social Change": 16,
     "Foresight": 15,
-    "Sustainability": 13,
     "SSRN Electronic Journal": 12,
-    "Technological Forecasting and Social Change": 12,
+    "Energy": 12,
+    "foresight": 11,
+    "Joint Research Centre (European Commission)": 11,
+    "Applied Energy": 10,
+    "Energy Strategy Reviews": 10,
     "European Labour Law Journal": 9,
+    "Renewable and Sustainable Energy Reviews": 9,
+    "European Law Journal": 9,
+    "Environmental Research Letters": 8,
     "Foresight and STI Governance": 8,
-    "European Law Journal": 8,
-    "foresight": 7,
-    "Energy Policy": 6,
-    "Review of European, Comparative & International Environmental Law": 6,
-    "Open Research Europe": 6,
-    "European Union Politics": 5,
-    "FUTURES & FORESIGHT SCIENCE": 5,
-    "Energy Economics": 4,
-    "Journal of Tourism Futures": 4,
-    "The Energy Journal": 4,
-    "Atmosphere": 4,
-    "Energies": 4,
-    "Earth's Future": 4,
-    "Energy Procedia": 3,
-    "Applied Energy": 3,
-    "Economic Modelling": 3
+    "Regional Environmental Change": 8,
+    "Energy Economics": 8,
+    "Global Environmental Change": 8,
+    "Renewable Energy": 7,
+    "International Journal of Environmental Research and Public Health": 7
   },
   "themes": [
     {
       "topic": "European Journal of Futures Research",
-      "study_count": 37,
-      "signal": "Research lead; see the Excel catalogue."
-    },
-    {
-      "topic": "European Journal of Public Health",
-      "study_count": 20,
-      "signal": "Research lead; see the Excel catalogue."
-    },
-    {
-      "topic": "Futures",
-      "study_count": 18,
-      "signal": "Research lead; see the Excel catalogue."
-    },
-    {
-      "topic": "Foresight",
-      "study_count": 15,
+      "study_count": 52,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
       "topic": "Sustainability",
-      "study_count": 13,
+      "study_count": 35,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
-      "topic": "SSRN Electronic Journal",
-      "study_count": 12,
+      "topic": "European Journal of Public Health",
+      "study_count": 29,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Energies",
+      "study_count": 28,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Futures",
+      "study_count": 24,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Zenodo (CERN European Organization for Nuclear Research)",
+      "study_count": 17,
       "signal": "Research lead; see the Excel catalogue."
     }
   ],
   "interpretation": "Thematic comparisons are from scientific abstracts; some describe modeled futures, not observed real-world outcomes. Research about Europe is not necessarily EU-institution-authored foresight. Neither topic matches nor abstract results are forecast accuracy verdicts.",
-  "next_step": "515 records now have qualitative comparisons with later scholarly papers, including 8 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 28 original abstracts contain potential forecast passages requiring validation. 515 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
+  "next_step": "527 records now have qualitative comparisons with later scholarly papers, including 14 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 143 original abstracts contain potential forecast passages requiring validation. 527 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
 }
