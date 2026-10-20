@@ -60,6 +60,7 @@ def create():
         for j,row in enumerate(rows,1):
             for i,c in enumerate(cols): sh.write_string(j,i,safe(row.get(c)),normal)
         sh.autofilter(0,0,len(rows),len(cols)-1)
+    tab('Scanner 1 All Leads', leads)
     tab('Top 50 Priorities', priorities)
     tab('Retrospective Checks', [{'rank': x['review_priority'], 'title': x['title'], 'publication': x['date'], 'target_year': x.get('target_year',''), 'type': x.get('method',''), 'original_claim': '', 'exact_original_quote': '', 'source_url': x['url'], 'actual_observation': '', 'later_evidence_url': '', 'verdict': 'Not evaluated', 'confidence': '', 'explanation': ''} for x in priorities])
     tab('Everything Collected',items)

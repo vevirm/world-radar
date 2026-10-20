@@ -1,0 +1,71 @@
+{
+  "generated_utc": "2026-10-20 08:26 UTC",
+  "headline": "EU foresight — short outlook",
+  "verdict": "European foresight research is being collected, but independently sourced follow-up developments have not yet been established.",
+  "study_count": 515,
+  "lead_count": 515,
+  "tracked_count": 519,
+  "checked_count": 0,
+  "evidence_backed_count": 0,
+  "topic_counts": {
+    "European Journal of Futures Research": 37,
+    "European Journal of Public Health": 20,
+    "Futures": 18,
+    "Foresight": 15,
+    "Sustainability": 13,
+    "SSRN Electronic Journal": 12,
+    "Technological Forecasting and Social Change": 12,
+    "European Labour Law Journal": 9,
+    "Foresight and STI Governance": 8,
+    "European Law Journal": 8,
+    "foresight": 7,
+    "Energy Policy": 6,
+    "Review of European, Comparative & International Environmental Law": 6,
+    "Open Research Europe": 6,
+    "European Union Politics": 5,
+    "FUTURES & FORESIGHT SCIENCE": 5,
+    "Energy Economics": 4,
+    "Journal of Tourism Futures": 4,
+    "The Energy Journal": 4,
+    "Atmosphere": 4,
+    "Energies": 4,
+    "Earth's Future": 4,
+    "Energy Procedia": 3,
+    "Applied Energy": 3,
+    "Economic Modelling": 3
+  },
+  "themes": [
+    {
+      "topic": "European Journal of Futures Research",
+      "study_count": 37,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "European Journal of Public Health",
+      "study_count": 20,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Futures",
+      "study_count": 18,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Foresight",
+      "study_count": 15,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Sustainability",
+      "study_count": 13,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "SSRN Electronic Journal",
+      "study_count": 12,
+      "signal": "Research lead; see the Excel catalogue."
+    }
+  ],
+  "interpretation": "This is a small overview of the research being monitored and independently observed changes, not a claim that every research lead made a testable prediction.",
+  "next_step": "Watch for new observations supported by dated external sources. Scanner 2 revisits the oldest unexamined leads first."
+}

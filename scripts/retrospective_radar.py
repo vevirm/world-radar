@@ -33,49 +33,38 @@ def concise(sentence):
 
 
 def claims():
-    """Only predictions extracted from Radar 1's verified full-text studies.
+    """Every Scanner 1 research lead is eligible for Scanner 2 follow-up.
 
-    The old implementation also read future-ideas.json, which is an unverified
-    proposal list and must never be represented as verified historical research.
+    A lead is a discovery record, not an authenticated prediction. Do not invent
+    a forecast or treat a scenario as a prediction.
     """
     out = {}
+    leads = read_json(ROOT / 'research-leads.json', {}).get('leads', [])
+    for lead in leads:
+        url = concise(lead.get('url'))
+        title = concise(lead.get('title'))
+        if not url or not title:
+            continue
+        identifier = 'lead-' + hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16]
+        out[identifier] = {'id': identifier, 'expected': concise(lead.get('abstract')) or title,
+                           'source_url': url, 'title': title, 'target_year': None,
+                           'original_publication': lead.get('date') or 'Unknown',
+                           'topic': lead.get('journal') or 'Foresight research',
+                           'publisher': lead.get('publisher') or lead.get('journal') or '',
+                           'lead_status': lead.get('status') or 'Discovered lead',
+                           'is_lead': True}
+    # Include vetted full-text findings even if their URLs are not in the lead index.
     for finding in read_json(ROOT / 'findings.json', {}).get('findings', []):
-        quality = finding.get('quality', {}).get('checks', {})
-        if not quality.get('actual_future_analysis'):
+        url = concise(finding.get('url') or finding.get('full_text_url'))
+        if not url:
             continue
-        raw = concise(finding.get('comparison', {}).get('foresight_claim') or finding.get('finding'))
-        source = finding.get('full_text_url') or finding.get('url')
-        if not raw or not source or not finding.get('date'):
-            continue
-        for text in re.split(r'(?<=[.!?;])\s+', raw):
-            text = concise(text)
-            if len(text) < 35 or len(text) > 650:
-                continue
-            if not re.search(r'\b(projected|predicted|forecast|expected|will|would|by 20\d\d|likely to)\b', text, re.I):
-                continue
-            # Avoid treating policy prescriptions and fictional scenarios as forecasts.
-            if re.search(r'\b(will be key|should|must|what if|zirta)\b', text, re.I):
-                continue
-            target = re.search(r'\b(?:by|in|before|until|around|through)\s+(20\d{2})\b', text, re.I)
-            year = int(target.group(1)) if target else None
-            key = 'finding-' + hashlib.sha256((source + text).encode()).hexdigest()[:16]
-            out[key] = {'id': key, 'expected': text, 'source_url': source,
-                        'title': finding.get('title', ''), 'target_year': year,
-                        'original_publication': finding['date'], 'topic': finding.get('topic', ''), 'publisher': finding.get('source', '')}
-    # Include manually curated claims only when an actual original source is provided.
-    # These are separately labelled; search vocabulary alone is not an original forecast.
-    for idea in read_json(ROOT / 'future-ideas.json', []):
-        source = concise(idea.get('source_url'))
-        expected = concise(idea.get('claim'))
-        if not source.startswith(('https://', 'http://')) or len(expected) < 35:
-            continue
-        if any('17 million fewer' in expected.lower() and '17 million fewer' in existing['expected'].lower() for existing in out.values()):
-            continue
-        key = 'curated-' + hashlib.sha256((source + expected).encode()).hexdigest()[:16]
-        out[key] = {'id': key, 'expected': expected, 'source_url': source,
-                    'title': idea.get('title', ''), 'target_year': idea.get('target_year'),
-                    'original_publication': 'Check original source', 'topic': '',
-                    'publisher': 'Manually curated; source date not confirmed'}
+        identifier = 'lead-' + hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16]
+        if identifier not in out:
+            out[identifier] = {'id': identifier, 'expected': concise(finding.get('finding') or finding.get('title')),
+                               'source_url': url, 'title': finding.get('title', ''),
+                               'target_year': None, 'original_publication': finding.get('date') or 'Unknown',
+                               'topic': finding.get('topic') or 'Foresight research',
+                               'publisher': finding.get('source') or '', 'lead_status': 'Full-text screened', 'is_lead': True}
     return list(out.values())
 
 
@@ -126,8 +115,8 @@ def retrieve_assessment(claim, key, route=0):
     now = dt.date.today().isoformat()
     route_name, route_sources = EVIDENCE_ROUTES[route % len(EVIDENCE_ROUTES)]
     prompt = f'''Research route: {route_name}. Start with {route_sources}, then broaden as needed. Today: {now}.
-Investigate whether a specific European foresight claim shows observable signs of happening. Use WEB SEARCH for independently dated evidence AFTER the original publication. Search for both positive signals and counterevidence. Distinguish actual deployment or measured change from investment announcements, plans, ambitions, scenarios, and publicity. A future target date DOES NOT prevent assessment of current signals; it only prevents calling the final outcome realized prematurely.
-Original foresight: {claim['expected']}
+Investigate this European foresight research LEAD and identify any subsequent real-world developments relevant to its themes. A title or abstract may describe a scenario, not a prediction. Do not invent a forecast.  Use WEB SEARCH for independently dated evidence AFTER the original publication. Search for both positive signals and counterevidence. Distinguish actual deployment or measured change from investment announcements, plans, ambitions, scenarios, and publicity. A future target date DOES NOT prevent assessment of current signals; it only prevents calling the final outcome realized prematurely.
+Research lead title/abstract (NOT necessarily a prediction): {claim['expected']}
 Original study: {claim['source_url']}
 Original publication: {claim.get('original_publication')}
 Target year: {claim.get('target_year')}
@@ -210,37 +199,36 @@ def normalize(claim, result):
 
 
 def build_word(entries):
+    """Readable short update; never produce hundreds of empty assessment pages."""
+    from outlook_summary import create
+    outlook = create(entries)
     from docx import Document
     from docx.shared import Inches, Pt
     doc = Document()
-    doc.styles["Normal"].font.size = Pt(9)
-    doc.styles["Normal"].paragraph_format.space_after = Pt(4)
     sec = doc.sections[0]
-    sec.top_margin = sec.bottom_margin = Inches(.62)
-    doc.add_heading('What was expected vs. what happened', 0)
-    doc.add_paragraph('Radar 2 | Report regenerated (UTC): ' + dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M'))
-    doc.add_paragraph('Question: Is there credible evidence that foresight is happening, beginning to happen, or being contradicted? No numerical accuracy scores are used. A scenario is not a prediction. Evidence and remaining uncertainty are shown separately.')
-    doc.add_paragraph('Statuses: Realized · Materializing · Early signals · No clear evidence · Contradicted · Too early to tell · Insufficient evidence · Not yet investigated.')
-    assessed_count = sum(bool(item.get('evidence') or item.get('counterevidence')) for item in entries)
-    doc.add_paragraph(f'Tracked claims: {len(entries)} | Claims with cited outcome leads: {assessed_count} | Without cited outcomes: {len(entries) - assessed_count}. Source URLs are research leads, not independently verified by this document.')
-    if not entries:
-        doc.add_paragraph('No source-linked foresight claims were extracted from the screened studies yet.')
-    for n, item in enumerate(entries, 1):
-        doc.add_heading(f'{n}. {item.get("title") or "Foresight claim"}', level=2)
-        doc.add_paragraph('WHAT WAS EXPECTED: ' + concise(item['expected']))
-        doc.add_paragraph('Published: ' + str(item.get('original_publication') or 'Unknown') + ' | Horizon: ' + str(item.get('target_year') or 'Not specified'))
-        doc.add_paragraph('Realization status: ' + STATUS_LABELS.get(item.get('status'), 'Not yet investigated'))
-        has_sources = bool(item.get('evidence') or item.get('counterevidence'))
-        happened = concise(item.get('what_happened')) if has_sources else 'No independently sourced observed outcome recorded yet.'
-        doc.add_paragraph('WHAT ACTUALLY HAPPENED: ' + happened)
-        doc.add_paragraph('Last evidence search (UTC): ' + str(item.get('checked_utc') or 'Never; awaiting research'))
-        doc.add_paragraph('Research attempts: ' + str(item.get('research_attempts', 0)))
-        doc.add_paragraph('Assessment and limits: ' + concise(item.get('reasoning') or 'No conclusive assessment available.'))
-        doc.add_paragraph('What to watch next: ' + concise(item.get('watch_next') or 'Further independently dated observations.'))
-        doc.add_paragraph('Original study: ' + item['source_url'])
-        for caption, field in [('Supporting evidence', 'evidence'), ('Counterevidence', 'counterevidence')]:
-            for e in item.get(field, [])[:5]:
-                doc.add_paragraph(f'{caption} ({e.get("date", "undated")}): {e.get("finding", "")} | {e.get("url", "")}')
+    sec.top_margin = sec.bottom_margin = Inches(.75)
+    doc.styles['Normal'].font.size = Pt(10)
+    doc.add_heading('EU foresight | Short outlook', 0)
+    doc.add_paragraph('Updated: ' + outlook['generated_utc'])
+    doc.add_heading('At a glance', level=1)
+    doc.add_paragraph(outlook['verdict'])
+    doc.add_paragraph(outlook['interpretation'])
+    doc.add_heading('What the scanners are following', level=1)
+    doc.add_paragraph(f"Scanner 1 has {outlook['lead_count']} indexed research leads. Scanner 2 has researched {outlook['checked_count']} of these leads with follow-up evidence; {outlook['evidence_backed_count']} have cited later observations. The numbers describe the collection, not EU foresight accuracy.")
+    for theme in outlook['themes'][:5]:
+        doc.add_paragraph(f"• {theme['topic']}: {theme['study_count']} research leads")
+    doc.add_heading('What has been happening', level=1)
+    observed = [e for e in entries if e.get('evidence') or e.get('counterevidence')]
+    if observed:
+        for e in sorted(observed, key=lambda x:x.get('checked_utc',''), reverse=True)[:6]:
+            doc.add_paragraph(f"• {concise(e.get('title'))[:95]} — {concise(e.get('what_happened'))[:320]}")
+            source = (e.get('evidence') or e.get('counterevidence') or [{}])[0].get('url','')
+            if source: doc.add_paragraph('  Evidence: ' + source)
+    else:
+        doc.add_paragraph('No independently sourced later developments are recorded yet. Scanner 2 will add short evidence-linked observations as research completes. This report does not invent updates.')
+    doc.add_heading('What to watch next', level=1)
+    doc.add_paragraph(outlook['next_step'])
+    doc.add_paragraph('Method: Scanner 1 leads are included without the old full-study acceptance gate. Indexed metadata is not proof of a full-text review. Scenarios are possible futures, not predictions. For the full source list, see WORLD_RADAR_MASTER.xlsx.')
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(REPORT)
 
@@ -326,7 +314,7 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     build_word([entries[c['id']] for c in found])
-    print(f'Radar 2: {len(found)} source-anchored predictions, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
+    print(f'Radar 2: {len(found)} source records, {worked} research attempts, {completed} evidence-backed classifications this run; Word: {REPORT}', flush=True)
     if not key and not args.offline:
         print('OPENAI_API_KEY missing: generated honest unassessed report; automatic outcome verification requires key.', flush=True)
 
