@@ -9,7 +9,7 @@
     "attempts": 0,
     "failed": 0,
     "new_evidence_assessments": 0,
-    "note": "Offline rebuild: no external research was attempted."
+    "note": "No OPENAI_API_KEY configured: report regenerated from saved evidence; no new research."
   },
-  "generated_utc": "2026-10-20T14:35:15.709894+00:00"
+  "generated_utc": "2026-10-20T14:52:03.300665+00:00"
 }
