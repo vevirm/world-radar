@@ -2,13 +2,19 @@ name: Radar 2 - outcomes and Word report
 
 on:
   workflow_dispatch:
+    inputs:
+      allow_offline_report:
+        description: 'Only compare studies already in the repository (no live OpenAlex)?'
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '17 4,16 * * *'
 
 permissions:
   contents: write
 
-# Keep Radar 1 and Radar 2 from running at the same time.
+# Avoid running both radars at once.
 concurrency:
   group: radar-shared-single-runner
   cancel-in-progress: false
@@ -27,42 +33,80 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Scanner 2 (source-reviewed outcome audit + Word; no false matches)
+      - name: Regenerate Radar 2 Word report and research audit
         env:
           MAILTO: ${{ secrets.MAILTO }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ALLOW_OFFLINE_REPORT: ${{ inputs.allow_offline_report }}
         run: |
-          python -u scripts/retrospective_radar.py --provider auto --minutes 18 --max-claims 12
-          python -m json.tool retrospective-results.json > /dev/null
-          python -m json.tool outlook-summary.json > /dev/null
-          test -s stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
-          python -m json.tool scanner2-audit.json > /dev/null
-          python -m json.tool outcome-review-queue.json > /dev/null
+          # Never silently upload an old report from the checkout.
+          rm -f stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          if [ "${ALLOW_OFFLINE_REPORT}" = "true" ]; then
+            python -u scripts/retrospective_radar.py --provider catalogue --minutes 5 --max-claims 30
+          else
+            python -u scripts/retrospective_radar.py --provider auto --minutes 18 --max-claims 12
+          fi
+          python scripts/validate_radar2_report.py
+
+      - name: Show research status in Actions summary
+        run: |
           python - <<'PYCODE'
           import json, os
-          a = json.load(open("scanner2-audit.json"))
-          r = a.get("run", {})
-          print(f"Radar 2 provider: {r.get('provider')}; research attempts: {r.get('attempts')}; failed: {r.get('failed')}")
-          if r.get("provider") == "evidence":
-              print("::warning title=Radar 2 offline audit::OPENAI_API_KEY is missing; Word refreshed using saved data only.")
-          if not a["outcome_verification_complete"]:
-              print("::warning title=Outcome verification incomplete::No source-verified Expected vs Happened cases. This run generated a research queue and Word evidence audit, NOT a completed outcome analysis.")
-          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
-              f.write("\n## Verification gate\n")
-              f.write(f"- Source-verified forecast outcomes: **{a['reviewed_verdicts']}**\n")
-              f.write(f"- Forecast passages pending original-text review: **{a['candidate_forecasts']}**\n")
-              f.write(f"- Research requests this run: **{r.get('attempts', 0)}**, failures: **{r.get('failed', 0)}**\n")
-              f.write("- **Incomplete outcome research** until source-verified comparisons exist.\n" if not a["outcome_verification_complete"] else "- Source-verified comparisons available.\n")
+          from pathlib import Path
+          audit = json.loads(Path('scanner2-audit.json').read_text(encoding='utf-8'))
+          run = audit['run']
+          provider = run.get('provider', 'unknown')
+          attempts, failures = run.get('attempts', 0), run.get('failed', 0)
+          reviewed = audit.get('reviewed_verdicts', 0)
+          mode = ('LIVE OpenAlex later-study comparison' if provider == 'openalex' and attempts else
+                  'LIVE OpenAI research' if provider == 'openai' and attempts else
+                  'SAVED scholarly catalogue only (offline)')
+          print(f'Radar 2: {mode}; attempts={attempts}; failures={failures}; source-reviewed outcomes={reviewed}')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write('\n## Word report delivery\n\n')
+              f.write('- **Generated and validated:** `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx`\n')
+              f.write('- **Download:** expand **Artifacts → Radar-2-Word-and-Audit** at the bottom of this Actions run.\n')
+              f.write(f'- **Research mode:** {mode}\n')
+              f.write(f'- **Research checks:** {attempts}; **failed:** {failures}\n')
+              f.write(f'- **New OpenAlex/literature comparisons:** {run.get("literature_comparisons", 0)}\n')
+              f.write(f'- **Related studies found in this run:** {run.get("literature_studies_found", 0)}\n')
+              f.write(f'- **Source-reviewed outcome comparisons:** {reviewed}\n')
+              f.write('- Later-study abstracts are **provisional scholarly signals**, not verified historical outcomes or accuracy scores.\n')
+          if provider in ('catalogue', 'evidence'):
+              print('::notice title=Radar 2 catalogue-only::Results come from already indexed papers, not live searches.')
+          elif attempts == 0 or attempts == failures:
+              print('::warning title=Radar 2 research failed::The Word report was generated but the research provider did not succeed. Check OpenAlex API access and quota.')
+          if reviewed == 0:
+              print('::warning title=Outcome verification incomplete::No source-reviewed forecast verdicts yet; automatic research cannot substitute for original-source review.')
           PYCODE
 
-      - name: Commit report and accumulated assessments
+      - name: Upload Radar 2 Word file and audit to run artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Word-and-Audit
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+            scanner2-audit.json
+            outcome-review-queue.json
+            outlook-summary.json
+            retrospective-results.json
+
+      - name: Commit generated report and accumulated research
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
           git add retrospective-results.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
-            git commit -m 'Radar 2: update retrospective Word report'
+            git commit -m 'Radar 2: update evidence and Word report'
             git pull --rebase
             git push
           fi
+
+      - name: Enforce live research status (no misleading green check)
+        env:
+          ALLOW_OFFLINE_REPORT: ${{ inputs.allow_offline_report }}
+        run: |
+          python scripts/check_radar2_live_status.py
