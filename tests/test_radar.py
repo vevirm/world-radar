@@ -141,11 +141,11 @@ def test_previous_joke_findings_cannot_reenter_published_data():
     assert all(x['id'].startswith('EUF-') and x['quality']['status'] == 'automated research-substance screen passed' for x in data['findings'])
 
 
-def test_workflow_still_15_then_10_minutes_and_half_hour_schedule():
+def test_workflow_still_enforces_14_then_9_minutes_and_twice_daily_schedule():
     yml = (radar.ROOT/'.github/workflows/update-radar.yml').read_text()
-    assert '--minutes 15' in yml
-    assert '--minutes 10' in yml
-    assert "7,37 * * * *" in yml
+    assert '--minutes 14' in yml
+    assert '--minutes 9' in yml
+    assert "17 1,13 * * *" in yml
     assert 'git add findings.json radar-state.json' in yml
 
 
@@ -371,12 +371,12 @@ def test_active_scan_follows_new_pagination_in_same_full_window(tmp_path):
 def test_workflow_fails_fast_if_old_python_file_still_deployed():
     from pathlib import Path
     workflow = (Path(__file__).resolve().parents[1] / '.github/workflows/update-radar.yml').read_text()
-    assert radar.FIXED_PHASE_PROTOCOL == 4
-    assert "getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 4" in workflow
-    assert 'python -u scripts/radar.py discover --minutes 15' in workflow
-    assert 'python -u scripts/radar.py verify --minutes 10' in workflow
-    assert 'elapsed < 895' in workflow
-    assert 'elapsed < 595' in workflow
+    assert radar.FIXED_PHASE_PROTOCOL == 5
+    assert "getattr(radar, 'FIXED_PHASE_PROTOCOL', None) != 5" in workflow
+    assert 'python -u scripts/radar.py discover --minutes 14' in workflow
+    assert 'python -u scripts/radar.py verify --minutes 9' in workflow
+    assert 'elapsed < 835' in workflow
+    assert 'elapsed < 535' in workflow
 
 # Cellar / EU Publications Office recovery tests: the October audit recorded
 # Commission HTML catalogue summaries incorrectly assessed as full studies.

@@ -36,7 +36,7 @@ def read_json(path, default):
 
 
 def concise(sentence):
-    return re.sub(r'\s+', ' ', str(sentence or '')).strip()
+    return re.sub(r'\s+', ' ', str(sentence if sentence is not None else '')).strip()
 
 
 def claims():
@@ -281,80 +281,136 @@ def normalize(claim, result):
             'checked_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
 
 
-def build_word(entries):
-    """Publish an honest decision-oriented report, NOT a 90-page bibliography."""
+def build_word(entries, run=None):
+    """Generate the Radar 2 Word report from auditable saved data.
+
+    Do not confuse potential forecasts, model-assisted leads or policy targets
+    with source-reviewed realized outcomes. The report is useful offline too.
+    """
     from collections import Counter
     from docx import Document
     from docx.shared import Inches, Pt
     from outlook_summary import create
     from outcome_verification import assemble, write_queue
-    outlook = create(entries)
-    doc = Document()
-    sec = doc.sections[0]
-    sec.top_margin = sec.bottom_margin = Inches(.8)
-    doc.styles['Normal'].font.size = Pt(10)
-    doc.add_heading('What was expected — what actually happened?', 0)
-    doc.add_paragraph('EU foresight | Evidence review | ' + dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))
-    doc.add_paragraph('Scope: indexed sources are research leads, not necessarily predictions. No title similarity or later scholarly publication alone counts as evidence that an outcome occurred.')
-    screening = Counter(e.get('screening_status', 'unscreened') for e in entries)
+
+    create(entries)
     verified, rejected = assemble(entries)
-    review_queue = write_queue(entries)
-    candidates = [e for e in entries if e.get('screening_status') == 'candidate_needs_validation']
-    doc.add_heading('Research audit', 1)
-    doc.add_paragraph(f"Scanner 1 leads: {len(entries)} | Forecast candidates requiring validation: {len(candidates)} | Full text needed: {screening['full_text_required']} | No testable prediction in metadata: {screening['no_testable_prediction_in_metadata']} | Source-reviewed, validated outcome cases: {len(verified)}.")
-    if rejected:
-        doc.add_paragraph(f'{len(rejected)} proposed cases rejected by source/evidence checks. Details are retained in the JSON log.')
-    if not verified:
-        doc.add_paragraph('No verified Expected → Happened comparisons are available from the current evidence. The report does not manufacture them or equate bibliographic searches with observed outcomes.')
-    else:
-        doc.add_heading('Expected → Happened | independently sourced', 1)
-        for case in verified[:30]:
-            orig, obs = case['original'], case['observation']
-            doc.add_heading(concise(next((e['title'] for e in entries if e['id'] == case['lead_id']), case['lead_id']))[:140], 2)
-            doc.add_paragraph('Expected, quoted from original: ' + orig['verbatim_passage'])
-            doc.add_paragraph('Original: ' + orig['url'] + ' | published: ' + orig['published_on'] + ' | target: ' + orig['target_date'])
-            doc.add_paragraph('Happened: ' + obs['what_happened'])
-            doc.add_paragraph('Verdict: ' + case['verdict'].replace('_', ' ').capitalize())
-            doc.add_paragraph('Comparison: ' + obs['same_metric_and_geography_explained'])
-            doc.add_paragraph('Limitations: ' + case['limitations'])
-            for source in obs['sources']:
-                doc.add_paragraph('Independent evidence (' + source['date'] + '): ' + source['finding'] + ' — ' + source['url'])
+    write_queue(entries)
+    candidates = sorted((e for e in entries if e.get('screening_status') == 'candidate_needs_validation'),
+                        key=lambda e: (e.get('candidate_year') or 9999, e.get('title', '')))
+    screening = Counter(e.get('screening_status', 'unscreened') for e in entries)
+    run = run or {}
     observations = read_json(ROOT / 'outcome-observations.json', {}).get('observations', [])
-    if observations:
-        doc.add_heading('Observed developments | primary sources', 1)
-        doc.add_paragraph('These are documented real-world observations relevant to Scanner 1 topics. A policy target is not a scientific prediction, and progress toward a future target is not proof of future success.')
-        for item in observations:
-            doc.add_heading(concise(item.get('topic')), 2)
-            matching = next((e for e in entries if item.get('original_lead_title_contains', '').lower() in e.get('title', '').lower()), None)
-            if matching:
-                doc.add_paragraph('Original monitored research: ' + concise(matching.get('title')) + ' — ' + concise(matching.get('source_url')))
-            doc.add_paragraph('Expected / target: ' + concise(item.get('expected')))
-            doc.add_paragraph('Actually observed: ' + concise(item.get('happened')))
-            doc.add_paragraph('Assessment: ' + concise(item.get('verdict')))
-            for src in item.get('sources', []):
-                doc.add_paragraph('Source (' + concise(src.get('date')) + '): ' + concise(src.get('finding')) + ' — ' + concise(src.get('url')))
-    doc.add_heading('Original-source forecast candidates — not verified', 1)
-    doc.add_paragraph('These phrases are copied from indexed abstracts, not independently validated against full original publications. They are NOT outcome verdicts. Full-text review and later independent observations are required.')
-    for e in candidates[:30]:
-        doc.add_heading(concise(e.get('title'))[:130], 2)
-        doc.add_paragraph('Candidate original wording: ' + concise(e.get('candidate_excerpt'))[:650])
-        doc.add_paragraph('Original source: ' + concise(e.get('source_url')))
-        doc.add_paragraph('Observed outcome: Not established. Next: verify full source and locate an official dated measurement or evaluation.')
-    if len(candidates)>30:
-        doc.add_paragraph(f'{len(candidates)-30} additional candidates are saved in retrospective-results.json for separate validation.')
-    doc.add_heading('What is needed for real retrospective findings', 1)
-    doc.add_paragraph('For each candidate: original document passage; publication date; quantified or observable prediction, geography and target date; then independent dated outcome evidence with direct source links and contrary evidence when available. Unverified items must remain unverified.')
-    doc.add_paragraph('The entire collection remains available in research-leads.json and retrospective-results.json. Unverified entries are intentionally excluded from this Word report rather than expanded into hundreds of empty verdicts.')
+    now = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+
+    doc = Document()
+    section = doc.sections[0]
+    section.top_margin = section.bottom_margin = Inches(.75)
+    section.left_margin = section.right_margin = Inches(.85)
+    normal = doc.styles['Normal']
+    normal.font.name = 'Aptos'
+    normal.font.size = Pt(9.5)
+    normal.paragraph_format.space_after = Pt(5)
+    for name in ('Heading 1', 'Heading 2'):
+        doc.styles[name].paragraph_format.space_before = Pt(11)
+        doc.styles[name].paragraph_format.space_after = Pt(5)
+
+    def field(label, value):
+        paragraph = doc.add_paragraph()
+        paragraph.add_run(label + ': ').bold = True
+        paragraph.add_run(concise(value) if value is not None and str(value).strip() else 'Not established.')
+        return paragraph
+
+    doc.add_heading('WORLD RADAR 2 | Expected vs. Actually Happened', 0)
+    doc.add_paragraph('Evidence audit generated ' + now)
+    doc.add_paragraph(f'Important: {len(entries)} discovery leads are not {len(entries)} verified predictions. A report regenerated today does not imply new evidence was discovered today. Forecast candidates, observed policy developments, and reviewed outcomes are separate categories.')
+    doc.add_heading('Run and evidence summary', 1)
+    field('Research leads indexed', len(entries))
+    field('Potential forecast excerpts (not validated)', len(candidates))
+    field('Missing full-text prediction checks', screening['full_text_required'])
+    field('No dated, testable forecast in metadata', screening['no_testable_prediction_in_metadata'])
+    field('Source-reviewed expected-vs-actual outcomes', len(verified))
+    field('Rejected submitted outcome cases', len(rejected))
+    if run:
+        field('Run type', run.get('provider', 'unknown'))
+        field('Research requests this run', run.get('attempts', 0))
+        field('Failed research requests', run.get('failed', 0))
+        field('New dated-evidence assessments this run', run.get('new_evidence_assessments', 0))
+        field('Run note', run.get('note', ''))
+    if not verified:
+        doc.add_paragraph('RESULT: No original-text-reviewed, independently measured forecast comparisons have been verified. Any blank outcome below is a genuine evidence gap, not a negative forecast verdict.')
+
+    if verified:
+        doc.add_heading('1 | Source-reviewed forecast outcomes', 1)
+        for case in verified:
+            original, observed = case['original'], case['observation']
+            title = next((e.get('title') for e in entries if e['id'] == case['lead_id']), case['lead_id'])
+            doc.add_heading(concise(title)[:140], 2)
+            field('WHAT WAS EXPECTED (original verbatim)', original['verbatim_passage'])
+            field('Original publication', original['url'] + ' | Published: ' + original['published_on'] + ' | Target: ' + original['target_date'])
+            field('WHAT ACTUALLY HAPPENED', observed['what_happened'])
+            field('Verdict', case['verdict'].replace('_', ' ').capitalize())
+            field('Metric and geography comparison', observed['same_metric_and_geography_explained'])
+            field('Measured on', observed['measured_on'])
+            field('Limitations', case['limitations'])
+            field('Human reviewer', case['source_reviewed_by'] + ' | ' + case['reviewed_on'])
+            for source in observed['sources']:
+                field('Independent evidence (' + source['date'] + ')', source['finding'] + ' | ' + source['url'])
+
+    doc.add_heading('2 | Documented developments (not forecast verdicts)', 1)
+    doc.add_paragraph('These manually provided, source-linked observations show measurable policy progress. They must not be counted as validation of a forecast unless the original publication made that exact testable prediction.')
+    if not observations:
+        doc.add_paragraph('No separately recorded, editor-reviewed policy observations.')
+    for item in observations:
+        doc.add_heading(concise(item.get('topic'))[:140], 2)
+        field('WHAT WAS EXPECTED / TARGETED', item.get('expected'))
+        field('WHAT ACTUALLY HAPPENED', item.get('happened'))
+        field('Status and caveat', item.get('verdict'))
+        query = concise(item.get('original_lead_title_contains')).lower()
+        matching = next((e for e in entries if query and query in e.get('title', '').lower()), None)
+        if matching:
+            field('Related research lead (not necessarily a prediction)', matching.get('title') + ' | ' + matching.get('source_url'))
+        for source in item.get('sources', []):
+            field('Dated source (' + concise(source.get('date')) + ')', concise(source.get('finding')) + ' | ' + concise(source.get('url')))
+
+    doc.add_heading('3 | Forecast passages needing original-source validation', 1)
+    doc.add_paragraph('The following are candidates from abstracts only, NOT authenticated predictions. They have no source-reviewed actual-outcome verdict. Source-linked machine research, where available, is recorded as a lead for review only.')
+    if not candidates:
+        doc.add_paragraph('No forecast candidates extracted from the current metadata.')
+    for number, entry in enumerate(candidates, 1):
+        doc.add_heading(f'{number}. {concise(entry.get("title"))[:135]}', 2)
+        field('WHAT WAS EXPECTED (unverified abstract excerpt)', entry.get('candidate_excerpt'))
+        field('Original research URL', entry.get('source_url'))
+        field('Possible target year (unconfirmed)', entry.get('candidate_year') or 'Not reliably extracted')
+        field('WHAT ACTUALLY HAPPENED', 'Not established by independent, source-reviewed comparable evidence.')
+        field('Verification status', 'Needs original passage, published date, metric/geography/target and later official observations')
+        if entry.get('checked_utc'):
+            field('Last automated evidence-search attempt', entry['checked_utc'])
+        elif entry.get('last_attempt_utc'):
+            field('Last failed automated attempt', entry['last_attempt_utc'])
+        else:
+            field('Last automated evidence search', 'No successful research logged')
+        if entry.get('last_error'):
+            field('Last research error', entry['last_error'])
+        if entry.get('evidence') or entry.get('counterevidence'):
+            field('Unreviewed automated research status', entry.get('status', 'unknown') + ' — not a verified outcome')
+            for source in (entry.get('evidence') or [])[:3]:
+                field('Potential supporting lead', source.get('finding', '') + ' | ' + source.get('date', '') + ' | ' + source.get('url', ''))
+            for source in (entry.get('counterevidence') or [])[:3]:
+                field('Potential counterevidence lead', source.get('finding', '') + ' | ' + source.get('date', '') + ' | ' + source.get('url', ''))
+
+    doc.add_heading('4 | Coverage and method', 1)
+    doc.add_paragraph(f'{len(entries) - len(candidates)} additional catalogued leads are not listed as forecasts because their metadata did not contain an extractable time-bounded prediction. All {len(entries)} source records are in research-leads.json and retrospective-results.json; the {len(candidates)} candidates and next actions are in outcome-review-queue.json. Only validated comparisons entered in verified-outcomes.json count toward reviewed verdicts.')
+    doc.add_paragraph('Automated web research can find useful links but cannot certify the content of a source or the comparability of statistics. A human reviewer must validate original wording, dates, metrics, independent outcome documents and limitations before an outcome is labeled verified.')
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(REPORT)
-
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--minutes', type=float, default=18)
     ap.add_argument('--max-claims', type=int, default=515)
     ap.add_argument('--offline', action='store_true')
-    ap.add_argument('--provider', choices=['free', 'openai', 'evidence'], default='evidence')
+    ap.add_argument('--provider', choices=['auto', 'free', 'openai', 'evidence'], default='auto')
     args = ap.parse_args()
     stored = read_json(OUTPUT, {'entries': {}})
     entries = stored.setdefault('entries', {})
@@ -367,7 +423,9 @@ def main():
             entry['what_happened'] = 'Legacy numerical judgment removed; awaiting evidence-based review.'
             entry['reasoning'] = ''
         entry.setdefault('counterevidence', [])
-    key = os.getenv('OPENAI_API_KEY', '')
+    key = os.getenv('OPENAI_API_KEY', '').strip()
+    if args.provider == 'auto':
+        args.provider = 'openai' if key and not args.offline else 'evidence'
     if args.provider == 'openai' and not args.offline and not key:
         raise SystemExit('OpenAI provider explicitly selected but OPENAI_API_KEY is missing.')
     print(f'Radar 2 start: {len(found)} research leads; provider={args.provider}; OpenAlex API key configured={bool(os.getenv("OPENALEX_API_KEY", "").strip())}', flush=True)
@@ -376,6 +434,7 @@ def main():
     completed = 0
     failed = 0
     throttled = False
+    successful_evidence = 0
     for claim in found:
         if claim['id'] not in entries:
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
@@ -396,7 +455,9 @@ def main():
         status = e.get('status')
         tier = 0 if status in ('not_yet_assessed', 'insufficient_evidence', 'too_early', 'no_clear_evidence') else 1
         return (tier, e.get('checked_utc', ''), c['id'])
-    ordered = ([] if args.provider == 'evidence' else sorted((c for c in found if c.get('screening_status') == 'candidate_needs_validation'), key=priority)) if args.provider != 'openai' else sorted(found, key=priority)
+    # Do not spend paid calls on title-only leads that contain no validated forecast.
+    ordered = [] if args.provider == 'evidence' else sorted(
+        (c for c in found if c.get('screening_status') == 'candidate_needs_validation'), key=priority)
     groups = {}
     for claim in ordered:
         host = urllib.parse.urlparse(claim['source_url']).hostname or ''
@@ -436,6 +497,8 @@ def main():
                 continue
             result = retrieve_assessment(claim, key, route=route)
             assessed = normalize(claim, result)
+            if assessed.get('evidence') or assessed.get('counterevidence'):
+                successful_evidence += 1
             assessed['research_attempts'] = previous['research_attempts']
             assessed['last_route'] = EVIDENCE_ROUTES[route][0]
             # Do not replace a supported previous outcome with an unsupported one.
@@ -460,17 +523,25 @@ def main():
             OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
             if isinstance(exc, urllib.error.HTTPError) and exc.code == 429:
                 throttled = True
-                print('OPENALEX RATE LIMIT: stopping early, preserving results; check account quota and rerun after reset.', flush=True)
+                print('Research provider rate limit: stopping early, preserving results; check quota and rerun after reset.', flush=True)
                 break
         if worked and worked % 20 == 0:
             OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
             print(f'Progress: {worked}/{min(len(found), args.max_claims)} attempts, {failed} failed', flush=True)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
-    build_word([entries[c['id']] for c in found])
+    run = {'provider': args.provider, 'attempts': worked, 'failed': failed,
+           'new_evidence_assessments': successful_evidence,
+           'note': ('Offline rebuild: no external research was attempted.' if args.offline
+                    else 'No OPENAI_API_KEY configured: report regenerated from saved evidence; no new research.'
+                    if args.provider == 'evidence'
+                    else 'Research requests may return unverified citations and must be source-reviewed.'
+                    if worked != failed else 'All research requests failed; no new evidence established.')}
+    build_word([entries[c['id']] for c in found], run=run)
     from outcome_verification import assemble
     valid_cases, invalid_cases = assemble([entries[c['id']] for c in found])
-    audit = {'research_leads': len(found), 'candidate_forecasts': sum(c.get('screening_status') == 'candidate_needs_validation' for c in found), 'reviewed_verdicts': len(valid_cases), 'invalid_cases': invalid_cases, 'outcome_verification_complete': bool(valid_cases)}
+    audit = {'research_leads': len(found), 'candidate_forecasts': sum(c.get('screening_status') == 'candidate_needs_validation' for c in found), 'reviewed_verdicts': len(valid_cases), 'invalid_cases': invalid_cases, 'outcome_verification_complete': bool(valid_cases), 'run': run,
+             'generated_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
     (ROOT / 'scanner2-audit.json').write_text(json.dumps(audit, indent=2)+'\n', encoding='utf-8')
     print('OUTCOME AUDIT:', json.dumps(audit), flush=True)
     print(f'Radar 2: {len(found)} source records, {worked} bibliography attempts, {failed} failures, {sum(bool(x.get("evidence") or x.get("counterevidence")) for x in entries.values())} entries with dated evidence; Word: {REPORT}', flush=True)
@@ -478,8 +549,8 @@ def main():
     if summary_file:
         with open(summary_file, 'a', encoding='utf-8') as summary:
             summary.write(f'## Radar 2 follow-up\n\n- Leads: {len(found)}\n- Attempts this run: {worked}\n- Failed this run: {failed}\n- Successful checks saved: {sum(bool(x.get("checked_utc")) for x in entries.values())}\n- OpenAlex throttled: {throttled}\n- Source-reviewed forecast comparisons: {len(valid_cases)}\n- Outcome verification complete: {bool(valid_cases)}\n- Word report generated: {REPORT}\n')
-    if not args.offline and args.provider != 'evidence' and (worked == 0 or worked == failed) and found:
-        raise SystemExit('RADAR 2 FAILED: no successful research checks; Word report preserved. Review API key/quota logs.')
+    if not args.offline and args.provider != 'evidence' and (worked == 0 or worked == failed) and queue:
+        print('::warning::No successful research checks; an honest Word audit was still generated and will be committed.', flush=True)
 
 
 if __name__ == '__main__':

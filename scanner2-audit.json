@@ -3,5 +3,13 @@
   "candidate_forecasts": 28,
   "reviewed_verdicts": 0,
   "invalid_cases": [],
-  "outcome_verification_complete": false
+  "outcome_verification_complete": false,
+  "run": {
+    "provider": "evidence",
+    "attempts": 0,
+    "failed": 0,
+    "new_evidence_assessments": 0,
+    "note": "Offline rebuild: no external research was attempted."
+  },
+  "generated_utc": "2026-10-20T14:35:15.709894+00:00"
 }

@@ -4,7 +4,7 @@ This repository is the complete uploaded current state, with the six-file realiz
 
 ## Radar running times
 
-Both radar workflows have a **target of 25 minutes** measured from a clock started after checkout and dependency installation. If research finishes sooner, the final step waits until 1,500 seconds have elapsed. Radar 1 budgets 14 minutes for discovery and 9 for verification; Radar 2 budgets up to 23 minutes for research. The remaining time is for validation, report updates, and commits. There is a 27-minute GitHub Actions job timeout as a safety stop, not an exact 25-minute cap. Setup, platform delays, and GitHub Actions overhead mean the GitHub-reported total run can be slightly over 25 minutes. Failures, cancellation, external outages, and jobs queued before starting cannot be guaranteed exactly 25 minutes. Do not interpret waiting as additional research.
+Radar 1 is scheduled 01:17 and 13:17 UTC and targets a 25-minute job (14 minutes discovery, 9 minutes validation, then housekeeping and waiting if short). Radar 2 is scheduled 04:17 and 16:17 UTC (only two scheduled triggers; its old `workflow_run` trigger was removed). It has an 18-minute **maximum research window**, up to 12 paid web-search assessments when an `OPENAI_API_KEY` secret is provided, and report generation/commit overhead. It does **not** waste time sleeping to 25 minutes or claim research happened when it did not. GitHub-hosted schedules and queued runners may be delayed; a 27-minute job timeout applies to both workflows.
 
 ## How to upload
 

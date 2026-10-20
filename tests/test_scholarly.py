@@ -126,13 +126,13 @@ def test_openalex_query_uses_optional_key():
 
 def test_journals_and_abstracts_visible_separate_from_findings():
     page = (Path(__file__).resolve().parents[1] / 'index.html').read_text()
-    assert 'id="scholarly-leads"' in page
-    assert "fetch('./research-leads.json'" in page
+    assert 'id="research"' in page and 'id="lead-list"' in page
+    assert "load('research-leads.json')" in page
     assert 'full study and retrospective outcome NOT verified' in page.lower() or 'Full study and retrospective outcome NOT verified' in page
     workflow = (Path(__file__).resolve().parents[1] / '.github/workflows/update-radar.yml').read_text()
     assert 'git add findings.json radar-state.json research-leads.json' in workflow
     assert 'OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}' in workflow
-    assert 'elapsed < 895' in workflow and 'elapsed < 595' in workflow
+    assert 'elapsed < 835' in workflow and 'elapsed < 535' in workflow
 
 
 def test_title_only_doi_lead_remains_unverified():
@@ -160,5 +160,5 @@ def test_page_can_show_title_only_leads_and_browse_more_than_40():
     html = (Path(__file__).resolve().parents[1] / 'index.html').read_text()
     assert 'research-leads.json' in html
     assert 'This index has not supplied an abstract' in html
-    assert "leadLimit+=40;drawLeads();" in html
+    assert 'const perPage=20' in html and "$('next').onclick" in html
     assert 'Full study and retrospective outcome NOT verified' in html
