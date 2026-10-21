@@ -6,13 +6,19 @@
   "outcome_verification_complete": false,
   "run": {
     "provider": "openalex",
-    "attempts": 12,
+    "attempts": 1351,
     "failed": 0,
+    "research_budget_minutes": 25.0,
+    "research_elapsed_seconds": 1492.5,
+    "stop_reason": "research_time_budget",
     "new_evidence_assessments": 0,
-    "literature_comparisons": 12,
-    "literature_studies_found": 37,
+    "literature_comparisons": 1351,
+    "literature_studies_found": 3751,
+    "catalogue_field_enriched_this_run": 176,
+    "field_context_count_total": 1021,
     "note": "OpenAlex similar-study comparisons; academic abstracts are provisional, not verified outcomes."
   },
-  "literature_compared_total": 539,
-  "generated_utc": "2026-10-21T09:21:21.286764+00:00"
+  "literature_compared_total": 1366,
+  "field_development_trails_total": 1021,
+  "generated_utc": "2026-10-21T10:20:55.408193+00:00"
 }
