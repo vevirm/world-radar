@@ -8,6 +8,7 @@ Research is built up incrementally; source links and missing evidence are retain
 from __future__ import annotations
 
 import datetime as dt
+from collections import Counter, defaultdict
 import http.client
 import json
 import os
@@ -57,19 +58,29 @@ def query_for(claim, route=0):
     title = clean(claim.get('title'))
     terms = [w for w in re.findall(r'[a-z][a-z0-9-]{3,}', title.lower()) if w not in STOP]
     unique = list(dict.fromkeys(terms))
-    if route % 2 and claim.get('candidate_excerpt'):
-        extras = [w for w in re.findall(r'[a-z][a-z0-9-]{3,}', claim['candidate_excerpt'].lower()) if w not in STOP]
-        query = ' '.join(list(dict.fromkeys(extras))[:5])
+    # OpenAlex treats a plain multiword search essentially as AND. Six
+    # arbitrary title words (the old default) overconstrain the search, so
+    # try two compact topical routes instead of a nearly exact title search.
+    distinctive = [w for w in unique if w not in GENERIC_TERMS]
+    focus = distinctive or unique
+    if route % 3 == 0:
+        selected = focus[:4]
+    elif route % 3 == 1:
+        # A later paper may emphasize another part of a long original title.
+        selected = (focus[-3:] if len(focus) > 3 else focus)
     else:
-        query = ' '.join(unique[:6])
-    return query or ' '.join(title.split()[:6])
+        extras = [w for w in re.findall(r'[a-z][a-z0-9-]{3,}',
+                  clean(claim.get('candidate_excerpt') or claim.get('expected')).lower())
+                  if w not in STOP and w not in GENERIC_TERMS]
+        selected = list(dict.fromkeys((focus[:2] + extras[:3])))[:4]
+    return ' '.join(selected) or ' '.join(title.split()[:5])
 
 
 def request_works(query, since_year, timeout=20):
     """One modest OpenAlex API call, retries only transient failures."""
     if not query:
         return []
-    params = {'search': query, 'per_page': 15,
+    params = {'search': query, 'per_page': 30,
               'filter': f'from_publication_date:{since_year}-01-01',
               'select': 'id,doi,title,publication_date,publication_year,abstract_inverted_index,cited_by_count,primary_location'}
     email = os.getenv('MAILTO', '').strip() or os.getenv('OPENALEX_EMAIL', '').strip()
@@ -111,8 +122,20 @@ def candidate_from_work(claim, work, origin='openalex_live'):
                 return None
         except ValueError:
             return None
-    if not original_year or not pubyear or pubyear <= original_year or pubyear > dt.date.today().year:
+    if not original_year or not pubyear or pubyear < original_year or pubyear > dt.date.today().year:
         return None
+    # Same-year later work is useful, especially for recent 2025/2026 papers.
+    # Only permit it when both exact dates are available and chronologically
+    # ordered; year-only metadata is not enough to establish what came later.
+    if pubyear == original_year:
+        original_stamp = clean(claim.get('original_publication'))
+        if len(original_stamp) < 10 or len(pub_date_string) < 10:
+            return None
+        try:
+            if dt.date.fromisoformat(pub_date_string[:10]) <= dt.date.fromisoformat(original_stamp[:10]):
+                return None
+        except ValueError:
+            return None
     title = clean(work.get('title'))
     url = clean(work.get('doi') or work.get('url') or work.get('id'))
     original_url = clean(claim.get('source_url'))
@@ -173,6 +196,159 @@ def local_catalogue(claim, leads, max_items=4):
               'publication_date': lead.get('date'), 'abstract': lead.get('abstract'),
               'cited_by_count': 0} for lead in leads)
     return related(claim, works, origin='existing_scanner_catalogue', max_items=max_items)
+
+
+# A later paper about the SAME ISSUE can be useful even if it does not reuse
+# the original title. Keep these "field developments" separate from stronger
+# title-matched candidate follow-ups and from observed real-world outcomes.
+# Deliberately do not use a general theme ("climate", "technology") alone.
+CONTEXT_STOP = frozenset("""what which who whom whose where when while also although however though moreover given may can could should shall would not very much more some other another any all each few many most only such these those within across through toward towards due since because for as with despite against impact impacts affecting affect associated including include use used using based known unknown data new emerging study studies studying case cases research result results effect effects influence influenced analysing analysis model models modeling modelling projections projected scenario scenarios future futures problem problems focus focuses explore exploring evaluate evaluated examination evidence method methodology findings finding found purpose aims aim factor factors general broad approach approaches current recent need needs make makes made both further important key associated perspective perspectives addition authors paper academic report reports preliminary assess assessing assessed compare comparison challenge challenges opportunities benefit benefits possible potential towards policy governance consider consideration have has had been being was were will would could should may might your there here where which whose when each any some many few very upon after before about global north south east west america american northern eastern southern western public private relative management security activity culture future situation significant performance role world state society examines examined investigation involved significant level levels several examples area areas concept concepts term terms state states country countries europe european union research publication publications associated future longterm long time period one two three four five data information complex existing proposed suggest suggests""".split())
+# These are broad domains; a match needs more specificity than one of them.
+CONTEXT_GENERIC = GENERIC_TERMS | CONTEXT_STOP
+
+def contextual_terms(text):
+    """Lightweight singularization to catch policies/policy, risks/risk etc."""
+    result = set()
+    for token in tokens(text):
+        if token.endswith('ies') and len(token) > 5:
+            token = token[:-3] + 'y'
+        elif token.endswith('s') and not token.endswith(('ss', 'us', 'is')) and len(token) > 5:
+            token = token[:-1]
+        result.add(token)
+    return result
+
+
+def field_candidate(claim, work, *, origin='openalex_live', counts=None):
+    """A plausible NEWER thematic paper. Not proof of a prediction or impact."""
+    baseline = year(claim.get('original_publication'))
+    pub_year = year(work.get('publication_date') or work.get('publication_year') or work.get('date'))
+    if not baseline or not pub_year or pub_year < baseline or pub_year > dt.date.today().year:
+        return None
+    stamp = clean(work.get('publication_date') or work.get('date'))
+    if len(stamp) >= 10:
+        try:
+            if dt.date.fromisoformat(stamp[:10]) > dt.date.today():
+                return None
+        except ValueError:
+            return None
+    if pub_year == baseline:
+        original_stamp = clean(claim.get('original_publication'))
+        if len(original_stamp) < 10 or len(stamp) < 10:
+            return None
+        try:
+            if dt.date.fromisoformat(stamp[:10]) <= dt.date.fromisoformat(original_stamp[:10]):
+                return None
+        except ValueError:
+            return None
+    title = clean(work.get('title'))
+    link = clean(work.get('doi') or work.get('url') or work.get('id'))
+    if (not title or not link.startswith('https://') or
+            link.lower().rstrip('/') == clean(claim.get('source_url')).lower().rstrip('/') or
+            title.casefold() == clean(claim.get('title')).casefold()):
+        return None
+    source_title = contextual_terms(claim.get('title')) - CONTEXT_GENERIC
+    candidate_title = contextual_terms(title) - CONTEXT_GENERIC
+    source_subject = contextual_terms(claim.get('expected') or claim.get('abstract')) - CONTEXT_GENERIC
+    abstract = abstract_from_index(work.get('abstract_inverted_index')) or clean(work.get('abstract'))
+    candidate_subject = candidate_title | (contextual_terms(abstract) - CONTEXT_GENERIC)
+    title_overlap = source_title & candidate_title
+    topic_overlap = (source_title | source_subject) & candidate_subject
+    # Minimum one distinctive term visible in both TITLES, two substantive
+    # concepts spanning the texts. Avoid a single "climate" or "economic" word.
+    # For unrelated papers about generic EU policy, no link is made.
+    if len(title_overlap) < 2 or len(topic_overlap) < 2:
+        return None
+    # With only two shared title concepts, require an actual consecutive
+    # subject phrase (e.g. "organic food", "carbon capture") rather than two
+    # scattered terms like "power" and "Northern" in unrelated work.
+    if len(title_overlap) == 2:
+        def adjacent_pairs(text):
+            words = re.findall(r'[a-z][a-z0-9-]{3,}', clean(text).lower())
+            norm = lambda w: next(iter(contextual_terms(w)), w)
+            return {(norm(a), norm(b)) for a, b in zip(words, words[1:])
+                    if norm(a) in title_overlap and norm(b) in title_overlap}
+        if not (adjacent_pairs(claim.get('title')) & adjacent_pairs(title)):
+            return None
+    original_theme, newer_theme = topic_cluster(claim), topic_cluster({'title': title})
+    if (original_theme != 'Other European foresight research' and
+            newer_theme != 'Other European foresight research' and original_theme != newer_theme
+            and len(title_overlap) < 3):
+        return None
+    # Corpus frequency is useful when comparing a thousand saved entries; a
+    # word appearing in almost every lead is a weak anchor.
+    rare = title_overlap if counts is None else {w for w in title_overlap if counts.get(w, 0) <= 12}
+    if not rare:
+        return None
+    # For topic-level updates, no requirement for European geography: a
+    # worldwide development may help contextualize a Europe-focused question.
+    # The user-facing label explicitly makes that distinction.
+    finding = ''
+    for sentence in re.split(r'(?<=[.!?])\s+(?=[A-Z])', abstract):
+        if RESULTS.search(sentence) and len(contextual_terms(sentence) & topic_overlap) >= 1:
+            finding = clean(sentence)[:320]
+            break
+    return {'title': title[:230], 'year': pub_year, 'date': stamp or str(pub_year),
+            'url': link, 'finding_from_abstract': finding,
+            'europe_mentioned': bool(EU_WORDS.search(title + ' ' + abstract)),
+            'shared_topic_terms': sorted(topic_overlap), 'source': origin,
+            'relationship': 'thematic_field_development_not_a_direct_followup',
+            'study_type': 'abstract_reports_results' if finding else 'related_study_or_model',
+            'relevance_strength': len(rare) * 3 + min(4, len(topic_overlap))}
+
+
+def field_updates(claim, works, *, origin='openalex_live', max_items=4, counts=None):
+    matches = {}
+    for work in works:
+        hit = field_candidate(claim, work, origin=origin, counts=counts)
+        if hit:
+            key = hit['url'].rstrip('/').casefold()
+            prior = matches.get(key)
+            if not prior or (hit['relevance_strength'], hit['year']) > (prior['relevance_strength'], prior['year']):
+                matches[key] = hit
+    ordered = sorted(matches.values(), key=lambda x: (x['relevance_strength'], x['year']), reverse=True)
+    return ordered[:max_items]
+
+
+class SavedLiteratureIndex:
+    """One-time inverted index for thematic updates across all Scanner-1 leads."""
+    def __init__(self, leads):
+        self.works = []
+        self.by_title_term = defaultdict(set)
+        counts = Counter()
+        for lead in leads:
+            term_set = contextual_terms(lead.get('title')) - CONTEXT_GENERIC
+            counts.update(term_set)
+            i = len(self.works)
+            self.works.append({'title': lead.get('title'), 'doi': lead.get('url'),
+                               'publication_date': lead.get('date'), 'abstract': lead.get('abstract')})
+            for term in term_set:
+                self.by_title_term[term].add(i)
+        self.counts = counts
+
+    def find(self, claim, max_items=3):
+        anchors = contextual_terms(claim.get('title')) - CONTEXT_GENERIC
+        ids = set()
+        for token in anchors:
+            if self.counts.get(token, 0) <= 35:
+                ids.update(self.by_title_term.get(token, ()))
+        # Prefilter before abstract comparison; never search the entire
+        # catalogue per item, and retain genuinely later papers only.
+        return field_updates(claim, (self.works[i] for i in ids),
+                             origin='existing_scanner_catalogue',
+                             max_items=max_items, counts=self.counts)
+
+
+def merge_publications(previous, incoming, *, max_items=6):
+    """Do not erase an earlier good result because a later query was empty."""
+    merged = {}
+    for item in (previous or []) + (incoming or []):
+        if not isinstance(item, dict) or not item.get('url'):
+            continue
+        key = item['url'].rstrip('/').casefold()
+        old = merged.get(key)
+        if not old or (bool(item.get('finding_from_abstract')), item.get('year') or 0) > (bool(old.get('finding_from_abstract')), old.get('year') or 0):
+            merged[key] = item
+    return sorted(merged.values(), key=lambda x: (bool(x.get('finding_from_abstract')), x.get('year') or 0), reverse=True)[:max_items]
 
 
 # Narrow, explicitly low-confidence check for shared observable direction.
@@ -299,6 +475,7 @@ def assess(claim, studies, search_mode='openalex_live'):
         'comparison_limits': comparison,
         'eu_attribution': origin,
         'follow_up_publications': studies,
+        'field_developments': [],  # populated separately; not direct matches
         'literature_search_mode': search_mode,
         'literature_assessed_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
     }
