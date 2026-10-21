@@ -33,6 +33,11 @@ try:
 except ModuleNotFoundError:
     from scripts.question_evidence import collect as issue_followups, merge as merge_issue_followups, questions_for, corpus_frequency, developments_query_for
 
+try:
+    from evidence_engine import discover as discover_question, rescreen_existing, SearchBudget
+except ModuleNotFoundError:
+    from scripts.evidence_engine import discover as discover_question, rescreen_existing, SearchBudget
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'retrospective-results.json'
 REPORT = ROOT / 'stuff' / 'WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx'
@@ -357,6 +362,9 @@ def main():
     literature_comparisons = 0
     literature_studies_found = 0
     saved_leads = read_json(ROOT / "research-leads.json", {}).get("leads", [])
+    new_question_trails = 0
+    question_requests = 0
+    rescreened_exclusions = 0
     subject_frequency = corpus_frequency(saved_leads)
     # Every run makes use of *all already indexed later literature*, rather
     # than only the 12-45 papers whose live API requests fit this run's clock.
@@ -386,6 +394,16 @@ def main():
             if new and not current:
                 catalogue_field_enriched += 1
         print(f'Saved-catalogue context: {catalogue_field_enriched} additional leads with newer related field literature.', flush=True)
+    # Report-only rebuilds also exclude previously saved mismatches. A failed
+    # live request must not reintroduce them to the high-confidence trail.
+    for claim in found:
+        row = entries[claim['id']]
+        kept, excluded = rescreen_existing(claim, row.get('direction_evidence'))
+        if excluded:
+            row['direction_evidence_quarantine'] = (
+                row.get('direction_evidence_quarantine', []) + excluded)[-100:]
+            rescreened_exclusions += len(excluded)
+        row['direction_evidence'] = kept
     # Prioritize real forecast candidates before general EU-related scholarship.
     # Rotate on the number of *literature checks*, not failed OpenAI requests.
     def priority(c):
@@ -430,57 +448,23 @@ def main():
                     works = request_works(query, since)
                     studies = related(claim, works)
                     live_context = field_updates(claim, works)
-                    # Ask: which later studies address the SAME issue, and do
-                    # they report observations, implementation or new models?
-                    # This is deliberately NOT a forecast-accuracy test.
-                    issue_trails = issue_followups(claim, works)
-                    issue_query = questions_for(claim, term_frequency=subject_frequency,
-                                                rotation=search_round)
-                    # When the title-derived route has not found a concrete
-                    # observation, use a short subject query to find papers
-                    # that describe the issue using different wording.
-                    if issue_query and issue_query != query and time.monotonic() < deadline - 40:
-                        if not any(x.get('evidence_kind') in (
-                                'measured_or_reported_change', 'implementation_or_evaluation')
-                                for x in issue_trails):
-                            try:
-                                other = request_works(issue_query, since)
-                                issue_trails = merge_issue_followups(
-                                    issue_trails, issue_followups(claim, other, discovery='same_issue_search'))
-                                studies = merge_publications(studies, related(claim, other), max_items=6)
-                                live_context = merge_publications(live_context, field_updates(claim, other), max_items=5)
-                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as ee:
-                                print('Same-issue search unavailable:', str(ee)[:120], flush=True)
-                    # A further *issue-specific* route asks for measured
-                    # trends, evaluations or adoption instead of more future
-                    # scenarios. Never accept results on cue-word similarity:
-                    # the question_evidence screen checks the original issue,
-                    # dates and geography before adding a trail.
-                    if (not any(x.get('evidence_kind') in (
-                            'measured_or_reported_change','implementation_or_evaluation')
-                            for x in issue_trails) and time.monotonic() < deadline - 50):
-                        development_query = developments_query_for(
-                            claim, term_frequency=subject_frequency, rotation=search_round)
-                        if development_query and development_query not in (query, issue_query):
-                            try:
-                                findings = request_works(development_query, since)
-                                issue_trails = merge_issue_followups(
-                                    issue_trails, issue_followups(
-                                        claim, findings, discovery='measured_change_or_implementation_search'))
-                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as ee:
-                                print('Development search unavailable:', str(ee)[:120], flush=True)
-                    # A less title-dependent follow-up search, at most one
-                    # extra call when the first search returns almost nothing.
-                    # Failed fallback does not destroy a successful first query.
-                    if len({item["url"] for item in studies + live_context}) < 2 and time.monotonic() < deadline - 40:
-                        alternate = query_for(claim, search_round + 1)
-                        if alternate and alternate != query:
-                            try:
-                                alternate_works = request_works(alternate, since)
-                                studies = merge_publications(studies, related(claim, alternate_works), max_items=6)
-                                live_context = merge_publications(live_context, field_updates(claim, alternate_works), max_items=5)
-                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as retry_error:
-                                print('Alternative search unavailable:', str(retry_error)[:120], flush=True)
+                    # Main new route: semantic meaning, changing terminology,
+                    # observed/evaluated developments, and direct citations.
+                    # A bounded number of requests per lead protects API credits;
+                    # the outer time budget still controls how many leads run.
+                    question_results = discover_question(
+                        claim, budget=SearchBudget(max_requests=5, deadline=deadline))
+                    question_requests += question_results['requests']
+                    issue_trails = question_results['results']
+                    live_context = merge_publications(
+                        live_context, question_results['context'], max_items=6)
+                    new_question_trails += len(issue_trails)
+                    print('Question-first:', claim['id'],
+                          'routes=', question_results['routes'],
+                          'accepted=', len(issue_trails), flush=True)
+                    # Only collect legacy broad bibliography for context. It is
+                    # never promoted over issue-specific, screened directions.
+                    research_mode = 'openalex_question_first + bibliography'
                     # A saved local paper is labelled differently from a live result.
                     if len(studies) < 2:
                         studies = merge_publications(studies, local_catalogue(claim, saved_leads), max_items=6)
@@ -493,10 +477,18 @@ def main():
                 new_assessment = assess(claim, studies, research_mode)
                 new_assessment['field_developments'] = context
                 previous.update(new_assessment)
-                # Never erase a useful older directional clue because today's
-                # API query did not reproduce it; keep precise provenance.
+                # Previously stored candidate links are *re-screened* using
+                # the current issue. Old bad matches never receive immunity.
+                # Exclusions are kept outside active evidence for audit/recovery.
+                kept, excluded = rescreen_existing(claim, previous.get('direction_evidence'))
+                if excluded:
+                    previous['direction_evidence_quarantine'] = (
+                        previous.get('direction_evidence_quarantine', []) + excluded)[-100:]
+                    rescreened_exclusions += len(excluded)
                 previous['direction_evidence'] = merge_issue_followups(
-                    previous.get('direction_evidence'), issue_trails)
+                    kept, issue_trails)
+                previous['last_question_routes'] = (question_results['routes']
+                    if args.provider == 'openalex' else [])
                 previous.pop('last_error', None)
                 previous['bibliography_checked_utc'] = previous['literature_assessed_utc']
                 worked += 1
@@ -563,6 +555,9 @@ def main():
            'new_evidence_assessments': successful_evidence,
            'literature_comparisons': literature_comparisons,
            'literature_studies_found': literature_studies_found,
+           'question_first_api_requests':question_requests,
+           'question_first_links_accepted_this_run':new_question_trails,
+           'saved_direction_links_quarantined':rescreened_exclusions,
            'catalogue_field_enriched_this_run': catalogue_field_enriched,
            'field_context_count_total': sum(bool(e.get('field_developments')) for e in entries.values()),
            'same_issue_direction_trails_total': sum(bool(e.get('direction_evidence')) for e in entries.values()),
