@@ -128,6 +128,9 @@ def build_report(mode,selected,leads,budget):
     return {'generated_utc':dt.datetime.now(dt.timezone.utc).isoformat(),
             'mode':mode, 'method':'question-first, abstract/title metadata screening only',
             'live_api_calls':budget.calls if live else 0,
+            'live_successful_calls':budget.successful_calls if live else 0,
+            'raw_openalex_works_returned':budget.returned_works if live else 0,
+            'api_errors':budget.errors if live else [],
             'records_tested':len(results),
             'records_with_matches':sum(bool(v['matches']) for v in results),
             'caveat':('Live OpenAlex retrieval, NOT verification of historical outcomes.' if live else
@@ -140,8 +143,14 @@ def write_report(result,mode):
     out.with_suffix('.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     lines=['# Radar 2: question-first evidence pilot','',
            f"**Mode:** {mode} · **Cases:** {result['records_tested']} · **With possible trails:** {result['records_with_matches']} · **API calls:** {result['live_api_calls']}",
+           f"**Raw OpenAlex results:** {result['raw_openalex_works_returned']} · **Successful API responses:** {result['live_successful_calls']} · **API errors:** {len(result['api_errors'])}",
            '', '**Important:** matches are developments in *published research*, not proven real-world outcomes.',
            result['caveat'],'']
+    if result['api_errors']:
+        lines.extend(['', '## OpenAlex errors (not missing research)', ''])
+        for e in result['api_errors'][:15]:
+            lines.append(f"- {e['route']}: {e['status']} — {e['reason']}")
+        lines.append('')
     for record in result['items']:
         lines.append(f"## {record['case']:02d}. {record['original']} ({record['year']})")
         lines.append(f"Original: {record['original_url']}")
@@ -175,5 +184,9 @@ def main():
     selected=cases(leads,min(max(1,a.max_cases), 3 if a.mode=='live' else 30))
     result=build_report(a.mode,selected,leads,budget)
     write_report(result,a.mode)
+    if a.mode=='live' and result['raw_openalex_works_returned']==0:
+        raise SystemExit('PILOT FAILED: OpenAlex returned zero raw works across all routes. Check API errors in EVIDENCE-PILOT-LIVE.md and Actions log; do NOT activate the scanner.')
+    if a.mode=='live' and result['records_with_matches']==0:
+        raise SystemExit('PILOT INCONCLUSIVE: OpenAlex returned publications, but none were sufficiently connected to the three questions. Review EVIDENCE-PILOT-LIVE.md before activating Scanner 2.')
 
 if __name__=='__main__': main()

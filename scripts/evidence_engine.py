@@ -22,7 +22,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 try:
     from .openalex_comparison import abstract_from_index, clean, year
@@ -358,39 +358,62 @@ class SearchBudget:
     max_requests: int = 5
     deadline: float | None = None
     calls: int = 0
+    successful_calls: int = 0
+    returned_works: int = 0
+    errors: list = field(default_factory=list)
 
     def available(self):
         return self.calls < self.max_requests and (self.deadline is None or time.monotonic() < self.deadline - 5)
 
 
 def _request(params,budget,timeout=18):
+    """Query OpenAlex and keep diagnostics: errors must never look like 0 matches.
+
+    Never print URLs, since they can contain the user's API key.
+    """
     if not budget.available():
         return []
-    # One debit per actual API call, including unsuccessful attempts.
-    budget.calls+=1
+    budget.calls += 1
     key=os.getenv('OPENALEX_API_KEY','').strip()
     email=os.getenv('MAILTO','').strip() or os.getenv('OPENALEX_EMAIL','').strip()
-    if key:params['api_key']=key
-    if '@' in email:params['mailto']=email
+    params=dict(params)   # don't modify the caller's query object
+    if key: params['api_key']=key
+    if '@' in email: params['mailto']=email
     url='https://api.openalex.org/works?'+urllib.parse.urlencode(params)
-    req=urllib.request.Request(url,headers={'User-Agent':f'WorldRadar-QuestionFirst/5.0 ({email})',
+    req=urllib.request.Request(url,headers={'User-Agent':f'WorldRadar-QuestionFirst/5.1 ({email})',
                                            'Accept':'application/json'})
+    route = 'semantic' if 'search.semantic' in params else ('keyword' if 'search' in params else 'filter')
     try:
         with urllib.request.urlopen(req,timeout=timeout) as resp:
             payload=json.load(resp)
         if not isinstance(payload,dict) or not isinstance(payload.get('results'),list):
             raise ValueError('Unexpected OpenAlex results format')
-        return payload['results']
+        works=payload['results']
+        budget.successful_calls += 1
+        budget.returned_works += len(works)
+        print(f'OpenAlex {route}: HTTP 200, {len(works)} works returned',flush=True)
+        return works
     except urllib.error.HTTPError as exc:
-        # Unsupported semantic route, exhausted credits, or other error:
-        # keep other results and don't start a long retry loop.
+        # Don't turn invalid select fields, bad keys, or credits into
+        # misleading "no evidence" findings. Save a short, key-safe reason.
+        detail=''
+        try:
+            raw=exc.read(800).decode('utf-8','replace')
+            parsed=json.loads(raw)
+            detail=str(parsed.get('message') or parsed.get('error') or '')[:180]
+        except (ValueError,UnicodeError,AttributeError):
+            pass
+        diagnostic={'route':route,'status':f'HTTP {exc.code}','reason':detail}
+        budget.errors.append(diagnostic)
+        print(f'OpenAlex {route} ERROR: HTTP {exc.code} {detail}',flush=True)
         if exc.code in (400,401,403,429):
-            print(f'OpenAlex route unavailable (HTTP {exc.code}); retaining other evidence',flush=True)
             return []
         raise
     except (urllib.error.URLError,TimeoutError,socket.timeout,ConnectionError,
-            http.client.IncompleteRead):
-        print('OpenAlex request failed; keeping already saved evidence',flush=True)
+            http.client.IncompleteRead,ValueError) as exc:
+        diagnostic={'route':route,'status':type(exc).__name__,'reason':str(exc)[:160]}
+        budget.errors.append(diagnostic)
+        print(f'OpenAlex {route} ERROR: {diagnostic["status"]} {diagnostic["reason"]}',flush=True)
         return []
 
 
@@ -409,7 +432,9 @@ def discover(claim,*,budget=None):
     context={}
     seen={}
     routes=[]
-    select='id,doi,title,publication_year,publication_date,abstract_inverted_index,is_retracted,is_withdrawn,referenced_works'
+    # 'is_withdrawn' is not a selectable OpenAlex Works field. Selecting it
+    # makes the entire request fail with HTTP 400 (not zero search results).
+    select='id,doi,title,publication_year,publication_date,abstract_inverted_index,is_retracted,referenced_works'
     for name,query in query_plan(claim):
         if not budget.available(): break
         params={'per_page':25,'select':select}
