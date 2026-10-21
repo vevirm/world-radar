@@ -8,11 +8,17 @@ on:
         required: false
         type: boolean
         default: false
+      restore_run_id:
+        description: 'Optional: recover saved research from a failed publishing run ID (leave blank for a new scan)'
+        required: false
+        type: string
+        default: ''
   schedule:
     - cron: '17 4,16 * * *'
 
 permissions:
   contents: write
+  actions: read
 
 # Avoid running both radars at once.
 concurrency:
@@ -33,7 +39,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Recover research artifact from a previous run (optional)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.restore_run_id != '' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: Radar-2-Word-and-Audit
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.restore_run_id }}
+          path: .
+
       - name: Regenerate Radar 2 Word report and research audit
+        if: ${{ inputs.restore_run_id == '' }}
         env:
           MAILTO: ${{ secrets.MAILTO }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
@@ -47,6 +63,24 @@ jobs:
           else
             python -u scripts/retrospective_radar.py --provider auto --minutes 25
           fi
+
+      - name: Rebuild living atlas and readable Word report, then validate
+        run: |
+          # Both a new scan and a recovered artifact produce the same public files.
+          python - <<'PYCODE'
+          from pathlib import Path
+          from scripts.living_atlas import write_atlas, load
+          from scripts.living_report import write_report
+
+          entries = load('retrospective-results.json', {}).get('entries', {})
+          if not entries:
+              raise SystemExit('No accumulated research entries; refusing to publish empty atlas.')
+          atlas = write_atlas(list(entries.values()))
+          report = Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
+          write_report(atlas, report)
+          print(f'Living atlas: {len(atlas["records"])} entries; Word report: {report}')
+          PYCODE
+          python -m json.tool living-atlas.json > /dev/null
           python scripts/validate_radar2_report.py
 
       - name: Show research status in Actions summary
@@ -102,7 +136,15 @@ jobs:
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          # Stage only existing outputs. A missing optional file must not abort
+          # the entire run after 25 minutes of successful research.
+          for file in retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx; do
+            if [ -f "$file" ]; then
+              git add -- "$file"
+            else
+              echo "Optional output absent, skipping: $file"
+            fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: update evidence and Word report'
             git pull --rebase
