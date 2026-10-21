@@ -41,27 +41,50 @@ jobs:
           from docx import Document
           d=Document('stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx')
           headings=[p.text for p in d.paragraphs if p.style.name=='Heading 2']
-          assert len(headings)==40, f'Expected 40 research items, got {len(headings)}'
+          assert 1 <= len(headings) <= 40, f'Invalid shortlist size: {len(headings)}'
+          if len(headings)<40:
+              print(f'NOTICE: {len(headings)} screened entries; insufficient trustworthy matches to fill 40.')
           assert any('strongest research trails' in p.text.lower() for p in d.paragraphs)
           assert any('weakest / possibly outdated' in p.text.lower() for p in d.paragraphs)
-          print('VALID: 20 strongest and 20 to recheck, with no API requests.')
+          print('VALID: screened strongest and to-recheck shortlist, with no API requests.')
           PY
-      - name: Upload Word download to this Actions run
+      - name: Refresh full Living Futures Word from the same saved atlas (NO SCAN)
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from docx import Document
+          from scripts.living_report import write_report
+          atlas = json.loads(Path('living-atlas.json').read_text(encoding='utf-8'))
+          if not atlas.get('records'):
+              raise SystemExit('Refusing to overwrite full report with an empty atlas.')
+          target = Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
+          write_report(atlas, target)
+          doc = Document(target)
+          paragraphs = '\n'.join(p.text for p in doc.paragraphs)
+          assert 'Eight conversations across time' in paragraphs
+          assert 'Reading trail: every linked follow-up' in paragraphs
+          assert 'How complete is this edition?' in paragraphs
+          print(f'Full Word rebuilt without research: {len(atlas["records"])} preserved atlas records.')
+          PY
+      - name: Upload both Word downloads to this Actions run
         uses: actions/upload-artifact@v4
         with:
           name: Radar-2-Short-Word
-          path: stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          path: |
+            stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+            stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if-no-files-found: error
           retention-days: 30
-      - name: Publish latest short Word at a permanent website path
+      - name: Publish both updated Words at their permanent website paths
         run: |
           git config user.name 'world-radar-bot'
           git config user.email 'world-radar-bot@users.noreply.github.com'
-          git add stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          git add stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
-            git commit -m 'Radar 2: refresh 20 plus 20 shortlist'
+            git commit -m 'Radar 2: refresh screened full and short Words'
             git pull --rebase origin main
             git push origin HEAD:main
           else
-            echo 'Short Word report is already up to date.'
+            echo 'Both Word reports are already up to date.'
           fi
