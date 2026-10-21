@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-21 18:45 UTC",
+  "generated_utc": "2026-10-21 19:14 UTC",
   "editorial_as_of": "",
   "method": "Every indexed paper remains visible. Descriptions of later research are not real-world outcomes. Direction and relevance can be open questions. Editorial context snapshots are independent EU policy developments, not retroactively attributed to those papers.",
   "summary": {
@@ -7,10 +7,10 @@
     "themes": 8,
     "compared_with_literature": 1366,
     "with_later_reading": 1215,
-    "with_field_developments": 1086,
-    "with_same_issue_trails": 462,
-    "with_direct_later_reading": 963,
-    "with_later_abstract_finding": 621,
+    "with_field_developments": 1088,
+    "with_same_issue_trails": 459,
+    "with_direct_later_reading": 955,
+    "with_later_abstract_finding": 616,
     "editorial_contexts": 2,
     "original_abstracts": 1160
   },
@@ -51,7 +51,7 @@
       "intro": "Demography may be projected long before it can be observed. Track assumptions, migration, labour-market data and dates instead of declaring a forecast won or lost.",
       "count": 101,
       "later_reading": 93,
-      "related_field_updates": 83,
+      "related_field_updates": 84,
       "outcome_evidence": 0,
       "example_titles": [
         "Populations and Demographic Trends of European Countries, 1980-2010",
@@ -96,7 +96,7 @@
       "intro": "Distinguish models and conditions from subsequent prices, production, finance and policy decisions.",
       "count": 105,
       "later_reading": 95,
-      "related_field_updates": 83,
+      "related_field_updates": 84,
       "outcome_evidence": 0,
       "example_titles": [
         "Actual and potential development of consumer demand on the organic food market in Europe",
@@ -3470,7 +3470,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "We show how two versions of this latest generation of modern business cycle models, which are real business cycle models with frictions in labor and financial markets, can account, respectively, for the aggregate and the cross-regional fluctuations observed in the United States during the Great Rec…",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "The Great Recession, Fallout, and What We Learned",
@@ -3479,7 +3479,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "This book presents several notable economists who describe the perils the economy faced during the Great Recession and the policies—some successful, others not so much—that were implemented and why.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Unemployment in the Great Recession: A Comparison of Germany, Canada and the United States",
@@ -3506,7 +3506,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Labor Demand Response to Labor Supply Incentives: Lessons from the German Mini-Job Reform",
@@ -3533,7 +3533,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         }
       ],
       "development_count": 8,
@@ -6782,7 +6782,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Results indicate that common southeastern wheat varieties can be successfully used in a dual-purpose management system.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Local adaptation drives the diversification of effectors in the fungal wheat pathogen Parastagonospora nodorum in the United States",
@@ -6791,7 +6791,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Taken together, these results indicate that P. nodorum is rapidly adapting to distinct selection pressures unique to spring and winter wheat production regions by various routes of genomic diversification, potentially facilitated through transposable element activity.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Population Subdivision of Fusarium graminearum from Barley and Wheat in the Upper Midwestern United States at the Turn of the Century",
@@ -6800,7 +6800,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "These results suggest less recombination between NA1 and NA2 populations on barley compared with wheat.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Genetic Variation of Wheat streak mosaic virus in the United States Pacific Northwest",
@@ -6809,7 +6809,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The observed diversity within both clades could make breeding for durable disease resistance in perennial wheat difficult if there is a differential response of WSMV resistance genes to isolates from different clades.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Population Genetic Structure and Chemotype Diversity of Fusarium graminearum Populations from Wheat in Canada and North Eastern United States",
@@ -6818,7 +6818,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Selection signatures across seven decades of hard winter wheat breeding in the Great Plains of the United States",
@@ -6827,7 +6827,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Genetic Diversity and Virulence of Wheat and Barley Strains of Xanthomonas translucens from the Upper Midwestern United States",
@@ -6836,7 +6836,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Seasonal population dynamics of wireworms in wheat crops in the Pacific Northwestern United States",
@@ -6845,7 +6845,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Origin, Migration Routes and Worldwide Population Genetic Structure of the Wheat Yellow Rust Pathogen Puccinia striiformis f.sp. tritici",
@@ -6854,7 +6854,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
       "development_count": 9,
@@ -7450,13 +7450,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Regional demand and supply factors of social entrepreneurship",
-          "year": 2017,
-          "url": "https://doi.org/10.1108/ijebr-09-2016-0292",
-          "abstract_excerpt": "Findings The results indicate that the male proportion of the workforce, education level, the presence of entrepreneurial role models, wealth, unemployment rate, age, and urbanization positively influence the rate of social venture creation in a region.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "A Study on Metropolitan Labor Supply and Demand Balance and Migrant Labor Employment Policy——Evidence from Shanghai Municipality",
           "year": 2015,
           "url": "https://openalex.org/W2385099183",
@@ -7469,32 +7462,48 @@
           "url": "https://doi.org/10.1186/1478-4491-11-24",
           "abstract_excerpt": "RESULTS: Our results show that, even as early as 2005, meeting demand for FTEs in nursing professions was not arithmetically possible when only persons with formal qualification in a nursing profession were taken into account on the supply side.",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 3,
+      "field_developments": [
+        {
+          "title": "Regional demand and supply factors of social entrepreneurship",
+          "year": 2017,
+          "url": "https://doi.org/10.1108/ijebr-09-2016-0292",
+          "source": "openalex_live",
+          "abstract_excerpt": "Findings The results indicate that the male proportion of the workforce, education level, the presence of entrepreneurial role models, wealth, unemployment rate, age, and urbanization positively influence the rate of social venture creation in a region.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Supply and Demand in Social Work",
           "year": 2026,
           "url": "https://doi.org/10.4324/9781003742463-22",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Supply vs. Demand in Community-Based Fact-Checking on Social Media",
           "year": 2026,
           "url": "https://doi.org/10.48550/arxiv.2602.06005",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Social Networks as Information Conduits for Online Credit Supply and Demand",
           "year": 2026,
           "url": "https://doi.org/10.1287/mnsc.2024.06050",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
         }
       ],
-      "later_count": 7,
-      "field_developments": [],
-      "development_count": 0,
+      "development_count": 4,
       "direction_trails": [
         {
           "title": "Aggregate employment : demand and supply in the U.K. engineering industry",
@@ -8627,7 +8636,7 @@
       "journal": "International Journal of Emerging Technologies in Learning (iJET)",
       "original_url": "https://doi.org/10.3991/ijet.v7i4.2168",
       "then": "This paper reports on the results of the eAccessibility 2020 study which was funded by the European Commission to explore and analyse the relationships between the emerging ICT landscape in the societal and economic context, and the development and provision of assistive technologies and eAccessibility within a perspective of the next 10 years. The methodology of the study included both desk research and direct contact with relevant actors through 2011 and 2012. The results of the study are sum…",
-      "now": "A 2026 publication reports: “The purpose of the study: to develop and test a methodology for pedagogical monitoring of special educational needs in students with disabilities acquired during combat operations.”",
+      "now": "A 2026 publication reports: “In this study, a multiple probe design was used to determine the effects of self-monitoring taught in a resource room on the students’ self-monitoring usage and on-task level.”",
       "direction": "An observed or measured direction reported by later researchers. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
       "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
@@ -8694,6 +8703,15 @@
       "later_count": 8,
       "field_developments": [
         {
+          "title": "Pedagogical monitoring of special educational needs of students with disabilities acquired during combat operations",
+          "year": 2026,
+          "url": "https://doi.org/10.32744/pse.2026.4.30",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "The purpose of the study: to develop and test a methodology for pedagogical monitoring of special educational needs in students with disabilities acquired during combat operations.",
+          "evidence_role": "related_context",
+          "context_reason": "different_special_education_context"
+        },
+        {
           "title": "Positive and negative affects of teachers from different educational levels",
           "year": 2021,
           "url": "https://doi.org/10.6084/m9.figshare.14284693",
@@ -8721,20 +8739,8 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 3,
+      "development_count": 4,
       "direction_trails": [
-        {
-          "title": "Pedagogical monitoring of special educational needs of students with disabilities acquired during combat operations",
-          "year": 2026,
-          "url": "https://doi.org/10.32744/pse.2026.4.30",
-          "abstract_excerpt": "The purpose of the study: to develop and test a methodology for pedagogical monitoring of special educational needs in students with disabilities acquired during combat operations.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "The Effects of Self-Monitoring on On-Task Behaviour of Students with Special Educational Needs in General Education Settings",
           "year": 2026,
@@ -8820,7 +8826,7 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 8,
+      "direction_count": 7,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -10067,51 +10073,87 @@
       "journal": "Ekonomika poljoprivrede",
       "original_url": "https://doi.org/10.22004/ag.econ.162027",
       "then": "In this paper are analysed possibilities and mechanisms for developing grain futures in the Black Sea Region. The transition to the market economy in the agricultural sector of Romania, Bulgaria and Serbia reinforces the need for the development of market mechanisms that would allow agricultural producers, production planning, marketing, and hedging. In the early 21st century an attempt was made with the support of USAID to establish a wheat futures market for the countries of the Black Sea Reg…",
-      "now": "A 2026 publication reports: “Agronomic and morphological traits included days to pollen shedding, plant height, ear height, grain moisture, and grain yield, while grain quality was evaluated through compositional traits (ash, fat, protein, cellulose, and starch) and mineral con…”",
-      "direction": "An implementation or evaluation signal in later research. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "10 newer publication(s) on a related subject identified. Their findings do not by themselves establish what happened in the world.",
+      "direction": "Newer research (2026) explores: Agronomic performance and grain quality assessment of selected maize genotypes in the Black Sea Region of Türkiye. This is the direction of scholarly discussion, not verified real-world change.",
+      "relevance": "The question still appears in related research as recently as 2026. Its actual policy and practical relevance has not been independently reassessed.",
       "next_question": "What independent dated data would show whether the idea still applies?",
-      "knowledge": "Same-issue research trail; direction is provisional",
+      "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
+        {
+          "title": "Agronomic performance and grain quality assessment of selected maize genotypes in the Black Sea Region of Türkiye",
+          "year": 2026,
+          "url": "https://doi.org/10.3389/fpls.2026.1880606",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Agronomic and morphological traits included days to pollen shedding, plant height, ear height, grain moisture, and grain yield, while grain quality was evaluated through compositional traits (ash, fat, protein, cellulose, and starch) and mineral concentrations (Fe, Cu, Mn, Ca, and Mg).",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Changes in Soil Fertility and Crop Yields due to Short- and Long-Term Application of Fertilizers in a Grain–Beat Crop Rotation System in the Central Black Earth Region",
+          "year": 2024,
+          "url": "https://doi.org/10.3103/s1068367424700101",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Long-term application of fertilizers increased grain yields of barley by 11.3–50.1%, grain yields of oats by 4.0–51.2%, grain yields of winter wheat by 13.4–30.6%, and tuber yields of sugar beet by 15.0–36.7%.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Assessment of Grain Production Development of the Black Sea Region of Ukraine",
+          "year": 2020,
+          "url": "https://doi.org/10.31521/modecon.v24(2020)-11",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "However, the grain farming in its development has increased the existing gap in comparison with the level of productivity of the grain industry in the countries – the largest producers of agricultural products.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "The Influence of Different Types of Fertilizers on the Yield and Grain Quality of Winter Wheat in the Central Black Earth Region",
           "year": 2026,
           "url": "https://doi.org/10.3103/s1068367426700424",
+          "source": "openalex_live",
           "abstract_excerpt": "The highest grain protein content in the experiment was observed in the Biogran-treated variant—10.9%, which was higher than the results obtained with organomineral and mineral fertilizers by 0.4% and 0.6%, respectively.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "The influence of different types of fertilizers on the yield and grain quality of winter wheat in the Central Black Earth Region",
           "year": 2026,
           "url": "https://doi.org/10.53859/02352451_2026_40_2_18",
+          "source": "openalex_live",
           "abstract_excerpt": "The highest grain protein content in the experiment was observed in the Biogran-treated variant – 10.9%, which was higher than the results obtained with organomineral and mineral fertilizers by 0.4 % and 0.6%, respectively.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Beyond Yield: Balancing Grain Production and Regulatory Ecosystem Services in a Typical Black‐Soil Region of Northeast China",
           "year": 2025,
           "url": "https://doi.org/10.1002/ldr.70172",
+          "source": "openalex_live",
           "abstract_excerpt": "Population growth in China has increased the demand for grain, intensifying the competition between arable and ecological land, which may lead to the homogenization and degradation of ecosystem services (ESs) in the black‐soil region's spatial units.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Influence of Weather Conditions on Contamination of Grain Fodder by Micromycetes in the Northwestern Black Sea Region of Ukraine",
           "year": 2024,
           "url": "https://doi.org/10.15407/microbiolj86.05.075",
+          "source": "openalex_live",
           "abstract_excerpt": "In the northwestern Black Sea region of Ukraine, the moderate and dry period has increased from four to eight months, with an HTC of 0.4–0.8.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "OPTIMIZATION OF INNOVATIVE STRIP-TILL TECHNOLOGY OF MAIZE CULTIVATION FOR GRAIN ON BLACK SOILS IN STEPPE ZONE OF VOLGOGRAD REGION",
           "year": 2018,
           "url": "https://doi.org/10.22363/2312-797x-2018-13-3-224-231",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 5,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Diversity of Traditional Grain Legumes of Himalayan Region of Uttarakhand: A Review",
           "year": 2022,
@@ -10119,7 +10161,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "But due to increased population pressure, changed food habit, lack of innovative agricultural technology, environment conservation policies and increased market forces a shift from traditional to modern intensive agriculture system during the past few decades resulted in decline in area and product…",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Dynamic changes in soil erosion and challenges to grain productivity in the black soil region of Northeast China",
@@ -10128,49 +10170,12 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 2,
-      "direction_trails": [
-        {
-          "title": "Agronomic performance and grain quality assessment of selected maize genotypes in the Black Sea Region of Türkiye",
-          "year": 2026,
-          "url": "https://doi.org/10.3389/fpls.2026.1880606",
-          "abstract_excerpt": "Agronomic and morphological traits included days to pollen shedding, plant height, ear height, grain moisture, and grain yield, while grain quality was evaluated through compositional traits (ash, fat, protein, cellulose, and starch) and mineral concentrations (Fe, Cu, Mn, Ca, and Mg).",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Changes in Soil Fertility and Crop Yields due to Short- and Long-Term Application of Fertilizers in a Grain–Beat Crop Rotation System in the Central Black Earth Region",
-          "year": 2024,
-          "url": "https://doi.org/10.3103/s1068367424700101",
-          "abstract_excerpt": "Long-term application of fertilizers increased grain yields of barley by 11.3–50.1%, grain yields of oats by 4.0–51.2%, grain yields of winter wheat by 13.4–30.6%, and tuber yields of sugar beet by 15.0–36.7%.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Assessment of Grain Production Development of the Black Sea Region of Ukraine",
-          "year": 2020,
-          "url": "https://doi.org/10.31521/modecon.v24(2020)-11",
-          "abstract_excerpt": "However, the grain farming in its development has increased the existing gap in comparison with the level of productivity of the grain industry in the countries – the largest producers of agricultural products.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "direction_count": 3,
+      "development_count": 10,
+      "direction_trails": [],
+      "direction_count": 0,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -14069,11 +14074,11 @@
       "journal": "International Journal of Financial Research",
       "original_url": "https://doi.org/10.5430/ijfr.v4n4p1",
       "then": "This paper employs a two-step GARCH-M procedure to study price and volatility spillover effects from a series of foreign exchange rate returns to CME Group commodities in the grains, livestock, and energy complexes. Exchange rates are purported to have supply and demand effects on commodity prices and we hypothesize that this translates into transmissions of distributional shocks from currency returns to commodity returns distributions. The currencies are segregated into three groups: large GDP…",
-      "now": "A 2019 study keeps this issue under discussion.",
-      "direction": "Continued work on the subject, without a clear observed outcome in the available abstracts. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2019; practical relevance may vary.",
+      "now": "14 newer publication(s) on a related subject identified. Their findings do not by themselves establish what happened in the world.",
+      "direction": "Newer research (2025) explores: Good volatility, bad volatility and the cross section of commodity returns. This is the direction of scholarly discussion, not verified real-world change.",
+      "relevance": "The question still appears in related research as recently as 2025. Its actual policy and practical relevance has not been independently reassessed.",
       "next_question": "What independent dated data would show whether the idea still applies?",
-      "knowledge": "Same-issue research trail; direction is provisional",
+      "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
         {
@@ -14082,59 +14087,100 @@
           "url": "https://doi.org/10.1016/j.frl.2025.108656",
           "abstract_excerpt": "Our results also show that the pricing ability of volatility asymmetries is distinct from other higher order moments such as realized skewness. • RSJ is a pricing factor based on upside and downside volatility. • RSJ earns a significantly negative risk premium in the commodity market. • A trading s…",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 1,
+      "field_developments": [
+        {
+          "title": "Does market attention affect Bitcoin returns and volatility?",
+          "year": 2019,
+          "url": "https://doi.org/10.1007/s10203-019-00258-7",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Return and Volatility Spillover among Commodity Futures, Stock Market and Exchange Rate: Evidence from India",
+          "year": 2018,
+          "url": "https://doi.org/10.1177/0972150918803801",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This article aims to investigate return and volatility spillover among commodity, stock and exchange rate markets.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Does Market Attention Affect Bitcoin Returns and Volatility?",
+          "year": 2018,
+          "url": "https://doi.org/10.2139/ssrn.3148018",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Does China’s stock market volatility affect agricultural loan market volatility?",
           "year": 2024,
           "url": "https://doi.org/10.24294/jipd9227",
+          "source": "openalex_live",
           "abstract_excerpt": "The results show that the relationship between stock market and agricultural loan market volatility is time varying and is always positive.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Does Exchange Rate Volatility Affect the Bank Lending Channel?",
           "year": 2024,
           "url": "https://doi.org/10.26650/jepr1343548",
+          "source": "openalex_live",
           "abstract_excerpt": "Evidence from the impulse response function suggests that exchange rate volatility has a negative impact on loans, while variance decomposition results show that exchange rate volatility has a high power to explain the change in loans.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "CLIMATE RISKS AND PREDICTABILITY OF COMMODITY RETURNS AND VOLATILITY: EVIDENCE FROM OVER 750 YEARS OF DATA",
           "year": 2024,
           "url": "https://doi.org/10.1142/s2010007824500039",
+          "source": "openalex_live",
           "abstract_excerpt": "We find that, unlike in the misspecified linear Granger causality tests, climate risks do predict commodity returns and volatility, though the impact on the latter is stronger, in terms of the coverage of the conditional distribution.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Does R&D expenditure volatility affect stock return?",
           "year": 2020,
           "url": "https://doi.org/10.1016/j.jcae.2020.100211",
+          "source": "openalex_live",
           "abstract_excerpt": "Using 5,178 publicly listed US firms from 1980 to 2018, we find a negative relation between R&D volatility and return, which is moderated by firm size.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "How Does News Affect Stock Return Volatility in a Frontier Market?",
           "year": 2020,
           "url": "https://doi.org/10.1177/0258042x20939019",
+          "source": "openalex_live",
           "abstract_excerpt": "An important implication of our results is that investors, analysts, brokers and dealers should be conscious of the nature of news filtering into the stock market as such information might improve their expected volatility forecast.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Parameter estimation for stable distributions with application to commodity futures log returns",
           "year": 2017,
           "url": "https://doi.org/10.48550/arxiv.1706.09756",
+          "source": "openalex_live",
           "abstract_excerpt": "This is observed through applying the ECF to commodity futures log-returns data to obtain the skewness parameter.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Estimation and Prediction of Commodity Returns Using Long Memory Volatility Models",
           "year": 2024,
           "url": "https://doi.org/10.3390/risks12050073",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 8,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Does Sustainability Engagement Affect Stock Return Volatility? Evidence from the Chinese Financial Market",
           "year": 2018,
@@ -14151,7 +14197,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Chapter 2 investigates volatility increases that are observed after the execution of a stock distribution (Ohlson and Penman, 1985).",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Does the volatility of commodity prices reflect macroeconomic uncertainty?",
@@ -14160,49 +14206,12 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 3,
-      "direction_trails": [
-        {
-          "title": "Does market attention affect Bitcoin returns and volatility?",
-          "year": 2019,
-          "url": "https://doi.org/10.1007/s10203-019-00258-7",
-          "abstract_excerpt": "",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Return and Volatility Spillover among Commodity Futures, Stock Market and Exchange Rate: Evidence from India",
-          "year": 2018,
-          "url": "https://doi.org/10.1177/0972150918803801",
-          "abstract_excerpt": "This article aims to investigate return and volatility spillover among commodity, stock and exchange rate markets.",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Does Market Attention Affect Bitcoin Returns and Volatility?",
-          "year": 2018,
-          "url": "https://doi.org/10.2139/ssrn.3148018",
-          "abstract_excerpt": "",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "direction_count": 3,
+      "development_count": 13,
+      "direction_trails": [],
+      "direction_count": 0,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -14221,24 +14230,27 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "Organized (Exchange) Trading and Price Indicators as Instruments of Effective Commodity Markets, Public Policy and International Cooperation",
           "year": 2024,
           "url": "https://doi.org/10.47361/2542-0259-2024-2-38-18-25",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Does fuel price volatility induce price instability in the agricultural commodity supply chain? Empirical evidence from Ghana",
           "year": 2024,
           "url": "https://doi.org/10.1016/j.jafr.2024.101216",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 2,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Structural changes in the wheat supply chain and their environmental footprints through satellite yield forecasting",
           "year": 2026,
@@ -14246,7 +14258,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results indicate that Southern Hemisphere wheat production shifts, triggered by favorable Northern Hemisphere crop information, generate an additional $10.80 billion in value-added and 4.08 Mt of carbon dioxide emissions in a favorable crop year relative to the 2019 base year.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Wheat Supply Chain in Uttar Pradesh: A Case Study of Sultanpur District",
@@ -14255,7 +14267,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "It was observed that price spread was minimum under Chain -1 (Rs.75.12 /ql) whereas the same was maximum under Chain-2 (Rs.215.01 /ql).",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Connected and extracted: Understanding how centrality in the global wheat supply chain affects global hunger using a network approach",
@@ -14273,7 +14285,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Effective energy commodity risk management: Econometric modeling of price volatility",
@@ -14282,7 +14294,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Non-linear relationship between real commodity price volatility and real effective exchange rate: The case of commodity-exporting countries",
@@ -14291,7 +14303,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Sustainability Indicators in Rice and Wheat Supply Chain",
@@ -14300,7 +14312,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Role of the Copernicus Satellite Programme in Building the Resilience of European Supply Chains: Results of a Delphi Study",
@@ -14309,7 +14321,7 @@
           "source": "existing_scanner_catalogue",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Effective energy commodities’ risk management: Econometric modeling of price volatility",
@@ -14318,10 +14330,10 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 9,
+      "development_count": 11,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -15980,27 +15992,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "The Status of Wheat Stem Rust in Syria During the Period 2018-2021",
-          "year": 2023,
-          "url": "https://doi.org/10.22268/ajpp-41.4.339347",
-          "abstract_excerpt": "This disease is also observed in Syria and repeatedly increased from one year to another during the last decade.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Stem carbohydrate dynamics during post anthesis period in diverse wheat genotypes under different environments",
-          "year": 2019,
-          "url": "https://doi.org/10.14719/pst.2019.6.sp1.688",
-          "abstract_excerpt": "Significant genetic variation was observed in the rate of post anthesis change in SWSC during the early grain filling period under the three conditions which partially contributed to the variation in grain yield per spike among the genotypes.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Study on Changes in the Characteristics of Key Carbohydrates in Wheat during the After-ripening Period",
-          "year": 2018,
-          "url": "https://doi.org/10.3724/sp.j.1447.gost.2018.18012",
-          "abstract_excerpt": "After storage at 25 ℃ for 15, 30, 45, 60, 90, 120 and 150 d, the crude starch, amylose, amylopectin, damaged starch and reducing sugar contents in wheat during the after-ripening period were measured.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Oil and non-energy commodity markets: An empirical analysis of volatility spillovers and hedging effectiveness",
           "year": 2017,
           "url": "https://doi.org/10.1080/23322039.2017.1324555",
@@ -16015,8 +16006,35 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 7,
+      "later_count": 4,
       "field_developments": [
+        {
+          "title": "The Status of Wheat Stem Rust in Syria During the Period 2018-2021",
+          "year": 2023,
+          "url": "https://doi.org/10.22268/ajpp-41.4.339347",
+          "source": "openalex_live",
+          "abstract_excerpt": "This disease is also observed in Syria and repeatedly increased from one year to another during the last decade.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Stem carbohydrate dynamics during post anthesis period in diverse wheat genotypes under different environments",
+          "year": 2019,
+          "url": "https://doi.org/10.14719/pst.2019.6.sp1.688",
+          "source": "openalex_live",
+          "abstract_excerpt": "Significant genetic variation was observed in the rate of post anthesis change in SWSC during the early grain filling period under the three conditions which partially contributed to the variation in grain yield per spike among the genotypes.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
+        {
+          "title": "Study on Changes in the Characteristics of Key Carbohydrates in Wheat during the After-ripening Period",
+          "year": 2018,
+          "url": "https://doi.org/10.3724/sp.j.1447.gost.2018.18012",
+          "source": "openalex_live",
+          "abstract_excerpt": "After storage at 25 ℃ for 15, 30, 45, 60, 90, 120 and 150 d, the crude starch, amylose, amylopectin, damaged starch and reducing sugar contents in wheat during the after-ripening period were measured.",
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "PORTFOLIO OPTIMIZATION AND HEDGING EFFECTIVENESS OF TRADITIONAL AND ALTERNATIVE ASSETS: EVIDENCE FROM THE IRAQI FINANCIAL MARKET",
           "year": 2026,
@@ -16063,7 +16081,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 5,
+      "development_count": 8,
       "direction_trails": [
         {
           "title": "EVALUATING WHEAT HEDGING EFFICIENCY USING PRECIOUS METALS: A PORTFOLIO ANALYSIS FROM VOJVODINA",
@@ -18386,9 +18404,9 @@
       "journal": "Landscape Online",
       "original_url": "https://doi.org/10.3097/lo.201433",
       "then": "The ecosystems of our intensively used European landscapes produce a variety of natural goods and services for the benefit of humankind, and secure the basics and quality of life. Because these ecosystems are still undergoing fundamental changes, the interest of the society is to know more about future developments and their ecological impacts. To describe and analyze these changes, scenarios can be developed and an assessment of the ecological changes can be carried out subsequently. In the pr…",
-      "now": "A 2025 publication reports: “This paper presents a comprehensive analysis of methodological approaches to the organization of environmental research in the context of landscape ecology with an emphasis on radioecological monitoring of areas contaminated with radionuclides.”",
-      "direction": "An observed or measured direction reported by later researchers. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "A 2022 study explores another possible direction: “This study aimed at modeling scenarios of future land use and land cover (LULC) change and estimating ecosystem service (ES) values for the year 2051 compared to 2021 in Central Ethiopia.”",
+      "direction": "The question is still evolving; the newer scenario is not an observed outcome. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
+      "relevance": "The issue remains visible in research through 2025; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
@@ -18422,13 +18440,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Methodology for Landscape Mapping at the Regional Scale",
-          "year": 2025,
-          "url": "https://doi.org/10.5564/mjgg.v62i46.4278",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Ecological Basis of Ecosystem Services and Management of Wetlands Dominated by Common Reed (Phragmites australis): European Perspective",
           "year": 2023,
           "url": "https://doi.org/10.3390/d15050629",
@@ -18443,8 +18454,53 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 7,
+      "later_count": 6,
       "field_developments": [
+        {
+          "title": "METHODOLOGY AND ORGANIZATION OF ENVIRONMENTAL RESEARCH IN THE SYSTEM OF LANDSCAPE ECOLOGY AND RADIOECOLOGICAL MONITORING OF TERRITORIES CONTAMINATED WITH RADIONUCLIDES",
+          "year": 2025,
+          "url": "https://doi.org/10.23939/ep2025.02.119",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This paper presents a comprehensive analysis of methodological approaches to the organization of environmental research in the context of landscape ecology with an emphasis on radioecological monitoring of areas contaminated with radionuclides.",
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
+        {
+          "title": "An Analysis and Evaluation Methodology as a Basis for the Sustainable Development Strategy of Small Historic Towns: The Cultural Landscape of the Settlement of Lubenice on the Isl…",
+          "year": 2022,
+          "url": "https://doi.org/10.3390/su14031564",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "The components of the cultural landscape were evaluated using general and specific criteria.",
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
+        {
+          "title": "Methodological fundamentals for the development of land management projects on a landscape basis using geoinformation technologies",
+          "year": 2026,
+          "url": "https://doi.org/10.36871/26189976.2026.07.015",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "The article is devoted to the development of methodological foundations for the preparation of land management projects on a landscape basis using geoinformation technologies.",
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
+        {
+          "title": "Methodology of Sustainable Development of City’s Cultural Landscape",
+          "year": 2019,
+          "url": "https://doi.org/10.1088/1755-1315/272/3/032244",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Abstract Cultural landscapes in combination with unique natural complexes make a united natural and cultural framework of the urbanized environment, and their harmony is a condition of preservation and a sustainable development of environment.",
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
+        {
+          "title": "Methodology for Landscape Mapping at the Regional Scale",
+          "year": 2025,
+          "url": "https://doi.org/10.5564/mjgg.v62i46.4278",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
         {
           "title": "LANDSCAPE ECOLOGY AND RESILIENCE OF AGROECOLOGICAL YIELDS: A GLOBAL SYNTHESIS ON ECOSYSTEM SERVICE STABILITY AND FOOD SECURITY",
           "year": 2026,
@@ -18500,61 +18556,13 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 6,
+      "development_count": 11,
       "direction_trails": [
-        {
-          "title": "METHODOLOGY AND ORGANIZATION OF ENVIRONMENTAL RESEARCH IN THE SYSTEM OF LANDSCAPE ECOLOGY AND RADIOECOLOGICAL MONITORING OF TERRITORIES CONTAMINATED WITH RADIONUCLIDES",
-          "year": 2025,
-          "url": "https://doi.org/10.23939/ep2025.02.119",
-          "abstract_excerpt": "This paper presents a comprehensive analysis of methodological approaches to the organization of environmental research in the context of landscape ecology with an emphasis on radioecological monitoring of areas contaminated with radionuclides.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "An Analysis and Evaluation Methodology as a Basis for the Sustainable Development Strategy of Small Historic Towns: The Cultural Landscape of the Settlement of Lubenice on the Isl…",
-          "year": 2022,
-          "url": "https://doi.org/10.3390/su14031564",
-          "abstract_excerpt": "The components of the cultural landscape were evaluated using general and specific criteria.",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Methodological fundamentals for the development of land management projects on a landscape basis using geoinformation technologies",
-          "year": 2026,
-          "url": "https://doi.org/10.36871/26189976.2026.07.015",
-          "abstract_excerpt": "The article is devoted to the development of methodological foundations for the preparation of land management projects on a landscape basis using geoinformation technologies.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Impact of Landscape Management Scenarios on Ecosystem Service Values in Central Ethiopia",
           "year": 2022,
           "url": "https://doi.org/10.3390/land11081266",
           "abstract_excerpt": "This study aimed at modeling scenarios of future land use and land cover (LULC) change and estimating ecosystem service (ES) values for the year 2051 compared to 2021 in Central Ethiopia.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Methodology of Sustainable Development of City’s Cultural Landscape",
-          "year": 2019,
-          "url": "https://doi.org/10.1088/1755-1315/272/3/032244",
-          "abstract_excerpt": "Abstract Cultural landscapes in combination with unique natural complexes make a united natural and cultural framework of the urbanized environment, and their harmony is a condition of preservation and a sustainable development of environment.",
           "evidence_kind": "newer_scenario_or_model",
           "interpretation": "Later research continues the same issue",
           "geography": "region_not_specified",
@@ -18575,7 +18583,7 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 6,
+      "direction_count": 2,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -21525,20 +21533,13 @@
       "journal": "Geophysical Research Letters",
       "original_url": "https://doi.org/10.1002/2014gl062472",
       "then": "Abstract This study applies statistical postprocessing to ensemble forecasts of near‐surface temperature, 24 h precipitation totals, and near‐surface wind speed from the global model of the European Centre for Medium‐Range Weather Forecasts (ECMWF). The main objective is to evaluate the evolution of the difference in skill between the raw ensemble and the postprocessed forecasts. Reliability and sharpness, and hence skill, of the former is expected to improve over time. Thus, the gain by postpr…",
-      "now": "A 2025 publication reports: “CONCLUSIONS: The results of this study confirm that, not only can the performance of models predicting clinical deterioration be increased by including trends, but that a logistic regression-based model with very few predictors can predict the risk…”",
-      "direction": "An observed or measured direction reported by later researchers. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "A 2018 study explores another possible direction: “Abstract Ensemble weather predictions require statistical postprocessing of systematic errors to obtain reliable and accurate probabilistic forecasts.”",
+      "direction": "The question is still evolving; the newer scenario is not an observed outcome. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
+      "relevance": "The issue remains visible in research through 2018; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
-        {
-          "title": "Optimization of predictive performance of intrusion detection system using hybrid ensemble model for secure systems",
-          "year": 2023,
-          "url": "https://doi.org/10.7717/peerj-cs.1552",
-          "abstract_excerpt": "The results show that the proposed ensemble method successfully optimizes the performance of intrusion detection systems.",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Postprocessing of Ensemble Weather Forecasts Using Permutation-Invariant Neural Networks",
           "year": 2023,
@@ -21566,24 +21567,73 @@
           "url": "https://openalex.org/W2256000660",
           "abstract_excerpt": "The results show that route optimization using ensemble weather forecasts has the potential to reduce the risk of late arrival for voyages during periods of harsh weather.",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 4,
+      "field_developments": [
+        {
+          "title": "Improving predictive performance of Early Warning Scores by including trends in observations",
+          "year": 2025,
+          "url": "https://doi.org/10.1016/j.resuscitation.2025.110853",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "CONCLUSIONS: The results of this study confirm that, not only can the performance of models predicting clinical deterioration be increased by including trends, but that a logistic regression-based model with very few predictors can predict the risk of deterioration better than current non-trend mod…",
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
+        },
+        {
+          "title": "Predictive Analysis of Educational Trends: A Time Series Approach to State Matriculation Exam Performance",
+          "year": 2024,
+          "url": "https://doi.org/10.36941/jesr-2024-0145",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This study presents a comprehensive analysis and forecasting of trends in state matriculation exam scores utilizing time series analytical techniques.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
+        },
+        {
+          "title": "Longitudinal Analysis and Predictive Modeling of Sprint Performance (1976–2035): Trends, Seasonality, and Prediction Approaches",
+          "year": 2025,
+          "url": "https://doi.org/10.5114/jhk/209844",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This study presents a longitudinal analysis and predictive modeling of elite sprint performance trends from 1976 to 2035, based on a database of over 2,500 results from top 10 male and female finishers in the 100-m, 200-m, and 400-m events.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
+        },
+        {
+          "title": "Google Trends for dengue surveillance in Southeast Asia: a systematic review of temporal associations, early-warning signals, and predictive performance",
+          "year": 2026,
+          "url": "https://doi.org/10.17605/osf.io/t7hq6",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This registration documents the methodology of a systematic review evaluating the use of Google Trends as a complementary digital surveillance source for dengue in Southeast Asia.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
+        },
+        {
+          "title": "Optimization of predictive performance of intrusion detection system using hybrid ensemble model for secure systems",
+          "year": 2023,
+          "url": "https://doi.org/10.7717/peerj-cs.1552",
+          "source": "openalex_live",
+          "abstract_excerpt": "The results show that the proposed ensemble method successfully optimizes the performance of intrusion detection systems.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
         },
         {
           "title": "Trends in Environmental Sustainability and Green Energy. CGEEE 2024. Springer Proceedings in Earth and Environmental Sciences Bölüm adı: Predictive Performance Comparison of Artif…",
           "year": 2025,
           "url": "https://openalex.org/W7133571514",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
         },
         {
           "title": "Testing whether ensemble modelling is advantageous for maximising predictive performance of species distribution models",
           "year": 2020,
           "url": "https://doi.org/10.1111/ecog.04890",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 7,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_forecasting_subject"
+        },
         {
           "title": "Flow-Dependent Reliability: A Path to More Skillful Ensemble Forecasts",
           "year": 2018,
@@ -21609,7 +21659,7 @@
           "source": "existing_scanner_catalogue",
           "abstract_excerpt": "Here, we report on the performance of ensembles in predicting COVID-19 cases and deaths across Europe between 08 March 2021 and 07 March 2022.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_forecasting_subject"
         },
         {
           "title": "Classification of Use Cases for Ensemble Weather Forecasts",
@@ -21648,44 +21698,8 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 7,
+      "development_count": 14,
       "direction_trails": [
-        {
-          "title": "Improving predictive performance of Early Warning Scores by including trends in observations",
-          "year": 2025,
-          "url": "https://doi.org/10.1016/j.resuscitation.2025.110853",
-          "abstract_excerpt": "CONCLUSIONS: The results of this study confirm that, not only can the performance of models predicting clinical deterioration be increased by including trends, but that a logistic regression-based model with very few predictors can predict the risk of deterioration better than current non-trend models.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Predictive Analysis of Educational Trends: A Time Series Approach to State Matriculation Exam Performance",
-          "year": 2024,
-          "url": "https://doi.org/10.36941/jesr-2024-0145",
-          "abstract_excerpt": "This study presents a comprehensive analysis and forecasting of trends in state matriculation exam scores utilizing time series analytical techniques.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Longitudinal Analysis and Predictive Modeling of Sprint Performance (1976–2035): Trends, Seasonality, and Prediction Approaches",
-          "year": 2025,
-          "url": "https://doi.org/10.5114/jhk/209844",
-          "abstract_excerpt": "This study presents a longitudinal analysis and predictive modeling of elite sprint performance trends from 1976 to 2035, based on a database of over 2,500 results from top 10 male and female finishers in the 100-m, 200-m, and 400-m events.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Neural Networks for Postprocessing Ensemble Weather Forecasts",
           "year": 2018,
@@ -21709,21 +21723,9 @@
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
           "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Google Trends for dengue surveillance in Southeast Asia: a systematic review of temporal associations, early-warning signals, and predictive performance",
-          "year": 2026,
-          "url": "https://doi.org/10.17605/osf.io/t7hq6",
-          "abstract_excerpt": "This registration documents the methodology of a systematic review evaluating the use of Google Trends as a complementary digital surveillance source for dengue in Southeast Asia.",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 6,
+      "direction_count": 2,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -37775,20 +37777,13 @@
       "journal": "Forensic Science Policy & Management An International Journal",
       "original_url": "https://doi.org/10.1080/19409044.2017.1280099",
       "then": "Forensic laboratories have experienced a growing demand for services that has far outpaced the resources allocated for the investigation of forensic evidence. European and North American projects have led to the development of managerial tools for optimizing efficiency and the cost effective delivery of forensic science services. These developments have attracted the attention of other public sector operations, including public health laboratories. The public health laboratories share many of t…",
-      "now": "A 2022 publication reports: “A Social Return on Investment (SROI) model was adopted for the evaluation of social impact.”",
-      "direction": "An implementation or evaluation signal in later research. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "A 2024 study explores another possible direction: “Forensic laboratories have experienced a growing demand for services that has far outpaced the resources allocated for the investigation of forensic evidence.”",
+      "direction": "The question is still evolving; the newer scenario is not an observed outcome. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
+      "relevance": "The issue remains visible in research through 2024; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
-        {
-          "title": "ECONOMIC CONSEQUENCES OF THE SHADOW CIRCULATION OF SURROGATE ALCOHOL UNDER MARTIAL LAW: FORENSIC AUDIT TOOLS AND THE RETURN ON INVESTMENT IN INNOVATION",
-          "year": 2026,
-          "url": "https://doi.org/10.30525/2256-0742/2026-12-4-480-485",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Article: Financial Management of Forensic Science Laboratories",
           "year": 2024,
@@ -37804,8 +37799,80 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 3,
+      "later_count": 2,
       "field_developments": [
+        {
+          "title": "Social Return on Investment(SROI)of HONDAO “Go Grandriders” Project",
+          "year": 2022,
+          "url": "https://openalex.org/W7113614914",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "A Social Return on Investment (SROI) model was adopted for the evaluation of social impact.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "Beyond Project IRR: A Sovereign Return Framework for Metropolitan Investment",
+          "year": 2026,
+          "url": "https://doi.org/10.5281/zenodo.22892857",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Conventional project investment appraisal focuses primarily on the cash flows, profitability and financial sustainability of the project entity.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "PROJECT COST MANAGEMENT AUTOMATION: RETURN ON INVESTMENT AND IMPLEMENTATION CHALLENGES",
+          "year": 2023,
+          "url": "https://doi.org/10.25313/2520-2294-2025-7-11273",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Introduction.The growing complexity of engineering projects and the demand for real-time financial transparency are accelerating the shift to automated systems in project cost management (PCM).Modern platforms integrate earned-value management (EVM) with artificial intelligence, machine learning, a…",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "Potential for Return on Investment in Rehabilitation-Oriented Blue Carbon Projects: Accounting Methodologies and Project Strategies",
+          "year": 2022,
+          "url": "https://doi.org/10.3389/ffgc.2021.775341",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "While blue carbon is receiving increased global attention, few credit-generating projects are operational, due to low credit-buyer incentives with uncertainty in creditable emissions reductions and high project costs.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "Selection of a transport investment project based on sustainability index, return on investment and risk /",
+          "year": 2021,
+          "url": "https://openalex.org/W7132286547",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Thus, the sustainability integration in investment projects of a transport sector is inevitable in order to make a positive environmental impact.This paper presents the development of sustainability index for a transport investment project and selection of a transport investment project taking retu…",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "Projected return on investment of a corporate global health programme",
+          "year": 2019,
+          "url": "https://doi.org/10.1186/s12889-019-7857-z",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "BACKGROUND: Health and wellbeing initiatives vary in effectiveness due to programme design and offerings.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "The Udokan project: features of its development and return on investment",
+          "year": 2019,
+          "url": "https://doi.org/10.17580/tsm.2019.02.01",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "A major limitation to the successful development of the large deposit is low return on investment, with investment amounting to USD 6–10 bn.",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
+        {
+          "title": "ECONOMIC CONSEQUENCES OF THE SHADOW CIRCULATION OF SURROGATE ALCOHOL UNDER MARTIAL LAW: FORENSIC AUDIT TOOLS AND THE RETURN ON INVESTMENT IN INNOVATION",
+          "year": 2026,
+          "url": "https://doi.org/10.30525/2256-0742/2026-12-4-480-485",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_forensic_laboratory_subject"
+        },
         {
           "title": "The Role of Medical Laboratories in Public Health Surveillance",
           "year": 2026,
@@ -37849,7 +37916,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_forensic_laboratory_subject"
         },
         {
           "title": "Demonstrating cost-benefit for forensic laboratory resources: Project Resolution",
@@ -37870,32 +37937,8 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 7,
+      "development_count": 15,
       "direction_trails": [
-        {
-          "title": "Social Return on Investment(SROI)of HONDAO “Go Grandriders” Project",
-          "year": 2022,
-          "url": "https://openalex.org/W7113614914",
-          "abstract_excerpt": "A Social Return on Investment (SROI) model was adopted for the evaluation of social impact.",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Beyond Project IRR: A Sovereign Return Framework for Metropolitan Investment",
-          "year": 2026,
-          "url": "https://doi.org/10.5281/zenodo.22892857",
-          "abstract_excerpt": "Conventional project investment appraisal focuses primarily on the cash flows, profitability and financial sustainability of the project entity.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research explores further possible futures",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Article: Project FORESIGHT and Return on Investment",
           "year": 2024,
@@ -37907,69 +37950,9 @@
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
           "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "PROJECT COST MANAGEMENT AUTOMATION: RETURN ON INVESTMENT AND IMPLEMENTATION CHALLENGES",
-          "year": 2023,
-          "url": "https://doi.org/10.25313/2520-2294-2025-7-11273",
-          "abstract_excerpt": "Introduction.The growing complexity of engineering projects and the demand for real-time financial transparency are accelerating the shift to automated systems in project cost management (PCM).Modern platforms integrate earned-value management (EVM) with artificial intelligence, machine learning, and predictive analytics.While…",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research explores further possible futures",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Potential for Return on Investment in Rehabilitation-Oriented Blue Carbon Projects: Accounting Methodologies and Project Strategies",
-          "year": 2022,
-          "url": "https://doi.org/10.3389/ffgc.2021.775341",
-          "abstract_excerpt": "While blue carbon is receiving increased global attention, few credit-generating projects are operational, due to low credit-buyer incentives with uncertainty in creditable emissions reductions and high project costs.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research explores further possible futures",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Selection of a transport investment project based on sustainability index, return on investment and risk /",
-          "year": 2021,
-          "url": "https://openalex.org/W7132286547",
-          "abstract_excerpt": "Thus, the sustainability integration in investment projects of a transport sector is inevitable in order to make a positive environmental impact.This paper presents the development of sustainability index for a transport investment project and selection of a transport investment project taking return on investment, risk and sus…",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research explores further possible futures",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Projected return on investment of a corporate global health programme",
-          "year": 2019,
-          "url": "https://doi.org/10.1186/s12889-019-7857-z",
-          "abstract_excerpt": "BACKGROUND: Health and wellbeing initiatives vary in effectiveness due to programme design and offerings.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "The Udokan project: features of its development and return on investment",
-          "year": 2019,
-          "url": "https://doi.org/10.17580/tsm.2019.02.01",
-          "abstract_excerpt": "A major limitation to the successful development of the large deposit is low return on investment, with investment amounting to USD 6–10 bn.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 8,
+      "direction_count": 1,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -39778,8 +39761,8 @@
       "journal": "Regional Environmental Change",
       "original_url": "https://doi.org/10.1007/s10113-017-1194-5",
       "then": "Population structure and dynamics are important drivers of land use. In this article, we present the methods and outcomes of integrating population projections across multiple spatial scales with an urban growth model. By linking shared socioeconomic pathway (SSP)-specific national population projections to present-day population distributions at a sub-national scale, we describe a downscaling approach that provides input into a regional urban growth (RUG) model for Europe. The allocation of po…",
-      "now": "A 2026 publication reports: “Genetic diversity, measured by heterozygosity and allelic richness, was similar among populations.”",
-      "direction": "An observed or measured direction reported by later researchers. The publication is a source-linked clue, not a final accuracy verdict.",
+      "now": "A 2026 study continues this research question: “Population transformation is increasingly dependent on structural changes, including age-structure transitions, geographical redistribution, urbanization, etc.”",
+      "direction": "Continued work on the subject, without a clear observed outcome in the available abstracts. The publication is a source-linked clue, not a final accuracy verdict.",
       "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
@@ -39798,24 +39781,46 @@
           "url": "https://doi.org/10.24425/jwld.2022.143724",
           "abstract_excerpt": "Besides analysis of land use change, the paper discusses observed spatial patterns also taking into account changing social, environmental and economic conditions and spatial policies influencing land cover complexity.",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 2,
+      "field_developments": [
+        {
+          "title": "Genetic Diversity and Population Structure of Urban and Rural Goshawks",
+          "year": 2026,
+          "url": "https://doi.org/10.1002/ece3.74354",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Genetic diversity, measured by heterozygosity and allelic richness, was similar among populations.",
+          "evidence_role": "related_context",
+          "context_reason": "different_population_subject"
+        },
+        {
+          "title": "Transformation of the Territorial Structure of the Population of the Nizhny Novgorod Urban Agglomeration in 2019–2021",
+          "year": 2024,
+          "url": "https://doi.org/10.1134/s2079970524600379",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "An increase in polarization was observed in the central zones of cities, including the core of the urban agglomeration, corresponding to the historical center of Nizhny Novgorod.",
+          "evidence_role": "related_context",
+          "context_reason": "different_population_subject"
         },
         {
           "title": "Researching on the fine structure and admixture of the worldwide chicken population reveal connections between populations and important events in breeding history",
           "year": 2021,
           "url": "https://doi.org/10.1111/eva.13241",
+          "source": "openalex_live",
           "abstract_excerpt": "Our results provide detailed insights into the contributions from population admixture events described in the historical literature to the genomic variation in the domestic chicken.",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_population_subject"
         },
         {
           "title": "Design and build competitions as tools for urban transition in a context of land scarcity",
           "year": 2026,
           "url": "https://doi.org/10.1080/09654313.2026.2687125",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 4,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_population_subject"
+        },
         {
           "title": "Whole genome analyses reveal weak signatures of population structure and environmentally associated local adaptation in an important North American pollinator, the bumble bee Bomb…",
           "year": 2023,
@@ -39823,7 +39828,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "We find that B. vosnesenskii exhibits minimal population structure and weak isolation by distance, confirming results from previous studies using other molecular marker types.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_population_subject"
         },
         {
           "title": "Convergence of Population Structures of the European Union Member States—The Past and the Future",
@@ -39832,35 +39837,11 @@
           "source": "existing_scanner_catalogue",
           "abstract_excerpt": "The results indicate that absolute beta-convergence of the variables characterising the population structures in the EU countries happened in the past and will happen in around 2050.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_population_subject"
         }
       ],
-      "development_count": 2,
+      "development_count": 6,
       "direction_trails": [
-        {
-          "title": "Genetic Diversity and Population Structure of Urban and Rural Goshawks",
-          "year": 2026,
-          "url": "https://doi.org/10.1002/ece3.74354",
-          "abstract_excerpt": "Genetic diversity, measured by heterozygosity and allelic richness, was similar among populations.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Transformation of the Territorial Structure of the Population of the Nizhny Novgorod Urban Agglomeration in 2019–2021",
-          "year": 2024,
-          "url": "https://doi.org/10.1134/s2079970524600379",
-          "abstract_excerpt": "An increase in polarization was observed in the central zones of cities, including the core of the urban agglomeration, corresponding to the historical center of Nizhny Novgorod.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Behavioural Habits of Age Groups: Exploring the Life Patterns of Urban Population in the Context of Age Structure Analysis",
           "year": 2026,
@@ -39874,7 +39855,7 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 3,
+      "direction_count": 1,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -50582,17 +50563,18 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "Sogdian Archetypes in Chatkal Oronymy as an Ancient Substrate of Toponyms of Central Asia",
           "year": 2022,
           "url": "https://doi.org/10.33619/2414-2948/74/45",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 1,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_landscape_ecosystem_subject"
+        },
         {
           "title": "Participatory Scenario Design to Support Ex-ante Biodiversity and Ecosystem Services Assessments in Four European Agricultural Case Studies",
           "year": 2026,
@@ -50639,7 +50621,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 5,
+      "development_count": 6,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -51498,45 +51480,17 @@
       "journal": "Regional Environmental Change",
       "original_url": "https://doi.org/10.1007/s10113-019-01475-x",
       "then": "The complex challenges arising from climate change that exceeds the +2 °C target (termed ‘high-end climate change’) in Europe require new integrative responses to support transformations to a more sustainable future. We present a novel methodology that combines transition management and high-end climate and socioeconomic change scenarios to identify pathways and move Europe closer to sustainability. Eighteen pathways have been co-created with stakeholders through a participatory process. The pa…",
-      "now": "A 2022 study explores another possible direction: “More than half of the world’s population live in cities, and by 2050, it is expected that this proportion will reach almost 68%.”",
-      "direction": "The question is still evolving; the newer scenario is not an observed outcome. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2022; practical relevance may vary.",
+      "now": "11 newer publication(s) on a related subject identified. Their findings do not by themselves establish what happened in the world.",
+      "direction": "Newer research (2026) explores: The role of climate impacts in Transition Pathways in an Integrated Assessment Model: interdependencies and nonlinearities. This is the direction of scholarly discussion, not verified real-world change.",
+      "relevance": "The question still appears in related research as recently as 2026. Its actual policy and practical relevance has not been independently reassessed.",
       "next_question": "What independent dated data would show whether the idea still applies?",
-      "knowledge": "Same-issue research trail; direction is provisional",
+      "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
-        {
-          "title": "Proteomics Analysis reveals greater disruption of mitochondrial bioenergetic pathways in the RV than LV, correlating with dysfunction severity",
-          "year": 2026,
-          "url": "https://openalex.org/W7154668656",
-          "abstract_excerpt": "Our findings show significant downregulation of mitochondrial proteostasis pathways and ETC assembly in the RV compared to LV of left heart failure patients and these changes associated with impairment in respiration and disease severity.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Treatment-Resistant Depression Exhibits Greater Genetic Heterogeneity and Directional Discordance Than Major Depression in NMN-Linked Mitochondrial and Trafficking Pathways",
-          "year": 2026,
-          "url": "https://doi.org/10.6084/m9.figshare.32820224",
-          "abstract_excerpt": "Across pathways, 674 between-disease sign-flips were observed, influential-gene overlap was low, and 658 genes showed cross-tissue sign-flips in treatment-resistant depression.Conclusions.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "A Novel AURKA Mutant-Induced Early-Onset Severe Hepatocarcinogenesis Greater than Wild-Type via Activating Different Pathways in Zebrafish",
-          "year": 2019,
-          "url": "https://doi.org/10.3390/cancers11070927",
-          "abstract_excerpt": "Although an increase of the expression of lipogenic enzyme and lipogenic factor was observed in both AURKA(V352I) and AURKA(WT) transgenic fish, AURKA(V352I) has a greater probability to promote fibrosis at 3 months compared to AURKA(WT).",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "The role of climate impacts in Transition Pathways in an Integrated Assessment Model: interdependencies and nonlinearities",
           "year": 2026,
           "url": "https://doi.org/10.5194/egusphere-egu26-9866",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Hope and behavioural weight loss: Pathways lead to greater weight loss than agency or goals",
-          "year": 2025,
-          "url": "https://doi.org/10.1111/bjhp.12801",
           "abstract_excerpt": "",
           "evidence_role": "same_issue_literature"
         },
@@ -51555,8 +51509,53 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 7,
+      "later_count": 3,
       "field_developments": [
+        {
+          "title": "Energy Transition Pathways for Deep Decarbonization of the Greater Montreal Region: An Energy Optimization Framework",
+          "year": 2022,
+          "url": "https://doi.org/10.3390/en15103760",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "More than half of the world’s population live in cities, and by 2050, it is expected that this proportion will reach almost 68%.",
+          "evidence_role": "related_context",
+          "context_reason": "different_transition_geography"
+        },
+        {
+          "title": "Proteomics Analysis reveals greater disruption of mitochondrial bioenergetic pathways in the RV than LV, correlating with dysfunction severity",
+          "year": 2026,
+          "url": "https://openalex.org/W7154668656",
+          "source": "openalex_live",
+          "abstract_excerpt": "Our findings show significant downregulation of mitochondrial proteostasis pathways and ETC assembly in the RV compared to LV of left heart failure patients and these changes associated with impairment in respiration and disease severity.",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "Treatment-Resistant Depression Exhibits Greater Genetic Heterogeneity and Directional Discordance Than Major Depression in NMN-Linked Mitochondrial and Trafficking Pathways",
+          "year": 2026,
+          "url": "https://doi.org/10.6084/m9.figshare.32820224",
+          "source": "openalex_live",
+          "abstract_excerpt": "Across pathways, 674 between-disease sign-flips were observed, influential-gene overlap was low, and 658 genes showed cross-tissue sign-flips in treatment-resistant depression.Conclusions.",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "A Novel AURKA Mutant-Induced Early-Onset Severe Hepatocarcinogenesis Greater than Wild-Type via Activating Different Pathways in Zebrafish",
+          "year": 2019,
+          "url": "https://doi.org/10.3390/cancers11070927",
+          "source": "openalex_live",
+          "abstract_excerpt": "Although an increase of the expression of lipogenic enzyme and lipogenic factor was observed in both AURKA(V352I) and AURKA(WT) transgenic fish, AURKA(V352I) has a greater probability to promote fibrosis at 3 months compared to AURKA(WT).",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "Hope and behavioural weight loss: Pathways lead to greater weight loss than agency or goals",
+          "year": 2025,
+          "url": "https://doi.org/10.1111/bjhp.12801",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
         {
           "title": "Contested transition pathways in pastoral landscapes: Stakeholder perspectives on agroecology",
           "year": 2026,
@@ -51564,7 +51563,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "SIGNIFICANCE This study provides empirical evidence on how agroecological principles are interpreted, prioritized, and configured in pastoral systems and how competing stakeholder priorities shape distinct transition pathways.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_climate_transition_subject"
         },
         {
           "title": "Electrolytic pathway for upgrading waste CO2 into syngas with a carbon capture and utilization energy efficiency greater than 50%",
@@ -51573,7 +51572,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_climate_transition_subject"
         },
         {
           "title": "Efficient sampling of large-scale transition pathways and intermediate conformations in sub-mesoscopic protein complexes",
@@ -51582,25 +51581,12 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_climate_transition_subject"
         }
       ],
-      "development_count": 3,
-      "direction_trails": [
-        {
-          "title": "Energy Transition Pathways for Deep Decarbonization of the Greater Montreal Region: An Energy Optimization Framework",
-          "year": 2022,
-          "url": "https://doi.org/10.3390/en15103760",
-          "abstract_excerpt": "More than half of the world’s population live in cities, and by 2050, it is expected that this proportion will reach almost 68%.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research explores further possible futures",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "direction_count": 1,
+      "development_count": 8,
+      "direction_trails": [],
+      "direction_count": 0,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -53025,13 +53011,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Collaborative development of composite indices from qualitative value judgements: The EURO-HEALTHY Population Health Index model",
-          "year": 2022,
-          "url": "https://doi.org/10.1016/j.ejor.2022.05.037",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Governance of Intersectoral Collaborations for Population Health and to Reduce Health Inequalities in High-Income Countries: A Complexity-Informed Systematic Review",
           "year": 2022,
           "url": "https://doi.org/10.34172/ijhpm.2022.6550",
@@ -53046,8 +53025,17 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 5,
+      "later_count": 4,
       "field_developments": [
+        {
+          "title": "Collaborative development of composite indices from qualitative value judgements: The EURO-HEALTHY Population Health Index model",
+          "year": 2022,
+          "url": "https://doi.org/10.1016/j.ejor.2022.05.037",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_health_inequality_subject"
+        },
         {
           "title": "Socioeconomic inequalities in health outcomes among Thai older population in the era of Universal Health Coverage: trends and decomposition analysis",
           "year": 2023,
@@ -53094,7 +53082,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 5,
+      "development_count": 6,
       "direction_trails": [
         {
           "title": "Health in all policies – health of the population in development policies in Poland, with particular focus on health inequalities",
@@ -53426,20 +53414,13 @@
       "journal": "Global Environmental Change",
       "original_url": "https://doi.org/10.1016/j.gloenvcha.2019.101944",
       "then": "• We examine risks to current agricultural land to future changes in water availability. • We present a multiple model inter-comparison of future land demand and water availability. • Eleven percent of croplands and ten percent of grasslands are at risk from declining water availability. • Changes in diet and waste reduction offer a buffer against land loss and food insecurity. Rapidly increasing populations coupled with increased food demand requires either an expansion of agricultural land or…",
-      "now": "A 2026 publication reports: “Furthermore, with increased pressures placed on agriculture to meet food demand, protecting arable land resources in coastal regions from the rising threat of flooding is imperative.”",
-      "direction": "An observed or measured direction reported by later researchers. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "A 2022 publication reports: “These results call for an urgent re-evaluation of the implementation guidelines of China's Land Requisition-Compensation Balance policy on scarce irrigation water use.”",
+      "direction": "An implementation or evaluation signal in later research. Comparable geographic scope has not been established. The publication is a source-linked clue, not a final accuracy verdict.",
+      "relevance": "The issue remains visible in research through 2023; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
-        {
-          "title": "Institutional governance and degraded agricultural land management in supporting regional food security",
-          "year": 2026,
-          "url": "https://doi.org/10.15243/jdmlm.2026.133.10689",
-          "abstract_excerpt": "The results suggest that merely designating land is not enough to ensure sustainable food production over the long term.",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Adapting crop production to water scarcity",
           "year": 2024,
@@ -53469,29 +53450,78 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Geopolitics of the Land–Food–Climate Nexus: Curriculum Strategies for Addressing Global North Agricultural Power and Global South Vulnerability",
-          "year": 2026,
-          "url": "https://doi.org/10.3390/land15071162",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Water scarcity in agriculture: challenges for global water security and sustainable food production",
           "year": 2026,
           "url": "https://doi.org/10.62452/zkcjjf72",
           "abstract_excerpt": "",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 5,
+      "field_developments": [
+        {
+          "title": "Assessing the ecological vulnerability of natural flood defences and risks to agricultural land following seawater flooding",
+          "year": 2026,
+          "url": "https://doi.org/10.24382/q173-m906",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Furthermore, with increased pressures placed on agriculture to meet food demand, protecting arable land resources in coastal regions from the rising threat of flooding is imperative.",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
+        {
+          "title": "Agricultural Land Use and Vulnerability Assessment in Daund Taluka, Pune District Using Remote Sensing",
+          "year": 2026,
+          "url": "https://doi.org/10.5281/zenodo.19843509",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Over the years, cropping patterns have shifted, with commercial crops gaining prominence and modern agricultural techniques being increasingly adopted.",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
+        {
+          "title": "Agricultural land use and its climate change vulnerability in Asia",
+          "year": 2025,
+          "url": "https://doi.org/10.4324/9781032672779-14",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This chapter highlights significant changes in agricultural land use trends in Asia and discusses the broad set of measures that are being implemented in the region.",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
+        {
+          "title": "Measurement of Agricultural Water and Land Resource System Vulnerability with Random Forest Model Implied by the Seagull Optimization Algorithm",
+          "year": 2022,
+          "url": "https://doi.org/10.3390/w14101575",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "In the study, 27 evaluation indicators are selected from the agricultural water and land resources system (AWLRS), socio-economic system and ecological structure system to construct the evaluation index system for agricultural water and land resource system vulnerability (AWLRSV).",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
+        {
+          "title": "Institutional governance and degraded agricultural land management in supporting regional food security",
+          "year": 2026,
+          "url": "https://doi.org/10.15243/jdmlm.2026.133.10689",
+          "source": "openalex_live",
+          "abstract_excerpt": "The results suggest that merely designating land is not enough to ensure sustainable food production over the long term.",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
+        {
+          "title": "Geopolitics of the Land–Food–Climate Nexus: Curriculum Strategies for Addressing Global North Agricultural Power and Global South Vulnerability",
+          "year": 2026,
+          "url": "https://doi.org/10.3390/land15071162",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
         },
         {
           "title": "Building climate-resilient agricultural systems for a sustainable future of food, land and water",
           "year": 2025,
           "url": "https://openalex.org/W7216605577",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 8,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_agricultural_water_subject"
+        },
         {
           "title": "Utilizing satellite data and machine learning to monitor agricultural vulnerabilities to climate change",
           "year": 2025,
@@ -53499,7 +53529,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "Advanced monitoring techniques are needed to assess vulnerabilities and to preserve global food security in the face of climate change challenges to global agriculture.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_agricultural_water_subject"
         },
         {
           "title": "Climate change and food security in India: A systematic review of social vulnerability, agricultural risk, and policy responses",
@@ -53508,7 +53538,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_agricultural_water_subject"
         },
         {
           "title": "Special issue: “Land and water resources for agricultural activities: vulnerability and inequality issues”",
@@ -53520,61 +53550,13 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 3,
+      "development_count": 10,
       "direction_trails": [
-        {
-          "title": "Assessing the ecological vulnerability of natural flood defences and risks to agricultural land following seawater flooding",
-          "year": 2026,
-          "url": "https://doi.org/10.24382/q173-m906",
-          "abstract_excerpt": "Furthermore, with increased pressures placed on agriculture to meet food demand, protecting arable land resources in coastal regions from the rising threat of flooding is imperative.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Agricultural Land Use and Vulnerability Assessment in Daund Taluka, Pune District Using Remote Sensing",
-          "year": 2026,
-          "url": "https://doi.org/10.5281/zenodo.19843509",
-          "abstract_excerpt": "Over the years, cropping patterns have shifted, with commercial crops gaining prominence and modern agricultural techniques being increasingly adopted.",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Agricultural land use and its climate change vulnerability in Asia",
-          "year": 2025,
-          "url": "https://doi.org/10.4324/9781032672779-14",
-          "abstract_excerpt": "This chapter highlights significant changes in agricultural land use trends in Asia and discusses the broad set of measures that are being implemented in the region.",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Rising agricultural water scarcity in China is driven by expansion of irrigated cropland in water scarce regions",
           "year": 2022,
           "url": "https://doi.org/10.1016/j.oneear.2022.09.008",
           "abstract_excerpt": "These results call for an urgent re-evaluation of the implementation guidelines of China's Land Requisition-Compensation Balance policy on scarce irrigation water use.",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "region_not_specified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Measurement of Agricultural Water and Land Resource System Vulnerability with Random Forest Model Implied by the Seagull Optimization Algorithm",
-          "year": 2022,
-          "url": "https://doi.org/10.3390/w14101575",
-          "abstract_excerpt": "In the study, 27 evaluation indicators are selected from the agricultural water and land resources system (AWLRS), socio-economic system and ecological structure system to construct the evaluation index system for agricultural water and land resource system vulnerability (AWLRSV).",
           "evidence_kind": "implementation_or_evaluation",
           "interpretation": "A later paper describes implementation or evaluation",
           "geography": "region_not_specified",
@@ -53607,7 +53589,7 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 7,
+      "direction_count": 3,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -57683,17 +57665,18 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Newer research found; real-world direction not established",
       "screening": "full_text_required",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "Dynamic return and volatility connectedness for dominant agricultural commodity markets during the COVID-19 pandemic era",
           "year": 2021,
           "url": "https://doi.org/10.1080/00036846.2021.1973949",
+          "source": "openalex_live",
           "abstract_excerpt": "Second, in the dynamic connectedness TO the system, we observe significant differences between the agricultural commodity markets in the level of the return connectedness measure.",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 1,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Impact assessment of energy sanctions in geo-conflict: Russian–Ukrainian war",
           "year": 2023,
@@ -57701,7 +57684,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results show: (1) Energy sanctions will cause economic damage to both sides, in the worst-case scenario, the EU economic loss reaches 1.488%, the Russian loss reaches 4.8%, and worldwide inflation will rise; (2) Russia’s counter-sanctions will have a direct economic impact on the EU, but will n…",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "ASSESSMENT AND WAYS TO INCREASE THE RATE OF RETURN IN THE RUSSIAN MEDIUM-SIZED AGRICULTURAL ENTERPRISES",
@@ -57710,7 +57693,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The rate of return (profitability) is the category that allows evaluation of financial, production and other costs of the enterprise.The detailed analysis of return ratios enables to regulate the enterprise financial system and has a positive effect on its financial performance.The article consider…",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "The Impact of International Sanctions on Russian Financial Markets",
@@ -57719,7 +57702,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The estimation results show that the sanctions have a significant positive short-term impact on exchange rate returns.",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Weaponized Interdependence and the Return of Economic Warfare in the 21st Century: Evidence from the Russia-Ukraine Sanctions Regime (2022--2024)",
@@ -57728,7 +57711,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Post‐Coup Sanctions and Thailand's Agricultural Trade",
@@ -57737,7 +57720,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Sanctions risks and regional development: Russian case",
@@ -57746,7 +57729,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Connectedness of Agricultural Commodities Futures Returns: Do News Media Sentiments Matter?",
@@ -57755,7 +57738,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Our results show that the impact of news media sentiment on agricultural commodity connectedness depends on the quantiles (lower, median, upper) and the type of sentiment (traditional news or social media).",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Rent Disputes in Agricultural Land Lease Contracts: A Jurisprudential Analysis of Leasing in Return for Commodities (ʿUrūḍ) and Harvest (Maḥṣūl)",
@@ -57764,7 +57747,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Speculation in global commodity markets and its impact on agricultural and other commodity return volatility during the COVID-19 outbreak",
@@ -57773,7 +57756,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Financial Speculation Impact on Agricultural and Other Commodity Return Volatility: Implications for Sustainable Development and Food Security",
@@ -57782,7 +57765,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Agricultural commodity markets and oil prices: An analysis of the dynamic return and volatility connectedness",
@@ -57791,10 +57774,10 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 11,
+      "development_count": 12,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -60003,41 +59986,13 @@
       "journal": "PLoS ONE",
       "original_url": "https://doi.org/10.1371/journal.pone.0232032",
       "then": "The new technologies, the digitalisation of processes and automation of work will change the manner of doing business, working and living. The effects of digitalisation on the economy, society and quality of life imply significant challenges of the labour market. All the participants will be concerned: authorities, companies and ordinary people. The objective of this research is to analyse the perceptions of the EU citizens about digitalisation and to highlight the differences among specific so…",
-      "now": "A 2026 publication reports: “This paper considers a three-pronged digital skills strategy that will be required for developing countries to break out of the digital divide trap: (1) Monitor the evolving set of digital skills required for employment (2) incorporate a holistic di…”",
-      "direction": "An implementation or evaluation signal in later research. The publication is a source-linked clue, not a final accuracy verdict.",
-      "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
+      "now": "A 2025 study continues this research question: “The digital divide refers to disparities in digital skills and access to technology, significantly impacting workplace dynamics.”",
+      "direction": "Continued work on the subject, without a clear observed outcome in the available abstracts. The publication is a source-linked clue, not a final accuracy verdict.",
+      "relevance": "The issue remains visible in research through 2025; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
       "followups": [
-        {
-          "title": "Investigating Digital Divide Barriers, Institutional Support, and Students’ Perceptions of AI-Driven Mathematics Learning",
-          "year": 2026,
-          "url": "https://doi.org/10.3390/educsci16030442",
-          "abstract_excerpt": "Overall, the results suggest that second-level digital divide factors, particularly structured institutional support, are more influential than access alone in determining students’ engagement with AI in mathematics education.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Digital Divide, Cybersecurity Risk Perceptions, and Trust in Malaysian Government E-Participation: A PLS-SEM and fsQCA Analysis",
-          "year": 2026,
-          "url": "https://doi.org/10.29379/jedem.v18i1.1256",
-          "abstract_excerpt": "None of the eighteen trust × risk interactions tested survives correction for multiple testing; within this design, trust is more consistently observed as a positive direct correlate of e-participation than as a demonstrable conditional moderator. fsQCA identifies physical access as the only necess…",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "ICT Use, Digital Skills and Students’ Academic Performance: Exploring the Digital Divide",
-          "year": 2022,
-          "url": "https://doi.org/10.3390/info13030129",
-          "abstract_excerpt": "Today’s student population is made up of “digital natives” who have grown up under the ubiquitous influence of digital technologies, and for whom the use of ICT is common and whose daily activities are structured around media use.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Self-confidence and digital proficiency: Determinants of digital skills perceptions among young people in Spain",
-          "year": 2022,
-          "url": "https://doi.org/10.5210/fm.v27i4.12566",
-          "abstract_excerpt": "Most of the empirical evidence about digital skills relies on index construction based on variables about digital tasks or practices that people can fulfill.",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "TRANSFORMATION OF THE LABOUR MARKET IN THE TOURISM INDUSTRY IN THE CONTEXT OF DIGITALISATION AND AUTOMATION",
           "year": 2026,
@@ -60053,8 +60008,89 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 6,
+      "later_count": 2,
       "field_developments": [
+        {
+          "title": "Bridging the digital divide in the G20: skills for the new age",
+          "year": 2026,
+          "url": "https://doi.org/10.14749/32383245",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "This paper considers a three-pronged digital skills strategy that will be required for developing countries to break out of the digital divide trap: (1) Monitor the evolving set of digital skills required for employment (2) incorporate a holistic digital skills development strategy into national ed…",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "From digital divide to digital capital: the role of education and digital skills in social media participation",
+          "year": 2023,
+          "url": "https://doi.org/10.1007/s10209-022-00961-0",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Through an analysis of data from a representative survey study in Finland ( N = 3724), we illuminate the ambiguity of the perceived obstacles to both digital skills and political participation.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "Measuring the digital divide among people with severe mental ill health using the essential digital skills framework",
+          "year": 2022,
+          "url": "https://doi.org/10.1177/17579139221106399",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "CONCLUSION: A significant portion of people with SMI lacked Foundation Skills in this objective and benchmarked survey.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "Digital divide, skills and perceptions on smart working in Italy: from necessity to opportunity",
+          "year": 2021,
+          "url": "https://doi.org/10.1016/j.procs.2021.01.342",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "For this reason, the aim of the present research was to carry out a survey on smart working on the entire Italian national territory.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "The digital skills divide: evidence from the European tourism industry",
+          "year": 2021,
+          "url": "https://doi.org/10.1108/jtf-07-2020-0114",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Purpose This paper aims to present the findings from a European study on the digital skills gaps in tourism and hospitality companies.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "Investigating Digital Divide Barriers, Institutional Support, and Students’ Perceptions of AI-Driven Mathematics Learning",
+          "year": 2026,
+          "url": "https://doi.org/10.3390/educsci16030442",
+          "source": "openalex_live",
+          "abstract_excerpt": "Overall, the results suggest that second-level digital divide factors, particularly structured institutional support, are more influential than access alone in determining students’ engagement with AI in mathematics education.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "Digital Divide, Cybersecurity Risk Perceptions, and Trust in Malaysian Government E-Participation: A PLS-SEM and fsQCA Analysis",
+          "year": 2026,
+          "url": "https://doi.org/10.29379/jedem.v18i1.1256",
+          "source": "openalex_live",
+          "abstract_excerpt": "None of the eighteen trust × risk interactions tested survives correction for multiple testing; within this design, trust is more consistently observed as a positive direct correlate of e-participation than as a demonstrable conditional moderator. fsQCA identifies physical access as the only necess…",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "ICT Use, Digital Skills and Students’ Academic Performance: Exploring the Digital Divide",
+          "year": 2022,
+          "url": "https://doi.org/10.3390/info13030129",
+          "source": "openalex_live",
+          "abstract_excerpt": "Today’s student population is made up of “digital natives” who have grown up under the ubiquitous influence of digital technologies, and for whom the use of ICT is common and whose daily activities are structured around media use.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "Self-confidence and digital proficiency: Determinants of digital skills perceptions among young people in Spain",
+          "year": 2022,
+          "url": "https://doi.org/10.5210/fm.v27i4.12566",
+          "source": "openalex_live",
+          "abstract_excerpt": "Most of the empirical evidence about digital skills relies on index construction based on variables about digital tasks or practices that people can fulfill.",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
         {
           "title": "The Digital Divide",
           "year": 2025,
@@ -60062,7 +60098,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "Research and policy interventions should address four dimensions of the digital divide: how to ensure affordable and ubiquitous material access through infrastructure and subsidies; develop comprehensive digital skills and literacy through education and community programmes; promote beneficial digi…",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Digital Divide in the European Union: A Typology of EU Citizens",
@@ -60071,7 +60107,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "Abstract This paper addresses the heterogeneity of the digital divide and internet use among citizens in the 28 European Union (EU) countries (at the time of the survey).",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Impact of digitalisation on labour productivity in the EU",
@@ -60089,7 +60125,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results show the existence of three key factors that can help to understand digital transformation in the EU, namely “digital empowerment”, “digitalisation of enterprises” and “broadband access”, and four clusters with heterogeneous performances along these dimensions, classified as “digital ac…",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Digital Divide: Senior High School STEM Students' Perceptions of School Policies Addressing Digital Distraction",
@@ -60098,7 +60134,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results indicate that while students acknowledge the effectiveness of policies in reducing off-task behaviors, they advocate for clearer guidelines and greater flexibility for academic purposes.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Is there a digital divide within the digital divide? Age differences in digital skills across European regions",
@@ -60107,7 +60143,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Digitalisation and population ageing: social policy dimensions of the digital divide and innovation",
@@ -60116,7 +60152,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Digitalisation of State Social Assistance to Certain Categories of Citizens: The Digital Divide and Legal Ways to Overcome It",
@@ -60125,59 +60161,11 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         }
       ],
-      "development_count": 8,
+      "development_count": 17,
       "direction_trails": [
-        {
-          "title": "Bridging the digital divide in the G20: skills for the new age",
-          "year": 2026,
-          "url": "https://doi.org/10.14749/32383245",
-          "abstract_excerpt": "This paper considers a three-pronged digital skills strategy that will be required for developing countries to break out of the digital divide trap: (1) Monitor the evolving set of digital skills required for employment (2) incorporate a holistic digital skills development strategy into national education programmes, and (3) co…",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "From digital divide to digital capital: the role of education and digital skills in social media participation",
-          "year": 2023,
-          "url": "https://doi.org/10.1007/s10209-022-00961-0",
-          "abstract_excerpt": "Through an analysis of data from a representative survey study in Finland ( N = 3724), we illuminate the ambiguity of the perceived obstacles to both digital skills and political participation.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "european_context",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Measuring the digital divide among people with severe mental ill health using the essential digital skills framework",
-          "year": 2022,
-          "url": "https://doi.org/10.1177/17579139221106399",
-          "abstract_excerpt": "CONCLUSION: A significant portion of people with SMI lacked Foundation Skills in this objective and benchmarked survey.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Digital divide, skills and perceptions on smart working in Italy: from necessity to opportunity",
-          "year": 2021,
-          "url": "https://doi.org/10.1016/j.procs.2021.01.342",
-          "abstract_excerpt": "For this reason, the aim of the present research was to carry out a survey on smart working on the entire Italian national territory.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "european_focus",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "The Workplace Digital Divide: Addressing Skills Gaps and Employment Inequality",
           "year": 2025,
@@ -60189,21 +60177,9 @@
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
           "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "The digital skills divide: evidence from the European tourism industry",
-          "year": 2021,
-          "url": "https://doi.org/10.1108/jtf-07-2020-0114",
-          "abstract_excerpt": "Purpose This paper aims to present the findings from a European study on the digital skills gaps in tourism and hospitality companies.",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "european_focus",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 6,
+      "direction_count": 1,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -62514,7 +62490,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "This paper harnesses a systematic literature review (SLR) approach to assess what skills are needed for individuals to remain relevant in The Fourth Industrial Revolution (4IR).",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Taxation of still wine in the Czech Republic and other member states of the European Union",
@@ -62523,7 +62499,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Cluster analysis ranked the states of the European Union according to their similarity of the observed characteristics.",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "TRANSFORMATION OF THE LABOUR MARKET IN THE TOURISM INDUSTRY IN THE CONTEXT OF DIGITALISATION AND AUTOMATION",
@@ -62541,7 +62517,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Analysis of Labour Market Expectations in the Digital World Based on Job Advertisements",
@@ -62577,7 +62553,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Demographic and Technological Factors Shaping the Labour Market in Poland on the Threshold of the Fourth Industrial Revolution",
@@ -62595,7 +62571,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "THE RELEVANCE AND IMPACT OF SOUTH AFRICAN LABOUR LAW IN THE MINING SECTOR: A FOURTH INDUSTRIAL REVOLUTION PERSPECTIVE",
@@ -62613,7 +62589,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         }
       ],
       "development_count": 12,
@@ -65202,31 +65178,36 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "Making a Relational Commodity: Harvesting Coffee and Quality in Vietnam",
           "year": 2024,
           "url": "https://openalex.org/W7135600274",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Machine Learning for Agricultural Price Prediction: A Case of Coffee Commodity in Vietnam Market",
           "year": 2023,
           "url": "https://doi.org/10.1109/bcd57833.2023.10466313",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Comparative Advantage and Export Performance of Indonesia and Vietnam Coffee to the US Market during 2001-2019",
           "year": 2021,
           "url": "https://doi.org/10.21107/agriekonomika.v10i2.10507",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 3,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Hedging, Hedge Accounting, and Stock Price Crash Risk: Evidence from China",
           "year": 2025,
@@ -65246,7 +65227,7 @@
           "context_reason": "one_topic_anchor"
         }
       ],
-      "development_count": 2,
+      "development_count": 5,
       "direction_trails": [
         {
           "title": "A Bibliometric Analysis of Hedging in Commodity Derivatives Using Machine Learning.",
@@ -76788,45 +76769,90 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
+        {
+          "title": "Visual Perception Challenges in Adverse Weather for Autonomous Vehicles: A Review of Rain and Fog Impacts",
+          "year": 2024,
+          "url": "https://doi.org/10.1109/itnec60942.2024.10733168",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Rain droplets and fog can interfere with sensors, leading to inaccurate information acquisition and increased driving risks.",
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
+        },
+        {
+          "title": "The role of smartphone-based weather information acquisition on climate change perception accuracy: Cross-country evidence from Kyrgyzstan, Mongolia and Uzbekistan",
+          "year": 2023,
+          "url": "https://doi.org/10.1016/j.crm.2023.100537",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "So far, little attention has been paid in the literature to understanding the accuracy of farmers' perceptions of actual drought occurrence.",
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
+        },
+        {
+          "title": "A multistage photovoltaic power forecasting strategy integrating multi-granularity information and trend perception fusion mechanism under uncertain weather conditions",
+          "year": 2026,
+          "url": "https://doi.org/10.1088/1361-6501/ae962e",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "However, the intermittency and nonlinearity of solar irradiance, especially under the abrupt weather conditions, poses significant challenges to PV power forecasting.",
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
+        },
+        {
+          "title": "Online misinformation during extreme weather emergencies: short-term information hazard or long-term influence on climate change perceptions?",
+          "year": 2024,
+          "url": "https://doi.org/10.1088/2515-7620/ad1b67",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Abstract Extreme weather events linked to climate change are becoming more frequent.",
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
+        },
         {
           "title": "Leveraging Atmospheric Information Across Scales for Local Temperature Forecasting Using a Novel Multi‐Scale Perception Network",
           "year": 2026,
           "url": "https://doi.org/10.1029/2025jh001083",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
         },
         {
           "title": "Spatiotemporal prediction of unsafe road conditions using weather and infrastructure proximity information - A comparative study across model learning paradigms",
           "year": 2026,
           "url": "https://doi.org/10.21203/rs.3.rs-8958817/v1",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
         },
         {
           "title": "Not just who, but where: Examining weather risk information dependencies and preparation across location and social vulnerability",
           "year": 2025,
           "url": "https://doi.org/10.1016/j.pdisas.2025.100491",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
         },
         {
           "title": "Not Just Who, But Where: Examining Weather Risk Information Dependencies and Preparation across Geographic Space and Social Vulnerability",
           "year": 2025,
           "url": "https://doi.org/10.2139/ssrn.5504207",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
         },
         {
           "title": "A WISER Approach - co-development of Weather and Climate Information Services across Africa, Asia and the Pacific through the UK Government funded WISER Programme",
           "year": 2024,
           "url": "https://doi.org/10.5194/ems2024-895",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 5,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_weather_information_subject"
+        },
         {
           "title": "Effects and perceptions of weather, climate, and climate change on outdoor recreation and nature-based tourism in the United States: A systematic review",
           "year": 2024,
@@ -76834,10 +76860,10 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "different_geography"
+          "context_reason": "different_weather_information_subject"
         }
       ],
-      "development_count": 1,
+      "development_count": 10,
       "direction_trails": [
         {
           "title": "Measuring the Effects of Inconsistent Graphical Information on College Students, in Should Severe Weather Graphics Wear a Uniform? Implications of inconsistent visual displays on…",
@@ -76858,30 +76884,6 @@
           "abstract_excerpt": "Therefore, in its current state, the weather enterprise lacks empirical evidence that (1) demonstrates that message consistency is a relevant operational concern and (2) provides research-guided recommendations to practitioners and operational meteorologists on how to achieve a more consistent message.",
           "evidence_kind": "implementation_or_evaluation",
           "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Visual Perception Challenges in Adverse Weather for Autonomous Vehicles: A Review of Rain and Fog Impacts",
-          "year": 2024,
-          "url": "https://doi.org/10.1109/itnec60942.2024.10733168",
-          "abstract_excerpt": "Rain droplets and fog can interfere with sensors, leading to inaccurate information acquisition and increased driving risks.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "The role of smartphone-based weather information acquisition on climate change perception accuracy: Cross-country evidence from Kyrgyzstan, Mongolia and Uzbekistan",
-          "year": 2023,
-          "url": "https://doi.org/10.1016/j.crm.2023.100537",
-          "abstract_excerpt": "So far, little attention has been paid in the literature to understanding the accuracy of farmers' perceptions of actual drought occurrence.",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
           "geography": "geography_unspecified",
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
@@ -76910,33 +76912,9 @@
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
           "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "A multistage photovoltaic power forecasting strategy integrating multi-granularity information and trend perception fusion mechanism under uncertain weather conditions",
-          "year": 2026,
-          "url": "https://doi.org/10.1088/1361-6501/ae962e",
-          "abstract_excerpt": "However, the intermittency and nonlinearity of solar irradiance, especially under the abrupt weather conditions, poses significant challenges to PV power forecasting.",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Online misinformation during extreme weather emergencies: short-term information hazard or long-term influence on climate change perceptions?",
-          "year": 2024,
-          "url": "https://doi.org/10.1088/2515-7620/ad1b67",
-          "abstract_excerpt": "Abstract Extreme weather events linked to climate change are becoming more frequent.",
-          "evidence_kind": "ongoing_research",
-          "interpretation": "Later research continues the same issue",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 8,
+      "direction_count": 4,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -78147,8 +78125,8 @@
       "journal": "F1000Research",
       "original_url": "https://doi.org/10.12688/f1000research.109399.1",
       "then": "Background: The European Commission has settled ambitious objectives in order to reach climate neutrality by 2050. This will imply the shift from fossil fuel to low carbon energy supply and an adaptation of the energy system according to it. Electrification and production of green hydrogen are seen as structural pillars. The objective of the study is to quantify energy infrastructure needs required in various climate neutral scenarios at the 2050 time horizon. Methods: The work was based on Art…",
-      "now": "A 2026 publication reports: “Analysis building on the “violent transitions” framework argues that the impacts of fossil fuel infrastructure construction are not only harms enacted by the fossil industry, but acts of violence by the state in service to fossil capital against alr…”",
-      "direction": "An implementation or evaluation signal in later research. The publication is a source-linked clue, not a final accuracy verdict.",
+      "now": "A 2026 study continues this research question: “The transformation of energy systems requires not only technical and economic planning but also public acceptance.”",
+      "direction": "Continued work on the subject, without a clear observed outcome in the available abstracts. The publication is a source-linked clue, not a final accuracy verdict.",
       "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Same-issue research trail; direction is provisional",
@@ -78160,17 +78138,37 @@
           "url": "https://doi.org/10.14445/23488360/ijme-v12i8p101",
           "abstract_excerpt": "",
           "evidence_role": "same_issue_literature"
+        }
+      ],
+      "later_count": 1,
+      "field_developments": [
+        {
+          "title": "“The Actual Harm Was Worse Than What Was Being Recorded”: Accounts of State Violence and Elite Capture in Fossil Energy Infrastructure Construction in a Sacrifice Zone",
+          "year": 2026,
+          "url": "https://doi.org/10.1111/anti.70147",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Analysis building on the “violent transitions” framework argues that the impacts of fossil fuel infrastructure construction are not only harms enacted by the fossil industry, but acts of violence by the state in service to fossil capital against already‐overburdened communities to expropriate land…",
+          "evidence_role": "related_context",
+          "context_reason": "energy_social_context_not_planning"
+        },
+        {
+          "title": "What money can’t buy: Company experience and community resistance to renewable energy infrastructure",
+          "year": 2026,
+          "url": "https://doi.org/10.1016/j.enpol.2026.115473",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Renewable energy has grown exponentially, but projects and associated infrastructure increasingly provoke local resistance.",
+          "evidence_role": "related_context",
+          "context_reason": "energy_social_context_not_planning"
         },
         {
           "title": "How much parking space is needed for park and ride facilities to support sustainable infrastructure",
           "year": 2023,
           "url": "https://doi.org/10.31328/jsed.v6i1.4146",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 2,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_energy_infrastructure_subject"
+        },
         {
           "title": "An Analysis of the Energy Infrastructure in Generic Data Centres",
           "year": 2022,
@@ -78181,32 +78179,8 @@
           "context_reason": "one_topic_anchor"
         }
       ],
-      "development_count": 1,
+      "development_count": 4,
       "direction_trails": [
-        {
-          "title": "“The Actual Harm Was Worse Than What Was Being Recorded”: Accounts of State Violence and Elite Capture in Fossil Energy Infrastructure Construction in a Sacrifice Zone",
-          "year": 2026,
-          "url": "https://doi.org/10.1111/anti.70147",
-          "abstract_excerpt": "Analysis building on the “violent transitions” framework argues that the impacts of fossil fuel infrastructure construction are not only harms enacted by the fossil industry, but acts of violence by the state in service to fossil capital against already‐overburdened communities to expropriate land and enable continued extractio…",
-          "evidence_kind": "implementation_or_evaluation",
-          "interpretation": "A later paper describes implementation or evaluation",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "What money can’t buy: Company experience and community resistance to renewable energy infrastructure",
-          "year": 2026,
-          "url": "https://doi.org/10.1016/j.enpol.2026.115473",
-          "abstract_excerpt": "Renewable energy has grown exponentially, but projects and associated infrastructure increasingly provoke local resistance.",
-          "evidence_kind": "newer_scenario_or_model",
-          "interpretation": "Later research continues the same issue",
-          "geography": "geography_unspecified",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "What drives social acceptance of energy infrastructure? Comparing the expansion of wind, PV, and grid",
           "year": 2026,
@@ -78244,7 +78218,7 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 5,
+      "direction_count": 3,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -78409,17 +78383,18 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "Disrupting the Speculative City: Property, power and community resistance in London",
           "year": 2024,
           "url": "https://doi.org/10.14324/111.9781800087088",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 1,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Going urban: marking cities, city networks and global commodity chains in the capitalist world-economy",
           "year": 2024,
@@ -78427,7 +78402,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results indicate that 1) air freight has a positive association with green area in cities without seaports; 2) air freight is significantly associated with urban employment in cities with seaports; and 3) air freight results in population growth in cities with seaports. ☐ Keywords: Cities, Inte…",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Lost in translation: a global perspective on insider trading regulation",
@@ -78436,7 +78411,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Global Economic Inequality: A Review of International Law on the Mechanism and Fairness of Free Trade Regulation",
@@ -78445,7 +78420,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "same_broad_subject_only"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Multilateral Trading System and Global Trade Regulation",
@@ -78454,7 +78429,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Commodity Exchange: Regulation Against Manipulation",
@@ -78463,10 +78438,10 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 5,
+      "development_count": 6,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -79989,13 +79964,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Light Rail Transit Station Area Economic Development and Demographic Outcomes with Post-Pandemic Implications",
-          "year": 2025,
-          "url": "https://doi.org/10.2139/ssrn.5113415",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Demographic and labour market situation in Hungary in the light of global trends",
           "year": 2023,
           "url": "https://doi.org/10.5937/drushor2305101m",
@@ -80010,9 +79978,19 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 5,
-      "field_developments": [],
-      "development_count": 0,
+      "later_count": 4,
+      "field_developments": [
+        {
+          "title": "Light Rail Transit Station Area Economic Development and Demographic Outcomes with Post-Pandemic Implications",
+          "year": 2025,
+          "url": "https://doi.org/10.2139/ssrn.5113415",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        }
+      ],
+      "development_count": 1,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -80368,24 +80346,28 @@
           "url": "https://doi.org/10.31328/jsed.v6i1.3759",
           "abstract_excerpt": "These results indicate that knowledge spillover support by quality of human capital, but the movement of labor has not provided positive externalities for the surrounding environment.JEL Classification E24; J24; O47",
           "evidence_role": "same_issue_literature"
-        },
+        }
+      ],
+      "later_count": 2,
+      "field_developments": [
         {
           "title": "How Does Internal Migration Affect Beijing–Tianjin–Hebei Cities?",
           "year": 2025,
           "url": "https://doi.org/10.3390/su17114959",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Does Environmental Change Affect Migration Especially into the EU?",
           "year": 2024,
           "url": "https://doi.org/10.3390/socsci13030160",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 4,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
         {
           "title": "Property Taxation in Selected Eastern European Countries",
           "year": 2026,
@@ -80393,7 +80375,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Legatum & Fideicommissum in contemporary inheritance law in Ukraine and selected EU countries",
@@ -80402,7 +80384,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Selected Social Issues in the Contemporary World—Global Determinants and Trends in International Migration",
@@ -80411,7 +80393,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Does Inter-Vivos Support Affect Female Labor Supply?",
@@ -80432,7 +80414,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 5,
+      "development_count": 7,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -82499,7 +82481,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "Illegal and uncontrolledmigration can contribute to crime, human trafficking and in some cases terrorist attacks.From an economic perspective, migration may potentially lead to significant negative effectssuch as increased unemployment among natives, increased shadow economy and may putupward press…",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Probabilistic projections and past trends of sea level rise in Finland",
@@ -82508,7 +82490,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Past trends of regional SLR can be calculated after subtracting the other two components from the MSL trends observed by tide gauges, as the land uplift rates obtained from the semi-empirical model NKG2016LU are independent of tide gauge observations.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Risk preferences and refugee migration to Europe: An experimental analysis",
@@ -82517,7 +82499,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "one_topic_anchor"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "Follower Growth and Engagement Trends of TikTok Refugees: A Comparative Study of Migration to Rednote",
@@ -82526,7 +82508,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Besides, this study contributes to the literature on digital platform migration by providing empirical evidence on performance dynamics and audience behaviour.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_labor_market_subject"
         },
         {
           "title": "New Trends in Labor Migration From Kyrgyzstan, Uzbekistan, and Tajikistan in the 2020s",
@@ -95837,13 +95819,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Locals or Foreigners? The Phenomenon of Medieval Graves in Stone Settings in Mazovia (Poland) in the Light of the Results of Interdisciplinary Research: a Case Study",
-          "year": 2026,
-          "url": "https://doi.org/10.1515/pz-2025-2047",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "An Employer-Driven Migration Policy in a Dependent Market Economy: The Case of Poland",
           "year": 2026,
           "url": "https://doi.org/10.1007/978-3-032-30455-1_7",
@@ -95858,13 +95833,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "The Image of a Large City in the Opinion of Foreigners: The Case of Szczecin, Poland",
-          "year": 2024,
-          "url": "https://doi.org/10.35808/ersj/3799",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "Multidimensional approach to measuring skill shortages: insights from the Chilean labour market’",
           "year": 2024,
           "url": "https://openalex.org/W7133586163",
@@ -95872,8 +95840,26 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 6,
+      "later_count": 4,
       "field_developments": [
+        {
+          "title": "Locals or Foreigners? The Phenomenon of Medieval Graves in Stone Settings in Mazovia (Poland) in the Light of the Results of Interdisciplinary Research: a Case Study",
+          "year": 2026,
+          "url": "https://doi.org/10.1515/pz-2025-2047",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
+        {
+          "title": "The Image of a Large City in the Opinion of Foreigners: The Case of Szczecin, Poland",
+          "year": 2024,
+          "url": "https://doi.org/10.35808/ersj/3799",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
         {
           "title": "The principle of complementarity in the new labor market access regulations for foreigners: a reaffirmation or a mirror reversal?",
           "year": 2026,
@@ -95902,7 +95888,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 3,
+      "development_count": 5,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -96688,13 +96674,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Just Like Us? “Sameing” Ukrainian Refugee Migration",
-          "year": 2025,
-          "url": "https://doi.org/10.1007/s12134-025-01325-2",
-          "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "ANALYSIS OF MODERN TRENDS IN LABOUR MARKET TRANSFORMATION IN UKRAINE",
           "year": 2024,
           "url": "https://doi.org/10.33543/j.140243.138142",
@@ -96702,8 +96681,17 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 7,
+      "later_count": 6,
       "field_developments": [
+        {
+          "title": "Just Like Us? “Sameing” Ukrainian Refugee Migration",
+          "year": 2025,
+          "url": "https://doi.org/10.1007/s12134-025-01325-2",
+          "source": "openalex_live",
+          "abstract_excerpt": "",
+          "evidence_role": "related_context",
+          "context_reason": "different_labor_market_subject"
+        },
         {
           "title": "THE IMPACT OF LABOUR MIGRATION OF UKRAINIANS ON THE ECONOMIES OF EUROPEAN UNION COUNTRIES",
           "year": 2026,
@@ -96714,7 +96702,7 @@
           "context_reason": "broader_field_development"
         }
       ],
-      "development_count": 1,
+      "development_count": 2,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
@@ -110395,7 +110383,7 @@
       "journal": "Energies",
       "original_url": "https://doi.org/10.3390/en18195096",
       "then": "As the European Union’s energy systems are transforming towards achieving climate goals, this article examines the energy balances of EU member states. This analysis covers, among other things, the dynamics of energy dependence and strategies for decoupling economic growth from the level of emissions in the European Union (EU), with particular emphasis on Poland, which is strongly influenced by its historical reliance on coal in the energy balance. Using panel data from 1990 to 2022, the articl…",
-      "now": "A 2026 publication reports: “The aggregate results for 1998–2023 point to three main clusters: (i) Czechia, Lithuania, Poland, Slovenia, and Hungary stand out as countries in which agricultural output has increased while emissions have declined; (ii) Bulgaria and Latvia are cha…”",
+      "now": "A 2026 publication reports: “Investigating the tourism-CO2 nexus across EU-27 nations (2010–2024), we find no non-linearities via Hansen’s threshold regression, suggesting a generalised structural transition.”",
       "direction": "An observed or measured direction reported by later researchers. The publication is a source-linked clue, not a final accuracy verdict.",
       "relevance": "The issue remains visible in research through 2026; practical relevance may vary.",
       "next_question": "What independent dated data would show whether the idea still applies?",
@@ -110417,20 +110405,6 @@
           "evidence_role": "same_issue_literature"
         },
         {
-          "title": "Green Economy Transition in Ukraine: Decoupling, Structural Breaks, and Post-Socialist Constraints",
-          "year": 2026,
-          "url": "https://doi.org/10.57017/jaes.v21.4(94).15",
-          "abstract_excerpt": "The results indicate that Ukraine achieved only weak decoupling between economic growth and CO₂ emissions.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Energy Transition and Carbon Decoupling in GCC Economies (2008–2023)",
-          "year": 2026,
-          "url": "https://doi.org/10.3390/su18083798",
-          "abstract_excerpt": "The results show that strong decoupling is concentrated during crisis periods (2009 and 2020), indicating that emissions reductions are often cyclical rather than structural.",
-          "evidence_role": "same_issue_literature"
-        },
-        {
           "title": "A Study on the Interaction Among Urban Transport Carbon Emissions, Economy, and Transportation System in Shanghai Based on Coupled Coordination and Decoupling Models",
           "year": 2026,
           "url": "https://doi.org/10.3390/su18083745",
@@ -110445,8 +110419,44 @@
           "evidence_role": "same_issue_literature"
         }
       ],
-      "later_count": 6,
+      "later_count": 4,
       "field_developments": [
+        {
+          "title": "Agricultural Decoupling in EU Transition Economies: Evidence from Tapio Elasticity Analysis",
+          "year": 2026,
+          "url": "https://doi.org/10.17306/j.jard.2026.2.00009r1",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "The aggregate results for 1998–2023 point to three main clusters: (i) Czechia, Lithuania, Poland, Slovenia, and Hungary stand out as countries in which agricultural output has increased while emissions have declined; (ii) Bulgaria and Latvia are characterized by simultaneous increases in agricultur…",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "Emission Dynamics in Maritime Transport within the Blue Economy Framework: Decoupling and Causality Analysis for European Nations",
+          "year": 2026,
+          "url": "https://doi.org/10.52998/trjmms.1958131",
+          "source": "openalex_publication_metadata",
+          "abstract_excerpt": "Under the pressure of tightening carbon regulations such as the EU Monitoring, Reporting, and Verification (MRV) framework, this study investigates the environmental adaptation and decarbonization processes of maritime supply chains from a Blue Economy perspective, utilizing a panel dataset of 25 n…",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "Green Economy Transition in Ukraine: Decoupling, Structural Breaks, and Post-Socialist Constraints",
+          "year": 2026,
+          "url": "https://doi.org/10.57017/jaes.v21.4(94).15",
+          "source": "openalex_live",
+          "abstract_excerpt": "The results indicate that Ukraine achieved only weak decoupling between economic growth and CO₂ emissions.",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
+        {
+          "title": "Energy Transition and Carbon Decoupling in GCC Economies (2008–2023)",
+          "year": 2026,
+          "url": "https://doi.org/10.3390/su18083798",
+          "source": "openalex_live",
+          "abstract_excerpt": "The results show that strong decoupling is concentrated during crisis periods (2009 and 2020), indicating that emissions reductions are often cyclical rather than structural.",
+          "evidence_role": "related_context",
+          "context_reason": "different_climate_transition_subject"
+        },
         {
           "title": "An evaluation of decoupling in the Hungarian economy",
           "year": 2026,
@@ -110454,7 +110464,7 @@
           "source": "openalex_publication_metadata",
           "abstract_excerpt": "Strong decoupling occurred in sectors like B, C, D, and E, where emissions decreased alongside economic growth, reflect-ing technological advancements and structural shifts.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_climate_transition_subject"
         },
         {
           "title": "Global Research and Action Agenda for Climate Change and Mental Health",
@@ -110466,20 +110476,8 @@
           "context_reason": "issue_only_in_abstract"
         }
       ],
-      "development_count": 2,
+      "development_count": 6,
       "direction_trails": [
-        {
-          "title": "Agricultural Decoupling in EU Transition Economies: Evidence from Tapio Elasticity Analysis",
-          "year": 2026,
-          "url": "https://doi.org/10.17306/j.jard.2026.2.00009r1",
-          "abstract_excerpt": "The aggregate results for 1998–2023 point to three main clusters: (i) Czechia, Lithuania, Poland, Slovenia, and Hungary stand out as countries in which agricultural output has increased while emissions have declined; (ii) Bulgaria and Latvia are characterized by simultaneous increases in agricultural output and emissions; (iii)…",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "european_focus",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
-        },
         {
           "title": "Decoupling tourism growth from carbon emissions: new evidence from the European Union (2010–2024)",
           "year": 2026,
@@ -110491,21 +110489,9 @@
           "source": "openalex_publication_metadata",
           "relationship": "same_issue_published_followup_not_outcome_verified",
           "evidence_role": "same_issue_literature"
-        },
-        {
-          "title": "Emission Dynamics in Maritime Transport within the Blue Economy Framework: Decoupling and Causality Analysis for European Nations",
-          "year": 2026,
-          "url": "https://doi.org/10.52998/trjmms.1958131",
-          "abstract_excerpt": "Under the pressure of tightening carbon regulations such as the EU Monitoring, Reporting, and Verification (MRV) framework, this study investigates the environmental adaptation and decarbonization processes of maritime supply chains from a Blue Economy perspective, utilizing a panel dataset of 25 nations encompassing European c…",
-          "evidence_kind": "measured_or_reported_change",
-          "interpretation": "A later paper reports measured or observed developments",
-          "geography": "european_focus",
-          "source": "openalex_publication_metadata",
-          "relationship": "same_issue_published_followup_not_outcome_verified",
-          "evidence_role": "same_issue_literature"
         }
       ],
-      "direction_count": 3,
+      "direction_count": 1,
       "sources": [],
       "rating": null,
       "kind": "indexed_research"
@@ -120020,17 +120006,18 @@
       "next_question": "What independent dated data would show whether the idea still applies?",
       "knowledge": "Newer research found; real-world direction not established",
       "screening": "no_testable_prediction_in_metadata",
-      "followups": [
+      "followups": [],
+      "later_count": 0,
+      "field_developments": [
         {
           "title": "2026 Planted Acreage for Corn, Cotton, Grain Sorghum, Soybeans and Wheat in Tennessee by County",
           "year": 2026,
           "url": "https://doi.org/10.7290/utiapub/w442",
+          "source": "openalex_live",
           "abstract_excerpt": "",
-          "evidence_role": "same_issue_literature"
-        }
-      ],
-      "later_count": 1,
-      "field_developments": [
+          "evidence_role": "related_context",
+          "context_reason": "different_grain_market_subject"
+        },
         {
           "title": "Research on Spillover Effects of Climate Policy Uncertainty on Energy and Agricultural Product Markets from a Time-Frequency Perspective",
           "year": 2026,
@@ -120038,7 +120025,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "The results show that spillover effects evolve substantially over time and become more pronounced during periods of major external shocks, particularly under the influence of short-run factors.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Is mineral nutrient concentration of soybean, maize, and wheat grain affected by cropping sequence and agronomic management?",
@@ -120047,7 +120034,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Observed grain nutrient concentration values, despite their variability, could be used to estimate nutrient exports by these crops.",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "African grain self-sufficiency mitigates transmission from global energy markets: An integrated TVP-VAR and panel regression approach",
@@ -120056,7 +120043,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Yield and nitrogen dynamics in corn after different fallow replacement strategies in a corn–soybean–winter wheat rotation in northeast Kansas",
@@ -120065,7 +120052,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "US Corn, Soybean, and Wheat Acres in the Planting Flexibility Era",
@@ -120074,7 +120061,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "issue_only_in_abstract"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "IMPACT OF WASDE FORECAST ERRORS IN NEARBY FUTURES PRICES OF CORN, SOYBEANS, AND WHEAT",
@@ -120083,7 +120070,7 @@
           "source": "openalex_live",
           "abstract_excerpt": "Using 231 WASDE events per commodity spanning 1995/962023/24 and an event-study framework with ARIMA-filtered abnormal returns, we find limited evidence that forecast errors broadly disrupt futures markets.",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         },
         {
           "title": "Do Complex Forecasting Models Beat Simple Benchmarks? A Small-Sample Case Study of Wheat, Corn, and Soybean Prices",
@@ -120092,10 +120079,10 @@
           "source": "openalex_live",
           "abstract_excerpt": "",
           "evidence_role": "related_context",
-          "context_reason": "broader_field_development"
+          "context_reason": "different_grain_market_subject"
         }
       ],
-      "development_count": 7,
+      "development_count": 8,
       "direction_trails": [],
       "direction_count": 0,
       "sources": [],
