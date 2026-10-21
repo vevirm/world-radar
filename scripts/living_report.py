@@ -8,6 +8,10 @@ from __future__ import annotations
 from collections import defaultdict
 from pathlib import Path
 import re
+try:
+    from .evidence_policy import classify
+except ImportError:
+    from evidence_policy import classify
 
 
 # Screening-only labels. A paper's title and metadata cannot confirm an outcome.
@@ -202,10 +206,17 @@ def write_report(atlas, report):
             # The cleanup has already screened these records; favor issue-first
             # evidence, then same-question followups. Broader context MUST NOT
             # become the featured answer merely because its title overlaps.
-            candidates = [dict(x) for x in rec.get('direction_trails',[])
-                          if x.get('evidence_role')=='same_issue_literature']
-            candidates += [dict(x) for x in rec.get('followups',[])
-                           if x.get('evidence_role')=='same_issue_literature']
+            original_ref = {'title': rec.get('title'), 'source_url': rec.get('original_url'),
+                            'original_publication': rec.get('year')}
+            # Recheck even previously approved automatic labels. A later
+            # cleanup may be stricter than the filter which saved the link.
+            candidates = []
+            for field, links in (('direction_evidence', rec.get('direction_trails', [])),
+                                 ('follow_up_publications', rec.get('followups', []))):
+                for link in links:
+                    if link.get('evidence_role') == 'same_issue_literature' and \
+                            classify(original_ref, link, field)[0] == 'direct':
+                        candidates.append(dict(link))
             if not candidates:
                 continue
             best = max(candidates, key=lambda f: (

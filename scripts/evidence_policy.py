@@ -101,10 +101,107 @@ def _same_work(old, later):
         return True
     # Publisher recommendation notices can reproduce the exact original title
     # with a generic prefix; they are NOT new independent studies.
-    enriched = bool(a and b and len(a & b) >= 4 and
-                    (len(a & b) / len(a) >= .9 and len(b - a) <= 4))
-    return bool(a and b and (a == b or enriched or
-                (len(a & b) >= 5 and len(a & b) / len(a | b) >= .88)))
+    # A follow-up can legitimately reuse *all* the old issue words and add
+    # "monitoring" or "evaluation". That is not the same publication.
+    # Require near-identical issue vocabulary (or an actual reused DOI above).
+    enriched = bool(a and b and len(a & b) >= 5 and
+                    len(a & b) / len(a | b) >= .93)
+    return bool(a and b and (a == b or enriched))
+
+
+# The title overlap score must not replace the *object of study*. The same
+# words can describe wholly different things: human population structure vs
+# bird genetics, financial grain futures vs grain cultivation, or ensemble
+# weather forecasts vs a dengue prediction model. These subject signatures
+# are conservative downgrade-to-context checks, NOT factual verdicts.
+# Titles supply the context; an abstract may clarify a newer title, but generic
+# mentions elsewhere are not enough to turn a different subject into evidence.
+WEATHER_FORECAST = re.compile(r'\b(?:weather|meteorolog\w*|atmospher\w*|ecmwf|'
+    r'precipitation|rainfall|wind speed|weather forecasting|temperature forecast)\b', re.I)
+LAND_USE = re.compile(r'\b(?:land[ -]?use|urban growth|urban expansion|residential development|'
+    r'population projection|population distribution|demograph\w*|urbanization|urbanisation|'
+    r'settlement|built[ -]?up area|artificial surfaces)\b', re.I)
+FINANCIAL_MARKET = re.compile(r'\b(?:futures? (?:market|contract|trading|price)|commodity (?:market|trading)|'
+    r'hedg\w*|derivative\w*|financial (?:market|trading)|(?:grain|wheat|corn) (?:market|price|trade)|'
+    r'market (?:mechanism|economics|integration)|exchange[ -]traded|price discovery)\b', re.I)
+LABORATORY = re.compile(r'\b(?:lab|labs|laborator\w*)\b',re.I)
+
+
+def issue_scope_conflict(original_title, later_title, later_finding=''):
+    """Reason a seemingly similar title is not direct evidence on this issue.
+
+    Different-topic results are *context*, never deleted merely for drift.
+    The fallback leaves unfamiliar fields to the ordinary relevance check.
+    """
+    old = str(original_title or '').casefold()
+    new_title = str(later_title or '').casefold()
+    new = new_title + ' ' + str(later_finding or '').casefold()
+    if re.search(r'\b(?:ensemble|numerical)\b', old) and WEATHER_FORECAST.search(old) and \
+            re.search(r'\b(?:forecast|predict|weather)\w*\b', old):
+        if not WEATHER_FORECAST.search(new):
+            return 'different_forecasting_subject'
+    if re.search(r'\bpopulation (?:structure|projection|distribution|dynamics)\b', old) and \
+            re.search(r'\b(?:urban|land[ -]?use|land cover)\b', old):
+        if not LAND_USE.search(new):
+            return 'different_population_subject'
+        # 'Urban goshawk population genetics' is not human urbanization, even
+        # though it contains urban + population. Demand land-use / demographic
+        # continuity rather than one 'urban' word.
+        if re.search(r'\b(?:genetic|genom\w*|allelic|heterozygosity|goshawk|raptor)\b', new_title) and \
+                not re.search(r'\b(?:land[ -]?use|demograph\w*|urban (?:growth|expansion)|population projection)\b', new_title):
+            return 'different_population_subject'
+    if re.search(r'\b(?:grain|wheat|commodity)\b', old) and \
+            re.search(r'\b(?:futures?|hedg\w*|market|exchange|trading)\b', old):
+        if not FINANCIAL_MARKET.search(new):
+            return 'different_grain_market_subject'
+    if re.search(r'\bforensic\b', old) and LABORATORY.search(old):
+        if not LABORATORY.search(new) or not re.search(r'\b(?:forensic|public health|crime|criminal)\b', new):
+            return 'different_forensic_laboratory_subject'
+    if re.search(r'\b(?:perception|public use|use and perception|weather information)\b', old) and WEATHER_FORECAST.search(old):
+        # People using forecasts != algorithms predicting solar power, lidar
+        # perception, or remote sensing. "perception" is ambiguous in ML.
+        people = re.search(r'\b(?:user|survey|respondent|stakeholder|household|farmer|fisher|'
+                           r'public opinion|public perception|weather information use|weather information uptake|'
+                           r'communicat|trust in|decision[- ]making|behavior|behaviour)\w*\b', new_title)
+        if not WEATHER_FORECAST.search(new) or not people:
+            return 'different_weather_information_subject'
+    if re.search(r'\b(?:transition pathways|pathways to sustainability)\b',old) and \
+            re.search(r'\b(?:climate|2.*°c|2.*degrees)\b',old):
+        if re.search(r'\b(?:montreal|quebec|california|australia|iran|china|india|usa|canada)\b',new_title) and \
+                not EU.search(new_title):
+            return 'different_transition_geography'
+        if not re.search(r'\b(?:climate|decarbon|emissions|mitigat|adaptation|sustainab)\w*\b',new_title):
+            return 'different_climate_transition_subject'
+    if re.search(r'\b(?:special needs|eaccessibility|special educational needs)\b',old) and \
+            re.search(r'\b(?:educational|education)\b',old):
+        if re.search(r'\b(?:combat operations|armed conflict|military|martial law)\b',new_title):
+            return 'different_special_education_context'
+    if re.search(r'\b(?:health inequalities|health inequities|health disparity|population health inequalities)\b', old):
+        if not re.search(r'\b(?:inequal|inequit|disparit|equity|social determinant|health gap)\w*\b', new):
+            return 'different_health_inequality_subject'
+    if re.search(r'\b(?:employment supply|employment demand|labou?r (?:market|supply|demand)|workforce supply)\b',old):
+        if not re.search(r'\b(?:employ|labou?r|workforce|job|occupation|unemploy)\w*\b',new_title):
+            return 'different_labor_market_subject'
+    if re.search(r'\b(?:energy infrastructure|power infrastructure|electricity infrastructure)\b',old):
+        if not re.search(r'\b(?:energy|power|electricity|grid|renewable|decarbon|transmission|carbon neutral|fossil)\w*\b',new_title) or \
+                not re.search(r'\b(?:infrastructure|network|grid|capacity|deployment|transition|generation|investment|system)\w*\b',new_title):
+            return 'different_energy_infrastructure_subject'
+        # Social effects of an existing oil project can be context, but aren't
+        # in themselves an answer to projected *European 2050 infrastructure needs*.
+        if re.search(r'\b(?:violence|elite capture|community resistance|state harm)\b',new_title) and \
+                not re.search(r'\b(?:planning|projection|needs|demand|capacity|decarbon|electricity|grid)\w*\b',new_title):
+            return 'energy_social_context_not_planning'
+    if re.search(r'\b(?:landscape development|landscape developments|ecosystem services)\b',old) and \
+            re.search(r'\b(?:scenario|landscape)\b',old):
+        if not re.search(r'\b(?:ecosystem service|landscape (?:scenario|change|development|pattern)|'
+                         r'land[ -]?use (?:scenario|change)|biodiversity)\w*\b',new):
+            return 'different_landscape_ecosystem_subject'
+    if re.search(r'\b(?:agricultural land|arable land|food production)\b',old) and \
+            re.search(r'\bwater scarcity\b',old):
+        if not re.search(r'\b(?:scarcity|drought|irrigat|water shortage|water stress|water availability|'
+                         r'water resource|soil moisture|precipitation deficit|dry spell)\w*\b',new):
+            return 'different_agricultural_water_subject'
+    return ''
 
 
 def classify(entry, item, field):
@@ -138,6 +235,9 @@ def classify(entry, item, field):
     original = _tokens(old_title)
     title_terms = _tokens(title)
     finding = str(item.get('finding_from_abstract') or item.get('abstract_excerpt') or '')
+    subject_conflict = issue_scope_conflict(old_title, title, finding)
+    if subject_conflict:
+        return 'context', subject_conflict
     full_terms = title_terms | _tokens(finding)
     shared_title = original & title_terms
     shared = original & full_terms

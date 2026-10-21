@@ -12,6 +12,10 @@ import re
 from collections import Counter
 from datetime import date
 from pathlib import Path
+try:
+    from .evidence_policy import classify
+except ImportError:
+    from evidence_policy import classify
 
 STOP = set(('the a an and or of for in on to from as at by with across under into through toward towards '
             'about between within how what why when which where whose this that these those a study review '
@@ -114,6 +118,17 @@ def links_for(r):
         retracted = marked_invalid(f)
         score, shared = same_subject(r.get('title'), title)
         role = f.get('evidence_role')
+        # Do not trust a prior saved 'same_issue' label blindly: old scans
+        # were screened using earlier, weaker versions of the policy.
+        original_for_check = {'title': r.get('title'), 'original_publication': r.get('year'),
+                              'source_url': r.get('original_url')}
+        source_field = ('direction_evidence' if f in (r.get('direction_trails') or []) else
+                        'follow_up_publications' if f in (r.get('followups') or []) else 'field_developments')
+        checked, _why = classify(original_for_check, f, source_field)
+        if checked != 'direct':
+            role = 'related_context'
+        elif role != 'related_context':
+            role = 'same_issue_literature'
         # Shared screening of stored links is authoritative. Broad/indirect
         # context is retained in the atlas but never ranked as positive evidence.
         confidence = 'withdrawn' if retracted else ('repeat' if duplicate or same_original else
@@ -121,7 +136,7 @@ def links_for(r):
                          'candidate' if role == 'same_issue_literature' or
                          (role is None and related_enough(r.get('title'),title)) else 'weak'))
         found.append({**f, '_from_direction':bool(f.get('evidence_kind')),
-                      '_score': max(score, .75) if (role == 'same_issue_literature' and f.get('evidence_kind')) else score, '_shared': shared, '_year': fy,
+                      '_score': score, '_shared': shared, '_year': fy,
                       '_status': confidence, '_independent': confidence == 'candidate'})
     return found
 
@@ -152,7 +167,7 @@ def sort_data(atlas):
         # to headline the strongest cases. Require an actual abstract excerpt.
         credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2
                            and len(str(l.get('abstract_excerpt') or '').strip()) >= 45],
-                          key=lambda x: (x['_from_direction'], x['_score'], x['_year'], x['_shared']), reverse=True)
+                          key=lambda x: (x['_score'], x['_shared'], x['_from_direction'], x['_year']), reverse=True)
         best = credible[0] if credible else None
         reviewed = concrete_review(r)
         item = {'record': r, 'links': links, 'best': best, 'recent': max((l['_year'] for l in credible), default=0),
@@ -160,7 +175,7 @@ def sort_data(atlas):
         if not marked_invalid(r) and (reviewed or credible):
             score = (220 if reviewed else 0)
             score += 60 * (best['_score'] if best else 0) + 12 * min(len(credible), 3)
-            if best and best['_from_direction']: score += 30
+            if best and best['_from_direction']: score += 8
             score += 24 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
             score += 8 if FUTURE_RE.search(r['title']) else 0
             if reviewed and number is not None:
