@@ -128,23 +128,23 @@ def write_report(atlas, report):
         p(t['intro'])
         p(f"In the archive: {t['count']} research items; {t['later_reading']} with candidate later scholarship. "
           "This is a coverage count, not a relevance or quality score.",small=True)
-        featured=[r for r in by_theme[t['topic']] if r['followups']]
-        featured=sorted(featured,key=lambda r:(0 if r['followups'][0].get('abstract_excerpt') else 1,r['year'],r['title']))[:4]
+        featured=[r for r in by_theme[t['topic']] if r['followups'] or r.get('field_developments')]
+        featured=sorted(featured,key=lambda r:(0 if r['followups'] else 1,r['year'],r['title']))[:4]
         for rec in featured:
             label(f"{rec['year'] or 'Undated'} / an idea that kept being discussed")
             p(rec['title'],lead='THEN  ')
-            first=rec['followups'][0]
-            p(first['title']+ (f" ({first['year']})" if first.get('year') else ''),lead='LATER READING  ')
+            first=(rec['followups'] or rec.get('field_developments') or [])[0]
+            p(first['title']+ (f" ({first['year']})" if first.get('year') else ''),lead='LATER RESEARCH (TOPIC CONTEXT)  ')
             sources([first],original=rec['original_url'])
         if not featured:p('No credible potential later reading link has yet been catalogued for this theme.')
         p('WHAT IS STILL OPEN  The presence of a later paper does not establish a real-world trajectory. Checking present-day outcomes and usefulness is the next editorial question.',small=True)
 
     doc.add_heading('Reading trail: every linked follow-up',1)
-    p(f"The research scan found {summary['with_later_reading']} older entries with possibly related later publications. "
+    p(f"The research scan found {summary['with_later_reading']} older entries with possible newer related publications, including {summary.get('with_direct_later_reading', 0)} with closer title-based matching. "
       'All are listed below, grouped by subject, so none vanishes behind a handful of highlight cards. '
       'These are search leads, not a claim of direct intellectual descent or proof that the original future happened.')
     for theme in atlas['themes']:
-        rows=[r for r in by_theme[theme['topic']] if r['followups']]
+        rows=[r for r in by_theme[theme['topic']] if r['followups'] or r.get('field_developments')]
         if not rows:continue
         doc.add_heading(f"{theme['topic']} ({len(rows)})",2)
         for row in sorted(rows,key=lambda x:(x['year'],x['title'].lower())):
@@ -155,9 +155,9 @@ def write_report(atlas, report):
             r.bold=True;r.font.size=Pt(9)
             para.add_run('\n')
             hyperlink(para,'Original ↗',row['original_url'])
-            for later in row['followups']:
+            for later in (row['followups'] + row.get('field_developments', [])):
                 para.add_run('   ·   ')
-                hyperlink(para,f"{later['year'] or '?'} later reading ↗",later['url'])
+                hyperlink(para,f"{later['year'] or '?'} {'possible follow-up' if later in row['followups'] else 'field development'} ↗",later['url'])
 
     doc.add_heading('How to read a hindsight score',1)
     p('If a topic can be fairly evaluated, the point is to judge the thinking — clarity of assumptions, usefulness for planning and how the expected direction compares with evidence. '
@@ -166,7 +166,7 @@ def write_report(atlas, report):
       'Direction, changed relevance and evidence strength should appear even where a numerical score would be misleading.')
     doc.add_heading('How complete is this edition?',1)
     p(f"Every one of the {summary['total']:,} indexed research records is searchable in the accompanying website and JSON atlas. "
-      f"{summary['with_later_reading']} have recorded candidate later scholarly links; "
+      f"{summary['with_later_reading']} have recorded candidate later scholarly links or wider field developments; "
       f"{summary['with_later_abstract_finding']} have a later abstract containing a result-like passage, not necessarily an observed outcome. "
       'Most entries still lack a source-reviewed real-world comparison. The gaps are visible rather than hidden.')
     p('Next editorial task: review the strongest older ideas topic by topic, add comparable current statistics and counterevidence, '
