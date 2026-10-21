@@ -1,9 +1,9 @@
 {
   "original_records": 1366,
-  "examined": 10316,
+  "examined": 9741,
   "same_issue_literature": 5124,
   "related_context_not_direct_evidence": 4617,
-  "quarantined_this_run": 575,
+  "quarantined_this_run": 0,
   "reasons": {
     "broader_field_development": 1991,
     "different_agricultural_water_subject": 6,
@@ -12,7 +12,6 @@
     "different_forecasting_subject": 6,
     "different_forensic_laboratory_subject": 6,
     "different_geography": 290,
-    "different_geography_and_weak_topic": 2,
     "different_grain_market_subject": 54,
     "different_health_inequality_subject": 1,
     "different_labor_market_subject": 33,
@@ -21,15 +20,10 @@
     "different_special_education_context": 1,
     "different_transition_geography": 1,
     "different_weather_information_subject": 6,
-    "duplicate_link_across_trails": 507,
     "energy_social_context_not_planning": 2,
-    "insufficient_topic_connection": 6,
     "issue_only_in_abstract": 873,
-    "no_specific_shared_issue": 16,
     "one_topic_anchor": 1173,
-    "same_broad_subject_only": 152,
-    "same_original_or_republication": 23,
-    "too_loose_for_field_context": 21
+    "same_broad_subject_only": 152
   },
   "method": "Research link screening only; not fact-checking or prediction grading",
   "quarantine_history_total": 4695
