@@ -28,6 +28,11 @@ except ModuleNotFoundError:
     from scripts.openalex_comparison import (request_works, related, local_catalogue, assess, query_for,
         SavedLiteratureIndex, field_updates, merge_publications)
 
+try:
+    from question_evidence import collect as issue_followups, merge as merge_issue_followups, questions_for, corpus_frequency, developments_query_for
+except ModuleNotFoundError:
+    from scripts.question_evidence import collect as issue_followups, merge as merge_issue_followups, questions_for, corpus_frequency, developments_query_for
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'retrospective-results.json'
 REPORT = ROOT / 'stuff' / 'WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx'
@@ -352,6 +357,7 @@ def main():
     literature_comparisons = 0
     literature_studies_found = 0
     saved_leads = read_json(ROOT / "research-leads.json", {}).get("leads", [])
+    subject_frequency = corpus_frequency(saved_leads)
     # Every run makes use of *all already indexed later literature*, rather
     # than only the 12-45 papers whose live API requests fit this run's clock.
     saved_index = SavedLiteratureIndex(saved_leads) if args.provider in ('openalex', 'catalogue') else None
@@ -413,6 +419,7 @@ def main():
                 if args.provider == 'catalogue':
                     studies = local_catalogue(claim, saved_leads)
                     live_context = []
+                    issue_trails = []  # no live issue-first search in offline mode
                     research_mode = 'existing_scanner_catalogue (saved OpenAlex/Crossref records)'
                 else:
                     search_round = previous['literature_live_attempts'] - 1
@@ -423,6 +430,45 @@ def main():
                     works = request_works(query, since)
                     studies = related(claim, works)
                     live_context = field_updates(claim, works)
+                    # Ask: which later studies address the SAME issue, and do
+                    # they report observations, implementation or new models?
+                    # This is deliberately NOT a forecast-accuracy test.
+                    issue_trails = issue_followups(claim, works)
+                    issue_query = questions_for(claim, term_frequency=subject_frequency,
+                                                rotation=search_round)
+                    # When the title-derived route has not found a concrete
+                    # observation, use a short subject query to find papers
+                    # that describe the issue using different wording.
+                    if issue_query and issue_query != query and time.monotonic() < deadline - 40:
+                        if not any(x.get('evidence_kind') in (
+                                'measured_or_reported_change', 'implementation_or_evaluation')
+                                for x in issue_trails):
+                            try:
+                                other = request_works(issue_query, since)
+                                issue_trails = merge_issue_followups(
+                                    issue_trails, issue_followups(claim, other, discovery='same_issue_search'))
+                                studies = merge_publications(studies, related(claim, other), max_items=6)
+                                live_context = merge_publications(live_context, field_updates(claim, other), max_items=5)
+                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as ee:
+                                print('Same-issue search unavailable:', str(ee)[:120], flush=True)
+                    # A further *issue-specific* route asks for measured
+                    # trends, evaluations or adoption instead of more future
+                    # scenarios. Never accept results on cue-word similarity:
+                    # the question_evidence screen checks the original issue,
+                    # dates and geography before adding a trail.
+                    if (not any(x.get('evidence_kind') in (
+                            'measured_or_reported_change','implementation_or_evaluation')
+                            for x in issue_trails) and time.monotonic() < deadline - 50):
+                        development_query = developments_query_for(
+                            claim, term_frequency=subject_frequency, rotation=search_round)
+                        if development_query and development_query not in (query, issue_query):
+                            try:
+                                findings = request_works(development_query, since)
+                                issue_trails = merge_issue_followups(
+                                    issue_trails, issue_followups(
+                                        claim, findings, discovery='measured_change_or_implementation_search'))
+                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as ee:
+                                print('Development search unavailable:', str(ee)[:120], flush=True)
                     # A less title-dependent follow-up search, at most one
                     # extra call when the first search returns almost nothing.
                     # Failed fallback does not destroy a successful first query.
@@ -447,13 +493,20 @@ def main():
                 new_assessment = assess(claim, studies, research_mode)
                 new_assessment['field_developments'] = context
                 previous.update(new_assessment)
+                # Never erase a useful older directional clue because today's
+                # API query did not reproduce it; keep precise provenance.
+                previous['direction_evidence'] = merge_issue_followups(
+                    previous.get('direction_evidence'), issue_trails)
                 previous.pop('last_error', None)
                 previous['bibliography_checked_utc'] = previous['literature_assessed_utc']
                 worked += 1
                 literature_comparisons += 1
                 literature_studies_found += len(studies)
                 print('Compared:', claim['id'], 'later studies:', len(studies),
-                      'abstract-result snippets:', sum(bool(x.get('finding_from_abstract')) for x in studies), flush=True)
+                      'same-issue direction trails:', len(previous.get('direction_evidence') or []),
+                      'new reported observations/implementation:', sum(
+                          t.get('evidence_kind') in ('measured_or_reported_change',
+                              'implementation_or_evaluation') for t in issue_trails), flush=True)
                 if args.provider == 'openalex':
                     time.sleep(.3)
             elif args.provider == 'openai':
@@ -466,7 +519,7 @@ def main():
                 if previous.get('literature_assessed_utc'):
                     for k in ('literature_assessed_utc', 'literature_search_mode', 'literature_signal',
                               'what_expected_literature', 'what_happened_literature', 'tentative_assessment',
-                              'comparison_limits', 'eu_attribution', 'follow_up_publications', 'literature_attempts', 'literature_live_attempts', 'tentative_direction', 'topic_cluster', 'field_developments'):
+                              'comparison_limits', 'eu_attribution', 'follow_up_publications', 'literature_attempts', 'literature_live_attempts', 'tentative_direction', 'topic_cluster', 'field_developments', 'direction_evidence'):
                         if k in previous:
                             assessed[k] = previous[k]
                 if previous.get('status') in ('realized', 'materializing', 'early_signals', 'contradicted') and assessed['status'] == 'insufficient_evidence':
@@ -512,6 +565,8 @@ def main():
            'literature_studies_found': literature_studies_found,
            'catalogue_field_enriched_this_run': catalogue_field_enriched,
            'field_context_count_total': sum(bool(e.get('field_developments')) for e in entries.values()),
+           'same_issue_direction_trails_total': sum(bool(e.get('direction_evidence')) for e in entries.values()),
+           'entries_with_reported_change_or_implementation': sum(any(t.get('evidence_kind') in ('measured_or_reported_change','implementation_or_evaluation') for t in e.get('direction_evidence') or []) for e in entries.values()),
            'note': ('OpenAlex similar-study comparisons; academic abstracts are provisional, not verified outcomes.'
                     if args.provider == 'openalex' else
                     'Compared genuine existing scholarly records offline; no new external request.'

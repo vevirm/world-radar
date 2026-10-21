@@ -114,6 +114,20 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             developments.append({'title':tidy(f.get('title'),180), 'year':f.get('year'),
                                  'url':link, 'source':f.get('source'),
                                  'abstract_excerpt':tidy(f.get('finding_from_abstract'),300)})
+        # A separate issue-first trail: later abstracts may describe observed
+        # change, practical implementation or merely an evolving research
+        # question. Never confuse these with source-reviewed real-world facts.
+        directions = []
+        for f in entry.get('direction_evidence') or []:
+            link = tidy(f.get('url'))
+            if not link.startswith('https://'):
+                continue
+            directions.append({'title':tidy(f.get('title'),180), 'year':f.get('year'),
+                               'url':link, 'abstract_excerpt':tidy(f.get('finding_from_abstract'),330),
+                               'evidence_kind':f.get('evidence_kind'),
+                               'interpretation':tidy(f.get('interpretation'),130),
+                               'geography':f.get('geography'),
+                               'source':f.get('source'), 'relationship':f.get('relationship')})
         # Scanner-proposed URLs remain in the private research logs. They are
         # NOT public real-world evidence until a source review accepts them.
         evidence = []
@@ -127,6 +141,36 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             direction = tidy(approved.get('limitations'), 480) or 'Dated evidence is linked. Further direction has not been independently established.'
             relevance = 'Current relevance has not yet received a separate editorial review.'
             knowledge='Evidence recorded; full comparison still requires review'
+        elif directions:
+            # A plausible same-issue paper's abstract is a useful sign of
+            # direction, not automatically an independently verified outcome.
+            strongest = next((d for d in directions if d.get('evidence_kind') in
+                              ('measured_or_reported_change','implementation_or_evaluation')), directions[0])
+            y = strongest.get('year') or 'later'
+            excerpt = tidy(strongest.get('abstract_excerpt'),250)
+            kind = strongest.get('evidence_kind')
+            # Readers need the actual later claim, not a boilerplate sentence.
+            # Still attribute it to its published abstract: this is not an
+            # independently verified historical verdict.
+            if kind in ('implementation_or_evaluation', 'measured_or_reported_change'):
+                if excerpt:
+                    now = f'A {y} publication reports: “{excerpt}”'
+                else:
+                    now = f'A {y} publication discusses observed or implemented changes to this issue.'
+                direction = ('An implementation or evaluation signal in later research.'
+                             if kind == 'implementation_or_evaluation' else
+                             'An observed or measured direction reported by later researchers.')
+            elif kind == 'newer_scenario_or_model':
+                now = f'A {y} study explores another possible direction: “{excerpt}”' if excerpt else f'A {y} study models further possibilities.'
+                direction = 'The question is still evolving; the newer scenario is not an observed outcome.'
+            else:
+                now = f'A {y} study continues this research question: “{excerpt}”' if excerpt else f'A {y} study keeps this issue under discussion.'
+                direction = 'Continued work on the subject, without a clear observed outcome in the available abstracts.'
+            if strongest.get('geography') == 'region_not_specified':
+                direction += ' Comparable geographic scope has not been established.'
+            direction += ' The publication is a source-linked clue, not a final accuracy verdict.'
+            relevance = f'The issue remains visible in research through {max((d.get("year") or 0) for d in directions)}; practical relevance may vary.'
+            knowledge = 'Same-issue research trail; direction is provisional'
         elif followups or developments:
             combined = followups + developments
             n = len(combined)
@@ -158,6 +202,7 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             'then':then,'now':now,'direction':direction,'relevance':relevance,'next_question':tidy(entry.get('watch_next')) or 'What independent dated data would show whether the idea still applies?',
             'knowledge':knowledge, 'screening':entry.get('screening_status',''), 'followups':followups, 'later_count':len(followups),
             'field_developments':developments, 'development_count':len(developments),
+            'direction_trails':directions, 'direction_count':len(directions),
             'sources':evidence,'rating':grade,'kind':'indexed_research'})
     buckets=defaultdict(list)
     for r in records: buckets[r['topic']].append(r)
@@ -174,6 +219,7 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
         'summary':{'total':len(records),'themes':len(themes),'compared_with_literature':sum(bool(x.get('literature_assessed_utc')) for x in entries),
             'with_later_reading':sum(x['later_count']>0 or x['development_count']>0 for x in records),
             'with_field_developments':sum(x['development_count']>0 for x in records),
+            'with_same_issue_trails':sum(x['direction_count']>0 for x in records),
             'with_direct_later_reading':sum(x['later_count']>0 for x in records),
             'with_later_abstract_finding':sum(x.get('literature_signal')=='later_studies_report_results' for x in entries),
             'editorial_contexts':len(notes), 'original_abstracts':sum(bool(tidy(x.get('abstract'))) for x in leads)},
