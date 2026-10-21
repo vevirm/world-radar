@@ -1,0 +1,67 @@
+name: Radar 2 - short 20 plus 20 Word
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Radar 2 - outcomes and Word report
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+# Independent of Radar 2. A short report must never trigger another 25-minute scan.
+concurrency:
+  group: radar-short-word-publisher
+  cancel-in-progress: false
+
+jobs:
+  short_word:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word dependency
+        run: pip install 'python-docx>=1.1,<2'
+      - name: Make the short report from already-saved Radar 2 research (NO SCAN)
+        run: |
+          python -m py_compile scripts/shortlist_report.py
+          python scripts/shortlist_report.py \
+            --atlas living-atlas.json \
+            --output stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          python - <<'PY'
+          from docx import Document
+          d=Document('stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx')
+          headings=[p.text for p in d.paragraphs if p.style.name=='Heading 2']
+          assert len(headings)==40, f'Expected 40 research items, got {len(headings)}'
+          assert any('strongest research trails' in p.text.lower() for p in d.paragraphs)
+          assert any('weakest / possibly outdated' in p.text.lower() for p in d.paragraphs)
+          print('VALID: 20 strongest and 20 to recheck, with no API requests.')
+          PY
+      - name: Upload Word download to this Actions run
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Short-Word
+          path: stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          if-no-files-found: error
+          retention-days: 30
+      - name: Publish latest short Word at a permanent website path
+        run: |
+          git config user.name 'world-radar-bot'
+          git config user.email 'world-radar-bot@users.noreply.github.com'
+          git add stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          if ! git diff --cached --quiet; then
+            git commit -m 'Radar 2: refresh 20 plus 20 shortlist'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo 'Short Word report is already up to date.'
+          fi
