@@ -150,6 +150,28 @@ jobs:
             verified-outcomes.json
             stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
 
+      - name: Check saved evidence consistency (NO API, seconds)
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
+        run: |
+          python -m py_compile scripts/evidence_policy.py scripts/cleanup_saved_evidence.py
+          python scripts/cleanup_saved_evidence.py
+
+      - name: Back up collected research BEFORE evidence screening
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Before-Screening
+          retention-days: 90
+          if-no-files-found: error
+          path: |
+            retrospective-results.json
+            living-atlas.json
+            evidence-quarantine.json
+
+      - name: Screen saved links and rebuild atlas (NO API)
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
+        run: python scripts/cleanup_saved_evidence.py --apply
+
       - name: Rebuild living atlas and readable Word report, then validate
         if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
         run: |
@@ -205,6 +227,8 @@ jobs:
             hindsight-stories.json
             living-atlas.json
             retrospective-results.json
+            evidence-quarantine.json
+            evidence-cleanup-summary.json
 
       - name: Commit generated Word and accumulated research
         if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
@@ -212,7 +236,7 @@ jobs:
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
           # A missing optional file is not grounds for discarding research.
-          for file in retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx; do
+          for file in retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json evidence-quarantine.json evidence-cleanup-summary.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx; do
             if [ -f "$file" ]; then
               git add -- "$file"
             else

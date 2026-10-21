@@ -33,7 +33,7 @@ jobs:
         run: pip install 'python-docx>=1.1,<2'
       - name: Preflight cleanup safely without changing any files (NO SCAN)
         run: |
-          python -m py_compile scripts/cleanup_saved_evidence.py scripts/living_atlas.py scripts/living_report.py scripts/shortlist_report.py
+          python -m py_compile scripts/evidence_policy.py scripts/cleanup_saved_evidence.py scripts/living_atlas.py scripts/living_report.py scripts/shortlist_report.py
           python scripts/cleanup_saved_evidence.py
       - name: Preserve original saved evidence and atlas BEFORE cleanup
         uses: actions/upload-artifact@v4
@@ -83,13 +83,14 @@ jobs:
             stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
             stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
             evidence-quarantine.json
+            evidence-cleanup-summary.json
           if-no-files-found: error
           retention-days: 90
       - name: Publish screened atlas and Word reports
         run: |
           git config user.name 'world-radar-bot'
           git config user.email 'world-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json living-atlas.json evidence-quarantine.json \
+          git add retrospective-results.json living-atlas.json evidence-quarantine.json evidence-cleanup-summary.json \
             stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: quarantine weak evidence and refresh reports'
