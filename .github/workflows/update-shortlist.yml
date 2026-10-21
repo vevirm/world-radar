@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 
-# Independent of Radar 2. A short report must never trigger another 25-minute scan.
+# Does not start Radar 2 or use live OpenAlex requests.
 concurrency:
   group: radar-short-word-publisher
   cancel-in-progress: false
@@ -20,7 +20,7 @@ jobs:
   short_word:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,24 +31,34 @@ jobs:
           python-version: '3.11'
       - name: Install Word dependency
         run: pip install 'python-docx>=1.1,<2'
-      - name: Make the short report from already-saved Radar 2 research (NO SCAN)
+      - name: Preflight cleanup safely without changing any files (NO SCAN)
         run: |
-          python -m py_compile scripts/shortlist_report.py
-          python scripts/shortlist_report.py \
-            --atlas living-atlas.json \
-            --output stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
+          python -m py_compile scripts/cleanup_saved_evidence.py scripts/living_atlas.py scripts/living_report.py scripts/shortlist_report.py
+          python scripts/cleanup_saved_evidence.py
+      - name: Preserve original saved evidence and atlas BEFORE cleanup
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-BEFORE-CLEANUP-${{ github.run_id }}
+          path: |
+            retrospective-results.json
+            living-atlas.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Quarantine misleading automated links and rebuild atlas (NO SCAN)
+        run: python scripts/cleanup_saved_evidence.py --apply
+      - name: Make short report from cleaned atlas (NO SCAN)
+        run: |
+          python scripts/shortlist_report.py --atlas living-atlas.json --output stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
           python - <<'PY'
           from docx import Document
           d=Document('stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx')
           headings=[p.text for p in d.paragraphs if p.style.name=='Heading 2']
           assert 1 <= len(headings) <= 40, f'Invalid shortlist size: {len(headings)}'
-          if len(headings)<40:
-              print(f'NOTICE: {len(headings)} screened entries; insufficient trustworthy matches to fill 40.')
           assert any('strongest research trails' in p.text.lower() for p in d.paragraphs)
           assert any('weakest / possibly outdated' in p.text.lower() for p in d.paragraphs)
-          print('VALID: screened strongest and to-recheck shortlist, with no API requests.')
+          print(f'VALID: {len(headings)} shortlisted research trails.')
           PY
-      - name: Refresh full Living Futures Word from the same saved atlas (NO SCAN)
+      - name: Regenerate full Word from cleaned atlas (NO SCAN)
         run: |
           python - <<'PY'
           import json
@@ -56,35 +66,35 @@ jobs:
           from docx import Document
           from scripts.living_report import write_report
           atlas = json.loads(Path('living-atlas.json').read_text(encoding='utf-8'))
-          if not atlas.get('records'):
-              raise SystemExit('Refusing to overwrite full report with an empty atlas.')
-          target = Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
-          write_report(atlas, target)
-          doc = Document(target)
-          paragraphs = '\n'.join(p.text for p in doc.paragraphs)
-          assert 'Eight conversations across time' in paragraphs
-          assert 'Reading trail: every linked follow-up' in paragraphs
-          assert 'How complete is this edition?' in paragraphs
-          print(f'Full Word rebuilt without research: {len(atlas["records"])} preserved atlas records.')
+          if len(atlas.get('records') or []) < 1:
+              raise SystemExit('Refusing to generate from an empty atlas.')
+          target=Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
+          write_report(atlas,target)
+          body='\n'.join(p.text for p in Document(target).paragraphs)
+          for phrase in ('Eight conversations across time','Reading trail: every linked follow-up','How complete is this edition?'):
+              assert phrase in body, f'Missing report section: {phrase}'
+          print(f'VALID: full report covers {len(atlas["records"])} research entries.')
           PY
-      - name: Upload both Word downloads to this Actions run
+      - name: Save screened outputs for download even if Git publishing fails
         uses: actions/upload-artifact@v4
         with:
-          name: Radar-2-Short-Word
+          name: Radar-2-Screened-Reports
           path: |
             stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx
             stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+            evidence-quarantine.json
           if-no-files-found: error
-          retention-days: 30
-      - name: Publish both updated Words at their permanent website paths
+          retention-days: 90
+      - name: Publish screened atlas and Word reports
         run: |
           git config user.name 'world-radar-bot'
           git config user.email 'world-radar-bot@users.noreply.github.com'
-          git add stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          git add retrospective-results.json living-atlas.json evidence-quarantine.json \
+            stuff/WORLD_RADAR_20_BEST_20_TO_RECHECK.docx stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
-            git commit -m 'Radar 2: refresh screened full and short Words'
+            git commit -m 'Radar 2: quarantine weak evidence and refresh reports'
             git pull --rebase origin main
             git push origin HEAD:main
           else
-            echo 'Both Word reports are already up to date.'
+            echo 'No changes to publish.'
           fi
