@@ -32,9 +32,9 @@ def test_validation_rejects_bad_docx(tmp_path):
 def test_validation_accepts_formatted_radar2_report(tmp_path):
     report = tmp_path / "report.docx"
     doc = Document()
-    doc.add_heading('WORLD RADAR 2 | Expected vs. Actually Happened', 0)
-    for line in ('Research leads indexed', 'WHAT WAS EXPECTED',
-                 'WHAT ACTUALLY HAPPENED', 'Source-reviewed expected-vs-actual outcomes'):
+    doc.add_heading('Back then.', 0)
+    for line in ('Two promises, two reality checks', 'WHAT CAME NEXT',
+                 'How to read a hindsight score'):
         doc.add_paragraph(line)
     # Add enough content for a realistic, nonempty report.
     doc.add_paragraph('Sample data. ' * 400)

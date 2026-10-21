@@ -1,0 +1,112 @@
+{
+  "generated_utc": "2026-10-21 06:58 UTC",
+  "summary": {
+    "research_leads": 1366,
+    "reviewed_forecasts": 0,
+    "policy_snapshots": 2,
+    "later_reading": 3
+  },
+  "stories": [
+    {
+      "id": "policy-0",
+      "kind": "policy_progress",
+      "tag": "A promise in progress",
+      "title": "EU renewable energy share, 2030 target",
+      "then": "The 2018 Renewable Energy Directive originally set a binding EU renewable-energy share target of at least 32% by 2030. This was a policy target, not a prediction that 32% would be achieved.",
+      "now": "The 2030 binding target was raised to at least 42.5% in 2023. Eurostat reported a 25.2% renewables share of EU gross final energy consumption for 2024, leaving a 17.3-percentage-point gap to the revised 2030 target.",
+      "take": "Progress observed; 2030 target not yet due; no claim of final realization.",
+      "hindsight_rating": null,
+      "progress_meter": {
+        "value": 59,
+        "label": "Target-level yardstick (NOT a hindsight grade)",
+        "metric": "2024 renewable-energy share compared with the revised 2030 EU share target",
+        "as_of": "2024 (Eurostat release dated 2025-12-18)",
+        "calculation": "25.2 ÷ 42.5 × 100",
+        "note": "Compares two levels; not a score for planning quality or a measure of percentage-point progress."
+      },
+      "sources": [
+        {
+          "date": "2018-12-21",
+          "url": "https://commission.europa.eu/news-and-media/news/new-renewables-energy-efficiency-and-governance-legislation-comes-force-24-december-2018-2018-12-21_en",
+          "finding": "Original binding 32% target"
+        },
+        {
+          "date": "2023-11-20",
+          "url": "https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules/renewable-energy-targets_en",
+          "finding": "Directive revision raises target to at least 42.5%"
+        },
+        {
+          "date": "2025-12-18",
+          "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20251218-2",
+          "finding": "Eurostat reports 25.2% renewable share for 2024"
+        }
+      ]
+    },
+    {
+      "id": "policy-1",
+      "kind": "policy_progress",
+      "tag": "A promise in progress",
+      "title": "EU net greenhouse gas reduction toward 2030",
+      "then": "The EU policy objective is to reduce net greenhouse gas emissions by at least 55% by 2030 relative to 1990, and become climate neutral by 2050. These are targets, not predictions.",
+      "now": "The European Commission reported that provisional EU net greenhouse gas emissions in 2024 were 37.2% below 1990, within the scope of the EU climate target. The 2030 objective is not yet due.",
+      "take": "Observed emissions reductions; 2030 and 2050 objectives not yet verifiable as completed.",
+      "hindsight_rating": null,
+      "progress_meter": {
+        "value": 68,
+        "label": "Target-level yardstick (NOT a hindsight grade)",
+        "metric": "2024 net-emissions reduction compared with the EU 2030 reduction goal, both versus 1990",
+        "as_of": "2024 (European Commission and EEA releases in 2025)",
+        "calculation": "37.2 ÷ 55 × 100",
+        "note": "A snapshot of the reduction versus the stated target, not a forecast-accuracy grade."
+      },
+      "sources": [
+        {
+          "date": "2025",
+          "url": "https://climate.ec.europa.eu/areas-action/climate-strategies-targets/progress-climate-action/eu-climate-action-progress-report-2025/chapter-1-climate-action-advances-and-challenges_en",
+          "finding": "European Commission 2025 progress report gives 2024 net emissions reduction of 37.2% versus 1990"
+        },
+        {
+          "date": "2025",
+          "url": "https://www.eea.europa.eu/en/newsroom/news/trends-and-projections-greenhouse-gas-emissions-largely-on-track-to-2030-targets",
+          "finding": "EEA says 2024 estimated net GHG emissions 37% below 1990; 55% 2030 goal not yet due"
+        }
+      ]
+    }
+  ],
+  "reading_shelf": [
+    {
+      "id": "lead-ecd5eb901830ff59",
+      "title": "Record dry summer in 2015 challenges precipitation projections in Central Europe",
+      "year": "2016",
+      "then": "In 2016, a study questioned how confidently climate projections describe Central Europe’s summers.",
+      "later": "A related 2018 modeling paper found very different possible summer-rainfall futures: wet, dry and very dry.",
+      "take": "This is later academic discussion, not a real-world test or proof that the earlier scenario happened.",
+      "original_url": "https://doi.org/10.1038/srep28334",
+      "later_url": "https://doi.org/10.5194/esd-9-1107-2018",
+      "later_title": "Varying soil moisture–atmosphere feedbacks explain divergent temperature extremes and precipitation projections in central Europe"
+    },
+    {
+      "id": "lead-72ca81101443645e",
+      "title": "Assessment of Future Heat Stress Risk in European Regions: Towards a better Integration of Socio-economic Sce…",
+      "year": "2017",
+      "then": "A 2017 study explored how changing climates and social conditions might affect Europe’s heat-stress risks.",
+      "later": "A related 2021 study modeled rising heat-related mortality risks through 2050, with markedly different projections across European countries.",
+      "take": "This is later academic discussion, not a real-world test or proof that the earlier scenario happened.",
+      "original_url": "https://doi.org/10.1553/giscience2017_01_s341",
+      "later_url": "https://doi.org/10.1175/wcas-d-20-0142.1",
+      "later_title": "Future Projections of Heat Mortality Risk for Major European Cities"
+    },
+    {
+      "id": "lead-1adc6161d5c8ecb4",
+      "title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
+      "year": "2017",
+      "then": "A 2017 paper explored whether climate-smart forestry could nearly double forests’ climate-mitigation contribution by 2050.",
+      "later": "A related 2022 study examined forest-management trade-offs, including the role of unmanaged and broad-leaved forests in carbon storage and local cooling.",
+      "take": "This is later academic discussion, not a real-world test or proof that the earlier scenario happened.",
+      "original_url": "https://doi.org/10.3390/f8120484",
+      "later_url": "https://doi.org/10.1029/2022ef002796",
+      "later_title": "Trade‐Offs for Climate‐Smart Forestry in Europe Under Uncertain Future Climate"
+    }
+  ],
+  "scoring_note": "Only an original-source-reviewed prediction with comparable independent outcome evidence can receive a hindsight grade. The 1–100 rating is editorial: clarity 25%, anticipation 50%, usefulness 25%. Policy target-level meters are separate and do not measure prediction quality. No evidence means no grade."
+}

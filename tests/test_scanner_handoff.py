@@ -36,13 +36,23 @@ class HandoffTests(TestCase):
         self.assertIn('not independently verified', result[0]['note'])
 
     def test_word_creation_offline(self):
+        # Running a report smoke test must not overwrite checked-in site data.
+        from scripts import outlook_summary, outcome_verification
         with tempfile.TemporaryDirectory() as td:
-            with patch.object(radar, 'REPORT', Path(td) / 'report.docx'):
-                import outlook_summary
-                with patch.object(outlook_summary, 'OUT', Path(td) / 'outlook.json'):
-                    radar.build_word([])
-                    self.assertGreater((Path(td) / 'report.docx').stat().st_size, 10000)
-                    self.assertTrue((Path(td) / 'outlook.json').exists())
+            root = Path(td)
+            (root / 'research-leads.json').write_text('{"leads": []}')
+            (root / 'verified-outcomes.json').write_text('{"cases": []}')
+            (root / 'outcome-observations.json').write_text('{"observations": []}')
+            with patch.object(radar, 'ROOT', root), \
+                 patch.object(radar, 'REPORT', root / 'report.docx'), \
+                 patch.object(outlook_summary, 'ROOT', root), \
+                 patch.object(outlook_summary, 'OUT', root / 'outlook.json'), \
+                 patch.object(outcome_verification, 'REGISTRY', root / 'verified-outcomes.json'), \
+                 patch.object(outcome_verification, 'QUEUE', root / 'outcome-review-queue.json'):
+                radar.build_word([])
+                self.assertGreater((root / 'report.docx').stat().st_size, 10000)
+                self.assertTrue((root / 'outlook.json').exists())
+                self.assertTrue((root / 'hindsight-stories.json').exists())
 
     def test_openalex_key_is_attached_to_follow_up_request(self):
         from urllib.parse import parse_qs, urlparse

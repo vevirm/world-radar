@@ -12,8 +12,8 @@ def test_word_separates_candidate_from_observed_outcome(tmp_path, monkeypatch):
     """Both directions are present, but forecasts are not claimed verified."""
     monkeypatch.setattr(retrospective_radar, 'ROOT', tmp_path)
     monkeypatch.setattr(retrospective_radar, 'REPORT', tmp_path/'stuff'/'WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
-    imported_verification = importlib.import_module('outcome_verification')
-    imported_outlook = importlib.import_module('outlook_summary')
+    imported_verification = importlib.import_module('scripts.outcome_verification')
+    imported_outlook = importlib.import_module('scripts.outlook_summary')
     monkeypatch.setattr(imported_verification, 'QUEUE', tmp_path/'outcome-review-queue.json')
     monkeypatch.setattr(imported_verification, 'REGISTRY', tmp_path/'verified-outcomes.json')
     monkeypatch.setattr(imported_outlook, 'ROOT', tmp_path)
@@ -33,12 +33,15 @@ def test_word_separates_candidate_from_observed_outcome(tmp_path, monkeypatch):
         'provider': 'evidence', 'attempts': 0, 'failed': 0,
         'new_evidence_assessments': 0, 'note': 'Offline'} )
     text = '\n'.join(p.text for p in Document(retrospective_radar.REPORT).paragraphs)
-    assert 'Study comparisons / research attempts this run: 0' in text
-    assert 'Source-reviewed expected-vs-actual outcomes: 0' in text
-    assert 'WHAT WAS EXPECTED (unverified abstract excerpt): Employment will rise' in text
-    assert 'WHAT ACTUALLY HAPPENED: Not established by independent' in text
-    assert 'WHAT WAS EXPECTED / TARGETED: Policy target by 2030' in text
-    assert 'WHAT ACTUALLY HAPPENED: Measured progress reported for 2024' in text
+    assert 'Back then.' in text
+    assert 'Two promises, two reality checks' in text
+    assert 'BACK THEN  Policy target by 2030' in text
+    assert 'WHAT CAME NEXT  Measured progress reported for 2024' in text
+    assert 'No prediction is graded' in text
+    assert 'Employment will rise by 10%' not in text  # still in the private review queue
+    digest = json.loads((tmp_path/'hindsight-stories.json').read_text())
+    assert digest['summary']['reviewed_forecasts'] == 0
+    assert digest['stories'][0]['hindsight_rating'] is None
     assert json.loads((tmp_path/'outcome-review-queue.json').read_text())['candidate_count'] == 1
 
 
@@ -58,8 +61,8 @@ def test_word_includes_provisional_happened_when_research_found(tmp_path, monkey
     from scripts import retrospective_radar
     monkeypatch.setattr(retrospective_radar, 'ROOT', tmp_path)
     monkeypatch.setattr(retrospective_radar, 'REPORT', tmp_path/'stuff'/'WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
-    verification = importlib.import_module('outcome_verification')
-    outlook = importlib.import_module('outlook_summary')
+    verification = importlib.import_module('scripts.outcome_verification')
+    outlook = importlib.import_module('scripts.outlook_summary')
     monkeypatch.setattr(verification, 'QUEUE', tmp_path/'outcome-review-queue.json')
     monkeypatch.setattr(verification, 'REGISTRY', tmp_path/'verified-outcomes.json')
     monkeypatch.setattr(outlook, 'ROOT', tmp_path)
@@ -78,9 +81,10 @@ def test_word_includes_provisional_happened_when_research_found(tmp_path, monkey
     retrospective_radar.build_word([item], run={'provider': 'openai', 'attempts': 1,
                                                  'failed': 0, 'new_evidence_assessments': 1})
     text = '\n'.join(p.text for p in Document(retrospective_radar.REPORT).paragraphs)
-    assert 'WHAT ACTUALLY HAPPENED (automated research; NOT source-reviewed): Employment increased' in text
-    assert 'Source-reviewed expected-vs-actual outcomes: 0' in text
-    assert 'Potential supporting lead: Employment increased' in text
+    assert 'How to read a hindsight score' in text
+    assert 'Employment increased in the observed dataset' not in text
+    assert '0 reviewed, comparable forecast outcomes' in text
+    assert 'Employment increased in the observed dataset' not in (tmp_path/'hindsight-stories.json').read_text()
 
 
 def test_workflow_uploads_fresh_docx_before_research_status_gate():

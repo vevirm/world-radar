@@ -113,8 +113,8 @@ def test_radar2_auto_uses_openalex_and_writes_new_word_without_openai(tmp_path, 
     import sys
     from scripts import retrospective_radar as radar
     from docx import Document
-    verification = importlib.import_module('outcome_verification')
-    outlook = importlib.import_module('outlook_summary')
+    verification = importlib.import_module('scripts.outcome_verification')
+    outlook = importlib.import_module('scripts.outlook_summary')
     lead = {
         'title': 'European coastal flooding and sea level rise projections',
         'date': '2014-06-12', 'url': 'https://doi.org/10.5555/original',
@@ -143,6 +143,9 @@ def test_radar2_auto_uses_openalex_and_writes_new_word_without_openai(tmp_path, 
     assert audit['run']['literature_comparisons'] == 1
     assert audit['run']['failed'] == 0
     text = '\n'.join(p.text for p in Document(radar.REPORT).paragraphs)
-    assert 'LATER STUDIES / WHAT THEY REPORT' in text
-    assert 'Sea level rise and coastal flooding across European regions' in text
-    assert 'Source-reviewed expected-vs-actual outcomes: 0' in text
+    assert 'How to read a hindsight score' in text
+    assert '0 reviewed, comparable forecast outcomes' in text
+    assert 'Sea level rise and coastal flooding across European regions' not in text
+    # The abstract result belongs in the scanner research data, not the short digest.
+    saved = json.loads((tmp_path / 'retrospective-results.json').read_text())
+    assert any(e.get('what_happened_literature') for e in saved['entries'].values())

@@ -23,13 +23,13 @@ def validate(report=REPORT, audit_path=AUDIT):
         document = Document(report)
     except (BadZipFile, KeyError, OSError) as exc:
         raise ValueError(f'Radar 2 output is not a valid Word document: {exc}') from exc
-    text = '\n'.join(p.text for p in document.paragraphs)
+    text = '\n'.join(p.text for p in document.paragraphs) + '\n' + '\n'.join(
+        c.text for t in document.tables for r in t.rows for c in r.cells)
     required_phrases = (
-        'WORLD RADAR 2 | Expected vs. Actually Happened',
-        'Research leads indexed',
-        'WHAT WAS EXPECTED',
-        'WHAT ACTUALLY HAPPENED',
-        'Source-reviewed expected-vs-actual outcomes',
+        'Back then.',
+        'WHAT CAME NEXT',
+        'Two promises, two reality checks',
+        'How to read a hindsight score',
     )
     for phrase in required_phrases:
         if phrase not in text:

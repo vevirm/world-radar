@@ -127,8 +127,8 @@ def test_openalex_query_uses_optional_key():
 def test_journals_and_abstracts_visible_separate_from_findings():
     page = (Path(__file__).resolve().parents[1] / 'index.html').read_text()
     assert 'id="research"' in page and 'id="lead-list"' in page
-    assert "load('research-leads.json')" in page
-    assert 'full study and retrospective outcome NOT verified' in page.lower() or 'Full study and retrospective outcome NOT verified' in page
+    assert "loadJson('research-leads.json')" in page
+    assert 'full source links' in page.lower() and 'not a verified prediction' in page.lower()
     workflow = (Path(__file__).resolve().parents[1] / '.github/workflows/update-radar.yml').read_text()
     assert 'git add findings.json radar-state.json research-leads.json' in workflow
     assert 'OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}' in workflow
@@ -159,6 +159,6 @@ def test_weak_title_does_not_enter_metadata_only_discovery():
 def test_page_can_show_title_only_leads_and_browse_more_than_40():
     html = (Path(__file__).resolve().parents[1] / 'index.html').read_text()
     assert 'research-leads.json' in html
-    assert 'This index has not supplied an abstract' in html
-    assert 'const perPage=20' in html and "$('next').onclick" in html
-    assert 'Full study and retrospective outcome NOT verified' in html
+    assert 'A title or abstract is a starting point, not a verified prediction' in html
+    assert 'const PAGE_SIZE=8' in html and "$('next').onclick" in html
+    assert 'No matches. Try another search.' in html

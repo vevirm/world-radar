@@ -286,184 +286,27 @@ def normalize(claim, result):
 
 
 def build_word(entries, run=None):
-    """Generate the Radar 2 Word report from auditable saved data.
+    """Build the short hindsight digest and separate, machine-readable stories.
 
-    Do not confuse potential forecasts, model-assisted leads or policy targets
-    with source-reviewed realized outcomes. The report is useful offline too.
+    Detailed research logs remain in existing JSON and the review queue, never
+    in the human-facing Word digest.
     """
-    from collections import Counter
-    from docx import Document
-    from docx.shared import Inches, Pt
-    from outlook_summary import create
-    from outcome_verification import assemble, write_queue
-
+    try:
+        from scripts.outlook_summary import create
+        from scripts.outcome_verification import assemble, write_queue
+        from scripts.storybook import write_stories, write_word
+    except ModuleNotFoundError:
+        # python scripts/retrospective_radar.py does not put repo root on sys.path.
+        from outlook_summary import create
+        from outcome_verification import assemble, write_queue
+        from storybook import write_stories, write_word
     create(entries)
-    verified, rejected = assemble(entries)
+    reviewed, _rejected = assemble(entries)
     write_queue(entries)
-    candidates = sorted((e for e in entries if e.get('screening_status') == 'candidate_needs_validation'),
-                        key=lambda e: (e.get('candidate_year') or 9999, e.get('title', '')))
-    screening = Counter(e.get('screening_status', 'unscreened') for e in entries)
-    run = run or {}
     observations = read_json(ROOT / 'outcome-observations.json', {}).get('observations', [])
-    now = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    payload = write_stories(entries, reviewed, observations, path=ROOT / 'hindsight-stories.json')
+    write_word(payload, REPORT, run=run)
 
-    doc = Document()
-    section = doc.sections[0]
-    section.top_margin = section.bottom_margin = Inches(.75)
-    section.left_margin = section.right_margin = Inches(.85)
-    normal = doc.styles['Normal']
-    normal.font.name = 'Aptos'
-    normal.font.size = Pt(9.5)
-    normal.paragraph_format.space_after = Pt(5)
-    for name in ('Heading 1', 'Heading 2'):
-        doc.styles[name].paragraph_format.space_before = Pt(11)
-        doc.styles[name].paragraph_format.space_after = Pt(5)
-
-    def field(label, value):
-        paragraph = doc.add_paragraph()
-        paragraph.add_run(label + ': ').bold = True
-        paragraph.add_run(concise(value) if value is not None and str(value).strip() else 'Not established.')
-        return paragraph
-
-    doc.add_heading('WORLD RADAR 2 | Expected vs. Actually Happened', 0)
-    doc.add_paragraph('Evidence audit generated ' + now)
-    doc.add_paragraph(f'Important: {len(entries)} discovery leads are not {len(entries)} verified predictions. A report regenerated today does not imply new evidence was discovered today. Forecast candidates, observed policy developments, and reviewed outcomes are separate categories.')
-    doc.add_heading('Run and evidence summary', 1)
-    field('Research leads indexed', len(entries))
-    field('Potential forecast excerpts (not validated)', len(candidates))
-    field('Candidate horizons still ahead', sum(bool(e.get('candidate_year')) and int(e['candidate_year']) > dt.date.today().year for e in candidates))
-    field('Missing full-text prediction checks', screening['full_text_required'])
-    field('No dated, testable forecast in metadata', screening['no_testable_prediction_in_metadata'])
-    field('Source-reviewed expected-vs-actual outcomes', len(verified))
-    field('Studies with tentative OpenAlex/corpus comparisons', sum(bool(e.get('literature_assessed_utc')) for e in entries))
-    field('Comparisons with later abstract-reported study results', sum(e.get('literature_signal') == 'later_studies_report_results' for e in entries))
-    field('Rejected submitted outcome cases', len(rejected))
-    if run:
-        field('Run type', run.get('provider', 'unknown'))
-        field('Study comparisons / research attempts this run', run.get('attempts', 0))
-        field('Live external research requests', run.get('attempts', 0) if run.get('provider') in ('openalex', 'openai') else 0)
-        field('Failed research requests', run.get('failed', 0))
-        field('New dated-evidence assessments this run', run.get('new_evidence_assessments', 0))
-        field('New research comparisons this run', run.get('literature_comparisons', 0))
-        field('Later studies found this run', run.get('literature_studies_found', 0))
-        field('Run note', run.get('note', ''))
-    if not verified:
-        doc.add_paragraph('RESULT: No original-text-reviewed, independently measured forecast comparisons have been verified. Any blank outcome below is a genuine evidence gap, not a negative forecast verdict.')
-
-    if verified:
-        doc.add_heading('1 | Source-reviewed forecast outcomes', 1)
-        for case in verified:
-            original, observed = case['original'], case['observation']
-            title = next((e.get('title') for e in entries if e['id'] == case['lead_id']), case['lead_id'])
-            doc.add_heading(concise(title)[:140], 2)
-            field('WHAT WAS EXPECTED (original verbatim)', original['verbatim_passage'])
-            field('Original publication', original['url'] + ' | Published: ' + original['published_on'] + ' | Target: ' + original['target_date'])
-            field('WHAT ACTUALLY HAPPENED', observed['what_happened'])
-            field('Verdict', case['verdict'].replace('_', ' ').capitalize())
-            field('Metric and geography comparison', observed['same_metric_and_geography_explained'])
-            field('Measured on', observed['measured_on'])
-            field('Limitations', case['limitations'])
-            field('Human reviewer', case['source_reviewed_by'] + ' | ' + case['reviewed_on'])
-            for source in observed['sources']:
-                field('Independent evidence (' + source['date'] + ')', source['finding'] + ' | ' + source['url'])
-
-    doc.add_heading('2 | Documented developments (not forecast verdicts)', 1)
-    doc.add_paragraph('These manually provided, source-linked observations show measurable policy progress. They must not be counted as validation of a forecast unless the original publication made that exact testable prediction.')
-    if not observations:
-        doc.add_paragraph('No separately recorded, editor-reviewed policy observations.')
-    for item in observations:
-        doc.add_heading(concise(item.get('topic'))[:140], 2)
-        field('WHAT WAS EXPECTED / TARGETED', item.get('expected'))
-        field('WHAT ACTUALLY HAPPENED', item.get('happened'))
-        field('Status and caveat', item.get('verdict'))
-        query = concise(item.get('original_lead_title_contains')).lower()
-        matching = next((e for e in entries if query and query in e.get('title', '').lower()), None)
-        if matching:
-            field('Related research lead (not necessarily a prediction)', matching.get('title') + ' | ' + matching.get('source_url'))
-        for source in item.get('sources', []):
-            field('Dated source (' + concise(source.get('date')) + ')', concise(source.get('finding')) + ' | ' + concise(source.get('url')))
-
-    doc.add_heading('3 | Provisional comparisons with later scholarship', 1)
-    doc.add_paragraph('This section provides a first-pass assessment using later studies indexed by OpenAlex or already captured by Scanner 1. It is useful for identifying emerging agreement, empirical follow-up, methodological debate and gaps. Abstract statements are the published authors\' reported findings, NOT independent observation confirmed by Radar 2. The word "EU" here means EU-related subjects, not necessarily foresight issued by an EU institution. No performance score is inferred.')
-    studies_checked = [e for e in entries if e.get('literature_assessed_utc')]
-    prioritized = sorted(studies_checked, key=lambda e: (
-        bool(e.get('follow_up_publications')),
-        e.get('literature_signal') == 'later_studies_report_results',
-        e.get('screening_status') == 'candidate_needs_validation',
-        len(e.get('follow_up_publications') or [])), reverse=True)
-    field('Records compared so far', len(studies_checked))
-    topic_counts = Counter(e.get('topic_cluster', 'Unclassified') for e in studies_checked)
-    doc.add_paragraph('Topic coverage of literature comparisons (NOT EU prediction accuracy): ' +
-                      '; '.join(f'{topic}: {count}' for topic, count in topic_counts.most_common(8)))
-    field('With result-like passages in later abstracts', sum(e.get('literature_signal') == 'later_studies_report_results' for e in studies_checked))
-    field('With only related models or topic papers', sum(e.get('literature_signal') == 'later_research_without_comparable_outcome' for e in studies_checked))
-    field('With no sufficiently close study found', sum(e.get('literature_signal') == 'no_comparable_study_found' for e in studies_checked))
-    if len(prioritized) > 40:
-        doc.add_paragraph('Showing the top 40 comparisons, prioritizing records with later-source matches. All assessments, including failed matches, remain in retrospective-results.json.')
-    if not prioritized:
-        doc.add_paragraph('No comparison run recorded yet. Enable the OpenAlex workflow or run --provider catalogue for existing indexed studies.')
-    for number, entry in enumerate(prioritized[:40], 1):
-        doc.add_heading(f'{number}. {concise(entry.get("title"))[:120]}', 2)
-        field('WHAT WAS SAID / EXPECTED', entry.get('what_expected_literature') or entry.get('candidate_excerpt') or entry.get('expected'))
-        field('LATER STUDIES / WHAT THEY REPORT', entry.get('what_happened_literature'))
-        field('TENTATIVE ASSESSMENT', entry.get('tentative_assessment'))
-        if entry.get('tentative_direction') not in (None, 'not_a_validated_forecast', 'insufficient_comparability'):
-            field('Very tentative directional clue', str(entry.get('tentative_direction')).replace('_', ' '))
-        field('Confidence / limitations', entry.get('comparison_limits'))
-        field('Topic', entry.get('topic_cluster'))
-        field('EU institutional attribution', entry.get('eu_attribution'))
-        field('Original research', entry.get('source_url'))
-        field('Search method and date', str(entry.get('literature_search_mode')) + ' | ' + str(entry.get('literature_assessed_utc'))[:16])
-        for source in (entry.get('follow_up_publications') or [])[:4]:
-            field('Later study (' + str(source.get('year')) + '; ' + source.get('study_type', 'study') + ')',
-                  source.get('title', '') + ' | ' + source.get('url', ''))
-            if source.get('finding_from_abstract'):
-                field('Its abstract states', source['finding_from_abstract'])
-
-    doc.add_heading('4 | Forecast passages needing original-source validation', 1)
-    doc.add_paragraph('The following are candidates from abstracts only, NOT authenticated predictions. They have no source-reviewed actual-outcome verdict. Source-linked machine research, where available, is recorded as a lead for review only.')
-    if not candidates:
-        doc.add_paragraph('No forecast candidates extracted from the current metadata.')
-    for number, entry in enumerate(candidates, 1):
-        doc.add_heading(f'{number}. {concise(entry.get("title"))[:135]}', 2)
-        field('WHAT WAS EXPECTED (unverified abstract excerpt)', entry.get('candidate_excerpt'))
-        field('Original research URL', entry.get('source_url'))
-        field('Possible target year (unconfirmed)', entry.get('candidate_year') or 'Not reliably extracted')
-        # An AI-researched evidence lead belongs in the report, but must not be
-        # presented as a human-reviewed verification of the original forecast.
-        # Previously, even a successful evidence search always printed the same
-        # blank 'WHAT ACTUALLY HAPPENED' placeholder for candidate forecasts.
-        has_research_evidence = bool(entry.get('evidence') or entry.get('counterevidence'))
-        provisional_actual = concise(entry.get('what_happened'))
-        if has_research_evidence and entry.get('checked_utc') and provisional_actual:
-            field('WHAT ACTUALLY HAPPENED (automated research; NOT source-reviewed)', provisional_actual)
-            field('Reliability', 'Provisional evidence lead. Check the linked documents, dates, original prediction and like-for-like metrics before interpreting this as a forecast outcome.')
-        else:
-            field('WHAT ACTUALLY HAPPENED', 'Not established by independent, source-reviewed comparable evidence.')
-            if entry.get('literature_assessed_utc') and entry.get('follow_up_publications'):
-                field('WHAT LATER SCHOLARSHIP REPORTS (not verified actual outcome)', entry.get('what_happened_literature'))
-                field('Tentative interpretation', entry.get('tentative_assessment'))
-        field('Verification status', 'Needs original passage, published date, metric/geography/target and later official observations')
-        if entry.get('checked_utc'):
-            field('Last automated evidence-search attempt', entry['checked_utc'])
-        elif entry.get('last_attempt_utc'):
-            field('Last failed automated attempt', entry['last_attempt_utc'])
-        else:
-            field('Last automated evidence search', 'No successful research logged')
-        if entry.get('last_error'):
-            field('Last research error', entry['last_error'])
-        if entry.get('evidence') or entry.get('counterevidence'):
-            field('Unreviewed automated research status', entry.get('status', 'unknown') + ' — not a verified outcome')
-            for source in (entry.get('evidence') or [])[:3]:
-                field('Potential supporting lead', source.get('finding', '') + ' | ' + source.get('date', '') + ' | ' + source.get('url', ''))
-            for source in (entry.get('counterevidence') or [])[:3]:
-                field('Potential counterevidence lead', source.get('finding', '') + ' | ' + source.get('date', '') + ' | ' + source.get('url', ''))
-
-    doc.add_heading('5 | Coverage and method', 1)
-    doc.add_paragraph(f'{len(entries) - len(candidates)} additional catalogued leads are not listed as forecasts because their metadata did not contain an extractable time-bounded prediction. All {len(entries)} source records are in research-leads.json and retrospective-results.json; the {len(candidates)} candidates and next actions are in outcome-review-queue.json. Only validated comparisons entered in verified-outcomes.json count toward reviewed verdicts.')
-    doc.add_paragraph('Automated web research can find useful links but cannot certify the content of a source or the comparability of statistics. A human reviewer must validate original wording, dates, metrics, independent outcome documents and limitations before an outcome is labeled verified.')
-    REPORT.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(REPORT)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -619,7 +462,10 @@ def main():
                     'No external research performed.' if args.provider == 'evidence' else
                     'AI-assisted research; citations require original-source checking.')}
     build_word([entries[c['id']] for c in found], run=run)
-    from outcome_verification import assemble
+    try:
+        from scripts.outcome_verification import assemble
+    except ModuleNotFoundError:
+        from outcome_verification import assemble
     valid_cases, invalid_cases = assemble([entries[c['id']] for c in found])
     audit = {'research_leads': len(found), 'candidate_forecasts': sum(c.get('screening_status') == 'candidate_needs_validation' for c in found), 'reviewed_verdicts': len(valid_cases), 'invalid_cases': invalid_cases, 'outcome_verification_complete': bool(valid_cases), 'run': run, 'literature_compared_total': sum(bool(e.get('literature_assessed_utc')) for e in entries.values()),
              'generated_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
