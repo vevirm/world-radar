@@ -3,16 +3,33 @@ name: Radar 2 - outcomes and Word report
 on:
   workflow_dispatch:
     inputs:
-      allow_offline_report:
-        description: 'Only compare studies already in the repository (no live OpenAlex)?'
-        required: false
-        type: boolean
-        default: false
+      run_mode:
+        description: 'FIRST choose preflight (seconds); recover saved results; or run a new 25-minute scan'
+        required: true
+        type: choice
+        options:
+          - preflight
+          - recover
+          - scan
+        default: preflight
       restore_run_id:
-        description: 'Optional: recover saved research from a failed publishing run ID (leave blank for a new scan)'
+        description: 'For recover: earlier run ID containing a saved artifact (e.g. 39580750659)'
         required: false
         type: string
         default: ''
+      restore_artifact_name:
+        description: 'For recover: name of artifact saved by that run'
+        required: false
+        type: choice
+        options:
+          - Radar-2-Word-and-Audit
+          - Radar-2-Research-Snapshot
+        default: Radar-2-Word-and-Audit
+      allow_offline_report:
+        description: 'For scan only: use catalogue, no live research?'
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '17 4,16 * * *'
 
@@ -20,7 +37,6 @@ permissions:
   contents: write
   actions: read
 
-# Avoid running both radars at once.
 concurrency:
   group: radar-shared-single-runner
   cancel-in-progress: false
@@ -39,85 +55,143 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Recover research artifact from a previous run (optional)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.restore_run_id != '' }}
+      - name: Validate selected mode and recovery run ID before doing any research
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        env:
+          RUN_MODE: ${{ inputs.run_mode }}
+          RESTORE_RUN_ID: ${{ inputs.restore_run_id }}
+        run: |
+          if [ "$RUN_MODE" = recover ] && ! [[ "$RESTORE_RUN_ID" =~ ^[0-9]+$ ]]; then
+            echo '::error::Recovery requires a numeric restore_run_id from a run with an artifact.'
+            exit 1
+          fi
+
+      - name: Preflight - import and build a sample Word report WITHOUT research requests
+        run: |
+          python -m compileall -q scripts
+          python - <<'PYCODE'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          import json, sys
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          import retrospective_radar  # catch the earlier SavedLiteratureIndex import failure
+          from scripts.living_atlas import write_atlas, load
+          from scripts.living_report import write_report
+          from scripts.validate_radar2_report import validate
+          assert callable(load)
+          with TemporaryDirectory() as folder:
+              folder = Path(folder)
+              atlas = write_atlas(
+                  [], path=folder/'living-atlas.json',
+                  leads=[{'title': 'Example exploratory futures study',
+                          'url': 'https://example.org/foresight',
+                          'date': '2015-01-01',
+                          'abstract': 'A scenario, not a prediction.'}],
+                  notes=[{'id': 'preflight-example', 'tag': 'Sample context',
+                          'title': 'Demonstration of format', 'then': 'A public target was announced.',
+                          'now': 'A later measurement was published.',
+                          'direction': 'The data can be tracked.',
+                          'relevance': 'The topic remains relevant for testing.',
+                          'open_question': 'What comes next?', 'sources': [
+                              {'url': 'https://example.org/evidence'}]}],
+                  observations=[], ratings=[], reviewed=[])
+              if not atlas['records']:
+                  raise RuntimeError('The atlas generator produced no sample record.')
+              report = write_report(atlas, folder/'WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
+              audit = folder/'scanner2-audit.json'
+              audit.write_text(json.dumps({'run': {}, 'research_leads': 1,
+                                           'reviewed_verdicts': 0}), encoding='utf-8')
+              validate(report=report, audit_path=audit)
+              json.loads((folder/'living-atlas.json').read_text(encoding='utf-8'))
+          print('PREFLIGHT PASSED: imports, living atlas, Word generation and validator all work.')
+          PYCODE
+
+      # A manual preflight stops here with a green result; no scan or API costs.
+      - name: Recover previously saved research (no new scan)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.run_mode == 'recover' }}
         uses: actions/download-artifact@v4
         with:
-          name: Radar-2-Word-and-Audit
+          name: ${{ inputs.restore_artifact_name }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ inputs.restore_run_id }}
           path: .
 
-      - name: Regenerate Radar 2 Word report and research audit
-        if: ${{ inputs.restore_run_id == '' }}
+      - name: Run research (maximum 25 minutes)
+        id: scan
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' }}
         env:
           MAILTO: ${{ secrets.MAILTO }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ALLOW_OFFLINE_REPORT: ${{ inputs.allow_offline_report }}
         run: |
-          # Never silently upload an old report from the checkout.
           rm -f stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
-          if [ "${ALLOW_OFFLINE_REPORT}" = "true" ]; then
+          if [ "$ALLOW_OFFLINE_REPORT" = "true" ]; then
             python -u scripts/retrospective_radar.py --provider catalogue --minutes 25
           else
             python -u scripts/retrospective_radar.py --provider auto --minutes 25
           fi
 
+      # Save FIRST, before any optional atlas/report step is capable of failing.
+      - name: Preserve research even if later formatting or publishing fails
+        if: ${{ always() && (github.event_name == 'schedule' || inputs.run_mode == 'scan') && steps.scan.outcome != 'skipped' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Research-Snapshot
+          if-no-files-found: warn
+          retention-days: 30
+          path: |
+            retrospective-results.json
+            scanner2-audit.json
+            outcome-review-queue.json
+            outlook-summary.json
+            hindsight-stories.json
+            outcome-observations.json
+            verified-outcomes.json
+            stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+
       - name: Rebuild living atlas and readable Word report, then validate
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
         run: |
-          # Both a new scan and a recovered artifact produce the same public files.
           python - <<'PYCODE'
           from pathlib import Path
           from scripts.living_atlas import write_atlas, load
           from scripts.living_report import write_report
-
-          entries = load('retrospective-results.json', {}).get('entries', {})
+          data = load('retrospective-results.json', {})
+          entries = data.get('entries') or {}
           if not entries:
-              raise SystemExit('No accumulated research entries; refusing to publish empty atlas.')
+              raise SystemExit('No accumulated research entries; refusing to publish an empty atlas.')
           atlas = write_atlas(list(entries.values()))
           report = Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
           write_report(atlas, report)
-          print(f'Living atlas: {len(atlas["records"])} entries; Word report: {report}')
+          print(f'Living atlas: {len(atlas["records"])} records; Word: {report}')
           PYCODE
           python -m json.tool living-atlas.json > /dev/null
           python scripts/validate_radar2_report.py
 
       - name: Show research status in Actions summary
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
         run: |
           python - <<'PYCODE'
           import json, os
           from pathlib import Path
           audit = json.loads(Path('scanner2-audit.json').read_text(encoding='utf-8'))
-          run = audit['run']
+          run = audit.get('run', {})
           provider = run.get('provider', 'unknown')
           attempts, failures = run.get('attempts', 0), run.get('failed', 0)
           reviewed = audit.get('reviewed_verdicts', 0)
-          mode = ('LIVE OpenAlex later-study comparison' if provider == 'openalex' and attempts else
-                  'LIVE OpenAI research' if provider == 'openai' and attempts else
-                  'SAVED scholarly catalogue only (offline)')
-          print(f'Radar 2: {mode}; attempts={attempts}; failures={failures}; source-reviewed outcomes={reviewed}')
+          print(f'Radar 2: provider={provider}; attempts={attempts}; failures={failures}; reviewed={reviewed}')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
-              f.write('\n## Word report delivery\n\n')
-              f.write('- **Generated and validated:** `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx`\n')
-              f.write('- **Download:** expand **Artifacts → Radar-2-Word-and-Audit** at the bottom of this Actions run.\n')
-              f.write(f'- **Research mode:** {mode}\n')
-              f.write(f'- **Research checks:** {attempts}; **failed:** {failures}\n')
-              f.write(f'- **Research time used:** {run.get("research_elapsed_seconds", 0):.0f}s of up to 25 minutes; **stopped because:** {run.get("stop_reason", "unknown")}\n')
-              f.write(f'- **New OpenAlex/literature comparisons:** {run.get("literature_comparisons", 0)}\n')
-              f.write(f'- **Related studies found in this run:** {run.get("literature_studies_found", 0)}\n')
-              f.write(f'- **Leads with newer thematic field literature:** {run.get("field_context_count_total", 0)} (includes previously indexed sources; not all verified outcomes)\n')
-              f.write(f'- **Source-reviewed outcome comparisons:** {reviewed}\n')
-              f.write('- Later-study abstracts are **provisional scholarly signals**, not verified historical outcomes or accuracy scores.\n')
-          if provider in ('catalogue', 'evidence'):
-              print('::notice title=Radar 2 catalogue-only::Results come from already indexed papers, not live searches.')
-          elif attempts == 0 or attempts == failures:
-              print('::warning title=Radar 2 research failed::The Word report was generated but the research provider did not succeed. Check OpenAlex API access and quota.')
-          if reviewed == 0:
-              print('::warning title=Outcome verification incomplete::No source-reviewed forecast verdicts yet; automatic research cannot substitute for original-source review.')
+              f.write('\n## Radar 2: research and Word report\n\n')
+              f.write('- **Latest Word report:** `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx`\n')
+              f.write('- **Research checks:** '+str(attempts)+'; **failures:** '+str(failures)+'\n')
+              f.write('- **Research time:** '+str(round(run.get('research_elapsed_seconds', 0)))+'s; **reason for stopping:** '+str(run.get('stop_reason', 'unknown'))+'\n')
+              f.write('- **Editorially verified outcomes:** '+str(reviewed)+'\n')
+              f.write('- Later research and thematic links are not verified real-world outcomes.\n')
           PYCODE
 
-      - name: Upload Radar 2 Word file and audit to run artifacts
+      - name: Upload readable Word and complete research for later recovery
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
         uses: actions/upload-artifact@v4
         with:
           name: Radar-2-Word-and-Audit
@@ -132,27 +206,29 @@ jobs:
             living-atlas.json
             retrospective-results.json
 
-      - name: Commit generated report and accumulated research
+      - name: Commit generated Word and accumulated research
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' || inputs.run_mode == 'recover' }}
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          # Stage only existing outputs. A missing optional file must not abort
-          # the entire run after 25 minutes of successful research.
+          # A missing optional file is not grounds for discarding research.
           for file in retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx; do
             if [ -f "$file" ]; then
               git add -- "$file"
             else
-              echo "Optional output absent, skipping: $file"
+              echo "Skipping absent optional output: $file"
             fi
           done
           if ! git diff --cached --quiet; then
-            git commit -m 'Radar 2: update evidence and Word report'
+            git commit -m 'Radar 2: publish accumulated research and Word report'
             git pull --rebase
             git push
+          else
+            echo 'No updated research or reports to commit.'
           fi
 
-      - name: Enforce live research status (no misleading green check)
+      - name: Enforce live research status (not on preflight or recovery)
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'scan' }}
         env:
           ALLOW_OFFLINE_REPORT: ${{ inputs.allow_offline_report }}
-        run: |
-          python scripts/check_radar2_live_status.py
+        run: python scripts/check_radar2_live_status.py
