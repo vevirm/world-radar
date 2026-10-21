@@ -1,0 +1,23 @@
+{
+  "original_records": 1366,
+  "examined": 9966,
+  "same_issue_literature": 4843,
+  "related_context_not_direct_evidence": 4977,
+  "quarantined_this_run": 146,
+  "reasons": {
+    "broader_field_development": 2377,
+    "different_geography": 331,
+    "different_geography_and_weak_topic": 2,
+    "duplicate_link_across_trails": 1,
+    "insufficient_topic_connection": 11,
+    "issue_only_in_abstract": 989,
+    "no_specific_shared_issue": 17,
+    "not_demonstrably_later": 1,
+    "one_topic_anchor": 1126,
+    "same_broad_subject_only": 154,
+    "same_original_or_republication": 73,
+    "too_loose_for_field_context": 41
+  },
+  "method": "Research link screening only; not fact-checking or prediction grading",
+  "quarantine_history_total": 4415
+}

@@ -1,5 +1,5 @@
 {
-  "method": "Excluded automated links, not discarded original studies or outcomes.",
+  "method": "Quarantined automatic links; original studies and verified outcomes retained.",
   "links": [
     {
       "lead_id": "lead-7ea36d72630cdd6c",
@@ -111726,6 +111726,3609 @@
       "publication": {
         "title": "Pushing the limits of forest management intensity extremes in Europe",
         "url": "https://doi.org/10.1016/j.tfp.2026.101496",
+        "year": 2026,
+        "source": "semantic_broader_context",
+        "topic_relation": "broader_context_not_direct_followup",
+        "finding_from_abstract": "",
+        "geography": "european_focus",
+        "caveat": "Broader field context; cannot infer an answer to the original question from available metadata."
+      }
+    },
+    {
+      "lead_id": "lead-f98a38cb04e325d2",
+      "original_title": "Foresight impacts from around the world: a special issue",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Special issues: wilfully rethinking arts and their histories around the world",
+        "year": 2024,
+        "date": "2024-05-03",
+        "url": "https://doi.org/10.1080/21500894.2024.2354037",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "around",
+          "asia",
+          "issue",
+          "special"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-f98a38cb04e325d2",
+      "original_title": "Foresight impacts from around the world: a special issue",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Issues Faced by Special Educators Around the World During the Pandemic",
+        "year": 2021,
+        "date": "2021-01-01",
+        "url": "https://doi.org/10.4018/978-1-7998-6952-8.ch004",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "around",
+          "issue",
+          "provide",
+          "special",
+          "support",
+          "well"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-956d149b1490d4d0",
+      "original_title": "Innovation systems dynamics and the positioning of Europe. A review and critique of recent Foresight studies",
+      "field": "follow_up_publications",
+      "reason": "different_geography_and_weak_topic",
+      "publication": {
+        "title": "Recent legislation in the United States: consequences for the US and global energy and climate innovation systems",
+        "url": "https://doi.org/10.1088/1748-9326/acf148",
+        "year": 2023,
+        "date": "2023-08-17",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "innovation",
+          "recent",
+          "systems"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 4
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "SOCIAL CONTEXTS SHAPING MASCULINITY: A SOCIAL WORK PERSPECTIVE",
+        "year": 2024,
+        "date": "2024-03-20",
+        "url": "https://doi.org/10.58532/nbennur21",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "exploration",
+          "shaping",
+          "social",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "The Interplay of Social Work Education and the Heritage of Communism in Shaping the Engagement of Social Work Students as Social Change Agents",
+        "year": 2024,
+        "date": "2024-10-22",
+        "url": "https://doi.org/10.1093/oxfordhb/9780197650899.013.30",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "shaping",
+          "social",
+          "university",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Social Work Research impact on Developing a Model of Alternative Community Sanctions in Jordan: Implications for Criminal Policy and Social Work Practice",
+        "year": 2022,
+        "date": "2022-09-29",
+        "url": "https://doi.org/10.35516/jjss.v15i2.491",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "social",
+          "university",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 9
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "SCOPAS – Shaping Concepts, Practices and Advances in Social Work",
+        "year": 2020,
+        "date": "2020-12-16",
+        "url": "https://openalex.org/W7112155215",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "shaping",
+          "social",
+          "university",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Review of Shaping a Science of Social Work: Professional Knowledge and Identity by John Brekke and Jeane Anastas",
+        "year": 2020,
+        "date": "2020-01-01",
+        "url": "https://doi.org/10.15453/0191-5096.4414",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "shaping",
+          "social",
+          "university",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-5ee08529f2fada71",
+      "original_title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Current challenges and emerging signposts: the future of social work education in Europe",
+        "year": 2017,
+        "date": "2017-05-25",
+        "url": "https://doi.org/10.1080/13691457.2017.1320053",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "social",
+          "work"
+        ],
+        "source": "existing_scanner_catalogue",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 5
+      }
+    },
+    {
+      "lead_id": "lead-4917d6fee82c8d69",
+      "original_title": "Sustainable fashion supply chain management: the European scenario",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "44129 Sustainable Fashion Supply Chain Management: Environmental Focus on Bangladesh",
+        "url": "https://doi.org/10.1515/9783111384771-030",
+        "year": 2025,
+        "date": "2025-07-25",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "chain",
+          "fashion",
+          "management",
+          "supply",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-4917d6fee82c8d69",
+      "original_title": "Sustainable fashion supply chain management: the European scenario",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Sustainable Fashion Supply Chain Management: A System of Systems Analysis",
+        "url": "https://doi.org/10.1109/tem.2018.2857831",
+        "year": 2018,
+        "date": "2018-08-08",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "chain",
+          "fashion",
+          "management",
+          "supply",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 102
+      }
+    },
+    {
+      "lead_id": "lead-ca00c627af70ed80",
+      "original_title": "Dengue and dengue vectors in the WHO European region: past, present, and scenarios for the future",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Bridging the present to the past: developing a virtual archaeological park of the Garmian region",
+        "year": 2025,
+        "date": "2025-07-25",
+        "url": "https://doi.org/10.24271/arn.025-01-01-sc-25",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "past",
+          "present",
+          "region"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 12
+      }
+    },
+    {
+      "lead_id": "lead-ca00c627af70ed80",
+      "original_title": "Dengue and dengue vectors in the WHO European region: past, present, and scenarios for the future",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "The medicinal plant Buddleja asiatica and its relation to the welfare of local people in the Pan‐Himalayan region: Past, present, and future perspectives",
+        "year": 2024,
+        "date": "2024-08-27",
+        "url": "https://doi.org/10.1002/ppp3.10567",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "past",
+          "present",
+          "region"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 12
+      }
+    },
+    {
+      "lead_id": "lead-ca00c627af70ed80",
+      "original_title": "Dengue and dengue vectors in the WHO European region: past, present, and scenarios for the future",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Villages in Vrancea Region and Their Pastoral Songs. Past and Present",
+        "year": 2024,
+        "date": "2024-11-09",
+        "url": "https://doi.org/10.57225/martor.2024.29.03",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "past",
+          "present",
+          "region"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 12
+      }
+    },
+    {
+      "lead_id": "lead-cbaa0488e8e5d817",
+      "original_title": "Carbon Emissions Scenarios in Europe Based on an Endogenous Growth Model",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Carbon Emission and Endogenous Growth Between Two Economic Systems",
+        "url": "https://doi.org/10.3389/fenrg.2021.652832",
+        "date": "2021-04-30",
+        "year": 2021,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "If the people in one economy pay greater attention to the environmental problem (carbon emission), its own resource input will be lowered to reduce carbon emissions, but carbon emissions of another economy will be increased simultaneously to accelerate the economic growth.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "carbon",
+          "emission",
+          "endogenous",
+          "growth"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 3 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-a7ee99020e595646",
+      "original_title": "Renewable energy scenarios for costs reductions in the European Union",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Offshore renewable energy systems: Solutions for reduction in operational costs",
+        "url": "https://doi.org/10.1109/ever.2017.7935940",
+        "date": "2017-04-01",
+        "year": 2017,
+        "evidence_kind": "implementation_or_evaluation",
+        "finding_from_abstract": "This paper presents the development of an inspection-class Remotely Operated Vehicle (ROV) that can be employed to aid in the reduction of operational and maintenance (O&M) costs of offshore renewable energy systems.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "costs",
+          "energy",
+          "reduction",
+          "renewable"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "A later paper describes implementation or evaluation",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 3 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-a7ee99020e595646",
+      "original_title": "Renewable energy scenarios for costs reductions in the European Union",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Effects of the Inflation Reduction Act on renewable energy manufacturing and development costs and deployment",
+        "url": "https://doi.org/10.1088/2753-3751/ae17d1",
+        "date": "2025-10-27",
+        "year": 2025,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "Abstract In 2022, the U.S. government passed unprecedented climate and social equity legislation—the Inflation Reduction Act (IRA)—designed to incentivize renewable and low-carbon energy deployment, promote domestic supply chains, and address labor and environmental justice concerns.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "costs",
+          "energy",
+          "reduction",
+          "renewable"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 3 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-b74c018505052633",
+      "original_title": "Potential impacts of climate change on European wind energy resource under the CMIP5 future climate projections",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Wind energy resource over Europe under CMIP6 future climate projections: What changes from CMIP5 to CMIP6",
+        "url": "https://doi.org/10.1016/j.rser.2021.111594",
+        "year": 2021,
+        "date": "2021-08-17",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "climate",
+          "cmip5",
+          "energy",
+          "resource",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 164
+      }
+    },
+    {
+      "lead_id": "lead-7ef0a14067713580",
+      "original_title": "Current challenges and emerging signposts: the future of social work education in Europe",
+      "field": "follow_up_publications",
+      "reason": "different_geography_and_weak_topic",
+      "publication": {
+        "title": "Emerging Themes in Social Work Education Research in Indonesia",
+        "url": "https://doi.org/10.1007/978-3-032-11089-3_11",
+        "year": 2026,
+        "date": "2026-01-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "education",
+          "emerging",
+          "social",
+          "work"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-04d9b288a73f6fff",
+      "original_title": "Regulatory Review of European Commission Impact Assessments",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Countdown to 2027 – maximising use of NAMs in food safety assessment: closing the gap for regulatory assessments in Europe",
+        "url": "https://doi.org/10.1016/j.yrtph.2025.105863",
+        "year": 2025,
+        "date": "2025-05-29",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "assessments",
+          "regulatory"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 14
+      }
+    },
+    {
+      "lead_id": "lead-2ba15aa8a0c54bc5",
+      "original_title": "THE PROS AND CONS OF INTEGRATION VS. DISINTEGRATION SCENARIOS FOR EUROPE",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Animal models of Huntington's disease. Pros and cons",
+        "year": 2025,
+        "date": "2025-12-01",
+        "url": "https://doi.org/10.1016/j.bbih.2025.101149",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "cons",
+          "pros"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 8
+      }
+    },
+    {
+      "lead_id": "lead-2ba15aa8a0c54bc5",
+      "original_title": "THE PROS AND CONS OF INTEGRATION VS. DISINTEGRATION SCENARIOS FOR EUROPE",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "THE IMPACT OF INTEGRATION AND DISINTEGRATION PROCESSES ON THE TRANSFORMATION OF REGIONAL DEVELOPMENT IN THE GLOBAL ECONOMIC SYSTEM",
+        "year": 2025,
+        "date": "2025-01-01",
+        "url": "https://doi.org/10.32782/bses.94-9",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "disintegration",
+          "integration"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 8
+      }
+    },
+    {
+      "lead_id": "lead-6b505b0525259acf",
+      "original_title": "Extreme Floods and Droughts under Future Climate Scenarios",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Impacts of Climate Variability on Hydrological Extremes: Droughts and Floods in a Changing Climate",
+        "url": "https://doi.org/10.52783/jisem.v10i36s.6364",
+        "year": 2025,
+        "date": "2025-03-31",
+        "finding_from_abstract": "Results reveal a significant rise in mean temperatures (0.25°C per decade) and declining precipitation, exacerbating drought frequency and intensity, while amplifying flood magnitudes during extreme rainfall periods.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "climate",
+          "droughts",
+          "floods"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 3
+      }
+    },
+    {
+      "lead_id": "lead-6b505b0525259acf",
+      "original_title": "Extreme Floods and Droughts under Future Climate Scenarios",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Increasing Floods and Intensifying Droughts: The Future of Hydrological Extremes in a Warming Climate",
+        "year": 2026,
+        "date": "2026-04-13",
+        "url": "https://doi.org/10.31223/x56v0w",
+        "finding_from_abstract": "Our results show an apparent intensification of extremes, particularly under RCP8.5, with substantial increases in flood and drought events in climate-stressed regions such as South Asia, the Mediterranean, Central Australia, and Northern Europe.",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "asia",
+          "critical",
+          "drought",
+          "extreme",
+          "flood",
+          "planning",
+          "region",
+          "special"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "abstract_reports_results",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-8eef93e4d95d0413",
+      "original_title": "ClimateEU, scale-free climate normals, historical time series, and future projections for Europe",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "The global historical climate database HCLIM",
+        "url": "https://doi.org/10.1038/s41597-022-01919-w",
+        "date": "2023-01-19",
+        "year": 2023,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "This paper describes the compilation and construction of a global multivariable (air temperature, pressure, precipitation sum, number of precipitation days) monthly instrumental climate database that encompasses a substantial body of the known early instrumental time series.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "climate",
+          "historical",
+          "sery",
+          "time"
+        ],
+        "discovery": "same_issue_search",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-34c5d1e86c93be39",
+      "original_title": "Forecasting Loan Default in Europe with Machine Learning",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Loan Default Prediction Using Machine Learning Algorithms",
+        "year": 2025,
+        "date": "2025-10-14",
+        "url": "https://doi.org/10.33093/jiwe.2025.4.3.14",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "default",
+          "learning",
+          "loan",
+          "machine"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 16
+      }
+    },
+    {
+      "lead_id": "lead-b10595067ce42732",
+      "original_title": "More or less integration? Examining support for different EU future scenarios in Austria",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Recognition and Integration: Examining Multiculturalism’s Role in Preventing Radicalisation",
+        "year": 2025,
+        "date": "2025-01-26",
+        "url": "https://doi.org/10.31436/id.v33i1.1952",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "different",
+          "examining",
+          "integration"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 9
+      }
+    },
+    {
+      "lead_id": "lead-df1e8f4abaa5bfb0",
+      "original_title": "Extreme wind projections over Europe from the Euro-CORDEX regional climate models",
+      "field": "follow_up_publications",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Assessment of extreme winds over Europe in Regional Climate Models",
+        "url": "https://doi.org/10.5194/ems2022-365",
+        "year": 2022,
+        "date": "2022-06-28",
+        "finding_from_abstract": "The results show that the frequency of extreme wind events will increase from one period to the next over the 21st century in all three regions of Europe.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "climate",
+          "extreme",
+          "models",
+          "regional"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-df1e8f4abaa5bfb0",
+      "original_title": "Extreme wind projections over Europe from the Euro-CORDEX regional climate models",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Extreme wind and five-day precipitation dataset based on the 0.11° daily Euro-CORDEX regional climate simulations for 1976 to 2100",
+        "url": "https://doi.org/10.1016/j.dib.2024.110708",
+        "year": 2024,
+        "date": "2024-07-03",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "climate",
+          "euro-cordex",
+          "extreme",
+          "regional",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 1
+      }
+    },
+    {
+      "lead_id": "lead-df1e8f4abaa5bfb0",
+      "original_title": "Extreme wind projections over Europe from the Euro-CORDEX regional climate models",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Extreme Wind and Five-Day Precipitation Dataset Based on Euro-Cordex Regional Climate Simulations",
+        "url": "https://doi.org/10.2139/ssrn.4811186",
+        "year": 2024,
+        "date": "2024-01-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "climate",
+          "euro-cordex",
+          "extreme",
+          "regional",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-41de1ee20a9f1f76",
+      "original_title": "Future Challenges for Work-Related Health Promotion in Europe: A Data-Based Theoretical Reflection",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Theoretical Reflections on AI-Mediated Jazz Improvisation",
+        "year": 2026,
+        "date": "2026-09-28",
+        "url": "https://doi.org/10.54097/k2qxqs63",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "article",
+          "become",
+          "individual",
+          "reflection",
+          "theoretical"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-41de1ee20a9f1f76",
+      "original_title": "Future Challenges for Work-Related Health Promotion in Europe: A Data-Based Theoretical Reflection",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Ethnography in Primary Health Care: Theoretical–Methodological Reflections on Pharmaceutical Services",
+        "year": 2025,
+        "date": "2025-08-28",
+        "url": "https://doi.org/10.3390/pharmacy13050118",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "approache",
+          "article",
+          "critical",
+          "field",
+          "health",
+          "processe",
+          "reflection",
+          "social",
+          "theoretical",
+          "trend"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 13
+      }
+    },
+    {
+      "lead_id": "lead-b8200a910f6939b1",
+      "original_title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Implementation of the Affordable and Clean Energy Sustainable Development Goals (SDG) in Visegrad Group (V4)",
+        "url": "https://doi.org/10.15240/tul/009/lef-2023-02",
+        "year": 2023,
+        "date": "2023-09-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "affordable",
+          "clean",
+          "energy",
+          "goals",
+          "implementation",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-b8200a910f6939b1",
+      "original_title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "A Nationwide Survey of Landscape Architecture Professionals’ Perception and Implementation of Sustainable Design",
+        "year": 2025,
+        "date": "2025-11-01",
+        "url": "https://doi.org/10.3368/lj.44.2.1",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "abstract",
+          "action",
+          "field",
+          "implementation",
+          "member",
+          "provide",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-b8200a910f6939b1",
+      "original_title": "Implementation of the 2030 sustainable development goals - affordable and clean energy in the European Union",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Analysis of Factors Affecting the Implementation of Sustainable Building Projects",
+        "year": 2024,
+        "date": "2024-03-08",
+        "url": "https://doi.org/10.22214/ijraset.2024.58786",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "abstract",
+          "defined",
+          "implementation",
+          "present",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-2cc4a05cb6da3a22",
+      "original_title": "Introduction: The EU new economic governance, labour law and labour lawyers",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Introduction: Future‐proofing policies – How foresight shapes European Union governance",
+        "url": "https://doi.org/10.1111/eulj.12527",
+        "year": 2024,
+        "date": "2024-10-28",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "introduction"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-460ee633216d8868",
+      "original_title": "Foresight in clinical proteomics: current status, ethical considerations, and future perspectives",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Foresight in clinical proteomics: current status, ethical considerations, and future perspectives [version 1; peer review: 3 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.17080.r31191",
+        "year": 2023,
+        "date": "2023-05-16",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "clinical",
+          "considerations",
+          "current",
+          "ethical",
+          "proteomics",
+          "status"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-460ee633216d8868",
+      "original_title": "Foresight in clinical proteomics: current status, ethical considerations, and future perspectives",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Foresight in clinical proteomics: current status, ethical considerations, and future perspectives [version 1; peer review: 3 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.17080.r34062",
+        "year": 2023,
+        "date": "2023-08-14",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "clinical",
+          "considerations",
+          "current",
+          "ethical",
+          "proteomics",
+          "status"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-460ee633216d8868",
+      "original_title": "Foresight in clinical proteomics: current status, ethical considerations, and future perspectives",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Foresight in clinical proteomics: current status, ethical considerations, and future perspectives [version 2; peer review: 3 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.18137.r35993",
+        "year": 2023,
+        "date": "2023-11-02",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "clinical",
+          "considerations",
+          "current",
+          "ethical",
+          "proteomics",
+          "status"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-460ee633216d8868",
+      "original_title": "Foresight in clinical proteomics: current status, ethical considerations, and future perspectives",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Foresight in clinical proteomics: current status, ethical considerations, and future perspectives [version 1; peer review: 3 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.17080.r34055",
+        "year": 2023,
+        "date": "2023-08-07",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "clinical",
+          "considerations",
+          "current",
+          "ethical",
+          "proteomics",
+          "status"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8808a009711261de",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50469",
+        "year": 2025,
+        "date": "2025-02-18",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8808a009711261de",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50470",
+        "year": 2025,
+        "date": "2025-02-19",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8808a009711261de",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50919",
+        "year": 2025,
+        "date": "2025-03-04",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8808a009711261de",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50412",
+        "year": 2025,
+        "date": "2025-04-12",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-2dbf0bf4314886aa",
+      "original_title": "Experts’ assessments of migration scenarios between the Middle East & North Africa and Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Comparing LLM and expert assessments of journal quality",
+        "year": 2026,
+        "date": "2026-05-01",
+        "url": "https://doi.org/10.1007/s11192-026-05644-8",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "abstract",
+          "assessment",
+          "estimate",
+          "expert",
+          "identify",
+          "social",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-9fa5d613fb762b53",
+      "original_title": "Understanding the importance of Gender Action Planning in EC Horizon projects: a case study",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Understanding the importance of Gender Action Planning in EC Horizon projects: a case study [version 1; peer review: 2 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.17294.r35529",
+        "year": 2023,
+        "date": "2023-10-12",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "action",
+          "case",
+          "gender",
+          "horizon",
+          "importance",
+          "planning",
+          "projects",
+          "understanding"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-9fa5d613fb762b53",
+      "original_title": "Understanding the importance of Gender Action Planning in EC Horizon projects: a case study",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Understanding the importance of Gender Action Planning in EC Horizon projects: a case study [version 1; peer review: 2 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.17294.r35526",
+        "year": 2023,
+        "date": "2023-11-08",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "action",
+          "case",
+          "gender",
+          "horizon",
+          "importance",
+          "planning",
+          "projects",
+          "understanding"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-b032ece114454403",
+      "original_title": "Foresight in clinical proteomics: current status, ethical considerations, and future perspectives",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Foresight in clinical proteomics: current status, ethical considerations, and future perspectives [version 2; peer review: 3 approved]",
+        "url": "https://doi.org/10.21956/openreseurope.18137.r35993",
+        "year": 2023,
+        "date": "2023-11-02",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "clinical",
+          "considerations",
+          "current",
+          "ethical",
+          "proteomics",
+          "status"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-cd53deb676af707a",
+      "original_title": "Imaginings of the Future of Conflict and Communication Technologies",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Imaginings of the Future of Conflict and Communication Technologies: From Armed to Democratic Conflict",
+        "url": "https://doi.org/10.5281/zenodo.18342844",
+        "year": 2025,
+        "date": "2025-02-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "communication",
+          "conflict",
+          "imaginings",
+          "technologies"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-cd53deb676af707a",
+      "original_title": "Imaginings of the Future of Conflict and Communication Technologies",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Imaginings of the Future of Conflict and Communication, Technologies: A Map of Six Anxiety- and Hope-Driven Scenarios",
+        "url": "https://doi.org/10.5281/zenodo.17869211",
+        "year": 2024,
+        "date": "2024-09-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "communication",
+          "conflict",
+          "imaginings",
+          "technologies"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-c85c3b7343463137",
+      "original_title": "Introduction: Future‐proofing policies – How foresight shapes European Union governance",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Demographic Projections and Migration Governance: How Law Shapes the Perception of “Too Many”",
+        "url": "https://doi.org/10.1007/s12115-025-01104-w",
+        "year": 2025,
+        "date": "2025-05-07",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "shapes"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-ab28c1cb58b91544",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50469",
+        "year": 2025,
+        "date": "2025-02-18",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-ab28c1cb58b91544",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50470",
+        "year": 2025,
+        "date": "2025-02-19",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-ab28c1cb58b91544",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50919",
+        "year": 2025,
+        "date": "2025-03-04",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "energy",
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-ab28c1cb58b91544",
+      "original_title": "Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Mapping out the scenarios of ocean energy scale-up based on the development of offshore wind [version 2; peer review: 1 approved, 4 approved with reservations]",
+        "year": 2025,
+        "date": "2025-04-12",
+        "url": "https://doi.org/10.21956/openreseurope.19897.r50412",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "mapping",
+          "ocean",
+          "offshore",
+          "scale-up",
+          "wind"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 19
+      }
+    },
+    {
+      "lead_id": "lead-ceb1e578a38af1de",
+      "original_title": ": Monumental Times: Pasts, Presents, and Futures in the Prehistoric Construction Projects of Northern Europe and Western Europe",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Richard Bradley, 'Monumental Times: Pasts, Presents, and Futures in the Prehistoric Construction Projects of Northern and Western Europe'",
+        "url": "https://doi.org/10.1558/jsa.33504",
+        "year": 2025,
+        "date": "2025-06-20",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "construction",
+          "monumental",
+          "northern",
+          "pasts",
+          "prehistoric",
+          "presents",
+          "projects",
+          "times",
+          "western"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-fa5cb605216e0fbe",
+      "original_title": "Improved local weather forecasting using machine learning",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: Improved local weather forecasting using machine learning [version 1; peer review: 1 not approved]",
+        "url": "https://doi.org/10.21956/openreseurope.21916.r61383",
+        "year": 2025,
+        "date": "2025-11-19",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "improved",
+          "learning",
+          "local",
+          "machine",
+          "weather"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8041d7d90c911ac2",
+      "original_title": "Health Technology Assessment and Horizon Scanning: A Review",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "OP36 Horizon Scanning And Health Technology Assessment Reform In Australia: Quo Vadis?",
+        "url": "https://doi.org/10.1017/s0266462325100949",
+        "date": "2025-12-01",
+        "year": 2025,
+        "evidence_kind": "implementation_or_evaluation",
+        "finding_from_abstract": "This function will integrate with post-reform health technology assessment (HTA) processes to support planning and priority setting across all levels of government, service providers, product developers, and consumers by identifying emerging technologies and outlining their benefits, risks, and operational implications over the short and ",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "health",
+          "horizon",
+          "scanning",
+          "technology"
+        ],
+        "discovery": "same_issue_search",
+        "interpretation": "A later paper describes implementation or evaluation",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 7,
+        "question_fit_basis": "0 shared subject concepts, 3 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-0864c33482e1f4fd",
+      "original_title": "Hydrological drought projections across Europe under climate change",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Climate change impact on hydrological droughts: Differences between two ensembles of regional climate projections across Great Britain",
+        "url": "https://doi.org/10.1016/j.ejrh.2026.103417",
+        "year": 2026,
+        "date": "2026-04-08",
+        "finding_from_abstract": "New Hydrological Insights We find considerable differences in drought projections between the two ensembles, with UKCP18 Regional generally indicating more extreme scenarios.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "across",
+          "climate",
+          "hydrological"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-ec5133901d9a75a8",
+      "original_title": "Projection of economic impacts of climate change in sectors of Europe based on bottom up analysis: human health",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Human resource management in a district health system in the public health sector",
+        "year": 2025,
+        "date": "2025-02-12",
+        "url": "https://doi.org/10.4102/sajhrm.v23i0.2708",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "health",
+          "human",
+          "sector"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 12
+      }
+    },
+    {
+      "lead_id": "lead-276ef57e7e4c83a2",
+      "original_title": "The impact of future sea-level rise on the European Shelf tides",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Sea-level rise impacts on the tides of the European Shelf: mechanisms analysis",
+        "url": "https://doi.org/10.5194/egusphere-egu2020-2835",
+        "year": 2020,
+        "date": "2020-03-09",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "rise",
+          "sea-level",
+          "shelf",
+          "tides"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-276ef57e7e4c83a2",
+      "original_title": "The impact of future sea-level rise on the European Shelf tides",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "On the effects of uniform and non-uniform sea-level rise on European Shelf tides",
+        "url": "https://openalex.org/W2921808550",
+        "year": 2017,
+        "date": "2017-07-10",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "rise",
+          "sea-level",
+          "shelf",
+          "tides"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-276ef57e7e4c83a2",
+      "original_title": "The impact of future sea-level rise on the European Shelf tides",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Tides, sea-level rise and tidal power extraction on the European shelf",
+        "year": 2012,
+        "date": "2012-06-26",
+        "url": "https://doi.org/10.1007/s10236-012-0552-6",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "rise",
+          "sea-level",
+          "shelf",
+          "tides"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 16
+      }
+    },
+    {
+      "lead_id": "lead-db27f0b5db88f6cf",
+      "original_title": "Shaping Tourism Higher Education Curriculum-Strategy to Develop Skills for Tomorrow's Jobs",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Leading Entrepreneurial Futures: Innovating Higher Education with European Practices for Tomorrow’s Business Leaders",
+        "year": 2025,
+        "date": "2025-04-19",
+        "url": "https://doi.org/10.33844/ijol.2025.60482",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "education",
+          "educational",
+          "high",
+          "higher",
+          "innovative",
+          "labour",
+          "skill",
+          "tomorrow"
+        ],
+        "source": "existing_scanner_catalogue",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-dada91fed3deb053",
+      "original_title": "Introduction: Histories of the Future and the Futures of History",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Introduction: The History of the “Balkan Family”",
+        "year": 2023,
+        "date": "2023-03-03",
+        "url": "https://doi.org/10.3390/genealogy7010018",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "history",
+          "introduction"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 8
+      }
+    },
+    {
+      "lead_id": "lead-dada91fed3deb053",
+      "original_title": "Introduction: Histories of the Future and the Futures of History",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Introduction: Histories of Ignorance",
+        "year": 2021,
+        "date": "2021-01-01",
+        "url": "https://doi.org/10.5334/jhk.45",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "article",
+          "central",
+          "essay",
+          "historical",
+          "history",
+          "introduction",
+          "knowledge"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-dada91fed3deb053",
+      "original_title": "Introduction: Histories of the Future and the Futures of History",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "An Introduction to the History of Medicine",
+        "year": 2018,
+        "date": "2018-12-12",
+        "url": "https://doi.org/10.4324/9780429401114",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "around",
+          "century",
+          "history",
+          "introduction",
+          "subject",
+          "well"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-dada91fed3deb053",
+      "original_title": "Introduction: Histories of the Future and the Futures of History",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Worldviews: An Introduction to the History and Philosophy of Science",
+        "year": 2015,
+        "date": "2015-12-21",
+        "url": "https://doi.org/10.33137/aestimatio.v8i0.25971",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "around",
+          "draw",
+          "history",
+          "introduction",
+          "notion",
+          "offer",
+          "well"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-ab1c2f246c241193",
+      "original_title": "Supply Chain Cyber Security – Potential Threats",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Cyber Threat Predictive Analytics for Improving Cyber Supply Chain Security",
+        "year": 2021,
+        "date": "2021-01-01",
+        "url": "https://doi.org/10.1109/access.2021.3087109",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "attack",
+          "chain",
+          "cyber",
+          "develop",
+          "supply",
+          "support",
+          "threat",
+          "vulnerability"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 16
+      }
+    },
+    {
+      "lead_id": "lead-277efb703ebaa217",
+      "original_title": "Sectoral foresight in Poland: thematic and methodological analysis",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Thematic, Methodological, and Regional Trends in Eurasian Journal of Business and Economics",
+        "year": 2025,
+        "date": "2025-06-30",
+        "url": "https://doi.org/10.17015/ejbe.2025.035.04",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "author",
+          "economy",
+          "methodological",
+          "thematic"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-6d52b06df3cdba56",
+      "original_title": "Migration transition in Serbia: demographic perspective",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Migration Transition and Migration Governance in Serbia: Beyond Demographic Determinism",
+        "url": "https://doi.org/10.59954/stnv.819",
+        "year": 2026,
+        "date": "2026-10-19",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "demographic",
+          "migration",
+          "serbia",
+          "transition"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-7e8e899bcd947473",
+      "original_title": "Demographic changes in Europe - new challenges for the European labour market",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Demographic change and regional labour markets",
+        "url": "https://doi.org/10.1093/oxrep/graa063",
+        "date": "2020-11-16",
+        "year": 2020,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "We find in our panel of German labour market regions that workforce mean age has considerable negative effects on the wage returns to age.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_context",
+        "shared_issue_terms": [
+          "demographic",
+          "labour",
+          "market"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 2 substantive title terms; scope european_context"
+      }
+    },
+    {
+      "lead_id": "lead-7e8e899bcd947473",
+      "original_title": "Demographic changes in Europe - new challenges for the European labour market",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Demographic Change and Regional Labour Markets",
+        "url": "https://openalex.org/W4287617192",
+        "date": "2020-01-01",
+        "year": 2020,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "We find in our panel of German labour market regions that workforce mean age has considerable negative effects on the wage returns to age.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_context",
+        "shared_issue_terms": [
+          "demographic",
+          "labour",
+          "market"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 2 substantive title terms; scope european_context"
+      }
+    },
+    {
+      "lead_id": "lead-7e8e899bcd947473",
+      "original_title": "Demographic changes in Europe - new challenges for the European labour market",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Demographic changes and their impact on the labour market",
+        "url": "https://doi.org/10.14254/978-83-963452-3-3/2021",
+        "year": 2021,
+        "date": "2021-01-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "demographic",
+          "labour",
+          "market"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 1
+      }
+    },
+    {
+      "lead_id": "lead-7f5ac90443883e4d",
+      "original_title": "Commodity futures markets: are they an effective price risk management tool for the European wheat supply chain?",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Commodity futures markets: are they an effective price risk management tool for the European wheat supply chain? Bio-based and Applied Economics 3",
+        "url": "https://openalex.org/W7096942540",
+        "date": "2014-01-01",
+        "year": 2014,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "This is particularly true in short period hedges (e.g. merchants and processors), where the basis seems to have been affected by the observed price instability.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "chain",
+          "commodity",
+          "effective",
+          "management",
+          "market",
+          "price",
+          "risk",
+          "supply",
+          "they",
+          "tool",
+          "wheat"
+        ],
+        "discovery": "semantic",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 10,
+        "question_fit_basis": "0 shared subject concepts, 11 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-b1cfe9486d2b09f3",
+      "original_title": "Flood risk and climate change: global and regional perspectives",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Climate change drives flooding risk increases in the Yellow River Basin",
+        "url": "https://doi.org/10.1016/j.geosus.2024.01.004",
+        "date": "2024-01-29",
+        "year": 2024,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "We present a long time series of maximum flood discharge dating back to 1843 compiled from historical documents and instrument measurements.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "climate",
+          "flood",
+          "global",
+          "risk"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 17,
+        "question_fit_basis": "2 shared subject concepts, 3 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-b1cfe9486d2b09f3",
+      "original_title": "Flood risk and climate change: global and regional perspectives",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "The impacts of climate change on river flood risk at the global scale",
+        "url": "https://doi.org/10.1007/s10584-014-1084-5",
+        "date": "2014-03-05",
+        "year": 2014,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "In 2050, the range in increased exposure across 21 climate models under SRES A1b is 31–450 million people and 59 to 430 thousand km 2 of cropland, and the change in risk varies between −9 and +376 %.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "climate",
+          "flood",
+          "global",
+          "risk"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 17,
+        "question_fit_basis": "2 shared subject concepts, 4 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-db8ac8e140e839c1",
+      "original_title": "Implementing and complying with EU governance outputs",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Water governance diversity across Europe: Does legacy generate sticking points in implementing multi-level governance?",
+        "url": "https://doi.org/10.1016/j.jenvman.2022.115598",
+        "year": 2022,
+        "date": "2022-07-07",
+        "finding_from_abstract": "With this conceptual framework of investigating the history and legacy, we found the three in depth studies have had different starting points, paths, and end points in their water governance, with sticking points influencing the decision-making processes and compliance required by the WFD.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "implementing"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 34
+      }
+    },
+    {
+      "lead_id": "lead-0e5bd17d963fdb8b",
+      "original_title": "Making or breaking climate targets: The AMPERE study on staged accession scenarios for climate policy",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Critical review of: “Making or breaking climate targets — the AMPERE study on staged accession scenarios for climate policy”",
+        "url": "https://doi.org/10.1016/j.techfore.2015.01.019",
+        "date": "2015-03-04",
+        "year": 2015,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "accession",
+          "ampere",
+          "breaking",
+          "climate",
+          "making",
+          "staged",
+          "target"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 5,
+        "question_fit_basis": "0 shared subject concepts, 7 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-0e5bd17d963fdb8b",
+      "original_title": "Making or breaking climate targets: The AMPERE study on staged accession scenarios for climate policy",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "A short note on integrated assessment modeling approaches: Rejoinder to the review of “Making or breaking climate targets — The AMPERE study on staged accession scenarios for climate policy”",
+        "url": "https://doi.org/10.1016/j.techfore.2015.07.011",
+        "date": "2015-08-05",
+        "year": 2015,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "accession",
+          "ampere",
+          "breaking",
+          "climate",
+          "making",
+          "staged",
+          "target"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 5,
+        "question_fit_basis": "0 shared subject concepts, 7 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-0aa20d38c24ec112",
+      "original_title": "Challenges for the European governance of synthetic biology for human health",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Synthetic biology in human health",
+        "url": "https://doi.org/10.82286/hk60-b096",
+        "year": 2026,
+        "date": "2026-06-26",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "biology",
+          "health",
+          "human",
+          "synthetic"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-0aa20d38c24ec112",
+      "original_title": "Challenges for the European governance of synthetic biology for human health",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Synthetic Biology: Refining Human Health",
+        "url": "https://doi.org/10.1007/978-981-19-3979-2_3",
+        "year": 2022,
+        "date": "2022-01-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "biology",
+          "health",
+          "human",
+          "synthetic"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 13
+      }
+    },
+    {
+      "lead_id": "lead-0aa20d38c24ec112",
+      "original_title": "Challenges for the European governance of synthetic biology for human health",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Utilizing Plant Synthetic Biology to Improve Human Health and Wellness",
+        "url": "https://doi.org/10.3389/fpls.2021.691462",
+        "year": 2021,
+        "date": "2021-08-24",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "biology",
+          "health",
+          "human",
+          "synthetic"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 42
+      }
+    },
+    {
+      "lead_id": "lead-0aa20d38c24ec112",
+      "original_title": "Challenges for the European governance of synthetic biology for human health",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Plants for human health: greening biotechnology and synthetic biology",
+        "url": "https://doi.org/10.1093/jxb/erx268",
+        "year": 2017,
+        "date": "2017-07-10",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "biology",
+          "health",
+          "human",
+          "synthetic"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 30
+      }
+    },
+    {
+      "lead_id": "lead-1c4e3c9af28aa058",
+      "original_title": "Shaping science policy in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "The Transformative Role of Artificial Intelligence in Shaping Science and Technology",
+        "year": 2023,
+        "date": "2023-12-30",
+        "url": "https://doi.org/10.54796/njb.v11i2.289",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "catalyst",
+          "science",
+          "scientific",
+          "shaping"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-dadef07fae6b903e",
+      "original_title": "Reform of experimental structures in animal science in France: From exploratory foresight to operational set-up",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Comprehensive pathways and strategies for reforming laboratory animal science education",
+        "year": 2026,
+        "date": "2026-04-01",
+        "url": "https://doi.org/10.61189/463023earkce",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "animal",
+          "efficiency",
+          "improve",
+          "innovative",
+          "professional",
+          "quality",
+          "reform",
+          "science",
+          "strong"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-5ef5c49536ba58ca",
+      "original_title": "Potential of extensification of European agriculture for a more sustainable food system, focusing on nitrogen",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Potential of Extensification of European and Dutch Agriculture for a More Sustainable Food System Focusing on Nitrogen and Livestock",
+        "url": "https://doi.org/10.1007/978-3-030-58065-0_6",
+        "year": 2020,
+        "date": "2020-01-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "agriculture",
+          "extensification",
+          "focusing",
+          "food",
+          "more",
+          "nitrogen",
+          "sustainable",
+          "system"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 5
+      }
+    },
+    {
+      "lead_id": "lead-dfe48381e7ff51ce",
+      "original_title": "Modelling the Economic Impacts of Climate Change on Global and European Agriculture. Review of Economic Structural Approaches",
+      "field": "direction_evidence",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "What role will climate change play in EU agricultural markets? An integrated assessment taking into account carbon fertilization effects",
+        "url": "https://doi.org/10.5424/sjar/2017153-9899",
+        "date": "2017-07-10",
+        "year": 2017,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "Recent studies point to climate change being one of the long-term drivers of agricultural market uncertainty.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "climate",
+          "global"
+        ],
+        "discovery": "citation",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 21,
+        "question_fit_basis": "2 shared subject concepts, 2 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-b768fcc9fa28bdff",
+      "original_title": "Assessing the maturity level of foresight in Polish companies—a regional perspective",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Identification of Logistics 4.0 Maturity Levels in Polish Companies—Framework of the Model and Preliminary Research",
+        "url": "https://doi.org/10.1007/978-3-030-33369-0_10",
+        "year": 2019,
+        "date": "2019-12-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "companies",
+          "maturity",
+          "polish"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 9
+      }
+    },
+    {
+      "lead_id": "lead-c57ffeb85b78a6c5",
+      "original_title": "The Future of Internationalization of Higher Education in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Leading Entrepreneurial Futures: Innovating Higher Education with European Practices for Tomorrow’s Business Leaders",
+        "year": 2025,
+        "date": "2025-04-19",
+        "url": "https://doi.org/10.33844/ijol.2025.60482",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "digital",
+          "education",
+          "expert",
+          "higher",
+          "learning",
+          "process",
+          "recommendation",
+          "survey"
+        ],
+        "source": "existing_scanner_catalogue",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 7
+      }
+    },
+    {
+      "lead_id": "lead-c57ffeb85b78a6c5",
+      "original_title": "The Future of Internationalization of Higher Education in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Internationalizing higher education and the role of intercultural virtual exchange",
+        "year": 2025,
+        "date": "2025-01-01",
+        "url": "https://doi.org/10.54481/uekbs2024.v1.07",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "digital",
+          "education",
+          "higher",
+          "internationalization",
+          "learning"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-c57ffeb85b78a6c5",
+      "original_title": "The Future of Internationalization of Higher Education in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "The effectiveness of Collaborative Online International Learning (COIL) on intercultural competence development in higher education",
+        "url": "https://doi.org/10.1186/s41239-022-00373-3",
+        "year": 2023,
+        "source": "semantic_broader_context",
+        "topic_relation": "broader_context_not_direct_followup",
+        "finding_from_abstract": "",
+        "geography": "european_context",
+        "caveat": "Broader field context; cannot infer an answer to the original question from available metadata."
+      }
+    },
+    {
+      "lead_id": "lead-c57ffeb85b78a6c5",
+      "original_title": "The Future of Internationalization of Higher Education in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Literature Review of Accreditation Systems in Higher Education",
+        "url": "https://doi.org/10.3390/educsci13060582",
+        "year": 2023,
+        "source": "semantic_broader_context",
+        "topic_relation": "broader_context_not_direct_followup",
+        "finding_from_abstract": "",
+        "geography": "european_context",
+        "caveat": "Broader field context; cannot infer an answer to the original question from available metadata."
+      }
+    },
+    {
+      "lead_id": "lead-c57ffeb85b78a6c5",
+      "original_title": "The Future of Internationalization of Higher Education in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Listening to locals: Regional spaces in higher education in the global south",
+        "url": "https://doi.org/10.1016/j.ijer.2023.102264",
+        "year": 2023,
+        "source": "semantic_broader_context",
+        "topic_relation": "broader_context_not_direct_followup",
+        "finding_from_abstract": "",
+        "geography": "european_context",
+        "caveat": "Broader field context; cannot infer an answer to the original question from available metadata."
+      }
+    },
+    {
+      "lead_id": "lead-8c62106ed999da8d",
+      "original_title": "Long-term outlook for wood construction in Europe",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "A Model for Fostering Labor Productivity and Wage Management: A Long-Term Outlook to 2034",
+        "year": 2026,
+        "date": "2026-02-01",
+        "url": "https://doi.org/10.28991/esj-2026-010-01-017",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "framework",
+          "long-term",
+          "outlook",
+          "productivity"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-3e20a51ab98d650b",
+      "original_title": "Accountability and Risk Governance: A Scenario-informed Reflection on European Regulation of GMOs",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Futures in EU governance: Anticipatory governance, strategic foresight and EU Better Regulation",
+        "url": "https://doi.org/10.1111/eulj.12519",
+        "year": 2024,
+        "date": "2024-09-16",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "regulation"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-3e20a51ab98d650b",
+      "original_title": "Accountability and Risk Governance: A Scenario-informed Reflection on European Regulation of GMOs",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Regulation by Design and the Governance of Technological Futures",
+        "url": "https://doi.org/10.1017/err.2023.37",
+        "year": 2023,
+        "date": "2023-05-17",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "regulation"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-5d3a2ebcca2b8268",
+      "original_title": "Financing Innovations for the Renewable Energy Transition in Europe",
+      "field": "field_developments",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Financing Clean Technology Innovation and the Transition to Renewable Energy",
+        "year": 2019,
+        "date": "2019-01-01",
+        "url": "https://doi.org/10.1007/978-3-030-05624-7_14",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "financing",
+          "renewable",
+          "transition"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 12
+      }
+    },
+    {
+      "lead_id": "lead-2b645f40130b8bdb",
+      "original_title": "Futures of robotics. Human work in digital transformation",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "OPTIMIZATION OF WORKER WORK ENVIRONMENT, ROBOTS, AND MARKETING STRATEGY: THE IMPACT OF DIGITAL-BASED SPATIOTEMPORAL DYNAMICS ON HUMAN RESOURCE MANAGEMENT (HRM)",
+        "url": "https://openalex.org/W7220299323",
+        "date": "2024-02-04",
+        "year": 2024,
+        "evidence_kind": "implementation_or_evaluation",
+        "finding_from_abstract": "Challenges include integrating complex technologies, data protection, and the need for new digital skills, while opportunities include increased operational efficiency, personalized content, and access to global markets.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "digital",
+          "human",
+          "transformation",
+          "work"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "A later paper describes implementation or evaluation",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-3366d87ef2948e4f",
+      "original_title": "Synthetic biology regulation and governance: Lessons from TAPIC for the United States, European Union, and Singapore",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Futures in EU governance: Anticipatory governance, strategic foresight and EU Better Regulation",
+        "url": "https://doi.org/10.1111/eulj.12519",
+        "year": 2024,
+        "date": "2024-09-16",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "regulation"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-3366d87ef2948e4f",
+      "original_title": "Synthetic biology regulation and governance: Lessons from TAPIC for the United States, European Union, and Singapore",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Regulation by Design and the Governance of Technological Futures",
+        "url": "https://doi.org/10.1017/err.2023.37",
+        "year": 2023,
+        "date": "2023-05-17",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "regulation"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-696c58b5329e155e",
+      "original_title": "Workshop on Regulatory Preparedness for Innovation in Nanotechnology",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Alternative test methods for (nano)materials hazards assessment: Challenges and recommendations for regulatory preparedness",
+        "year": 2021,
+        "date": "2021-07-14",
+        "url": "https://doi.org/10.1016/j.nantod.2021.101242",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "available",
+          "considered",
+          "dealing",
+          "guidance",
+          "guideline",
+          "issue",
+          "oecd",
+          "practice",
+          "preparedness",
+          "provide",
+          "regulatory",
+          "relevant",
+          "require",
+          "support",
+          "test",
+          "work"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-07df23e55c992ecc",
+      "original_title": "Ancient genomes from North Africa evidence prehistoric migrations to the Maghreb from both the Levant and Europe",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Correction for Fregel et al., Ancient genomes from North Africa evidence prehistoric migrations to the Maghreb from both the Levant and Europe",
+        "url": "https://doi.org/10.1073/pnas.1811169115",
+        "year": 2018,
+        "date": "2018-07-11",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "africa",
+          "ancient",
+          "both",
+          "genomes",
+          "levant",
+          "maghreb",
+          "migrations",
+          "north",
+          "prehistoric"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 2
+      }
+    },
+    {
+      "lead_id": "lead-c20b5101b296c794",
+      "original_title": "Toward sustainable environmental quality: Priority research questions for Europe",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Toward Sustainable Environmental Quality: Priority Research Questions for Asia",
+        "url": "https://doi.org/10.1002/etc.4788",
+        "date": "2020-05-30",
+        "year": 2020,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "Advances in environmental toxicology, environmental chemistry, biological monitoring, and risk-assessment methodologies are necessary to address the adverse impacts of environmental stressors on ecosystem services and biodiversity, with Asia being home to numerous biodiversity hotspots.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "environmental",
+          "priority",
+          "quality",
+          "question",
+          "sustainable"
+        ],
+        "discovery": "citation",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 9,
+        "question_fit_basis": "0 shared subject concepts, 6 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-c20b5101b296c794",
+      "original_title": "Toward sustainable environmental quality: Priority research questions for Europe",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Toward Sustainable Environmental Quality: Priority Research Questions for North America",
+        "url": "https://doi.org/10.1002/etc.4502",
+        "year": 2019,
+        "date": "2019-07-31",
+        "finding_from_abstract": "We report and discuss 40 priority research questions following engagement of scientists and engineers in North America.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "environmental",
+          "priority",
+          "quality",
+          "questions",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 63
+      }
+    },
+    {
+      "lead_id": "lead-c20b5101b296c794",
+      "original_title": "Toward sustainable environmental quality: Priority research questions for Europe",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Towards Sustainable Environmental Quality: Priority Research Questions for the Australasian Region of Oceania",
+        "url": "https://doi.org/10.1002/ieam.4180",
+        "year": 2019,
+        "date": "2019-07-05",
+        "finding_from_abstract": "Here we report priority research questions from the Global Horizon Scanning Project, which aimed to identify, prioritize, and advance environmental quality research needs from an Australasian perspective, within a global context.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "environmental",
+          "priority",
+          "quality",
+          "questions",
+          "sustainable"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 34
+      }
+    },
+    {
+      "lead_id": "lead-97dd8a8285094e92",
+      "original_title": "Post-Brexit EU/UK security cooperation: NATO, CSDP+, or ‘French connection’?",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Do or die? The UK, the EU, and internal/external security cooperation after Brexit",
+        "url": "https://doi.org/10.1057/s41304-021-00322-0",
+        "date": "2021-03-02",
+        "year": 2021,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "Our analysis examines the impact that traditional forms of sovereignty and national interests will have on the conduct of EU foreign and security policy post-Brexit.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "cooperation",
+          "post-brexit",
+          "security"
+        ],
+        "discovery": "citation",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 11,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-d8b2a6835d1efbda",
+      "original_title": "New method to assess the long-term role of wind energy generation in reduction of CO2 emissions – Case study of the European Union",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "A closed-loop renewable energy evaluation framework",
+        "url": "https://doi.org/10.1016/j.jclepro.2019.119663",
+        "date": "2019-12-11",
+        "year": 2019,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "As part of the electrical generator power quality measurement, it was found that there was large dispersion in the wind turbine output signal where the coefficient of variation values of between 128% and 939% were recorded.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_context",
+        "shared_issue_terms": [
+          "case",
+          "emission",
+          "energy",
+          "reduction",
+          "wind"
+        ],
+        "discovery": "citation",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 15,
+        "question_fit_basis": "2 shared subject concepts, 1 substantive title terms; scope european_context"
+      }
+    },
+    {
+      "lead_id": "lead-2c0fae7ff5089f77",
+      "original_title": "The Water Footprint of Wood for Energy Consumed in the European Union",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Dataset associated with Schyns & Vanham (2019) \"The water footprint of wood for energy consumed in the European Union\"",
+        "url": "https://doi.org/10.5281/zenodo.2651246",
+        "year": 2019,
+        "date": "2019-04-25",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "consumed",
+          "energy",
+          "footprint",
+          "water",
+          "wood"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-2ba4b95f9ed5de19",
+      "original_title": "Phage therapy as a potential solution in the fight against AMR: obstacles and possible futures",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Faculty Opinions recommendation of Phage therapy as a potential solution in the fight against AMR: obstacles and possible futures.",
+        "url": "https://doi.org/10.3410/f.738060099.793592067",
+        "year": 2022,
+        "date": "2022-03-15",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "against",
+          "fight",
+          "obstacles",
+          "phage",
+          "solution",
+          "therapy"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8d9e862717a7549a",
+      "original_title": "ENERGY: DEVELOPMENT FORECASTS, BIFURCATION POINTS (OVERVIEW)",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "SCENARIO FORECASTS OF ENERGY CONSUMPTION IN METALLURGICAL PRODUCTION DURING THE POST-WAR RECONSTRUCTION OF UKRAINE",
+        "url": "https://doi.org/10.33070/etars.1.2026.03",
+        "year": 2026,
+        "date": "2026-04-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "energy",
+          "forecasts"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8d9e862717a7549a",
+      "original_title": "ENERGY: DEVELOPMENT FORECASTS, BIFURCATION POINTS (OVERVIEW)",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Long-term wind and solar energy generation forecasts, and optimisation of Power Purchase Agreements",
+        "url": "https://doi.org/10.1016/j.egyr.2022.11.175",
+        "year": 2022,
+        "date": "2022-12-08",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "energy",
+          "forecasts"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-a6cc5a8265022947",
+      "original_title": "Towards defining core principles of public health emergency preparedness: scoping review and Delphi consultation among European Union country experts",
+      "field": "direction_evidence",
+      "reason": "duplicate_link_across_trails",
+      "publication": {
+        "title": "Developing a minimum data set for older adult care homes in the UK: exploring the concept and defining early core principles",
+        "url": "https://doi.org/10.1016/s2666-7568%2822%2900010-1",
+        "date": "2022-03-01",
+        "year": 2022,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "core",
+          "defining",
+          "principle"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 8,
+        "question_fit_basis": "0 shared subject concepts, 3 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-433cf15540152027",
+      "original_title": "Imagining the City of Tomorrow Through Foresight and Innovative Design",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Teaching Note—Navigating Tomorrow: Transforming Social Work Education Through Futures Thinking and Strategic Foresight",
+        "url": "https://doi.org/10.1080/10437797.2026.2636811",
+        "date": "2026-04-02",
+        "year": 2026,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "Futures thinking involves imagining and exploring diverse potential futures, while strategic foresight provides tools for decision making and long-term planning.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "imagining",
+          "tomorrow"
+        ],
+        "discovery": "same_issue_search",
+        "interpretation": "Later research explores further possible futures",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-038b6adef7fab039",
+      "original_title": "A look into the future of the COVID-19 pandemic in Europe: an expert consultation",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "A look into the future of the COVID-19 pandemic in Europe: an expert consultation [viewpoint].",
+        "url": "https://doi.org/10.17863/cam.75145",
+        "year": 2021,
+        "date": "2021-09-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "consultation",
+          "covid-19",
+          "expert",
+          "look",
+          "pandemic"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 119
+      }
+    },
+    {
+      "lead_id": "lead-8b408fa3773d94c7",
+      "original_title": "Forecasting the volatility of EUA futures with economic policy uncertainty using the GARCH-MIDAS model",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Forecasting stock volatility with economic policy uncertainty: A smooth transition GARCH-MIDAS model",
+        "url": "https://doi.org/10.1016/j.irfa.2023.102708",
+        "date": "2023-05-29",
+        "year": 2023,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "economic",
+          "garch-mida",
+          "uncertainty",
+          "volatility"
+        ],
+        "discovery": "citation",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 7,
+        "question_fit_basis": "0 shared subject concepts, 3 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-8b408fa3773d94c7",
+      "original_title": "Forecasting the volatility of EUA futures with economic policy uncertainty using the GARCH-MIDAS model",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Economic Policy Uncertainty and Gold Futures Volatility: A GARCH-MIDAS Approach",
+        "url": "https://doi.org/10.4236/ojbm.2026.143074",
+        "year": 2026,
+        "date": "2026-01-01",
+        "finding_from_abstract": "Empirical results show that EPU has a significant negative impact on the volatility of the gold futures market; compared with competing models, the GARCH-MIDAS-EPU model incorporating EPU exhibits consistently significant superiority in predictive accuracy.",
+        "study_type": "abstract_reports_results",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "economic",
+          "garch-midas",
+          "uncertainty",
+          "volatility"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-8b408fa3773d94c7",
+      "original_title": "Forecasting the volatility of EUA futures with economic policy uncertainty using the GARCH-MIDAS model",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Using GARCH-MIDAS Model to Research the Impact of Economic Policy Uncertainty on Food Price Volatility: A Case of China",
+        "url": "https://doi.org/10.24818/18423264/59.4.25.10",
+        "year": 2025,
+        "date": "2025-12-19",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "economic",
+          "garch-midas",
+          "model",
+          "uncertainty",
+          "volatility"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-b16eeb1b5cbd188b",
+      "original_title": "The European Union as a long-term political actor: an overview",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Political fragmentation and public debt development in European Union countries",
+        "url": "https://doi.org/10.9770/g4492876323",
+        "date": "2026-08-20",
+        "year": 2026,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "This paper examines the relationship between the ideological fragmentation of government coalitions and the development of public debt in European Union countries.The study examines whether political polarisation and the ideological range of governing coalitions influence both short-term public debt dynamics and the long-term level of pub",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "long-term",
+          "political"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 9,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-b16eeb1b5cbd188b",
+      "original_title": "The European Union as a long-term political actor: an overview",
+      "field": "direction_evidence",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Political institutions and Foreign Direct Investment in the Arab Maghreb Union",
+        "url": "https://doi.org/10.20525/ijrbs.v15i3.4959",
+        "year": 2026,
+        "date": "2026-06-13",
+        "finding_from_abstract": "",
+        "evidence_kind": "ongoing_research",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [],
+        "source": "openalex_publication_metadata",
+        "interpretation": "Later research discusses the original issue",
+        "discovery": "issue",
+        "question_fit_score": 4,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-b16eeb1b5cbd188b",
+      "original_title": "The European Union as a long-term political actor: an overview",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Temporary protection, refugee fatigue and political discontent in European Union cities of refuge",
+        "url": "https://doi.org/10.1177/09697764241289808",
+        "date": "2024-11-10",
+        "year": 2024,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "However, in the absence of a long-term strategy to alleviate pressure, there is a risk that a sense of fatigue will emerge and intensify in cities of refuge, with this commentary presenting prima facie evidence of this issue.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "actor",
+          "long-term",
+          "political"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 9,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-b16eeb1b5cbd188b",
+      "original_title": "The European Union as a long-term political actor: an overview",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "Myth of the near future? Assessing the European Green Deal’s potential to become a political myth for the European Union",
+        "url": "https://doi.org/10.1080/14782804.2023.2288908",
+        "date": "2023-11-28",
+        "year": 2023,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "Questions have long revolved around the European Union’s (EU) capacity to develop ‘post-national’ political myths – sacred narratives that provide a basis for long-term political legitimacy.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "long-term",
+          "political"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 9,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-ac9469e261db8f0e",
+      "original_title": "What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios?",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios? [version 1; peer review: 2 approved]",
+        "url": "https://doi.org/10.5256/f1000research.120894.r135614",
+        "date": "2022-05-03",
+        "year": 2022,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "This will imply the shift from fossil fuel to low carbon energy supply and an adaptation of the energy system according to it.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "energy",
+          "infrastructure",
+          "needed",
+          "support",
+          "what"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 10,
+        "question_fit_basis": "0 shared subject concepts, 6 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-ac9469e261db8f0e",
+      "original_title": "What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios?",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Peer Review Report For: What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios? [version 1; peer review: 2 approved]",
+        "url": "https://doi.org/10.5256/f1000research.120894.r129675",
+        "date": "2022-04-06",
+        "year": 2022,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "This will imply the shift from fossil fuel to low carbon energy supply and an adaptation of the energy system according to it.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "energy",
+          "infrastructure",
+          "needed",
+          "support",
+          "what"
+        ],
+        "discovery": "issue",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 10,
+        "question_fit_basis": "0 shared subject concepts, 6 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-969cf56b8ccda151",
+      "original_title": "Carrying out a multi-model integrated assessment of European energy transition pathways: Challenges and benefits",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Supplementary information files for Carrying out a multi-model integrated assessment of European energy transition pathways: Challenges and benefits",
+        "url": "https://doi.org/10.17028/rd.lboro.23257082",
+        "date": "2023-01-01",
+        "year": 2023,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "We find the highest added value of the framework in additional insights it provides on the technical feasibility of decarbonisation pathways, on vulnerability aspects and on unintended environmental and health impacts on national and sub-national scale.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "benefit",
+          "carrying",
+          "energy",
+          "integrated",
+          "multi-model",
+          "pathway",
+          "transition"
+        ],
+        "discovery": "semantic",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 10,
+        "question_fit_basis": "0 shared subject concepts, 7 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-97ddc0f259dcfb36",
+      "original_title": "Exploring Global Climate Policy Futures and Their Representation in Integrated Assessment Models",
+      "field": "direction_evidence",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Exploring Climate Emotions in Adolescents",
+        "url": "https://openalex.org/W7133416529",
+        "date": "2025-01-01",
+        "year": 2025,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "Study 3 used a mixed-methods approach, incorporating quantitative survey and qualitative photo-elicitation focus groups to explore how rural Australian adolescents engage with climate emotions.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "region_not_specified",
+        "shared_issue_terms": [
+          "climate",
+          "integrated"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope region_not_specified"
+      }
+    },
+    {
+      "lead_id": "lead-8f3e47c35262596b",
+      "original_title": "Regulation by Design and the Governance of Technological Futures",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Futures in EU governance: Anticipatory governance, strategic foresight and EU Better Regulation",
+        "url": "https://doi.org/10.1111/eulj.12519",
+        "year": 2024,
+        "date": "2024-09-16",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "regulation"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-4e7d86ae16dc5bbc",
+      "original_title": "Analysis of the Potential of Meeting the EU’s Sustainable Aviation Fuel Targets in 2030 and 2050",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "The Challenge Ahead: A Critical Perspective on Meeting U.S. Growth Targets for Sustainable Aviation Fuel",
+        "url": "https://doi.org/10.2172/2331423",
+        "year": 2024,
+        "date": "2024-03-26",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "aviation",
+          "fuel",
+          "meeting",
+          "sustainable",
+          "targets"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 10
+      }
+    },
+    {
+      "lead_id": "lead-0c5de4045537a631",
+      "original_title": "Social resilience of the national economy through the prism of the experience of the European Union and Ukraine",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Religious Spirituality and Family Resilience: The Contribution of Kyai in Building the Social Resilience of Muslim Families",
+        "year": 2026,
+        "date": "2026-03-28",
+        "url": "https://doi.org/10.54150/alirsyad.v5i1.1006",
+        "finding_from_abstract": "The results show that family resilience according to KH.",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "implementation",
+          "modern",
+          "practical",
+          "provide",
+          "resilience",
+          "social",
+          "strengthening",
+          "various"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "abstract_reports_results",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-0c5de4045537a631",
+      "original_title": "Social resilience of the national economy through the prism of the experience of the European Union and Ukraine",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Social Resilience",
+        "year": 2026,
+        "date": "2026-01-01",
+        "url": "https://doi.org/10.54094/b-d9e7fcf26e",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "approache",
+          "author",
+          "context",
+          "experience",
+          "people",
+          "resilience",
+          "social",
+          "tool"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-8449eb62c5d8cf17",
+      "original_title": "Forecasting EUA futures volatility with geopolitical risk: evidence from GARCH-MIDAS models",
+      "field": "follow_up_publications",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Geopolitical risk and industry volatility in South Africa: evidence from a GARCH-MIDAS forecasting approach",
+        "url": "https://doi.org/10.1057/s41283-026-00222-x",
+        "year": 2026,
+        "date": "2026-06-01",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "garch-midas",
+          "geopolitical",
+          "risk",
+          "volatility"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 1
+      }
+    },
+    {
+      "lead_id": "lead-cd9093e9e67d3a24",
+      "original_title": "Europe's ambitious pesticide policy and its impact on agriculture and food systems",
+      "field": "direction_evidence",
+      "reason": "insufficient_topic_connection",
+      "publication": {
+        "title": "A pan-European spatial inventory of agricultural land degradation",
+        "url": "https://doi.org/10.1016/j.iswcr.2026.100613",
+        "date": "2026-01-20",
+        "year": 2026,
+        "evidence_kind": "implementation_or_evaluation",
+        "finding_from_abstract": "Essentially, our results highlighted that soil pollution via pesticides (which impacts 52% of Europe's evaluated agricultural area), soil nutrient imbalances (39%), soil pollution via heavy metals (31%), aridity (25%), water erosion (15%), and soil compaction (15%) are the largest threats to European agriculture.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [
+          "agriculture",
+          "food",
+          "pesticide"
+        ],
+        "discovery": "citation",
+        "interpretation": "A later paper describes implementation or evaluation",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 18,
+        "question_fit_basis": "3 shared subject concepts, 0 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-082a5c880abe2a9a",
+      "original_title": "Futures of algorithms and choices",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Improving structural learning in Bayesian networks: Stationarity analysis for algorithm choice",
+        "year": 2025,
+        "date": "2025-03-19",
+        "url": "https://doi.org/10.1016/j.dim.2025.100097",
+        "finding_from_abstract": "Our findings indicate that Max-Min Hill Climbing (MMHC) is particularly effective for stationary data, while Hill Climbing performs better for non-stationary data.",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "algorithm",
+          "choice",
+          "particularly",
+          "various"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "abstract_reports_results",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-082a5c880abe2a9a",
+      "original_title": "Futures of algorithms and choices",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Microbiomes without boundaries: cystic fibrosis ‘pulmotype’ classifications are dependent on algorithm choice and database size, and indicate continuous variation",
+        "year": 2025,
+        "date": "2025-05-08",
+        "url": "https://doi.org/10.1101/2025.05.07.25326893",
+        "finding_from_abstract": "Applying multiple clustering algorithms (DMM, k-means, PAM) to cross-sectional data we find that the optimal clustering varies with both algorithm choice and database size, with generally weak separation among clusters in any classification.",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "algorithm",
+          "choice",
+          "platform",
+          "point",
+          "structure"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "abstract_reports_results",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-082a5c880abe2a9a",
+      "original_title": "Futures of algorithms and choices",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Dependency of Machine Learning Based Prediction Performance on Market Specificity, Window Length, and Algorithm Choice in the Context of Global Stock Indices",
+        "year": 2026,
+        "date": "2026-07-30",
+        "url": "https://doi.org/10.1002/9781394339433.ch6",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "algorithm",
+          "choice",
+          "processe",
+          "various"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-082a5c880abe2a9a",
+      "original_title": "Futures of algorithms and choices",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "On Sinkhorn’s Algorithm and Choice Modeling",
+        "year": 2025,
+        "date": "2025-07-30",
+        "url": "https://doi.org/10.1287/opre.2023.0596",
+        "finding_from_abstract": "",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "algorithm",
+          "choice",
+          "human",
+          "ideas"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-71e336134172db4f",
+      "original_title": "Sea Level Rise in Europe: Governance context and challenges",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Corporate Governance in the Context of Business Digital Transformation",
+        "url": "https://doi.org/10.37547/tajmei/volume07issue05-11",
+        "year": 2025,
+        "date": "2025-05-27",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "context",
+          "governance"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 1
+      }
+    },
+    {
+      "lead_id": "lead-a9bc87b156673489",
+      "original_title": "Challenges and Opportunities in the Renewable Energy Transition in Europe",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Social perception of renewable energies: barriers and opportunities for an inclusive energy transition",
+        "url": "https://doi.org/10.1016/j.enpol.2025.114899",
+        "date": "2025-10-16",
+        "year": 2025,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "Finally, social acceptance of solar energy and biomass can be observed in rural areas, whereas there is lower approval in larger urban areas.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "energy",
+          "opportunity",
+          "renewable",
+          "transition"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 9,
+        "question_fit_basis": "1 shared subject concepts, 4 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-a9bc87b156673489",
+      "original_title": "Challenges and Opportunities in the Renewable Energy Transition in Europe",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "The Role of Renewable Energy Communities in the Energy Transition: Opportunities and Barriers",
+        "url": "https://doi.org/10.56578/jse050105",
+        "date": "2026-03-31",
+        "year": 2026,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "Renewable energy communities (RECs) have emerged as one of the most promising instruments for advancing the social, economic, and environmental dimensions of the energy transition.Based on the principles of open participation, non-profit governance, and local value creation, RECs hold significant potential to alleviate energy poverty, rev",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "energy",
+          "opportunity",
+          "renewable",
+          "transition"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "Later research explores further possible futures",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 12,
+        "question_fit_basis": "1 shared subject concepts, 4 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-dbdde64d5bfe5039",
+      "original_title": "From genes to governance: Engaging citizens in the new genomic techniques policy debate",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "New Genomic Techniques, Patents and the Economics of Plant-Breeding Access in Europe",
+        "year": 2026,
+        "date": "2026-06-09",
+        "url": "https://doi.org/10.5281/zenodo.20607780",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "debate",
+          "genomic",
+          "ngts",
+          "obtained",
+          "plant",
+          "regulation",
+          "regulatory",
+          "technique"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-dbdde64d5bfe5039",
+      "original_title": "From genes to governance: Engaging citizens in the new genomic techniques policy debate",
+      "field": "field_developments",
+      "reason": "too_loose_for_field_context",
+      "publication": {
+        "title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
+        "year": 2026,
+        "date": "2026-10-10",
+        "url": "https://doi.org/10.1016/j.nbt.2026.10.005",
+        "finding_from_abstract": "",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "accelerate",
+          "adapted",
+          "changing",
+          "crops",
+          "differentiate",
+          "directive",
+          "framework",
+          "genomic",
+          "legislation",
+          "ngts",
+          "plant",
+          "reform",
+          "regulation",
+          "regulatory",
+          "societal",
+          "technique",
+          "they",
+          "variety"
+        ],
+        "source": "openalex_live",
+        "relationship": "thematic_field_development_not_a_direct_followup",
+        "study_type": "related_study_or_model",
+        "relevance_strength": 10
+      }
+    },
+    {
+      "lead_id": "lead-0cfc31b1a9963bc8",
+      "original_title": "Forecasting Battery Cell Production in Europe: A Risk Assessment Model",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Risk Assessment of Technology Development Projects Under Uncertainty: Evaluation of Dry Coating Technology in Battery Cell Production",
+        "url": "https://doi.org/10.1007/978-3-032-23124-6_18",
+        "date": "2026-01-01",
+        "year": 2026,
+        "evidence_kind": "ongoing_research",
+        "finding_from_abstract": "",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "battery",
+          "cell",
+          "production",
+          "risk"
+        ],
+        "discovery": "issue_search",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 5,
+        "question_fit_basis": "0 shared subject concepts, 4 substantive title terms; scope geography_unspecified"
+      }
+    },
+    {
+      "lead_id": "lead-b1f82e1bdd8f68e2",
+      "original_title": "Lifecycle CO2 analysis for urban emission reduction of hydrogen-fuelled and battery electric buses in the European Union current and future energetic scenarios",
+      "field": "direction_evidence",
+      "reason": "same_original_or_republication",
+      "publication": {
+        "title": "Corrigendum to “Lifecycle CO2 analysis for urban emission reduction of hydrogen-fuelled and battery electric buses in the European Union current and future energetic scenarios” [Int J Hydrogen Energy 123 (2025) 335-353]",
+        "url": "https://doi.org/10.1016/j.ijhydene.2025.05.328",
+        "year": 2025,
+        "date": "2025-07-01",
+        "finding_from_abstract": "",
+        "evidence_kind": "newer_scenario_or_model",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "european_focus",
+        "shared_issue_terms": [],
+        "source": "openalex_publication_metadata",
+        "interpretation": "Later research discusses the original issue",
+        "discovery": "semantic",
+        "question_fit_score": 13,
+        "question_fit_basis": "1 shared subject concepts, 11 substantive title terms; scope european_focus"
+      }
+    },
+    {
+      "lead_id": "lead-df9faf38e5bb72ef",
+      "original_title": "The New Anticipatory Governance Culture for Innovation: Regulatory Foresight, Regulatory Experimentation and Regulatory Learning",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Regulatory Learning or Regulatory Privilege? How Sandbox Design Shapes the Governance Value of Experimental Regulation",
+        "url": "https://doi.org/10.1111/rego.70213",
+        "year": 2026,
+        "date": "2026-10-08",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": false,
+        "shared_topic_terms": [
+          "governance",
+          "learning",
+          "regulatory"
+        ],
+        "source": "openalex_live",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-6c9fbc0d63b47a42",
+      "original_title": "Trust, Uncertainty, and Governance in Health Data Sharing: Findings from the IDERHA Project",
+      "field": "follow_up_publications",
+      "reason": "no_specific_shared_issue",
+      "publication": {
+        "title": "Transformative Resilience in European Health Governance After COVID-19: A Policy Analysis",
+        "url": "https://doi.org/10.3390/healthcare14050569",
+        "year": 2026,
+        "date": "2026-02-25",
+        "finding_from_abstract": "",
+        "study_type": "related_study_or_model",
+        "europe_mentioned": true,
+        "shared_topic_terms": [
+          "governance",
+          "health"
+        ],
+        "source": "existing_scanner_catalogue",
+        "cited_by_count": 0
+      }
+    },
+    {
+      "lead_id": "lead-c19d13a3515412fe",
+      "original_title": "Climate change will increase forest disturbances in Europe throughout the 21st century",
+      "field": "field_developments",
+      "reason": "not_demonstrably_later",
+      "publication": {
+        "title": "Unravelling the spatial and temporal variability of natural disturbances in European forests",
+        "url": "https://doi.org/10.1111/1365-2664.70344",
         "year": 2026,
         "source": "semantic_broader_context",
         "topic_relation": "broader_context_not_direct_followup",
