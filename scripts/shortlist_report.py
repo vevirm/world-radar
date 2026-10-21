@@ -96,7 +96,7 @@ def links_for(r):
     year = year_of(r.get('year'))
     seen_urls, seen_titles = set(), set()
     found = []
-    for f in list(r.get('followups') or []) + list(r.get('field_developments') or []):
+    for f in list(r.get('direction_trails') or []) + list(r.get('followups') or []) + list(r.get('field_developments') or []):
         if not isinstance(f, dict):
             continue
         url = str(f.get('url', '')).strip()
@@ -113,9 +113,15 @@ def links_for(r):
         same_original = same_work(r.get('title'),title)
         retracted = marked_invalid(f)
         score, shared = same_subject(r.get('title'), title)
+        role = f.get('evidence_role')
+        # Shared screening of stored links is authoritative. Broad/indirect
+        # context is retained in the atlas but never ranked as positive evidence.
         confidence = 'withdrawn' if retracted else ('repeat' if duplicate or same_original else
-                        ('candidate' if related_enough(r.get('title'), title) else 'weak'))
-        found.append({**f, '_score': score, '_shared': shared, '_year': fy,
+                        ('weak' if role == 'related_context' else
+                         'candidate' if role == 'same_issue_literature' or
+                         (role is None and related_enough(r.get('title'),title)) else 'weak'))
+        found.append({**f, '_from_direction':bool(f.get('evidence_kind')),
+                      '_score': max(score, .75) if (role == 'same_issue_literature' and f.get('evidence_kind')) else score, '_shared': shared, '_year': fy,
                       '_status': confidence, '_independent': confidence == 'candidate'})
     return found
 
@@ -142,8 +148,11 @@ def sort_data(atlas):
         rated = r.get('rating') if isinstance(r.get('rating'), dict) else {}
         number = rated.get('value')
         number = number if type(number) is int and 1 <= number <= 100 else None
-        credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2],
-                          key=lambda x: (x['_score'],x['_year'],x['_shared']), reverse=True)
+        # A title-only pair is useful as a reading lead, but not sufficient
+        # to headline the strongest cases. Require an actual abstract excerpt.
+        credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2
+                           and len(str(l.get('abstract_excerpt') or '').strip()) >= 45],
+                          key=lambda x: (x['_from_direction'], x['_score'], x['_year'], x['_shared']), reverse=True)
         best = credible[0] if credible else None
         reviewed = concrete_review(r)
         item = {'record': r, 'links': links, 'best': best, 'recent': max((l['_year'] for l in credible), default=0),
@@ -151,6 +160,7 @@ def sort_data(atlas):
         if not marked_invalid(r) and (reviewed or credible):
             score = (220 if reviewed else 0)
             score += 60 * (best['_score'] if best else 0) + 12 * min(len(credible), 3)
+            if best and best['_from_direction']: score += 30
             score += 24 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
             score += 8 if FUTURE_RE.search(r['title']) else 0
             if reviewed and number is not None:
@@ -270,8 +280,15 @@ def write_shortlist(atlas, target):
                 para(r.get('now','The saved evidence needs individual source review.'), bold_label='NOW  ')
                 para('A source-linked observation is recorded. Its scope and direct connection to the original study still need checking.',bold_label='WHY HERE  ')
             elif best:
-                para(f"A related study appeared in {best['_year'] or 'an undated year'}: {best['title']}.", bold_label='NOW  ')
-                para(f"This trail has {item['close']} distinct candidate later paper(s), reaching {item['recent'] or 'an undated year'}. Titles suggest a topic connection, not an observed outcome. The publications need source review.",bold_label='WHY HERE  ')
+                abstract = str(best.get('abstract_excerpt') or best.get('finding_from_abstract') or '').strip()
+                evidence_label = best.get('evidence_kind')
+                if evidence_label in ('measured_or_reported_change', 'implementation_or_evaluation') and abstract:
+                    para(f"A {best['_year']} paper reports: {abstract[:270]}", bold_label='NOW  ')
+                elif abstract:
+                    para(f"Newer research ({best['_year']}) discusses: {abstract[:230]}", bold_label='NOW  ')
+                else:
+                    para(f"A later study ({best['_year'] or 'date unrecorded'}) explores: {best['title']}.", bold_label='NOW  ')
+                para(f"This is a same-question research trail ({item['close']} linked publication(s)). It shows continuing work, not necessarily a measured outcome.", bold_label='WHY HERE  ')
             else:
                 para('Original and later source reviews are recorded.',bold_label='WHY HERE  ')
             if item['rated'] is not None:
@@ -308,7 +325,7 @@ def write_shortlist(atlas, target):
     for i,item in enumerate(bottom,1):add_entry(i,item,False)
     doc.add_heading('How this list updates',1)
     para('Each successful Radar 2 run refreshes living-atlas.json. The companion Word workflow then builds this file again '
-         'from those saved entries. It selects candidates by source-linked review, later-publication relevance, freshness '
+         'from those saved entries. It selects candidates by source-linked review, same-question follow-ups, freshness '
          'and diversity of subjects. It does not perform an extra paid research scan.')
     para('A proper best/worst judgement requires reading the original claim and checking independent later observations. '
          'Where that review is missing, the shortlist is a research triage list rather than a verdict.')

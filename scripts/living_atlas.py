@@ -102,7 +102,8 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
         for f in entry.get('follow_up_publications') or []:
             if not str(f.get('url','')).startswith('https://'): continue
             followups.append({'title':tidy(f.get('title'),180), 'year':f.get('year'), 'url':f['url'],
-                              'abstract_excerpt':tidy(f.get('finding_from_abstract'),300)})
+                              'abstract_excerpt':tidy(f.get('finding_from_abstract'),300),
+                              'evidence_role':f.get('evidence_role', 'unclassified')})
         # Broader follow-on scholarship is useful for "where research is
         # going", but is NOT evidence that a specific scenario happened.
         developments = []
@@ -113,7 +114,9 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
                 continue
             developments.append({'title':tidy(f.get('title'),180), 'year':f.get('year'),
                                  'url':link, 'source':f.get('source'),
-                                 'abstract_excerpt':tidy(f.get('finding_from_abstract'),300)})
+                                 'abstract_excerpt':tidy(f.get('finding_from_abstract'),300),
+                                 'evidence_role':f.get('evidence_role', 'related_context'),
+                                 'context_reason':f.get('context_reason', '')})
         # A separate issue-first trail: later abstracts may describe observed
         # change, practical implementation or merely an evolving research
         # question. Never confuse these with source-reviewed real-world facts.
@@ -127,7 +130,8 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
                                'evidence_kind':f.get('evidence_kind'),
                                'interpretation':tidy(f.get('interpretation'),130),
                                'geography':f.get('geography'),
-                               'source':f.get('source'), 'relationship':f.get('relationship')})
+                               'source':f.get('source'), 'relationship':f.get('relationship'),
+                               'evidence_role':f.get('evidence_role','unclassified')})
         # Scanner-proposed URLs remain in the private research logs. They are
         # NOT public real-world evidence until a source review accepts them.
         evidence = []
