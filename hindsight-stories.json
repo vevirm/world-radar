@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-10-21 18:20 UTC",
+  "generated_utc": "2026-10-21 20:33 UTC",
   "summary": {
     "research_leads": 1366,
     "reviewed_forecasts": 0,
     "policy_snapshots": 2,
-    "later_reading": 3
+    "later_reading": 1
   },
   "stories": [
     {
@@ -84,28 +84,6 @@
       "original_url": "https://doi.org/10.1038/srep28334",
       "later_url": "https://doi.org/10.5194/esd-9-1107-2018",
       "later_title": "Varying soil moisture–atmosphere feedbacks explain divergent temperature extremes and precipitation projections in central Europe"
-    },
-    {
-      "id": "lead-72ca81101443645e",
-      "title": "Assessment of Future Heat Stress Risk in European Regions: Towards a better Integration of Socio-economic Sce…",
-      "year": "2017",
-      "then": "A 2017 study explored how changing climates and social conditions might affect Europe’s heat-stress risks.",
-      "later": "A related 2021 study modeled rising heat-related mortality risks through 2050, with markedly different projections across European countries.",
-      "take": "This is later academic discussion, not a real-world test or proof that the earlier scenario happened.",
-      "original_url": "https://doi.org/10.1553/giscience2017_01_s341",
-      "later_url": "https://doi.org/10.1175/wcas-d-20-0142.1",
-      "later_title": "Future Projections of Heat Mortality Risk for Major European Cities"
-    },
-    {
-      "id": "lead-1adc6161d5c8ecb4",
-      "title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
-      "year": "2017",
-      "then": "A 2017 paper explored whether climate-smart forestry could nearly double forests’ climate-mitigation contribution by 2050.",
-      "later": "A related 2022 study examined forest-management trade-offs, including the role of unmanaged and broad-leaved forests in carbon storage and local cooling.",
-      "take": "This is later academic discussion, not a real-world test or proof that the earlier scenario happened.",
-      "original_url": "https://doi.org/10.3390/f8120484",
-      "later_url": "https://doi.org/10.1029/2022ef002796",
-      "later_title": "Trade‐Offs for Climate‐Smart Forestry in Europe Under Uncertain Future Climate"
     }
   ],
   "scoring_note": "Only an original-source-reviewed prediction with comparable independent outcome evidence can receive a hindsight grade. The 1–100 rating is editorial: clarity 25%, anticipation 50%, usefulness 25%. Policy target-level meters are separate and do not measure prediction quality. No evidence means no grade."
