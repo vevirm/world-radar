@@ -1,58 +1,58 @@
 {
-  "generated_utc": "2026-10-21 10:20 UTC",
+  "generated_utc": "2026-10-21 12:42 UTC",
   "headline": "EU foresight — evidence review",
-  "verdict": "1366 European research leads compared with later scholarship; 1147 have related papers, 517 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
+  "verdict": "1366 European research leads compared with later scholarship; 1177 have related papers, 625 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
   "literature_compared_count": 1366,
-  "later_abstract_result_count": 517,
-  "later_empirical_abstract_count": 517,
+  "later_abstract_result_count": 625,
+  "later_empirical_abstract_count": 625,
   "theme_comparisons": [
     {
       "topic": "Other European foresight research",
       "compared": 603,
-      "with_related_later_study": 455,
-      "with_later_abstract_result": 161
+      "with_related_later_study": 474,
+      "with_later_abstract_result": 202
     },
     {
       "topic": "Climate and energy",
       "compared": 349,
-      "with_related_later_study": 318,
-      "with_later_abstract_result": 180
+      "with_related_later_study": 324,
+      "with_later_abstract_result": 210
     },
     {
       "topic": "Economy and finance",
       "compared": 105,
-      "with_related_later_study": 95,
-      "with_later_abstract_result": 51
+      "with_related_later_study": 97,
+      "with_later_abstract_result": 60
     },
     {
       "topic": "Population and work",
       "compared": 101,
       "with_related_later_study": 91,
-      "with_later_abstract_result": 49
+      "with_later_abstract_result": 57
     },
     {
       "topic": "Technology and digital",
       "compared": 63,
-      "with_related_later_study": 58,
-      "with_later_abstract_result": 26
+      "with_related_later_study": 59,
+      "with_later_abstract_result": 31
     },
     {
       "topic": "Health and society",
       "compared": 59,
       "with_related_later_study": 55,
-      "with_later_abstract_result": 18
+      "with_later_abstract_result": 25
     },
     {
       "topic": "Environment and food",
       "compared": 54,
-      "with_related_later_study": 47,
-      "with_later_abstract_result": 25
+      "with_related_later_study": 49,
+      "with_later_abstract_result": 31
     },
     {
       "topic": "Security and governance",
       "compared": 32,
       "with_related_later_study": 28,
-      "with_later_abstract_result": 7
+      "with_later_abstract_result": 9
     }
   ],
   "study_count": 1366,
@@ -61,7 +61,7 @@
   "checked_count": 1366,
   "bibliography_checked_count": 1366,
   "forecast_candidate_count": 143,
-  "follow_up_count": 1147,
+  "follow_up_count": 1177,
   "evidence_backed_count": 0,
   "topic_counts": {
     "European Journal of Futures Research": 52,
@@ -123,5 +123,5 @@
     }
   ],
   "interpretation": "Thematic comparisons are from scientific abstracts; some describe modeled futures, not observed real-world outcomes. Research about Europe is not necessarily EU-institution-authored foresight. Neither topic matches nor abstract results are forecast accuracy verdicts.",
-  "next_step": "1366 records now have qualitative comparisons with later scholarly papers, including 517 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 143 original abstracts contain potential forecast passages requiring validation. 1366 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
+  "next_step": "1366 records now have qualitative comparisons with later scholarly papers, including 625 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 143 original abstracts contain potential forecast passages requiring validation. 1366 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
 }
