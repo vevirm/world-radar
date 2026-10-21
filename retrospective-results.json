@@ -27653,7 +27653,88 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "European Union Directive 2009/28/EC established that the share of renewable energy in the final energy consumption should reach a target of 20% by 2020 in European Union (EU) countries.",
+      "what_happened_literature": "Later scholarly abstracts report: 2020: Our results show that there is a significant causality only from real GDP per capita to the share of renewable energy in final consumption, marking the potential of developed countries to consume more RES. | 2021: Our results provide empirical support to the important role of economic growth and non-renewable energy prices in the renewable energy transition.",
+      "literature_signal": "later_studies_report_results",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "4 related later studies found; 2 contain result-like abstract passages (which may describe models rather than real-world measurements). This suggests follow-up, but direction and comparability with the earlier claim are not established.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Renewable Energy in Final Energy Consumption and Income in the EU-28 Countries",
+          "url": "https://doi.org/10.3390/en13092280",
+          "year": 2020,
+          "date": "2020-05-05",
+          "finding_from_abstract": "Our results show that there is a significant causality only from real GDP per capita to the share of renewable energy in final consumption, marking the potential of developed countries to consume more RES.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "consumption",
+            "energy",
+            "final",
+            "renewable"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 129
+        },
+        {
+          "title": "The relationship between energy prices, economic growth and renewable energy consumption: Evidence from Europe",
+          "url": "https://doi.org/10.1016/j.egyr.2021.03.030",
+          "year": 2021,
+          "date": "2021-03-27",
+          "finding_from_abstract": "Our results provide empirical support to the important role of economic growth and non-renewable energy prices in the renewable energy transition.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "consumption",
+            "energy",
+            "renewable"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 195
+        },
+        {
+          "title": "The Role of Crypto Trading in the Economy, Renewable Energy Consumption and Ecological Degradation",
+          "url": "https://doi.org/10.3390/en15103805",
+          "year": 2022,
+          "date": "2022-05-22",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "consumption",
+            "energy",
+            "renewable"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 114
+        },
+        {
+          "title": "Evolution and Forecasting of the Renewable Energy Consumption in the Frame of Sustainable Development: EU vs. Romania",
+          "url": "https://doi.org/10.3390/su131810327",
+          "year": 2021,
+          "date": "2021-09-15",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "consumption",
+            "energy",
+            "renewable"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 25
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:19.321363+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:19.321363+00:00"
     },
     "lead-62cf159b2d65e786": {
       "id": "lead-62cf159b2d65e786",
@@ -29245,7 +29326,91 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "The focus is on an energy system with 95% CO2 reduction by 2050.",
+      "what_happened_literature": "Later scholarly abstracts report: 2026: The framework considers local (urban and non‑urban), national, and global scales, and examines low‑carbon transport transition under both exogenous and endogenous cross‑sectoral perspectives.The results show that low‑carbon transport pathways are context-dependent, varying not only across spatial scales, but also socio‑geographical contexts.",
+      "literature_signal": "later_studies_report_results",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "4 related later studies found; 1 contain result-like abstract passages (which may describe models rather than real-world measurements). This suggests follow-up, but direction and comparability with the earlier claim are not established.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Insights from Energy Systems Optimization Models and Stakeholders Engagement – A Multi-Scale and Cross-Sectoral Perspective on Low-Carbon Transport Systems",
+          "url": "https://doi.org/10.63959/chalmers.dt/5911",
+          "year": 2026,
+          "date": "2026-07-31",
+          "finding_from_abstract": "The framework considers local (urban and non‑urban), national, and global scales, and examines low‑carbon transport transition under both exogenous and endogenous cross‑sectoral perspectives.The results show that low‑carbon transport pathways are context-dependent, varying not only across spatial scales, but also socio‑geographical contexts.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "optimization",
+            "transport"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "A bi-directional soft-linking method for a whole energy system model and a power system optimization model. Application and analysis for the Bolivian case",
+          "url": "https://doi.org/10.1088/2753-3751/ae5aa2",
+          "year": 2026,
+          "date": "2026-04-02",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "model",
+            "optimization",
+            "soft-linking",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 1
+        },
+        {
+          "title": "Soft-linking a general equilibrium model and an energy system model: towards a carbon–neutral economy by 2050",
+          "url": "https://doi.org/10.1016/j.ecmx.2026.101704",
+          "year": 2026,
+          "date": "2026-02-27",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "model",
+            "soft-linking",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 1
+        },
+        {
+          "title": "Soft-linking a national computable general equilibrium model (ThreeME) with a detailed energy system model (IESA-Opt)",
+          "url": "https://doi.org/10.1016/j.eneco.2023.106750",
+          "year": 2023,
+          "date": "2023-05-23",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "model",
+            "soft-linking",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 19
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:17.860063+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:17.860063+00:00"
     },
     "lead-6e975d54a4be708c": {
       "id": "lead-6e975d54a4be708c",
@@ -29455,7 +29620,94 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "This study does an ex-post LCA analysis of results from JRC-EU-TIMES and estimates the environmental impact indicators across 18 categories in scenarios that achieve 80–95% CO2 emission reduction by 2050.",
+      "what_happened_literature": "Later scholarly abstracts report: 2025: The results show the importance of applying systems thinking to PtX integration, as delimiting the assessment to the specific supply chain risks missing important trade-offs and burden shifting.",
+      "literature_signal": "later_studies_report_results",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "4 related later studies found; 1 contain result-like abstract passages (which may describe models rather than real-world measurements). This suggests follow-up, but direction and comparability with the earlier claim are not established.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Life cycle assessment of Power-to-X integration in renewable energy systems",
+          "url": "https://doi.org/10.1016/j.jclepro.2025.145713",
+          "year": 2025,
+          "date": "2025-05-14",
+          "finding_from_abstract": "The results show the importance of applying systems thinking to PtX integration, as delimiting the assessment to the specific supply chain risks missing important trade-offs and burden shifting.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cycle",
+            "energy",
+            "integration",
+            "life"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 26
+        },
+        {
+          "title": "Impuls-urbs: Integration of life cycle assessment into energy system models",
+          "url": "https://doi.org/10.1016/j.rser.2024.114422",
+          "year": 2024,
+          "date": "2024-04-09",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cycle",
+            "energy",
+            "integration",
+            "life",
+            "models",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 10
+        },
+        {
+          "title": "Integration of Life Cycle Impact Assessment in Energy System Modelling",
+          "url": "https://doi.org/10.52202/069564-0252",
+          "year": 2023,
+          "date": "2023-01-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cycle",
+            "energy",
+            "integration",
+            "life",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 2
+        },
+        {
+          "title": "Integration of raw materials indicators of energy technologies into energy system models",
+          "url": "https://doi.org/10.1016/j.apenergy.2021.118150",
+          "year": 2021,
+          "date": "2021-11-09",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "energy",
+            "integration",
+            "models",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 44
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:13.030095+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:13.030095+00:00"
     },
     "lead-0c3d8cf2752884b1": {
       "id": "lead-0c3d8cf2752884b1",
@@ -29770,7 +30022,89 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "To realise this transition, a reduction in greenhouse gas emissions of at least 80% from 1990 levels by 2050 is required.",
+      "what_happened_literature": "Later scholarly abstracts report: 2026: This provides empirical evidence for understanding the regional differences and phased patterns of China’s low-carbon transformation. | 2023: The results show that an integrated development policy that considers the interests of all stakeholders, the potential of rural resources, the infrastructure, and human resources capacity would be the optimal policy.",
+      "literature_signal": "later_studies_report_results",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "4 related later studies found; 2 contain result-like abstract passages (which may describe models rather than real-world measurements). This suggests follow-up, but direction and comparability with the earlier claim are not established.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "The industry–energy–population triple transformation and its pathways to environmental sustainability",
+          "url": "https://doi.org/10.1038/s41598-026-67095-8",
+          "year": 2026,
+          "date": "2026-08-15",
+          "finding_from_abstract": "This provides empirical evidence for understanding the regional differences and phased patterns of China’s low-carbon transformation.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "pathways",
+            "transformation"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "Pathways toward the Transformation of Sustainable Rural Tourism Management in Central Java, Indonesia",
+          "url": "https://doi.org/10.3390/su15032592",
+          "year": 2023,
+          "date": "2023-02-01",
+          "finding_from_abstract": "The results show that an integrated development policy that considers the interests of all stakeholders, the potential of rural resources, the infrastructure, and human resources capacity would be the optimal policy.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "pathways",
+            "sustainable",
+            "transformation"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 43
+        },
+        {
+          "title": "Integrated Multidimensional Sustainability Assessment of Energy System Transformation Pathways",
+          "url": "https://doi.org/10.3390/su13095217",
+          "year": 2021,
+          "date": "2021-05-07",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "integrated",
+            "pathways",
+            "system",
+            "transformation"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 49
+        },
+        {
+          "title": "Key Pathways to Achieve Sustainable Development Goals in Three Polar Regions",
+          "url": "https://doi.org/10.3390/su15021735",
+          "year": 2023,
+          "date": "2023-01-16",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "pathways",
+            "sustainable",
+            "three"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 35
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:13.901990+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:13.901990+00:00"
     },
     "lead-e3d847af8ec29664": {
       "id": "lead-e3d847af8ec29664",
@@ -30400,7 +30734,22 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Other European foresight research",
+      "what_expected_literature": "By 2047, we estimated an additional 40 000 incident strokes (+3%) and 2.58 million prevalent cases (+27%).",
+      "what_happened_literature": "No sufficiently close later study was identified in the available search results.",
+      "literature_signal": "no_comparable_study_found",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "OpenAlex coverage and query matching are incomplete; this is not evidence that a prediction failed.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:14.725837+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:14.725837+00:00"
     },
     "lead-3a7d719ec356068e": {
       "id": "lead-3a7d719ec356068e",
@@ -30694,7 +31043,87 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Other European foresight research",
+      "what_expected_literature": "The study forms part of an EU Horizon 2020 funded research project on AYCs aged 15-17 years old.",
+      "what_happened_literature": "4 related later studies were identified on this subject. Their available abstracts do not provide directly comparable measured outcomes.",
+      "literature_signal": "later_research_without_comparable_outcome",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "The subject remains under research; no supported accuracy judgment can be drawn from these papers alone.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Caring in Context: Development of a Family-Centred and Cross-Sectoral Framework to Support Young Carers",
+          "url": "https://doi.org/10.3390/healthcare14060712",
+          "year": 2026,
+          "date": "2026-03-11",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "carers",
+            "support",
+            "young"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "Basic Conditions for Support of Young Carers in School: A Secondary Analysis of the Perspectives of Young Carers, Parents, Teachers, and Counselors",
+          "url": "https://doi.org/10.3390/healthcare12111143",
+          "year": 2024,
+          "date": "2024-06-04",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "carers",
+            "support",
+            "young"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 7
+        },
+        {
+          "title": "Young carers’ perspectives on navigating the healthcare system and co-designing support for their caring roles: a mixed-methods qualitative study",
+          "url": "https://doi.org/10.1136/bmjopen-2023-075804",
+          "year": 2023,
+          "date": "2023-12-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "carers",
+            "support",
+            "young"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 3
+        },
+        {
+          "title": "Adolescent Young Carers Who Provide Help and Support to Friends",
+          "url": "https://doi.org/10.3390/healthcare11212876",
+          "year": 2023,
+          "date": "2023-11-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "carers",
+            "support",
+            "young"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 9
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:12.056272+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:12.056272+00:00"
     },
     "lead-add17575cc4a9009": {
       "id": "lead-add17575cc4a9009",
@@ -31492,7 +31921,94 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Other European foresight research",
+      "what_expected_literature": "At the same time, our models only predicted a mild increase in the ASR of mortality until 2039.",
+      "what_happened_literature": "Later scholarly abstracts report: 2025: The global burden of pancreatic cancer, measured in DALYs, rose from 5.21 million to 11.32 million. | 2023: We report the burden of pancreatic cancer and its attributable risk factors in the Middle East and North Africa (MENA) region, from 1990 to 2019, by age, sex, and socio-demographic index.",
+      "literature_signal": "later_studies_report_results",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "4 related later studies found; 4 contain result-like abstract passages (which may describe models rather than real-world measurements). This suggests follow-up, but direction and comparability with the earlier claim are not established.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Global, regional, and national burden of pancreatic cancer from 1990 to 2021, its attributable risk factors, and projections to 2050: a systematic analysis of the global burden of disease study 2021",
+          "url": "https://doi.org/10.1186/s12885-025-13597-z",
+          "year": 2025,
+          "date": "2025-02-03",
+          "finding_from_abstract": "The global burden of pancreatic cancer, measured in DALYs, rose from 5.21 million to 11.32 million.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "attributable",
+            "burden",
+            "cancer",
+            "factors",
+            "pancreatic",
+            "risk"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 63
+        },
+        {
+          "title": "The burden of pancreatic cancer and its attributable risk factors in the Middle East and North Africa region, 1990–2019",
+          "url": "https://doi.org/10.1111/jgh.16217",
+          "year": 2023,
+          "date": "2023-05-23",
+          "finding_from_abstract": "We report the burden of pancreatic cancer and its attributable risk factors in the Middle East and North Africa (MENA) region, from 1990 to 2019, by age, sex, and socio-demographic index.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "attributable",
+            "burden",
+            "cancer",
+            "factors",
+            "pancreatic",
+            "risk"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 7
+        },
+        {
+          "title": "Global burden of early-onset pancreatic cancer attributable to metabolic risks from 1990 to 2021, and projections to 2030",
+          "url": "https://doi.org/10.3389/fonc.2025.1660313",
+          "year": 2025,
+          "date": "2025-10-15",
+          "finding_from_abstract": "The results show that metabolic risk factors have a significant impact on EOPC: In 2021, the global deaths from EOPC attributable to HFPG reached 3,334 cases, 2.3 times higher than in 1990 with the age-standardized mortality rate (ASMR) and age-standardized disability rate (ASDR) had average annual growth rates of 1.50% and 1.47%.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "attributable",
+            "burden",
+            "cancer",
+            "pancreatic"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 2
+        },
+        {
+          "title": "Burden of Pancreatic Cancer in Iran: An Analysis of Global Burden of Disease 2021 : Pancreatic Cancer Trends in Iran Based on GBD 2021",
+          "url": "https://openalex.org/W7215003450",
+          "year": 2025,
+          "date": "2025-12-06",
+          "finding_from_abstract": "Conclusion: The burden of PC in Iran has increased substantially over the past three decades, especially among older adults and in certain provinces.",
+          "study_type": "abstract_reports_results",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "burden",
+            "cancer",
+            "pancreatic"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:20.843133+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:20.843133+00:00"
     },
     "lead-4855553f0bd531cd": {
       "id": "lead-4855553f0bd531cd",
@@ -34187,7 +34703,85 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Population and work",
+      "what_expected_literature": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "what_happened_literature": "4 related later studies were identified on this subject. Their available abstracts do not provide directly comparable measured outcomes.",
+      "literature_signal": "later_research_without_comparable_outcome",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "The subject remains under research; no supported accuracy judgment can be drawn from these papers alone.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Moving Down the Urban Hierarchy: Exploring Patterns of Internal Migration Towards Small Towns in Latvia",
+          "url": "https://doi.org/10.3390/geographies5040054",
+          "year": 2025,
+          "date": "2025-10-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "latvia",
+            "migration",
+            "patterns"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 3
+        },
+        {
+          "title": "Mapping the patterns of internal migration in Latvia using spatial autocorrelation methods",
+          "url": "https://doi.org/10.1080/00167223.2026.2642625",
+          "year": 2025,
+          "date": "2025-07-03",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "latvia",
+            "migration",
+            "patterns"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 1
+        },
+        {
+          "title": "Navigating Displacement: The Intertemporal Migration and Settlement Experiences of Ukrainians in Latvia",
+          "url": "https://doi.org/10.1111/glob.70000",
+          "year": 2025,
+          "date": "2025-02-18",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "latvia",
+            "migration"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 3
+        },
+        {
+          "title": "Ethnic residential patterns in the inner-city core of Riga, Latvia using scalable individualized neighborhoods",
+          "url": "https://doi.org/10.3389/frsc.2025.1612980",
+          "year": 2025,
+          "date": "2025-07-14",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "latvia",
+            "patterns"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 1
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:16.996436+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:16.996436+00:00"
     },
     "lead-b524c1b8c001c76a": {
       "id": "lead-b524c1b8c001c76a",
@@ -34271,7 +34865,68 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Population and work",
+      "what_expected_literature": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
+      "what_happened_literature": "3 related later studies were identified on this subject. Their available abstracts do not provide directly comparable measured outcomes.",
+      "literature_signal": "later_research_without_comparable_outcome",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "The subject remains under research; no supported accuracy judgment can be drawn from these papers alone.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Emerging Diversifications of Labor Migration to Slovenia: From the Western Balkans to Asia",
+          "url": "https://doi.org/10.3986/dd/2026.2.7",
+          "year": 2026,
+          "date": "2026-09-07",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "migration",
+            "slovenia"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "Impact of Migration on the Demographic and Religious Landscapes of Central European Countries: Legal Perspectives",
+          "url": "https://doi.org/10.54237/profnet.2024.armace_6",
+          "year": 2024,
+          "date": "2024-01-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "demographic",
+            "migration"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "Over the hills and far away: phylogeography and demographic migration history of a dispersal-restricted primrose (Primula vulgaris)",
+          "url": "https://doi.org/10.3389/fevo.2024.1333726",
+          "year": 2024,
+          "date": "2024-04-17",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "demographic",
+            "migration"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 4
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:15.499351+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:15.499351+00:00"
     },
     "lead-908db6d2bb0cb34b": {
       "id": "lead-908db6d2bb0cb34b",
@@ -34334,7 +34989,92 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Other European foresight research",
+      "what_expected_literature": "emissions by 2050.",
+      "what_happened_literature": "4 related later studies were identified on this subject. Their available abstracts do not provide directly comparable measured outcomes.",
+      "literature_signal": "later_research_without_comparable_outcome",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "The subject remains under research; no supported accuracy judgment can be drawn from these papers alone.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Prospective life cycle assessment of solid recovered fuel utilization and marine fuel production in cement plants",
+          "url": "https://doi.org/10.1016/j.spc.2025.02.012",
+          "year": 2025,
+          "date": "2025-02-19",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cement",
+            "cycle",
+            "life",
+            "production",
+            "prospective"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 4
+        },
+        {
+          "title": "Comparative prospective life cycle assessment of decarbonization strategies in the Saudi cement industry",
+          "url": "https://doi.org/10.1016/j.eiar.2026.108362",
+          "year": 2026,
+          "date": "2026-02-02",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cement",
+            "cycle",
+            "life",
+            "prospective"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 6
+        },
+        {
+          "title": "Prospective Life Cycle Optimization of Carbon Capture and Storage/Utilization (CCS/CCU) Supply Chains in the Cement Industry",
+          "url": "https://doi.org/10.2139/ssrn.7570300",
+          "year": 2026,
+          "date": "2026-01-01",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cement",
+            "cycle",
+            "life",
+            "prospective"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        },
+        {
+          "title": "Life Cycle Assessment of Ternary Cement Production Based on Calcined Clay and Marble Residue",
+          "url": "https://doi.org/10.3390/buildings16091848",
+          "year": 2026,
+          "date": "2026-05-06",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "cement",
+            "cycle",
+            "life",
+            "production"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 0
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:20.102544+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:20.102544+00:00"
     },
     "lead-1cdff6159717fcb4": {
       "id": "lead-1cdff6159717fcb4",
@@ -37782,7 +38522,22 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "In the case of the EU27, it is shown that the proposed path to a condition of net zero emissions in 2050 is not a plausible scenario and that emissions of greenhouse gases in that year are likely to be more than three times higher than the level projected by the European Commission.",
+      "what_happened_literature": "No sufficiently close later study was identified in the available search results.",
+      "literature_signal": "no_comparable_study_found",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "OpenAlex coverage and query matching are incomplete; this is not evidence that a prediction failed.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:16.247892+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:16.247892+00:00"
     },
     "lead-a2079401f82a0ed4": {
       "id": "lead-a2079401f82a0ed4",
@@ -38916,7 +39671,54 @@
       "what_happened": "No independently verified outcome yet.",
       "status": "not_yet_assessed",
       "evidence": [],
-      "counterevidence": []
+      "counterevidence": [],
+      "research_attempts": 1,
+      "literature_attempts": 1,
+      "literature_live_attempts": 1,
+      "topic_cluster": "Climate and energy",
+      "what_expected_literature": "Using an integrated assessment model, we quantify the additional effort needed to achieve a nearly complete EU-wide phase-out of fossil fuels by 2050 compared to a least-cost net-zero scenario.",
+      "what_happened_literature": "2 related later studies were identified on this subject. Their available abstracts do not provide directly comparable measured outcomes.",
+      "literature_signal": "later_research_without_comparable_outcome",
+      "tentative_direction": "insufficient_comparability",
+      "tentative_assessment": "The subject remains under research; no supported accuracy judgment can be drawn from these papers alone.",
+      "comparison_limits": "Potential forecast excerpt is unverified. Related abstracts may use different baselines, geographies, dates, methods and outcomes; no forecast-accuracy verdict is assigned.",
+      "eu_attribution": "EU institutional authorship NOT established (EU-related research is not necessarily EU Commission foresight)",
+      "follow_up_publications": [
+        {
+          "title": "Exploring the feasible net-zero transition pathway in China considering energy system flexibility",
+          "url": "https://doi.org/10.1038/s41467-026-71410-2",
+          "year": 2026,
+          "date": "2026-04-11",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": false,
+          "shared_topic_terms": [
+            "energy",
+            "net-zero",
+            "system"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 4
+        },
+        {
+          "title": "Transformations of the energy supply sector towards EU’s net-zero goal",
+          "url": "https://doi.org/10.1088/2753-3751/ae3e92",
+          "year": 2026,
+          "date": "2026-01-28",
+          "finding_from_abstract": "",
+          "study_type": "related_study_or_model",
+          "europe_mentioned": true,
+          "shared_topic_terms": [
+            "energy",
+            "net-zero"
+          ],
+          "source": "openalex_live",
+          "cited_by_count": 1
+        }
+      ],
+      "literature_search_mode": "openalex_live + saved catalog (when needed)",
+      "literature_assessed_utc": "2026-10-21T09:21:18.587905+00:00",
+      "bibliography_checked_utc": "2026-10-21T09:21:18.587905+00:00"
     },
     "lead-1c293752c7da9dd2": {
       "id": "lead-1c293752c7da9dd2",
