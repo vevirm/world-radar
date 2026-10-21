@@ -92,13 +92,14 @@ jobs:
             scanner2-audit.json
             outcome-review-queue.json
             outlook-summary.json
+            hindsight-stories.json
             retrospective-results.json
 
       - name: Commit generated report and accumulated research
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          git add retrospective-results.json hindsight-stories.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: update evidence and Word report'
             git pull --rebase
