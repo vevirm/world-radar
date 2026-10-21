@@ -7,6 +7,73 @@ reading trail; the complete 1,366-record collection stays in the atlas.
 from __future__ import annotations
 from collections import defaultdict
 from pathlib import Path
+import re
+
+
+# Screening-only labels. A paper's title and metadata cannot confirm an outcome.
+# No publications are removed from the underlying living atlas.
+_STATUS = re.compile(r"^\s*(?:\[?retracted(?:\s+article)?\]?|\[?withdrawn\]?|retraction\s+(?:notice|of)|article\s+retracted|editorial\s+expression\s+of\s+concern)\s*[:.\-–—]?", re.I)
+_COMMON = set(('the a an and or of for in on to from as at by with across under into through toward towards '
+               'about between within how what why when which where this that these those study studies review '
+               'model modelling modeling research analysis evidence impact impacts effects effect european europe '
+               'eu future futures scenarios scenario potential new recent approach framework results based assessment '
+               'evaluation policy policies union global national international challenges challenge strategic '
+               'strategy perspective perspectives development role roles long term public comparative').split())
+
+def _tokens(value):
+    return {w for w in re.findall(r'[a-zà-ÿ][a-zà-ÿ0-9-]{2,}',str(value or '').casefold())
+            if w not in _COMMON and not w.isdigit()}
+
+def _status_flag(item):
+    title = item.get('title','') if isinstance(item,dict) else str(item or '')
+    return bool(_STATUS.match(str(title)) or (isinstance(item,dict) and
+        (item.get('is_retracted') is True or item.get('is_withdrawn') is True)))
+
+def _work_key(text):
+    return frozenset(_tokens(_STATUS.sub('',str(text or ''))))
+
+def _match_quality(original, later, seen):
+    title=str(later.get('title','')).strip() if isinstance(later,dict) else str(later)
+    if _status_flag(later):
+        return 'WITHDRAWN/RETRACTED — not supporting evidence'
+    a,b = _work_key(original),_work_key(title)
+    if not a or not b:
+        return 'TOPIC NOT VERIFIED'
+    similarity = len(a&b)/len(a|b)
+    identical = a == b or (len(a&b)>=4 and similarity>=.85)
+    if identical or (b in seen):
+        return 'POSSIBLE DUPLICATE/REPUBLICATION'
+    score = .6*len(a&b)/min(len(a),len(b)) + .4*similarity
+    short_match = len(a&b)>=2 and score>=.68 and max(len(a),len(b))<=4
+    if _has_subject_anchor(original,title) and ((len(a&b)>=3 and score>=.38) or short_match):
+        return 'POSSIBLE TOPIC MATCH — needs review'
+    return 'LOOSE/TANGENTIAL MATCH — needs review'
+
+_METHOD = set(('forecast forecasting forecasted predictor prediction predictive predicting method methods machine learning '
+               'artificial intelligence algorithm algorithms neural network networks data statistical statistics '
+               'model models modelling modeling methodology technique techniques approach approaches using use '
+               'application applications system systems simulation simulations scenario scenarios foresight analysis').split())
+_OTHER_REGIONS = re.compile(r'\b(morocco|india|china|brazil|mexico|australia|japan|nigeria|kenya|thailand|nepal|pakistan)\b',re.I)
+
+def _has_subject_anchor(original, later):
+    a,b = _tokens(original)-_METHOD,_tokens(later)-_METHOD
+    if a and not (a&b):
+        return False
+    if re.search(r'\b(europe|european|eu|eurozone)\b',str(original),re.I) and \
+       _OTHER_REGIONS.search(str(later)) and not re.search(r'\b(europe|european|eu|eurozone)\b',str(later),re.I):
+        return False
+    return True
+
+def _later_with_quality(rec):
+    seen=set()
+    result=[]
+    for f in list(rec.get('followups') or []) + list(rec.get('field_developments') or []):
+        if not isinstance(f,dict) or not str(f.get('title','')).strip():
+            continue
+        quality=_match_quality(rec.get('title'),f,seen)
+        seen.add(_work_key(f.get('title')))
+        result.append((f,quality))
+    return result
 
 
 def write_report(atlas, report):
@@ -119,45 +186,63 @@ def write_report(atlas, report):
         sources(item.get('sources',[]))
 
     doc.add_heading('Eight conversations across time',1)
-    p('This part looks across the whole collection, grouped by subject rather than by whether an idea can be scored. '
-      'The examples are entry points into the archive, not a claim that the collection has a single unified conclusion.')
+    p('This part looks across the whole collection. Featured pairs now undergo basic publication-status, independence and title checks. '
+      'A possible topic match is not proof that the original future happened; substantive review is still needed.')
     by_theme=defaultdict(list)
     for row in atlas['records']:by_theme[row['topic']].append(row)
     for t in atlas['themes']:
         doc.add_heading(t['headline'],2)
         p(t['intro'])
         p(f"In the archive: {t['count']} research items; {t['later_reading']} with candidate later scholarship. "
-          "This is a coverage count, not a relevance or quality score.",small=True)
-        featured=[r for r in by_theme[t['topic']] if r['followups'] or r.get('field_developments')]
-        featured=sorted(featured,key=lambda r:(0 if r['followups'] else 1,r['year'],r['title']))[:4]
-        for rec in featured:
-            label(f"{rec['year'] or 'Undated'} / an idea that kept being discussed")
+          'This counts search leads, not verified independent support.',small=True)
+        strong=[]
+        for rec in by_theme[t['topic']]:
+            if _status_flag(rec):
+                continue
+            candidates=[(f,q) for f,q in _later_with_quality(rec)
+                        if q.startswith('POSSIBLE TOPIC MATCH') and str(f.get('url','')).startswith('https://')]
+            if not candidates:
+                continue
+            best=sorted(candidates,key=lambda pair:(len(_work_key(rec['title'])&_work_key(pair[0]['title'])),
+                    str(pair[0].get('year',''))),reverse=True)[0]
+            strength=len(_work_key(rec['title'])&_work_key(best[0]['title']))
+            strong.append((strength,len(candidates),rec,best[0]))
+        featured=sorted(strong,key=lambda x:(x[0],x[1],str(x[2].get('year',''))),reverse=True)[:4]
+        for _score,_count,rec,later in featured:
+            label(f"{rec['year'] or 'Undated'} / a possible topic connection")
             p(rec['title'],lead='THEN  ')
-            first=(rec['followups'] or rec.get('field_developments') or [])[0]
-            p(first['title']+ (f" ({first['year']})" if first.get('year') else ''),lead='LATER RESEARCH (TOPIC CONTEXT)  ')
-            sources([first],original=rec['original_url'])
-        if not featured:p('No credible potential later reading link has yet been catalogued for this theme.')
-        p('WHAT IS STILL OPEN  The presence of a later paper does not establish a real-world trajectory. Checking present-day outcomes and usefulness is the next editorial question.',small=True)
+            p(later['title']+ (f" ({later['year']})" if later.get('year') else ''),
+              lead='LATER RESEARCH (SCREENED TOPIC MATCH)  ')
+            sources([later],original=rec['original_url'])
+        if not featured:
+            p('No later paper passed the basic topical screen for a featured example in this theme. '
+              'All looser research leads remain in the full trail below.',small=True)
+        p('WHAT IS STILL OPEN  A title-based relationship is only a search lead. The actual arguments, later findings, '
+          'present-day outcomes and continued relevance still need checking.',small=True)
 
     doc.add_heading('Reading trail: every linked follow-up',1)
-    p(f"The research scan found {summary['with_later_reading']} older entries with possible newer related publications, including {summary.get('with_direct_later_reading', 0)} with closer title-based matching. "
-      'All are listed below, grouped by subject, so none vanishes behind a handful of highlight cards. '
-      'These are search leads, not a claim of direct intellectual descent or proof that the original future happened.')
+    p(f"The scanner catalogued possible later reading for {summary['with_later_reading']} original entries. "
+      'The complete list is preserved below, but each suggested link is marked to show its limitations. '
+      'Legend: topic? = plausible title connection; loose? = weak subject match; duplicate? = possible repeat/republication; withdrawn = retracted/withdrawn. None establish real-world outcomes.')
     for theme in atlas['themes']:
-        rows=[r for r in by_theme[theme['topic']] if r['followups'] or r.get('field_developments')]
+        rows=[r for r in by_theme[theme['topic']] if r.get('followups') or r.get('field_developments')]
         if not rows:continue
         doc.add_heading(f"{theme['topic']} ({len(rows)})",2)
-        for row in sorted(rows,key=lambda x:(x['year'],x['title'].lower())):
+        for row in sorted(rows,key=lambda x:(str(x.get('year','')),x['title'].lower())):
             para=doc.add_paragraph()
             para.paragraph_format.space_after=Pt(9)
             para.paragraph_format.keep_together=True
-            r=para.add_run(f"{row['year'] or '?'}  {row['title']}  ")
-            r.bold=True;r.font.size=Pt(9)
+            row_flag = '  [ORIGINAL WITHDRAWN/RETRACTED]' if _status_flag(row) else ''
+            rr=para.add_run(f"{row['year'] or '?'}  {row['title']}{row_flag}  ")
+            rr.bold=True;rr.font.size=Pt(9)
             para.add_run('\n')
-            hyperlink(para,'Original ↗',row['original_url'])
-            for later in (row['followups'] + row.get('field_developments', [])):
+            hyperlink(para,'Original',row.get('original_url',''))
+            for later,status in _later_with_quality(row):
                 para.add_run('   ·   ')
-                hyperlink(para,f"{later['year'] or '?'} {'possible follow-up' if later in row['followups'] else 'field development'} ↗",later['url'])
+                yr=later.get('year') or '?'
+                short_tag = ('withdrawn' if status.startswith('WITHDRAWN') else 'duplicate?' if status.startswith('POSSIBLE DUPLICATE') else 'topic?' if status.startswith('POSSIBLE TOPIC') else 'loose?')
+                text=f'{yr} {short_tag}'
+                hyperlink(para,text,later.get('url',''))
 
     doc.add_heading('How to read a hindsight score',1)
     p('If a topic can be fairly evaluated, the point is to judge the thinking — clarity of assumptions, usefulness for planning and how the expected direction compares with evidence. '

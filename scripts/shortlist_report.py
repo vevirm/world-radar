@@ -41,24 +41,92 @@ def year_of(value):
     return int(m.group(1)) if m else 0
 
 
+# Lightweight title checks are screening hints, NOT proof of scholarly relevance.
+# Keep questionable sources in the archive, but do not reward them as evidence.
+STATUS_RE = re.compile(r"^\s*(?:\[?retracted(?:\s+article)?\]?|\[?withdrawn\]?|retraction\s+(?:notice|of)|article\s+retracted|editorial\s+expression\s+of\s+concern)\s*[:.\-–—]?", re.I)
+FUTURE_RE = re.compile(r'\b(future|foresight|forecast|projection|scenario|outlook|vision|anticipat|predict|planned|planning|prospect|transition|target)\w*\b',re.I)
+
+
+def title_key(title):
+    title = STATUS_RE.sub('', str(title or ''))
+    return ' '.join(sorted(words(title)))
+
+
+def marked_invalid(item):
+    title = str(item.get('title', '')) if isinstance(item, dict) else str(item or '')
+    return bool(STATUS_RE.match(title) or (isinstance(item, dict) and
+        (item.get('is_retracted') is True or item.get('is_withdrawn') is True)))
+
+
+def same_work(a, b):
+    aa, bb = words(STATUS_RE.sub('', str(a or ''))), words(STATUS_RE.sub('', str(b or '')))
+    if not aa or not bb:
+        return False
+    return aa == bb or (len(aa & bb) >= 4 and len(aa & bb)/len(aa | bb) >= .85)
+
+
+METHOD_WORDS = set(('forecast forecasting forecasted predictor prediction predictive predicting method methods machine learning '
+    'artificial intelligence algorithm algorithms neural network networks data statistical statistics statistical '
+    'model models modelling modeling methodology methodologies technique techniques approach approaches '
+    'using use employed applied applications application system systems simulation simulations computing '
+    'scenario scenarios foresight analysis prediction').split())
+NON_EU_EXAMPLES = re.compile(r'\b(morocco|india|china|brazil|mexico|australia|japan|nigeria|kenya|thailand|nepal|pakistan)\b',re.I)
+
+
+def has_subject_anchor(original, newer):
+    # Overlap in a technique (e.g. "machine learning") is not overlap in the issue
+    # (e.g. loan defaults versus weather forecasts).
+    a,b = words(original)-METHOD_WORDS, words(newer)-METHOD_WORDS
+    shared=a & b
+    if a and not shared:
+        return False
+    if re.search(r'\b(europe|european|eu|eurozone)\b',str(original),re.I) and \
+       NON_EU_EXAMPLES.search(str(newer)) and not re.search(r'\b(europe|european|eu|eurozone)\b',str(newer),re.I):
+        return False
+    return True
+
+def related_enough(original, newer):
+    similarity, common = same_subject(original, newer)
+    # For a very short, distinctive title, 2 highly specific shared terms can suffice.
+    short_exception = common >= 2 and similarity >= .68 and max(len(words(original)),len(words(newer))) <= 4
+    return has_subject_anchor(original,newer) and ((common >= 3 and similarity >= .38) or short_exception)
+
+
 def links_for(r):
     year = year_of(r.get('year'))
-    seen = set()
+    seen_urls, seen_titles = set(), set()
     found = []
     for f in list(r.get('followups') or []) + list(r.get('field_developments') or []):
         if not isinstance(f, dict):
             continue
-        url = str(f.get('url', ''))
+        url = str(f.get('url', '')).strip()
         title = str(f.get('title', '')).strip()
         fy = year_of(f.get('year'))
-        if not url.startswith('https://') or not title or url in seen:
+        if not url.startswith('https://') or not title or url in seen_urls:
             continue
         if fy and (fy < year or fy > date.today().year):
             continue
-        seen.add(url)
-        s, shared = same_subject(r.get('title'), title)
-        found.append({**f, '_score': s, '_shared': shared, '_year': fy})
+        seen_urls.add(url)
+        title_id = title_key(title)
+        duplicate = bool(title_id and title_id in seen_titles)
+        seen_titles.add(title_id)
+        same_original = same_work(r.get('title'),title)
+        retracted = marked_invalid(f)
+        score, shared = same_subject(r.get('title'), title)
+        confidence = 'withdrawn' if retracted else ('repeat' if duplicate or same_original else
+                        ('candidate' if related_enough(r.get('title'), title) else 'weak'))
+        found.append({**f, '_score': score, '_shared': shared, '_year': fy,
+                      '_status': confidence, '_independent': confidence == 'candidate'})
     return found
+
+
+def concrete_review(r):
+    now = str(r.get('now', '')).strip()
+    missing = ('No later real-world outcome established', 'No later', 'Not established',
+               'potentially related later publication', 'Not yet', 'Needs an update')
+    sources = [x for x in (r.get('sources') or []) if isinstance(x,dict) and
+               str(x.get('url','')).startswith('https://')]
+    return bool(sources and len(now)>=45 and not any(now.startswith(x) for x in missing))
 
 
 def sort_data(atlas):
@@ -68,64 +136,67 @@ def sort_data(atlas):
         if not isinstance(r, dict) or not r.get('title'):
             continue
         y = year_of(r.get('year'))
-        # Current-year publications cannot be judged as retrospective cases.
         if not (1995 <= y <= today - 3):
             continue
         links = links_for(r)
         rated = r.get('rating') if isinstance(r.get('rating'), dict) else {}
         number = rated.get('value')
         number = number if type(number) is int and 1 <= number <= 100 else None
-        valid = sorted([l for l in links if l['_year'] >= y + 2],
-                       key=lambda x: (x['_score'], min(x['_year'], today), x['_shared']), reverse=True)
-        strongest = valid[0] if valid else None
-        close = [l for l in valid if l['_shared'] >= 3 and l['_score'] >= .34]
-        newest_close = max((l['_year'] for l in close), default=0)
-        recordsources = [e for e in (r.get('sources') or []) if isinstance(e, dict) and str(e.get('url','')).startswith('https://')]
-        item = {'record':r, 'links':links, 'best':strongest, 'recent':newest_close,
-                'rated':number, 'reviewed':bool(recordsources), 'close':len(close)}
-        if (close or recordsources or number is not None):
-            score = (300 if recordsources else 0) + (70 if number is not None else 0)
-            score += (number / 2 if number is not None else 0) + 95 * (strongest['_score'] if strongest else 0)
-            score += 12 * min(len(close), 4) + 35 * max(0, 1 - (today - newest_close) / 12) if newest_close else 0
-            score += 8 if len(str(r.get('then', ''))) > 100 and 'Original title is indexed' not in str(r.get('then')) else 0
+        credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2],
+                          key=lambda x: (x['_score'],x['_year'],x['_shared']), reverse=True)
+        best = credible[0] if credible else None
+        reviewed = concrete_review(r)
+        item = {'record': r, 'links': links, 'best': best, 'recent': max((l['_year'] for l in credible), default=0),
+                'rated': number, 'reviewed': reviewed, 'close':len(credible), 'strength':'reviewed' if reviewed else 'candidate'}
+        if not marked_invalid(r) and (reviewed or credible):
+            score = (220 if reviewed else 0)
+            score += 60 * (best['_score'] if best else 0) + 12 * min(len(credible), 3)
+            score += 24 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
+            score += 8 if FUTURE_RE.search(r['title']) else 0
+            if reviewed and number is not None:
+                score += 0.15 * number
+            # Penalize titles that are actually historical retrospective accounts.
+            if re.search(r'\b(1[789]\d\d|19[0-6]\d)\s*[-–]\s*(?:1[789]\d\d|19[0-6]\d)\b',r['title']):
+                score -= 90
             item['rank'] = score
             good.append(item)
-        # Weak list: evidence trail weak / unreviewed, not a claim of a bad original idea.
-        if number is not None and number <= 40 and recordsources:
-            item['weak_type'] = 'reviewed'
-            item['weak_rank'] = 500 - number
+        if marked_invalid(r):
+            item['weak_type']='withdrawn_original';item['weak_rank']=500
+        elif any(l['_status']=='withdrawn' for l in links) and not credible:
+            item['weak_type']='withdrawn_followup';item['weak_rank']=430
+        elif links and not credible:
+            if any(l['_status']=='repeat' for l in links):
+                item['weak_type']='repeat';item['weak_rank']=360
+            else:
+                item['weak_type']='mismatch';item['weak_rank']=340
         elif not links:
-            item['weak_type'] = 'missing'
-            item['weak_rank'] = 100 + min(today-y,25) + (10 if not r.get('sources') else 0)
-        elif strongest and (strongest['_shared'] < 2 or strongest['_score'] < .16):
-            item['weak_type'] = 'mismatch'
-            item['weak_rank'] = 260 + 100*(.16 - strongest['_score']) + max(0, today - max(l['_year'] for l in links))/4
-        elif close == [] and not recordsources:
-            item['weak_type'] = 'old'
-            item['weak_rank'] = 70 + max(0, today - max((l['_year'] for l in links),default=y))
+            item['weak_type']='missing';item['weak_rank']=120+min(today-y,25)
+        elif number is not None and number <= 40 and reviewed:
+            item['weak_type']='reviewed';item['weak_rank']=260-number
         else:
             continue
-        if not recordsources or item['weak_type'] == 'reviewed':
+        if not reviewed or item['weak_type'] in ('withdrawn_original','reviewed'):
             weak.append(item)
 
-    good.sort(key=lambda x: (x['rank'], x['recent'], x['record']['title']), reverse=True)
-    weak.sort(key=lambda x: (x['weak_rank'], -year_of(x['record'].get('year')), x['record']['title']), reverse=True)
+    good.sort(key=lambda x: (x['rank'],x['recent'],x['record']['title']),reverse=True)
+    weak.sort(key=lambda x: (x['weak_rank'],-year_of(x['record'].get('year')),x['record']['title']),reverse=True)
 
     def diverse(items, exclude=None, number=20):
         exclude = set(exclude or [])
         chosen, per_topic, used_titles = [], Counter(), set()
         for limit in (4, 7, 99):
             for item in items:
-                r = item['record']; key = r.get('id') or r['title']
-                if key in exclude or per_topic[r.get('topic')] >= limit or ' '.join(sorted(words(r.get('title')))) in used_titles:
+                r=item['record']; key=r.get('id') or r['title']; canonical=title_key(r.get('title'))
+                if key in exclude or per_topic[r.get('topic')]>=limit or canonical in used_titles:
                     continue
-                chosen.append(item); exclude.add(key); used_titles.add(' '.join(sorted(words(r.get('title'))))); per_topic[r.get('topic')] += 1
-                if len(chosen) == number: return chosen
+                chosen.append(item);exclude.add(key);used_titles.add(canonical)
+                per_topic[r.get('topic')]+=1
+                if len(chosen)==number:return chosen
         return chosen
 
-    top = diverse(good)
-    bottom = diverse(weak, exclude=[(x['record'].get('id') or x['record']['title']) for x in top])
-    return top, bottom
+    top=diverse(good)
+    bottom=diverse(weak,exclude=[x['record'].get('id') or x['record']['title'] for x in top])
+    return top,bottom
 
 
 def write_shortlist(atlas, target):
@@ -169,8 +240,18 @@ def write_shortlist(atlas, target):
         u=OxmlElement('w:u');u.set(qn('w:val'),'single');pr.append(u)
         rr.append(pr);txt=OxmlElement('w:t');txt.text=text;rr.append(txt);h.append(rr);p._p.append(h)
 
+    # Keep the entire DOCX monochrome, including the built-in Title border.
+    for node in doc.styles.element.xpath('.//w:color'):
+        node.set(qn('w:val'), '000000')
+        for attr in ('themeColor','themeTint','themeShade'):
+            node.attrib.pop(qn('w:' + attr), None)
+    for node in doc.styles.element.xpath('.//w:bottom'):
+        if node.get(qn('w:color')) is not None:
+            node.set(qn('w:color'), '000000')
+            node.attrib.pop(qn('w:themeColor'), None)
+
     doc.add_heading('40 ideas to revisit', 0)
-    p=para('20 strongest research trails  /  20 weakest or possibly outdated trails')
+    p=para(f'{len(top)} strongest research trails  /  {len(bottom)} research trails to recheck (maximum 20 each)')
     p.runs[0].bold=True
     para(f"Based on World Radar's living atlas ({atlas.get('generated_utc', 'latest saved edition')}). "
          f"{atlas.get('summary', {}).get('total',len(atlas.get('records',[]))):,} older and newer research entries available. "
@@ -190,7 +271,7 @@ def write_shortlist(atlas, target):
                 para('A source-linked observation is recorded. Its scope and direct connection to the original study still need checking.',bold_label='WHY HERE  ')
             elif best:
                 para(f"A related study appeared in {best['_year'] or 'an undated year'}: {best['title']}.", bold_label='NOW  ')
-                para(f"There are {item['close']} plausible later study link(s) in this trail, reaching {item['recent'] or 'an undated year'}. The research has moved; the real-world outcome still needs checking.",bold_label='WHY HERE  ')
+                para(f"This trail has {item['close']} distinct candidate later paper(s), reaching {item['recent'] or 'an undated year'}. Titles suggest a topic connection, not an observed outcome. The publications need source review.",bold_label='WHY HERE  ')
             else:
                 para('Original and later source reviews are recorded.',bold_label='WHY HERE  ')
             if item['rated'] is not None:
@@ -199,8 +280,14 @@ def write_shortlist(atlas, target):
             k=item['weak_type']; best=item['best'];
             if k=='reviewed':
                 para(f"An existing editorial assessment rated this case {item['rated']}/100; consult the reasons and sources before calling it a failure.",bold_label='WHY HERE  ')
+            elif k=='withdrawn_original':
+                para('The original record is explicitly marked withdrawn or retracted. Retained for historical transparency, not treated as reliable evidence.',bold_label='WHY HERE  ')
+            elif k=='withdrawn_followup':
+                para('A possible follow-up is marked withdrawn or retracted and cannot support a positive ranking.',bold_label='WHY HERE  ')
+            elif k=='repeat':
+                para('The apparent later evidence closely repeats the original or another linked publication. An independent follow-up has not been established.',bold_label='WHY HERE  ')
             elif k=='mismatch':
-                para(f"A paper was linked ({best['_year'] or '?'}), but its title has little distinctive overlap with the original: {best['title']}.",bold_label='WHY HERE  ')
+                para('The available newer titles do not establish a close subject match. The link could be tangential and needs checking.',bold_label='WHY HERE  ')
             elif k=='missing':
                 para('No later publication is linked in the saved atlas. This may reflect gaps in search coverage.',bold_label='WHY HERE  ')
             else:
@@ -208,15 +295,16 @@ def write_shortlist(atlas, target):
             para('Still relevant, superseded, or simply under-researched? A source-based review is needed.',bold_label='OPEN  ')
         p=doc.add_paragraph();p.paragraph_format.space_after=Pt(8)
         link(p,'Original publication',r.get('original_url',''))
-        if item['best']:
+        later = item['best'] or next((l for l in item['links'] if l['_status'] in ('withdrawn','repeat','weak')),None)
+        if later:
             p.add_run('   ·   ')
-            link(p,'Later publication',item['best']['url'])
+            link(p, 'Later publication (check status)' if later['_status']!='candidate' else 'Later publication', later['url'])
 
-    doc.add_heading(f'The 20 strongest research trails ({len(top)} selected)', 1)
-    para('These are the most useful follow-up connections found in the current index, with topic diversity included. They are not ranked forecasts.')
+    doc.add_heading(f'The strongest research trails ({len(top)} selected; maximum 20)', 1)
+    para('These are the strongest automatically screened later-research trails, not verified successes. Withdrawn, retracted and repeated publications are excluded from positive evidence.')
     for i,item in enumerate(top,1):add_entry(i,item,True)
-    doc.add_heading(f'20 weakest / possibly outdated trails ({len(bottom)} selected)', 1)
-    para('These need better verification, or the current link may be too thin. “Weak evidence” is not the same as “bad foresight.”')
+    doc.add_heading(f'Weakest / possibly outdated trails ({len(bottom)} selected; maximum 20)', 1)
+    para('These are search-quality or publication-status warnings. A missing or poor link does not mean the original idea is obsolete, false or irrelevant.')
     for i,item in enumerate(bottom,1):add_entry(i,item,False)
     doc.add_heading('How this list updates',1)
     para('Each successful Radar 2 run refreshes living-atlas.json. The companion Word workflow then builds this file again '
@@ -238,8 +326,8 @@ def main():
         raise SystemExit('No records found; refusing to publish an empty shortlist.')
     result=write_shortlist(data,a.output)
     print(json.dumps(result))
-    if len(data['records'])>=100 and (result['strongest']<20 or result['weakest']<20):
-        raise SystemExit('Large atlas but incomplete shortlist: check selection criteria.')
+    if result['strongest']<20 or result['weakest']<20:
+        print('NOTICE: Fewer than 20 qualified cases in a category; refusing to pad the ranking with weak links.')
 
 
 if __name__ == '__main__': main()
