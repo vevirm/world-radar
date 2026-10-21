@@ -22,7 +22,7 @@ concurrency:
 jobs:
   outcomes:
     runs-on: ubuntu-latest
-    timeout-minutes: 27
+    timeout-minutes: 33
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,9 +43,9 @@ jobs:
           # Never silently upload an old report from the checkout.
           rm -f stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if [ "${ALLOW_OFFLINE_REPORT}" = "true" ]; then
-            python -u scripts/retrospective_radar.py --provider catalogue --minutes 5 --max-claims 30
+            python -u scripts/retrospective_radar.py --provider catalogue --minutes 25
           else
-            python -u scripts/retrospective_radar.py --provider auto --minutes 18 --max-claims 12
+            python -u scripts/retrospective_radar.py --provider auto --minutes 25
           fi
           python scripts/validate_radar2_report.py
 
@@ -69,8 +69,10 @@ jobs:
               f.write('- **Download:** expand **Artifacts → Radar-2-Word-and-Audit** at the bottom of this Actions run.\n')
               f.write(f'- **Research mode:** {mode}\n')
               f.write(f'- **Research checks:** {attempts}; **failed:** {failures}\n')
+              f.write(f'- **Research time used:** {run.get("research_elapsed_seconds", 0):.0f}s of up to 25 minutes; **stopped because:** {run.get("stop_reason", "unknown")}\n')
               f.write(f'- **New OpenAlex/literature comparisons:** {run.get("literature_comparisons", 0)}\n')
               f.write(f'- **Related studies found in this run:** {run.get("literature_studies_found", 0)}\n')
+              f.write(f'- **Leads with newer thematic field literature:** {run.get("field_context_count_total", 0)} (includes previously indexed sources; not all verified outcomes)\n')
               f.write(f'- **Source-reviewed outcome comparisons:** {reviewed}\n')
               f.write('- Later-study abstracts are **provisional scholarly signals**, not verified historical outcomes or accuracy scores.\n')
           if provider in ('catalogue', 'evidence'):
@@ -93,13 +95,14 @@ jobs:
             outcome-review-queue.json
             outlook-summary.json
             hindsight-stories.json
+            living-atlas.json
             retrospective-results.json
 
       - name: Commit generated report and accumulated research
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add retrospective-results.json hindsight-stories.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          git add retrospective-results.json hindsight-stories.json living-atlas.json outlook-summary.json outcome-observations.json outcome-review-queue.json scanner2-audit.json verified-outcomes.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 2: update evidence and Word report'
             git pull --rebase
