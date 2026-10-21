@@ -44,6 +44,9 @@ FAMILIES = {
     'renewable_energy': r'renewable energy|renewables|wind energy|solar energy|clean energy',
     'carbon_emission': r'carbon emissions?|greenhouse gas emissions?|co2 emissions?|decarboni[sz]ation',
     'climate_change': r'climate change|global warming|changing climate',
+    # Keep the actual research question in view: the reliability/uncertainty
+    # of climate projections, rather than anything mentioning climate.
+    'climate_projection_quality': r'climate (?:change )?projections?|climate model bias(?:es)?|climate model uncertainty|uncertainty (?:in|of|about) (?:large.scale )?climate|climate (?:change )?uncertainty|climate model errors?|climate model evaluation|inter.model spread',
     'flood_risk': r'flood(?:ing)? risk|flood warning|flood hazard|flood resilience',
     'employment': r'labou?r markets?|employment|unemployment|job insecurity',
     'migration': r'migration|immigration|emigration|migrants?',
@@ -82,6 +85,10 @@ EU_STATE = re.compile(r'\b(finnish|german|swedish|dutch|danish|polish|french|ita
 # Geography in the *title* is a focus marker. Mentioning Europe in an
 # unrelated study's references or introductory abstract is not enough.
 OTHER_STATE = re.compile(r'\b(russia|russian|china|chinese|vietnam|vietnamese|india|indian|pakistan|pakistani|brazil|brazilian|mexico|mexican|egypt|egyptian|morocco|moroccan|thailand|thai|indonesia|indonesian|japan|japanese|south korea|korean|australia|australian|nigeria|nigerian|south africa|south african|iran|iranian|turkey|turkish|saudi arabia|united states|usa|american|canada|canadian)\b', re.I)
+# Broader regional titles such as Latin America or California were slipping
+# past country-only exclusions. These are contextual comparisons, not direct
+# follow-up evidence about the European case.
+OTHER_REGION = re.compile(r'\b(latin america|latin american|north america|south america|central america|south asia|south asian|east asia|southeast asia|south.east asia|sub.saharan africa|middle east|california|texas|brazilian amazon|iranian catchment)\b', re.I)
 
 
 def _words(text):
@@ -179,7 +186,7 @@ def geography(claim, title, abstract=''):
     if p['eu']:
         # Explicitly different territory is NOT an update of Europe unless
         # Europe is named in the title as a direct comparison.
-        if (OTHER_STATE.search(title) or re.search(r'\bUS\b',title)) and not REGION.search(title):
+        if (OTHER_STATE.search(title) or OTHER_REGION.search(title) or re.search(r'\bUS\b',title)) and not REGION.search(title):
             return 'outside_scope'
         if REGION.search(title) or EU_STATE.search(title):
             return 'european_focus'
@@ -258,7 +265,10 @@ def evaluate(claim, work, *, discovery='semantic'):
                    'policy','future','economic','economic'}
     diagnostic=original['title_words']-uninformative
     topic_words=(_words(title+' '+abstract) & diagnostic)
-    if not required and diagnostic and not topic_words:
+    # Shared *specific* subject concepts can explain vocabulary changes (e.g.
+    # climate projection uncertainty -> climate model bias) even with no exact
+    # overlapping nouns. Keep the lexical gate for generic subjects.
+    if not required and diagnostic and not topic_words and len(original['title_concepts'] & derived)<2:
         return None
     # Multi-aspect continuity can be apparent in the abstract, not the title.
     title_c=_concepts(title)
@@ -267,6 +277,10 @@ def evaluate(claim, work, *, discovery='semantic'):
     shared_all=original['title_concepts'] & all_c
     words_title=original['title_words'] & _words(title)
     words_all=original['title_words'] & _words(title+' '+abstract)
+    # A study of climate-projection uncertainty is not updated by just any
+    # climate analysis, seasonal rainfall forecast, or hydrology model.
+    if 'climate_projection_quality' in original['title_concepts'] and 'climate_projection_quality' not in all_c:
+        return None
     # Generic method words cannot rescue a different subject.
     strong_subject=(len(shared_all)>=2 and bool(shared_title))
     lexical_subject=(len(words_title)>=2 and len(words_all)>=3)
@@ -440,7 +454,9 @@ def discover(claim,*,budget=None):
         params={'per_page':25,'select':select}
         params['search.semantic' if name=='semantic' else 'search']=query
         filt=_dated_filters(claim)
-        if filt: params['filter']=filt
+        # OpenAlex semantic search rejects from_publication_date (HTTP 400).
+        # Date relevance is enforced by evaluate()/is_later() after retrieval.
+        if filt and name != 'semantic': params['filter']=filt
         works=_request(params,budget)
         routes.append({'route':name,'results':len(works)})
         for w in works:

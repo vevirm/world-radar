@@ -184,6 +184,8 @@ def main():
     selected=cases(leads,min(max(1,a.max_cases), 3 if a.mode=='live' else 30))
     result=build_report(a.mode,selected,leads,budget)
     write_report(result,a.mode)
+    if a.mode=='live' and any(e.get('status') == 'HTTP 400' for e in result['api_errors']):
+        raise SystemExit('PILOT FAILED: OpenAlex rejected at least one search parameter (HTTP 400). Review EVIDENCE-PILOT-LIVE.md; do NOT activate the scanner.')
     if a.mode=='live' and result['raw_openalex_works_returned']==0:
         raise SystemExit('PILOT FAILED: OpenAlex returned zero raw works across all routes. Check API errors in EVIDENCE-PILOT-LIVE.md and Actions log; do NOT activate the scanner.')
     if a.mode=='live' and result['records_with_matches']==0:
