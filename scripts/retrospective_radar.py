@@ -22,9 +22,11 @@ try:
 except ModuleNotFoundError:
     from scripts.forecast_screening import screen
 try:
-    from openalex_comparison import request_works, related, local_catalogue, assess, query_for
+    from openalex_comparison import (request_works, related, local_catalogue, assess, query_for,
+        SavedLiteratureIndex, field_updates, merge_publications)
 except ModuleNotFoundError:
-    from scripts.openalex_comparison import request_works, related, local_catalogue, assess, query_for
+    from scripts.openalex_comparison import (request_works, related, local_catalogue, assess, query_for,
+        SavedLiteratureIndex, field_updates, merge_publications)
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'retrospective-results.json'
@@ -310,8 +312,10 @@ def build_word(entries, run=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--minutes', type=float, default=18)
-    ap.add_argument('--max-claims', type=int, default=515)
+    ap.add_argument('--minutes', type=float, default=25,
+                    help='Maximum wall-clock minutes for research in this run.')
+    ap.add_argument('--max-claims', type=int, default=0,
+                    help='Optional per-run entry limit; 0 (default) means no count cap.')
     ap.add_argument('--offline', action='store_true')
     ap.add_argument('--provider', choices=['auto', 'openalex', 'catalogue', 'free', 'openai', 'evidence'], default='auto')
     args = ap.parse_args()
@@ -336,7 +340,10 @@ def main():
     if args.provider == 'openai' and not args.offline and not key:
         raise SystemExit('OpenAI provider explicitly selected but OPENAI_API_KEY is missing.')
     print(f'Radar 2 start: {len(found)} research leads; provider={args.provider}; OpenAlex API key configured={bool(os.getenv("OPENALEX_API_KEY", "").strip())}', flush=True)
-    deadline = time.monotonic() + max(0, args.minutes) * 60
+    started = time.monotonic()
+    deadline = started + max(0, args.minutes) * 60
+    print(f'Research budget: {args.minutes:g} minutes, ' +
+          ('no entry-count cap' if args.max_claims <= 0 else f'entry-count cap {args.max_claims}'), flush=True)
     worked = 0
     completed = 0
     failed = 0
@@ -345,6 +352,9 @@ def main():
     literature_comparisons = 0
     literature_studies_found = 0
     saved_leads = read_json(ROOT / "research-leads.json", {}).get("leads", [])
+    # Every run makes use of *all already indexed later literature*, rather
+    # than only the 12-45 papers whose live API requests fit this run's clock.
+    saved_index = SavedLiteratureIndex(saved_leads) if args.provider in ('openalex', 'catalogue') else None
     for claim in found:
         if claim['id'] not in entries:
             entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
@@ -357,6 +367,19 @@ def main():
     stored['entries'] = entries
     for claim in found:
         entries[claim['id']].update({k: claim[k] for k in ('screening_status','screening_reason','candidate_excerpt','candidate_year')})
+    # Fill the separate, weaker "newer work on the same field" trail for the
+    # ENTIRE corpus from real saved papers. It is not an observed outcome.
+    catalogue_field_enriched = 0
+    if saved_index is not None:
+        for claim in found:
+            previous = entries[claim['id']]
+            current = previous.get('field_developments') or []
+            new = saved_index.find(claim)
+            merged = merge_publications(current, new, max_items=6)
+            previous['field_developments'] = merged
+            if new and not current:
+                catalogue_field_enriched += 1
+        print(f'Saved-catalogue context: {catalogue_field_enriched} additional leads with newer related field literature.', flush=True)
     # Prioritize real forecast candidates before general EU-related scholarship.
     # Rotate on the number of *literature checks*, not failed OpenAI requests.
     def priority(c):
@@ -375,7 +398,8 @@ def main():
             if groups[host]:
                 queue.append(groups[host].pop(0))
     for claim in queue:
-        if worked >= args.max_claims or time.monotonic() >= deadline - 8:
+        # Time and provider quotas decide throughput; no arbitrary 55-entry stop.
+        if (args.max_claims > 0 and worked >= args.max_claims) or time.monotonic() >= deadline - 8:
             break
         previous = entries[claim['id']]
         try:
@@ -388,21 +412,41 @@ def main():
                     previous['literature_live_attempts'] = int(previous.get('literature_live_attempts') or 0) + 1
                 if args.provider == 'catalogue':
                     studies = local_catalogue(claim, saved_leads)
+                    live_context = []
                     research_mode = 'existing_scanner_catalogue (saved OpenAlex/Crossref records)'
                 else:
-                    query = query_for(claim, previous['literature_live_attempts'] - 1)
+                    search_round = previous['literature_live_attempts'] - 1
+                    query = query_for(claim, search_round)
                     if len(query) < 4:
                         raise ValueError('Not enough substantive terms for a meaningful OpenAlex query')
-                    works = request_works(query, int(claim.get('original_publication','')[:4]) + 1)
+                    since = int(claim.get('original_publication','')[:4])
+                    works = request_works(query, since)
                     studies = related(claim, works)
-                    # These catalogue items supplement the live query, with a
-                    # separate provenance label. They do not make a failed API green.
+                    live_context = field_updates(claim, works)
+                    # A less title-dependent follow-up search, at most one
+                    # extra call when the first search returns almost nothing.
+                    # Failed fallback does not destroy a successful first query.
+                    if len({item["url"] for item in studies + live_context}) < 2 and time.monotonic() < deadline - 40:
+                        alternate = query_for(claim, search_round + 1)
+                        if alternate and alternate != query:
+                            try:
+                                alternate_works = request_works(alternate, since)
+                                studies = merge_publications(studies, related(claim, alternate_works), max_items=6)
+                                live_context = merge_publications(live_context, field_updates(claim, alternate_works), max_items=5)
+                            except (ConnectionError, urllib.error.URLError, ValueError, TimeoutError) as retry_error:
+                                print('Alternative search unavailable:', str(retry_error)[:120], flush=True)
+                    # A saved local paper is labelled differently from a live result.
                     if len(studies) < 2:
-                        seen = {x['url'] for x in studies}
-                        studies.extend(x for x in local_catalogue(claim, saved_leads) if x['url'] not in seen)
-                        studies = studies[:4]
+                        studies = merge_publications(studies, local_catalogue(claim, saved_leads), max_items=6)
                     research_mode = 'openalex_live + saved catalog (when needed)'
-                previous.update(assess(claim, studies, research_mode))
+                # Keep previous successful links instead of resetting them
+                # after an unsuccessful / different query on a later run.
+                studies = merge_publications(previous.get('follow_up_publications'), studies, max_items=8)
+                previous_context = previous.get('field_developments') or []
+                context = merge_publications(previous_context, live_context, max_items=6)
+                new_assessment = assess(claim, studies, research_mode)
+                new_assessment['field_developments'] = context
+                previous.update(new_assessment)
                 previous.pop('last_error', None)
                 previous['bibliography_checked_utc'] = previous['literature_assessed_utc']
                 worked += 1
@@ -422,7 +466,7 @@ def main():
                 if previous.get('literature_assessed_utc'):
                     for k in ('literature_assessed_utc', 'literature_search_mode', 'literature_signal',
                               'what_expected_literature', 'what_happened_literature', 'tentative_assessment',
-                              'comparison_limits', 'eu_attribution', 'follow_up_publications', 'literature_attempts', 'literature_live_attempts', 'tentative_direction', 'topic_cluster'):
+                              'comparison_limits', 'eu_attribution', 'follow_up_publications', 'literature_attempts', 'literature_live_attempts', 'tentative_direction', 'topic_cluster', 'field_developments'):
                         if k in previous:
                             assessed[k] = previous[k]
                 if previous.get('status') in ('realized', 'materializing', 'early_signals', 'contradicted') and assessed['status'] == 'insufficient_evidence':
@@ -446,15 +490,28 @@ def main():
                 throttled = True
                 print('OpenAlex rejected credentials / quota: stopping so future runs can retry.', flush=True)
                 break
-        if worked and worked % 20 == 0:
+        if worked and worked % 10 == 0:
             OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
-            print(f'Progress: {worked}/{min(len(found), args.max_claims)} attempts, {failed} failed', flush=True)
+            target = len(queue) if args.max_claims <= 0 else min(len(queue), args.max_claims)
+            print(f'Progress: {worked}/{target} attempts, {failed} failed; ' +
+                  f'{max(0, int(deadline - time.monotonic()))}s left in research budget', flush=True)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stored, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    time_spent = round(time.monotonic() - started, 1)
+    stop_reason = ('api_quota_or_credentials' if throttled else
+                   'claim_limit' if args.max_claims > 0 and worked >= args.max_claims else
+                   'research_time_budget' if worked < len(queue) else 'all_available_leads_checked')
+    print(f'Research finished: {worked}/{len(queue)} entries attempted in {time_spent:.1f}s; ' +
+          f'reason={stop_reason}. Generating Word and audit now.', flush=True)
     run = {'provider': args.provider, 'attempts': worked, 'failed': failed,
+           'research_budget_minutes': args.minutes,
+           'research_elapsed_seconds': time_spent,
+           'stop_reason': stop_reason,
            'new_evidence_assessments': successful_evidence,
            'literature_comparisons': literature_comparisons,
            'literature_studies_found': literature_studies_found,
+           'catalogue_field_enriched_this_run': catalogue_field_enriched,
+           'field_context_count_total': sum(bool(e.get('field_developments')) for e in entries.values()),
            'note': ('OpenAlex similar-study comparisons; academic abstracts are provisional, not verified outcomes.'
                     if args.provider == 'openalex' else
                     'Compared genuine existing scholarly records offline; no new external request.'
@@ -468,6 +525,7 @@ def main():
         from outcome_verification import assemble
     valid_cases, invalid_cases = assemble([entries[c['id']] for c in found])
     audit = {'research_leads': len(found), 'candidate_forecasts': sum(c.get('screening_status') == 'candidate_needs_validation' for c in found), 'reviewed_verdicts': len(valid_cases), 'invalid_cases': invalid_cases, 'outcome_verification_complete': bool(valid_cases), 'run': run, 'literature_compared_total': sum(bool(e.get('literature_assessed_utc')) for e in entries.values()),
+             'field_development_trails_total': sum(bool(e.get('field_developments')) for e in entries.values()),
              'generated_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
     (ROOT / 'scanner2-audit.json').write_text(json.dumps(audit, indent=2)+'\n', encoding='utf-8')
     print('OUTCOME AUDIT:', json.dumps(audit), flush=True)
