@@ -288,25 +288,35 @@ def clean_evidence(claim, values):
 
 
 def normalize(claim, result):
-    status = result.get('status', 'insufficient_evidence')
-    if status not in STATUS_LABELS or status == 'not_yet_assessed':
-        status = 'insufficient_evidence'
+    """Keep AI-collected claims as draft research, never a verified outcome.
+
+    Web-search-enabled models can return plausible citations without having
+    independently checked the underlying observations or their relation to
+    the historical baseline. The separately reviewed verified-outcomes.json
+    registry is the ONLY publication route for source-verified verdicts.
+    """
+    proposed_status = result.get('status', 'insufficient_evidence')
+    if proposed_status not in STATUS_LABELS or proposed_status == 'not_yet_assessed':
+        proposed_status = 'insufficient_evidence'
     evidence = clean_evidence(claim, result.get('evidence'))
     counter = clean_evidence(claim, result.get('counterevidence'))
-    # No definite conclusion without independently dated supporting evidence.
-    if status in ('realized', 'materializing', 'early_signals', 'contradicted') and not evidence and not counter:
-        status = 'insufficient_evidence'
-    target = claim.get('target_year')
-    if target and int(target) > dt.date.today().year and status == 'realized':
-        # Only allow realization if the research actually demonstrates early completion.
-        if not evidence:
-            status = 'insufficient_evidence'
-    return {**claim, 'what_expected': concise(result.get('what_expected') or claim['expected']),
-            'what_happened': concise(result.get('what_happened') or 'No independently established observations yet.'),
-            'status': status, 'evidence': evidence, 'counterevidence': counter,
-            'reasoning': concise(result.get('reasoning', '')),
-            'watch_next': concise(result.get('watch_next', '')),
-            'checked_utc': dt.datetime.now(dt.timezone.utc).isoformat()}
+    # Keep valuable leads and their cited details, but never let an automatic
+    # assessment become a published claim that a conditional future occurred.
+    draft = {'proposed_status': proposed_status,
+             'what_expected_as_drafted': concise(result.get('what_expected') or claim['expected']),
+             'what_happened_as_drafted': concise(result.get('what_happened')),
+             'reasoning_as_drafted': concise(result.get('reasoning')),
+             'watch_next_as_drafted': concise(result.get('watch_next')),
+             'candidate_evidence': evidence, 'candidate_counterevidence':counter,
+             'source_reviewed': False,
+             'warning': 'Automated research lead only. Check original passage and each later source before an outcome verdict.'}
+    return {**claim,
+            'what_expected':claim['original_passage'],
+            'what_happened':'No independently source-reviewed subsequent outcome established.',
+            'status':'not_yet_assessed', 'evidence':[], 'counterevidence':[],
+            'unverified_assessment_draft':draft,
+            'review_required':True,
+            'checked_utc':dt.datetime.now(dt.timezone.utc).isoformat()}
 
 
 def build_word(entries, run=None):
