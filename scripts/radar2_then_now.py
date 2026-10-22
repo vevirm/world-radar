@@ -24,7 +24,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 2_000_000
 ALLOWED_HOSTS = frozenset({'www.eea.europa.eu', 'www.easa.europa.eu',
-                           'www.austriatech.at', 'austriatech.at', 'eea.europa.eu', 'easa.europa.eu', 'atech-web04.austriatech.at'})
+                           'www.austriatech.at', 'austriatech.at', 'eea.europa.eu', 'easa.europa.eu', })
 
 # Small, explicit, source-VERIFIED connector catalogue: the pilot selects its
 # ORIGINALS automatically from Radar 1. It then follows two known official
@@ -61,11 +61,12 @@ ROUTES = (
       'question':'Was automated mobility actually trialled or deployed in Austria, and is there evidence of the predicted shift in private traffic and transport modes?',
       'source_gate':(r'\b(?:automatisier\w*|automated|autonomous|testfahrten|testantr.ge)\b',r'\b(?:mobilit.t|mobility|fahrzeug\w*|vehicles|test\w*|shuttle|verkehr\w*)\b'),
       'observed_gate':r'\b(?:2024|2025|2026|testfahrten|testantr.ge|testfahrten|testbetrieb|trial|tested)\b',
+      'observed_detail_gate':r'\b(?:testantr.ge|testfahrten|testbetrieb|begleitet|eingesetzt|getestet|stattgefunden|trialled|trials|tested)\b',
       'scope':'Austrian automated-vehicle trials establish technological activity, NOT nationwide increases in car travel or displacement of walking, cycling or transit. Those modal outcomes and the original policy conditions require separate post-deployment measurements.',
       'relation':'implementation_observed_central_traffic_effect_unestablished',
       'sources':(
          ('AustriaTech automated mobility monitoring 2025','2026-03-05','https://www.austriatech.at/de/monitoringbericht-2025-automatisierte-mobilitaet-in-oesterreich/'),
-         ('AustriaTech automated mobility monitoring 2024','2025-03-14','https://atech-web04.austriatech.at/de/automatisierte-mobilitaet-in-oesterreich-monitoringbericht-2024/'),
+         ('AustriaTech automated mobility monitoring 2024','2025-03-14','https://www.austriatech.at/de/automatisierte-mobilitaet-in-oesterreich-monitoringbericht-2024/'),
       )},
 )
 
@@ -128,6 +129,16 @@ def matching_excerpt(page, route):
         if not 75 <= len(para) <= 1350:continue
         if not all(re.search(g,para,re.I) for g in route['source_gate']):continue
         if not re.search(route['observed_gate'],para,re.I):continue
+        # Some official pages mix past observations with future targets or navigation.
+        # A target, or a heading offering a download, is not an observed result.
+        if re.search(r'\b(?:mandatory (?:minimum )?target|target for|download des monitoringberichts)\b',para,re.I) and not re.search(
+                r'\b(?:reported|recorded|achieved|exceeded|was SAF|were SAF|testantr.ge|testfahrten|stattgefunden)\b',para,re.I):
+            continue
+        if route.get('observed_detail_gate') and not re.search(route['observed_detail_gate'],para,re.I):
+            continue
+        if route['id']=='eu_renewable_jet_fuel' and not re.search(
+                r'\b(?:reported|recorded|was SAF|were SAF|supplied|purchased|achieved|exceeded)\b',para,re.I):
+            continue
         # Do not turn a future-only paragraph into an observed development.
         if re.search(r'\b(?:might|could|would|will|projected|forecast|expected to)\b',para,re.I) and not re.search(
                 r'\b(?:reported|recorded|observed|measured|account(?:ed|s)? for|increased|decreased|supplied|were supplied|was supplied|stattgefunden|begleitet|tested|testfahrten|showed)\b',para,re.I):
@@ -138,7 +149,12 @@ def matching_excerpt(page, route):
         candidates.append((int(numeric)*2+int(direct),para))
     if not candidates:return None
     candidates.sort(key=lambda x:(-x[0],len(x[1])))
-    return candidates[0][1][:850]
+    selected=candidates[0][1]
+    if len(selected)>850:
+        # Preserve complete sentences, instead of ending the attributed quote mid-word.
+        breaks=[m.end() for m in re.finditer(r'[.!?](?=\s|$)',selected[:850])]
+        selected=selected[:breaks[-1]] if breaks and breaks[-1]>=120 else selected[:850].rsplit(' ',1)[0]+'…'
+    return selected
 
 
 def route_for(original):
@@ -194,6 +210,7 @@ def investigate(originals, *, reader=read_page):
             'what_was_anticipated_original_quote':original['original_passage'][:1600],
             'question_followed':route['question'],
             'later_sources':later,'sources_not_usable':failed,
+            'publisher_count':len({urlsplit(x['url']).hostname for x in later}),
             'relationship_status':state,
             'what_we_can_say':(
                 {'europe_flood_damage':'The later evidence documents European economic losses from climate hazards, including flooding; it informs the trajectory but does not yet measure the exact projected flood-only 2050 annual damages.',
@@ -208,6 +225,7 @@ def investigate(originals, *, reader=read_page):
             'originals_investigated':len(cases),
             'cases_with_two_sources':sum(len(c['later_sources'])>=2 for c in cases),
             'sources_read':sum(len(c['later_sources']) for c in cases),
+            'source_independence_note':'Two linked publisher pages do not constitute independent confirmation; related reports may reuse the same observations.',
             'verified_outcomes':0, 'publish':False,
             'limitations':'Bounded official-source connector pilot for three issue families; no claim that all subjects have automatic evidence coverage, no equivalence unless independently established, no public findings.',
             'cases':cases}
@@ -218,7 +236,8 @@ def markdown(report):
            '**Machine research draft. No confirmed forecasts or website publication.**', '',
            f'Accepted originals investigated: **{report["originals_investigated"]}**; '
            f'official source passages retrieved: **{report["sources_read"]}**; '
-           f'cases with two: **{report["cases_with_two_sources"]}**.', '']
+           f'cases with two: **{report["cases_with_two_sources"]}**.',
+           'Two pages from one publisher are **not** independent corroboration.', '']
     for idx,c in enumerate(report['cases'],1):
         lines += [f'## {idx}. {c["original_title"]}', '',
                   f'**Then ({c["original_date"]}):** {c["what_was_anticipated_original_quote"]}', '',
