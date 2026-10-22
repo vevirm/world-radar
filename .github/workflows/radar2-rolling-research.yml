@@ -12,6 +12,8 @@ on:
           - search
           - broad_inspect
           - broad_search
+          - deep_search
+          - deep_25min
         default: inspect
       batch_size:
         description: 'Number of distinct accepted original claims this run'
@@ -28,7 +30,7 @@ concurrency:
 jobs:
   draft_research:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,8 +41,14 @@ jobs:
       - name: Test queue selection before any research
         run: |
           python -m pip install -q pytest
-          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py
+          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py tests/test_radar2_deep_search.py tests/test_radar2_25min.py
+      - name: 25-minute source research (four claims, no 50-source cap)
+        if: ${{ inputs.mode == 'deep_25min' }}
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/radar2_25min.py --minutes 25 --batch-size 4
       - name: Inspect or search new original questions
+        if: ${{ inputs.mode != 'deep_25min' }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/radar2_rolling.py --mode "${{ inputs.mode }}" --batch-size "${{ inputs.batch_size }}"
@@ -50,6 +58,8 @@ jobs:
         with:
           name: Radar-2-Rolling-Research
           path: |
+            RADAR2-25MIN-RESEARCH.json
+            RADAR2-25MIN-RESEARCH.md
             RADAR2-ROLLING-RESEARCH.json
             RADAR2-ROLLING-RESEARCH.md
             radar2-rolling-state.json
