@@ -8,15 +8,16 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 import radar2_comparisons as subject
+from radar2_scope import original_claims
 import radar2_live_draft as live
 
 
 def test_all_comparisons_have_accepted_originals_and_observed_evidence():
     data=subject.build(ROOT)
-    assert data['total_accepted_originals']==398
+    assert data['total_accepted_originals']==len(original_claims(ROOT))
     curated=json.loads((ROOT/'radar2-curated-evidence-pilot.json').read_text())
     assert len(data['comparisons'])==len(curated['cases'])
-    assert data['unassessed_originals']==398-len(curated['cases'])-len(curated.get('unresolved_cases', []))
+    assert data['unassessed_originals']==data['total_accepted_originals']-len(curated['cases'])-len(curated.get('unresolved_cases', []))
     for c in data['comparisons']:
         assert len(c['original_excerpt']) >= 85
         assert c['historical_year'] < min(s['year'] for s in c['subsequent_evidence'])

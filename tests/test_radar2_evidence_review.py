@@ -22,7 +22,14 @@ def accepted():
 
 def test_workflow_does_not_make_public_verdicts():
     result=audit(ROOT,ROOT/'radar2-curated-evidence-pilot.json')
-    assert result['accepted_originals']==398
+    # Read the living Radar 1 admission manifest: a subsequent successful scan
+    # may add eligible originals without changing Radar 2's safety contract.
+    current = original_claims(ROOT)
+    active = json.loads((ROOT/'radar1-active.json').read_text(encoding='utf-8'))
+    academic = [c for c in current if c['source_kind'] == 'academic']
+    assert len(academic) == active['original_records'] == len(active['studies'])
+    assert result['accepted_originals'] == len(current)
+    assert set(c['id'] for c in current) == set(accepted())
     assert result['reviewed_pilot_cases']==len(examples())
     assert not result['publication_allowed']
     assert result['structurally_usable_drafts'] == sum(c['status'].startswith('draft_') for c in result['cases'])

@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from scripts.radar2_questions import question_card, audit
+from scripts.radar2_scope import original_claims
 from scripts.evidence_engine import original_question_alignment
 from scripts.evidence_pilot import claim_from
 
@@ -74,7 +75,11 @@ def test_full_repo_preview_is_pure_and_follows_accepted_handoff(tmp_path):
     root=Path(__file__).resolve().parents[1]
     before=(root/'retrospective-results.json').read_bytes()
     report=audit(root)
-    assert report['academic']==369 and report['institutional']==29
-    assert len(report['cards'])==398
-    assert report['readiness_counts']['original_text_required']==29
+    current = original_claims(root)
+    manifest = json.loads((root/'radar1-active.json').read_text(encoding='utf-8'))
+    assert report['academic'] == manifest['original_records']
+    assert report['institutional'] == sum(x['source_kind']=='institutional' for x in current)
+    assert len(report['cards']) == len(current)
+    assert report['readiness_counts']['original_text_required'] == sum(
+        not x['original_passage'] for x in current)
     assert before==(root/'retrospective-results.json').read_bytes()

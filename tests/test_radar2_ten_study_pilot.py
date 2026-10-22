@@ -35,6 +35,17 @@ def test_selects_ten_distinct_accepted_across_subjects_not_prior_comparisons():
         select_ten(ROOT,11)
 
 
+def test_explicit_study_geography_beats_origin_of_a_named_model():
+    claim={'title':'Application of the UK Foresight Obesity Model in Ireland: future health costs',
+           'historical_focus':('We project obesity-related health costs in Ireland could increase '
+                               'through 2030 under the baseline scenario. Population health and '
+                               'healthcare expenditure change significantly under the scenarios.')}
+    queries=discovery_queries(claim)
+    assert queries
+    assert all(q.endswith(' Ireland') for q in queries)
+    assert all(not q.endswith(' UK') for q in queries)
+
+
 def test_focus_chooses_original_substantive_scenario_not_later_policy_background():
     passage=('We estimate that flooding damages could rise to 20 billion euros by 2050 under the reference scenario. '
              'The European Union released an updated policy in 2030.')
