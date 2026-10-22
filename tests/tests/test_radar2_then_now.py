@@ -119,3 +119,29 @@ def test_sources_always_later_and_official():
 def test_no_manual_report_data_writes():
     m.choose_originals(ROOT)
     assert m.ROOT==ROOT
+
+
+def test_aviation_policy_target_does_not_count_as_observed_change():
+    r=next(r for r in m.ROUTES if r['id']=='eu_renewable_jet_fuel')
+    source={'paragraphs':['For 2025, there is a mandatory target for 2% of the total aviation fuel supplied at designated Union airports to be SAF.']}
+    assert m.matching_excerpt(source,r) is None
+    real={'paragraphs':['The 2024 baseline revealed that aviation fuel suppliers reported that 0.6% of all aviation fuel supplied at Union airports was SAF, equivalent to 193 kilotonnes.']}
+    assert m.matching_excerpt(real,r) is not None
+
+
+def test_austrian_download_heading_not_observation():
+    r=next(r for r in m.ROUTES if r['id']=='austria_automated_mobility')
+    assert m.matching_excerpt({'paragraphs':['Download des Monitoringberichts 2025 - Automatisierte Mobilität in Österreich']},r) is None
+    actual={'paragraphs':['Die Kontaktstelle Automatisierte Mobilität hat 2024 die Einreichung von zehn Testanträgen begleitet und zahlreiche Beratungen durchgeführt.']}
+    assert m.matching_excerpt(actual,r) is not None
+    assert 'atech-web04' not in r['sources'][1][2]
+
+
+def test_excerpt_never_ends_mid_sentence_when_possible():
+    r=next(r for r in m.ROUTES if r['id']=='eu_renewable_jet_fuel')
+    first='In 2024 fuel suppliers reported that 193 kilotonnes of SAF was supplied at Union airports.'
+    text=first+' In addition, '+('European aviation fuel supplies increased by 13 percent in 2025, as was reported. '*14)
+    result=m.matching_excerpt({'paragraphs':[text[:1300]]},r)
+    assert result is not None
+    assert result.endswith('.') or result.endswith('…')
+    assert len(result)<=850
