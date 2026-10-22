@@ -1,0 +1,112 @@
+name: Radar 2 - accepted originals and old evidence cleanup (NO SCAN)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        type: choice
+        description: 'Preview first. Apply only after reviewing counts and the report artifact.'
+        options: [preview, apply]
+        default: preview
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-shared-single-runner
+  cancel-in-progress: false
+
+jobs:
+  handoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify scope gate and no-scan tests
+        run: |
+          python -m py_compile scripts/radar2_scope.py scripts/retrospective_radar.py scripts/living_atlas.py
+          python -m unittest discover -s tests -p 'test_radar2_scope.py' -v
+      - name: Preview originals and legacy evidence handling (NO API; NO CHANGES)
+        run: python scripts/radar2_scope.py --report radar2-scope-preview.json
+      - name: Show readable preview
+        env:
+          RUN_MODE: ${{ inputs.run_mode }}
+        run: |
+          python - <<'PYCODE'
+          from pathlib import Path
+          import json,os
+          x=json.loads(Path('radar2-scope-preview.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## Radar 2: original-source handoff (NO SCAN)\n\n')
+              f.write(f'**Mode:** {os.environ["RUN_MODE"]}\n\n')
+              for name in ('accepted_academic_originals','curated_institutional_originals',
+                           'institutional_needing_original_passage','research_ready_originals',
+                           'saved_legacy_entries','legacy_entries_outside_current_radar1',
+                           'matched_legacy_entries','matching_originals_with_old_links_held_for_review',
+                           'live_entries_after_apply'):
+                  f.write(f'- **{name.replace("_"," ").capitalize()}:** {x[name]}\n')
+              f.write('\nPreview makes no changes. Apply backs up all older findings first and saves links to a separate holding file. No external scan.\n')
+          PYCODE
+      - name: Downloadable preview report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Handoff-Preview
+          path: radar2-scope-preview.json
+          retention-days: 90
+      - name: Back up all prior Radar 2 research and outputs BEFORE apply
+        if: ${{ inputs.run_mode == 'apply' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-BEFORE-HANDOFF-${{ github.run_id }}
+          if-no-files-found: error
+          retention-days: 90
+          path: |
+            retrospective-results.json
+            living-atlas.json
+            hindsight-stories.json
+            outcome-review-queue.json
+            scanner2-audit.json
+            stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+            evidence-quarantine.json
+      - name: Apply accepted originals and rebuild public outputs (NO SCAN)
+        if: ${{ inputs.run_mode == 'apply' }}
+        run: |
+          pip install -r requirements.txt
+          python scripts/radar2_scope.py --apply --report radar2-scope-preview.json
+          python scripts/retrospective_radar.py --provider evidence --offline --minutes 0
+          python - <<'PYCODE'
+          from pathlib import Path
+          import json
+          from scripts.living_atlas import write_atlas
+          from scripts.storybook import write_word
+          from scripts.radar2_scope import original_claims
+          data=json.loads(Path('retrospective-results.json').read_text())['entries']
+          accepted=original_claims(Path('.'))
+          assert set(data)=={x['id'] for x in accepted}
+          assert not any(x.get('direction_evidence') or x.get('follow_up_publications') or x.get('field_developments') for x in data.values())
+          atlas=write_atlas(list(data.values()))
+          assert len(atlas['records'])==len(accepted)
+          assert not {r['original_url'] for r in atlas['records']} - {x['source_url'] for x in accepted}
+          stories=json.loads(Path('hindsight-stories.json').read_text())
+          report=Path('stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx')
+          write_word(stories, report)
+          print('NO SCAN rebuilt',len(data),'accepted research originals and report',report)
+          PYCODE
+          python scripts/validate_radar2_report.py
+      - name: Commit only after apply
+        if: ${{ inputs.run_mode == 'apply' }}
+        run: |
+          git config user.name 'world-radar-bot'
+          git config user.email 'world-radar-bot@users.noreply.github.com'
+          git add retrospective-results.json radar2-scope-ready.json radar2-original-text-queue.json radar2-legacy-holding.json radar2-scope-preview.json living-atlas.json hindsight-stories.json outcome-review-queue.json scanner2-audit.json outlook-summary.json stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx
+          if ! git diff --cached --quiet; then
+            git commit -m 'Radar 2: use only accepted Radar 1 originals and hold legacy links for review'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
