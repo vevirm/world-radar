@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Preflight EU-first historical selection before expensive scanning
         run: |
-          python -m py_compile scripts/radar.py scripts/radar1_admission.py scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
+          python -m py_compile scripts/radar.py scripts/radar1_admission.py scripts/radar1_traceability.py scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
           python scripts/radar1_scope_audit.py --report /tmp/radar1-preflight.json
           python - <<'PY'
           import json
@@ -83,6 +83,7 @@ jobs:
           original=json.load(open('research-leads.json'))['leads']
           assert a['original_records'] == len(original)
           assert all(x['date'] <= '2023-12-31' for x in a['studies'] if x['selection']=='active')
+          assert all(x.get('radar2_seed',{}).get('original_passage') for x in original)
           print('Radar 1 active historical selection checked:', a['selection_counts'])
           PY
       - name: Validate JSON and age limits

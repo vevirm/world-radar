@@ -33,7 +33,7 @@ jobs:
         run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'xlsxwriter>=3,<4'
       - name: Validate code and scope decisions (NO SCAN)
         run: |
-          python -m py_compile scripts/radar1_admission.py scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
+          python -m py_compile scripts/radar1_admission.py scripts/radar1_traceability.py scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
           python -m unittest discover -s tests -p 'test_radar1_admission.py' -v
       - name: Compute substantive relevance preview (NO SCAN; no removal)
         run: python scripts/radar1_scope_audit.py --report radar1-scope-report.json
@@ -50,6 +50,7 @@ jobs:
               f.write(f'**Saved academic originals checked:** {x["original_studies"]}\n\n')
               f.write(f'**Would retain:** {x["retained_in_main_file"]}\n\n')
               f.write(f'**Would remove:** {x["removed_from_main_file"]}\n\n')
+              f.write('**Admission requirement:** each retained academic original must contain source text about a future development, scenario or question for a later evidence check.\n\n')
               f.write('The preview does not modify the published research collection.\n\n')
               f.write('### Reason for proposed exclusion\n')
               for k,n in sorted(x['removed_by_reason'].items(), key=lambda kv:-kv[1]):
@@ -91,6 +92,7 @@ jobs:
           assert all('2011-01-01'<=x['date']<='2023-12-31' for x in leads)
           assert not {x['doi'] for x in leads}&set(rejected)
           assert all(x.get('radar1_selection')=='active' for x in leads)
+          assert all(x.get('radar2_seed',{}).get('original_passage') for x in leads)
           assert all(x['doi'] not in rejected for x in json.load(open('priority-50.json'))['items'] if x.get('doi'))
           print('Applied scope cleanup to the actual saved database and rebuilt priorities/Excel.')
           PY
