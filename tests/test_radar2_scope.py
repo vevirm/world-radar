@@ -91,6 +91,39 @@ class Radar2ScopeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'rejected'):
             original_claims(self.root)
 
+    def test_reviewed_institutional_passage_enters_future_scanner_runs(self):
+        passage = 'The European Union could be affected by several long-term energy transitions, requiring action to avoid dependence on external critical materials.'
+        self.write('institutional-original-passages.json', {'schema_version': 1, 'passages': [
+            {'source_url':'https://example.eu/report', 'original_publication':'2021-07-01',
+             'original_passage':passage, 'review_status':'checked_against_original_source',
+             'reviewed_on':'2026-10-22'}]})
+        report = next(x for x in original_claims(self.root) if x['source_url']=='https://example.eu/report')
+        self.assertTrue(report['investigation_ready'])
+        self.assertEqual(passage, report['original_passage'])
+        self.assertEqual('checked_against_original_source',report['original_review_status'])
+        summary = reconcile(self.root)
+        self.assertEqual(1,summary['institutional_needing_original_passage'])
+        self.assertEqual(2,summary['research_ready_originals'])
+        self.assertEqual(passage, next(x for x in original_claims(self.root) if x['source_url']=='https://example.eu/report')['original_passage'])
+
+    def test_institutional_passage_date_or_source_mismatch_fails_closed(self):
+        item = {'source_url':'https://example.eu/report','original_publication':'2020-07-01',
+                'original_passage':'The European Union must address future dependencies for critical materials and avoid new external dependency traps.',
+                'review_status':'checked_against_original_source','reviewed_on':'2026-10-22'}
+        self.write('institutional-original-passages.json',{'schema_version':1,'passages':[item]})
+        with self.assertRaisesRegex(ValueError,'publication date mismatch'):
+            original_claims(self.root)
+        item['original_publication']='2021-07-01'
+        item['review_status']='unverified_title_only'
+        self.write('institutional-original-passages.json',{'schema_version':1,'passages':[item]})
+        with self.assertRaisesRegex(ValueError,'unreviewed institutional'):
+            original_claims(self.root)
+        item['review_status']='checked_against_original_source'
+        item['source_url']='https://example.eu/unaccepted'
+        self.write('institutional-original-passages.json',{'schema_version':1,'passages':[item]})
+        with self.assertRaisesRegex(ValueError,'lacks an accepted source record'):
+            original_claims(self.root)
+
     def test_never_admit_2024_as_historical_original(self):
         leads=load(self.root/'research-leads.json')
         leads['leads'][0]['date']='2024-05-03'

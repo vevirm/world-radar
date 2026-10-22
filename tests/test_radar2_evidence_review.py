@@ -34,7 +34,11 @@ def test_workflow_does_not_make_public_verdicts():
     assert not result['publication_allowed']
     assert result['structurally_usable_drafts'] == sum(c['status'].startswith('draft_') for c in result['cases'])
     assert result['blocked'] == sum(c['status'].startswith('blocked_') for c in result['cases'])
-    assert any(c['original_id']=='report-3eff29ec207eb208' and c['status'].startswith('blocked_') for c in result['cases'])
+    institutional = next(c for c in result['cases'] if c['original_id']=='report-3eff29ec207eb208')
+    assert institutional['status'] == 'draft_has_structurally_usable_observations'
+    assert not institutional['blockers']
+    assert len(institutional['evidence']) == 3
+    assert all(e['shared_issue_terms'] for e in institutional['evidence'])
     assert all(x['publication_approval'].startswith('NOT APPROVED') for x in result['cases'])
     assert all(not y['source_checked_independently'] for x in result['cases'] for y in x['evidence'])
 
@@ -80,3 +84,11 @@ def test_automatic_assessment_is_never_promoted_to_verified_status():
     assert result['review_required']
     assert result['unverified_assessment_draft']['proposed_status']=='realized'
     assert not result['unverified_assessment_draft']['source_reviewed']
+
+
+def test_duplicate_evidence_source_is_still_blocked():
+    case = deepcopy(next(c for c in examples() if c['original_id']=='report-3eff29ec207eb208'))
+    case['findings'].append(deepcopy(case['findings'][0]))
+    result = audit_case(case, accepted())
+    assert result['status'] == 'blocked_for_original_or_evidence_review'
+    assert any('Duplicate evidence source' in x for e in result['evidence'] for x in e['structural_errors'])
