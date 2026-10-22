@@ -434,6 +434,134 @@
       "review_priority": 21
     },
     {
+      "title": "How photovoltaics can contribute to GHG emission reductions of 55% in the EU by 2030",
+      "date": "2020-03-31",
+      "publisher": "Elsevier BV",
+      "topic": "Climate and environment",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1016/j.rser.2020.109836",
+      "doi": "10.1016/j.rser.2020.109836",
+      "abstract": "The new European Commission plans to raise the greenhouse gas (GHG) emissions reduction target from 40% towards 55% by 2030 and make Europe the first climate-neutral continent by 2050. Achieving this will require accelerated energy efficiency measures, deeper electrification of sectors currently consuming conventional fuels and the deployment of more renewables, faster. This opinion article looks specifically at the role of photovoltaics (PV), based on scenarios from the Commission's 2018 long-term strategy (LTS) for energy and climate. To reach a 55% GHG emissions reduction, the cumulative PV capacity in the EU and the UK would need to surge to 455–605 GW, depending on the strategic policy scenario. This implies a compound annual growth rate between 12 and 15% in the timeframe 2020–203 to increase the annual PV market from approximately 16.5 GW in 2019 to 50–80 GW by 2030. Such a volume can provide the basis for reviving the European solar manufacturing industry as well as creating more than 100 000 jobs along the value chain.",
+      "journal": "Renewable and Sustainable Energy Reviews",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "To reach a 55% GHG emissions reduction, the cumulative PV capacity in the EU and the UK would need to surge to 455–605 GW, depending on the strategic policy scenario. This opinion article looks specifically at the role of photovoltaics (PV), based on scenarios from the Commission's 2018 long-term strategy (LTS) for energy and climate.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 141,
+      "age_band": "preferred · 5–10 years",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 22
+    },
+    {
+      "title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
+      "date": "2020-02-19",
+      "publisher": "Elsevier BV",
+      "topic": "Climate and environment",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1016/j.enpol.2019.111224",
+      "doi": "10.1016/j.enpol.2019.111224",
+      "abstract": "To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050. The investigation focusses on measures improving tank to wheel vehicle efficiency, but takes into account upstream emissions of electric vehicles. Measures for vehicle efficiency improvement, transport smoothing, and transport reduction, as well as possible 2050 road vehicle fleet compositions have been quantified through expert group discussion and combined with fleet impact modelling to calculate scenario results. Outcomes show that tank to wheel road transport CO2 emission reductions up to 90% versus 1990 could be reached by 2050 through strong fleet electrification and if all measures achieve their best potential. Under ambitious fleet electrification scenarios, CO2 reduction of more than 60% is reached without measures, but causes substantial additional demand for low-carbon electricity, the availability of which is not covered in this paper. It is likely that policies will be a prerequisite for fleet electrification and efficiency increases of the order of magnitude assumed. Moreover, upstream CO2 emissions of electricity for battery and plug-in hybrid electric vehicles could add up to 40% of tank to wheel emissions, suggesting that complementary policies are needed to avoid shifting transport emissions to other sectors.",
+      "journal": "Energy Policy",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Outcomes show that tank to wheel road transport CO2 emission reductions up to 90% versus 1990 could be reached by 2050 through strong fleet electrification and if all measures achieve their best potential. To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 141,
+      "age_band": "preferred · 5–10 years",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 23
+    },
+    {
+      "title": "The European Solar Communication—Will It Pave the Road to Achieve 1 TW of Photovoltaic System Capacity in the European Union by 2030?",
+      "date": "2023-04-12",
+      "publisher": "MDPI AG",
+      "topic": "Technology",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.3390/su15086531",
+      "doi": "10.3390/su15086531",
+      "abstract": "The urgency of a clean energy transition in the European Union is now not only driven by concerns about climate change, but also by using local renewable energy resources to reduce the dependency on foreign energy imports. Solar photovoltaic electricity generation is acknowledged as one of the pillars of this transition and various policy measures were implemented over the last two years to not only accelerate the deployment of solar photovoltaic electricity generation systems, but also to rebuild a competitive solar value chain in Europe to hedge against solar photovoltaic component supply chain disruptions. However, the current political ambitions still do not pay sufficient attention to the importance of solar photovoltaics as a major contributor to the necessary future renewable energy supply. According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030. At the moment, only seven member states have an installed capacity per capita higher than the average EU value.",
+      "journal": "Sustainability",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 139,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 24
+    },
+    {
+      "title": "Towards a decarbonised building stock by 2050: The meaning and the role of zero emission buildings (ZEBs) in Europe",
+      "date": "2022-11-01",
+      "publisher": "Elsevier BV",
+      "topic": "Climate and environment",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1016/j.esr.2022.101009",
+      "doi": "10.1016/j.esr.2022.101009",
+      "abstract": "The building sector plays a key role in the reduction of greenhouse gas (GHG) emissions in the European Union (EU). The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050. This paper offers an overview of the recent policy developments and examines the introduced provisions on new and existing buildings. While nearly zero energy buildings (NZEBs) remains the current building standard since 2011 for new buildings, zero emission buildings (ZEBs) are set as the future building target as of 2030. Accordingly, this paper provides insights into ZEBs, clarifying how and when this concept brought out. In particular, it discusses the key methodological aspects that ZEBs should address, outlining the decisive role of energy efficiency and renewable energy. This paper provides the main features of a pragmatic ZEB definition which should be distinguished from other building concepts. It suggests an approach to ZEBs calculations of grouping energy uses and associated emissions, as well as the steps to derive numerical benchmarks for operational energy. Furthermore, it examines the link with other policies as well as the market readiness for zero carbon buildings. The study points out how ZEBs are a crucial component of the EU strategy towards climate neutrality, able to trigger additional benefits, such as resilience, recyclability, security, and health. Within that framework, the ZEB concept must be promptly transposed, avoiding the downturn that characterized the initial NZEBs implementation. Giving the essential elements to move from a theoretical to an empirical ZEB level, this paper highlights how binding requirements based on a holistic approach are urgently needed in order to tackle GHG emissions in the building sector and move rapidly towards a climate neutral continent.",
+      "journal": "Energy Strategy Reviews",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 139,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 25
+    },
+    {
       "title": "Scenario planning: An alternative approach to European Commission for combating antimicrobial resistance by 2050",
       "date": "2021-04-06",
       "publisher": "South Eastern European Journal of Public Health",
@@ -463,7 +591,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 22
+      "review_priority": 26
     },
     {
       "title": "CROATIAN RURAL FUTURES IN 2030: FOUR ALTERNATIVE SCENARIOS FOR POSTSOCIALIST COUNTRYSIDE IN THE NEWEST E.U. MEMBER STATE",
@@ -495,7 +623,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 23
+      "review_priority": 27
     },
     {
       "title": "Scenarios for population health inequalities in 2030 in Europe",
@@ -527,7 +655,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 24
+      "review_priority": 28
     },
     {
       "title": "How to Achieve a Healthier and More Sustainable Europe by 2040 According to the Public? Results of a Five-Country Questionnaire Survey",
@@ -559,71 +687,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 25
-    },
-    {
-      "title": "How photovoltaics can contribute to GHG emission reductions of 55% in the EU by 2030",
-      "date": "2020-03-31",
-      "publisher": "Elsevier BV",
-      "topic": "Climate and environment",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1016/j.rser.2020.109836",
-      "doi": "10.1016/j.rser.2020.109836",
-      "abstract": "The new European Commission plans to raise the greenhouse gas (GHG) emissions reduction target from 40% towards 55% by 2030 and make Europe the first climate-neutral continent by 2050. Achieving this will require accelerated energy efficiency measures, deeper electrification of sectors currently consuming conventional fuels and the deployment of more renewables, faster. This opinion article looks specifically at the role of photovoltaics (PV), based on scenarios from the Commission's 2018 long-term strategy (LTS) for energy and climate. To reach a 55% GHG emissions reduction, the cumulative PV capacity in the EU and the UK would need to surge to 455–605 GW, depending on the strategic policy scenario. This implies a compound annual growth rate between 12 and 15% in the timeframe 2020–203 to increase the annual PV market from approximately 16.5 GW in 2019 to 50–80 GW by 2030. Such a volume can provide the basis for reviving the European solar manufacturing industry as well as creating more than 100 000 jobs along the value chain.",
-      "journal": "Renewable and Sustainable Energy Reviews",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "To reach a 55% GHG emissions reduction, the cumulative PV capacity in the EU and the UK would need to surge to 455–605 GW, depending on the strategic policy scenario. This opinion article looks specifically at the role of photovoltaics (PV), based on scenarios from the Commission's 2018 long-term strategy (LTS) for energy and climate.",
-        "anticipated_horizons": [
-          2030
-        ],
-        "investigation_type": "alternative_scenarios",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 137,
-      "age_band": "preferred · 5–10 years",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 26
-    },
-    {
-      "title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
-      "date": "2020-02-19",
-      "publisher": "Elsevier BV",
-      "topic": "Climate and environment",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1016/j.enpol.2019.111224",
-      "doi": "10.1016/j.enpol.2019.111224",
-      "abstract": "To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050. The investigation focusses on measures improving tank to wheel vehicle efficiency, but takes into account upstream emissions of electric vehicles. Measures for vehicle efficiency improvement, transport smoothing, and transport reduction, as well as possible 2050 road vehicle fleet compositions have been quantified through expert group discussion and combined with fleet impact modelling to calculate scenario results. Outcomes show that tank to wheel road transport CO2 emission reductions up to 90% versus 1990 could be reached by 2050 through strong fleet electrification and if all measures achieve their best potential. Under ambitious fleet electrification scenarios, CO2 reduction of more than 60% is reached without measures, but causes substantial additional demand for low-carbon electricity, the availability of which is not covered in this paper. It is likely that policies will be a prerequisite for fleet electrification and efficiency increases of the order of magnitude assumed. Moreover, upstream CO2 emissions of electricity for battery and plug-in hybrid electric vehicles could add up to 40% of tank to wheel emissions, suggesting that complementary policies are needed to avoid shifting transport emissions to other sectors.",
-      "journal": "Energy Policy",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "Outcomes show that tank to wheel road transport CO2 emission reductions up to 90% versus 1990 could be reached by 2050 through strong fleet electrification and if all measures achieve their best potential. To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050.",
-        "anticipated_horizons": [
-          2050
-        ],
-        "investigation_type": "strategic_future_question",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 137,
-      "age_band": "preferred · 5–10 years",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 27
+      "review_priority": 29
     },
     {
       "title": "ECONOMIC GROWTH PROJECTION FOR EUROPEAN UNION BY 2030",
@@ -655,7 +719,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 28
+      "review_priority": 30
     },
     {
       "title": "Scenarios for population health inequalities in 2030 in Europe: the EURO-HEALTHY project experience",
@@ -687,7 +751,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 29
+      "review_priority": 31
     },
     {
       "title": "About global forecast of European Parliament TO 2035",
@@ -719,7 +783,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 30
+      "review_priority": 32
     },
     {
       "title": "Will we reach the Sustainable Development Goals target for tuberculosis in the European Union/European Economic Area by 2030?",
@@ -751,7 +815,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 31
+      "review_priority": 33
     },
     {
       "title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
@@ -784,7 +848,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 32
+      "review_priority": 34
     },
     {
       "title": "Estimation and Forecasts for the Share of Renewable Energy Consumption in Final Energy Consumption by 2020 in the European Union",
@@ -816,7 +880,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 33
+      "review_priority": 35
     },
     {
       "title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
@@ -849,7 +913,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 34
+      "review_priority": 36
     },
     {
       "title": "Decarbonizing the EU energy system by 2050: an important role for BECCS",
@@ -881,7 +945,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 35
+      "review_priority": 37
     },
     {
       "title": "Mapping the Future of Green Hydrogen: Integrated Analysis of Poland and the EU’s Development Pathways to 2050",
@@ -897,7 +961,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -906,70 +970,6 @@
           2050
         ],
         "investigation_type": "alternative_scenarios",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 135,
-      "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 36
-    },
-    {
-      "title": "The European Solar Communication—Will It Pave the Road to Achieve 1 TW of Photovoltaic System Capacity in the European Union by 2030?",
-      "date": "2023-04-12",
-      "publisher": "MDPI AG",
-      "topic": "Technology",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.3390/su15086531",
-      "doi": "10.3390/su15086531",
-      "abstract": "The urgency of a clean energy transition in the European Union is now not only driven by concerns about climate change, but also by using local renewable energy resources to reduce the dependency on foreign energy imports. Solar photovoltaic electricity generation is acknowledged as one of the pillars of this transition and various policy measures were implemented over the last two years to not only accelerate the deployment of solar photovoltaic electricity generation systems, but also to rebuild a competitive solar value chain in Europe to hedge against solar photovoltaic component supply chain disruptions. However, the current political ambitions still do not pay sufficient attention to the importance of solar photovoltaics as a major contributor to the necessary future renewable energy supply. According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030. At the moment, only seven member states have an installed capacity per capita higher than the average EU value.",
-      "journal": "Sustainability",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030.",
-        "anticipated_horizons": [
-          2030
-        ],
-        "investigation_type": "strategic_future_question",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 135,
-      "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 37
-    },
-    {
-      "title": "Towards a decarbonised building stock by 2050: The meaning and the role of zero emission buildings (ZEBs) in Europe",
-      "date": "2022-11-01",
-      "publisher": "Elsevier BV",
-      "topic": "Climate and environment",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1016/j.esr.2022.101009",
-      "doi": "10.1016/j.esr.2022.101009",
-      "abstract": "The building sector plays a key role in the reduction of greenhouse gas (GHG) emissions in the European Union (EU). The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050. This paper offers an overview of the recent policy developments and examines the introduced provisions on new and existing buildings. While nearly zero energy buildings (NZEBs) remains the current building standard since 2011 for new buildings, zero emission buildings (ZEBs) are set as the future building target as of 2030. Accordingly, this paper provides insights into ZEBs, clarifying how and when this concept brought out. In particular, it discusses the key methodological aspects that ZEBs should address, outlining the decisive role of energy efficiency and renewable energy. This paper provides the main features of a pragmatic ZEB definition which should be distinguished from other building concepts. It suggests an approach to ZEBs calculations of grouping energy uses and associated emissions, as well as the steps to derive numerical benchmarks for operational energy. Furthermore, it examines the link with other policies as well as the market readiness for zero carbon buildings. The study points out how ZEBs are a crucial component of the EU strategy towards climate neutrality, able to trigger additional benefits, such as resilience, recyclability, security, and health. Within that framework, the ZEB concept must be promptly transposed, avoiding the downturn that characterized the initial NZEBs implementation. Giving the essential elements to move from a theoretical to an empirical ZEB level, this paper highlights how binding requirements based on a holistic approach are urgently needed in order to tackle GHG emissions in the building sector and move rapidly towards a climate neutral continent.",
-      "journal": "Energy Strategy Reviews",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
-        "anticipated_horizons": [
-          2050
-        ],
-        "investigation_type": "strategic_future_question",
         "traceability_version": 1
       },
       "target_year": null,
@@ -1088,7 +1088,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1107,6 +1107,70 @@
       "review_priority": 42
     },
     {
+      "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
+      "date": "2015-11-18",
+      "publisher": "Springer Science and Business Media LLC",
+      "topic": "Transport",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1007/s40309-015-0072-y",
+      "doi": "10.1007/s40309-015-0072-y",
+      "abstract": "In the transport sector, where change comes with inertia and investments are made with a long term perspective, decision makers need to consider how the future may look like in the very long term. The work presented in this paper is a scenario analysis focusing on the evolution of transport demand towards 2050, aiming to identify related challenges for European industrial and policy players. It follows up on the work of other recent attempts to study the future of transport from a European perspective, integrating findings from these studies, updating new trends and applying a specific scenario analysis methodology relying also on expert consultation. The diversity of the scenarios created unfolds aspects of the future transport system with rather different outcomes on issues like the volume of transport, travel motives, the prevalent spatial scales of transport and logistics, people’s preferences towards different transport attributes, the relevancy of the State versus the private initiative in transport production, the level of competition, or the relative importance of environment and resource scarcity in setting an agenda for innovation and regulations. Beyond the subsequent challenges and opportunities identified in this work, the scenarios developed may be a useful basis for individual actors of distinct backgrounds to build their own specific futures, supporting them in defining strategies for the future.",
+      "journal": "European Journal of Futures Research",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In the transport sector, where change comes with inertia and investments are made with a long term perspective, decision makers need to consider how the future may look like in the very long term. The work presented in this paper is a scenario analysis focusing on the evolution of transport demand towards 2050, aiming to identify related challenges for European industrial and policy players.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 131,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 43
+    },
+    {
+      "title": "Making or breaking climate targets: The AMPERE study on staged accession scenarios for climate policy",
+      "date": "2014-03-11",
+      "publisher": "Elsevier BV",
+      "topic": "Climate and environment",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1016/j.techfore.2013.09.021",
+      "doi": "10.1016/j.techfore.2013.09.021",
+      "abstract": "This study explores a situation of staged accession to a global climate policy regime from the current situation of regionally fragmented and moderate climate action. The analysis is based on scenarios in which a front runner coalition – the EU or the EU and China – embarks on immediate ambitious climate action while the rest of the world makes a transition to a global climate regime between 2030 and 2050. We assume that the ensuing regime involves strong mitigation efforts but does not require late joiners to compensate for their initially higher emissions. Thus, climate targets are relaxed, and although staged accession can achieve significant reductions of global warming, the resulting climate outcome is unlikely to be consistent with the goal of limiting global warming to 2 degrees. The addition of China to the front runner coalition can reduce pre-2050 excess emissions by 20–30%, increasing the likelihood of staying below 2 degrees. Not accounting for potential co-benefits, the cost of front runner action is found to be lower for the EU than for China. Regions that delay their accession to the climate regime face a trade-off between reduced short term costs and higher transitional requirements due to larger carbon lock-ins and more rapidly increasing carbon prices during the accession period.",
+      "journal": "Technological Forecasting and Social Change",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_institution",
+      "eu_connection_reason": "EU_affiliation_in_index_not_EU_issued",
+      "verification_status": "Metadata cross-check inconclusive · full text unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The addition of China to the front runner coalition can reduce pre-2050 excess emissions by 20–30%, increasing the likelihood of staying below 2 degrees.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 131,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 44
+    },
+    {
       "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
       "date": "2020-01-01",
       "publisher": "European Commission",
@@ -1120,7 +1184,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_institution",
       "eu_connection_reason": "EU_issuer_named_in_publisher_metadata_unverified",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "Metadata cross-check inconclusive · full text unverified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1136,7 +1200,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 43
+      "review_priority": 45
     },
     {
       "title": "Assessing the impact of the 2011 EU Transport White Paper - a rail freight demand forecast up to 2050 for the EU27",
@@ -1152,7 +1216,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1169,7 +1233,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 44
+      "review_priority": 46
     },
     {
       "title": "Immigration and integration scenarios in global Europe: Forward-looking up to 2050",
@@ -1185,7 +1249,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1201,7 +1265,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 45
+      "review_priority": 47
     },
     {
       "title": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios",
@@ -1217,7 +1281,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1233,7 +1297,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 46
+      "review_priority": 48
     },
     {
       "title": "Sustainable development according to 2030 agenda in European Union countries: Evidence of the enlargement policy",
@@ -1249,7 +1313,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1265,7 +1329,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 47
+      "review_priority": 49
     },
     {
       "title": "Integrated assessment of the role of bioenergy within the EU energy transition targets to 2050",
@@ -1281,7 +1345,7 @@
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
       "radar2_seed": {
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
@@ -1295,68 +1359,6 @@
       "target_year": null,
       "ranking_score": 128,
       "age_band": "near-preferred · 4–5 years",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 48
-    },
-    {
-      "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
-      "date": "2015-11-18",
-      "publisher": "Springer Science and Business Media LLC",
-      "topic": "Transport",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1007/s40309-015-0072-y",
-      "doi": "10.1007/s40309-015-0072-y",
-      "abstract": "In the transport sector, where change comes with inertia and investments are made with a long term perspective, decision makers need to consider how the future may look like in the very long term. The work presented in this paper is a scenario analysis focusing on the evolution of transport demand towards 2050, aiming to identify related challenges for European industrial and policy players. It follows up on the work of other recent attempts to study the future of transport from a European perspective, integrating findings from these studies, updating new trends and applying a specific scenario analysis methodology relying also on expert consultation. The diversity of the scenarios created unfolds aspects of the future transport system with rather different outcomes on issues like the volume of transport, travel motives, the prevalent spatial scales of transport and logistics, people’s preferences towards different transport attributes, the relevancy of the State versus the private initiative in transport production, the level of competition, or the relative importance of environment and resource scarcity in setting an agenda for innovation and regulations. Beyond the subsequent challenges and opportunities identified in this work, the scenarios developed may be a useful basis for individual actors of distinct backgrounds to build their own specific futures, supporting them in defining strategies for the future.",
-      "journal": "European Journal of Futures Research",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "In the transport sector, where change comes with inertia and investments are made with a long term perspective, decision makers need to consider how the future may look like in the very long term. The work presented in this paper is a scenario analysis focusing on the evolution of transport demand towards 2050, aiming to identify related challenges for European industrial and policy players.",
-        "anticipated_horizons": [
-          2050
-        ],
-        "investigation_type": "alternative_scenarios",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 127,
-      "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 49
-    },
-    {
-      "title": "European packaging industry foresight study—identifying global drivers and driven packaging industry implications of the global megatrends",
-      "date": "2014-04-10",
-      "publisher": "Springer Science and Business Media LLC",
-      "topic": "European futures",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1007/s40309-014-0039-4",
-      "doi": "10.1007/s40309-014-0039-4",
-      "abstract": "The purpose of the research is to provide a common multi-client platform as a base for further applied foresight work in the packaging sector. It aims to be a reference for a future-oriented strategic dialogue and a platform for strategic business development. The ambition with the research is not to provide an accurate forecast, but rather to initiate an improved preparedness for and active influence on future developments. This is done by mapping and analyzing general trends and drivers in society. The potential packaging implications of those trends and drivers are then evaluated to highlight potential future demands, opportunities and threats for packaging. Methods include participatory workshops/focus groups with invited experts and users. Thus, this article provides results based on participatory foresight and Focus Group methodology. With a systematic and participatory process, a medium to long–term vision building is targeted to mobilize joint actions and influence current decision making.",
-      "journal": "European Journal of Futures Research",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "Abstract indexed — full study unverified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "The potential packaging implications of those trends and drivers are then evaluated to highlight potential future demands, opportunities and threats for packaging. The purpose of the research is to provide a common multi-client platform as a base for further applied foresight work in the packaging sector.",
-        "anticipated_horizons": [],
-        "investigation_type": "strategic_future_question",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 127,
-      "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
       "review_priority": 50

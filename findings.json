@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "scope": "EU and independent European foresight retrospective (rolling 15 years; prioritise 5–10 years old)",
+  "scope": "EU and independent European foresight retrospective (originals 2011–2023; 2024+ only later context)",
   "minimum_age_months": 6,
-  "earliest_publication_date": "2011-10-22",
+  "earliest_publication_date": "2011-01-01",
   "updated_at": "2026-10-22",
   "findings": [
     {
@@ -55,7 +55,8 @@
         "assessment": "No independently verified later evidence has been linked yet."
       },
       "checked_utc": "2026-10-16T12:17:02.091189+00:00",
-      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate",
+      "source_period": "later_context"
     },
     {
       "id": "EUF-e4d2d411206647",
@@ -105,7 +106,8 @@
         "assessment": "No independently verified later evidence has been linked yet."
       },
       "checked_utc": "2026-10-16T12:16:46.688500+00:00",
-      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate",
+      "source_period": "historical_original"
     },
     {
       "id": "EUF-c422737cb6b0f3",
@@ -156,7 +158,8 @@
         "assessment": "No independently verified later evidence has been linked yet."
       },
       "checked_utc": "2026-10-16T09:20:49.422792+00:00",
-      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate",
+      "source_period": "historical_original"
     },
     {
       "id": "EUF-5e181c3e9845ad",
@@ -207,7 +210,9 @@
         "assessment": "No independently verified later evidence has been linked yet."
       },
       "checked_utc": "2026-10-19T08:35:11.263184+00:00",
-      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate"
+      "status": "Full research source, original age, relevance and quality-screen verified; verdict separate",
+      "source_period": "historical_original"
     }
-  ]
+  ],
+  "historical_original_end": "2023-12-31"
 }

@@ -1,33 +1,79 @@
 {
   "policy_version": 5,
-  "generated_at": "2026-10-22T10:30:30.156648+00:00",
+  "generated_at": "2026-10-22T18:25:33.390987+00:00",
   "applied": true,
-  "original_studies": 553,
+  "original_studies": 600,
   "historical_period": {
     "start": "2011-01-01",
     "end": "2023-12-31"
   },
   "selection_counts": {
-    "active": 369,
-    "excluded": 184
+    "active": 600
   },
-  "retained_in_main_file": 369,
-  "removed_from_main_file": 184,
-  "prior_rejections": 815,
-  "rejection_registry_after_apply": 999,
-  "removed_by_reason": {
-    "foresight_method_or_background_not_future_development": 8,
-    "no_substantive_source_text_for_radar2": 103,
-    "no_traceable_european_future_proposition": 57,
-    "non_original_editorial_or_retracted": 13,
-    "operational_or_methods_forecast_not_european_futures": 3
-  },
+  "retained_in_main_file": 600,
+  "removed_from_main_file": 0,
+  "prior_rejections": 8766,
+  "rejection_registry_after_apply": 8766,
+  "removed_by_reason": {},
   "inspection_method": {
-    "source_traceability": 369,
-    "abstract_traceability": 184
+    "source_traceability": 600
   },
   "already_rejected_encountered": {},
   "examples_kept": [
+    {
+      "doi": "10.1504/ijse.2011.039440",
+      "title": "Fiscal sustainability and the accuracy of macroeconomic forecasts: Do supranational forecasts rather than government forecasts make a difference?",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "All in all, since the EC forecast appears to be a good benchmark, in order to reduce the (optimistic) forecast bias, national governments could be forced to justify any large (optimistic) deviation from this benchmark when presenting their respective national Stability and Growth Programmes. Credible fiscal plans that aim at restoring fiscal sustainability will be essential to counter the present increase in debt levels all across Europe."
+    },
+    {
+      "doi": "10.17705/1cais.02825",
+      "title": "Current and Future Issues in BPM Research: A European Perspective from the ERCIS Meeting 2010",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "This article reflects on a workshop on current and future issues in BPM research that was conducted by seventeen IS researchers from eight European countries as part of the 2010 annual meeting of the European Research Center for Information Systems (ERCIS). The results of this workshop suggest that BPM research can meaningfully contribute to investigating a broad variety of phenomena that are of interest to IS scholars, ranging from rather technical (e.g., the implementation of software architectures) to managerial (e.g., the impact of organizational culture on process performance)."
+    },
+    {
+      "doi": "10.3141/2252-05",
+      "title": "Developments in Energy use for Transport in 27 European Union Countries through 2030",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "As a consequence, GHG emissions by transport will decline 12% by 2030 compared with 2005; in the reference scenario in the same period, emissions are expected to grow 17%. The model suite applied in iTREN-2030 comprises POLES (prospective outlook on long-term energy systems), a simulation model for development of long-term (2050) energy supply-and-demand scenarios; TREMOVE; ASTRA (assesment of transport strategies); and TRANS-TOOLS."
+    },
+    {
+      "doi": "10.5771/1435-2869-2011-4-521",
+      "title": "Ageing population and labour productivity in Bulgaria",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Recent literature has shown that it is difficult to ascertain the impact of an ageing population on labour productivity.According to the majority of studies, workforce ageing leads to lower employment and a decline in the professional skills of the employed, so we should expect that it has a negative impact on technological changes and productivity.In this article, we present a review of studies on this issue.After that, an empirical study for Bulgaria is provided using sensitivity tests of long-term projections of labour productivity (to 2050), based on population number and age distribution.A model of the International Labour Organisation (ILO) is applied which allows us to calculate three variants of changing age, number and structure of population, assuming three different rates of improvement in life expectancy -fast, medium and slow.The study confirms that an ageing population has a negative effect on labour productivity.The timeframe is long but, with that limitation in mind, the overall direction of the trend is clear.The article concludes with some policy considerations to help ameliorate the effects of Bulgaria's demographic challenge."
+    },
+    {
+      "doi": "10.3390/f2010147",
+      "title": "Trends and Possible Future Developments in Global Forest-Product Markets—Implications for the Swedish Forest Sector",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "These so-called critical uncertainties were found to be degrees to which: (i) current patterns of globalization will continue, or be replaced by regionalism, and (ii) concern about the environment, particularly climate change, related policy initiatives and customer preferences, will materialize. The overall future of the Swedish solid wood-product industry looks bright, irrespective of which of the four possible futures occurs, provided it accommodates the expected growth in demand for factory-made, energy-efficient construction components."
+    },
+    {
+      "doi": "10.2166/wst.2011.120",
+      "title": "Demographic projections of future pharmaceutical consumption in the Netherlands",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Over the next few decades, many Western European countries will undergo a large demographic transformation introduced by the retirement of the “baby boomers” and the possibility of striking increases in longevity."
+    },
+    {
+      "doi": "10.1108/14636681111109660",
+      "title": "Foresight on the future of public research metrology in Europe",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Purpose The aim of this paper is to describe and evaluate the use of a five‐step foresight process and the application of scenario methods to grasp the range of future alternatives that might confront researchers and research managers in European metrology research institutes. Design/methodology/approach The paper illustrates how scenario methods were used to, first, serve as a basis for policy recommendations for the field of European metrology research institutes and, second, help experts and stakeholders to network and actively discuss a shared vision of the future of the field."
+    },
+    {
+      "doi": "10.1111/j.1468-2478.2011.00648.x",
+      "title": "The Purpose and Pitfalls of Constructivist Forecasting: Insights from Strategic Culture Research for the European Union’s Evolution as a Military Power1",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "It argues that insights from strategic culture research are particularly suited to outline trajectories of the likely when combined with the assessment of internal and external drivers of ideational and material change, the examination of discontinuities, and key uncertainties."
+    },
+    {
+      "doi": "10.1108/14636681111126229",
+      "title": "Integrating foresight into government. Is it possible? Is it likely?",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Findings Several methodologies and techniques that are identified here may allow people to help perceive, evaluate and control the effects of their actions, present as well as future."
+    },
     {
       "doi": "10.1111/j.1466-8238.2011.00669.x",
       "title": "Climate, competition and connectivity affect future migration and ranges of European trees",
@@ -41,16 +87,52 @@
       "original_passage": "Assuming that the incinerators continue to operate until 2020, we are moderately confident that the annual number of cancer cases due to exposure in 2001-2020 will reach 11, 0, and 7 in 2020 and then decline to 0 in the three countries in 2050. We are moderately confident that by 2050, the attributable impact on the 2001 cohort of residents will be 3,621 (Italy), 37 (Slovakia) and 3,966 (England) YoLL."
     },
     {
+      "doi": "10.4401/ag-5350",
+      "title": "OPERATIONAL EARTHQUAKE FORECASTING. State of Knowledge and Guidelines for Utilization",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Long-term models are currently the most important forecasting tools for civil protection against earthquake damage, because they guide earthquake safety provisions of building codes, performance-based seismic design, and other risk-reducing engineering practices, such as retrofitting to correct design flaws in older buildings. Based on the experience accumulated in seismically active regions, the ICEF has provided to DPC a set of recommendations on the utilization of operational forecasting in Italy, which may also be useful in other countries."
+    },
+    {
+      "doi": "10.1136/jech.2011.142976b.14",
+      "title": "O4-2.1 Foresight tackling obesities: future choices",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "These predictions could be subject to a range of policy options which affected BMI or business as usual. Given these predictions up to 2050, we built a micro simulation of the UK population with same demographics and the BMI growth predicted."
+    },
+    {
       "doi": "10.1016/j.njas.2011.01.005",
       "title": "Actual and potential development of consumer demand on the organic food market in Europe",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "A likely scenario for future demand is that of continued stable expansion, dependent upon whether increasing input costs will favour organic production, whether the relative gap between organic and conventional food prices becomes smaller, whether organic products will be distributed more widely on national markets, and whether support for research and conversion of organic production systems on the part of public authorities is enhanced."
     },
     {
+      "doi": "10.4337/jhre.2011.02.04",
+      "title": "Food futures: system transitions towards UK food security",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "This article explains how scenarios of this kind can try and capture landscape pressures which might threaten the dominant paradigm and leave room for niche activity to challenge the mainstream."
+    },
+    {
+      "doi": "10.1108/14636681111179564",
+      "title": "Future scenarios for a depressed region of England: the role of education in creating alternative futures",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Findings Four scenarios were developed as possible futures for the region to help inform policy making, in particular educational policy to encourage more young people to remain in education for longer and gain higher qualifications. Purpose This paper seeks to outline four scenarios developed for the future of the South West Midlands region of England."
+    },
+    {
       "doi": "10.1111/j.1466-8238.2010.00547.x",
       "title": "Potential implications of future climate and land‐cover changes for the fate and distribution of persistent organic pollutants in Europe",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "Scenarios detailing climate and land‐cover changes, such as precipitation, temperature and vegetation cover, were used as input in a European multi‐media chemical fate model to help understand their impact on the environmental fate and behaviour of POPs over the period 1990–2100 in Europe. Main conclusions Overall, the model simulations suggest that the dominant driver behind differences seen between the present and climate‐changed future scenarios is temperature, resulting in a slight shift in chemical distribution from surface compartments to the air."
+    },
+    {
+      "doi": "10.1504/ijstl.2011.039377",
+      "title": "Finland-Russia rail transport deregulation: future scenarios of market development",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Three different kinds of scenarios are constructed, and based on this research, it may be concluded that deregulating third country transport would be advisable. This would promote border transports, decrease prices, and attract and boost competition in Finland’s rail transport market."
+    },
+    {
+      "doi": "10.22004/ag.econ.121911",
+      "title": "REMIND-D: A Hybrid Energy-Economy Model of Germany",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The model provides a quantitative framework for analyzing long-term domestic CO2 emission reduction scenarios."
     },
     {
       "doi": "10.24057/2071-9388-2012-5-4-4-16",
@@ -63,6 +145,12 @@
       "title": "After-crisis Scenarios for the European Regions",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "What is called a “reference scenario” is built under the assumption that there will be a perception that structural changes will happen, that an extrapolation of past trends has no meaning at all, but that policies will not act in an effective way. This scenario will be compared to a second one, called the pro-active scenario, in which changes will be perceived and even anticipated; and to the re-active or defensive one, based on the assumptions that changes are not fully perceived by economic actors."
+    },
+    {
+      "doi": "10.1111/j.1549-0831.2011.00068.x",
+      "title": "Linking Local Food Systems and the Social Economy? Future Roles for Farmers' Markets in Alberta and British Columbia*",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We used the Delphi method of inquiry to solicit and synthesize perspectives on the future role of farmers' markets within local food systems and the social economy from farmers' market vendors, market managers, and policy and government representatives in each province. Results confirm the need for further investigation of the relationship between the social economy, infrastructure, and authenticity in the development of local food systems."
     },
     {
       "doi": "10.1007/s10980-012-9715-6",
@@ -95,1409 +183,24 @@
       "original_passage": "The projects resulted in the evaluation of current methods for obtaining and processing scanning data and new conceptual thinking that may bridge the gap between scanning activities and policy-making."
     },
     {
+      "doi": "10.1016/j.envsci.2012.03.002",
+      "title": "A history of futures: A review of scenario use in water policy studies in the Netherlands",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Based on two criteria, 'Decision robustness' and 'Learning success', we conclude that (1) the possibilities for robust decisionmaking increased through a paradigm shift from predicting to exploring futures, but the scenario method is not yet fully exploited for decisionmaking under uncertainty; and (2) the scenarios enabled learning about possible impacts of developments and effectiveness of policy options."
+    },
+    {
       "doi": "10.1098/rsif.2012.0138",
       "title": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "Similar trends are likely in the future, with an increased risk simulated over northern Europe and slightly decreased risk over southern Europe. These distribution shifts are related to wetter and warmer conditions favouring the overwintering of A. albopictus in the north, and drier and warmer summers that might limit its southward expansion."
     },
     {
-      "doi": "10.1007/s12290-012-0210-x",
-      "title": "What We Hope, What We Fear, What We Expect: Possible Scenarios for the Future of the Eurozone",
+      "doi": "10.1016/j.enpol.2012.05.015",
+      "title": "Implications of sustainability constraints on UK bioenergy development: Assessing optimistic and precautionary approaches with UK MARKAL",
       "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Starting with the reforms of European economic governance hitherto agreed, this article develops three scenarios for the eurozone and explores their possible impact on the EU in general."
-    },
-    {
-      "doi": "10.1175/bams-d-11-00136.1",
-      "title": "The CIRCE Simulations: Regional Climate Change Projections with Realistic Representation of the Mediterranean Sea",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "The models have been integrated from 1951 to 2050, using observed radiative forcings during the first half of the simulation period and the Intergovernmental Panel on Climate Change (IPCC) Special Report on Emissions Scenarios (SRES) A1B scenario during the second half. The projections show a substantial warming (about 1.5°–2°C) and a significant decrease of precipitation (about 5%) in the region for the scenario period."
-    },
-    {
-      "doi": "10.1183/09031936.00210411",
-      "title": "Impact of climate change on ozone-related mortality and morbidity in Europe",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Comparing the baseline period and the future periods (2021-2050 and 2041-2060), much larger increases in ozone-related mortality and morbidity are projected for Belgium, France, Spain and Portugal, with the impact being stronger using the climate projection from ECHAM4 (A2)."
-    },
-    {
-      "doi": "10.22630/prs.2012.12.3.38",
-      "title": "The future of direct payments system in the EU agriculture; European Commission scenarios",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Different scenarios of the current system adjustments, as proposed by the European Commission, are presented."
-    },
-    {
-      "doi": "10.5194/acp-12-10613-2012",
-      "title": "Future air quality in Europe: a multi-model assessment of projected exposure to ozone",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "We conclude that air pollution mitigation measures (present in both scenarios) are the main factors leading to the improvement, but an additional cobenefit of at least 40% (depending on the indicator) is brought about by the climate policy. In order to explore future air quality in Europe at the 2030 horizon, two emission scenarios developed in the framework of the Global Energy Assessment including varying assumptions on climate and energy access policies are investigated with an ensemble of six regional and global atmospheric chemistry transport models."
-    },
-    {
-      "doi": "10.1093/ahr/117.5.1411",
-      "title": "The Great Future Debate and the Struggle for the World",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Futurists had radically different understandings not only of what the future was and the way it could be studied, but also of the ways in which prediction could be used to control or protest certain futures. She is the holder of an ERC Starting Investigator Grant for the project Futurepol: A Political History of the Future—Knowledge Production and Future Governance, 1945–2010, and is currently working on a book on the global history of the future."
-    },
-    {
-      "doi": "10.1017/s175173111300075x",
-      "title": "Animal health aspects of adaptation to climate change: beating the heat and parasites in a warming Europe",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "We investigate the direct and indirect effects of climate change on the epidemiology of important livestock pathogens, with a particular focus on parasitic infections, and the likely animal health consequences associated with selected adaptation options. Adaptation options aimed at taking advantage of new opportunities and/or minimising the risks of negative impacts will, in themselves, have implications for animal health and welfare."
-    },
-    {
-      "doi": "10.11610/isij.2902",
-      "title": "Analytical support to foresighting EU roles as a Global Security Actor",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Making decisions on major investments, including investments in security research, requires good grasp of the future, which by definition is uncertain.This paper presents the analytical process, methods, and tools, including the DSTO Scenario Analysis Tool Suite, used in the elaboration and selection of a set of context scenarios and possible new roles for EU as a global actor based on the wider Petersberg tasks.Results of this exploratory process within the FP7 FOCUS project are intended to derive suggestions for the EU's security research planning.The conclusion emphasises the critical importance of providing rigorous analytical support, in particular when security foresight involves subject matter experts that are not part of a dedicated research team."
-    },
-    {
-      "doi": "10.11610/isij.2912",
-      "title": "Towards Europe 2035 - In Search of the Archimedean Screw: FOCUS in Perspective",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Approaches and results from the FOCUS project centred on the planning of security research in the 2035 time frame to support foresighted EU security missions.In a follow-up, they could be carried further to help provide a framework for analyzing long-term trends and dynamic interactions in a global environment undergoing tectonic changes, reaching beyond the FOCUS mission to explore new contexts of civil security research in support of possible future EU mission scenarios.European developments are in large part driven by challenging global developments, reaching beyond external risks and threats to which the EU needs to respond.This article thus explores the complementarity of the FOCUS framework and the concurrent fifth NIC Report \"Global Trends 2030: Alternative Worlds\" of the US National Intelligence Council (NIC) in search of a framework for assessing the impact of global dynamics on the inner dynamics of global players, with the EU as a special case."
-    },
-    {
-      "doi": "10.1504/ijetp.2013.058143",
-      "title": "A strategic energy technology policy towards 2050: no-regret strategies for European technology push",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "We discuss how European energy technology policy towards 2050 can be effective despite: 1) uncertain carbon prices; 2) uncertain technological change; and 3) uncertain or alternating policy paradigms shifting the focus from decarbonisation towards competitiveness or energy supply security."
-    },
-    {
-      "doi": "10.1016/j.enpol.2012.11.054",
-      "title": "The EU Decarbonisation Roadmap 2050—What way to walk?",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "This policy option may include CDM (Clean Development Mechanism in the sense of ‘where’-flexibility) in an extended form if there are countries without emissions caps. We carry out a detailed CGE (Computable General Equilibrium) analysis of the EU Decarbonisation Roadmap 2050 on a macroeconomic and on a sectoral level."
-    },
-    {
-      "doi": "10.1183/09031936.00074712",
-      "title": "Climate change, extreme weather events, air pollution and respiratory health in Europe",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Due to climate change and other factors, air pollution patterns are changing in several urbanised areas of the world, with a significant effect on respiratory health both independently and synergistically with weather conditions; climate scenarios show Europe as one of the most vulnerable regions."
-    },
-    {
-      "doi": "10.1186/1750-0680-8-2",
-      "title": "Potential stocks and increments of woody biomass in the European Union under different management and climate scenarios",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "It should be investigated how biomass stock, harvests and increments will develop under different climate scenarios and two management scenarios where one is forcing to store high biomass amounts in forests and the other tries to have high increment rates and much harvested wood. Incentives which will increase the standing biomass beyond the increment optimal biomass should therefore be avoided."
-    },
-    {
-      "doi": "10.1108/14636681311310123",
-      "title": "Foresight and “grand challenges” within research and innovation policies",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Purpose The paper seeks to discuss how foresight is used to understand the implications of global changes for research and innovation policies. It aims to present a recent Irish case study that identified grand challenges in the national context, with their implications for research and innovation."
-    },
-    {
-      "doi": "10.3354/meps10368",
-      "title": "Integrating field data into individual-based models of the migration of European eel larvae",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "We contrasted different model settings and identified the most plausible migration scenario by comparing simulation results against experimental data."
-    },
-    {
-      "doi": "10.1007/s40309-013-0011-8",
-      "title": "Scenarios for selected maritime economic functions",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "This paper discusses the use of scenarios in the ‘Blue Growth’ project, which was aimed at elaborating the maritime dimension of the Europe 2020 strategy, with a 15-year time horizon (2025/2030). The direct impact of the general scenarios on policy development cannot yet be evaluated."
-    },
-    {
-      "doi": "10.5194/acp-13-7451-2013",
-      "title": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "To quantify changes in air pollution in Europe at the 2050 horizon, we designed a comprehensive modelling system that captures the external factors considered to be most relevant and relies on up-to-date and consistent sets of air pollution and climate policy scenarios. We explored two diverse scenarios: a reference scenario where climate policies are absent and a mitigation scenario which limits global temperature rise to within 2 °C by the end of this century."
-    },
-    {
-      "doi": "10.1111/gcb.12378",
-      "title": "Warming increases plant biomass and reduces diversity across continents, latitudes, and species migration scenarios in experimental wetland communities",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "These results reveal for the first time consistent impacts of warming on biomass and species richness for temperate wetland plant communities across continents, latitudes, and migration scenarios. Atmospheric warming may influence plant productivity and diversity and induce poleward migration of species, altering communities across latitudes."
+      "original_passage": "The paper then examines the implications of these scenarios using the energy systems model MARKAL, finding that a precautionary approach adds to the cost of decarbonisation, but does not significantly alter the optimal technology mix."
     }
   ],
-  "proposed_removals": [
-    {
-      "doi": "10.1038/ncomms1360",
-      "title": "Long-term projections and acclimatization scenarios of temperature-related mortality in Europe",
-      "date": "2011-06-21",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.69554/wdbn2222",
-      "title": "Winter blues at European airports: The need for airport responsibility and corporate foresight",
-      "date": "2011-07-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1108/14636681111153922",
-      "title": "The Mediterranean Union: what fate's in store?",
-      "date": "2011-07-19",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1127/0941-2948/2011/0286",
-      "title": "Analysis of uncertainty in large scale climate change projections over Europe",
-      "date": "2011-08-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.25100/cdea.v24i40.400",
-      "title": "Benchmarking del programa colombiano de prospectiva ante prácticas en Europa y Sur América (título original: Benchmarking the coloIombian foresight programme against practices in Europe and South America)",
-      "date": "2011-11-08",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10584-011-0342-z",
-      "title": "Projection of economic impacts of climate change in sectors of Europe based on bottom up analysis: human health",
-      "date": "2011-12-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.egypro.2011.02.587",
-      "title": "Carbon capture & storage in power generation and wind energy: Flexibility and reliability issues in scenarios for Northwest Europe",
-      "date": "2011-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/02626667.2011.631188",
-      "title": "Broad-scale ecosystem services of European wetlands—overview of the current situation and future perspectives under different climate and water management scenarios",
-      "date": "2011-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/s2212-5671(12)00297-3",
-      "title": "Shaping Tourism Higher Education Curriculum-Strategy to Develop Skills for Tomorrow's Jobs",
-      "date": "2012-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1051/swsc/2012022",
-      "title": "Monitoring, tracking and forecasting ionospheric perturbations using GNSS techniques",
-      "date": "2012-01-01",
-      "reason": "operational_or_methods_forecast_not_european_futures",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5194/acp-12-1-2012",
-      "title": "A review of operational, regional-scale, chemical weather forecasting models in Europe",
-      "date": "2012-01-02",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s12544-011-0069-y",
-      "title": "Strategic scenarios of global logistics: what lies ahead for Europe?",
-      "date": "2012-01-08",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.giq.2011.08.006",
-      "title": "Digital Europe 2030: Designing scenarios for ICT in future governance and policy making",
-      "date": "2012-01-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.rhum.2011.10.008",
-      "title": "Enseignement de la rhumatologie pédiatrique en Europe : quelles projections dans le contexte français ?",
-      "date": "2012-01-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1108/14636681211214879",
-      "title": "Foresight impacts from around the world: a special issue",
-      "date": "2012-02-24",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.apenergy.2011.11.074",
-      "title": "Road transport and power system scenarios for Northern Europe in 2030",
-      "date": "2012-04-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5172/impp.2012.2461",
-      "title": "WEB 2.0 FORESIGHT FOR INNOVATION POLICY: A CASE OF STRATEGIC AGENDA SETTING IN EUROPEAN INNOVATION",
-      "date": "2012-06-22",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1002/fut.21581",
-      "title": "Long‐term Futures Curves and Seasonal Structures of Wheat in the European Union and the United States",
-      "date": "2012-08-16",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1175/jcli-d-11-00676.1",
-      "title": "Evaluation of the Sensitivity of the Weather Research and Forecasting Model to Parameterization Schemes for Regional Climates of Europe over the Period 1990–95",
-      "date": "2012-08-17",
-      "reason": "operational_or_methods_forecast_not_european_futures",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.12765/cpos-2011-10",
-      "title": "Postponement and Recuperation in Cohort Fertility: Austria, Germany and Switzerland in a European Context",
-      "date": "2012-09-06",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2012.04.006",
-      "title": "The future of employment supply and demand in social Europe",
-      "date": "2012-09-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2012.04.010",
-      "title": "The future of European development aid",
-      "date": "2012-09-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/21632324.2012.740851",
-      "title": "Mobility partnerships - the future of European migration policy?",
-      "date": "2012-10-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1353/gsr.2012.a488488",
-      "title": "DAAD Faculty Summer Seminar 2012: “The Futures of Interdisciplinary German Studies”",
-      "date": "2012-10-01",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ecolmodel.2012.03.034",
-      "title": "Comparison of modelling approaches to simulate the phenology of the European corn borer under future climate scenarios",
-      "date": "2012-10-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2139/ssrn.2005010",
-      "title": "Demographic Epidemiologic Projections of Long-Term Care Needs in Selected European Countries: Germany, Spain, the Netherlands and Poland",
-      "date": "2012-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1504/ijfip.2013.051759",
-      "title": "Sectoral foresight in Poland: thematic and methodological analysis",
-      "date": "2013-01-01",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.foodpol.2012.12.005",
-      "title": "Food and health research in Europe: Structures, gaps and futures",
-      "date": "2013-01-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.17265/1537-1514/2013.03.005",
-      "title": "Industrial Relations Foresight 2025: The European Union Member States and the Seven Other Major Economies",
-      "date": "2013-03-28",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.7256/2306-4226.2013.4.9399",
-      "title": "Байректаревич А.. Future of Europe (of Lisbon and generational interval)",
-      "date": "2013-04-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1371/journal.pone.0066044",
-      "title": "Decline in Kelp in West Europe and Climate",
-      "date": "2013-06-26",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.actaastro.2012.11.021",
-      "title": "Outlook of possible European contributions to future exploration scenarios and architectures",
-      "date": "2013-07-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/03601234.2013.780525",
-      "title": "European scenarios for exposure of soil organisms to pesticides",
-      "date": "2013-09-02",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.eneco.2013.08.019",
-      "title": "Decarbonizing Europe's power sector by 2050 — Analyzing the economic implications of alternative decarbonization pathways",
-      "date": "2013-09-10",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckt126.028",
-      "title": "H.1. Skills building seminar: A scenario building exercise for the future burden of disease in Europe",
-      "date": "2013-10-01",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckt185.008",
-      "title": "H.1. Skills building seminar: A scenario building exercise for the future burden of disease in Europe",
-      "date": "2013-10-01",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.techfore.2013.01.004",
-      "title": "The value contribution of strategic foresight: Insights from an empirical study of large European companies",
-      "date": "2013-10-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.11610/isij.2901",
-      "title": "'FOCUS': Foresight Security Scenarios to Plan for Research to Support the 'EU 2035' as a Comprehensive Security Provider",
-      "date": "2013-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3828/tpr.2014.36",
-      "title": "Urban-nature relationships in urban planning foresight in Europe: contributions from the Concours Internationale du Grand Paris",
-      "date": "2014-01-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1108/fs-05-2012-0041",
-      "title": "Innovation systems dynamics and the positioning of Europe. A review and critique of recent Foresight studies",
-      "date": "2014-04-08",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3097/lo.201433",
-      "title": "Scenario methodology for modelling of future landscape developments as basis for assessing ecosystem services",
-      "date": "2014-04-26",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2014.01.002",
-      "title": "Spacecraft: A steady progress scenario for the EU",
-      "date": "2014-04-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/13691457.2014.912202",
-      "title": "W(h)ither the academy? An exploration of the role of university social work in shaping the future of social work in Europe",
-      "date": "2014-05-07",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10584-014-1164-6",
-      "title": "Interactively modelling land profitability to estimate European agricultural and forest land use under future scenarios of climate, socio-economics and adaptation",
-      "date": "2014-07-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5194/hess-18-2735-2014",
-      "title": "Understanding flood regime changes in Europe: a state-of-the-art assessment",
-      "date": "2014-07-30",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/s1351-4210(14)70249-5",
-      "title": "The European scenario for fatty acids",
-      "date": "2014-08-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.14254/2071-789x.2014/7-4/1",
-      "title": "Migration Incentives and Flows between Belarus, Moldova, Ukraine and the European Union: a Forecasting Model",
-      "date": "2014-11-20",
-      "reason": "operational_or_methods_forecast_not_european_futures",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-014-0050-9",
-      "title": "The future of counter-terrorism in Europe. The need to be lost in the correct direction",
-      "date": "2014-12-05",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-014-0055-4",
-      "title": "Foresight in support of European research and innovation policies: The European Commission is preparing the funding of grand societal challenges",
-      "date": "2014-12-10",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-014-0049-2",
-      "title": "The future of European education: A political strategy & four action areas",
-      "date": "2014-12-16",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5172/impp.2012.14.3.446",
-      "title": "Web 2.0 foresight for innovation policy: A case of strategic agenda setting in European innovation",
-      "date": "2014-12-17",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.egypro.2014.11.297",
-      "title": "Scenarios and new technologies for a North-European CO2 transport infrastructure in 2050",
-      "date": "2014-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2014.10.008",
-      "title": "A new state in Europe? Scenarios for Catalan self-determination",
-      "date": "2014-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/s1473-3099(14)70834-5",
-      "title": "Dengue and dengue vectors in the WHO European region: past, present, and scenarios for the future",
-      "date": "2014-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/jeg/lbu053",
-      "title": "Spatial heterogeneity in the costs of the economic crisis in Europe: are cities sources of regional resilience?",
-      "date": "2015-01-20",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-014-0060-7",
-      "title": "Integrating Delphi methodology to some classical concepts of the Boston consulting group framework: arctic maritime technology BCG Delphi foresight—a pilot study from Finland",
-      "date": "2015-01-28",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.4054/demres.2015.32.15",
-      "title": "Labor force projections up to 2053 for 26 EU countries, by age, sex, and highest level of educational attainment",
-      "date": "2015-02-17",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s11056-015-9481-9",
-      "title": "Testing scenarios for assisted migration of forest trees in Europe",
-      "date": "2015-04-10",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5018/economics-ejournal.ja.2015-10",
-      "title": "Modelling the Economic Impacts of Climate Change on Global and European Agriculture. Review of Economic Structural Approaches",
-      "date": "2015-04-10",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-014-0046-5",
-      "title": "The future of individualization in Europe: changing configurations in employment and governance",
-      "date": "2015-04-15",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.apenergy.2015.04.098",
-      "title": "Smart grid projects in Europe: Current status, maturity and future scenarios",
-      "date": "2015-05-15",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.techfore.2014.06.009",
-      "title": "The futures of the service economy in Europe: A foresight analysis",
-      "date": "2015-05-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3354/cr01309",
-      "title": "Sea level rise projections for northern Europe under RCP8.5",
-      "date": "2015-06-17",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-015-0082-9",
-      "title": "Assessing the maturity level of foresight in Polish companies—a regional perspective",
-      "date": "2015-12-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ocemod.2015.06.001",
-      "title": "Statistical multi-model climate projections of surface ocean waves in Europe",
-      "date": "2015-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-015-0080-y",
-      "title": "Futures of European welfare models and policies: seeking actual research questions, and new problem-solving arsenal for European welfare states",
-      "date": "2016-01-14",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.eneco.2014.05.003",
-      "title": "Asymmetric impacts of European transmission network development towards 2050: Stakeholder assessment based on IRENE-40 scenarios",
-      "date": "2016-01-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s00382-016-3019-5",
-      "title": "Projections of extreme storm surge levels along Europe",
-      "date": "2016-02-20",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.52439/fiag3465",
-      "title": "Key Findings from the European Commission Global Food Security 2030 Foresight Study",
-      "date": "2016-02-24",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.15199/62.2016.3.35",
-      "title": "Air pollution emission reduction scenarios for Europe Scenariusze ograniczania emisji zanieczyszczeń powietrza dla Europy",
-      "date": "2016-03-05",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.renene.2015.10.008",
-      "title": "Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe – Scenarios for power sector and transmission infrastructure in 2030 and 2050",
-      "date": "2016-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/atmos7040060",
-      "title": "Review on the Projections of Future Storminess over the North Atlantic European Region",
-      "date": "2016-04-22",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.21861/hgg.2016.78.01.03",
-      "title": "Scenario Method in Spatial Research and Planning",
-      "date": "2016-06-21",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.esr.2016.06.001",
-      "title": "Some future scenarios of Russian natural gas in Europe",
-      "date": "2016-06-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10113-016-1013-4",
-      "title": "Protein futures for Western Europe: potential land use and climate impacts in 2050",
-      "date": "2016-07-06",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1111/nyas.13132",
-      "title": "Observed and projected drivers of emerging infectious diseases in Europe",
-      "date": "2016-07-19",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3935/rsp.v23i2.1371",
-      "title": "Konferencija: Improving Poverty Reduction in Europe: Lessons from the Past, Scenarios for the Future",
-      "date": "2016-07-26",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5547/01956574.37.si3.poei.ojea",
-      "title": "European Scenarios of CO2 Infrastructure Investment until 2050",
-      "date": "2016-09-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.enpol.2016.10.023",
-      "title": "Energy system impacts and policy implications of the European Intended Nationally Determined Contribution and low-carbon pathway to 2050",
-      "date": "2016-10-24",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.renene.2016.04.024",
-      "title": "Renewable energy scenarios for costs reductions in the European Union",
-      "date": "2016-10-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.agsy.2016.10.014",
-      "title": "Metrics, models and foresight for European sustainable food and nutrition security: The vision of the SUSFANS project",
-      "date": "2016-11-16",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.envpol.2016.07.042",
-      "title": "Impacts of air pollution on cultural heritage corrosion at European level: What has been achieved and what are the future scenarios",
-      "date": "2016-11-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5547/01956574.37.si3.poei",
-      "title": "European Scenarios of CO2 Infrastructure Investment until 2050",
-      "date": "2016-12-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-016-0102-4",
-      "title": "Twitter data analysis as contribution to strategic foresight-The case of the EU Research Project “Foresight and Modelling for European Health Policy and Regulations” (FRESHER)",
-      "date": "2016-12-08",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.14195/1647-6336_15-1_1",
-      "title": "The Futures of Portugal in and beyond Europe",
-      "date": "2016-12-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.renene.2016.08.036",
-      "title": "Potential impacts of climate change on European wind energy resource under the CMIP5 future climate projections",
-      "date": "2017-02-28",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.techfore.2016.09.007",
-      "title": "European sectoral innovation foresight: Identifying emerging cross-sectoral patterns and policy issues",
-      "date": "2017-02-28",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3917/e.spub.171.0081",
-      "title": "Mobility of Physicians in Europe: Health Policies and Health Care Provision",
-      "date": "2017-03-06",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.techfore.2016.08.032",
-      "title": "The technology foresight activities of European Union data protection authorities",
-      "date": "2017-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.rser.2017.04.108",
-      "title": "Review of solid and liquid biofuel demand and supply in Northwest Europe towards 2030 – A comparison of national and regional projections",
-      "date": "2017-05-02",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10680-017-9426-4",
-      "title": "Migrating with Special Needs? Projections of Flows of Migrant Women with Female Genital Mutilation/Cutting Toward Europe 2016–2030",
-      "date": "2017-05-16",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/13691457.2017.1320053",
-      "title": "Current challenges and emerging signposts: the future of social work education in Europe",
-      "date": "2017-05-25",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1136/vr.j3018",
-      "title": "Europe getting on board with Vet Futures",
-      "date": "2017-06-24",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10113-017-1194-5",
-      "title": "Modelling population structure in the context of urban land use change in Europe",
-      "date": "2017-07-07",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.18096/tmp.2017.01.03",
-      "title": "The Changing Role of Nuclear Power in the European Union: Reflections from Official Scenarios Released before and after the Fukushima Daiichi Accident",
-      "date": "2017-08-15",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5755/j01.eis.0.11.18955",
-      "title": "THE PROS AND CONS OF INTEGRATION VS. DISINTEGRATION SCENARIOS FOR EUROPE",
-      "date": "2017-10-24",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/femsle/fnx244",
-      "title": "Vector-borne diseases and climate change: a European perspective",
-      "date": "2017-11-14",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1057/s41294-017-0038-0",
-      "title": "CASE 25th Anniversary Symposium on the Future of Europe",
-      "date": "2017-11-27",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s40309-017-0120-x",
-      "title": "Political and social trends in the future of global security. A meta-study on official perspectives in Europe and North America",
-      "date": "2017-12-05",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1177/2031952517743860",
-      "title": "The future of labour law in Europe",
-      "date": "2017-12-19",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1504/ijmtm.2018.089464",
-      "title": "New industrial platforms and radical technology foresight: the case of 3D printing in Finland and Europe",
-      "date": "2018-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2760/278827",
-      "title": "Workshop on Regulatory Preparedness for Innovation in Nanotechnology",
-      "date": "2018-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10668-018-0119-x",
-      "title": "Policy-adaptation for a smarter and more sustainable EU electricity distribution industry: a foresight analysis",
-      "date": "2018-02-27",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ecolecon.2018.02.009",
-      "title": "Three Scenario Narratives for a Resource-Efficient and Low-Carbon Europe in 2050",
-      "date": "2018-03-08",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/su10030848",
-      "title": "Low Carbon Scenarios for Europe: An Evaluation of Upscaling Low Carbon Experiments",
-      "date": "2018-03-16",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2017.04.006",
-      "title": "Friends. Foes. Frenemies? Unpacking the future of EU-Turkey relations",
-      "date": "2018-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2017.06.004",
-      "title": "The price of success, the benefit of setbacks: Alternative futures of EU-Ukraine relations",
-      "date": "2018-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2017.07.001",
-      "title": "Three scenarios for EU-China relations 2025",
-      "date": "2018-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2017.09.001",
-      "title": "Setting the scene for alternative futures for European Union’s foreign policy 2025",
-      "date": "2018-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/ia/iiy087",
-      "title": "Brexit and British politics; Brexit and beyond: rethinking the futures of Europe",
-      "date": "2018-05-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/s18072016",
-      "title": "European In-Situ Snow Measurements: Practices and Purposes",
-      "date": "2018-06-22",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1186/s13717-018-0135-7",
-      "title": "Forestry projections for species diversity-oriented management: an example from Central Europe",
-      "date": "2018-06-25",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1002/etc.4205",
-      "title": "Toward sustainable environmental quality: Priority research questions for Europe",
-      "date": "2018-07-20",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1029/2017jd027923",
-      "title": "Skill of Subseasonal Forecasts in Europe: Effect of Bias Correction and Downscaling Using Surface Observations",
-      "date": "2018-07-24",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.jclepro.2018.09.249",
-      "title": "New method to assess the long-term role of wind energy generation in reduction of CO2 emissions – Case study of the European Union",
-      "date": "2018-10-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1111/ecin.12732",
-      "title": "A SPATIAL PERSPECTIVE ON EUROPEAN INTEGRATION: HETEROGENEOUS WELFARE AND MIGRATION EFFECTS FROM THE SINGLE MARKET AND THE BREXIT",
-      "date": "2018-10-10",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/en11102703",
-      "title": "The Good, the Bad and the Uncertain: Bioenergy Use in the European Union",
-      "date": "2018-10-11",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1029/2018jc013866",
-      "title": "Future Wave Conditions of Europe, in Response to High‐End Climate Change Scenarios",
-      "date": "2018-11-06",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1186/s40309-018-0149-5",
-      "title": "Citizen visions for European futures—methodological considerations and implications",
-      "date": "2018-11-20",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.energy.2018.08.070",
-      "title": "Cost optimal scenarios of a future highly renewable European electricity system: Exploring the influence of weather data, cost parameters and policy constraints",
-      "date": "2018-11-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2478/lasr-2018-0002",
-      "title": "On the Road to the Second Century: The Geopolitical Future of the Baltic States in the Visions of Politicians and Political Scientists",
-      "date": "2018-12-09",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.euroecorev.2022.104306",
-      "title": "Economic Forecasting with an Agent-Based Model",
-      "date": "2019-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2760/203362",
-      "title": "TRIMIS as a support tool for transport research and innovation horizon scanning",
-      "date": "2019-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5751/es-10818-240227",
-      "title": "Synthesizing plausible futures for biodiversity and ecosystem services in Europe and Central Asia using scenario archetypes",
-      "date": "2019-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1515/wrlae-2018-0024",
-      "title": "Cooperation between the European Union and European Mini-States – Possible Scenarios for Future Closer and Enhanced Integration with the European Union",
-      "date": "2019-01-03",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3389/fenvs.2018.00163",
-      "title": "Robustness and Scalability of Regional Climate Projections Over Europe",
-      "date": "2019-01-29",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.energy.2019.06.118",
-      "title": "Electric vehicle charging strategy to support renewable energy sources in Europe 2050 low-carbon scenario",
-      "date": "2019-06-20",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/wevj10040064",
-      "title": "The Effect of Reducing Electric Car Purchase Incentives in the European Union",
-      "date": "2019-10-16",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2478/lasr-2019-0007",
-      "title": "European Security Architecture after the United Kingdom’s Withdrawal from the European Union: Future Scenarios",
-      "date": "2019-11-09",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.33989/2075-146x.2019.23.183246",
-      "title": "EUROPEAN EXPERIENCE OF HUMANITARIAN AND LEGAL PREPARATION FOR FUTURE ENGINEERS",
-      "date": "2019-11-11",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.enpol.2019.111063",
-      "title": "Constructing low-carbon futures? Competing storylines in the Estonian energy sector's translation of EU energy goals",
-      "date": "2019-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2139/ssrn.3493688",
-      "title": "'What to Expect when You Are Expecting' a European Crowdfunding Regulation: The Current ‘Bermuda Triangle’ and Future Scenarios for Marketplace Lending and Investing in Europe",
-      "date": "2019-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2760/47162",
-      "title": "1st TRIMIS Horizon Scanning Session",
-      "date": "2020-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.landusepol.2019.05.029",
-      "title": "Parking futures: Preparing European cities for the advent of automated vehicles",
-      "date": "2020-01-16",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3917/e.ris.117.0041",
-      "title": "China’s participation in European container ports: Drivers and possible future scenarios",
-      "date": "2020-03-19",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3917/ris.117.0041",
-      "title": "China’s Participation in European Container Ports: Drivers and Possible Future Scenarios",
-      "date": "2020-03-19",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.wasman.2020.03.018",
-      "title": "Offshore and onshore wind turbine blade waste material forecast at a regional level in Europe until 2050",
-      "date": "2020-03-20",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ese.2020.100030",
-      "title": "Wastewater treatment in 2050: Challenges ahead and future vision in a European context",
-      "date": "2020-04-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s10767-020-09351-x",
-      "title": "“Brexit Futures: a Brexit World’s Anxieties, Fears and Hopes”: a Response to Shakuntala Banaji’s “A Review of Victor Seidler’s Making Sense of Brexit: Democracy, Europe and Uncertain Futures”",
-      "date": "2020-04-08",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.heliyon.2020.e03935",
-      "title": "Estimating the impact of the Internet of Things on productivity in Europe",
-      "date": "2020-05-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.29252/jps.4.13.185",
-      "title": "Futurism of Convergent or Divergent Relations between the United States and the European Union by 2030 on Important International Issues",
-      "date": "2020-07-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2020.102585",
-      "title": "Envisioning the future of health systems: Exploratory insights from European countries",
-      "date": "2020-08-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/economies8040085",
-      "title": "Digital Competitiveness in the European Union Era: The Greek Case",
-      "date": "2020-10-15",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/ijerph17238941",
-      "title": "Foresight for the Fitness Sector: Results from a European Delphi Study and Its Relevance in the Time of COVID-19",
-      "date": "2020-12-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/su122310194",
-      "title": "TRIMIS: Modular Development of an Integrated Policy-Support Tool for Forward-Oriented Transport Research and Innovation Analysis",
-      "date": "2020-12-06",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2139/ssrn.3524254",
-      "title": "Prospective Policy Study on Artificial Intelligence and EU Trade Policy",
-      "date": "2020-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.5751/es-12110-260111",
-      "title": "Meeting places and social capital supporting rural landscape stewardship: A Pan-European horizon scanning",
-      "date": "2021-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s12062-020-09319-x",
-      "title": "Projections of Older European Migrant Populations in Australia, 2016–56",
-      "date": "2021-01-19",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2020.102690",
-      "title": "Stakeholders’ preferences for the future of transport in Europe: Participatory evaluation of scenarios combining scenario planning and the multi-actor multi-criteria analysis",
-      "date": "2021-03-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.futures.2021.102725",
-      "title": "The future of the forest-based bioeconomy in selected southeast European countries",
-      "date": "2021-04-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.treng.2021.100080",
-      "title": "A review of current and future powertrain technologies and trends in 2020",
-      "date": "2021-06-24",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.24425/gac.2021.136678",
-      "title": "Foresight-forecasting in the system of recreational land management",
-      "date": "2021-07-19",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1088/1741-4326/ac1c85",
-      "title": "SOLPS-ITER modeling of divertor scenarios for EU-DEMO",
-      "date": "2021-08-11",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/23745118.2021.1965405",
-      "title": "More or less integration? Examining support for different EU future scenarios in Austria",
-      "date": "2021-08-14",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.rser.2021.111186",
-      "title": "Sustainable renewable energy supply networks optimization – The gradual transition to a renewable energy system within the European Union by 2050",
-      "date": "2021-08-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1111/oet.12884",
-      "title": "European Union announces measures designed to cut emissions by 55% by 2030",
-      "date": "2021-09-17",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.wace.2021.100363",
-      "title": "Extreme wind projections over Europe from the Euro-CORDEX regional climate models",
-      "date": "2021-09-30",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/23299460.2021.1978692",
-      "title": "Multiple futures for society, research, and innovation in the European Union: jumping to 2038",
-      "date": "2021-10-06",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckab164.177",
-      "title": "Using foresight methodologies to tackle SARS-COV-2 related health impacts",
-      "date": "2021-10-20",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.14716/ijtech.v12i5.5252",
-      "title": "Foresight-driven Approach to Support the Proactive Adaptation of Future Sustainability Related Regulatory Frameworks: European Port Cluster Study",
-      "date": "2021-12-07",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.15211/soveurope720215060",
-      "title": "New Strategic Foresight in EU",
-      "date": "2021-12-31",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.26661/hst-2022-10-87-01",
-      "title": "CONCEPTUAL BASIS OF “THE DIGITAL ECONOMY FORSITE MODEL”: EUROPEAN EXPERIENCE",
-      "date": "2022-01-01",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1556/063.2021.00054",
-      "title": "Methodological choices in developing scenarios in vocational education and training – Reflections on three European scenario projects",
-      "date": "2022-05-05",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1186/s12302-022-00649-5",
-      "title": "Water resources availability in southern Europe at the basin scale in response to climate change scenarios",
-      "date": "2022-08-23",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.erss.2022.102840",
-      "title": "Energy futures reimagined: the global energy transition and dependence on Russian energy as issues in the sociotechnical imaginaries of energy security in Finland",
-      "date": "2022-10-21",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckac129.064",
-      "title": "Foresight and Preparedness Studies on COVID-19 in the World: A Systematic Literature Review",
-      "date": "2022-10-25",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckac129.199",
-      "title": "Using foresight methodologies to tackle SARS-COV-2 related health impacts",
-      "date": "2022-10-25",
-      "reason": "foresight_method_or_background_not_future_development",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1093/eurpub/ckac129.203",
-      "title": "Foresight for policy – addressing the challenges for policy impact",
-      "date": "2022-10-25",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.enconman.2022.116160",
-      "title": "Projections of energy yield- and complementarity-driven wind energy expansion scenarios in the European Union",
-      "date": "2022-10-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ijhydene.2022.08.170",
-      "title": "Competitive and secure renewable hydrogen markets: Three strategic scenarios for the European Union",
-      "date": "2022-10-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1080/13501763.2022.2141303",
-      "title": "Next generation EU and the future of economic governance: towards a paradigm change or just a big one-off?",
-      "date": "2022-11-23",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2139/ssrn.4170198",
-      "title": "Global Spillovers of US Climate Policy Risk: Evidence from EU Carbon Emissions Futures",
-      "date": "2022-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.24195/2414-9616.2022-2.3",
-      "title": "Оverview of migration changes in Europe in the last years and projections for the future (2019-2021)",
-      "date": "2022-12-31",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.ijmedinf.2022.104949",
-      "title": "Towards the European Health Data Space (EHDS) ecosystem: A survey research on future health data scenarios",
-      "date": "2023-02-28",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3390/en16052408",
-      "title": "Simplified Guidelines for Retrofitting Scenarios in the European Countries",
-      "date": "2023-03-02",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.56578/jgelcd020102",
-      "title": "Production of Electricity at the European Union Level vs. Romania",
-      "date": "2023-03-29",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.2478/eustu-2022-0049",
-      "title": "Penetration of the Charter of Fundamental Rights of the European Union into the Constitutional Order of the Czech Republic – Basic Scenarios",
-      "date": "2023-04-19",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.3846/jbem.2023.19059",
-      "title": "LABOUR PRODUCTIVITY ANALYSIS OF MANUFACTURING SECTOR IN TURKEY AGAINST EU",
-      "date": "2023-05-23",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.54648/ijcl2023007",
-      "title": "The Future of European Labour Law",
-      "date": "2023-06-01",
-      "reason": "no_substantive_source_text_for_radar2",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1016/j.jclepro.2023.137867",
-      "title": "Strategic routes for wastewater treatment plant upgrades to reduce micropollutants in European surface water bodies",
-      "date": "2023-06-20",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1186/s13705-023-00410-7",
-      "title": "RETRACTED ARTICLE: Sustainable development economy and the development of green economy in the European Union",
-      "date": "2023-08-22",
-      "reason": "non_original_editorial_or_retracted",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.15407/etet2023.03.005",
-      "title": "Social resilience of the national economy through the prism of the experience of the European Union and Ukraine",
-      "date": "2023-09-29",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.32450/aacd.1439529",
-      "title": "Future of European Security Policies: Is Geopolitical Europe Possible?",
-      "date": "2023-11-25",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    },
-    {
-      "doi": "10.1007/s12571-023-01421-0",
-      "title": "Actions to strengthen the contribution of small farms and small food businesses to food security in Europe",
-      "date": "2023-12-29",
-      "reason": "no_traceable_european_future_proposition",
-      "formerly": "active"
-    }
-  ],
+  "proposed_removals": [],
   "note": "A scope admission decision, not a scientific-quality or forecast-accuracy verdict. Preview never edits the collection, priority list, or rejection registry. A metadata-only uncertain original is removed after its available abstract is inspected."
 }
