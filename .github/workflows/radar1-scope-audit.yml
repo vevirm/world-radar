@@ -1,0 +1,113 @@
+name: Radar 1 - EU foresight scope audit (no scan)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: 'Preview first. Apply only after checking the preview.'
+        required: true
+        type: choice
+        options:
+          - preview
+          - apply
+        default: preview
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-shared-single-runner
+  cancel-in-progress: false
+
+jobs:
+  relevance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install only essential dependencies
+        run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Verify Python files and imports before touching research
+        run: |
+          python -m py_compile scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          from scholarly import foresight_scope, eu_connection
+          assert foresight_scope({'title': 'EU carbon futures market price volatility'})[0] == 'out_of_scope'
+          assert foresight_scope({'title': 'Future scenarios for renewable energy in Europe by 2050'})[0] == 'future_facing'
+          assert eu_connection({'title':'EU strategic foresight scenarios', 'url':'https://commission.europa.eu/x'})[0] == 'eu_official'
+          assert eu_connection({'title':'European climate futures', 'publisher':'Elsevier BV'})[0] == 'eu_focused'
+          assert eu_connection({'title':'University futures in Vietnam', 'publisher':'Springer'})[0] == 'review'
+          print('Radar 1 preflight passed.')
+          PY
+      - name: Check existing Radar 1 leads without changing them
+        run: python scripts/radar1_scope_audit.py --report radar1-scope-report.json
+      - name: Publish preview in job summary
+        run: |
+          python - <<'PY'
+          import json, os
+          info=json.load(open('radar1-scope-report.json',encoding='utf-8'))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as out:
+              out.write('## Radar 1: EU foresight scope preview\n\n')
+              out.write(f'**Original studies retained:** {info["original_studies"]}\n\n')
+              for label, count in info['classification_counts'].items():
+                  out.write(f'- {label}: **{count}**\n')
+              out.write('\n### EU connection (separate from foresight)\n')
+              for label, count in info['eu_connection_counts'].items():
+                  out.write(f'- {label}: **{count}**\n')
+              out.write('\n**Official EU institutional reports are also collected separately from registered agency publisher sources.**\n')
+              out.write('This is relevance triage, not outcome verification. Radar 2 is unchanged.\n')
+          PY
+      - name: Back up Radar 1 studies before any optional edits
+        if: ${{ inputs.run_mode == 'apply' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-1-Before-Scope-${{ github.run_id }}
+          path: |
+            research-leads.json
+            priority-50.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Apply scope classifications to original leads (no deletions)
+        if: ${{ inputs.run_mode == 'apply' }}
+        run: |
+          python scripts/radar1_scope_audit.py --apply --report radar1-scope-report.json
+          python scripts/priority.py
+          python -m json.tool research-leads.json > /dev/null
+          python -m json.tool priority-50.json > /dev/null
+          python - <<'PY'
+          import json
+          db=json.load(open('research-leads.json',encoding='utf-8'))
+          report=json.load(open('radar1-scope-report.json',encoding='utf-8'))
+          assert len(db['leads']) == report['original_studies']
+          assert all('foresight_scope' in x and 'eu_connection' in x for x in db['leads'])
+          shortlist=json.load(open('priority-50.json',encoding='utf-8'))['items']
+          assert all(x.get('foresight_scope') != 'out_of_scope' for x in shortlist)
+          assert all(x.get('eu_connection') != 'review' for x in shortlist)
+          PY
+      - name: Make scope report downloadable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-1-EU-Foresight-Preview
+          path: radar1-scope-report.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Save classified Radar 1 leads and refreshed priority list
+        if: ${{ inputs.run_mode == 'apply' }}
+        run: |
+          git config user.name 'world-radar-bot'
+          git config user.email 'world-radar-bot@users.noreply.github.com'
+          git add research-leads.json priority-50.json radar1-scope-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Radar 1: classify foresight scope, preserve all original leads'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo 'No changes to publish.'
+          fi
