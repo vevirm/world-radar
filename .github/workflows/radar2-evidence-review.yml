@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Review saved three-case pilot or gather three NEW live research drafts (no publishing)'
+        description: 'Review saved evidence or search OpenAlex for three later-literature drafts (never publish)'
         type: choice
         required: true
         default: review_only
@@ -30,10 +30,12 @@ jobs:
           python -m pytest -q tests/test_radar2_evidence_review.py tests/test_radar2_live_draft.py
       - name: Vet three dated evidence comparisons without modifying active Radar 2
         run: python scripts/radar2_evidence_review.py
-      - name: Optional live web research of three accepted originals (draft only)
+      - name: Optional OpenAlex follow-up research for three originals (draft only)
         if: ${{ inputs.mode == 'live_three_drafts' }}
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
+          MAILTO: ${{ secrets.MAILTO }}
         run: python scripts/radar2_live_draft.py
       - name: Save review report, not publication data
         uses: actions/upload-artifact@v4
