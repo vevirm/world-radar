@@ -58,6 +58,9 @@ jobs:
               out.write(f'**Original studies retained:** {info["original_studies"]}\n\n')
               for label, count in info['classification_counts'].items():
                   out.write(f'- {label}: **{count}**\n')
+              out.write('\n### Active historical selection (Radar 2 not changed)\n')
+              for label, count in info.get('selection_counts',{}).items():
+                  out.write(f'- {label}: **{count}**\n')
               out.write('\n### EU connection (separate from foresight)\n')
               for label, count in info['eu_connection_counts'].items():
                   out.write(f'- {label}: **{count}**\n')
@@ -72,6 +75,7 @@ jobs:
           path: |
             research-leads.json
             priority-50.json
+            radar1-active.json
           if-no-files-found: error
           retention-days: 90
       - name: Apply scope classifications to original leads (no deletions)
@@ -87,6 +91,10 @@ jobs:
           report=json.load(open('radar1-scope-report.json',encoding='utf-8'))
           assert len(db['leads']) == report['original_studies']
           assert all('foresight_scope' in x and 'eu_connection' in x for x in db['leads'])
+          manifest=json.load(open('radar1-active.json',encoding='utf-8'))
+          assert manifest['original_records'] == len(db['leads'])
+          assert sum(manifest['selection_counts'].values()) == len(db['leads'])
+          assert all(x['date'] <= '2023-12-31' for x in manifest['studies'] if x['selection']=='active')
           shortlist=json.load(open('priority-50.json',encoding='utf-8'))['items']
           assert all(x.get('foresight_scope') != 'out_of_scope' for x in shortlist)
           assert all(x.get('eu_connection') != 'review' for x in shortlist)
@@ -103,7 +111,7 @@ jobs:
         run: |
           git config user.name 'world-radar-bot'
           git config user.email 'world-radar-bot@users.noreply.github.com'
-          git add research-leads.json priority-50.json radar1-scope-report.json
+          git add research-leads.json priority-50.json radar1-scope-report.json radar1-active.json
           if ! git diff --cached --quiet; then
             git commit -m 'Radar 1: classify foresight scope, preserve all original leads'
             git pull --rebase origin main

@@ -21,6 +21,19 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Preflight EU-first historical selection before expensive scanning
+        run: |
+          python -m py_compile scripts/radar.py scripts/scholarly.py scripts/priority.py scripts/radar1_scope_audit.py
+          python scripts/radar1_scope_audit.py --report /tmp/radar1-preflight.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/radar1-preflight.json',encoding='utf-8'))
+          assert p['original_studies'] > 0
+          assert sum(p['selection_counts'].values()) == p['original_studies']
+          assert p['historical_period']['end'] == '2023-12-31'
+          assert all(item.get('source_kind') for item in p['priority_preview'])
+          print('Radar 1 cheap preflight passed:', p['selection_counts'])
+          PY
       - name: Confirm fixed-window scanner is deployed
         run: |
           python - <<'PY'
@@ -58,6 +71,19 @@ jobs:
             echo "::error::Verification returned early after ${elapsed}s. Scanner did not honor the full 9-minute phase."
             exit 1
           fi
+      - name: Refresh EU-first historical scope, active selection and priorities
+        run: |
+          python scripts/radar1_scope_audit.py --apply --report radar1-scope-report.json
+          python scripts/priority.py
+          python -m json.tool radar1-active.json > /dev/null
+          python - <<'PY'
+          import json
+          a=json.load(open('radar1-active.json'))
+          original=json.load(open('research-leads.json'))['leads']
+          assert a['original_records'] == len(original)
+          assert all(x['date'] <= '2023-12-31' for x in a['studies'] if x['selection']=='active')
+          print('Radar 1 active historical selection checked:', a['selection_counts'])
+          PY
       - name: Validate JSON and age limits
         run: |
           python -m json.tool findings.json > /dev/null
@@ -74,7 +100,7 @@ jobs:
         run: |
           git config user.name 'eu-foresight-radar-bot'
           git config user.email 'eu-foresight-radar-bot@users.noreply.github.com'
-          git add findings.json radar-state.json research-leads.json priority-50.json stuff/WORLD_RADAR_MASTER.xlsx
+          git add findings.json radar-state.json research-leads.json radar1-active.json radar1-scope-report.json priority-50.json stuff/WORLD_RADAR_MASTER.xlsx
           if ! git diff --cached --quiet; then
             git commit -m 'European Foresight Radar: advance source rotation and verified findings'
             git pull --rebase
