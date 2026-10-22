@@ -35,6 +35,9 @@ def audit(leads_path, *, apply=False, report_path=None):
     by_reason = Counter()
     new_tags = 0
     period_counts = Counter()
+    selection_counts = Counter()
+    selection_samples = {'active': [], 'review': [], 'excluded': [], 'later_context': []}
+    handoff = []
     for row in leads:
         try:
             pub_date = date.fromisoformat(str(row.get('date', '')))
@@ -47,15 +50,33 @@ def audit(leads_path, *, apply=False, report_path=None):
         by_reason[reason] += 1
         eu_tier, eu_reason = eu_connection(row)
         eu_counts[eu_tier] += 1
+        # Unknown cases go to review, not silently to the active foresight feed.
+        if source_period == 'later_context':
+            selection = 'later_context'
+        elif label == 'out_of_scope':
+            selection = 'excluded'
+        elif label == 'future_facing' and eu_tier != 'review':
+            selection = 'active'
+        else:
+            selection = 'review'
+        selection_counts[selection] += 1
+        if len(selection_samples[selection]) < 15:
+            selection_samples[selection].append({'title':row.get('title'), 'date':row.get('date'),
+                                                  'doi':row.get('doi'), 'reason':reason})
+        handoff.append({'doi': row.get('doi'), 'date': row.get('date'),
+                        'title':row.get('title'), 'selection':selection,
+                        'foresight_scope':label, 'eu_connection':eu_tier,
+                        'selection_reason':reason, 'source_period':source_period})
         cross_tab[f'{label} / {eu_tier}'] += 1
         if len(eu_examples[eu_tier]) < 12:
             eu_examples[eu_tier].append({'doi': row.get('doi'), 'title': row.get('title'), 'eu_reason': eu_reason})
-        if (row.get('source_period') != source_period or row.get('foresight_scope') != label or row.get('foresight_scope_reason') != reason
+        if (row.get('radar1_selection') != selection or row.get('source_period') != source_period or row.get('foresight_scope') != label or row.get('foresight_scope_reason') != reason
                 or row.get('eu_connection') != eu_tier or row.get('eu_connection_reason') != eu_reason):
             new_tags += 1
         if len(examples[label]) < 15:
             examples[label].append({'doi': row.get('doi'), 'title': row.get('title'), 'reason': reason})
         if apply:
+            row['radar1_selection'] = selection
             row['source_period'] = source_period
             row['foresight_scope'] = label
             row['foresight_scope_reason'] = reason
@@ -71,6 +92,7 @@ def audit(leads_path, *, apply=False, report_path=None):
               'applied': apply, 'original_studies': len(leads),
               'historical_period': {'start': HISTORICAL_START.isoformat(), 'end': HISTORICAL_END.isoformat()},
               'period_counts': dict(period_counts),
+              'selection_counts': dict(selection_counts), 'selection_samples':selection_samples,
               'classification_counts': dict(counts), 'eu_connection_counts': dict(eu_counts),
               'future_by_eu_connection': dict(cross_tab), 'eu_examples': eu_examples,
               'reason_counts': dict(by_reason),
@@ -100,6 +122,17 @@ def audit(leads_path, *, apply=False, report_path=None):
     if report_path:
         atomic_json(Path(report_path), report)
     if apply:
+        # Keep original 1,368 records; write the selection separately for Radar 2
+        # alignment in a *later* reviewed change. Radar 2 is not changed here.
+        manifest = {'schema_version': 1, 'generated_at': report['generated_at'],
+                    'historical_start': HISTORICAL_START.isoformat(),
+                    'historical_end': HISTORICAL_END.isoformat(),
+                    'original_records': len(handoff),
+                    'selection_counts': dict(selection_counts),
+                    'note':'active=historical EU-connected forward-looking research; review=undecided; later_context=2024+; excluded=out of scope. Original archive remains intact.',
+                    'studies':handoff}
+        if path.resolve() == (ROOT/'research-leads.json').resolve():
+            atomic_json(ROOT/'radar1-active.json', manifest)
         atomic_json(path, raw)
     return report
 
@@ -114,6 +147,7 @@ def main():
     print(json.dumps({'applied': report['applied'], 'studies': report['original_studies'],
                       'future': report['classification_counts'],
                       'eu_connection': report['eu_connection_counts'],
+                      'selection': report['selection_counts'],
                       'changed': report['tags_added_or_changed']},
                      indent=2))
 

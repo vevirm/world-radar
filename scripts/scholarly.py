@@ -61,6 +61,16 @@ TRADING = re.compile(
     r'(?:hedg\w*|arbitrag\w*).{0,28}futures?|'
     r'(?:carbon|electricity|grain|stock|bond|oil|wheat|currency|gas|energy|index) futures?'
     r'(?:\s+(?:market|prices?|contract|trading|returns?|options?)))\b', re.I)
+# Narrow exclusions for false friends of *foresight*. Contract-market futures
+# and consensus-building Delphi are not long-term EU foresight by default.
+FINANCIAL_FUTURES_TITLE = re.compile(
+    r'\b(?:electricity|carbon|oil|gas|grain|stock|bond|currency|commodity|emission\s+allowances?)\s+futures?\b', re.I)
+CLINICAL_CONSENSUS = re.compile(
+    r'\b(?:Delphi|consensus)\b.*\b(?:guidelines?|recommendations?|curricul\w+|competencies|questionnaire|statements|clinical|care)\b|'
+    r'\b(?:guidelines?|recommendations?|curricul\w+|competencies|questionnaire|statements|clinical|care)\b.*\b(?:Delphi|consensus)\b', re.I)
+FUTURE_OVERRIDE = re.compile(
+    r'\b(?:strategic foresight|future of|horizon scanning|scenarios? (?:for|to|of)\s+20[2345]\d|'
+    r'policy pathways?|future scenarios?|by 20[2345]\d|in 20[2345]\d)\b', re.I)
 RESEARCH_PREVIEW = re.compile(
     r'\b(?:foresight|horizon scanning|backcast\w*|delphi|prospectiv\w*|'
     r'forecast\w*|projections?|predict\w*|scenario\w*|'
@@ -84,7 +94,7 @@ HISTORY_FORWARD = re.compile(
 # is not automatically an EU strategic foresight scenario. Metadata-only leads
 # remain reviewable rather than being destroyed.
 OPERATIONAL_FORECAST = re.compile(
-    r'\b(?:loan default|stock price|radiation belt|ionospheric perturbations?|'
+    r'\b(?:loan default|stock price|radiation belts?|ionospheric perturbations?|'
     r'predict(?:ing|ion) (?:the )?phenology|short.term weather forecast|'
     r'credit scoring|time.series employment|forecast time series)\b', re.I)
 OTHER_REGION_TITLE = re.compile(
@@ -110,6 +120,10 @@ def foresight_scope(lead):
         return 'needs_review', 'title_missing'
     if PARATEXT_TITLE.search(title) or re.search(r'[\s:–-]preface\s*$', title, re.I):
         return 'out_of_scope', 'review_editorial_or_correction'
+    if FINANCIAL_FUTURES_TITLE.search(title) and not FUTURE_OVERRIDE.search(title):
+        return 'out_of_scope', 'financial_futures_contracts_not_societal_foresight'
+    if CLINICAL_CONSENSUS.search(title) and not FUTURE_OVERRIDE.search(title):
+        return 'needs_review', 'clinical_delphi_consensus_not_automatically_future_foresight'
     if TRADING.search(title):
         # A long-range socioeconomic projection about market development could
         # still be pertinent, but mere carbon/electricity futures trading isn't.

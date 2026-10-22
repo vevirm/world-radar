@@ -38,13 +38,17 @@ def inference_topic(title):
 
 def report_series(item):
     # Editorial variety only: never delete a source from the archive.
-    if item.get('source_kind') != 'Curated publisher report':
+    if item.get('source_kind') not in ('Curated publisher report', 'Source-screened EU report'):
         return None
     name = str(item.get('title') or '').lower()
     if 'trends and projections in europe' in name:
         return 'EEA trends and projections'
     if 'eurosystem staff macroeconomic projections' in name:
         return 'ECB macro projections'
+    if 'strategic foresight report' in name:
+        return 'European Commission strategic foresight reports'
+    if 'ageing report:' in name:
+        return 'European Commission ageing reports'
     return None
 
 
@@ -53,16 +57,19 @@ def score(item, today):
     years = (today-d).days / 365.2425
     if not (HISTORICAL_START <= d <= HISTORICAL_END): return -999
     # Explicit, auditable weighting, not an objective impact/accuracy metric.
-    base = 95 if item.get('source_kind') == 'Curated publisher report' else 30
+    # Full-source screened institutional studies should lead editorial review,
+    # not a rolling series of less distinctive annual indicator bulletins.
+    base = (145 if item.get('source_kind') == 'Source-screened EU report'
+            else 102 if item.get('source_kind') == 'Curated publisher report' else 30)
     eu_tier = item.get('eu_connection') or eu_connection(item)[0]
     # Institutional origin is valuable, but an institutional affiliation
     # alone does not prove the EU commissioned or issued the paper.
     base += {'eu_official': 55, 'eu_institution': 28,
              'eu_focused': 24, 'eu_related': 9, 'review': -35}.get(eu_tier, 0)
-    if 5 <= years <= 10: base += 30
-    elif 4 <= years < 5: base += 22
+    if 5 <= years <= 10: base += 17
+    elif 3 <= years < 5: base += 15
     elif years > 10: base += 9
-    elif years < 3: base -= 10
+    # 2023 is still a valid historical reference; do not punish it for recency.
     if item.get('target_year') and item['target_year'] <= today.year: base += 15
     if item.get('method', '').lower().find('forecast') >= 0 or 'projection' in item.get('method', '').lower(): base += 4
     if item.get('source_kind') == 'Indexed academic lead':
@@ -86,6 +93,32 @@ def refresh(today=None, *, save=True):
         item = dict(x, source_kind='Curated publisher report', verification_status='Publisher-linked candidate · original forecast not extracted', abstract='', doi='')
         item['eu_connection'], item['eu_connection_reason'] = eu_connection(item)
         records.append(item)
+    # Radar 1 has fully source-screened EU publications that its fixed curated
+    # bibliography missed. Promote these verified historical sources for review,
+    # while leaving 2024+ findings as later context only.
+    for f in verified_records:
+        try:
+            d = date.fromisoformat(str(f.get('date', '')))
+        except ValueError:
+            continue
+        if not (HISTORICAL_START <= d <= HISTORICAL_END):
+            continue
+        if f.get('quality', {}).get('status') != 'automated research-substance screen passed':
+            continue
+        if f.get('source_category') != 'EU institution / agency':
+            continue
+        item = {
+            'title': f['title'], 'date': f['date'], 'publisher': f.get('source') or 'EU institution',
+            'topic': f.get('topic', 'European futures'),
+            'method': 'Original EU institutional foresight · full source screened',
+            'url': f['url'], 'doi': '', 'abstract': '',
+            'source_kind': 'Source-screened EU report',
+            'verification_status': 'Full study automated quality screen passed',
+            'full_text_url': f.get('full_text_url', ''),
+            'target_year': None,
+        }
+        item['eu_connection'], item['eu_connection_reason'] = eu_connection(item)
+        records.append(item)
     for x in indexed:
         if not x.get('doi') or not x.get('date'): continue
         try:
@@ -93,8 +126,8 @@ def refresh(today=None, *, save=True):
         except ValueError:
             continue
         scope, _ = foresight_scope(x)
-        if scope == 'out_of_scope':
-            continue  # Original record stays in the research archive.
+        if scope != 'future_facing':
+            continue  # Uncertain and out-of-scope originals remain in the archive, not top 50.
         eu_tier, eu_reason = eu_connection(x)
         if eu_tier == 'review':
             continue  # Not an EU priority until its EU relevance is substantiated.
@@ -111,21 +144,30 @@ def refresh(today=None, *, save=True):
         records.append(item)
     scored = [(score(x,today), x) for x in records]
     scored = sorted(((s,x) for s,x in scored if s >= 0), key=lambda pair: (pair[0], pair[1]["date"], pair[1]["title"]), reverse=True)
-    selected=[]; seen=set(); by_topic={}; by_publisher={}; by_series={}
+    selected=[]; seen=set(); titles_seen=set(); by_topic={}; by_publisher={}; by_series={}
+    def historical_identity(x):
+        title = re.sub(r'[^a-z0-9]+', ' ', str(x.get('title') or '').lower()).strip()
+        # A short verified EU report title and a longer curated subtitle are one work.
+        strategic = re.search(r'\b(20(?:1[1-9]|2[0-3]))\s+strategic foresight report\b', title)
+        return ('strategic-foresight-' + strategic.group(1)) if strategic else title
     # Blend recognised institutional reports with serious academic research;
     # avoid drowning the list with multiple same-year editions of one series.
     for _, x in scored:
         if len(selected) >= 50: break
         key = x.get('doi') or x['url'].rstrip('/').lower()
-        if key in seen: continue
+        title_key=historical_identity(x)
+        if key in seen or title_key in titles_seen: continue
         topic=x.get('topic','')
         pub=x.get('publisher','')
-        if by_publisher.get(pub,0) >= (8 if pub == 'European Environment Agency' else 5): continue
+        if by_publisher.get(pub,0) >= (6 if pub == 'European Environment Agency' else 7 if 'European Commission' in pub else 5): continue
         if by_topic.get(topic,0) >= 12: continue
         series = report_series(x)
-        if series and by_series.get(series, 0) >= 3: continue
+        series_cap = {'ECB macro projections': 1, 'EEA trends and projections': 2,
+                      'European Commission ageing reports': 1,
+                      'European Commission strategic foresight reports': 4}.get(series, 2)
+        if series and by_series.get(series, 0) >= series_cap: continue
         if series: by_series[series] = by_series.get(series, 0) + 1
-        seen.add(key); by_publisher[pub]=by_publisher.get(pub,0)+1
+        seen.add(key); titles_seen.add(title_key); by_publisher[pub]=by_publisher.get(pub,0)+1
         by_topic[topic]=by_topic.get(topic,0)+1
         x=dict(x)
         x['ranking_score'] = score(x, today)
@@ -143,7 +185,7 @@ def refresh(today=None, *, save=True):
         selected.append(x)
     result={'schema_version':1,'generated_date':today.isoformat(), 'target':50,
             'policy':'Original publications from 2011 through 2023 inclusive; newer publications belong to the Radar 2 evidence period. Shortlist is research triage, not 50 certified findings',
-            'method_note':'EU-issued reports preferred; independent EU-focused future research remains eligible. Issuer attribution, full-text quality, and retrospective accuracy are separate checks',
+            'method_note':'2011–2023 EU institutional and European future-oriented originals; 2024+ only later context. Source-screened publisher reports prioritized and annual series diversified. Research priority is not forecast accuracy.',
             'count':len(selected),'items':selected}
     if save:
         target=ROOT/'priority-50.json'
