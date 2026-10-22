@@ -122097,6 +122097,91 @@
         "evidence_role": "related_context",
         "context_reason": "same_broad_subject_only"
       }
+    },
+    {
+      "lead_id": "lead-8da6dc2c3be4b6e2",
+      "original_title": "Strategic scenarios of global logistics: what lies ahead for Europe?",
+      "field": "field_developments",
+      "reason": "different_geography_and_weak_topic",
+      "publication": {
+        "title": "Port Logistics in West and Central Africa: A Strategic Development under Globalization",
+        "url": "https://doi.org/10.4236/ojapps.2014.42009",
+        "date": "2014-01-01",
+        "year": 2014,
+        "evidence_kind": "implementation_or_evaluation",
+        "finding_from_abstract": "The main idea of this study is to provide help to West and Central Africa port logistics authorities in making, evaluating and realizing their decisions on port development/management, all in an effort to guaranty port efficiency and operational brilliance to profit the different ports, their hinterlands and their related clients.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "logistic",
+          "what"
+        ],
+        "discovery": "issue",
+        "interpretation": "A later paper describes implementation or evaluation",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope geography_unspecified",
+        "evidence_role": "related_context",
+        "context_reason": "one_topic_anchor"
+      }
+    },
+    {
+      "lead_id": "lead-8eef93e4d95d0413",
+      "original_title": "ClimateEU, scale-free climate normals, historical time series, and future projections for Europe",
+      "field": "field_developments",
+      "reason": "different_geography_and_weak_topic",
+      "publication": {
+        "title": "Developing gridded climate data using neural networks: high-resolution historical climate and future projections for Africa",
+        "url": "https://doi.org/10.7939/r3-jy0v-4728",
+        "date": "2024-11-12",
+        "year": 2024,
+        "evidence_kind": "measured_or_reported_change",
+        "finding_from_abstract": "The 1961-1990 baseline grid for Africa was developed using a combination of thin-plate spline interpolation of data from 4625 weather stations for Africa, and subsequent fine-tuning with neural networks that associate climate observed at weather stations with covariates reflecting topographic and geographic information (such as elevation,",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "climate",
+          "historical",
+          "normal",
+          "time"
+        ],
+        "discovery": "semantic",
+        "interpretation": "A later paper reports measured or observed developments",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope geography_unspecified",
+        "evidence_role": "related_context",
+        "context_reason": "same_broad_subject_only"
+      }
+    },
+    {
+      "lead_id": "lead-8eef93e4d95d0413",
+      "original_title": "ClimateEU, scale-free climate normals, historical time series, and future projections for Europe",
+      "field": "field_developments",
+      "reason": "different_geography_and_weak_topic",
+      "publication": {
+        "title": "Climate data interpolation with deep neural networks: a comprehensive dataset of historical and future climate for Africa",
+        "url": "https://doi.org/10.5194/egusphere-egu25-4595",
+        "date": "2025-03-14",
+        "year": 2025,
+        "evidence_kind": "newer_scenario_or_model",
+        "finding_from_abstract": "Databases of high-resolution interpolated climate data are essential for analyzing the impacts of past climate events and for developing climate change adaptation strategies for managed and natural ecosystems.",
+        "relationship": "same_issue_published_followup_not_outcome_verified",
+        "geography": "geography_unspecified",
+        "shared_issue_terms": [
+          "climate",
+          "historical",
+          "normal",
+          "scale-free"
+        ],
+        "discovery": "semantic",
+        "interpretation": "Later research continues the same issue",
+        "source": "openalex_publication_metadata",
+        "question_fit_score": 6,
+        "question_fit_basis": "0 shared subject concepts, 2 substantive title terms; scope geography_unspecified",
+        "evidence_role": "related_context",
+        "context_reason": "same_broad_subject_only"
+      }
     }
   ]
 }
