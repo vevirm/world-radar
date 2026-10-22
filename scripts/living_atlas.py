@@ -66,13 +66,27 @@ def editorial_score(review):
             'dimensions':usable,'reviewed_on':review['reviewed_on'],'sources':links}
 
 def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=None, reviewed=None, generated_utc=None):
-    if leads is None: leads = load('research-leads.json', {}).get('leads', [])
+    if leads is None:
+        # Radar 2's accepted originals, NOT the old broad discovery catalogue.
+        # The explicit `leads` argument still supports isolated preflight tests.
+        leads = [{'url':e.get('source_url'), 'title':e.get('title'),
+                  'date':e.get('original_publication'),
+                  'abstract':e.get('original_passage') or '',
+                  'publisher':e.get('publisher'),
+                  'journal':e.get('topic'),
+                  'source_kind':e.get('source_kind'),
+                  'investigation_ready':e.get('investigation_ready',False)}
+                 for e in entries if e.get('source_url') and e.get('title')]
+
     if notes is None: notes = load('editorial-directions.json', {}).get('items', [])
     if observations is None: observations = load('outcome-observations.json', {}).get('observations', [])
     if ratings is None: ratings = load('editorial-assessments.json', {}).get('assessments', [])
     ratings_by_id = {x.get('lead_id'):x for x in ratings if x.get('lead_id')}
     notes = list(notes)
     for number, observation in enumerate(observations):
+        marker = tidy(observation.get('original_lead_title_contains')).casefold()
+        if not marker or not any(marker in tidy(e.get('title')).casefold() for e in entries):
+            continue  # Editorial context without an accepted historical original
         sources = [x for x in observation.get('sources',[]) if str(x.get('url','')).startswith('https://')]
         if not (sources and observation.get('expected') and observation.get('happened')):
             continue
@@ -198,8 +212,9 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             direction = 'Not established yet. The archive has not checked a comparable current indicator.'
             relevance = 'Not reassessed yet; this does not mean the topic is irrelevant.'
             knowledge = 'Needs an update'
-        abstract=tidy(lead.get('abstract'),500)
-        then = abstract or ('Original title is indexed, but the original argument is not available in the saved abstract. Read the source before attributing a position to its authors.')
+        abstract = tidy(entry.get('original_passage') or lead.get('abstract'),700)
+        then = abstract or ('Original passage has not yet been extracted from this institutional report. '
+                            'No prediction, scenario details or original argument have been inferred from its title.')
         grade=editorial_score(ratings_by_id.get(entry.get('id'),{}))
         records.append({'id':entry.get('id') or f'catalogue-{n:04d}', 'title':title, 'year':tidy(lead.get('date') or entry.get('original_publication'))[:4],
             'topic':thematic,'journal':tidy(lead.get('journal') or lead.get('publisher'),90), 'original_url':source,
@@ -207,7 +222,7 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             'knowledge':knowledge, 'screening':entry.get('screening_status',''), 'followups':followups, 'later_count':len(followups),
             'field_developments':developments, 'development_count':len(developments),
             'direction_trails':directions, 'direction_count':len(directions),
-            'sources':evidence,'rating':grade,'kind':'indexed_research'})
+            'sources':evidence,'rating':grade,'kind':('institutional_foresight' if lead.get('source_kind')=='institutional' else 'indexed_research')})
     buckets=defaultdict(list)
     for r in records: buckets[r['topic']].append(r)
     themes=[]
@@ -219,7 +234,7 @@ def make_atlas(entries, *, leads=None, notes=None, observations=None, ratings=No
             'example_titles':[x['title'] for x in items if x['later_count']][:4]})
     return {'generated_utc':generated_utc or datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
         'editorial_as_of':load('editorial-directions.json',{}).get('reviewed_on',''),
-        'method': 'Every indexed paper remains visible. Descriptions of later research are not real-world outcomes. Direction and relevance can be open questions. Editorial context snapshots are independent EU policy developments, not retroactively attributed to those papers.',
+        'method': 'Only accepted Radar 1 historical originals and curated institutional reports are visible. Descriptions of later research are not real-world outcomes. Direction and relevance can be open questions. Editorial context snapshots are independent EU policy developments, not retroactively attributed to those papers.',
         'summary':{'total':len(records),'themes':len(themes),'compared_with_literature':sum(bool(x.get('literature_assessed_utc')) for x in entries),
             'with_later_reading':sum(x['later_count']>0 or x['development_count']>0 for x in records),
             'with_field_developments':sum(x['development_count']>0 for x in records),

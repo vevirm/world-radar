@@ -59,6 +59,12 @@ def make_stories(entries, reviewed, observations):
     by_id = {e['id']: e for e in entries}
     stories = []
     for number, item in enumerate(observations):
+        # Historical policy snapshots remain in outcome-observations.json, but
+        # only a snapshot explicitly associated with a CURRENT Radar 1 original
+        # can appear in Radar 2's then/now output.
+        marker = clean(item.get('original_lead_title_contains')).casefold()
+        if not marker or not any(marker in clean(e.get('title')).casefold() for e in entries):
+            continue
         sources = [s for s in item.get('sources', []) if s.get('url', '').startswith('https://')]
         # An observation must provide subsequent sourced results to enter the front page.
         if not sources or not item.get('expected') or not item.get('happened'):
@@ -225,7 +231,7 @@ def write_word(stories, report, *, run=None):
         t = OxmlElement('w:t'); t.text = text
         run.append(t); h.append(run); p._p.append(h)
 
-    label('A small tour through big predictions')
+    label('Historical European futures, revisited')
     doc.add_heading('Back then.\nAnd now?', 0)
     p = paragraph('What Europeans hoped, planned or expected — and what the evidence says happened next. Short stories, not 100 pages of audit logs.')
     p.runs[0].font.size = Pt(14)
@@ -247,11 +253,16 @@ def write_word(stories, report, *, run=None):
     paragraph('Each story has three simple beats: what was being said, what came afterward, and a short verdict. We do not pretend every scenario was a prediction, or that an academic paper proves something happened in the real world.')
     doc.add_heading('About the numbers', 1)
     paragraph('A score out of 100 can be useful — when it has earned its place. Hindsight grades require an editor to check the original prediction against later independent measurements. For a policy target, we can show a separate 1–100 target-level yardstick; it is not a score for how clever the original idea was.')
-    p = paragraph('These examples use saved, dated source material. They are snapshots, not claims about the situation today.')
+    p = paragraph('Only source-reviewed comparisons will be presented as outcomes. This is a research-stage edition until those comparisons are available.' if not stories['stories'] else 'These examples use saved, dated source material. They are snapshots, not claims about the situation today.')
     p.runs[0].italic = True
-    heading = doc.add_heading('Two promises, two reality checks', 1)
-    heading.paragraph_format.page_break_before = True
-    paragraph('These are public policy goals, not forecasts by the research papers in the database. The destination year has not arrived in the measurements cited below.')
+    if stories['stories']:
+        heading = doc.add_heading('What later evidence actually shows', 1)
+        heading.paragraph_format.page_break_before = True
+        paragraph('Every comparison shown below comes from a current accepted historical original with a documented later evidence trail. Policy targets are not predictions.')
+    else:
+        doc.add_heading('Research status: evidence still missing',1)
+        paragraph('The accepted historical collection is ready, but no original has yet been paired with a source-reviewed, comparable later real-world development. We will not fill this gap with unrelated academic links or treat an imagined scenario as a forecast.')
+        paragraph('The next tasks are to extract passages from curated EU institutional reports, follow the actual questions from accepted originals, and check later measurements and implementation against them.')
     for index, story in enumerate(stories['stories']):
         if index:
             doc.add_paragraph('')
@@ -302,7 +313,7 @@ def write_word(stories, report, *, run=None):
             link(sources, 'Later study', item['later_url'])
 
     heading = doc.add_heading('How to read a hindsight score', 1)
-    heading.paragraph_format.page_break_before = True
+    heading.paragraph_format.page_break_before = bool(stories['stories'] or stories['reading_shelf'])
     paragraph('The future is messy. So should the judging be curious rather than overconfident.')
     label('A score is editorial, not a probability')
     for title, body in (

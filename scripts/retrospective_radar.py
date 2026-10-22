@@ -1,7 +1,7 @@
-"""Radar 2: source-grounded, clearly *informal* retrospective judgments.
+"""Radar 2: accepted-original, source-passage-led retrospective research.
 
-Uses OpenAlex scholarly metadata by default (no OpenAI dependency). Compares
-later studies with the original research and labels all conclusions provisional.
+Only Radar 1 accepted studies and curated EU reports with original passages
+enter research. OpenAlex follow-ups are provisional, never observed outcomes.
 """
 import argparse
 import http.client
@@ -56,28 +56,25 @@ def concise(sentence):
 
 
 def claims():
-    """Every Scanner 1 research lead is eligible for Scanner 2 follow-up.
+    """Exactly Radar 1 accepted historical originals, including EU reports.
 
-    A lead is a discovery record, not an authenticated prediction. Do not invent
-    a forecast or treat a scenario as a prediction.
+    Institutional reports without quoted original text are visible but are
+    NEVER researched as title-derived forecasts.
     """
-    out = {}
-    leads = read_json(ROOT / 'research-leads.json', {}).get('leads', [])
-    for lead in leads:
-        screening = screen(lead)
-        url = concise(lead.get('url'))
-        title = concise(lead.get('title'))
-        if not url or not title:
-            continue
-        identifier = 'lead-' + hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16]
-        out[identifier] = {'id': identifier, 'expected': concise(lead.get('abstract')) or title,
-                           'source_url': url, 'title': title, 'target_year': None,
-                           'original_publication': lead.get('date') or 'Unknown',
-                           'topic': lead.get('journal') or 'Foresight research',
-                           'publisher': lead.get('publisher') or lead.get('journal') or '',
-                           'lead_status': lead.get('status') or 'Discovered lead',
-                           'is_lead': True, **screening}
-    return list(out.values())
+    try:
+        from radar2_scope import original_claims
+    except ModuleNotFoundError:
+        from scripts.radar2_scope import original_claims
+    out = original_claims(ROOT)
+    for c in out:
+        if c['investigation_ready'] and c['source_kind'] == 'academic':
+            # The original passage, not generic abstract wording, is the seed.
+            c.update(screen({'title': c['title'], 'abstract':c['original_passage']}))
+        else:
+            c.update({'screening_status':'original_text_review_needed',
+                      'screening_reason':'Source passage not yet extracted; no prediction asserted.',
+                      'candidate_excerpt':'','candidate_year':None})
+    return out
 
 
 def response_text(payload):
@@ -332,6 +329,24 @@ def main():
     stored = read_json(OUTPUT, {'entries': {}})
     entries = stored.setdefault('entries', {})
     found = claims()
+    # Destructive legacy pruning requires the explicit no-scan preview/apply
+    # workflow. Prevent scheduled scans from publishing rejected originals.
+    if not (ROOT/'radar2-scope-ready.json').is_file():
+        raise SystemExit('Radar 2 is LOCKED until Radar 2 scope preview/apply has been approved.')
+    accepted_ids = {x['id'] for x in found}
+    retired = {k:v for k,v in entries.items() if k not in accepted_ids}
+    if retired:
+        try:
+            from radar2_scope import save
+        except ModuleNotFoundError:
+            from scripts.radar2_scope import save
+        # Retire future Radar-1-rejected originals without publishing them.
+        path = ROOT/'radar2-retired-originals.json'
+        history = read_json(path,{'entries':{}})
+        history.setdefault('entries',{}).update(retired)
+        save(path, history)
+        entries = {k:v for k,v in entries.items() if k in accepted_ids}
+        stored['entries'] = entries
     # Legacy numeric scores are not evidence of realization; migrate safely.
     for entry in entries.values():
         entry.pop('score', None)
@@ -361,49 +376,37 @@ def main():
     successful_evidence = 0
     literature_comparisons = 0
     literature_studies_found = 0
-    saved_leads = read_json(ROOT / "research-leads.json", {}).get("leads", [])
     new_question_trails = 0
     question_requests = 0
+    question_successful_requests = 0
+    question_raw_works = 0
     rescreened_exclusions = 0
-    subject_frequency = corpus_frequency(saved_leads)
-    # Every run makes use of *all already indexed later literature*, rather
-    # than only the 12-45 papers whose live API requests fit this run's clock.
-    saved_index = SavedLiteratureIndex(saved_leads) if args.provider in ('openalex', 'catalogue') else None
-    for claim in found:
-        if claim['id'] not in entries:
-            entries[claim['id']] = {**claim, 'what_expected': single_sentence(claim['expected']),
-                                   'what_happened': 'No independently verified outcome yet.',
-                                   'status': 'not_yet_assessed', 'evidence': [], 'counterevidence': []}
-    # Keep the JSON limited to current candidates: legacy/orphaned entries previously
-    # made the stored report appear more complete than its live extraction pipeline.
-    active_ids = {claim['id'] for claim in found}
-    entries = {key: value for key, value in entries.items() if key in active_ids}
-    stored['entries'] = entries
-    for claim in found:
-        entries[claim['id']].update({k: claim[k] for k in ('screening_status','screening_reason','candidate_excerpt','candidate_year')})
-    # Fill the separate, weaker "newer work on the same field" trail for the
-    # ENTIRE corpus from real saved papers. It is not an observed outcome.
     catalogue_field_enriched = 0
-    if saved_index is not None:
-        for claim in found:
-            previous = entries[claim['id']]
-            current = previous.get('field_developments') or []
-            new = saved_index.find(claim)
-            merged = merge_publications(current, new, max_items=6)
-            previous['field_developments'] = merged
-            if new and not current:
-                catalogue_field_enriched += 1
-        print(f'Saved-catalogue context: {catalogue_field_enriched} additional leads with newer related field literature.', flush=True)
-    # Report-only rebuilds also exclude previously saved mismatches. A failed
-    # live request must not reintroduce them to the high-confidence trail.
+    # Every accepted original has an immutable provenance passage or a source
+    # extraction task. Never adopt unverified old bibliography automatically.
     for claim in found:
-        row = entries[claim['id']]
-        kept, excluded = rescreen_existing(claim, row.get('direction_evidence'))
+        previous = entries.get(claim['id'])
+        if previous is None:
+            try:
+                from radar2_scope import fresh
+            except ModuleNotFoundError:
+                from scripts.radar2_scope import fresh
+            entries[claim['id']] = fresh(claim)
+        else:
+            if previous.get('original_passage') != claim.get('original_passage'):
+                raise SystemExit('Accepted original text changed: run the no-scan Radar 2 scope preview/apply again.')
+            entries[claim['id']].update({k:claim[k] for k in ('source_kind','original_passage',
+               'original_source_field','original_review_status','original_text_status',
+               'investigation_type','investigation_ready','title','source_url','original_publication',
+               'expected','publisher','topic')})
+            entries[claim['id']].update({k:claim[k] for k in ('screening_status','screening_reason','candidate_excerpt','candidate_year')})
+    for claim in found:
+        row=entries[claim['id']]
+        kept, excluded = rescreen_existing(claim, row.get('direction_evidence') or [])
         if excluded:
-            row['direction_evidence_quarantine'] = (
-                row.get('direction_evidence_quarantine', []) + excluded)[-100:]
-            rescreened_exclusions += len(excluded)
-        row['direction_evidence'] = kept
+            row['direction_evidence_quarantine']=(row.get('direction_evidence_quarantine') or [])+excluded
+            rescreened_exclusions+=len(excluded)
+        row['direction_evidence']=kept
     # Prioritize real forecast candidates before general EU-related scholarship.
     # Rotate on the number of *literature checks*, not failed OpenAI requests.
     def priority(c):
@@ -411,7 +414,7 @@ def main():
         return (int(e.get('literature_live_attempts') or 0) if args.provider == 'openalex' else int(e.get('literature_attempts') or 0),
                 0 if c.get('screening_status') == 'candidate_needs_validation' else 1,
                 e.get('literature_assessed_utc', ''), c['id'])
-    ordered = [] if args.provider == 'evidence' else sorted(found, key=priority)
+    ordered = [] if args.provider == 'evidence' else sorted((c for c in found if c['investigation_ready']), key=priority)
     groups = {}
     for claim in ordered:
         host = urllib.parse.urlparse(claim['source_url']).hostname or ''
@@ -434,73 +437,38 @@ def main():
                 previous['literature_attempts'] = int(previous.get('literature_attempts') or 0) + 1
                 if args.provider == 'openalex':
                     previous['literature_live_attempts'] = int(previous.get('literature_live_attempts') or 0) + 1
-                if args.provider == 'catalogue':
-                    studies = local_catalogue(claim, saved_leads)
-                    live_context = []
-                    issue_trails = []  # no live issue-first search in offline mode
-                    research_mode = 'existing_scanner_catalogue (saved OpenAlex/Crossref records)'
+                    # Search the SPECIFIC historic question. A title-near paper
+                    # is never an independently established outcome.
+                    answer = discover_question(claim, budget=SearchBudget(max_requests=5,deadline=deadline))
+                    question_requests += answer['requests']
+                    question_successful_requests += answer.get('successful_requests',0)
+                    question_raw_works += answer.get('raw_works_returned',0)
+                    new = answer['results']
+                    new_question_trails += len(new)
+                    kept, excluded = rescreen_existing(claim, previous.get('direction_evidence') or [])
+                    if excluded:
+                        previous['direction_evidence_quarantine'] = (
+                            previous.get('direction_evidence_quarantine') or []) + excluded
+                        rescreened_exclusions += len(excluded)
+                    previous['direction_evidence'] = merge_issue_followups(kept,new)
+                    previous['last_question_routes'] = answer['routes']
+                    previous['literature_assessed_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+                    previous['literature_search_mode'] = 'original_passage_question_first_only'
+                    previous['field_developments'] = []
+                    previous['follow_up_publications'] = []
+                    literature_studies_found += len(new)
+                    literature_comparisons += 1
+                    print('Question-specific later research:',claim['id'],
+                          'candidate follow-ups:',len(new),'(NOT verified outcomes)',flush=True)
                 else:
-                    search_round = previous['literature_live_attempts'] - 1
-                    query = query_for(claim, search_round)
-                    if len(query) < 4:
-                        raise ValueError('Not enough substantive terms for a meaningful OpenAlex query')
-                    since = int(claim.get('original_publication','')[:4])
-                    works = request_works(query, since)
-                    studies = related(claim, works)
-                    live_context = field_updates(claim, works)
-                    # Main new route: semantic meaning, changing terminology,
-                    # observed/evaluated developments, and direct citations.
-                    # A bounded number of requests per lead protects API credits;
-                    # the outer time budget still controls how many leads run.
-                    question_results = discover_question(
-                        claim, budget=SearchBudget(max_requests=5, deadline=deadline))
-                    question_requests += question_results['requests']
-                    issue_trails = question_results['results']
-                    live_context = merge_publications(
-                        live_context, question_results['context'], max_items=6)
-                    new_question_trails += len(issue_trails)
-                    print('Question-first:', claim['id'],
-                          'routes=', question_results['routes'],
-                          'accepted=', len(issue_trails), flush=True)
-                    # Only collect legacy broad bibliography for context. It is
-                    # never promoted over issue-specific, screened directions.
-                    research_mode = 'openalex_question_first + bibliography'
-                    # A saved local paper is labelled differently from a live result.
-                    if len(studies) < 2:
-                        studies = merge_publications(studies, local_catalogue(claim, saved_leads), max_items=6)
-                    research_mode = 'openalex_live + saved catalog (when needed)'
-                # Keep previous successful links instead of resetting them
-                # after an unsuccessful / different query on a later run.
-                studies = merge_publications(previous.get('follow_up_publications'), studies, max_items=8)
-                previous_context = previous.get('field_developments') or []
-                context = merge_publications(previous_context, live_context, max_items=6)
-                new_assessment = assess(claim, studies, research_mode)
-                new_assessment['field_developments'] = context
-                previous.update(new_assessment)
-                # Previously stored candidate links are *re-screened* using
-                # the current issue. Old bad matches never receive immunity.
-                # Exclusions are kept outside active evidence for audit/recovery.
-                kept, excluded = rescreen_existing(claim, previous.get('direction_evidence'))
-                if excluded:
-                    previous['direction_evidence_quarantine'] = (
-                        previous.get('direction_evidence_quarantine', []) + excluded)[-100:]
-                    rescreened_exclusions += len(excluded)
-                previous['direction_evidence'] = merge_issue_followups(
-                    kept, issue_trails)
-                previous['last_question_routes'] = (question_results['routes']
-                    if args.provider == 'openalex' else [])
-                previous.pop('last_error', None)
-                previous['bibliography_checked_utc'] = previous['literature_assessed_utc']
+                    # Offline mode means no source retrieval and therefore no
+                    # claim that events happened. Saved direct trails were
+                    # rescreened above. No catalogue-wide keyword matches.
+                    previous['literature_search_mode']='offline_no_new_evidence'
+                previous['what_happened']='No independently source-reviewed subsequent outcome established.'
+                previous['status']='not_yet_assessed'
+                previous.pop('last_error',None)
                 worked += 1
-                literature_comparisons += 1
-                literature_studies_found += len(studies)
-                print('Compared:', claim['id'], 'later studies:', len(studies),
-                      'same-issue direction trails:', len(previous.get('direction_evidence') or []),
-                      'new reported observations/implementation:', sum(
-                          t.get('evidence_kind') in ('measured_or_reported_change',
-                              'implementation_or_evaluation') for t in issue_trails), flush=True)
-                if args.provider == 'openalex':
-                    time.sleep(.3)
             elif args.provider == 'openai':
                 result = retrieve_assessment(claim, key, route=route)
                 assessed = normalize(claim, result)
@@ -556,6 +524,8 @@ def main():
            'literature_comparisons': literature_comparisons,
            'literature_studies_found': literature_studies_found,
            'question_first_api_requests':question_requests,
+           'question_first_successful_api_requests':question_successful_requests,
+           'question_first_raw_works_returned':question_raw_works,
            'question_first_links_accepted_this_run':new_question_trails,
            'saved_direction_links_quarantined':rescreened_exclusions,
            'catalogue_field_enriched_this_run': catalogue_field_enriched,

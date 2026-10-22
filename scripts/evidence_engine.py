@@ -500,6 +500,7 @@ def discover(claim,*,budget=None):
     context_results=[x for k,x in context.items() if k not in seen]
     context_results=sorted(context_results,key=lambda x:x.get('year') or 0,reverse=True)[:3]
     return {'results':results[:8], 'context':context_results, 'routes':routes, 'requests':budget.calls,
+            'successful_requests':budget.successful_calls, 'raw_works_returned':budget.returned_works,
             'question':profile(claim)['title'], 'query_plan':query_plan(claim)}
 
 

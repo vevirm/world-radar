@@ -23,6 +23,9 @@ def check_live_status(audit, allow_offline=False):
         raise ValueError(f'Live research failed or was skipped: provider={provider}, '
                          f'attempts={attempts}, failed={failed}. Check API quota, credentials, and network logs.')
     if provider == 'openalex':
+        if ('question_first_successful_api_requests' in run
+                and int(run.get('question_first_successful_api_requests') or 0) < 1):
+            raise ValueError('OpenAlex gave no successful source-search responses. Counts of attempted leads are not evidence of a working scan.')
         return (f'OpenAlex live study comparisons executed: {attempts - failed} successful searches, '
                 f'{failed} failures. Similar studies and abstract findings are provisional, not verified outcomes.')
     return (f'Live research executed: {attempts} attempts, {failed} failures. '

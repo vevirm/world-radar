@@ -36,15 +36,16 @@ def validate(report=REPORT, audit_path=AUDIT):
         c.text for t in document.tables for r in t.rows for c in r.cells)
     # Always present in the readable report, including an edition without any
     # verified real-world outcome or hand-written contemporary context.
-    required_phrases = (
-        'Back then.',
-        'Eight conversations across time',
-        'Reading trail: every linked follow-up',
-        'How to read a hindsight score',
-    )
+    required_phrases = ('Back then.', 'How to read a hindsight score')
     for phrase in required_phrases:
         if phrase not in text:
             raise ValueError(f'Radar 2 Word file is missing a required section: {phrase}')
+    if not any(heading in text for heading in (
+            'Research status: evidence still missing',
+            'What later evidence actually shows',
+            'Two promises, two reality checks',
+            'Eight conversations across time')):
+        raise ValueError('Radar 2 Word file lacks research status, evidence or atlas section')
 
     audit = json.loads(audit_path.read_text(encoding='utf-8'))
     if 'run' not in audit or 'reviewed_verdicts' not in audit or 'research_leads' not in audit:
