@@ -23,10 +23,12 @@ try:
     from .radar2_scope import original_claims
     from .radar2_questions import question_card, SPECIFIC
     from .openalex_comparison import request_works, abstract_from_index
+    from .radar2_claim_links import claim_card, plan_queries, assess_work
 except ImportError:
     from radar2_scope import original_claims
     from radar2_questions import question_card, SPECIFIC
     from openalex_comparison import request_works, abstract_from_index
+    from radar2_claim_links import claim_card, plan_queries, assess_work
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = (
@@ -152,102 +154,30 @@ def select_ten(root=ROOT, n=10):
 
 
 def discovery_queries(claim):
-    """Two compact searches from source issues, not manually mapped statistics."""
-    title=claim['title']
-    full=title+' '+claim['historical_focus']
-    title_terms=wordset(title)
-    passage_terms=wordset(claim['historical_focus'])
-    all_terms=list(dict.fromkeys(w.casefold() for w in WORD.findall(full)))
-    unique=[w for w in all_terms if w in (title_terms|passage_terms) and (len(w)>4 or w in FOCUSED_TERMS)]
-    def rank(w):
-        return (int(w in FOCUSED_TERMS or w.rstrip('s') in FOCUSED_TERMS)*6+
-                int(w in title_terms and w in passage_terms)*3+
-                int(w in title_terms)*3+int(len(w)>8))
-    unique.sort(key=lambda w:-rank(w))
-    if not (title_terms & passage_terms):
-        # When the title uses a different language or vocabulary, use the
-        # actual saved projection instead of an unrelated title-word query.
-        unique=[w for w in all_terms if w in passage_terms and (len(w)>4 or w in FOCUSED_TERMS)]
-        unique.sort(key=lambda w:-rank(w))
-    concepts=unique[:7]
-    if len(concepts)<2:
-        return []
-    # Use explicit geography of the subject, if unambiguous, before the
-    # first incidental country mention in the title.
-    regions = {m.group(1).casefold(): m.group(1) for m in STUDY_REGION.finditer(title)}
-    geo = next(iter(regions.values())) if len(regions) == 1 else 'Europe'
-    if not regions:
-        m = EXPLICIT_EU.search(title)
-        if m and m.group().strip().lower() not in ('eu','europe','european','eu-27','eu-28'):
-            geo = m.group().strip()
-    # First query uses the subject and original mechanism, the second is looser.
-    searches=[f'{concepts[0]} {concepts[1]} {geo}',
-              f'{concepts[0]} {concepts[2]} {geo}' if len(concepts)>2 else f'{concepts[0]} {geo}']
-    return list(dict.fromkeys(s for s in searches if s))[:2]
+    """Build searches from a testable *observable construct*, not title words.
+
+    Unknown question families are deliberately blocked rather than made into
+    optimistic free-text searches that retrieve irrelevant sources.
+    """
+    return plan_queries(claim)
 
 
 def candidate_for(claim, work):
-    """Provisional *source-attributed* observations; never verified outcomes."""
-    title=str(work.get('title') or '').strip()
-    url=str(work.get('doi') or work.get('id') or '').strip()
-    date=str(work.get('publication_date') or '').strip()
-    try:
-        yr=int(date[:4])
-        original_year=int(claim['original_publication'][:4])
-    except (TypeError, ValueError):
-        return None
-    this_year=datetime.now(timezone.utc).year
-    if not (original_year < yr <= this_year) or (date and len(date)>=10 and date[:10]>datetime.now(timezone.utc).date().isoformat()):
-        return None
-    if not url.startswith('https://') or not title or url.lower().rstrip('/')==claim['source_url'].lower().rstrip('/'):
-        return None
-    if title.casefold()==claim['title'].casefold():
-        return None
+    """Expose only issue-gated, still-unverified later evidence *leads*."""
     abstract=abstract_from_index(work.get('abstract_inverted_index')) or str(work.get('abstract') or '')
-    if len(abstract)<90 or NON_EU_IN_TITLE.search(title):
-        return None
-    # Europe must be part of the subsequent work's own subject, not inferred
-    # from the source paper or the mere OpenAlex query.
-    if not EXPLICIT_EU.search(title+' '+abstract):
-        return None
-    title_anchors=wordset(claim['title'])
-    source_anchors=title_anchors|wordset(claim['historical_focus'])
-    hit_anchors=wordset(title+' '+abstract)
-    overlap=sorted(source_anchors & hit_anchors)
-    in_title=sorted(source_anchors & wordset(title))
-    in_futures=sorted(wordset(claim['historical_focus']) & wordset(title+' '+abstract))
-    if len(overlap)<2 or len(in_title)<1 or len(in_futures)<1:
-        return None
-    observed=[]
-    for s in re.split(r'(?<=[.!?])\s+', abstract):
-        if not 40 <= len(s) <= 650 or not OBSERVED.search(s) or MODEL_ONLY.search(s):
-            continue
-        if len(wordset(s)&source_anchors)>=2:
-            observed.append(' '.join(s.split())[:450])
-    if not observed:
-        return None
-    return {'later_title':title, 'later_url':url, 'later_date':date,
-            'later_indexed_abstract_observation':observed[0],
-            'overlapping_subject_terms':overlap[:12],
-            'title_subject_terms':in_title[:7],
-            'context_europe_visible':True,
-            'original_and_later_geography_equivalent':None,
-            'original_and_later_measure_equivalent':None,
-            'original_and_later_baseline_equivalent':None,
-            'reported_by_later_paper_not_independently_verified':True,
-            'source_review_required':True,
-            'outcome_verified':False,
-            'score_for_order_only':len(in_title)*3+len(overlap)}
+    candidate,_reason=assess_work(claim,work,abstract,int(claim['original_publication'][:4]))
+    return candidate
 
 
 def research(claims, api_key, searcher=request_works):
-    """Small live search; all outputs are reviewable artifacts only."""
+    """Bounded automated evidence discovery. No verdicts, publication or data writes."""
     if not api_key:
         raise ValueError('OPENALEX_API_KEY is required; live search was not attempted')
     cases=[]
     for claim in claims:
-        searches=discovery_queries(claim)
-        hits={};errors=[];done=[]
+        card=claim_card(claim)
+        searches=plan_queries(claim)
+        hits={}; errors=[]; done=[]; rejections=Counter(); rejected_examples=[]
         for query in searches:
             try:
                 works=searcher(query,int(claim['original_publication'][:4])+1)
@@ -255,28 +185,36 @@ def research(claims, api_key, searcher=request_works):
                     raise ValueError('Unexpected OpenAlex result')
                 done.append(query)
                 for work in works:
-                    if not isinstance(work,dict):continue
-                    hit=candidate_for(claim,work)
+                    if not isinstance(work,dict):
+                        continue
+                    abstract=abstract_from_index(work.get('abstract_inverted_index')) or str(work.get('abstract') or '')
+                    hit,reason=assess_work(claim,work,abstract,int(claim['original_publication'][:4]))
                     if hit:
                         key=hit['later_url'].casefold().rstrip('/')
-                        if key not in hits or hits[key]['score_for_order_only']<hit['score_for_order_only']:
-                            hits[key]=hit
+                        hits[key]=hit
+                    else:
+                        rejections[reason]+=1
+                        if len(rejected_examples)<4 and reason not in ('original_or_missing_later_source',):
+                            rejected_examples.append({'title':str(work.get('title') or '')[:170],
+                                                      'reason':reason})
             except Exception as exc:
                 errors.append(f'{type(exc).__name__}: {str(exc)[:180]}')
-        citations=sorted(hits.values(),key=lambda c:(-c['score_for_order_only'],c['later_date']))[:3]
-        for c in citations:c.pop('score_for_order_only',None)
-        if errors:
+        citations=sorted(hits.values(),key=lambda c:(c['later_date'],c['later_title']),reverse=True)[:3]
+        if not searches:
+            status='source_question_requires_manual_review'
+            interpretation='No tested evidence route covers this original proposition. The system will not guess using broad keywords.'
+        elif errors:
             status='search_failed_or_partial'
-            interpretation='At least one query failed. An evidence absence cannot be inferred.'
+            interpretation='A required query failed. Evidence absence cannot be inferred.'
         elif citations:
-            status='later_empirical_abstract_candidates_unverified'
-            interpretation=('Later European research reports an observation about a partially overlapping issue. '
-                'The match to the original scenario, population, assumptions, and metric is NOT established. '
-                'No conclusion about whether the original thinking materialised can yet be drawn.')
+            status='question_level_empirical_leads_unverified'
+            interpretation=('Later research contains observations about the SAME broad construct, not just shared words. '
+                            'This is still a proposed link: observation period, variable/units, counterfactual, original assumptions '
+                            'and full-text source quality have NOT been verified. No outcome conclusion is justified.')
         else:
-            status='no_usable_evidence_in_bounded_openalex_search'
-            interpretation=('No defensible later observation was identified by THESE limited OpenAlex searches. '
-                'This is a logged search outcome, NOT proof that the development never happened or a completed evidence-gap assessment.')
+            status='no_same_construct_evidence_in_bounded_openalex_search'
+            interpretation=('No same-construct observation passed these limited OpenAlex searches. '
+                            'That is a SEARCH RESULT, not an investigated evidence gap, and not proof that the development did not occur.')
         horizon_years=[y for y in claim['question_card']['target_year_mentions'] if y > int(claim['original_publication'][:4])]
         horizon_status=('future_horizon_not_reached' if horizon_years and min(horizon_years)>datetime.now(timezone.utc).year
                         else 'at_least_one_target_year_reached_or_unspecified')
@@ -284,26 +222,33 @@ def research(claims, api_key, searcher=request_works):
             'target_horizon_years':horizon_years,'target_horizon_status':horizon_status,
             'original_id':claim['id'],'topic_group':claim['topic_group'],
             'historical_title':claim['title'],'historical_date':claim['original_publication'],
-            'historical_source':claim['source_url'], 'original_source_passage':claim['original_passage'],
+            'historical_source':claim['source_url'],'original_source_passage':claim['original_passage'],
             'historical_future_facing_excerpt':claim['historical_focus'],
-            'question_for_research':claim['question_card']['evidence_question'],
+            'question_for_research':card['question_for_research'],
+            'claim_evidence_plan':card,
             'question_type':claim['question_card']['readiness'],
             'queries_attempted':searches,'queries_completed':done,
             'later_paper_observations_for_source_review':citations,
+            'rejected_openalex_results_by_reason':dict(rejections),
+            'examples_rejected_as_not_same_question':rejected_examples,
             'status':status,'interpretation':interpretation,
-            'missing_for_then_vs_now':('Original assumptions and an independent, context-equivalent later source '
-                'or a reviewed empirical observation, with a documented relationship to the exact historical proposition.'),
-            'errors':errors,'no_meaningful_link_established':True,
+            'missing_for_then_vs_now':('The exact original conditions, and verified dated observations with compatible '
+               'population, geography, variable, unit and baseline; where causal, an appropriate counterfactual.'),
+            'errors':errors,
+            'no_meaningful_link_established':False,
             'fully_investigated_evidence_gap':False,
             'verified_outcome':False,'publish':False})
-    return {'schema_version':1,'mode':'AUTONOMOUS_QUESTION_DISCOVERY_TEN_DRAFT_ONLY',
+    return {'schema_version':2,'mode':'CLAIM_TO_EVIDENCE_TEN_DRAFT_ONLY',
             'generated_utc':datetime.now(timezone.utc).isoformat(),
             'originals_selected':len(claims),
             'openalex_queries_completed':sum(len(c['queries_completed']) for c in cases),
             'with_later_empirical_abstract_candidates':sum(bool(c['later_paper_observations_for_source_review']) for c in cases),
             'search_failed_or_partial':sum(c['status']=='search_failed_or_partial' for c in cases),
+            'unmapped_questions':sum(c['status']=='source_question_requires_manual_review' for c in cases),
             'verified_outcomes':0,'published_outcomes':0,'publication_allowed':False,
-            'limitations':'OpenAlex abstracts are leads, not verified outcomes. The system autonomously chooses originals, passages and search terms, but cannot independently establish a then-vs-now relationship from OpenAlex abstracts alone.',
+            'limitations':('Domain-specific matching tests issue, geography and observed construct. '
+                'OpenAlex abstracts remain unverified leads. It does not yet independently retrieve/validate '
+                'official observation series, test counterfactuals, or publish then-vs-now verdicts.'),
             'cases':cases}
 
 
@@ -320,12 +265,21 @@ def markdown(report):
         lines.extend([f'## {i}. {c["historical_title"]} ({c["historical_date"][:4]})','',
                       f'**Original:** {c["historical_source"]}',
                       f'**What the original said:** {c["historical_future_facing_excerpt"]}',
-                      f'**Question:** {c["question_for_research"]}',
+                      f'**Question:** {c["question_for_research"] or "Not yet safely identified — original/source review needed"}',
+                      f'**Observable construct:** {c["claim_evidence_plan"]["observable_construct"] or "unmapped"}',
+                      f'**Evidence sources to examine:** {", ".join(c["claim_evidence_plan"]["reference_sources_to_check"])}',
+                      f'**Limits/conditions:** {c["claim_evidence_plan"]["scope_and_assumption_warning"]}',
                       f'**Historical horizon:** {c["target_horizon_years"] or "Not explicit"}; {c["target_horizon_status"]}',
                       f'**Searches:** {", ".join(c["queries_completed"])}',''])
         for e in c['later_paper_observations_for_source_review']:
             lines.extend([f'- **Later paper ({e["later_date"]}):** [{e["later_title"]}]({e["later_url"]})',
-                          f'  - Reported in its abstract: {e["later_indexed_abstract_observation"]}'])
+                          f'  - Reported in its abstract: {e["later_indexed_abstract_observation"]}',
+                          f'  - Why it may matter: {e["link_warrant"]}',
+                          f'  - Comparability: {e["measurement_comparability"]}'])
+        if c['examples_rejected_as_not_same_question']:
+            lines.extend(['','**Rejected misleading matches (examples):**'])
+            for e in c['examples_rejected_as_not_same_question']:
+                lines.append(f'- {e["title"]}: `{e["reason"]}`')
         lines.extend(['', '**Finding:** '+c['interpretation'],
                       '**Unresolved:** '+c['missing_for_then_vs_now'],''])
         if c['errors']:
@@ -356,6 +310,7 @@ def main(argv=None):
             f.write(f'- OpenAlex searches completed: **{report["openalex_queries_completed"]}**\n')
             f.write(f'- Cases with empirical abstract leads: **{report["with_later_empirical_abstract_candidates"]}**\n')
             f.write(f'- Search failures: **{report["search_failed_or_partial"]}**\n')
+            f.write(f'- Questions without a tested evidence route: **{report["unmapped_questions"]}**\n')
             f.write('- Verified outcomes: **0** (review required); published: **0**\n')
     if report['search_failed_or_partial']:
         raise SystemExit('Some OpenAlex queries failed; partial pilot artifact is available for review')
