@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "description": "Source-reviewed institutional original passages. Accepted-source URL/date must match; growing registry, not a collection target.",
+  "passages": [
+    {
+      "source_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+      "original_publication": "2022-06-29",
+      "original_passage": "Strategically managing supply of critical materials and commodities, by adopting a long-term systemic approach to avoid a new dependency trap.",
+      "review_status": "checked_against_original_source",
+      "reviewed_on": "2026-10-22",
+      "source_trace": "Exact wording of area for action 3 on the original 2022 Commission strategic foresight report webpage."
+    }
+  ]
+}

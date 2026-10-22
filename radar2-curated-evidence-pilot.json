@@ -99,7 +99,7 @@
       "historical_date": "2022-06-29",
       "original_type": "institutional",
       "original_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
-      "source_trace": "Original institutional source verified online for this pilot. Its excerpt was not stored in the uploaded Radar 2 audit; this review DOES NOT update the live source manifest.",
+      "source_trace": "Original passage preserved in institutional-original-passages.json with matching source URL and date; editorial source checking still required before publication.",
       "source_specific_proposition": "Strategic management and diversification of supplies of critical raw materials would be essential to the EU green and digital transitions; otherwise the EU could fall into new dependency traps.",
       "scenario_condition": "A strategic warning and possible future vulnerability, not a numeric prediction.",
       "radar2_question": "Did the EU recognise and act on critical raw-material dependencies after 2022, and has actual supply resilience improved?",
@@ -108,29 +108,22 @@
           "year": 2024,
           "document": "European Critical Raw Materials Act (in force 2024)",
           "url": "https://commission.europa.eu/topics/competitiveness/green-deal-industrial-plan/european-critical-raw-materials-act_en",
-          "evidence": "The EU enacted diversification and domestic-capacity policy with non-binding 2030 benchmarks for extraction, processing, recycling and single-country concentration.",
+          "evidence": "The EU enacted policy for critical raw materials supply diversification and domestic capacity, with non-binding 2030 benchmarks for extraction, processing, recycling and single-country concentration.",
           "evidence_type": "documented_policy_response"
         },
         {
           "year": 2025,
           "document": "European Commission strategic-project selections under CRMA",
           "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
-          "evidence": "The Commission designated its first EU strategic-project list on 25 March 2025.",
+          "evidence": "On 25 March 2025, the Commission selected EU strategic projects concerning critical raw materials supply and diversification; selection does not establish delivered supply capacity.",
           "evidence_type": "documented_implementation"
         },
         {
           "year": 2026,
           "document": "European Court of Auditors, Special report 04/2026",
           "url": "https://op.europa.eu/en/publication-detail/-/publication/0ebbba88-03d4-11f1-825d-01aa75ed71a1/language-en",
-          "evidence": "Auditors found diversification had not yet produced tangible results, with obstacles to production and recycling and many projects unlikely to improve supply in time for 2030.",
+          "evidence": "Auditors found diversification of critical raw materials supply had not yet produced tangible results, with obstacles to production and recycling and many projects unlikely to improve supply in time for 2030.",
           "evidence_type": "independent_outcome_evaluation"
-        },
-        {
-          "year": 2026,
-          "document": "European Commission second project selection, 9 Oct 2026",
-          "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
-          "evidence": "A further EU list of strategic projects was designated on 9 October 2026; designated projects are not the same thing as delivered supply capacity.",
-          "evidence_type": "documented_implementation"
         }
       ],
       "assessment": "The risk identified in 2022 generated substantial policy action, while a 2026 independent audit shows the dependency problem remains unresolved. The warning retains strong relevance; the law and announced projects must not be presented as proof of achieved resilience.",
