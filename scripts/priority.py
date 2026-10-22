@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 from scholarly import foresight_scope, eu_connection, HISTORICAL_START, HISTORICAL_END
+from radar1_admission import decision
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = lambda: datetime.now(timezone.utc).date()
@@ -125,9 +126,10 @@ def refresh(today=None, *, save=True):
             if not HISTORICAL_START <= date.fromisoformat(x['date']) <= HISTORICAL_END: continue
         except ValueError:
             continue
-        scope, _ = foresight_scope(x)
-        if scope != 'future_facing':
-            continue  # Uncertain and out-of-scope originals remain in the archive, not top 50.
+        accepted, _, _ = decision(x)
+        if not accepted or x.get('radar1_selection') not in (None, 'active'):
+            continue  # The same admission policy controls both archive and priorities.
+        scope = 'future_facing'
         eu_tier, eu_reason = eu_connection(x)
         if eu_tier == 'review':
             continue  # Not an EU priority until its EU relevance is substantiated.

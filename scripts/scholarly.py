@@ -17,6 +17,7 @@ from urllib.parse import quote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from radar1_admission import POLICY_VERSION, decision
 
 CROSSREF = 'https://api.crossref.org/works'
 OPENALEX = 'https://api.openalex.org/works'
@@ -442,6 +443,46 @@ def atomic_json(path, payload):
     os.replace(t, path)
 
 
+def load_rejection_registry(path):
+    """Small persistent DOI registry shared with the no-scan audit workflow."""
+    if not path.exists():
+        return {'schema_version': 1, 'policy_version': POLICY_VERSION, 'rejected': {}}
+    saved = json.loads(path.read_text(encoding='utf-8'))
+    if saved.get('schema_version') != 1 or not isinstance(saved.get('rejected'), dict):
+        raise ValueError('Unsupported Radar 1 DOI rejection registry; refusing to scan')
+    return saved
+
+
+def closer_abstract_check(lead, key=None):
+    """One bounded follow-up lookup when an otherwise plausible title is unclear.
+
+    Crossref often lacks a deposited abstract even where OpenAlex has one.
+    Never substitutes generic web snippets or publisher names for study content.
+    Network problems leave the work uncertain and therefore not admitted.
+    """
+    doi = normal_doi(lead.get('doi'))
+    if not doi or lead.get('abstract'):
+        return lead
+    params = {'filter': f'doi:https://doi.org/{doi}', 'per_page': 1}
+    if key:
+        params['api_key'] = key
+    try:
+        r = requests.get(OPENALEX, params=params, timeout=REQUEST_TIMEOUT,
+                         headers={'User-Agent': 'European-Foresight-Radar/4.0 (DOI abstract check)'})
+        r.raise_for_status()
+        results = r.json().get('results') or []
+        if results:
+            desc = unfold_abstract(results[0].get('abstract_inverted_index'))
+            if desc:
+                updated = dict(lead)
+                updated['abstract'] = desc
+                updated['indexes'] = sorted(set(lead.get('indexes') or []) | {'OpenAlex'})
+                return updated
+    except (requests.RequestException, ValueError, TypeError, KeyError):
+        pass
+    return lead
+
+
 def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     """Search distinct topic/year/index combinations; persist state each run.
 
@@ -454,7 +495,19 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
         'schema_version': 1, 'runs': 0, 'source_cursor': 0, 'verification_cursor': 0,
         'archive_pages': {}, 'documents': {}, 'queue': []}
     saved = load_leads(Path(leads_path))
-    records = {l['doi']: l for l in saved['leads'] if l.get('doi')}
+    reject_path = Path(leads_path).with_name('radar1-rejected.json')
+    registry = load_rejection_registry(reject_path)
+    excluded = registry['rejected']
+    records = {}
+    for row in saved['leads']:
+        doi = normal_doi(row.get('doi'))
+        if not doi or doi in excluded:
+            continue
+        accepted, reason, _ = decision(row)
+        if accepted:
+            records[doi] = row
+        else:
+            excluded[doi] = {'reason': reason, 'year': str(row.get('date', ''))[:4]}
     windows = year_windows(latest)
     key = os.getenv('OPENALEX_API_KEY', '').strip()
     providers = ('Crossref', 'OpenAlex') if key else ('Crossref',)
@@ -482,6 +535,8 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     abstract_missing = 0
     topic_or_date_filtered = 0
     title_only_count = 0
+    rejected_count = 0
+    closer_checks = 0
     now = datetime.now(timezone.utc).isoformat()
     for i in range(min(max_queries, len(tasks))):
         if time.monotonic() >= deadline - 10:
@@ -495,16 +550,39 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
             for lead in hits:
                 if not lead.get('abstract'):
                     abstract_missing += 1
-                abstract_ok = credible_abstract(lead, from_date, latest)
-                if not abstract_ok and not credible_bibliographic_lead(lead, from_date, latest):
+                doi = normal_doi(lead.get('doi'))
+                if not doi or doi in excluded:
+                    continue
+                accepted, reason, check = decision(lead)
+                # Check a plausible unknown once more, without making each
+                # scheduled run spend its full duration chasing weak titles.
+                if (not accepted and not lead.get('abstract') and
+                        reason == 'ambiguous_title_no_supporting_abstract' and
+                        closer_checks < 8 and time.monotonic() < deadline - 25):
+                    closer_checks += 1
+                    lead = closer_abstract_check(lead, key)
+                    accepted, reason, check = decision(lead)
+                if not accepted:
+                    excluded[doi] = {'reason': reason, 'year': str(lead.get('date', ''))[:4]}
+                    rejected_count += 1
                     topic_or_date_filtered += 1
                     continue
-                if not abstract_ok:
+                if check == 'title_only_clear':
                     title_only_count += 1
-                doi = lead['doi']
                 if doi not in records:
                     new += 1
-                records[doi] = merge_lead(records.get(doi), lead, now)
+                merged = merge_lead(records.get(doi), lead, now)
+                accepted, reason, check = decision(merged)
+                if not accepted:
+                    excluded[doi] = {'reason': reason, 'year': str(merged.get('date', ''))[:4]}
+                    records.pop(doi, None)
+                    rejected_count += 1
+                    continue
+                merged['radar1_selection'] = 'active'
+                merged['radar1_admission_version'] = POLICY_VERSION
+                merged['radar1_admission_reason'] = reason
+                merged['source_period'] = 'historical_original'
+                records[doi] = merged
                 valid += 1
             print(f'SCHOLAR {provider} {start}:{end} {journal or "all journals"} {phrase!r} | results={len(hits)} '
                   f'eligible_research_leads={valid} new_total={new}', flush=True)
@@ -516,24 +594,30 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     if requests_made:
         state['scholarly_queries_completed'] = int(state.get('scholarly_queries_completed', 0)) + requests_made
     atomic_json(Path(state_path), state)
-    # Historical originals are fixed to 2011–2023. Old indexed later papers
-    # are preserved for Radar 2 context, never counted as new Radar 1 leads.
-    # Preserve recently rediscovered work across years, not only the oldest 2015 cohort.
+    # Only admitted historical originals are physically present in Radar 1.
+    # Rejections persist, preventing later rediscovery from re-adding the junk.
     newest = sorted(records.values(), key=lambda r: (r.get('last_seen', ''), r['doi']), reverse=True)[:MAX_LEADS]
     leads = sorted(newest, key=lambda r: (r['date'], r['doi']))
     for row in leads:
-        row['source_period'] = ('historical_original' if HISTORICAL_START <= date.fromisoformat(row['date']) <= HISTORICAL_END else 'later_context')
+        row['source_period'] = 'historical_original'
+        row['radar1_selection'] = 'active'
+        row['radar1_admission_version'] = POLICY_VERSION
         row['foresight_scope'], row['foresight_scope_reason'] = foresight_scope(row)
         row['foresight_scope_version'] = 1
         row['eu_connection'], row['eu_connection_reason'] = eu_connection(row)
         row['eu_connection_version'] = 1
+    registry['policy_version'] = POLICY_VERSION
+    registry['rejected'] = dict(sorted(excluded.items()))
+    atomic_json(reject_path, registry)
     atomic_json(Path(leads_path), {'schema_version': 1, 'updated_at': now,
                 'status': 'Journal leads from DOI/title and available abstracts; full text and forecasts unverified',
-                'leads': leads})
+                'admission_policy_version': POLICY_VERSION, 'leads': leads})
     result = {'queries': requests_made, 'indexed_records_examined': examined,
               'records_without_abstract': abstract_missing,
               'records_outside_topic_or_date': topic_or_date_filtered,
               'title_only_leads': title_only_count,
+              'closer_abstract_checks': closer_checks, 'newly_rejected_dois': rejected_count,
+              'total_rejected_dois': len(excluded),
               'new_leads': new, 'total_leads': len(leads),
               'provider_errors': errors[:20], 'openalex_configured': bool(key),
               'next_query_cursor': state['scholarly_cursor']}

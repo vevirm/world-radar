@@ -1,155 +1,128 @@
 #!/usr/bin/env python3
-"""Non-destructive Radar 1 subject-scope preview and optional tagging.
+"""Radar 1 no-scan admission audit: preview by default, destructive only --apply.
 
-This changes annotations on existing scholarly leads, not their identity, DOI,
-original title, abstract or publication date. Radar 2 is deliberately unchanged.
+The actual scholarly collection is pruned on apply. A compact DOI tombstone
+registry prevents reintroduction on every scheduled/manual scholarly scan.
+No Radar 2 data, findings, or retrospectives are touched.
 """
 import argparse
 from collections import Counter
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone
 import json
 from pathlib import Path
-import sys
 
-from scholarly import foresight_scope, eu_connection, atomic_json, HISTORICAL_START, HISTORICAL_END
-from priority import refresh as preview_priority
+from radar1_admission import POLICY_VERSION, START, END, decision
+from scholarly import atomic_json, normal_doi
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 1
 
 
-def audit(leads_path, *, apply=False, report_path=None):
+def rejection_data(path):
+    if not Path(path).exists():
+        return {'schema_version': 1, 'policy_version': POLICY_VERSION, 'rejected': {}}
+    obj = json.loads(Path(path).read_text(encoding='utf-8'))
+    if obj.get('schema_version') != 1 or not isinstance(obj.get('rejected'), dict):
+        raise ValueError('Unsupported rejection registry: no files modified')
+    return obj
+
+
+def audit(leads_path, *, apply=False, report_path=None, rejects_path=None, manifest_path=None):
     path = Path(leads_path)
+    rejects_path = Path(rejects_path) if rejects_path else path.parent/'radar1-rejected.json'
+    manifest_path = Path(manifest_path) if manifest_path else path.parent/'radar1-active.json'
     raw = json.loads(path.read_text(encoding='utf-8'))
     if raw.get('schema_version') != 1 or not isinstance(raw.get('leads'), list):
-        raise ValueError('Unexpected Radar 1 research-leads schema; leaving file unchanged')
-    leads = raw['leads']
-    original_keys = [(row.get('doi'), row.get('title'), row.get('date')) for row in leads]
-    if len(set(x[0] for x in original_keys)) != len(leads):
-        raise ValueError('Duplicate or missing DOIs: refuse to classify this file automatically')
-    counts = Counter()
-    examples = {'future_facing': [], 'needs_review': [], 'out_of_scope': []}
-    eu_examples = {k: [] for k in ('eu_official', 'eu_institution', 'eu_focused', 'eu_related', 'review')}
-    eu_counts = Counter()
-    cross_tab = Counter()
-    by_reason = Counter()
-    new_tags = 0
-    period_counts = Counter()
-    selection_counts = Counter()
-    selection_samples = {'active': [], 'review': [], 'excluded': [], 'later_context': []}
-    handoff = []
-    for row in leads:
-        try:
-            pub_date = date.fromisoformat(str(row.get('date', '')))
-        except ValueError:
-            pub_date = None
-        source_period = 'historical_original' if pub_date and HISTORICAL_START <= pub_date <= HISTORICAL_END else 'later_context'
-        period_counts[source_period] += 1
-        label, reason = foresight_scope(row)
-        counts[label] += 1
-        by_reason[reason] += 1
-        eu_tier, eu_reason = eu_connection(row)
-        eu_counts[eu_tier] += 1
-        # Unknown cases go to review, not silently to the active foresight feed.
-        if source_period == 'later_context':
-            selection = 'later_context'
-        elif label == 'out_of_scope':
-            selection = 'excluded'
-        elif label == 'future_facing' and eu_tier != 'review':
-            selection = 'active'
+        raise ValueError('Unexpected Radar 1 academic schema: no files modified')
+    ledger = rejection_data(rejects_path)
+    past = ledger['rejected']
+    counts, reasons, checks, earlier = Counter(), Counter(), Counter(), Counter()
+    accepted, new_rejects = [], {}
+    excluded_rows = []
+    seen = set()
+    for row in raw['leads']:
+        doi = normal_doi(row.get('doi'))
+        if not doi or doi in seen:
+            raise ValueError('Invalid/duplicate DOI in academic collection: no files modified')
+        seen.add(doi)
+        if doi in past:
+            ok, why, checked = False, 'previously_rejected', 'rejection_registry'
+            earlier['previously_rejected'] += 1
         else:
-            selection = 'review'
-        selection_counts[selection] += 1
-        if len(selection_samples[selection]) < 15:
-            selection_samples[selection].append({'title':row.get('title'), 'date':row.get('date'),
-                                                  'doi':row.get('doi'), 'reason':reason})
-        handoff.append({'doi': row.get('doi'), 'date': row.get('date'),
-                        'title':row.get('title'), 'selection':selection,
-                        'foresight_scope':label, 'eu_connection':eu_tier,
-                        'selection_reason':reason, 'source_period':source_period})
-        cross_tab[f'{label} / {eu_tier}'] += 1
-        if len(eu_examples[eu_tier]) < 12:
-            eu_examples[eu_tier].append({'doi': row.get('doi'), 'title': row.get('title'), 'eu_reason': eu_reason})
-        if (row.get('radar1_selection') != selection or row.get('source_period') != source_period or row.get('foresight_scope') != label or row.get('foresight_scope_reason') != reason
-                or row.get('eu_connection') != eu_tier or row.get('eu_connection_reason') != eu_reason):
-            new_tags += 1
-        if len(examples[label]) < 15:
-            examples[label].append({'doi': row.get('doi'), 'title': row.get('title'), 'reason': reason})
-        if apply:
-            row['radar1_selection'] = selection
-            row['source_period'] = source_period
-            row['foresight_scope'] = label
-            row['foresight_scope_reason'] = reason
-            row['foresight_scope_version'] = VERSION
-            row['eu_connection'] = eu_tier
-            row['eu_connection_reason'] = eu_reason
-            row['eu_connection_version'] = VERSION
-    if len(leads) != len(original_keys) or [
-        (row.get('doi'), row.get('title'), row.get('date')) for row in leads
-    ] != original_keys:
-        raise AssertionError('Original research changed during screening; aborting')
-    report = {'screen_version': VERSION, 'generated_at': datetime.now(timezone.utc).isoformat(),
-              'applied': apply, 'original_studies': len(leads),
-              'historical_period': {'start': HISTORICAL_START.isoformat(), 'end': HISTORICAL_END.isoformat()},
-              'period_counts': dict(period_counts),
-              'selection_counts': dict(selection_counts), 'selection_samples':selection_samples,
-              'classification_counts': dict(counts), 'eu_connection_counts': dict(eu_counts),
-              'future_by_eu_connection': dict(cross_tab), 'eu_examples': eu_examples,
-              'reason_counts': dict(by_reason),
-              'tags_added_or_changed': new_tags,
-              'meaning': {
-                  'future_facing': 'Explicitly addresses possible future developments; not a verified forecast',
-                  'needs_review': 'Potentially relevant but metadata does not establish a central foresight question',
-                  'out_of_scope': 'Clear title-level non-foresight use, retained only in history',
-                  'eu_official': 'Official EU publisher URL in the source metadata',
-                  'eu_institution': 'An EU institutional publisher or affiliation appears in index metadata, not independently verified',
-                  'eu_focused': 'Europe/EU central to the original paper title',
-                  'eu_related': 'Europe/EU mentioned in the abstract but not central in the title',
-                  'review': 'EU connection not yet demonstrated; record remains archived'
-              }, 'examples': examples,
-              'next_stage': 'Radar 2 continues unchanged until its lead selection is explicitly aligned with this scope.'}
-    # Include the actual proposed priority titles in preview without writing
-    # or changing the priority-50.json file.
-    if path.resolve() == (ROOT/'research-leads.json').resolve():
-        preview = preview_priority(save=False)
-        report['priority_preview'] = [
-            {'rank': i, 'title': item.get('title'), 'source_kind': item.get('source_kind'),
-             'publisher': item.get('publisher'), 'eu_connection': item.get('eu_connection'),
-             'foresight_scope': item.get('foresight_scope', 'publisher-curated')}
-            for i, item in enumerate(preview['items'], 1)]
-    else:
-        report['priority_preview'] = []
+            ok, why, checked = decision(row)
+        checks[checked] += 1
+        if ok:
+            # The admission result, not old tags, governs the collection.
+            kept = dict(row)
+            kept['radar1_selection'] = 'active'
+            kept['source_period'] = 'historical_original'
+            kept['radar1_admission_version'] = POLICY_VERSION
+            kept['radar1_admission_reason'] = why
+            accepted.append(kept)
+            counts['active'] += 1
+        else:
+            reasons[why] += 1
+            counts['later_context' if why == 'outside_historical_original_period' else 'excluded'] += 1
+            new_rejects[doi] = {'reason': why, 'year': str(row.get('date', ''))[:4]}
+            excluded_rows.append({'doi': doi, 'title': row.get('title'),
+                                  'date': row.get('date'), 'reason': why,
+                                  'formerly': row.get('radar1_selection')})
+    proposed_registry = dict(past)
+    proposed_registry.update(new_rejects)
+    stamp = datetime.now(timezone.utc).isoformat()
+    report = {
+        'policy_version': POLICY_VERSION, 'generated_at': stamp, 'applied': apply,
+        'original_studies': len(raw['leads']), 'historical_period': {'start': str(START), 'end': str(END)},
+        'selection_counts': dict(counts), 'retained_in_main_file': len(accepted),
+        'removed_from_main_file': len(new_rejects),
+        'prior_rejections': len(past), 'rejection_registry_after_apply': len(proposed_registry),
+        'removed_by_reason': dict(sorted(reasons.items())), 'inspection_method': dict(checks),
+        'already_rejected_encountered': dict(earlier),
+        'examples_kept': [{'doi': r['doi'], 'title': r['title'],
+                           'reason': r['radar1_admission_reason']} for r in accepted[:30]],
+        'proposed_removals': excluded_rows,
+        'note': 'A scope admission decision, not a scientific-quality or forecast-accuracy verdict. '
+                'Preview never edits the collection, priority list, or rejection registry. '
+                'A metadata-only uncertain original is removed after its available abstract is inspected.',
+    }
+    if apply:
+        # Precondition checks are complete before starting any file changes.
+        ledger['policy_version'] = POLICY_VERSION
+        ledger['rejected'] = dict(sorted(proposed_registry.items()))
+        newdb = dict(raw)
+        newdb['updated_at'] = stamp
+        newdb['leads'] = accepted
+        newdb['admission_policy_version'] = POLICY_VERSION
+        manifest = {'schema_version': 1, 'generated_at': stamp,
+                    'historical_start': str(START), 'historical_end': str(END),
+                    'original_records': len(accepted),
+                    'selection_counts': {'active': len(accepted)},
+                    'rejected_identifier_count': len(proposed_registry),
+                    'studies': [{'doi': r['doi'], 'title': r['title'],
+                                 'date': r['date'], 'selection': 'active',
+                                 'admission_reason': r['radar1_admission_reason']}
+                                for r in accepted],
+                    'note': 'Accepted historical academic originals only. Radar 2 not changed.'}
+        atomic_json(rejects_path, ledger)
+        atomic_json(path, newdb)
+        atomic_json(manifest_path, manifest)
     if report_path:
         atomic_json(Path(report_path), report)
-    if apply:
-        # Keep original 1,368 records; write the selection separately for Radar 2
-        # alignment in a *later* reviewed change. Radar 2 is not changed here.
-        manifest = {'schema_version': 1, 'generated_at': report['generated_at'],
-                    'historical_start': HISTORICAL_START.isoformat(),
-                    'historical_end': HISTORICAL_END.isoformat(),
-                    'original_records': len(handoff),
-                    'selection_counts': dict(selection_counts),
-                    'note':'active=historical EU-connected forward-looking research; review=undecided; later_context=2024+; excluded=out of scope. Original archive remains intact.',
-                    'studies':handoff}
-        if path.resolve() == (ROOT/'research-leads.json').resolve():
-            atomic_json(ROOT/'radar1-active.json', manifest)
-        atomic_json(path, raw)
     return report
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--leads', default=str(ROOT/'research-leads.json'))
-    parser.add_argument('--report', default=str(ROOT/'radar1-scope-report.json'))
-    parser.add_argument('--apply', action='store_true', help='Tag leads without deleting any originals')
-    args = parser.parse_args()
-    report = audit(args.leads, apply=args.apply, report_path=args.report)
-    print(json.dumps({'applied': report['applied'], 'studies': report['original_studies'],
-                      'future': report['classification_counts'],
-                      'eu_connection': report['eu_connection_counts'],
-                      'selection': report['selection_counts'],
-                      'changed': report['tags_added_or_changed']},
-                     indent=2))
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--leads', default=str(ROOT/'research-leads.json'))
+    p.add_argument('--rejections', default=None)
+    p.add_argument('--manifest', default=None)
+    p.add_argument('--report', default=str(ROOT/'radar1-scope-report.json'))
+    p.add_argument('--apply', action='store_true', help='Remove nonqualifying papers and write DOI rejections')
+    args = p.parse_args()
+    result = audit(args.leads, apply=args.apply, report_path=args.report,
+                   rejects_path=args.rejections, manifest_path=args.manifest)
+    print(json.dumps({k: result[k] for k in ('applied', 'original_studies',
+          'retained_in_main_file', 'removed_from_main_file', 'selection_counts',
+          'rejection_registry_after_apply', 'inspection_method')}, indent=2))
 
 
 if __name__ == '__main__':
