@@ -6,12 +6,12 @@ original title, abstract or publication date. Radar 2 is deliberately unchanged.
 """
 import argparse
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 import json
 from pathlib import Path
 import sys
 
-from scholarly import foresight_scope, eu_connection, atomic_json
+from scholarly import foresight_scope, eu_connection, atomic_json, HISTORICAL_START, HISTORICAL_END
 from priority import refresh as preview_priority
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +34,14 @@ def audit(leads_path, *, apply=False, report_path=None):
     cross_tab = Counter()
     by_reason = Counter()
     new_tags = 0
+    period_counts = Counter()
     for row in leads:
+        try:
+            pub_date = date.fromisoformat(str(row.get('date', '')))
+        except ValueError:
+            pub_date = None
+        source_period = 'historical_original' if pub_date and HISTORICAL_START <= pub_date <= HISTORICAL_END else 'later_context'
+        period_counts[source_period] += 1
         label, reason = foresight_scope(row)
         counts[label] += 1
         by_reason[reason] += 1
@@ -43,12 +50,13 @@ def audit(leads_path, *, apply=False, report_path=None):
         cross_tab[f'{label} / {eu_tier}'] += 1
         if len(eu_examples[eu_tier]) < 12:
             eu_examples[eu_tier].append({'doi': row.get('doi'), 'title': row.get('title'), 'eu_reason': eu_reason})
-        if (row.get('foresight_scope') != label or row.get('foresight_scope_reason') != reason
+        if (row.get('source_period') != source_period or row.get('foresight_scope') != label or row.get('foresight_scope_reason') != reason
                 or row.get('eu_connection') != eu_tier or row.get('eu_connection_reason') != eu_reason):
             new_tags += 1
         if len(examples[label]) < 15:
             examples[label].append({'doi': row.get('doi'), 'title': row.get('title'), 'reason': reason})
         if apply:
+            row['source_period'] = source_period
             row['foresight_scope'] = label
             row['foresight_scope_reason'] = reason
             row['foresight_scope_version'] = VERSION
@@ -61,6 +69,8 @@ def audit(leads_path, *, apply=False, report_path=None):
         raise AssertionError('Original research changed during screening; aborting')
     report = {'screen_version': VERSION, 'generated_at': datetime.now(timezone.utc).isoformat(),
               'applied': apply, 'original_studies': len(leads),
+              'historical_period': {'start': HISTORICAL_START.isoformat(), 'end': HISTORICAL_END.isoformat()},
+              'period_counts': dict(period_counts),
               'classification_counts': dict(counts), 'eu_connection_counts': dict(eu_counts),
               'future_by_eu_connection': dict(cross_tab), 'eu_examples': eu_examples,
               'reason_counts': dict(by_reason),

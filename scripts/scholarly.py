@@ -212,6 +212,10 @@ def eu_connection(lead):
     return 'review', 'no_clear_EU_link_in_indexed_metadata'
 
 
+# Radar 1 originals are a FIXED historical cohort. Newer literature belongs to Radar 2.
+HISTORICAL_START = date(2011, 1, 1)
+HISTORICAL_END = date(2023, 12, 31)
+
 MAX_LEADS = 3500
 REQUEST_TIMEOUT = (4, 13)
 
@@ -303,7 +307,7 @@ def credible_abstract(lead, earliest, latest):
         published = date.fromisoformat(lead['date'])
     except (KeyError, ValueError, TypeError):
         return False
-    if not earliest <= published <= latest:
+    if not max(earliest, HISTORICAL_START) <= published <= min(latest, HISTORICAL_END):
         return False
     title = lead.get('title') or ''
     abstract = lead.get('abstract') or ''
@@ -332,7 +336,7 @@ def credible_bibliographic_lead(lead, earliest, latest):
     except (KeyError, ValueError, TypeError):
         return False
     title = lead.get('title') or ''
-    if not earliest <= published <= latest or LOW_SUBSTANCE.search(title) or foresight_scope(lead)[0] == 'out_of_scope':
+    if not max(earliest, HISTORICAL_START) <= published <= min(latest, HISTORICAL_END) or LOW_SUBSTANCE.search(title) or foresight_scope(lead)[0] == 'out_of_scope':
         return False
     if len(title.split()) < 6 or not normal_doi(lead.get('doi')):
         return False
@@ -347,9 +351,10 @@ def lead_status(lead):
 
 
 def year_windows(latest):
-    # The upper bound is a rolling six-calendar-month cutoff supplied by radar.
+    # Fixed historical period. Do not slowly drift into 2024, 2025, etc.
+    latest = min(latest, HISTORICAL_END)
     result = []
-    for y in range(latest.year - 15, latest.year + 1, 2):
+    for y in range(HISTORICAL_START.year, latest.year + 1, 2):
         start = date(y, 1, 1)
         end = min(date(y + 1, 12, 31), latest)
         if start <= end:
@@ -429,10 +434,8 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     Queries may fail independently; a response error never masquerades as a
     scientifically rejected document. The original state history is preserved.
     """
-    try:
-        from_date = latest.replace(year=latest.year-15)
-    except ValueError:
-        from_date = latest.replace(year=latest.year-15, day=28)
+    from_date = HISTORICAL_START
+    latest = min(latest, HISTORICAL_END)
     state = json.loads(Path(state_path).read_text(encoding='utf-8')) if Path(state_path).exists() else {
         'schema_version': 1, 'runs': 0, 'source_cursor': 0, 'verification_cursor': 0,
         'archive_pages': {}, 'documents': {}, 'queue': []}
@@ -499,12 +502,13 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     if requests_made:
         state['scholarly_queries_completed'] = int(state.get('scholarly_queries_completed', 0)) + requests_made
     atomic_json(Path(state_path), state)
-    # Date selection uses original publication year, prioritising older studies
-    # useful for retrospection, but retaining newer eligible articles too.
+    # Historical originals are fixed to 2011–2023. Old indexed later papers
+    # are preserved for Radar 2 context, never counted as new Radar 1 leads.
     # Preserve recently rediscovered work across years, not only the oldest 2015 cohort.
     newest = sorted(records.values(), key=lambda r: (r.get('last_seen', ''), r['doi']), reverse=True)[:MAX_LEADS]
     leads = sorted(newest, key=lambda r: (r['date'], r['doi']))
     for row in leads:
+        row['source_period'] = ('historical_original' if HISTORICAL_START <= date.fromisoformat(row['date']) <= HISTORICAL_END else 'later_context')
         row['foresight_scope'], row['foresight_scope_reason'] = foresight_scope(row)
         row['foresight_scope_version'] = 1
         row['eu_connection'], row['eu_connection_reason'] = eu_connection(row)

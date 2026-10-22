@@ -27,7 +27,7 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlu
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
-from scholarly import scholarly_scan
+from scholarly import scholarly_scan, HISTORICAL_START, HISTORICAL_END
 from priority import refresh as refresh_priorities
 from check_priorities import check_indexed_leads
 
@@ -53,7 +53,7 @@ def earliest_date(today):
     except ValueError:  # 29 February
         return today.replace(year=today.year-15, day=28)
 
-START_DATE = earliest_date(TODAY())
+START_DATE = HISTORICAL_START  # Fixed archival boundary; does not roll forward each year.
 MIN_WORDS = 2600
 MIN_PDF_PAGES = 8
 VERIFIER_VERSION = 3
@@ -131,7 +131,7 @@ def cutoff(today):
     if month <= 0:
         year -= 1
         month += 12
-    return date(year, month, min(today.day, calendar.monthrange(year, month)[1]))
+    return min(date(year, month, min(today.day, calendar.monthrange(year, month)[1])), HISTORICAL_END)
 
 
 def trusted_host(url):
@@ -1124,18 +1124,22 @@ def verify_until(deadline, once=False):
                   f'(recheck after {retry})', flush=True)
     state['queue'] = remaining
     state['last_verification_utc'] = datetime.now(timezone.utc).isoformat()
-    # Permanently drop any old out-of-window / unqualified records before writing.
-    old = {k: x for k, x in old.items() if (START_DATE <= date.fromisoformat(x['date']) <= cutoff(today)
+    # Preserve previously verified 2024+ records as LATER CONTEXT, never as
+    # originals. No future scan will admit new 2024+ original publications.
+    old = {k: x for k, x in old.items() if (START_DATE <= date.fromisoformat(x['date']) <= today
            and x.get('quality', {}).get('status') == 'automated research-substance screen passed'
            and x.get('actor_id') in actors)}
+    for record in old.values():
+        record['source_period'] = ('historical_original' if date.fromisoformat(record['date']) <= HISTORICAL_END else 'later_context')
     results = sorted(old.values(), key=lambda x: (x['date'], x['id']), reverse=True)
     if (results != database.get('findings', [])
             or database.get('earliest_publication_date') != START_DATE.isoformat()):
         database['findings'] = results
         database['updated_at'] = today.isoformat()
         database['schema_version'] = 2
-        database['scope'] = 'EU and independent European foresight retrospective (rolling 15 years; prioritise 5–10 years old)'
+        database['scope'] = 'EU and independent European foresight retrospective (originals 2011–2023; 2024+ only later context)'
         database['minimum_age_months'] = 6
+        database['historical_original_end'] = HISTORICAL_END.isoformat()
         database['earliest_publication_date'] = START_DATE.isoformat()
         atomic_json(RESULTS, database)
     atomic_json(STATE, state)

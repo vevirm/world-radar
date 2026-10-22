@@ -7,7 +7,7 @@ from datetime import date, datetime, timezone
 import json
 import re
 from pathlib import Path
-from scholarly import foresight_scope, eu_connection
+from scholarly import foresight_scope, eu_connection, HISTORICAL_START, HISTORICAL_END
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = lambda: datetime.now(timezone.utc).date()
@@ -26,7 +26,8 @@ TOPICS = {
 
 def age_bracket(date_str, today):
     age = (today - date.fromisoformat(date_str)).days / 365.2425
-    if age < 0 or age > 15: return 'outside 15-year limit'
+    if age < 0: return 'unpublished'
+    if age > 15: return 'historical · 15+ years'
     return 'preferred · 5–10 years' if 5 <= age <= 10 else ('near-preferred · 4–5 years' if 4 <= age < 5 else 'exceptional · outside preferred')
 
 def inference_topic(title):
@@ -50,7 +51,7 @@ def report_series(item):
 def score(item, today):
     d = date.fromisoformat(item['date'])
     years = (today-d).days / 365.2425
-    if not (0 <= years <= 15): return -999
+    if not (HISTORICAL_START <= d <= HISTORICAL_END): return -999
     # Explicit, auditable weighting, not an objective impact/accuracy metric.
     base = 95 if item.get('source_kind') == 'Curated publisher report' else 30
     eu_tier = item.get('eu_connection') or eu_connection(item)[0]
@@ -87,6 +88,10 @@ def refresh(today=None, *, save=True):
         records.append(item)
     for x in indexed:
         if not x.get('doi') or not x.get('date'): continue
+        try:
+            if not HISTORICAL_START <= date.fromisoformat(x['date']) <= HISTORICAL_END: continue
+        except ValueError:
+            continue
         scope, _ = foresight_scope(x)
         if scope == 'out_of_scope':
             continue  # Original record stays in the research archive.
@@ -137,7 +142,7 @@ def refresh(today=None, *, save=True):
         x['review_priority'] = len(selected)+1
         selected.append(x)
     result={'schema_version':1,'generated_date':today.isoformat(), 'target':50,
-            'policy':'15-year maximum, preferentially 5–10 years old; shortlist is priority for verification, not 50 certified findings',
+            'policy':'Original publications from 2011 through 2023 inclusive; newer publications belong to the Radar 2 evidence period. Shortlist is research triage, not 50 certified findings',
             'method_note':'EU-issued reports preferred; independent EU-focused future research remains eligible. Issuer attribution, full-text quality, and retrospective accuracy are separate checks',
             'count':len(selected),'items':selected}
     if save:
