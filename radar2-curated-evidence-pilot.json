@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-22",
+  "mode": "manual_live_source_verified_pilot",
+  "new_scan_performed": false,
+  "live_repository_changed": false,
+  "originals_tested": 3,
+  "pilot_only": true,
+  "cases": [
+    {
+      "original_id": "lead-726d2d4ffd64aca7",
+      "title": "How far away is hydrogen? Its role in the medium and long-term decarbonisation of the European energy system",
+      "historical_date": "2015-11-07",
+      "original_type": "academic",
+      "original_url": "https://doi.org/10.1016/j.ijhydene.2015.09.004",
+      "source_trace": "Saved historical abstract; publisher record also verified. Online 2015, journal issue January 2016.",
+      "source_specific_proposition": "JRC-EU-TIMES scenario modelling suggested hydrogen could become viable in the EU energy system around 2030 under a long-term carbon constraint; hydrogen might help decarbonise industry and transport.",
+      "scenario_condition": "Long-term carbon cap; scenario is conditional, not a guarantee or the later EU production target.",
+      "radar2_question": "Has hydrogen become more practically viable as a European decarbonisation option, and what deployment and cost constraints remain on the path to 2030?",
+      "findings": [
+        {
+          "year": 2024,
+          "document": "European Court of Auditors, Special report 11/2024",
+          "url": "https://www.eca.europa.eu/en/publications/SR-2024-11",
+          "evidence": "The EU was unlikely to meet the 2030 renewable-hydrogen targets established years after the original paper; market rules, project maturity and demand hinder deployment.",
+          "evidence_type": "independent_institutional_evaluation"
+        },
+        {
+          "year": 2025,
+          "document": "ACER, European hydrogen markets monitoring report 2025 (covering 2024 deployments)",
+          "url": "https://www.acer.europa.eu/monitoring/European-hydrogen-markets-2025",
+          "evidence": "EU electrolyser capacity was 308 MW in 2024, 51% more than before but well behind the 2024 EU policy ambition of 6 GW. Renewable hydrogen production costs were about four times conventional hydrogen costs.",
+          "evidence_type": "market_observation"
+        },
+        {
+          "year": 2026,
+          "document": "JRC, Water Electrolysis and Hydrogen in the EU: 2025 Status Report (published 14 Jan 2026)",
+          "url": "https://setis.ec.europa.eu/water-electrolysis-and-hydrogen-european-union-2025-status-report-technology-development-trends_en",
+          "evidence": "EU operational electrolysis capacity was projected at 514–800 MW by end-2025; high capital costs and raw material dependencies remain.",
+          "evidence_type": "market_status_and_projection"
+        }
+      ],
+      "assessment": "Hydrogen remains a serious European decarbonisation pathway, but observed rollout and economics lag policy ambition. This is an interim check of the original conditional scenario, not a finding that its 2030 proposition has failed.",
+      "assessment_status": "interim_with_observed_barriers",
+      "scope_caveat": "Do not conflate the 2015 model finding with targets set by the EU in 2020–2022; the 2030 horizon is still in the future."
+    },
+    {
+      "original_id": "lead-9363d7d494bf528e",
+      "title": "Actual and potential development of consumer demand on the organic food market in Europe",
+      "historical_date": "2011-08-15",
+      "original_type": "academic",
+      "original_url": "https://doi.org/10.1016/j.njas.2011.01.005",
+      "source_trace": "Saved original abstract, cross-checked against original publisher text. Research covered Denmark, Italy and UK and considered futures up to 2015.",
+      "source_specific_proposition": "A plausible scenario was continued, relatively stable expansion of organic-food demand, conditional on prices, distribution, consumer trust and public support.",
+      "scenario_condition": "Qualitative, conditional scenario rather than a fixed volume target.",
+      "radar2_question": "Did European organic-food consumer demand expand after 2011, how steadily, and do later developments support the factors originally identified?",
+      "findings": [
+        {
+          "year": 2014,
+          "document": "FiBL/AMI European organic market 2014, announced 2016",
+          "url": "https://www.fibl.org/en/info-centre/news/european-organic-market-continued-to-grow-in-2014",
+          "evidence": "Organic retail sales in Europe reached about €26.2 billion in 2014, and the three investigated markets were among the more developed markets.",
+          "evidence_type": "retail_observation"
+        },
+        {
+          "year": 2022,
+          "document": "FiBL, The World of Organic Agriculture 2024 (reporting 2022)",
+          "url": "https://www.sinab.it/sites/default/files/FIBL-organic-world-2024_light_0.pdf",
+          "evidence": "Europe-wide organic retail sales declined by about 2.2% in 2022 rather than rising every year.",
+          "evidence_type": "retail_observation"
+        },
+        {
+          "year": 2024,
+          "document": "FiBL, Europe organic market 2024 data released 10 Feb 2026",
+          "url": "https://www.fibl.org/en/info-centre/news/europes-organic-market-sets-another-record-in-2024-farmland-stable",
+          "evidence": "European organic retail sales reached €58.7 billion in 2024, above the 2014 value in nominal euros.",
+          "evidence_type": "retail_observation"
+        }
+      ],
+      "assessment": "The broad directional expansion appears to have occurred, but stable expansion did not mean uninterrupted annual growth. More directly comparable long-term panels for Denmark, Italy and the UK would be needed to test the consumer barriers identified in the original study.",
+      "assessment_status": "direction_supported_stability_qualified",
+      "scope_caveat": "Nominal European sales are not inflation-adjusted; wider Europe totals do not prove the specific household-level explanations for Denmark, Italy and the UK."
+    },
+    {
+      "original_id": "report-3eff29ec207eb208",
+      "title": "2022 Strategic Foresight Report: Twinning the green and digital transitions in the new geopolitical context",
+      "historical_date": "2022-06-29",
+      "original_type": "institutional",
+      "original_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+      "source_trace": "Original institutional source verified online for this pilot. Its excerpt was not stored in the uploaded Radar 2 audit; this review DOES NOT update the live source manifest.",
+      "source_specific_proposition": "Strategic management and diversification of supplies of critical raw materials would be essential to the EU green and digital transitions; otherwise the EU could fall into new dependency traps.",
+      "scenario_condition": "A strategic warning and possible future vulnerability, not a numeric prediction.",
+      "radar2_question": "Did the EU recognise and act on critical raw-material dependencies after 2022, and has actual supply resilience improved?",
+      "findings": [
+        {
+          "year": 2024,
+          "document": "European Critical Raw Materials Act (in force 2024)",
+          "url": "https://commission.europa.eu/topics/competitiveness/green-deal-industrial-plan/european-critical-raw-materials-act_en",
+          "evidence": "The EU enacted diversification and domestic-capacity policy with non-binding 2030 benchmarks for extraction, processing, recycling and single-country concentration.",
+          "evidence_type": "documented_policy_response"
+        },
+        {
+          "year": 2025,
+          "document": "European Commission strategic-project selections under CRMA",
+          "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+          "evidence": "The Commission designated its first EU strategic-project list on 25 March 2025.",
+          "evidence_type": "documented_implementation"
+        },
+        {
+          "year": 2026,
+          "document": "European Court of Auditors, Special report 04/2026",
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/0ebbba88-03d4-11f1-825d-01aa75ed71a1/language-en",
+          "evidence": "Auditors found diversification had not yet produced tangible results, with obstacles to production and recycling and many projects unlikely to improve supply in time for 2030.",
+          "evidence_type": "independent_outcome_evaluation"
+        },
+        {
+          "year": 2026,
+          "document": "European Commission second project selection, 9 Oct 2026",
+          "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+          "evidence": "A further EU list of strategic projects was designated on 9 October 2026; designated projects are not the same thing as delivered supply capacity.",
+          "evidence_type": "documented_implementation"
+        }
+      ],
+      "assessment": "The risk identified in 2022 generated substantial policy action, while a 2026 independent audit shows the dependency problem remains unresolved. The warning retains strong relevance; the law and announced projects must not be presented as proof of achieved resilience.",
+      "assessment_status": "warning_remains_relevant_actions_not_outcomes",
+      "scope_caveat": "Original foresight was broad; this pilot assesses only one anchored question about critical raw materials, not the whole 2022 report."
+    }
+  ],
+  "policy": [
+    "Original must be accepted by Radar 1",
+    "Original proposition must be grounded in original abstract or document",
+    "Subsequent evidence must postdate the original and address same substantive question",
+    "Policy or project announcements cannot be called realised outcomes",
+    "Keep geography, metrics, original conditions and uncertainty separate",
+    "No artificial binary accuracy rating"
+  ]
+}
