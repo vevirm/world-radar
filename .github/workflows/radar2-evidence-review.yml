@@ -1,0 +1,33 @@
+name: Radar 2 - source evidence pilot (NO SCAN)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source_evidence_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run source-continuity tests without accessing the internet
+        run: |
+          python -m pip install -q pytest
+          python -m pytest -q tests/test_radar2_evidence_review.py
+      - name: Vet three dated evidence comparisons without modifying active Radar 2
+        run: python scripts/radar2_evidence_review.py
+      - name: Save review report, not publication data
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Radar-2-Source-Evidence-Review
+          path: |
+            RADAR2-EVIDENCE-REVIEW.json
+            RADAR2-EVIDENCE-REVIEW.md
+          retention-days: 30
+          if-no-files-found: warn
