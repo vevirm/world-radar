@@ -448,6 +448,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Metadata cross-check inconclusive · full text unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Conclusion: All the strategies developed on the basis of the four scenarios probe for an increase in European Union's dedication to achieve positive outcomes. To study possible outcomes within the European Union, a scenario analysis for the year 2050 was performed on the possible influence of the European Commission (EC).",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -470,6 +480,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The aim of this research is to construct alternative scenarios for rural Croatia in 2030, acknowledging its postsocialist transition as an important framework. Four scenarios were developed: Rural Renaissance, Shift, Road to Nowhere, and Growth without Development.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -492,6 +512,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In the EURO-HEALTHY project, funded by Horizon 2020, three 2030 time-horizon scenarios were developed, depicting the key factors that may affect the evolution of PH inequalities across European regions. A three-stage socio-technical approach was applied: i) identification of drivers (key factors expected to affect the evolution of PH inequalities across European regions until 2030) - this stage engaged in a Web-Delphi process a multidisciplinary panel of 51 experts and other stakeholders representing the different perspectives regarding PH inequalities; ii) generation of scenario structures - different drivers' configurations (i.e. their hypotheses for evolution) were organised into coherent scenarios using the Extreme-World Method; and iii) validation of scenario structures and generation of scenario narratives.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -514,6 +544,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The aim of this paper is to understand public preferences for several future scenarios of achieving a healthier, more equitable and sustainable Europe, which differ in the way the society is organized (individualistically vs. collectively) and in the driving sector (public vs. private). About three thousand respondents chose among the four scenarios presented within four different contexts (green spaces, active mobility, energy-efficient housing, food consumption) or none of them.",
+        "anticipated_horizons": [
+          2040
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -536,6 +576,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "To reach a 55% GHG emissions reduction, the cumulative PV capacity in the EU and the UK would need to surge to 455–605 GW, depending on the strategic policy scenario. This opinion article looks specifically at the role of photovoltaics (PV), based on scenarios from the Commission's 2018 long-term strategy (LTS) for energy and climate.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -558,6 +608,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Outcomes show that tank to wheel road transport CO2 emission reductions up to 90% versus 1990 could be reached by 2050 through strong fleet electrification and if all measures achieve their best potential. To inform long-term policies on transport decarbonisation, the present paper analyses European road transport CO2 emission reduction options by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -580,6 +640,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The paper contributes to a discussion on developments in output for the EU-27 group over the next 11 years, up to year 2030. A brief study of population-decreasing events in the European historical perspective may represent an inspiring part.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -602,6 +672,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "OBJECTIVE: This paper describes the three 2030 time-horizon scenarios developed under the EURO-HEALTHY project, depicting the key factors that may affect the evolution of PH inequalities across European regions. METHODS: A three-stage socio-technical approach was applied: i) identification of drivers (key factors expected to affect the evolution of PH inequalities across European regions until 2030) - this stage engaged in a Web-Delphi process a multidisciplinary panel of 51 experts and other stakeholders representing the different perspectives regarding PH inequalities; ii) generation of scenario structures - different drivers' configurations (i.e. their hypotheses for evolution) were organized into coherent scenario structures using the Extreme-World Method; and iii) validation of scenario structures and generation of scenario narratives.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -624,6 +704,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "These forecasts show trends and breakthroughs in development of science and technology, determine possible changes in eco- nomics, social and political life of the world and in its diferent regions, help to determine crisis points.",
+        "anticipated_horizons": [
+          2035
+        ],
+        "investigation_type": "projection_or_forecast",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -646,6 +736,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "With the current average decline in notification rate and number of TB deaths however, the EU/EEA will not reach the targets by 2030.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -668,6 +768,17 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Model scenarios show nonfood RJF supply could increase from 1 PJ in 2021 to 165–261 PJ /year (3.8–6.1 million tonne (Mt)/year) by 2030, provided advanced biofuel technologies are developed and adequate (policy) incentives are present. Abstract This study presents supply scenarios of nonfood renewable jet fuel ( RJF ) in the European Union ( EU ) toward 2030, based on the anticipated regulatory context, availability of biomass and conversion technologies, and competing biomass demand from other sectors (i.e., transport, heat, power, and chemicals).",
+        "anticipated_horizons": [
+          2021,
+          2030
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -690,6 +801,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Forecasts of this share for the 2020 horizon were obtained, all showing that the EU target is yet to be reached. Empirical estimations of renewable energy share into the final energy consumption showed increasing trend for all groups, while providing forecasts quite different from the EU ones.",
+        "anticipated_horizons": [
+          2020
+        ],
+        "investigation_type": "projection_or_forecast",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -712,6 +833,17 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "With the right set of incentives in place at EU and Member States levels, we find the current literature supports the view that the EU has the potential to achieve an additional combined mitigation impact through CSF of 441 Mt CO2/year by 2050. In July 2016, the European Commission (EC) published a legislative proposal for incorporating greenhouse gas emissions and removals due to Land Use, Land Use Change and Forestry (LULUCF) into its 2030 Climate and Energy Framework.",
+        "anticipated_horizons": [
+          2030,
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -734,6 +866,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The key conclusions are as follows: (a) the achievement of negative emissions in the power sector via the use of biomass with carbon capture and storage (BECCS) allows for much more limited decarbonization in the buildings and transport sectors; (b) CCS is also extensively used for decarbonization of the industrial sector; (c) because of the absence in the model of options for transport mode-switching and building fabric efficiency improvements, the transport and buildings sectors achieve relatively little abatement by 2050 – the inclusion of these options could considerably reduce the need for BECCS and the cost of abatement; (d) decarbonization of the EU’s energy system by 2050 would increase energy system costs by 14% compared to a Reference scenario with no CO2 constraints; and (e) average EU-wide marginal CO2 abatement costs in Policy Success reach $300/tCO2 in 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 137,
       "age_band": "preferred · 5–10 years",
@@ -756,6 +898,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "This article presents the results of a comparative scenario analysis of the “green hydrogen” development pathways in Poland and the EU in the 2050 perspective. In the article, we estimated the potential of the production of “green hydrogen”, derived from electrolysis, for different scenarios of the development of the electricity sector in Poland and the EU.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "exceptional · outside preferred",
@@ -778,6 +930,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "According to the market trend between 2017 and 2022, the currently average EU installed capacity of 474.55 Wp/capita will not reach the necessary 2246 Wp/capita or 1 TWp target by 2030.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "exceptional · outside preferred",
@@ -800,6 +962,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "exceptional · outside preferred",
@@ -822,6 +994,17 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Despite the rich and extensive documentation provided by European Member States and the European Commission in describing National Energy and Climates Plans and Long-Term Strategy plans, it is still very difficult to evaluate where and how the European Union as a whole has positioned itself on the path to achieving the Green Deal objectives, named the Fit 55% package in 2030 and the achievement of carbon neutrality by 2050.",
+        "anticipated_horizons": [
+          2030,
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "near-preferred · 4–5 years",
@@ -844,6 +1027,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The objective of the study is to quantify energy infrastructure needs required in various climate neutral scenarios at the 2050 time horizon. Background: The European Commission has settled ambitious objectives in order to reach climate neutrality by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "near-preferred · 4–5 years",
@@ -866,6 +1059,14 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In our foresight project FRESHER (FORESIGHT AND MODELLING FOR EUROPEAN HEALTH POLICY AND REGULATION) we discuss policy options with stakeholders from health, research, care, patient organisations, insurances and policy-making that go beyond the usual activities and pose alternatives that promise to be more successful. From an analysis of trends that affect NCD development far beyond the usual determinants of tobacco and alcohol consumption, salt, sugar and fat intake or sedentary behaviour the most relevant and significant trends are combined to four scenarios depicting possible futures.",
+        "anticipated_horizons": [],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 135,
       "age_band": "preferred · 5–10 years",
@@ -888,6 +1089,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In this work, we explore how the domains of smart cities, smart transport, and smart energy will evolve until 2030 from a scientific and technological perspective, as a means to inform future policies for urban development in Europe. According to our empirical findings, there will be several speedy and structural changes in the three domains: we were able to identify a set of 18 statements that are highly probable to become reality in the next decade, whereas 17 statements were classified as plausible but not highly probable, and three statements raised controversiality.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 133,
       "age_band": "exceptional · outside preferred",
@@ -910,6 +1121,16 @@
       "eu_connection": "eu_institution",
       "eu_connection_reason": "EU_issuer_named_in_publisher_metadata_unverified",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "There is enough sustainable EU biomass to contribute to all sectors by 2030, and probably beyond, as well as to bring organic carbon back to soil. \\nTo ensure sustainable supply, not only residues and wastes are relevant, but sustainably sourced agricultural and forestry feedstocks, and feedstocks from recovering and restoring marginal and degraded land.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 129,
       "age_band": "preferred · 5–10 years",
@@ -932,6 +1153,17 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In stark contrast, the White paper High scenario results show that demand for rail freight services almost doubles compared to the Reference values. Specifically: a modal shift, from road to rail, and waterway transport, of 30 % by 2030 and 50 % by 2050 - for distances greater than 300 km.",
+        "anticipated_horizons": [
+          2030,
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 129,
       "age_band": "exceptional · outside preferred",
@@ -954,6 +1186,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "She proposes addressing integration of immigrants scenarios alongside demographic projections and labour market needs for future assessments of needs for immigrants and for responsible governance.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 129,
       "age_band": "exceptional · outside preferred",
@@ -976,6 +1218,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "To quantify changes in air pollution in Europe at the 2050 horizon, we designed a comprehensive modelling system that captures the external factors considered to be most relevant and relies on up-to-date and consistent sets of air pollution and climate policy scenarios. We explored two diverse scenarios: a reference scenario where climate policies are absent and a mitigation scenario which limits global temperature rise to within 2 °C by the end of this century.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 129,
       "age_band": "exceptional · outside preferred",
@@ -998,6 +1250,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Abstract This paper assesses the performance of European Union countries in achieving sustainable development using an assessment framework based on the 2030 Agenda.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 128,
       "age_band": "exceptional · outside preferred",
@@ -1020,6 +1282,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Bioenergy could provide up to 1GtCO2 or 40% of the overall mitigation needed by the EU in 2050. We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "projection_or_forecast",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 128,
       "age_band": "near-preferred · 4–5 years",
@@ -1042,6 +1314,16 @@
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "In the transport sector, where change comes with inertia and investments are made with a long term perspective, decision makers need to consider how the future may look like in the very long term. The work presented in this paper is a scenario analysis focusing on the evolution of transport demand towards 2050, aiming to identify related challenges for European industrial and policy players.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "alternative_scenarios",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 127,
       "age_band": "exceptional · outside preferred",
@@ -1050,20 +1332,28 @@
       "review_priority": 49
     },
     {
-      "title": "Foresight in support of European research and innovation policies: The European Commission is preparing the funding of grand societal challenges",
-      "date": "2014-12-10",
+      "title": "European packaging industry foresight study—identifying global drivers and driven packaging industry implications of the global megatrends",
+      "date": "2014-04-10",
       "publisher": "Springer Science and Business Media LLC",
       "topic": "European futures",
       "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1007/s40309-014-0055-4",
-      "doi": "10.1007/s40309-014-0055-4",
-      "abstract": "A foresight hub within the Directorate General Research and Innovation (DG RTD) of the European Commission will support the decision-making procedures of the EU Horizon 2020 research, technology, and innovation programme. Foresight in particular is seen as an instrument defining research priorities for European society’s needs in support of the ‘grand societal challenges’. The new initiative marks the recent success of the institutional and administrative application of foresight and derives from a long history of approaches to foresight taken by the European Commission. In fact, the Commission has been implementing measures to both internalise and externalise foresight during various periods since the 1970s. This paper outlines the various phases and approaches of foresight at the European Commission. It contextualises the new attempt of the foresight hub that is assumed to support the next European Commission’s research and innovation policies.",
+      "url": "https://doi.org/10.1007/s40309-014-0039-4",
+      "doi": "10.1007/s40309-014-0039-4",
+      "abstract": "The purpose of the research is to provide a common multi-client platform as a base for further applied foresight work in the packaging sector. It aims to be a reference for a future-oriented strategic dialogue and a platform for strategic business development. The ambition with the research is not to provide an accurate forecast, but rather to initiate an improved preparedness for and active influence on future developments. This is done by mapping and analyzing general trends and drivers in society. The potential packaging implications of those trends and drivers are then evaluated to highlight potential future demands, opportunities and threats for packaging. Methods include participatory workshops/focus groups with invited experts and users. Thus, this article provides results based on participatory foresight and Focus Group methodology. With a systematic and participatory process, a medium to long–term vision building is targeted to mobilize joint actions and influence current decision making.",
       "journal": "European Journal of Futures Research",
       "source_kind": "Indexed academic lead",
       "foresight_scope": "future_facing",
       "eu_connection": "eu_focused",
       "eu_connection_reason": "EU_or_Europe_in_original_title",
       "verification_status": "Abstract indexed — full study unverified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "The potential packaging implications of those trends and drivers are then evaluated to highlight potential future demands, opportunities and threats for packaging. The purpose of the research is to provide a common multi-client platform as a base for further applied foresight work in the packaging sector.",
+        "anticipated_horizons": [],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
       "target_year": null,
       "ranking_score": 127,
       "age_band": "exceptional · outside preferred",
