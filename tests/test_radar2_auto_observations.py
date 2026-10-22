@@ -1,7 +1,7 @@
-"""Offline contract tests. No API keys or network needed."""
-import json
+"""Offline tests for question-first evidence policy; no external services."""
 import sys
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
 
@@ -10,109 +10,155 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 import radar2_auto_observations as auto
 
 
-def sample(case, value=22.038, changes=None):
-    expected = {'freq': 'A', 'nrg_bal': case['energy_balance'], 'unit': 'PC',
-                'geo': case['observed_geo'], 'time': str(case['year'])}
-    doc = {'class': 'dataset', 'version': '2.0', 'id': list(expected),
-           'size': [1] * 5, 'dimension': {d: {'category': {'index': {v: 0}}} for d, v in expected.items()},
-           'value': {'0': value}, 'updated': '2026-09-15T21:00:00+0200'}
-    if changes:
-        changes(doc)
+def sample(case, value=22.038, changes=None, year=None):
+    expected={'freq':'A','nrg_bal':case['energy_balance'],'unit':'PC',
+              'geo':case['observed_geo'],'time':str(case['year'] if year is None else year)}
+    doc={'class':'dataset','version':'2.0','id':list(expected),
+         'size':[1]*5,'dimension':{d:{'category':{'index':{v:0}}} for d,v in expected.items()},
+         'value':{'0':value},'updated':'2026-09-15T21:00:00+0200'}
+    if changes:changes(doc)
     return doc
 
 
-def test_actual_originals_and_passages_accepted():
-    originals = auto.selected_originals(ROOT)
-    assert len(originals) == 2
-    assert all(o['source_kind'] == 'academic' and o['original_passage'] for _, o in originals)
+def fetch_stub(url):
+    params=parse_qs(urlsplit(url).query)
+    assert params['geo']==['EU27_2020']
+    year=int(params['time'][0])
+    case=auto.CONTRACTS[1]
+    return sample(case,value=18.029 if year==2017 else 22.038,year=year)
 
 
-def test_original_quote_cannot_be_substituted():
-    c = dict(auto.CONTRACTS[0], quote='By 2020 Europe will have 99% hydrogen')
-    with pytest.raises(ValueError, match='cannot be traced'):
-        auto.selected_originals(ROOT, (c,))
+def test_originals_and_core_focus_are_traced():
+    cases=auto.selected_originals(ROOT)
+    assert len(cases)==2
+    assert cases[0][0]['claim_role']=='background_context'
+    assert cases[1][0]['claim_role']=='central_projection'
+    assert all(original['source_kind']=='academic' for _,original in cases)
 
 
-def test_refuse_unknown_original():
-    c = dict(auto.CONTRACTS[0], id='lead-bogus')
-    with pytest.raises(ValueError, match='not in accepted'):
-        auto.selected_originals(ROOT, (c,))
+def test_reject_unsupported_quote_focus_and_original():
+    c=dict(auto.CONTRACTS[0], quote='Europe will have 99% hydrogen')
+    with pytest.raises(ValueError,match='cannot be traced'):
+        auto.selected_originals(ROOT,(c,))
+    c=dict(auto.CONTRACTS[0], central_focus_evidence='Incorrect invented study purpose')
+    with pytest.raises(ValueError,match='Core study focus'):
+        auto.selected_originals(ROOT,(c,))
+    c=dict(auto.CONTRACTS[0],id='lead-bogus')
+    with pytest.raises(ValueError,match='not in accepted'):
+        auto.selected_originals(ROOT,(c,))
 
 
-def test_eurostat_indicator_and_year_validation():
-    c = auto.CONTRACTS[0]
-    assert auto.observation(sample(c, 37.5), c) == 37.5
-    for dim, wrong in [('time', '2019'), ('geo','EU28'), ('nrg_bal', 'REN'), ('unit','THS')]:
-        def rewrite(d):
-            d['dimension'][dim]['category']['index'] = {wrong: 0}
-        with pytest.raises(ValueError, match='wrong '+dim):
-            auto.observation(sample(c, changes=rewrite), c)
+def test_reject_misleading_direct_link():
+    c=dict(auto.CONTRACTS[1],metric_fit='direct')
+    with pytest.raises(ValueError,match='Non-equivalent geography'):
+        auto.selected_originals(ROOT,(c,))
+    c=dict(auto.CONTRACTS[0],claim_role='central_projection')
+    with pytest.raises(ValueError,match='lacks reviewed indicator mapping'):
+        auto.selected_originals(ROOT,(c,))
+    c=dict(auto.CONTRACTS[1],baseline_year=2019)
+    with pytest.raises(ValueError,match='Baseline must precede'):
+        auto.selected_originals(ROOT,(c,))
 
 
-def test_missing_value_does_not_turn_into_zero():
-    c = auto.CONTRACTS[0]
-    with pytest.raises(ValueError, match='No valid'):
-        auto.observation(sample(c, changes=lambda d: d.update(value={})), c)
+def test_eurostat_indicator_year_and_geo_validation():
+    c=auto.CONTRACTS[1]
+    assert auto.observation(sample(c,22.0),c)==22.0
+    assert auto.observation(sample(c,18.029,year=2017),c,year=2017)==18.029
+    for dim,wrong in [('time','2019'),('geo','EU28'),('nrg_bal','REN_ELC'),('unit','THS')]:
+        def rewrite(d):d['dimension'][dim]['category']['index']={wrong:0}
+        with pytest.raises(ValueError,match='wrong '+dim):
+            auto.observation(sample(c,changes=rewrite),c)
 
 
-def test_reject_multi_cell_payload():
-    c = auto.CONTRACTS[0]
-    def expand(d):
-        d['size'][0] = 2
-        d['dimension']['freq']['category']['index'] = {'A':0, 'Q':1}
-    with pytest.raises(ValueError, match='wrong freq'):
-        auto.observation(sample(c, changes=expand), c)
-
-
-def test_bad_schema_and_nonpercentage_rejected():
-    c = auto.CONTRACTS[0]
-    with pytest.raises(ValueError, match='JSON-stat'):
-        auto.observation(sample(c,changes=lambda d:d.update(version='1.0')),c)
+def test_missing_invalid_and_multi_cell_values():
+    c=auto.CONTRACTS[1]
+    with pytest.raises(ValueError,match='No valid'):
+        auto.observation(sample(c,changes=lambda d:d.update(value={})),c)
     with pytest.raises(ValueError,match='No valid'):
         auto.observation(sample(c,value=127),c)
+    with pytest.raises(ValueError,match='JSON-stat'):
+        auto.observation(sample(c,changes=lambda d:d.update(version='1.0')),c)
+    def expand(d):
+        d['size'][0]=2
+        d['dimension']['freq']['category']['index']={'A':0,'Q':1}
+    with pytest.raises(ValueError,match='wrong freq'):
+        auto.observation(sample(c,changes=expand),c)
 
 
-def test_genuine_numeric_comparison_with_mismatch_caveat():
-    stats = {auto.CONTRACTS[0]['energy_balance']: 37.5, auto.CONTRACTS[1]['energy_balance']:22.038}
-    def fetch(url):
-        c = next(c for c in auto.CONTRACTS if c['energy_balance'] in url)
-        return sample(c, stats[c['energy_balance']])
-    report = auto.run(ROOT, fetch=fetch)
-    assert report['drafts_with_observations'] == 2
-    assert report['source_errors'] == 0
-    a, b = report['results']
-    assert a['observation']['value_percent'] == 37.5
-    assert '17.50 percentage points above' in a['comparison']['similarities']
-    assert a['outcome_verified'] is False
-    assert 'microgrid-resilience' in a['comparison']['still_unestablished']
-    assert 'EU-28' in b['comparison']['differences']
-    assert 'NOT a valid measure' in b['comparison']['differences']
-    assert b['comparison_grade'] == 'provisional_proxy'
-    assert report['published_outcomes'] == 0
-    assert not report['publication_allowed']
+def test_wrong_question_rejected_before_api_call():
+    called=[]
+    def fail_if_any(url):
+        called.append(url)
+        raise AssertionError('Should never request unrelated metric')
+    report=auto.run(ROOT,fetch=fail_if_any,contracts=auto.CONTRACTS[:1])
+    assert not called
+    assert report['excluded_wrong_question']==1
+    assert report['source_errors']==0
+    row=report['results'][0]
+    assert row['status']=='wrong_question_no_comparison'
+    assert row['evidence_search_performed'] is False
+    assert 'microgrids' in row['central_question'].lower()
+    assert 'not' in row['reason'].lower()
+
+
+def test_live_observations_do_not_become_forecast_score_on_wrong_geo():
+    report=auto.run(ROOT,fetch=fetch_stub)
+    assert report['originals_checked']==2
+    assert report['excluded_wrong_question']==1
+    assert report['observations_with_non_equivalent_geographies']==1
+    assert report['drafts_with_comparable_observations']==0
+    assert report['source_errors']==0
+    row=report['results'][1]
+    assert row['status']=='later_development_found_but_comparison_not_established'
+    assert row['comparison_grade']=='not_comparable_proxy'
+    assert row['observation']['value_percent']==22.038
+    assert row['observation']['baseline']['year']==2017
+    assert 'changed by +4.01' in row['comparison']['what_happened']
+    assert 'no forecast error' in row['comparison']['differences'].lower()
+    assert 'forecast' in row['comparison']['summary'].lower() or 'historical' in row['comparison']['summary'].lower()
+    assert not row['publication_allowed']
+    assert not row['outcome_verified']
+    assert report['published_outcomes']==0
     md=auto.as_markdown(report)
-    assert 'Then' in md and 'Observed' in md and 'What remains unresolved' in md
+    assert 'comparison rejected before searching' in md
+    assert 'not a test' in md
 
 
-def test_no_network_data_never_claims_finding():
-    def broken(_): raise TimeoutError('unreachable')
-    report = auto.run(ROOT, fetch=broken)
-    assert report['source_errors'] == 2
-    assert report['drafts_with_observations'] == 0
-    assert all(r['status']=='source_unavailable_no_conclusion' for r in report['results'])
+def test_proxy_observation_cannot_turn_into_predicted_success_or_failure():
+    c=auto.CONTRACTS[1]
+    original=auto.selected_originals(ROOT,(c,))[0][1]
+    low=auto.analyse(c,original,12.0,auto.api_url(c),baseline_value=9.0)
+    high=auto.analyse(c,original,80.0,auto.api_url(c),baseline_value=15.0)
+    assert low['comparison']['summary']==high['comparison']['summary']
+    for report in (low,high):
+        assert report['comparison_grade']=='not_comparable_proxy'
+        assert report['comparison']['similarities']=='Not determined using non-equivalent populations.'
+        assert 'forecast error' in report['comparison']['differences']
+
+
+def test_unavailable_official_data_is_not_invented():
+    calls=[]
+    def fail(u):
+        calls.append(u)
+        raise TimeoutError('unreachable')
+    report=auto.run(ROOT,fetch=fail)
+    assert len(calls)==1  # context case never requested
+    assert report['source_errors']==1
+    assert report['drafts_with_comparable_observations']==0
+    assert report['results'][1]['status']=='source_unavailable_no_conclusion'
     assert 'No comparison' in auto.as_markdown(report)
 
 
-def test_future_stat_value_automatically_changes_the_comparison():
-    c = auto.CONTRACTS[0]
-    _, o = auto.selected_originals(ROOT)[0]
-    low = auto.analyse(c,o,18.0,auto.api_url(c))
-    high = auto.analyse(c,o,36.0,auto.api_url(c))
-    assert 'Lower than' in low['comparison']['summary']
-    assert 'Broadly similar' in high['comparison']['summary']
-    assert low['comparison']['similarities'] != high['comparison']['similarities']
+def test_missing_baseline_is_not_silently_ignored():
+    def no_baseline(url):
+        if parse_qs(urlsplit(url).query)['time']==['2017']:
+            raise TimeoutError('no historical baseline')
+        return fetch_stub(url)
+    report=auto.run(ROOT,fetch=no_baseline)
+    assert report['source_errors']==1
+    assert report['results'][1]['status']=='source_unavailable_no_conclusion'
 
 
-def test_api_must_be_exact_official_dataset():
+def test_official_api_host_is_fixed():
     with pytest.raises(ValueError,match='Non-Eurostat'):
         auto.get_api_json('https://evil.example/eurostat/api')
