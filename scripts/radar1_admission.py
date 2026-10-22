@@ -7,9 +7,10 @@ make predictions or retrospective judgements. Used both by saved-data cleanup
 and by every new scholarly discovery batch.
 """
 import re
+from radar1_traceability import trace
 from datetime import date
 
-POLICY_VERSION = 4
+POLICY_VERSION = 5
 START = date(2011, 1, 1)
 END = date(2023, 12, 31)
 
@@ -117,7 +118,7 @@ def _clean(text):
     return ' '.join(str(text or '').split())
 
 
-def decision(lead):
+def _baseline_decision(lead):
     """Return (accepted: bool, reason: str, check: str).
 
     check records whether title alone sufficed or abstract was examined. There is
@@ -200,3 +201,28 @@ def decision(lead):
     if title_horizon and abstract_future and research and title_europe:
         return True, 'future_horizon_confirmed_by_abstract', 'abstract'
     return False, 'future_facing_research_question_not_established', 'abstract'
+
+
+def decision(lead):
+    """Publication relevance *and* a traceable future question for Radar 2.
+
+    Passages are copied from indexed original metadata, not inferred from titles.
+    The handoff document can be obtained with radar1_traceability.trace().
+    """
+    ok, reason, check = _baseline_decision(lead)
+    # Base metadata screens rule out out-of-date, unrelated geographies, trading.
+    if not ok and reason != 'ambiguous_title_no_supporting_abstract':
+        return ok, reason, check
+    handoff, trace_reason = trace(lead)
+    if not handoff:
+        return False, trace_reason, 'abstract_traceability'
+    # A title lacking a convincing EU/futures link cannot be rescued by an
+    # arbitrary abstract quote alone.  A verified original/publisher
+    # description is allowed in lieu of a missing bibliographic abstract.
+    if not ok:
+        evidence=dict(lead)
+        evidence['abstract']=evidence.get('original_excerpt') or evidence.get('publisher_description') or evidence.get('abstract')
+        ok, reason, check=_baseline_decision(evidence)
+        if not ok:
+            return False, reason, check
+    return True, 'substantive_future_question_with_original_passage', 'source_traceability'

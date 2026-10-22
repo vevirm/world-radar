@@ -18,6 +18,7 @@ from urllib.parse import quote, urlparse
 import requests
 from bs4 import BeautifulSoup
 from radar1_admission import POLICY_VERSION, decision
+from radar1_traceability import trace
 
 CROSSREF = 'https://api.crossref.org/works'
 OPENALEX = 'https://api.openalex.org/works'
@@ -537,6 +538,7 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     title_only_count = 0
     rejected_count = 0
     closer_checks = 0
+    deferred_checks = 0
     now = datetime.now(timezone.utc).isoformat()
     for i in range(min(max_queries, len(tasks))):
         if time.monotonic() >= deadline - 10:
@@ -553,15 +555,25 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
                 doi = normal_doi(lead.get('doi'))
                 if not doi or doi in excluded:
                     continue
+                # Existing accepted records may have a detailed OpenAlex abstract
+                # even when today's Crossref hit has no abstract. Merge before
+                # screening: never tombstone a good DOI due to poorer metadata.
+                if doi in records:
+                    lead = merge_lead(records[doi], lead, now)
                 accepted, reason, check = decision(lead)
-                # Check a plausible unknown once more, without making each
-                # scheduled run spend its full duration chasing weak titles.
+                # Every plausible title-only candidate needs a real closer
+                # source check. Bounded quotas defer unchecked candidates,
+                # WITHOUT adding a permanent DOI rejection prematurely.
                 if (not accepted and not lead.get('abstract') and
-                        reason == 'ambiguous_title_no_supporting_abstract' and
-                        closer_checks < 8 and time.monotonic() < deadline - 25):
-                    closer_checks += 1
-                    lead = closer_abstract_check(lead, key)
-                    accepted, reason, check = decision(lead)
+                        reason in {'ambiguous_title_no_supporting_abstract',
+                                   'no_substantive_source_text_for_radar2'}):
+                    if closer_checks < 8 and time.monotonic() < deadline - 25:
+                        closer_checks += 1
+                        lead = closer_abstract_check(lead, key)
+                        accepted, reason, check = decision(lead)
+                    else:
+                        deferred_checks += 1
+                        continue
                 if not accepted:
                     excluded[doi] = {'reason': reason, 'year': str(lead.get('date', ''))[:4]}
                     rejected_count += 1
@@ -582,6 +594,7 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
                 merged['radar1_admission_version'] = POLICY_VERSION
                 merged['radar1_admission_reason'] = reason
                 merged['source_period'] = 'historical_original'
+                merged['radar2_seed'], _ = trace(merged)
                 records[doi] = merged
                 valid += 1
             print(f'SCHOLAR {provider} {start}:{end} {journal or "all journals"} {phrase!r} | results={len(hits)} '
@@ -602,6 +615,9 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
         row['source_period'] = 'historical_original'
         row['radar1_selection'] = 'active'
         row['radar1_admission_version'] = POLICY_VERSION
+        row['radar2_seed'], _ = trace(row)
+        if not row['radar2_seed']:
+            raise ValueError('Academic archive contains a record without a source-supported future question')
         row['foresight_scope'], row['foresight_scope_reason'] = foresight_scope(row)
         row['foresight_scope_version'] = 1
         row['eu_connection'], row['eu_connection_reason'] = eu_connection(row)
@@ -617,6 +633,7 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
               'records_outside_topic_or_date': topic_or_date_filtered,
               'title_only_leads': title_only_count,
               'closer_abstract_checks': closer_checks, 'newly_rejected_dois': rejected_count,
+              'deferred_title_only_checks': deferred_checks,
               'total_rejected_dois': len(excluded),
               'new_leads': new, 'total_leads': len(leads),
               'provider_errors': errors[:20], 'openalex_configured': bool(key),

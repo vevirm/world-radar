@@ -142,6 +142,7 @@ def refresh(today=None, *, save=True):
                 'foresight_scope':scope, 'eu_connection':eu_tier,
                 'eu_connection_reason':eu_reason,
                 'verification_status':x.get('verification_status') or x.get('status') or 'Metadata only · full text not checked',
+                'radar2_seed': x.get('radar2_seed'),
                 'target_year':None}
         records.append(item)
     scored = [(score(x,today), x) for x in records]

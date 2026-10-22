@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 
 from radar1_admission import POLICY_VERSION, START, END, decision
+from radar1_traceability import trace
 from scholarly import atomic_json, normal_doi
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +54,10 @@ def audit(leads_path, *, apply=False, report_path=None, rejects_path=None, manif
         if ok:
             # The admission result, not old tags, governs the collection.
             kept = dict(row)
+            handoff, detail = trace(row)
+            if not handoff:
+                raise ValueError('Admitted DOI has no traceable Radar 2 question: ' + doi)
+            kept['radar2_seed'] = handoff  # An original quote, NOT a Radar 2 analysis.
             kept['radar1_selection'] = 'active'
             kept['source_period'] = 'historical_original'
             kept['radar1_admission_version'] = POLICY_VERSION
@@ -78,7 +83,9 @@ def audit(leads_path, *, apply=False, report_path=None, rejects_path=None, manif
         'removed_by_reason': dict(sorted(reasons.items())), 'inspection_method': dict(checks),
         'already_rejected_encountered': dict(earlier),
         'examples_kept': [{'doi': r['doi'], 'title': r['title'],
-                           'reason': r['radar1_admission_reason']} for r in accepted[:30]],
+                           'reason': r['radar1_admission_reason'],
+                           'original_passage': r['radar2_seed']['original_passage']}
+                          for r in accepted[:30]],
         'proposed_removals': excluded_rows,
         'note': 'A scope admission decision, not a scientific-quality or forecast-accuracy verdict. '
                 'Preview never edits the collection, priority list, or rejection registry. '
@@ -99,7 +106,9 @@ def audit(leads_path, *, apply=False, report_path=None, rejects_path=None, manif
                     'rejected_identifier_count': len(proposed_registry),
                     'studies': [{'doi': r['doi'], 'title': r['title'],
                                  'date': r['date'], 'selection': 'active',
-                                 'admission_reason': r['radar1_admission_reason']}
+                                 'admission_reason': r['radar1_admission_reason'],
+                                 'original_passage': r['radar2_seed']['original_passage'],
+                                 'investigation_type': r['radar2_seed']['investigation_type']}
                                 for r in accepted],
                     'note': 'Accepted historical academic originals only. Radar 2 not changed.'}
         atomic_json(rejects_path, ledger)
