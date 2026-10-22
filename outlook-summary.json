@@ -1,127 +1,78 @@
 {
-  "generated_utc": "2026-10-21 20:33 UTC",
+  "generated_utc": "2026-10-22 13:09 UTC",
   "headline": "EU foresight — evidence review",
-  "verdict": "1366 European research leads compared with later scholarship; 997 have related papers, 613 contain later abstract-reported results. No verified EU-foresight accuracy score yet.",
-  "literature_compared_count": 1366,
-  "later_abstract_result_count": 613,
-  "later_empirical_abstract_count": 613,
-  "theme_comparisons": [
-    {
-      "topic": "Other European foresight research",
-      "compared": 603,
-      "with_related_later_study": 400,
-      "with_later_abstract_result": 206
-    },
-    {
-      "topic": "Climate and energy",
-      "compared": 349,
-      "with_related_later_study": 284,
-      "with_later_abstract_result": 208
-    },
-    {
-      "topic": "Economy and finance",
-      "compared": 105,
-      "with_related_later_study": 79,
-      "with_later_abstract_result": 57
-    },
-    {
-      "topic": "Population and work",
-      "compared": 101,
-      "with_related_later_study": 76,
-      "with_later_abstract_result": 54
-    },
-    {
-      "topic": "Technology and digital",
-      "compared": 63,
-      "with_related_later_study": 51,
-      "with_later_abstract_result": 28
-    },
-    {
-      "topic": "Health and society",
-      "compared": 59,
-      "with_related_later_study": 46,
-      "with_later_abstract_result": 26
-    },
-    {
-      "topic": "Environment and food",
-      "compared": 54,
-      "with_related_later_study": 42,
-      "with_later_abstract_result": 29
-    },
-    {
-      "topic": "Security and governance",
-      "compared": 32,
-      "with_related_later_study": 19,
-      "with_later_abstract_result": 5
-    }
-  ],
-  "study_count": 1366,
-  "lead_count": 1366,
-  "tracked_count": 1366,
-  "checked_count": 1366,
-  "bibliography_checked_count": 1366,
-  "forecast_candidate_count": 143,
-  "follow_up_count": 997,
+  "verdict": "European foresight research is being collected; no literature comparison has been completed yet.",
+  "literature_compared_count": 0,
+  "later_abstract_result_count": 0,
+  "later_empirical_abstract_count": 0,
+  "theme_comparisons": [],
+  "study_count": 369,
+  "lead_count": 369,
+  "tracked_count": 398,
+  "checked_count": 0,
+  "bibliography_checked_count": 0,
+  "forecast_candidate_count": 70,
+  "follow_up_count": 0,
   "evidence_backed_count": 0,
   "topic_counts": {
-    "European Journal of Futures Research": 52,
-    "Sustainability": 35,
-    "European Journal of Public Health": 29,
-    "Energies": 28,
-    "Futures": 24,
-    "Zenodo (CERN European Organization for Nuclear Research)": 17,
-    "Energy Policy": 16,
-    "Technological Forecasting and Social Change": 16,
-    "Foresight": 15,
-    "SSRN Electronic Journal": 12,
-    "Energy": 12,
-    "foresight": 11,
-    "Joint Research Centre (European Commission)": 11,
-    "Applied Energy": 10,
-    "Energy Strategy Reviews": 10,
-    "European Labour Law Journal": 9,
-    "Renewable and Sustainable Energy Reviews": 9,
-    "European Law Journal": 9,
-    "Environmental Research Letters": 8,
-    "Foresight and STI Governance": 8,
-    "Regional Environmental Change": 8,
-    "Energy Economics": 8,
-    "Global Environmental Change": 8,
-    "Renewable Energy": 7,
-    "International Journal of Environmental Research and Public Health": 7
+    "European Journal of Futures Research": 19,
+    "Sustainability": 16,
+    "Energies": 14,
+    "Foresight": 7,
+    "Energy": 6,
+    "Zenodo (CERN European Organization for Nuclear Research)": 6,
+    "Energy Policy": 5,
+    "Global Environmental Change": 5,
+    "Energy Strategy Reviews": 5,
+    "European Journal of Public Health": 5,
+    "Global Change Biology": 4,
+    "RePEc: Research Papers in Economics": 4,
+    "Renewable Energy": 4,
+    "Regional Environmental Change": 4,
+    "International Journal of Environmental Research and Public Health": 4,
+    "Applied Energy": 4,
+    "Renewable and Sustainable Energy Reviews": 4,
+    "Landscape Ecology": 3,
+    "Atmospheric chemistry and physics": 3,
+    "Technological Forecasting and Social Change": 3,
+    "Environmental Research Letters": 3,
+    "Comparative Population Studies": 3,
+    "World Economy and International Relations": 3,
+    "Transportation research procedia": 3,
+    "Scientific Reports": 3
   },
   "themes": [
     {
       "topic": "European Journal of Futures Research",
-      "study_count": 52,
+      "study_count": 19,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
       "topic": "Sustainability",
-      "study_count": 35,
-      "signal": "Research lead; see the Excel catalogue."
-    },
-    {
-      "topic": "European Journal of Public Health",
-      "study_count": 29,
+      "study_count": 16,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
       "topic": "Energies",
-      "study_count": 28,
+      "study_count": 14,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
-      "topic": "Futures",
-      "study_count": 24,
+      "topic": "Foresight",
+      "study_count": 7,
+      "signal": "Research lead; see the Excel catalogue."
+    },
+    {
+      "topic": "Energy",
+      "study_count": 6,
       "signal": "Research lead; see the Excel catalogue."
     },
     {
       "topic": "Zenodo (CERN European Organization for Nuclear Research)",
-      "study_count": 17,
+      "study_count": 6,
       "signal": "Research lead; see the Excel catalogue."
     }
   ],
   "interpretation": "Thematic comparisons are from scientific abstracts; some describe modeled futures, not observed real-world outcomes. Research about Europe is not necessarily EU-institution-authored foresight. Neither topic matches nor abstract results are forecast accuracy verdicts.",
-  "next_step": "1366 records now have qualitative comparisons with later scholarly papers, including 613 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 143 original abstracts contain potential forecast passages requiring validation. 1366 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
+  "next_step": "0 records now have qualitative comparisons with later scholarly papers, including 0 with a result-like passage in a later abstract. No EU-foresight accuracy score is justified yet. 70 original abstracts contain potential forecast passages requiring validation. 0 leads received bibliographic searches; 0 have separately dated outcome evidence. Bibliographic searches are not outcome verification."
 }

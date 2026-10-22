@@ -1,0 +1,139 @@
+{
+  "mode": "apply",
+  "generated_utc": "2026-10-22T13:09:23.364064+00:00",
+  "accepted_academic_originals": 369,
+  "curated_institutional_originals": 29,
+  "institutional_needing_original_passage": 29,
+  "research_ready_originals": 369,
+  "saved_legacy_entries": 1366,
+  "legacy_entries_outside_current_radar1": 998,
+  "matched_legacy_entries": 368,
+  "mismatched_legacy_entries": 0,
+  "matching_originals_with_old_links_held_for_review": 355,
+  "live_entries_after_apply": 398,
+  "old_exclusion_examples": [
+    {
+      "id": "lead-003e259242bcd2ba",
+      "title": "National Responses to European Court Jurisprudence"
+    },
+    {
+      "id": "lead-005847641b4ec4af",
+      "title": "What defines an incisional hernia as ‘complex’: results from a Delphi consensus endorsed by the European Hernia Society (EHS)"
+    },
+    {
+      "id": "lead-00824a5aed5b8bd4",
+      "title": "Scenario drafting to anticipate future developments in technology assessment"
+    },
+    {
+      "id": "lead-00b82ce4210a4008",
+      "title": "Uncertain futures: climate change and international student mobility in Europe"
+    },
+    {
+      "id": "lead-01053e634e85d402",
+      "title": "Actions to strengthen the contribution of small farms and small food businesses to food security in Europe"
+    },
+    {
+      "id": "lead-01381b6358d90be7",
+      "title": "Foresight for policy – addressing the challenges for policy impact"
+    },
+    {
+      "id": "lead-023ef8ef9a229d98",
+      "title": "CO2 Emissions Scenarios in the European Union—The Urgency of Carbon Capture and Controlled Economic Growth"
+    },
+    {
+      "id": "lead-02d6519e81c1937f",
+      "title": "Investment Scenarios for Low Carbon Electricity in Europe"
+    },
+    {
+      "id": "lead-02f5fe0d43114c76",
+      "title": "Note on carbon sequestration policies in the European Union"
+    },
+    {
+      "id": "lead-02f61428c3b8a630",
+      "title": "Demographic and Human Capital Heterogeneity in Selected Provinces of Turkey: A Scenario Analysis Using Multi-dimensional Populatio"
+    },
+    {
+      "id": "lead-032aee9670bfd4c8",
+      "title": "Understanding flood regime changes in Europe: a state-of-the-art assessment"
+    },
+    {
+      "id": "lead-0331c2fd007fc7da",
+      "title": "FORESIGHT-DRIVEN BRAND STRATEGY: LINKING GENERATION Z SEGMENTATION TO DYNAMIC MARKETING CAPABILITIES"
+    },
+    {
+      "id": "lead-03373ac06052e107",
+      "title": "The Relationship between Spot and Futures CO2 Emission Allowance Prices in the EU-ETS"
+    },
+    {
+      "id": "lead-034f441063e3cd11",
+      "title": "Fostering resilient agro-food futures through a social-ecological systems framework: Public–private partnerships for delivering ec"
+    },
+    {
+      "id": "lead-0378a5fe422daf57",
+      "title": "Citizen visions for European futures—methodological considerations and implications"
+    },
+    {
+      "id": "lead-041e548334108fc9",
+      "title": "On the origin and diversification of Podolian cattle breeds: testing scenarios of European colonization using genome-wide SNP data"
+    },
+    {
+      "id": "lead-049ba5fbbda30a65",
+      "title": "Insights and influences: mapping the scientific contributors to global foresight policies"
+    },
+    {
+      "id": "lead-04d9b288a73f6fff",
+      "title": "Regulatory Review of European Commission Impact Assessments"
+    },
+    {
+      "id": "lead-0517d4e88819f727",
+      "title": "A dataset of future daily weather data for crop modelling over Europe derived from climate change scenarios"
+    },
+    {
+      "id": "lead-053227c957ae2a9c",
+      "title": "Greedy or needy? Land use and climate impacts of food in 2050 under different livestock futures"
+    }
+  ],
+  "institutional_examples_needing_original_text": [
+    {
+      "title": "EU Reference Scenario 2016: Energy, Transport and GHG Emissions — Trends to 2050",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/aed45f8e-63e3-47fb-9440-a0a14370f243"
+    },
+    {
+      "title": "Trends and projections in Europe 2016",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2016"
+    },
+    {
+      "title": "White Paper on the Future of Europe: Reflections and Scenarios for the EU27 by 2025",
+      "url": "https://commission.europa.eu/publications/white-paper-future-europe_en"
+    },
+    {
+      "title": "Trends and projections in Europe 2017",
+      "url": "https://www.eea.europa.eu/publications/trends-and-projections-in-europe/trends-and-projections-in-europe-2017"
+    },
+    {
+      "title": "The 2018 Ageing Report: Economic and Budgetary Projections for EU Member States (2016–2070)",
+      "url": "https://economy-finance.ec.europa.eu/publications/2018-ageing-report-economic-and-budgetary-projections-eu-member-states-2016-2070_en"
+    },
+    {
+      "title": "Trends and projections in Europe 2018",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2018"
+    },
+    {
+      "title": "Trends and projections in the EU ETS in 2018",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-the"
+    },
+    {
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2018",
+      "url": "https://www.ecb.europa.eu/pub/pdf/other/ecb.projections201812_eurosystemstaff.en.pdf"
+    },
+    {
+      "title": "Skills forecast: trends and challenges to 2030",
+      "url": "https://www.cedefop.europa.eu/en/publications/3077"
+    },
+    {
+      "title": "The future of manufacturing in Europe",
+      "url": "https://www.eurofound.europa.eu/en/publications/all/future-manufacturing-europe"
+    }
+  ],
+  "method": "No API calls. Old academic link matches are separated, never treated as outcomes. The complete pre-apply database must be backed up before apply."
+}

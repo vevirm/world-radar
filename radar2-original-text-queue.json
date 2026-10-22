@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "status": "Original report text to extract before assessment; titles are not forecast claims",
+  "reports": [
+    {
+      "title": "EU Reference Scenario 2016: Energy, Transport and GHG Emissions — Trends to 2050",
+      "published": "2016-07-01",
+      "publisher": "European Commission",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/aed45f8e-63e3-47fb-9440-a0a14370f243",
+      "full_text_url": "https://op.europa.eu/en/publication-detail/-/publication/aed45f8e-63e3-47fb-9440-a0a14370f243"
+    },
+    {
+      "title": "Trends and projections in Europe 2016",
+      "published": "2016-12-01",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2016",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2016"
+    },
+    {
+      "title": "White Paper on the Future of Europe: Reflections and Scenarios for the EU27 by 2025",
+      "published": "2017-03-01",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/publications/white-paper-future-europe_en",
+      "full_text_url": "https://commission.europa.eu/publications/white-paper-future-europe_en"
+    },
+    {
+      "title": "Trends and projections in Europe 2017",
+      "published": "2017-11-07",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/publications/trends-and-projections-in-europe/trends-and-projections-in-europe-2017",
+      "full_text_url": "https://www.eea.europa.eu/publications/trends-and-projections-in-europe/trends-and-projections-in-europe-2017"
+    },
+    {
+      "title": "The 2018 Ageing Report: Economic and Budgetary Projections for EU Member States (2016–2070)",
+      "published": "2018-05-25",
+      "publisher": "European Commission, DG ECFIN",
+      "url": "https://economy-finance.ec.europa.eu/publications/2018-ageing-report-economic-and-budgetary-projections-eu-member-states-2016-2070_en",
+      "full_text_url": "https://economy-finance.ec.europa.eu/publications/2018-ageing-report-economic-and-budgetary-projections-eu-member-states-2016-2070_en"
+    },
+    {
+      "title": "Trends and projections in Europe 2018",
+      "published": "2018-10-26",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2018",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2018"
+    },
+    {
+      "title": "Trends and projections in the EU ETS in 2018",
+      "published": "2018-10-26",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-the",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-the"
+    },
+    {
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2018",
+      "published": "2018-12-13",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/pub/pdf/other/ecb.projections201812_eurosystemstaff.en.pdf",
+      "full_text_url": "https://www.ecb.europa.eu/pub/pdf/other/ecb.projections201812_eurosystemstaff.en.pdf"
+    },
+    {
+      "title": "Skills forecast: trends and challenges to 2030",
+      "published": "2018-12-31",
+      "publisher": "Cedefop — European Centre for the Development of Vocational Training",
+      "url": "https://www.cedefop.europa.eu/en/publications/3077",
+      "full_text_url": "https://www.cedefop.europa.eu/files/3077_en.pdf"
+    },
+    {
+      "title": "The future of manufacturing in Europe",
+      "published": "2019-04-10",
+      "publisher": "Eurofound",
+      "url": "https://www.eurofound.europa.eu/en/publications/all/future-manufacturing-europe",
+      "full_text_url": "https://www.eurofound.europa.eu/en/publications/all/future-manufacturing-europe"
+    },
+    {
+      "title": "Global Trends to 2030: Challenges and Choices for Europe",
+      "published": "2019-04-29",
+      "publisher": "ESPAS / EUISS",
+      "url": "https://ec.europa.eu/assets/epsc/pages/espas/index.html",
+      "full_text_url": "https://ec.europa.eu/assets/epsc/pages/espas/index.html"
+    },
+    {
+      "title": "The Future of Cities: Opportunities, Challenges and the Way Forward",
+      "published": "2019-06-01",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC116711",
+      "full_text_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC116711"
+    },
+    {
+      "title": "Trends and projections in Europe 2019",
+      "published": "2019-10-31",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-1",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-1"
+    },
+    {
+      "title": "The European Environment — State and Outlook 2020",
+      "published": "2019-12-04",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/soer-2020",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/soer-2020"
+    },
+    {
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2019",
+      "published": "2019-12-12",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html",
+      "full_text_url": "https://www.ecb.europa.eu/press/projections/html/all-releases.en.html"
+    },
+    {
+      "title": "What if...? Scanning the horizon: 12 scenarios for 2021",
+      "published": "2019-12-31",
+      "publisher": "EU Institute for Security Studies (EUISS) / EEAS foresight",
+      "url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf",
+      "full_text_url": "https://www.iss.europa.eu/sites/default/files/EUISSFiles/CP_150_0.pdf"
+    },
+    {
+      "title": "Towards net-zero emissions in the EU energy system by 2050",
+      "published": "2020-04-20",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC118592",
+      "full_text_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC118592"
+    },
+    {
+      "title": "2020 Strategic Foresight Report: Charting the course towards a more resilient Europe",
+      "published": "2020-09-09",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2020-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2020-strategic-foresight-report_en"
+    },
+    {
+      "title": "Trends and projections in Europe 2020",
+      "published": "2020-11-30",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2020",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2020"
+    },
+    {
+      "title": "Global Energy and Climate Outlook 2020",
+      "published": "2020-12-01",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://joint-research-centre.ec.europa.eu/projects-and-activities/global-energy-and-climate-outlook/past-geco-editions/geco-2020_en",
+      "full_text_url": "https://joint-research-centre.ec.europa.eu/projects-and-activities/global-energy-and-climate-outlook/past-geco-editions/geco-2020_en"
+    },
+    {
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2020",
+      "published": "2020-12-10",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202012_eurosystemstaff~bf8254a10a.en.html",
+      "full_text_url": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202012_eurosystemstaff~bf8254a10a.en.html"
+    },
+    {
+      "title": "The 2021 Ageing Report: Economic and Budgetary Projections for EU Member States (2019–2070)",
+      "published": "2021-05-07",
+      "publisher": "European Commission, DG ECFIN",
+      "url": "https://economy-finance.ec.europa.eu/publications/2021-ageing-report-economic-and-budgetary-projections-eu-member-states-2019-2070_en",
+      "full_text_url": "https://economy-finance.ec.europa.eu/publications/2021-ageing-report-economic-and-budgetary-projections-eu-member-states-2019-2070_en"
+    },
+    {
+      "title": "Innovative technologies shaping the 2040 battlefield",
+      "published": "2021-08-02",
+      "publisher": "European Parliament STOA",
+      "url": "https://www.europarl.europa.eu/stoa/en/document/EPRS_STU%282021%29690038",
+      "full_text_url": "https://www.europarl.europa.eu/stoa/en/document/EPRS_STU%282021%29690038"
+    },
+    {
+      "title": "2021 Strategic Foresight Report: The EU's capacity and freedom to act",
+      "published": "2021-09-08",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2021-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2021-strategic-foresight-report_en"
+    },
+    {
+      "title": "Differentiated EUrope 2035: Elaboration and Evaluation of Five Potential Scenarios",
+      "published": "2021-09-29",
+      "publisher": "European Policy Centre",
+      "url": "https://epc.eu/publication/Differentiated-EUrope-2035-Elaboration-and-Evaluation-of-Five-Potenti-425a54/",
+      "full_text_url": "https://epc.eu/publication/Differentiated-EUrope-2035-Elaboration-and-Evaluation-of-Five-Potenti-425a54/"
+    },
+    {
+      "title": "Trends and projections in Europe 2021",
+      "published": "2021-10-26",
+      "publisher": "European Environment Agency",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2021",
+      "full_text_url": "https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2021"
+    },
+    {
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2021",
+      "published": "2021-12-16",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202112_eurosystemstaff~32e481d712.en.html",
+      "full_text_url": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202112_eurosystemstaff~32e481d712.en.html"
+    },
+    {
+      "title": "2022 Strategic Foresight Report: Twinning the green and digital transitions in the new geopolitical context",
+      "published": "2022-06-29",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en"
+    },
+    {
+      "title": "2023 Strategic Foresight Report",
+      "published": "2023-07-06",
+      "publisher": "European Commission — Secretariat-General",
+      "url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2023-strategic-foresight-report_en",
+      "full_text_url": "https://commission.europa.eu/document/download/ca1c61b7-e413-4877-970b-8ef619fc6b6c_en?filename=SFR-23-beautified-version_en_0.pdf"
+    }
+  ]
+}
