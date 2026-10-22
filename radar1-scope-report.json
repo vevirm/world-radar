@@ -1,8 +1,16 @@
 {
   "screen_version": 1,
-  "generated_at": "2026-10-22T07:17:46.630626+00:00",
+  "generated_at": "2026-10-22T08:17:29.052530+00:00",
   "applied": true,
   "original_studies": 1368,
+  "historical_period": {
+    "start": "2011-01-01",
+    "end": "2023-12-31"
+  },
+  "period_counts": {
+    "historical_original": 1016,
+    "later_context": 352
+  },
   "classification_counts": {
     "future_facing": 909,
     "needs_review": 417,
