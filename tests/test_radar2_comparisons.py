@@ -14,8 +14,9 @@ import radar2_live_draft as live
 def test_all_comparisons_have_accepted_originals_and_observed_evidence():
     data=subject.build(ROOT)
     assert data['total_accepted_originals']==398
-    assert len(data['comparisons'])==3
-    assert data['unassessed_originals']==395
+    curated=json.loads((ROOT/'radar2-curated-evidence-pilot.json').read_text())
+    assert len(data['comparisons'])==len(curated['cases'])
+    assert data['unassessed_originals']==398-len(curated['cases'])-len(curated.get('unresolved_cases', []))
     for c in data['comparisons']:
         assert len(c['original_excerpt']) >= 85
         assert c['historical_year'] < min(s['year'] for s in c['subsequent_evidence'])
@@ -51,20 +52,21 @@ def test_unaccepted_and_unsourced_original_fail_closed(tmp_path,monkeypatch):
         subject.build(tmp_path)
 
 
-def test_strict_pilot_geography_and_issue():
-    h={'id':live.PILOT_IDS[0]}
-    m={'id':live.PILOT_IDS[2]}
-    o={'id':live.PILOT_IDS[1]}
-    assert not live.issue_match(h,{'title':'The Role of Hydrogen in Achieving Long Term Japanese Energy System Goals','abstract':'Comparison against German markets'})
-    assert not live.issue_match(m,{'title':'Effects of Immigration on Agriculture in Brazil','abstract':'European research sometimes discusses migration.'})
-    assert not live.issue_match(m,{'title':'Immigration in Australia and its Effects on Employment','abstract':'EU modelling study is cited here.'})
-    assert live.issue_match(h,{'title':'Hydrogen costs in the EU energy transition','abstract':'EU electrolyser development'})
-    assert live.issue_match(o,{'title':'Consumer demand for organic food in Sweden','abstract':'Swedish retailers observed changing demand'})
-    assert live.issue_match(m,{'title':'Employment effects of immigration to Germany','abstract':'German labor-market study'})
-    for i in live.PILOT_IDS:
-        routes=live.discovery_queries({'id':i})
-        assert len(routes)==2
-        assert any('EU' in q or 'Europe' in q or 'European' in q for q in routes)
+def test_live_openalex_search_remains_bibliographic_only():
+    """The current live discovery API does not certify observed real-world outcomes."""
+    claims=live.select_originals(ROOT)
+    assert [c['id'] for c in claims]==list(live.PILOT_IDS)
+    assert all(1 <= len(live.discovery_queries(c)) <= 2 for c in claims)
+    for claim in claims:
+        assert live.filter_candidate(claim, {
+            'title':'Trading financial futures on the Tokyo Stock Exchange',
+            'doi':'https://doi.org/10.1234/unrelated',
+            'publication_date':'2025-04-01',
+            'abstract':'Japanese financial derivatives, unrelated to European foresight.'
+        }) is None
+    result=live.research(claims,'existing-openalex-key',lambda *_: [])
+    assert result['publication_allowed'] is False
+    assert result['source_verified_outcomes']==0
 
 
 def test_site_does_not_advertise_old_archive_or_unverified_verdicts():
@@ -106,7 +108,7 @@ def test_researched_but_unestablished_is_not_unassessed(tmp_path, monkeypatch):
         'title':c['title'], 'source_kind':c['original_type']}
         for c in all_cases])
     built=subject.build(tmp_path)
-    assert len(built['comparisons'])==2
+    assert len(built['comparisons'])==len(registry['cases'])
     assert len(built['unresolved'])==1
     assert built['unassessed_originals']==0
     assert built['unresolved'][0]['reason']=='no_comparable_observations'

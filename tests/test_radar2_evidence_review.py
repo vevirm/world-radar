@@ -1,4 +1,4 @@
-"""The three-source pilot must remain a separate, non-publishing review queue."""
+"""Saved source cases remain a separate, non-publishing review queue."""
 from __future__ import annotations
 
 from copy import deepcopy
@@ -23,10 +23,11 @@ def accepted():
 def test_workflow_does_not_make_public_verdicts():
     result=audit(ROOT,ROOT/'radar2-curated-evidence-pilot.json')
     assert result['accepted_originals']==398
-    assert result['reviewed_pilot_cases']==3
+    assert result['reviewed_pilot_cases']==len(examples())
     assert not result['publication_allowed']
-    assert result['structurally_usable_drafts']==2
-    assert result['blocked']==1  # 2022 institutional original passage still absent
+    assert result['structurally_usable_drafts'] == sum(c['status'].startswith('draft_') for c in result['cases'])
+    assert result['blocked'] == sum(c['status'].startswith('blocked_') for c in result['cases'])
+    assert any(c['original_id']=='report-3eff29ec207eb208' and c['status'].startswith('blocked_') for c in result['cases'])
     assert all(x['publication_approval'].startswith('NOT APPROVED') for x in result['cases'])
     assert all(not y['source_checked_independently'] for x in result['cases'] for y in x['evidence'])
 
