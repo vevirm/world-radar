@@ -13,7 +13,7 @@ import re
 import time
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -35,6 +35,11 @@ SEARCHES = (
     'Europe technology forecasting scenarios', 'European futures research methods',
     'EU innovation R&I futures', 'European migration scenario modelling',
     'European agriculture food futures', 'European health foresight scenarios',
+    'European Commission Joint Research Centre foresight scenarios',
+    'European Parliamentary Research Service policy foresight',
+    'Cedefop European skills forecast', 'Eurofound future of work scenarios',
+    'European Environment Agency long term outlook',
+    'ESPAS Europe strategic foresight global trends',
 )
 FUTURES = re.compile(r'\b(?:foresight|forecast(?:ing|s)?|scenario(?:s| planning| building)?|'
                      r'future(?:s|\s+of)?|prospective|projection(?:s)?|anticipator\w*|'
@@ -46,6 +51,160 @@ LOW_SUBSTANCE = re.compile(r'\b(?:editorial|book review|erratum|corrigendum|comm
                            r'letter to the editor|conference announcement|call for papers|'
                            r'news item|interview with)\b', re.I)
 MIN_ABSTRACT_WORDS = 45
+
+# Stage-one research-scope triage, NOT evidence validation or a truth score.
+# Careful word-sense distinctions matter: traded "futures" are not futures studies,
+# and reconstructing a historic scenario is not projecting a future development.
+TRADING = re.compile(
+    r'\b(?:futures? (?:markets?|prices?|pricing|contracts?|trading|returns?|yields?|volatility|options?)|'
+    r'commodit(?:y|ies) futures?|spot.futures|'
+    r'(?:hedg\w*|arbitrag\w*).{0,28}futures?|'
+    r'(?:carbon|electricity|grain|stock|bond|oil|wheat|currency|gas|energy|index) futures?'
+    r'(?:\s+(?:market|prices?|contract|trading|returns?|options?)))\b', re.I)
+RESEARCH_PREVIEW = re.compile(
+    r'\b(?:foresight|horizon scanning|backcast\w*|delphi|prospectiv\w*|'
+    r'forecast\w*|projections?|predict\w*|scenario\w*|'
+    r'future(?:s)?|anticipat\w*|outlook|pathways?|visions?|'
+    r'by 20[2345]\d|towards? 20[2345]\d|to 20[2345]\d)\b', re.I)
+STRONG_FUTURE = re.compile(
+    r'\b(?:foresight|scenario\w*|forecast\w*|projections?|'
+    r'future of|alternative futures|future pathways?|horizon scanning|'
+    r'backcast\w*|long.term outlook|anticipator\w*|'
+    r'by 20[2345]\d|towards? 20[2345]\d)\b', re.I)
+HISTORIC_ONLY = re.compile(
+    r'\b(?:archaeolog\w*|prehistor\w*|palaeoclimat\w*|paleoclimat\w*|'
+    r'colonial era|colonial southeast asia|ancient dna|genome.wide.*colonization|' 
+    r'history of .*futures trad\w*|1960s.1980s)\b', re.I)
+HISTORY_FORWARD = re.compile(
+    r'\b(?:future climate|future distribution|climate change scenarios|'
+    r'climate projections?|by 20[2345]\d|future warming)\b', re.I)
+# An ordinary short-horizon prediction (for instance a loan-default classifier)
+# is not automatically an EU strategic foresight scenario. Metadata-only leads
+# remain reviewable rather than being destroyed.
+OPERATIONAL_FORECAST = re.compile(
+    r'\b(?:loan default|stock price|radiation belt|ionospheric perturbation|'
+    r'predict(?:ing|ion) (?:the )?phenology|short.term weather forecast|'
+    r'credit scoring|time.series employment|forecast time series)\b', re.I)
+OTHER_REGION_TITLE = re.compile(
+    r'\b(?:east africa|west africa|australia|vietnam|iran|india|china|'
+    r'canada|brazil|latin america)\b', re.I)
+
+PARATEXT_TITLE = re.compile(
+    r'^(?:review:|peer review report|book review|editorial|preface|'
+    r'corrigendum|erratum|retraction notice|thematic issue presentation|' 
+    r'introduction to (?:the )?special issue)\b', re.I)
+HISTORIC_PROJECTION_OF_POWER = re.compile(r'\bprojections of power\b', re.I)
+
+
+def foresight_scope(lead):
+    """Conservative (scope, reason) for whether a work belongs in Radar 1.
+
+    Does not assess accuracy. 'needs_review' preserves potentially useful works.
+    Only unambiguous false friends are excluded from future-focused priorities.
+    """
+    title = str(lead.get('title') or '').strip()
+    abstract = str(lead.get('abstract') or '').strip()
+    if not title:
+        return 'needs_review', 'title_missing'
+    if PARATEXT_TITLE.search(title) or re.search(r'[\s:–-]preface\s*$', title, re.I):
+        return 'out_of_scope', 'review_editorial_or_correction'
+    if TRADING.search(title):
+        # A long-range socioeconomic projection about market development could
+        # still be pertinent, but mere carbon/electricity futures trading isn't.
+        if re.search(r'\b(?:long.term|2030|2040|2050|scenario planning|' 
+                     r'future of (?:energy|society|policy))\b', title, re.I):
+            return 'needs_review', 'market_instrument_with_possible_forward_question'
+        return 'out_of_scope', 'financial_futures_instrument_not_foresight'
+    if HISTORIC_PROJECTION_OF_POWER.search(title):
+        return 'out_of_scope', 'historical_projection_of_power_not_forecast'
+    if OTHER_REGION_TITLE.search(title) and not EUROPE.search(title):
+        return 'needs_review', 'non_european_focus_in_title'
+    if OPERATIONAL_FORECAST.search(title) and not re.search(r'\b(?:2030|2040|2050|policy scenarios?|long.term)\b', title, re.I):
+        return 'needs_review', 'operational_forecast_without_long_term_foresight_context'
+    if HISTORIC_ONLY.search(title) and not HISTORY_FORWARD.search(title):
+        # Archaeology and history can itself concern possible futures.
+        # Keep it for review rather than discard it on vocabulary alone.
+        return 'needs_review', 'historical_topic_future_relevance_uncertain'
+    # A clear title indicates an original futures-oriented research question.
+    # Scenario modelling and forecasts count even without measurable verdicts.
+    if STRONG_FUTURE.search(title):
+        return 'future_facing', 'future_question_in_title'
+    if RESEARCH_PREVIEW.search(title):
+        return 'future_facing', 'forward_looking_title'
+    # Abstracts can describe futures questions even if titles do not.
+    if STRONG_FUTURE.search(abstract):
+        return 'needs_review', 'future_question_only_in_abstract'
+    return 'needs_review', 'foresight_relevance_not_established_from_metadata'
+
+# Radar 1 has TWO separate questions: is the work actually forward-looking,
+# and what is its relationship to EU policy/geography/institutions?
+# A study mentioning a EU grant, having a European-sounding journal title or
+# being co-authored by an EU researcher is NOT automatically EU-issued.
+EU_INSTITUTION = re.compile(
+    r'\b(?:European Commission|Joint Research Centre|European Parliament|'
+    r'European Parliamentary Research Service|European Council|Council of the European Union|'
+    r'European Environment Agency|European Central Bank|European Investment Bank|'
+    r'European Union Institute for Security Studies|EU Institute for Security Studies|'
+    r'European Centre for the Development of Vocational Training|Cedefop|'
+    r'European Foundation for the Improvement of Living and Working Conditions|'
+    r'Eurofound|European Medicines Agency|European Food Safety Authority|'
+    r'European Training Foundation|European Strategy and Policy Analysis System|'
+    r'European Union Agency|ESPAS|EU Policy Lab|DG [A-Z]{2,7})\b', re.I)
+EU_SUBJECT = re.compile(
+    r'\b(?:European Union|European (?:Commission|Parliament|countries|member states|'
+    r'policy|policies|integration|higher education|labour market|labor market|'
+    r'energy system|economy|climate|mobility|agriculture|future|regions?)|'
+    r'EU(?:-?27|-?28)?|Europe(?:an)?|Eurozone|Erasmus\+?|Horizon Europe|'
+    r'EU ETS|Common Agricultural Policy|European Green Deal|Schengen)\b', re.I)
+NON_EU_TITLE = re.compile(
+    r'\b(?:North America|South America|Latin America|United States|USA|'
+    r'Russian Federation|Russia|Vietnam|China|India|Brazil|Australia|'
+    r'Canada|Iran|East Africa|West Africa|South Africa|Japan)\b', re.I)
+
+
+def _official_eu_host(url):
+    try:
+        host = (urlparse(str(url or '')).hostname or '').lower().rstrip('.')
+    except ValueError:
+        return False
+    return (host == 'europa.eu' or host.endswith('.europa.eu') or
+            host in {'espas.eu', 'www.espas.eu'})
+
+
+def eu_connection(lead):
+    """Independent Radar 1 EU-interest tier; never a quality/truth verdict.
+
+    eu_official       original URL is on an official EU institutional site
+    eu_institution    indexed publisher/affiliation reports EU institutional role;
+                      not source-verified, and affiliation != commissioned study
+    eu_focused        EU/Europe is central to the title
+    eu_related        EU/Europe appears in the abstract or policy context
+    review            absent or uncertain EU connection
+
+    No studies are deleted by this classification.
+    """
+    title = str(lead.get('title') or '')
+    abstract = str(lead.get('abstract') or '')
+    publisher = str(lead.get('publisher') or '')
+    official = _official_eu_host(lead.get('url'))
+    if official:
+        return 'eu_official', 'official_EU_publisher_url'
+    if EU_INSTITUTION.search(publisher):
+        return 'eu_institution', 'EU_issuer_named_in_publisher_metadata_unverified'
+    affiliations = lead.get('institutional_affiliations') or []
+    if isinstance(affiliations, str):
+        affiliations = [affiliations]
+    if any(EU_INSTITUTION.search(str(name)) for name in affiliations):
+        return 'eu_institution', 'EU_affiliation_in_index_not_EU_issued'
+    if EU_SUBJECT.search(title):
+        return 'eu_focused', 'EU_or_Europe_in_original_title'
+    if NON_EU_TITLE.search(title):
+        return 'review', 'non_EU_title_EU_relevance_uncertain'
+    if EU_SUBJECT.search(abstract):
+        return 'eu_related', 'EU_or_Europe_in_abstract_only'
+    return 'review', 'no_clear_EU_link_in_indexed_metadata'
+
+
 MAX_LEADS = 3500
 REQUEST_TIMEOUT = (4, 13)
 
@@ -119,8 +278,13 @@ def openalex_lead(item):
     source = location.get('source') or {}
     oa = item.get('best_oa_location') or {}
     pdf = oa.get('pdf_url') if str(oa.get('pdf_url') or '').startswith('https://') else None
+    eu_affiliations = sorted({inst.get('display_name', '')
+                              for author in (item.get('authorships') or [])
+                              for inst in (author.get('institutions') or [])
+                              if inst.get('display_name') and EU_INSTITUTION.search(inst['display_name'])})
     return {'doi': doi, 'title': strip_markup(item.get('title')),
             'abstract': unfold_abstract(item.get('abstract_inverted_index')),
+            'institutional_affiliations': eu_affiliations,
             'date': published, 'journal': source.get('display_name') or 'Other scholarly source',
             'publisher': (source.get('host_organization_name') or ''),
             'url': 'https://doi.org/' + doi, 'indexes': ['OpenAlex'],
@@ -140,11 +304,13 @@ def credible_abstract(lead, earliest, latest):
     # Journal standing or an API search hit is NOT evidence of topical relevance.
     if not EUROPE.search(combined) or not FUTURES.search(combined):
         return False
-    if LOW_SUBSTANCE.search(title):
+    if LOW_SUBSTANCE.search(title) or foresight_scope(lead)[0] == 'out_of_scope':
         return False
     if len(abstract.split()) < MIN_ABSTRACT_WORDS:
         return False
-    return True
+    # Do not keep admitting new non-EU studies solely because a generic abstract
+    # mentions Europe while the actual title is about a different jurisdiction.
+    return eu_connection(lead)[0] != 'review'
 
 
 def credible_bibliographic_lead(lead, earliest, latest):
@@ -159,11 +325,12 @@ def credible_bibliographic_lead(lead, earliest, latest):
     except (KeyError, ValueError, TypeError):
         return False
     title = lead.get('title') or ''
-    if not earliest <= published <= latest or LOW_SUBSTANCE.search(title):
+    if not earliest <= published <= latest or LOW_SUBSTANCE.search(title) or foresight_scope(lead)[0] == 'out_of_scope':
         return False
     if len(title.split()) < 6 or not normal_doi(lead.get('doi')):
         return False
-    return bool(EUROPE.search(title) and FUTURES.search(title))
+    return bool(EUROPE.search(title) and FUTURES.search(title)
+                and eu_connection(lead)[0] != 'review')
 
 
 def lead_status(lead):
@@ -196,6 +363,9 @@ def merge_lead(existing, new, now):
     obj['indexes'] = sorted(set(obj.get('indexes', [])) | set(new['indexes']))
     if len(new.get('abstract', '')) > len(existing.get('abstract', '')):
         obj['abstract'] = new['abstract']
+    if new.get('institutional_affiliations'):
+        obj['institutional_affiliations'] = sorted(set(obj.get('institutional_affiliations', [])) |
+                                                set(new['institutional_affiliations']))
     if not obj.get('open_access_pdf') and new.get('open_access_pdf'):
         obj['open_access_pdf'] = new['open_access_pdf']
     if obj.get('journal') == 'Other scholarly source' and new.get('journal'):
@@ -327,6 +497,11 @@ def scholarly_scan(state_path, leads_path, latest, deadline, *, max_queries=24):
     # Preserve recently rediscovered work across years, not only the oldest 2015 cohort.
     newest = sorted(records.values(), key=lambda r: (r.get('last_seen', ''), r['doi']), reverse=True)[:MAX_LEADS]
     leads = sorted(newest, key=lambda r: (r['date'], r['doi']))
+    for row in leads:
+        row['foresight_scope'], row['foresight_scope_reason'] = foresight_scope(row)
+        row['foresight_scope_version'] = 1
+        row['eu_connection'], row['eu_connection_reason'] = eu_connection(row)
+        row['eu_connection_version'] = 1
     atomic_json(Path(leads_path), {'schema_version': 1, 'updated_at': now,
                 'status': 'Journal leads from DOI/title and available abstracts; full text and forecasts unverified',
                 'leads': leads})

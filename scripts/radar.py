@@ -348,15 +348,33 @@ def load_state():
 
 
 def interleaved_actors(actors):
-    """Order categories fairly; don't let the first ten institutional actors monopolise runs."""
-    buckets = {}
-    for actor in actors:
-        buckets.setdefault(actor['category'], []).append(actor)
-    ordered = []
-    while any(buckets.values()):
-        for group in buckets.values():
+    """Prefer official EU publishers (two slots in three), without starving others.
+
+    Rotation still visits every registered actor. The persistent cursor advances
+    through this deterministic order across runs; it doesn't restart at EC.
+    """
+    official = [a for a in actors if a.get('category') == 'EU institution / agency']
+    other_buckets = {}
+    for a in actors:
+        if a.get('category') != 'EU institution / agency':
+            other_buckets.setdefault(a['category'], []).append(a)
+    others = []
+    other_order = ['Independent think tank', 'University / research centre',
+                   'Research institute', 'EU-funded research consortium',
+                   'International organisation']
+    other_order += [x for x in other_buckets if x not in other_order]
+    while any(other_buckets.values()):
+        for label in other_order:
+            group = other_buckets.get(label, [])
             if group:
-                ordered.append(group.pop(0))
+                others.append(group.pop(0))
+    ordered = []
+    while official or others:
+        for _ in range(2):
+            if official:
+                ordered.append(official.pop(0))
+        if others:
+            ordered.append(others.pop(0))
     return ordered
 
 

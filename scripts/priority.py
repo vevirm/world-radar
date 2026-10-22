@@ -7,6 +7,7 @@ from datetime import date, datetime, timezone
 import json
 import re
 from pathlib import Path
+from scholarly import foresight_scope, eu_connection
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = lambda: datetime.now(timezone.utc).date()
@@ -40,6 +41,11 @@ def score(item, today):
     if not (0 <= years <= 15): return -999
     # Explicit, auditable weighting, not an objective impact/accuracy metric.
     base = 95 if item.get('source_kind') == 'Curated publisher report' else 30
+    eu_tier = item.get('eu_connection') or eu_connection(item)[0]
+    # Institutional origin is valuable, but an institutional affiliation
+    # alone does not prove the EU commissioned or issued the paper.
+    base += {'eu_official': 55, 'eu_institution': 28,
+             'eu_focused': 24, 'eu_related': 9, 'review': -35}.get(eu_tier, 0)
     if 5 <= years <= 10: base += 30
     elif 4 <= years < 5: base += 22
     elif years > 10: base += 9
@@ -53,6 +59,7 @@ def score(item, today):
         if re.search(r'\b(?:towards|to|by|in)\s+20[2345]\d\b', item['title'], re.I): base += 12
         if BAD.search(item['title']): base -= 100
         if item.get('journal','').lower() in ('futures', 'technological forecasting and social change', 'european journal of futures research'): base += 10
+        if item.get('foresight_scope') == 'future_facing': base += 16
     return base
 
 def refresh(today=None):
@@ -64,13 +71,24 @@ def refresh(today=None):
     records = []
     for x in sources:
         item = dict(x, source_kind='Curated publisher report', verification_status='Publisher-linked candidate · original forecast not extracted', abstract='', doi='')
+        item['eu_connection'], item['eu_connection_reason'] = eu_connection(item)
         records.append(item)
     for x in indexed:
-        if not x.get('doi') or not x.get('date') or not CORE.search(x.get('title','')): continue
+        if not x.get('doi') or not x.get('date'): continue
+        scope, _ = foresight_scope(x)
+        if scope == 'out_of_scope':
+            continue  # Original record stays in the research archive.
+        eu_tier, eu_reason = eu_connection(x)
+        if eu_tier == 'review':
+            continue  # Not an EU priority until its EU relevance is substantiated.
+        if not CORE.search(x.get('title','')) and scope != 'future_facing':
+            continue  # Vague abstract mention alone cannot lead the 50 priorities.
         item = {'title':x['title'], 'date':x['date'], 'publisher':x.get('publisher') or x.get('journal',''),
                 'topic':inference_topic(x['title']), 'method':'Academic futures/forecast study · method unverified',
                 'url':x['url'], 'doi':x['doi'], 'abstract':x.get('abstract',''),
                 'journal':x.get('journal',''), 'source_kind':'Indexed academic lead',
+                'foresight_scope':scope, 'eu_connection':eu_tier,
+                'eu_connection_reason':eu_reason,
                 'verification_status':x.get('verification_status') or x.get('status') or 'Metadata only · full text not checked',
                 'target_year':None}
         records.append(item)
@@ -105,7 +123,7 @@ def refresh(today=None):
         selected.append(x)
     result={'schema_version':1,'generated_date':today.isoformat(), 'target':50,
             'policy':'15-year maximum, preferentially 5–10 years old; shortlist is priority for verification, not 50 certified findings',
-            'method_note':'Editorial publisher seeds plus ranked DOI/abstract leads; full-text quality and retrospective accuracy are separate checks',
+            'method_note':'EU-issued reports preferred; independent EU-focused future research remains eligible. Issuer attribution, full-text quality, and retrospective accuracy are separate checks',
             'count':len(selected),'items':selected}
     target=ROOT/'priority-50.json'
     tmp=target.with_suffix('.json.tmp')
