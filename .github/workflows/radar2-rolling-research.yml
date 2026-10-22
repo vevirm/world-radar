@@ -1,0 +1,68 @@
+name: Radar 2 - rolling EU research (DRAFT ONLY)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Inspect or discover later research from OpenAlex, Crossref, Europe PMC'
+        required: true
+        type: choice
+        options:
+          - inspect
+          - search
+          - broad_inspect
+          - broad_search
+        default: inspect
+      batch_size:
+        description: 'Number of distinct accepted original claims this run'
+        required: true
+        type: choice
+        options: ['3', '4', '5']
+        default: '4'
+# Manual while validating quality. A schedule can be added after a real search review.
+permissions:
+  contents: write  # Only the rolling queue checkpoint; never site or verified outcomes.
+concurrency:
+  group: radar-shared-single-runner
+  cancel-in-progress: false
+jobs:
+  draft_research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test queue selection before any research
+        run: |
+          python -m pip install -q pytest
+          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py
+      - name: Inspect or search new original questions
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/radar2_rolling.py --mode "${{ inputs.mode }}" --batch-size "${{ inputs.batch_size }}"
+      - name: Save research draft and selection audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Radar-2-Rolling-Research
+          path: |
+            RADAR2-ROLLING-RESEARCH.json
+            RADAR2-ROLLING-RESEARCH.md
+            radar2-rolling-state.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Checkpoint only completed searches for the next run
+        if: ${{ success() && (inputs.mode == 'search' || inputs.mode == 'broad_search') }}
+        run: |
+          git config user.name 'radar2-rolling-bot'
+          git config user.email 'radar2-rolling-bot@users.noreply.github.com'
+          git add radar2-rolling-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Radar 2: checkpoint completed research queue (no findings published)'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
