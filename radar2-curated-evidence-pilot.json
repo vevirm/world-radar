@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "as_of": "2026-10-22",
-  "mode": "manual_live_source_verified_pilot",
+  "mode": "editorially_reviewed_casebook_with_six_source_based_comparisons",
   "new_scan_performed": false,
   "live_repository_changed": false,
-  "originals_tested": 3,
-  "pilot_only": true,
+  "originals_tested": 6,
+  "pilot_only": false,
   "cases": [
     {
       "original_id": "lead-726d2d4ffd64aca7",
@@ -148,6 +148,128 @@
         "differences": "Subsequent independent evaluation finds tangible diversification and actual resilience still lag the ambition of these policy responses.",
         "still_unestablished": "Strategic-project designation is not delivered supply capacity; the long-run effect of policy on dependencies is not yet demonstrated.",
         "present_relevance": "The original warning about a possible dependency trap remains pertinent, and policy implementation should be tracked against actual supply diversification."
+      }
+    },
+    {
+      "original_id": "lead-6be39a26704bb7e6",
+      "title": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus: recent trends and future scenarios",
+      "historical_date": "2012-04-25",
+      "original_type": "academic",
+      "original_url": "https://doi.org/10.1098/rsif.2012.0138",
+      "source_trace": "Original 2012 Royal Society paper abstract checked against PubMed PMID 22535696; source passage preserved in the accepted Radar 1 manifest.",
+      "source_specific_proposition": "The 2012 climate-suitability scenarios suggested growing risk of Aedes albopictus establishment in northern and north-western Europe, while parts of southern Europe might become less climatically suitable under hotter, drier conditions.",
+      "scenario_condition": "Conditional projections of climatic suitability, not a forecast of the exact number of established mosquito populations or direct proof of climate-driven spread.",
+      "radar2_question": "Did Aedes albopictus become established farther north and west in Europe after 2012, and can changes in its distribution be linked specifically to the projected climatic mechanisms?",
+      "findings": [
+        {
+          "year": 2025,
+          "document": "ECDC/EFSA: Aedes albopictus known distribution, June 2025 (published 1 July 2025)",
+          "url": "https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-june-2025",
+          "evidence": "ECDC reported established Asian tiger mosquito populations in 369 EU/EEA administrative regions across 16 countries, including Belgium, Germany and Austria; it noted newly established populations in Cyprus and Slovakia since the July 2024 update.",
+          "evidence_type": "market_observation"
+        },
+        {
+          "year": 2026,
+          "document": "ECDC/EFSA: Aedes albopictus current known distribution, April 2026 (published 3 June 2026)",
+          "url": "https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-april-2026",
+          "evidence": "The updated ECDC surveillance map listed established populations in 384 EU/EEA administrative units in 16 countries, fourteen additional units compared with June 2025; the geographic spread remains documented in northern and western EU countries as well as in southern Europe.",
+          "evidence_type": "market_observation"
+        },
+        {
+          "year": 2025,
+          "document": "Farooq et al., The Lancet Planetary Health: Impact of climate and Aedes albopictus establishment on dengue and chikungunya outbreaks in Europe (May 2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40381632/",
+          "evidence": "A peer-reviewed EU regional analysis of 1990–2024 entomological and outbreak data found shorter intervals between mosquito establishment and first local arbovirus outbreak. Warm-summer conditions were associated with increased outbreak hazard, but this is not proof that temperature alone caused the species to spread north.",
+          "evidence_type": "independent_outcome_evaluation"
+        }
+      ],
+      "assessment": "Surveillance reports document substantial expansion and establishment of the Asian tiger mosquito in European regions, including north-western and central European countries, broadly consistent with the direction of the 2012 risk scenarios. But surveillance is not a direct measurement of climatic suitability, and it does not isolate warming from introductions, transport, local habitat and surveillance intensity.",
+      "assessment_status": "qualitative_direction_supported_at_distribution_level_not_causally_verified",
+      "scope_caveat": "The southern-Europe part of the scenario cannot be tested by northern establishment counts. Persistent establishment in southern countries does not, by itself, refute a projected decline in suitability. Different map dates, surveillance coverage and administrative boundaries also limit direct counts.",
+      "interpretation": {
+        "similarities": "The study anticipated increasing risk in northern Europe. Later ECDC distribution maps identify established populations in several northern or north-western European countries, consistent with that broad direction.",
+        "differences": "The forecast examined potential climatic suitability, whereas the newer data record observed establishment. Human-assisted introductions and surveillance activity can contribute to the distribution regardless of climate trends.",
+        "still_unestablished": "It is not established how much of the expansion was caused by the projected climatic mechanisms, nor whether suitability declined in the specific southern areas highlighted in the 2012 scenarios.",
+        "present_relevance": "The original risk mapping remains useful for planning vector surveillance, but up-to-date establishment records and causal research are needed to guide public-health actions."
+      }
+    },
+    {
+      "original_id": "lead-1e5bc406a360f64e",
+      "title": "Assessing the impact of the 2011 EU Transport White Paper - a rail freight demand forecast up to 2050 for the EU27",
+      "historical_date": "2015-06-18",
+      "original_type": "academic",
+      "original_url": "https://doi.org/10.1007/s12544-015-0171-7",
+      "source_trace": "Full original article checked on Springer Nature; published online 19 June 2015 (Radar 1 indexed date 18 June 2015). The optimistic scenario is conditional on EU White Paper modal-shift ambitions.",
+      "source_specific_proposition": "The 2015 TRANS-TOOLS analysis compared a Reference, a White Paper Low and a White Paper High scenario. Under full achievement of ambitious EU freight modal-shift objectives, the High scenario yielded rail-freight demand nearly twice the Reference scenario by 2050.",
+      "scenario_condition": "The High case assumes policy implementation, infrastructure capacity and a shift of long-distance freight over 300 km from road toward rail and inland waterways. It is not an unconditional prediction of 2024 modal shares.",
+      "radar2_question": "Does observed EU rail freight development since 2015 indicate movement toward the ambitious road-to-rail modal shift, and which assumptions of the original High scenario remain unmet?",
+      "findings": [
+        {
+          "year": 2025,
+          "document": "European Environment Agency, Sustainability of Europe’s mobility systems 2025: freight transport activity",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/freight-transport-activity",
+          "evidence": "EEA reported rail freight activity of about 396 billion tonne-kilometres in 2023, below its approximately 432 billion tonne-kilometre 2018 peak; rail represented 11.5% of all freight tonne-kilometres under the EEA indicator definition.",
+          "evidence_type": "market_observation"
+        },
+        {
+          "year": 2026,
+          "document": "German Federal Statistical Office (Destatis), EU rail freight modal split, updated 17 March 2026",
+          "url": "https://www.destatis.de/Europa/EN/Topic/Transport/gueterverkehr-eisenbahn.html",
+          "evidence": "Drawing on Eurostat inland-transport data, Destatis reported rail accounted for approximately 17% of EU inland freight tonne-kilometres in 2024, while road accounted for roughly 78%, up from about 74% in 2014. The hoped-for modal shift was not visible in this broad indicator.",
+          "evidence_type": "market_observation"
+        }
+      ],
+      "assessment": "Broad European freight statistics through 2024 do not show a sustained shift toward rail. Road strengthened in the inland-freight modal split while rail activity remained below its 2018 peak. This diverges from the trajectory one would expect under a successfully implemented ambitious White Paper High scenario, but does not establish a numerical test of the study’s >300 km target or its 2050 conditional forecasts.",
+      "assessment_status": "ambitious_policy_scenario_not_observed_in_broad_indicators_yet",
+      "scope_caveat": "EEA overall freight shares and Destatis inland-mode shares have different denominators. Neither directly measures the share of road shipments longer than 300 km transferred to rail, nor the study’s EU27 Trans-Tools 2050 output; do not compare their percentages to the 30%/50% targets as if equivalent.",
+      "interpretation": {
+        "similarities": "The original study stressed that major investment and rail-service improvements were needed for a large modal shift. Subsequent monitoring still highlights the challenge of changing European freight’s modal split.",
+        "differences": "Observed inland freight remained increasingly road-oriented through 2024, rather than clearly following the ambitious scenario of rapid and substantial rail demand growth.",
+        "still_unestablished": "The 2030 and 2050 long-distance road-freight shift targets have not reached their final horizons. The broad modal-split datasets do not establish whether the exact >300 km objective is on track.",
+        "present_relevance": "The model remains useful as a conditional picture of what infrastructure, productivity and policy effort would have to accomplish; ongoing freight data can test whether those prerequisites are materialising."
+      }
+    },
+    {
+      "original_id": "lead-c58a6b59f8f84186",
+      "title": "Ocean energy development in Europe: Current status and future perspectives",
+      "historical_date": "2015-06-06",
+      "original_type": "academic",
+      "original_url": "https://doi.org/10.1016/j.ijome.2015.05.001",
+      "source_trace": "Original open-access publisher record checked. The 2015 article describes a sectoral ambition of 100 GW wave-and-tidal capacity by 2050; this is an aspiration reported by the authors, not an unconditional model result.",
+      "source_specific_proposition": "The 2015 assessment envisaged wave and tidal energy as a potentially substantial contributor to Europe’s future low-carbon electricity system and described a sectoral aim of 100 GW by 2050, conditional on overcoming technology, financing, grid and regulatory barriers.",
+      "scenario_condition": "A long-term ambition contingent on technology readiness, finance and market development. The objective’s definition and geographical scope need checking before numerical target comparisons.",
+      "radar2_question": "Did wave and tidal energy move toward large-scale commercial deployment in the EU after 2015, and which originally recognised deployment barriers persist?",
+      "findings": [
+        {
+          "year": 2025,
+          "document": "European Commission DG MARE, EU Blue Economy Report 2025: marine renewable energy",
+          "url": "https://op.europa.eu/webpub/mare/eu-blue-economy-report-2025/blue-economic-sectors/marine-renewable-energy.html",
+          "evidence": "At the end of 2024, the EU had about 2.82 MW of operational emerging ocean-energy capacity excluding traditional tidal-range projects, including 1.63 MW tidal energy and 1.12 MW wave energy. These technologies remained at demonstration or emerging deployment scale.",
+          "evidence_type": "market_observation"
+        },
+        {
+          "year": 2025,
+          "document": "European Commission Joint Research Centre, Ocean Energy in the European Union — 2025 Status Report (10 December 2025)",
+          "url": "https://setis.ec.europa.eu/ocean-energy-european-union-2025-status-report-technology-development-trends-value-chains-and_en",
+          "evidence": "The JRC reviewed the tidal and wave sector’s technical development, EU-funded projects, market progress and bottlenecks through the end of 2024. It identified risks and obstacles to the long-term technology targets, rather than documenting commercial deployment on the original hoped-for scale.",
+          "evidence_type": "independent_institutional_evaluation"
+        },
+        {
+          "year": 2025,
+          "document": "Ocean Energy Europe, Ocean energy is moving closer to commercialisation (17 April 2025)",
+          "url": "https://www.oceanenergy-europe.eu/ocean-energy-is-moving-closer-to-commercialisation/",
+          "evidence": "The European industry association reported five wave and tidal ocean-energy developers deploying new devices in 2024 and a publicly supported 165 MW ocean-energy pipeline planned for deployment over the following five years. These European plans are not operational EU electricity-generating capacity and must not be counted as deployment achieved.",
+          "evidence_type": "market_status_and_projection"
+        }
+      ],
+      "assessment": "Wave and tidal energy remain potentially valuable technologies, but observed EU operational emerging capacity at end-2024 was only a few megawatts. That is much closer to an early-stage technology sector than the substantial electricity contribution hoped for in the 2015 discussion. The 2050 ambition is still future-facing and cannot be judged as finally missed.",
+      "assessment_status": "deployment_below_early_ambition_interim",
+      "scope_caveat": "The 2.82 MW observation excludes established tidal-range plants such as La Rance. The 100 GW number in the original article is a reported sectoral 2050 aspiration, and project pipelines, installed nameplate power and operational capacity are not interchangeable.",
+      "interpretation": {
+        "similarities": "The 2015 study identified technology maturity, finance and market formation as decisive barriers; later EU status reports continue to treat scale-up and deployment bottlenecks as central concerns.",
+        "differences": "The scale of operational wave and tidal installations by 2024 remained small in the EU, far from a mature large-scale energy sector contributing substantially to electricity supply.",
+        "still_unestablished": "It is too early to assess the 2050 ambition conclusively. Later EU targets and historical capacity definitions also need reconciliation before using a numerical achievement ratio.",
+        "present_relevance": "The original work remains useful as a record of the industry’s early hopes and acknowledged constraints. It helps distinguish investment narratives from measured commercial deployment."
       }
     }
   ],
