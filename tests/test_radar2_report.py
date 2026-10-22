@@ -34,14 +34,14 @@ def test_word_separates_candidate_from_observed_outcome(tmp_path, monkeypatch):
         'new_evidence_assessments': 0, 'note': 'Offline'} )
     text = '\n'.join(p.text for p in Document(retrospective_radar.REPORT).paragraphs)
     assert 'Back then.' in text
-    assert 'Two promises, two reality checks' in text
-    assert 'BACK THEN  Policy target by 2030' in text
-    assert 'WHAT CAME NEXT  Measured progress reported for 2024' in text
+    assert 'Research status: evidence still missing' in text
+    assert 'Policy target by 2030' not in text
+    assert 'Measured progress reported for 2024' not in text
     assert 'No prediction is graded' in text
     assert 'Employment will rise by 10%' not in text  # still in the private review queue
     digest = json.loads((tmp_path/'hindsight-stories.json').read_text())
     assert digest['summary']['reviewed_forecasts'] == 0
-    assert digest['stories'][0]['hindsight_rating'] is None
+    assert digest['stories'] == []  # not tied to an accepted Radar 1 original
     assert json.loads((tmp_path/'outcome-review-queue.json').read_text())['candidate_count'] == 1
 
 

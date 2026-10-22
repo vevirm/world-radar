@@ -12,10 +12,11 @@ def test_editor_score_requires_explanation_and_complete_rubric():
 
 
 def test_source_linked_policy_goal_gets_only_separate_progress_meter():
-    item = {'expected': 'A policy goal', 'happened': 'Recent level was measured.',
+    item = {'original_lead_title_contains':'Historic energy forecast',
+            'expected': 'A policy goal', 'happened': 'Recent level was measured.',
             'topic': 'Energy', 'sources': [{'url': 'https://example.org/independent', 'date': '2025'}],
             'progress_indicator': {'value': 25.2, 'goal': 42.5, 'metric': 'EU share', 'as_of': '2024'}}
-    data = make_stories([], [], [item])
+    data = make_stories([{'id':'lead-test','title':'Historic energy forecast for Europe'}], [], [item])
     story = data['stories'][0]
     assert story['hindsight_rating'] is None
     assert story['progress_meter']['value'] == 59
@@ -30,3 +31,11 @@ def test_unsourced_outcome_and_academic_abstract_cannot_be_scored():
     assert data['stories'] == []
     assert data['summary']['reviewed_forecasts'] == 0
     assert progress_meter({'progress_indicator': {'value': 10, 'goal': 0, 'metric': 'a', 'as_of': '2024'}}) is None
+
+
+def test_unlinked_policy_snapshots_do_not_enter_radar2():
+    item={'original_lead_title_contains':'A discarded paper', 'topic':'Example',
+          'expected':'Policy target', 'happened':'An observed figure',
+          'sources':[{'url':'https://example.org/data','date':'2025'}]}
+    data=make_stories([{'id':'lead-accepted','title':'Accepted future scenarios'}],[],[item])
+    assert data['stories']==[]
