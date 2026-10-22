@@ -1,0 +1,935 @@
+{
+  "screen_version": 1,
+  "generated_at": "2026-10-22T07:17:46.630626+00:00",
+  "applied": true,
+  "original_studies": 1368,
+  "classification_counts": {
+    "future_facing": 909,
+    "needs_review": 417,
+    "out_of_scope": 42
+  },
+  "eu_connection_counts": {
+    "eu_focused": 938,
+    "review": 11,
+    "eu_related": 405,
+    "eu_institution": 14
+  },
+  "future_by_eu_connection": {
+    "future_facing / eu_focused": 573,
+    "needs_review / eu_focused": 338,
+    "needs_review / review": 7,
+    "needs_review / eu_related": 69,
+    "out_of_scope / eu_focused": 27,
+    "future_facing / eu_related": 322,
+    "out_of_scope / eu_related": 14,
+    "future_facing / review": 3,
+    "needs_review / eu_institution": 3,
+    "future_facing / eu_institution": 11,
+    "out_of_scope / review": 1
+  },
+  "eu_examples": {
+    "eu_official": [],
+    "eu_institution": [
+      {
+        "doi": "10.2760/278827",
+        "title": "Workshop on Regulatory Preparedness for Innovation in Nanotechnology",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/203362",
+        "title": "TRIMIS as a support tool for transport research and innovation horizon scanning",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/47162",
+        "title": "1st TRIMIS Horizon Scanning Session",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/667966",
+        "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2903/sp.efsa.2022.en-7297",
+        "title": "Horizon scanning exercise on preparedness for future risk assessment requirements and possible challenges in regulatory science",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/5714049",
+        "title": "Embodying the Future - Horizon scanning for emerging technologies and breakthrough innovations in the field of human-like AI systems",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/6084454",
+        "title": "Horizon scanning on emerging privacy enhancement technologies",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2903/sp.efsa.2025.en-9475",
+        "title": "2024 EFSA Annual Report Emerging Risks and Horizon Scanning Activities",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/3579303",
+        "title": "Futures of EU democracy: a foresight exploration of challenges, opportunities and tensions",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/1452814",
+        "title": "A methodology to characterise land degradation and desertification in the European Union",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/3646741",
+        "title": "European Skills Intelligence Observatory",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      },
+      {
+        "doi": "10.2760/8720215",
+        "title": "Strengthening European Union’s Future Disaster Resilience",
+        "eu_reason": "EU_issuer_named_in_publisher_metadata_unverified"
+      }
+    ],
+    "eu_focused": [
+      {
+        "doi": "10.1111/j.1746-692x.2011.00145.x",
+        "title": "Modelling Multifunctionality, Territorial Development, and Policy Scenarios in Rural Europe: an Alternative Perspective on CAP Reform Debates  Modéliser la multifonctionnalité, le développement territorial et les scénarios de politiques dans l’Europe rura",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1017/s1049023x11001968",
+        "title": "(A205) Management of Mass Casualties and Associated Health Effects Following Chemical or Radiological Agent Release: Results of the European Union Mash Study, 2008–2010",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1111/j.1466-8238.2011.00669.x",
+        "title": "Climate, competition and connectivity affect future migration and ranges of European trees",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1080/17477891.2011.579335",
+        "title": "Modelling the potential damage-reducing benefits of flood warnings using European cases",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.2166/wcc.2011.0001",
+        "title": "Development of water scenarios for Europe – Preface",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1186/1476-069x-10-53",
+        "title": "Health impact assessment of waste management facilities in three European countries",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1038/ncomms1360",
+        "title": "Long-term projections and acclimatization scenarios of temperature-related mortality in Europe",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.15388/sw.2011.28310",
+        "title": "Citizens with Disability – Crisis of the Welfare State in Europe?",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.69554/wdbn2222",
+        "title": "Winter blues at European airports: The need for airport responsibility and corporate foresight",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.2807/ese.16.27.19906-en",
+        "title": "Lyme borreliosis in Europe",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1127/0941-2948/2011/0286",
+        "title": "Analysis of uncertainty in large scale climate change projections over Europe",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      },
+      {
+        "doi": "10.1016/j.njas.2011.01.005",
+        "title": "Actual and potential development of consumer demand on the organic food market in Europe",
+        "eu_reason": "EU_or_Europe_in_original_title"
+      }
+    ],
+    "eu_related": [
+      {
+        "doi": "10.1108/17576381111133624",
+        "title": "Do bio‐fuel policies lead to speculative behavior?",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.5089/9781455295722.002",
+        "title": "Republic of Poland",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.1108/14636681111153922",
+        "title": "The Mediterranean Union: what fate's in store?",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.25100/cdea.v24i40.400",
+        "title": "Benchmarking del programa colombiano de prospectiva ante prácticas en Europa y Sur América (título original: Benchmarking the coloIombian foresight programme against practices in Europe and South America)",
+        "eu_reason": "comparative_multi_region_title_including_EU"
+      },
+      {
+        "doi": "10.3905/jai.2011.14.3.042",
+        "title": "Comparison of Futures Pricing Models for Carbon Assets and Traditional Energy Commodities",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.1016/s2212-5671(12)00297-3",
+        "title": "Shaping Tourism Higher Education Curriculum-Strategy to Develop Skills for Tomorrow's Jobs",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.1051/swsc/2012022",
+        "title": "Monitoring, tracking and forecasting ionospheric perturbations using GNSS techniques",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.1186/2192-113x-1-1",
+        "title": "An architecture for integrated intelligence in urban management using cloud computing",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.1186/2193-9012-1-3",
+        "title": "The German labor market after the Great Recession: successful reforms and future challenges",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      },
+      {
+        "doi": "10.24057/2071-9388-2012-5-4-4-16",
+        "title": "FORECASTED TRENDS IN CHANGES OF VEGETATION IN THE EUROPEAN PART OF RUSSIA IN CONNECTION WITH GLOBAL WARMING",
+        "eu_reason": "comparative_multi_region_title_including_EU"
+      },
+      {
+        "doi": "10.1525/phr.2012.81.1.133",
+        "title": "Review: Projections of Power: The United States and Europe in Colonial Southeast Asia, 1919–1941 , by Anne L. Foster",
+        "eu_reason": "comparative_multi_region_title_including_EU"
+      },
+      {
+        "doi": "10.1007/s10980-012-9715-6",
+        "title": "An assessment of the impact of climate adaptation measures to reduce flood risk on ecosystem services",
+        "eu_reason": "EU_or_Europe_in_abstract_only"
+      }
+    ],
+    "review": [
+      {
+        "doi": "10.1111/j.1541-1338.2011.00496.x",
+        "title": "Climate Change Regionalism in North America",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.4172/2332-0737.1000106",
+        "title": "Exploring the Future of Synthetic Biology in India and its Probable Pathways from Infancy to Maturity",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.5194/hess-18-611-2014",
+        "title": "Forecasting droughts in East Africa",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.1017/s026021051500011x",
+        "title": "Futures beyond ‘the West’? Autoimmunity in China’s harmonious world",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.18611/2221-3279-2016-7-4(25)-161-175",
+        "title": "Russia Futures Project – Summary Report",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.1108/fs-06-2015-0033",
+        "title": "Exploring participatory scenario and storyline building for sustainable urban futures – the case of China in 2050",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.1002/wene.259",
+        "title": "Reference scenarios for evaluating wood pellet production in the Southeastern United States",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.21511/imfi.17(4).2020.06",
+        "title": "Hedging with commodity futures: evidence from the coffee market in Vietnam",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.1186/s40309-022-00200-y",
+        "title": "Policymaking to support resilience in democratic countries: an examination of Sweden, Israel, and Australia",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.1186/s40309-024-00239-z",
+        "title": "Is high-intensity conflict escalation inevitable in the future? A two-level game analysis on the causes of US-Iran risky rivalry",
+        "eu_reason": "non_EU_title_EU_relevance_uncertain"
+      },
+      {
+        "doi": "10.53477/2284-9378-25-45",
+        "title": "Strategic Management of Emerging Technologies in NATO: A Framework for Foresight, Innovation, and Ethical Integration",
+        "eu_reason": "no_clear_EU_link_in_indexed_metadata"
+      }
+    ]
+  },
+  "reason_counts": {
+    "future_question_in_title": 613,
+    "future_question_only_in_abstract": 277,
+    "forward_looking_title": 296,
+    "foresight_relevance_not_established_from_metadata": 124,
+    "review_editorial_or_correction": 3,
+    "financial_futures_instrument_not_foresight": 37,
+    "operational_forecast_without_long_term_foresight_context": 3,
+    "historical_projection_of_power_not_forecast": 2,
+    "non_european_focus_in_title": 7,
+    "historical_topic_future_relevance_uncertain": 6
+  },
+  "tags_added_or_changed": 1368,
+  "meaning": {
+    "future_facing": "Explicitly addresses possible future developments; not a verified forecast",
+    "needs_review": "Potentially relevant but metadata does not establish a central foresight question",
+    "out_of_scope": "Clear title-level non-foresight use, retained only in history",
+    "eu_official": "Official EU publisher URL in the source metadata",
+    "eu_institution": "An EU institutional publisher or affiliation appears in index metadata, not independently verified",
+    "eu_focused": "Europe/EU central to the original paper title",
+    "eu_related": "Europe/EU mentioned in the abstract but not central in the title",
+    "review": "EU connection not yet demonstrated; record remains archived"
+  },
+  "examples": {
+    "future_facing": [
+      {
+        "doi": "10.1111/j.1746-692x.2011.00145.x",
+        "title": "Modelling Multifunctionality, Territorial Development, and Policy Scenarios in Rural Europe: an Alternative Perspective on CAP Reform Debates  Modéliser la multifonctionnalité, le développement territorial et les scénarios de politiques dans l’Europe rura",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1111/j.1466-8238.2011.00669.x",
+        "title": "Climate, competition and connectivity affect future migration and ranges of European trees",
+        "reason": "forward_looking_title"
+      },
+      {
+        "doi": "10.1038/ncomms1360",
+        "title": "Long-term projections and acclimatization scenarios of temperature-related mortality in Europe",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.69554/wdbn2222",
+        "title": "Winter blues at European airports: The need for airport responsibility and corporate foresight",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1127/0941-2948/2011/0286",
+        "title": "Analysis of uncertainty in large scale climate change projections over Europe",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.7896/j.1108",
+        "title": "With ‘Regional Territorial Agendas’ towards territorial cohesion? The emergence of supra-regional coalitions in Europe and their future role in cohesion policy",
+        "reason": "forward_looking_title"
+      },
+      {
+        "doi": "10.25100/cdea.v24i40.400",
+        "title": "Benchmarking del programa colombiano de prospectiva ante prácticas en Europa y Sur América (título original: Benchmarking the coloIombian foresight programme against practices in Europe and South America)",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1007/s10584-011-0342-z",
+        "title": "Projection of economic impacts of climate change in sectors of Europe based on bottom up analysis: human health",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1016/j.csr.2011.11.011",
+        "title": "The impact of future sea-level rise on the European Shelf tides",
+        "reason": "forward_looking_title"
+      },
+      {
+        "doi": "10.1111/j.1466-8238.2010.00547.x",
+        "title": "Potential implications of future climate and land‐cover changes for the fate and distribution of persistent organic pollutants in Europe",
+        "reason": "forward_looking_title"
+      },
+      {
+        "doi": "10.1016/j.anaerobe.2011.05.016",
+        "title": "Climate changes, environment and infection: Facts, scenarios and growing awareness from the public health community within Europe",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1016/j.egypro.2011.02.587",
+        "title": "Carbon capture & storage in power generation and wind energy: Flexibility and reliability issues in scenarios for Northwest Europe",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1016/j.futures.2011.07.007",
+        "title": "Scenarios on European energy security: Outcomes of natural gas strategy in 2020",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1080/02626667.2011.631188",
+        "title": "Broad-scale ecosystem services of European wetlands—overview of the current situation and future perspectives under different climate and water management scenarios",
+        "reason": "future_question_in_title"
+      },
+      {
+        "doi": "10.1186/2193-9012-1-3",
+        "title": "The German labor market after the Great Recession: successful reforms and future challenges",
+        "reason": "forward_looking_title"
+      }
+    ],
+    "needs_review": [
+      {
+        "doi": "10.1017/s1049023x11001968",
+        "title": "(A205) Management of Mass Casualties and Associated Health Effects Following Chemical or Radiological Agent Release: Results of the European Union Mash Study, 2008–2010",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1111/j.1541-1338.2011.00496.x",
+        "title": "Climate Change Regionalism in North America",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1108/17576381111133624",
+        "title": "Do bio‐fuel policies lead to speculative behavior?",
+        "reason": "foresight_relevance_not_established_from_metadata"
+      },
+      {
+        "doi": "10.1080/17477891.2011.579335",
+        "title": "Modelling the potential damage-reducing benefits of flood warnings using European cases",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1186/1476-069x-10-53",
+        "title": "Health impact assessment of waste management facilities in three European countries",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.15388/sw.2011.28310",
+        "title": "Citizens with Disability – Crisis of the Welfare State in Europe?",
+        "reason": "foresight_relevance_not_established_from_metadata"
+      },
+      {
+        "doi": "10.5089/9781455295722.002",
+        "title": "Republic of Poland",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.2807/ese.16.27.19906-en",
+        "title": "Lyme borreliosis in Europe",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1108/14636681111153922",
+        "title": "The Mediterranean Union: what fate's in store?",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1016/j.njas.2011.01.005",
+        "title": "Actual and potential development of consumer demand on the organic food market in Europe",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1177/0958928711412224",
+        "title": "Institutions versus market forces: Explaining the employment insecurity of European individuals during (the beginning of) the financial crisis",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.3917/popu.1101.0009",
+        "title": "Populations and Demographic Trends of European Countries, 1980-2010",
+        "reason": "foresight_relevance_not_established_from_metadata"
+      },
+      {
+        "doi": "10.1111/j.1467-9663.2011.00682.x",
+        "title": "EU ACCESSION MIGRATION: NATIONAL INSURANCE NUMBER ALLOCATIONS AND THE GEOGRAPHIES OF POLISH LABOUR IMMIGRATION TO THE UK",
+        "reason": "foresight_relevance_not_established_from_metadata"
+      },
+      {
+        "doi": "10.1016/s2212-5671(12)00297-3",
+        "title": "Shaping Tourism Higher Education Curriculum-Strategy to Develop Skills for Tomorrow's Jobs",
+        "reason": "future_question_only_in_abstract"
+      },
+      {
+        "doi": "10.1051/swsc/2012022",
+        "title": "Monitoring, tracking and forecasting ionospheric perturbations using GNSS techniques",
+        "reason": "operational_forecast_without_long_term_foresight_context"
+      }
+    ],
+    "out_of_scope": [
+      {
+        "doi": "10.2166/wcc.2011.0001",
+        "title": "Development of water scenarios for Europe – Preface",
+        "reason": "review_editorial_or_correction"
+      },
+      {
+        "doi": "10.3905/jai.2011.14.3.042",
+        "title": "Comparison of Futures Pricing Models for Carbon Assets and Traditional Energy Commodities",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.15388/ljs.2011.13913",
+        "title": "EU Carbon Futures Market: The Aspects of Price Discovery",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1525/phr.2012.81.1.133",
+        "title": "Review: Projections of Power: The United States and Europe in Colonial Southeast Asia, 1919–1941 , by Anne L. Foster",
+        "reason": "historical_projection_of_power_not_forecast"
+      },
+      {
+        "doi": "10.1016/j.econmod.2011.11.003",
+        "title": "Nonlinearities in carbon spot-futures price relationships during Phase II of the EU ETS",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1080/07075332.2012.697330",
+        "title": "Projections of Power: The United States and Europe in Colonial Southeast Asia, 1919–1941",
+        "reason": "historical_projection_of_power_not_forecast"
+      },
+      {
+        "doi": "10.22004/ag.econ.162027",
+        "title": "INTRODUCTION OF THE GRAIN FUTURES MARKET IN THE BLACK SEA REGION",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1016/j.eneco.2012.08.028",
+        "title": "Rockets and feathers in power futures markets? Evidence from the second phase of the EU ETS",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1093/erae/jbt020",
+        "title": "How far do shocks move across borders? Examining volatility transmission in major agricultural futures markets",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.5430/ijfr.v4n4p1",
+        "title": "Does FX Volatility Affect the Distributions of Commodity Futures Returns?",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.13128/bae-12952",
+        "title": "Commodity futures markets: are they an effective price risk management tool for the European wheat supply chain?",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1016/s2212-5671(14)00690-x",
+        "title": "Exploring the Hedging Effectiveness of European Wheat Futures Markets during the 2007-2012 Period",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.12831/78759",
+        "title": "Investigating Causality Effects in Return Volatility among Five Major Futures Markets in European Countries with a Mediterranean Connection",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.1016/j.econmod.2014.01.020",
+        "title": "Modelling the dynamics of European carbon futures price: A Zipf analysis",
+        "reason": "financial_futures_instrument_not_foresight"
+      },
+      {
+        "doi": "10.5547/01956574.36.3.1",
+        "title": "Electricity futures prices in an emissions constrained economy: Evidence from European power markets",
+        "reason": "financial_futures_instrument_not_foresight"
+      }
+    ]
+  },
+  "next_stage": "Radar 2 continues unchanged until its lead selection is explicitly aligned with this scope.",
+  "priority_preview": [
+    {
+      "rank": 1,
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2020",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Central Bank",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 2,
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2019",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Central Bank",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 3,
+      "title": "Trends and projections in Europe 2019",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Environment Agency",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 4,
+      "title": "Eurosystem staff macroeconomic projections for the euro area, December 2018",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Central Bank",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 5,
+      "title": "Trends and projections in Europe 2018",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Environment Agency",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 6,
+      "title": "Trends and projections in Europe 2017",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Environment Agency",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 7,
+      "title": "What if...? Scanning the horizon: 12 scenarios for 2021",
+      "source_kind": "Curated publisher report",
+      "publisher": "EU Institute for Security Studies",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 8,
+      "title": "White Paper on the Future of Europe: Reflections and Scenarios for the EU27 by 2025",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 9,
+      "title": "The 2021 Ageing Report: Economic and Budgetary Projections for EU Member States (2019–2070)",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission, DG ECFIN",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 10,
+      "title": "Skills forecast: trends and challenges to 2030",
+      "source_kind": "Curated publisher report",
+      "publisher": "Cedefop",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 11,
+      "title": "Trends and projections in the EU ETS in 2018",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Environment Agency",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 12,
+      "title": "The 2018 Ageing Report: Economic and Budgetary Projections for EU Member States (2016–2070)",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission, DG ECFIN",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 13,
+      "title": "2021 Strategic Foresight Report: The EU's capacity and freedom to act",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 14,
+      "title": "Innovative technologies shaping the 2040 battlefield",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Parliament STOA",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 15,
+      "title": "Global Energy and Climate Outlook 2020",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission Joint Research Centre",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 16,
+      "title": "2020 Strategic Foresight Report: Charting the course towards a more resilient Europe",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 17,
+      "title": "Towards net-zero emissions in the EU energy system by 2050",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission Joint Research Centre",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 18,
+      "title": "The European Environment — State and Outlook 2020",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Environment Agency",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 19,
+      "title": "The Future of Cities: Opportunities, Challenges and the Way Forward",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission Joint Research Centre",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 20,
+      "title": "Global Trends to 2030: Challenges and Choices for Europe",
+      "source_kind": "Curated publisher report",
+      "publisher": "ESPAS / EUISS",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 21,
+      "title": "The future of manufacturing in Europe",
+      "source_kind": "Curated publisher report",
+      "publisher": "Eurofound",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 22,
+      "title": "EU Reference Scenario 2016: Energy, Transport and GHG Emissions — Trends to 2050",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Commission",
+      "eu_connection": "eu_official",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 23,
+      "title": "Scenario planning: An alternative approach to European Commission for combating antimicrobial resistance by 2050",
+      "source_kind": "Indexed academic lead",
+      "publisher": "South Eastern European Journal of Public Health",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 24,
+      "title": "CROATIAN RURAL FUTURES IN 2030: FOUR ALTERNATIVE SCENARIOS FOR POSTSOCIALIST COUNTRYSIDE IN THE NEWEST E.U. MEMBER STATE",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Taylor & Francis",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 25,
+      "title": "Scenarios for population health inequalities in 2030 in Europe",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Oxford University Press (OUP)",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 26,
+      "title": "How to Achieve a Healthier and More Sustainable Europe by 2040 According to the Public? Results of a Five-Country Questionnaire Survey",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 27,
+      "title": "How photovoltaics can contribute to GHG emission reductions of 55% in the EU by 2030",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Elsevier BV",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 28,
+      "title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Elsevier BV",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 29,
+      "title": "ECONOMIC GROWTH PROJECTION FOR EUROPEAN UNION BY 2030",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Kaunas University of Technology (KTU)",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 30,
+      "title": "Scenarios for population health inequalities in 2030 in Europe: the EURO-HEALTHY project experience",
+      "source_kind": "Indexed academic lead",
+      "publisher": "BioMed Central",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 31,
+      "title": "About global forecast of European Parliament TO 2035",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Vestnik MIRBIS.",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 32,
+      "title": "Will we reach the Sustainable Development Goals target for tuberculosis in the European Union/European Economic Area by 2030?",
+      "source_kind": "Indexed academic lead",
+      "publisher": "European Centre for Disease Control and Prevention (ECDC)",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 33,
+      "title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Wiley",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 34,
+      "title": "Estimation and Forecasts for the Share of Renewable Energy Consumption in Final Energy Consumption by 2020 in the European Union",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 35,
+      "title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 36,
+      "title": "Decarbonizing the EU energy system by 2050: an important role for BECCS",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Informa UK Limited",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 37,
+      "title": "Differentiated EUrope 2035: Elaboration and Evaluation of Five Potential Scenarios",
+      "source_kind": "Curated publisher report",
+      "publisher": "European Policy Centre",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "publisher-curated"
+    },
+    {
+      "rank": 38,
+      "title": "Drivers, trends and scenarios for the future of health in Europe. Impressions from the FRESHER project",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Springer Science and Business Media LLC",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 39,
+      "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
+      "source_kind": "Indexed academic lead",
+      "publisher": "MDPI AG",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 40,
+      "title": "What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios?",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Faculty of 1000",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 41,
+      "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
+      "source_kind": "Indexed academic lead",
+      "publisher": "European Commission",
+      "eu_connection": "eu_institution",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 42,
+      "title": "Energy transition scenarios: What policies, societal attitudes, and technology developments will realize the EU Green Deal?",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Elsevier BV",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 43,
+      "title": "SOLPS-ITER modeling of divertor scenarios for EU-DEMO",
+      "source_kind": "Indexed academic lead",
+      "publisher": "IOP Publishing",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 44,
+      "title": "Future Projections of Heat Mortality Risk for Major European Cities",
+      "source_kind": "Indexed academic lead",
+      "publisher": "American Meteorological Society",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 45,
+      "title": "The Selection of Intermodal Transport System Scenarios in the Function of Southeastern Europe Regional Development",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 46,
+      "title": "Strategic European Integration Scenarios of Ukrainian and Polish Research, Education and Innovation Spaces",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Virtual Economics",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 47,
+      "title": "Red squirrel (Sciurus vulgaris) habitats change modelling in Eastern Europe in the scope of climate change according to new generation scenarios (SSPs) by 2100",
+      "source_kind": "Indexed academic lead",
+      "publisher": "National Museum of Natural History at the National Academy of Sciences of Ukraine",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 48,
+      "title": "European cephalopods distribution under climate-change scenarios",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Nature Portfolio",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 49,
+      "title": "ClimateEU, scale-free climate normals, historical time series, and future projections for Europe",
+      "source_kind": "Indexed academic lead",
+      "publisher": "Springer Science and Business Media LLC",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    },
+    {
+      "rank": 50,
+      "title": "Foresight for the Fitness Sector: Results from a European Delphi Study and Its Relevance in the Time of COVID-19",
+      "source_kind": "Indexed academic lead",
+      "publisher": "MDPI AG",
+      "eu_connection": "eu_focused",
+      "foresight_scope": "future_facing"
+    }
+  ]
+}
