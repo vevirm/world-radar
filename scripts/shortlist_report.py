@@ -13,9 +13,9 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 try:
-    from .evidence_policy import classify
+    from .evidence_policy import classify, substantive_excerpt, same_geographic_context
 except ImportError:
-    from evidence_policy import classify
+    from evidence_policy import classify, substantive_excerpt, same_geographic_context
 
 STOP = set(('the a an and or of for in on to from as at by with across under into through toward towards '
             'about between within how what why when which where whose this that these those a study review '
@@ -166,7 +166,7 @@ def sort_data(atlas):
         # A title-only pair is useful as a reading lead, but not sufficient
         # to headline the strongest cases. Require an actual abstract excerpt.
         credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2
-                           and len(str(l.get('abstract_excerpt') or '').strip()) >= 45],
+                           and substantive_excerpt(l.get('abstract_excerpt') or l.get('finding_from_abstract'))],
                           key=lambda x: (x['_score'], x['_shared'], x['_from_direction'], x['_year']), reverse=True)
         best = credible[0] if credible else None
         reviewed = concrete_review(r)
@@ -177,6 +177,7 @@ def sort_data(atlas):
             score += 60 * (best['_score'] if best else 0) + 12 * min(len(credible), 3)
             if best and best['_from_direction']: score += 8
             score += 24 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
+            score += 22 if best and same_geographic_context(r.get('title'), best.get('title'), best.get('abstract_excerpt')) else 0
             score += 8 if FUTURE_RE.search(r['title']) else 0
             if reviewed and number is not None:
                 score += 0.15 * number
@@ -297,7 +298,11 @@ def write_shortlist(atlas, target):
             elif best:
                 abstract = str(best.get('abstract_excerpt') or best.get('finding_from_abstract') or '').strip()
                 evidence_label = best.get('evidence_kind')
-                if evidence_label in ('measured_or_reported_change', 'implementation_or_evaluation') and abstract:
+                observed_wording = bool(re.search(
+                    r'\b(?:results? (?:show|indicat|suggest)|data (?:show|indicat)|observed|measured|'
+                    r'increased|decreased|rose|fell|we found|we find|authors (?:found|demonstrat)|'
+                    r'reforms? (?:came about|were enacted))\w*', abstract, re.I))
+                if evidence_label in ('measured_or_reported_change', 'implementation_or_evaluation') and abstract and observed_wording:
                     para(f"A {best['_year']} paper reports: {abstract[:270]}", bold_label='NOW  ')
                 elif abstract:
                     para(f"Newer research ({best['_year']}) discusses: {abstract[:230]}", bold_label='NOW  ')

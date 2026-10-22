@@ -24,7 +24,7 @@ OTHER_REGION = re.compile(r'\b(?:russia|russian|vietnam|vietnamese|china|chinese
     r'argentina|argentinian|peru|peruvian|australia|australian|new zealand|'
     r'japan|japanese|korea|korean|indonesia|indonesian|thailand|thai|'
     r'nigeria|nigerian|kenya|kenyan|pakistan|pakistani|morocco|moroccan|'
-    r'california|united states|usa|u\.s\.|american|canada|canadian|iran|iranian)\b', re.I)
+    r'california|united states|usa|u\.s\.|american|canada|canadian|iran|iranian|asia|asian|africa|african|southeast asia|south asia)\b', re.I)
 # Very wide concepts alone are insufficient evidence that research answers the
 # *particular question*. They may still be helpful when paired with real anchors.
 BROAD = set('''climate change future futures technology technologies policy policies
@@ -201,6 +201,92 @@ def issue_scope_conflict(original_title, later_title, later_finding=''):
         if not re.search(r'\b(?:scarcity|drought|irrigat|water shortage|water stress|water availability|'
                          r'water resource|soil moisture|precipitation deficit|dry spell)\w*\b',new):
             return 'different_agricultural_water_subject'
+    # A close title resemblance is not enough if the *object being studied* is
+    # absent. Keep these papers as comparative/contextual reading, never as a
+    # principal "what happened with this?" finding. Check the later TITLE:
+    # generic mentions in an abstract should not override its main topic.
+    focus_families = (
+        ('fashion_supply_chain', r'\b(?:fashion|apparel|garment|textile|clothing)\b',
+         r'\b(?:fashion|apparel|garment|textile|clothing)\b'),
+        ('turbine_blade_waste', r'\b(?:turbine|wind power|wind energy)\b.*\b(?:blade|waste|recycl|disposal)\w*',
+         r'\b(?:blade|waste|recycl|disposal|decommission|end.of.life|composite|circular)\w*'),
+        ('carbon_futures_market', r'\b(?:carbon|emissions?|eua|eu.ets|emission allowance)\b.*\b(?:future|volatil|market|price|trad|garch)\w*',
+         r'\b(?:carbon|emissions?|eua|eu.ets|ets|emission allowance|greenhouse gas|cap.and.trade|allowance market)\b'),
+        ('soil_pesticide_exposure', r'\b(?:soil organisms?|soil biota|soil invertebrates?)\b.*\b(?:pesticide|insecticide|herbicide)\w*|\b(?:pesticide|insecticide|herbicide)\w*.*\b(?:soil organisms?|soil biota|soil invertebrates?)\b',
+         r'\b(?:pesticide|insecticide|herbicide|soil ecotox|soil organisms?)\w*'),
+        ('urban_land_population', r'\b(?:urban|land.use|land cover)\b.*\b(?:population|demograph)\w*|\b(?:population|demograph)\w*.*\b(?:urban|land.use|land cover)\b',
+         r'\b(?:demograph|urbanization|urbanisation|urban population|urban growth|land.use|settlement)\w*'),
+        ('climate_air_quality', r'\b(?:air quality|atmospher)\w*.*\b(?:climate|scenario|projection|cmip)\w*',
+         r'\b(?:air quality|air pollution|ozone|particulate|pollutant|air quality model|regional climate)\w*'),
+    )
+    for name, old_pattern, later_pattern in focus_families:
+        if re.search(old_pattern, old, re.I) and not re.search(later_pattern, new_title, re.I):
+            return 'missing_original_focus_' + name
+
+    # A policy's measured emissions reductions are not a follow-up on the
+    # price behaviour of emission-allowance futures. Conversely, general
+    # decarbonisation papers are not evidence about carbon capture/storage.
+    if re.search(r'\b(?:futures?|volatilit|price discovery|risk premium|hedg)\w*',old) and \
+            re.search(r'\b(?:carbon|emissions?|eua|eu.ets|allowance)\w*', old) and \
+            not re.search(r'\b(?:futures?|volatilit|price|premiums?|hedg|derivative|markets?|auction)\w*',new_title):
+        return 'different_carbon_financial_question'
+    if re.search(r'\b(?:carbon capture|carbon storage|\bccs\b|\bbeccs\b|sequestration)\b',old) and \
+            not re.search(r'\b(?:carbon capture|carbon storage|\bccs\b|\bbeccs\b|sequestration|direct air capture)\b',new_title):
+        return 'missing_carbon_capture_focus'
+
+    # A sector-specific paper can illuminate a general question, but it is
+    # not automatically evidence about the trajectory of the whole sector.
+    if re.search(r'\b(?:employ|labou?r)\w*', old) and not \
+            re.search(r'\b(?:transport|mobility|freight|road traffic|logistics)\w*',old) and \
+            re.search(r'\b(?:transport|mobility|freight|road traffic|logistics|engineering industry|aviation industry|manufacturing industry)\w*',new_title):
+        return 'sector_case_not_economy_wide_employment'
+    if re.search(r'\b(?:organic farm|organic agricultur)\w*',old) and \
+            re.search(r'\b(?:phosphor|nutrient removal|fertiliz|soil amendment)\w*',new_title) and \
+            not re.search(r'\b(?:phosphor|nutrient|fertiliz|soil amendment)\w*',old):
+        return 'specific_input_not_farming_trajectory'
+
+    # A question about policy *effects* is not answered by statistics on the
+    # issue alone: immigration and employment growing together does not show
+    # what the immigration-policy scenarios caused or changed.
+    if re.search(r'\b(?:immigration|migration)\b', old) and \
+            re.search(r'\b(?:polic|legislation|regulation)\w*', old) and \
+            re.search(r'\b(?:effect|impact|scenario|projection)\w*', old) and \
+            not re.search(r'\b(?:polic|legislation|regulation|policy evaluation|policy reform|causal|counterfactual)\w*',new_title):
+        return 'missing_policy_effect_focus'
+    # Endoscopy-specific guideline updates are not identical to generic IBD
+    # malignancy updates, even when the latter may be useful clinical context.
+    if re.search(r'\bendoscop\w*', old) and \
+            not re.search(r'\b(?:endoscop|colonoscopy|endoscopic)\w*', new_title):
+        return 'missing_endoscopy_focus'
+
+    # Do not promote a domain-specific illustrative application into an answer
+    # about a genuinely *general* issue (AI acceptance => AI in hospitals;
+    # digital governance => food-safety controls). It may still be context.
+    narrower_fields = (
+        ('healthcare', r'\b(?:patient|clinical|hospital|healthcare|medical|disease|cancer|diagnos)\w*\b',
+         r'\b(?:patient|clinical|hospital|healthcare|health|medical|disease|cancer|diagnos|mortality|wellbeing|epidem|inequal|inequit)\w*\b'),
+        ('food_agriculture', r'\b(?:food safety|food processing|chicken|poultry|antibiotic|crop breeding|pesticide|livestock)\b',
+         r'\b(?:food|agricult|farm|crop|pesticide|animal|livestock|poultry|antibiotic)\w*'),
+        ('genetics_wildlife', r'\b(?:goshawk|raptor|genom|population genetics|genetic structure|mitochondrial)\w*',
+         r'\b(?:genetic|genom|goshawk|raptor|bird|wildlife|mitochondrial)\w*'),
+        ('education_case', r'\b(?:higher education|universit|school|student|teacher|classroom|educational)\w*',
+         r'\b(?:education|universit|school|student|teacher|classroom|academic)\w*'),
+        ('financial_markets', r'\b(?:gold futures?|oil futures?|commodity futures?|share prices?|stock market)\b',
+         r'\b(?:futures?|commodity|market|stock|gold|financial|trading)\w*'),
+    )
+    for name, later_pattern, original_pattern in narrower_fields:
+        if re.search(later_pattern, new_title, re.I) and not re.search(original_pattern, old, re.I):
+            return 'different_main_subject_' + name
+
+    # Major topic shifts which can easily evade word-overlap screens:
+    if re.search(r'\b(?:carbon|eua|emission allowances?|carbon market)\b', old) and \
+            re.search(r'\b(?:gold|silver|precious metals?)\b', new_title) and \
+            not re.search(r'\b(?:carbon|eua|emission allowances?)\b', new_title):
+        return 'different_commodity_market'
+    if re.search(r'\b(?:climate|carbon|decarbon|emissions?)\b', old) and \
+            re.search(r'\b(?:antibiotic resistance|poultry|chicken disease)\b',new_title) and \
+            not re.search(r'\b(?:climate|emissions?|decarbon)\b',new_title):
+        return 'different_climate_policy_subject'
     return ''
 
 
@@ -266,6 +352,15 @@ def classify(entry, item, field):
             return 'context', 'broader_field_development'
         return 'quarantine', 'too_loose_for_field_context'
 
+    # Domain abbreviations and expanded names are equivalent issue anchors:
+    # EUA (European emission allowances) and carbon-futures pricing need not
+    # repeat the exact same words to represent the same financial question.
+    if re.search(r'\b(?:eua|eu.ets|emission allowance)\b', old_title, re.I) and \
+            re.search(r'\b(?:carbon|emission allowance|eua|ets)\b',title,re.I) and \
+            re.search(r'\b(?:future|volatil|price|market|hedg)\w*',old_title,re.I) and \
+            re.search(r'\b(?:future|volatil|price|market|hedg)\w*',title,re.I):
+        return 'direct', 'equivalent_carbon_market_vocabulary'
+
     # Require a topic-specific anchor, not only a research method or words
     # like "higher education" or "climate change".
     if not specific_full:
@@ -290,3 +385,39 @@ def classify(entry, item, field):
     if specific_title:
         return 'context', 'one_topic_anchor'
     return 'quarantine', 'insufficient_topic_connection'
+
+
+# Editorial promotion only: absence of geographic metadata is not a rejection.
+# It simply means the shortlist should favor a clearly comparable setting.
+EU_LOCATION = re.compile(
+    r'\b(?:europe|european|eu|europ(?:e|ean) union|germany|german|france|french|'
+    r'finland|finnish|italy|italian|spain|spanish|sweden|swedish|'
+    r'netherlands|dutch|poland|polish|denmark|danish|belgium|belgian|'
+    r'austria|austrian|portugal|portuguese|ireland|irish|'
+    r'britain|british|england|uk|united kingdom|romania|romanian)\b',re.I)
+
+
+def same_geographic_context(original_title, newer_title, abstract=''):
+    if not EU.search(str(original_title or '')):
+        return False
+    # Named European location in the later title is the strongest sign.
+    if EU_LOCATION.search(str(newer_title or '')):
+        return True
+    # Explicit place in the summary is helpful, but not a requirement.
+    return bool(EU_LOCATION.search(str(abstract or '')))
+
+
+def substantive_excerpt(value):
+    """Avoid promoting abstracts that consist of metadata rather than findings.
+
+    This is NOT a test for whether a publication is correct. A real scenario,
+    policy discussion, or unresolved debate is still substantive research.
+    """
+    text=' '.join(str(value or '').split()).strip()
+    if len(text) < 65 or len(text.split()) < 10:
+        return False
+    if re.match(r'^(?:temporal coverage|geographic coverage|unit of observation|'
+                r'file format|dataset (?:covers|contains)|country.year records|'
+                r'data availability|download the data)\b',text,re.I):
+        return False
+    return True
