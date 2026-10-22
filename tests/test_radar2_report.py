@@ -45,11 +45,12 @@ def test_word_separates_candidate_from_observed_outcome(tmp_path, monkeypatch):
     assert json.loads((tmp_path/'outcome-review-queue.json').read_text())['candidate_count'] == 1
 
 
-def test_radar2_scheduled_only_twice_with_secret_and_auto_provider():
+def test_radar2_live_research_is_temporarily_manual_during_quality_review():
     root = Path(__file__).resolve().parents[1]
     workflow = (root/'.github/workflows/update-outcomes.yml').read_text()
-    assert "17 4,16 * * *" in workflow
-    assert 'workflow_run:' not in workflow, 'Workflow-run plus cron triggers 4 times/day, not 2'
+    assert 'workflow_dispatch:' in workflow
+    assert '\n  schedule:' not in workflow, 'Do not start unattended 25-minute scans during pilot'
+    assert 'workflow_run:' not in workflow
     assert 'OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}' in workflow
     assert '--provider auto' in workflow
     assert 'stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx' in workflow
