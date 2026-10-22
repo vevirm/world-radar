@@ -134,6 +134,9 @@ def retrieve_assessment(claim, key, route=0):
     prompt = f'''Research route: {route_name}. Start with {route_sources}, then broaden as needed. Today: {now}.
 Investigate this European foresight research LEAD and identify any subsequent real-world developments relevant to its themes. A title or abstract may describe a scenario, not a prediction. Do not invent a forecast.  Use WEB SEARCH for independently dated evidence AFTER the original publication. Search for both positive signals and counterevidence. Distinguish actual deployment or measured change from investment announcements, plans, ambitions, scenarios, and publicity. A future target date DOES NOT prevent assessment of current signals; it only prevents calling the final outcome realized prematurely.
 Original publication title: {claim['title']}
+Specific historical issue for later checking: {claim.get('research_question') or 'Investigate the original passage only'}
+Original substantive anchors: {', '.join(claim.get('issue_anchors') or [])}
+Do not return literature merely because its title shares a word with these anchors.
 VERBATIM SAVED HISTORICAL PASSAGE (NOT necessarily a prediction): {claim['original_passage']}
 Question readiness: {claim.get('question_readiness')}
 The source passage MUST anchor your comparison. If it only states a method,
