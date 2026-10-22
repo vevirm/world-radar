@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -56,6 +56,39 @@ def valid_period(value):
 def uid(url, *, kind):
     digest = hashlib.sha256(normalize_url(url).encode('utf-8')).hexdigest()[:16]
     return ('report-' if kind == 'institutional' else 'lead-') + digest
+
+
+def institutional_passages(root):
+    """Reviewed quotations carried across scanner runs, separate from changing rankings.
+
+    A URL, date, or title by itself cannot stand in for an original-source passage.
+    This registry is intentionally small and grows only with traceable source checks.
+    """
+    path = Path(root) / 'institutional-original-passages.json'
+    if not path.exists():
+        return {}
+    data = load(path)
+    if data.get('schema_version') != 1 or not isinstance(data.get('passages'), list):
+        raise ValueError('Invalid institutional original-passage registry')
+    passages = {}
+    for item in data['passages']:
+        if not isinstance(item, dict):
+            raise ValueError('Invalid reviewed institutional passage')
+        url = normalize_url(item.get('source_url'))
+        quote = ' '.join(str(item.get('original_passage') or '').split())
+        reviewed_date = str(item.get('reviewed_on') or '')
+        try:
+            date.fromisoformat(str(item.get('original_publication') or ''))
+            reviewed_on = date.fromisoformat(reviewed_date)
+        except ValueError:
+            raise ValueError('Invalid reviewed institutional passage date') from None
+        if (not url.startswith('https://') or not valid_period(item.get('original_publication'))
+                or reviewed_on > date.today() or len(quote) < 50
+                or item.get('review_status') != 'checked_against_original_source'
+                or url in passages):
+            raise ValueError('Missing, duplicate or unreviewed institutional source passage')
+        passages[url] = item
+    return passages
 
 
 def original_claims(root=ROOT):
@@ -121,6 +154,7 @@ def original_claims(root=ROOT):
                     'is_lead':True})
 
     # Priority source list is editorially curated institutional research.
+    reviewed = institutional_passages(root)
     # The priority list also includes important new reports (e.g. 2023 SFR).
     reports = {}
     for s in load(root/'priority-sources.json').get('sources',[]):
@@ -134,6 +168,8 @@ def original_claims(root=ROOT):
         url = normalize_url(s.get('url'))
         if url and valid_period(s.get('date')):
             reports[url] = {**reports.get(url, {}), **s}
+    if set(reviewed) - set(reports):
+        raise ValueError('Reviewed institutional passage lacks an accepted source record')
     for url, row in sorted(reports.items(),key=lambda pair:(pair[1]['date'],pair[0])):
         title = str(row.get('title') or '').strip()
         original_url = str(row.get('url') or '').strip()
@@ -141,14 +177,24 @@ def original_claims(root=ROOT):
             continue
         # A title, target date and verification badge are not original passage.
         # A later human/source-text extraction can populate this optional field.
-        original = ' '.join(str(row.get('original_passage') or '').split())
+        passage_record = reviewed.get(url)
+        if passage_record and str(passage_record['original_publication'])[:10] != str(row['date'])[:10]:
+            raise ValueError('Reviewed institutional passage publication date mismatch: ' + url)
+        row_quote = ' '.join(str(row.get('original_passage') or '').split())
+        reviewed_quote = ' '.join(str(passage_record.get('original_passage') or '').split()) if passage_record else ''
+        if row_quote and reviewed_quote and row_quote != reviewed_quote:
+            raise ValueError('Institutional source passage conflicts with accepted original: ' + url)
+        original = reviewed_quote or row_quote
         out.append({'id':uid(original_url,kind='institutional'), 'source_kind':'institutional',
                     'title':title, 'doi':'', 'source_url':original_url,
                     'original_publication':row['date'], 'publisher':row.get('publisher') or 'EU institutional report',
                     'topic':row.get('topic') or 'European foresight',
                     'expected':original, 'original_passage':original,
-                    'original_source_field':'original_passage' if original else None,
-                    'original_review_status':row.get('verification_status') or 'institutional_original_curated',
+                    'original_source_field':('institutional-original-passages.json' if passage_record
+                                             else 'original_passage' if original else None),
+                    'original_review_status':('checked_against_original_source' if passage_record
+                                              else row.get('verification_status') or 'institutional_original_curated'),
+                    'passage_reviewed_on':passage_record.get('reviewed_on') if passage_record else None,
                     'investigation_type':'institutional_foresight',
                     'target_year':row.get('target_year'),
                     'investigation_ready':bool(original),
