@@ -1,0 +1,35 @@
+name: Radar 2 - substantive questions audit (NO SCAN)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  question_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate source passage checks and evidence alignment (NO API)
+        run: |
+          python -m pip install -q pytest
+          python -m pytest -q tests/test_radar2_questions.py tests/test_evidence_engine.py tests/test_radar2_scope.py
+      - name: Build accepted-original question preview (NO API, NO DELETIONS)
+        run: python scripts/radar2_questions.py --output RADAR2-QUESTION-PREVIEW.json
+      - name: Small offline evidence matching pilot (NO API)
+        run: python scripts/evidence_pilot.py --mode offline --max-cases 20
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Radar-2-Substantive-Question-Audit
+          path: |
+            RADAR2-QUESTION-PREVIEW.json
+            EVIDENCE-PILOT-OFFLINE.json
+            EVIDENCE-PILOT-OFFLINE.md
+          if-no-files-found: warn
+          retention-days: 30

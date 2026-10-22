@@ -30,8 +30,8 @@ on:
         required: false
         type: boolean
         default: false
-  schedule:
-    - cron: '17 4,16 * * *'
+  # Automatic 25-minute scans temporarily paused during question/evidence QA.
+  # Restore a schedule only after an evidence pilot demonstrates usable results.
 
 permissions:
   contents: write
