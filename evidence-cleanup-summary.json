@@ -1,9 +1,9 @@
 {
   "original_records": 1366,
-  "examined": 9741,
+  "examined": 9736,
   "same_issue_literature": 4663,
   "related_context_not_direct_evidence": 5073,
-  "quarantined_this_run": 5,
+  "quarantined_this_run": 0,
   "reasons": {
     "broader_field_development": 1805,
     "different_agricultural_water_subject": 6,
@@ -13,7 +13,6 @@
     "different_forecasting_subject": 6,
     "different_forensic_laboratory_subject": 6,
     "different_geography": 405,
-    "different_geography_and_weak_topic": 5,
     "different_grain_market_subject": 54,
     "different_health_inequality_subject": 1,
     "different_labor_market_subject": 33,
