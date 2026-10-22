@@ -12,6 +12,7 @@ from pathlib import Path
 import sys
 
 from scholarly import foresight_scope, eu_connection, atomic_json
+from priority import refresh as preview_priority
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -75,6 +76,17 @@ def audit(leads_path, *, apply=False, report_path=None):
                   'review': 'EU connection not yet demonstrated; record remains archived'
               }, 'examples': examples,
               'next_stage': 'Radar 2 continues unchanged until its lead selection is explicitly aligned with this scope.'}
+    # Include the actual proposed priority titles in preview without writing
+    # or changing the priority-50.json file.
+    if path.resolve() == (ROOT/'research-leads.json').resolve():
+        preview = preview_priority(save=False)
+        report['priority_preview'] = [
+            {'rank': i, 'title': item.get('title'), 'source_kind': item.get('source_kind'),
+             'publisher': item.get('publisher'), 'eu_connection': item.get('eu_connection'),
+             'foresight_scope': item.get('foresight_scope', 'publisher-curated')}
+            for i, item in enumerate(preview['items'], 1)]
+    else:
+        report['priority_preview'] = []
     if report_path:
         atomic_json(Path(report_path), report)
     if apply:

@@ -35,6 +35,18 @@ def inference_topic(title):
         if key in s: return topic
     return 'European futures'
 
+def report_series(item):
+    # Editorial variety only: never delete a source from the archive.
+    if item.get('source_kind') != 'Curated publisher report':
+        return None
+    name = str(item.get('title') or '').lower()
+    if 'trends and projections in europe' in name:
+        return 'EEA trends and projections'
+    if 'eurosystem staff macroeconomic projections' in name:
+        return 'ECB macro projections'
+    return None
+
+
 def score(item, today):
     d = date.fromisoformat(item['date'])
     years = (today-d).days / 365.2425
@@ -62,7 +74,7 @@ def score(item, today):
         if item.get('foresight_scope') == 'future_facing': base += 16
     return base
 
-def refresh(today=None):
+def refresh(today=None, *, save=True):
     today = today or TODAY()
     sources = json.loads((ROOT/'priority-sources.json').read_text(encoding='utf-8'))['sources']
     verified_records = json.loads((ROOT/'findings.json').read_text(encoding='utf-8')).get('findings', [])
@@ -94,7 +106,7 @@ def refresh(today=None):
         records.append(item)
     scored = [(score(x,today), x) for x in records]
     scored = sorted(((s,x) for s,x in scored if s >= 0), key=lambda pair: (pair[0], pair[1]["date"], pair[1]["title"]), reverse=True)
-    selected=[]; seen=set(); by_topic={}; by_publisher={}
+    selected=[]; seen=set(); by_topic={}; by_publisher={}; by_series={}
     # Blend recognised institutional reports with serious academic research;
     # avoid drowning the list with multiple same-year editions of one series.
     for _, x in scored:
@@ -105,6 +117,9 @@ def refresh(today=None):
         pub=x.get('publisher','')
         if by_publisher.get(pub,0) >= (8 if pub == 'European Environment Agency' else 5): continue
         if by_topic.get(topic,0) >= 12: continue
+        series = report_series(x)
+        if series and by_series.get(series, 0) >= 3: continue
+        if series: by_series[series] = by_series.get(series, 0) + 1
         seen.add(key); by_publisher[pub]=by_publisher.get(pub,0)+1
         by_topic[topic]=by_topic.get(topic,0)+1
         x=dict(x)
@@ -125,10 +140,11 @@ def refresh(today=None):
             'policy':'15-year maximum, preferentially 5–10 years old; shortlist is priority for verification, not 50 certified findings',
             'method_note':'EU-issued reports preferred; independent EU-focused future research remains eligible. Issuer attribution, full-text quality, and retrospective accuracy are separate checks',
             'count':len(selected),'items':selected}
-    target=ROOT/'priority-50.json'
-    tmp=target.with_suffix('.json.tmp')
-    tmp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    tmp.replace(target)
+    if save:
+        target=ROOT/'priority-50.json'
+        tmp=target.with_suffix('.json.tmp')
+        tmp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        tmp.replace(target)
     return result
 
 if __name__ == '__main__':

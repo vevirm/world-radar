@@ -74,7 +74,9 @@ STRONG_FUTURE = re.compile(
 HISTORIC_ONLY = re.compile(
     r'\b(?:archaeolog\w*|prehistor\w*|palaeoclimat\w*|paleoclimat\w*|'
     r'colonial era|colonial southeast asia|ancient dna|genome.wide.*colonization|' 
-    r'history of .*futures trad\w*|1960s.1980s)\b', re.I)
+    r'history of .*futures trad\w*|1960s.1980s|'
+    r'scenarios? of (?:European )?colonization|'
+    r'origin and diversification of .*breeds?)\b', re.I)
 HISTORY_FORWARD = re.compile(
     r'\b(?:future climate|future distribution|climate change scenarios|'
     r'climate projections?|by 20[2345]\d|future warming)\b', re.I)
@@ -82,7 +84,7 @@ HISTORY_FORWARD = re.compile(
 # is not automatically an EU strategic foresight scenario. Metadata-only leads
 # remain reviewable rather than being destroyed.
 OPERATIONAL_FORECAST = re.compile(
-    r'\b(?:loan default|stock price|radiation belt|ionospheric perturbation|'
+    r'\b(?:loan default|stock price|radiation belt|ionospheric perturbations?|'
     r'predict(?:ing|ion) (?:the )?phenology|short.term weather forecast|'
     r'credit scoring|time.series employment|forecast time series)\b', re.I)
 OTHER_REGION_TITLE = re.compile(
@@ -155,7 +157,8 @@ EU_SUBJECT = re.compile(
     r'policy|policies|integration|higher education|labour market|labor market|'
     r'energy system|economy|climate|mobility|agriculture|future|regions?)|'
     r'EU(?:-?27|-?28)?|Europe(?:an)?|Eurozone|Erasmus\+?|Horizon Europe|'
-    r'EU ETS|Common Agricultural Policy|European Green Deal|Schengen)\b', re.I)
+    r'EU ETS|Common Agricultural Policy|European Green Deal|Schengen)\b|'
+    r'(?<![A-Za-z])E\.U\.(?![A-Za-z])', re.I)
 NON_EU_TITLE = re.compile(
     r'\b(?:North America|South America|Latin America|United States|USA|'
     r'Russian Federation|Russia|Vietnam|China|India|Brazil|Australia|'
@@ -196,10 +199,14 @@ def eu_connection(lead):
         affiliations = [affiliations]
     if any(EU_INSTITUTION.search(str(name)) for name in affiliations):
         return 'eu_institution', 'EU_affiliation_in_index_not_EU_issued'
+    # A paper comparing EU and non-EU regions matters to EU foresight, but
+    # should not be prioritized as a study exclusively focused on Europe.
+    if NON_EU_TITLE.search(title):
+        if EU_SUBJECT.search(title):
+            return 'eu_related', 'comparative_multi_region_title_including_EU'
+        return 'review', 'non_EU_title_EU_relevance_uncertain'
     if EU_SUBJECT.search(title):
         return 'eu_focused', 'EU_or_Europe_in_original_title'
-    if NON_EU_TITLE.search(title):
-        return 'review', 'non_EU_title_EU_relevance_uncertain'
     if EU_SUBJECT.search(abstract):
         return 'eu_related', 'EU_or_Europe_in_abstract_only'
     return 'review', 'no_clear_EU_link_in_indexed_metadata'
