@@ -1,7 +1,14 @@
 name: Radar 2 - source evidence pilot (NO SCAN)
 
+# One narrowly scoped push run registers this new manual workflow in GitHub Actions.
+# Subsequent repository changes do not trigger it unless this workflow file changes.
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/radar2-evidence-review.yml'
 
 permissions:
   contents: read
