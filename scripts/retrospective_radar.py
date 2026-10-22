@@ -66,7 +66,15 @@ def claims():
     except ModuleNotFoundError:
         from scripts.radar2_scope import original_claims
     out = original_claims(ROOT)
+    try:
+        from radar2_questions import question_card
+    except ModuleNotFoundError:
+        from scripts.radar2_questions import question_card
     for c in out:
+        c['question_plan'] = question_card(c)
+        # Source readiness describes whether a specific, later-checkable
+        # question is extractable, NOT whether the original is a good study.
+        c['question_readiness'] = c['question_plan']['readiness']
         if c['investigation_ready'] and c['source_kind'] == 'academic':
             # The original passage, not generic abstract wording, is the seed.
             c.update(screen({'title': c['title'], 'abstract':c['original_passage']}))
@@ -125,7 +133,14 @@ def retrieve_assessment(claim, key, route=0):
     route_name, route_sources = EVIDENCE_ROUTES[route % len(EVIDENCE_ROUTES)]
     prompt = f'''Research route: {route_name}. Start with {route_sources}, then broaden as needed. Today: {now}.
 Investigate this European foresight research LEAD and identify any subsequent real-world developments relevant to its themes. A title or abstract may describe a scenario, not a prediction. Do not invent a forecast.  Use WEB SEARCH for independently dated evidence AFTER the original publication. Search for both positive signals and counterevidence. Distinguish actual deployment or measured change from investment announcements, plans, ambitions, scenarios, and publicity. A future target date DOES NOT prevent assessment of current signals; it only prevents calling the final outcome realized prematurely.
-Research lead title/abstract (NOT necessarily a prediction): {claim['expected']}
+Original publication title: {claim['title']}
+VERBATIM SAVED HISTORICAL PASSAGE (NOT necessarily a prediction): {claim['original_passage']}
+Question readiness: {claim.get('question_readiness')}
+The source passage MUST anchor your comparison. If it only states a method,
+scenario possibility or question, do NOT present it as a precise forecast.
+Identify an observable issue, its conditional assumptions and geographic scope;
+search for evidence about that issue, not merely publications sharing keywords.
+Explicitly explain any mismatch of baseline, scenario, outcome measure, or geography.
 Original study: {claim['source_url']}
 Original publication: {claim.get('original_publication')}
 Target year: {claim.get('target_year')}
@@ -412,9 +427,12 @@ def main():
     def priority(c):
         e = entries[c['id']]
         return (int(e.get('literature_live_attempts') or 0) if args.provider == 'openalex' else int(e.get('literature_attempts') or 0),
+                {'quantified_future_proposition':0,'scenario_or_trajectory':1,'qualitative_future_question':2}.get(c.get('question_readiness'),3),
                 0 if c.get('screening_status') == 'candidate_needs_validation' else 1,
                 e.get('literature_assessed_utc', ''), c['id'])
-    ordered = [] if args.provider == 'evidence' else sorted((c for c in found if c['investigation_ready']), key=priority)
+    investigation_queue = (c for c in found if c['investigation_ready'] and
+            c.get('question_readiness') not in ('original_text_required','source_review_required'))
+    ordered = [] if args.provider == 'evidence' else sorted(investigation_queue, key=priority)
     groups = {}
     for claim in ordered:
         host = urllib.parse.urlparse(claim['source_url']).hostname or ''
@@ -529,6 +547,8 @@ def main():
            'question_first_links_accepted_this_run':new_question_trails,
            'saved_direction_links_quarantined':rescreened_exclusions,
            'catalogue_field_enriched_this_run': catalogue_field_enriched,
+           'originals_awaiting_source_review':sum(c.get('question_readiness') in ('source_review_required','original_text_required') for c in found),
+           'question_ready_originals':sum(c.get('question_readiness') not in ('source_review_required','original_text_required') for c in found),
            'field_context_count_total': sum(bool(e.get('field_developments')) for e in entries.values()),
            'same_issue_direction_trails_total': sum(bool(e.get('direction_evidence')) for e in entries.values()),
            'entries_with_reported_change_or_implementation': sum(any(t.get('evidence_kind') in ('measured_or_reported_change','implementation_or_evaluation') for t in e.get('direction_evidence') or []) for e in entries.values()),

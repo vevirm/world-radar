@@ -56,9 +56,11 @@ TARGETS=[
 
 def claim_from(lead):
     url=lead.get('url') or lead.get('doi') or ''
-    return {'id':'lead-'+hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16],
-            'title':lead.get('title') or '', 'expected':lead.get('abstract') or lead.get('title') or '',
-            'source_url':url, 'original_publication':lead.get('date') or ''}
+    passage=lead.get('original_passage') or ''
+    return {'id':lead.get('original_id') or 'lead-'+hashlib.sha256(url.lower().rstrip('/').encode()).hexdigest()[:16],
+            'title':lead.get('title') or '', 'expected':passage or lead.get('abstract') or lead.get('title') or '',
+            'original_passage':passage, 'source_url':url,
+            'original_publication':lead.get('date') or ''}
 
 
 def cases(leads,n=30):
@@ -144,7 +146,7 @@ def write_report(result,mode):
     lines=['# Radar 2: question-first evidence pilot','',
            f"**Mode:** {mode} · **Cases:** {result['records_tested']} · **With possible trails:** {result['records_with_matches']} · **API calls:** {result['live_api_calls']}",
            f"**Raw OpenAlex results:** {result['raw_openalex_works_returned']} · **Successful API responses:** {result['live_successful_calls']} · **API errors:** {len(result['api_errors'])}",
-           '', '**Important:** matches are developments in *published research*, not proven real-world outcomes.',
+           '', '**Important:** only accepted, source-text-ready originals are searched. Matches are later publications, not verified real-world outcomes.',
            result['caveat'],'']
     if result['api_errors']:
         lines.extend(['', '## OpenAlex errors (not missing research)', ''])
@@ -174,7 +176,21 @@ def main():
     p.add_argument('--mode',choices=('offline','live'),default='offline')
     p.add_argument('--max-cases',type=int,default=30)
     a=p.parse_args()
-    leads=json.loads((ROOT/'research-leads.json').read_text(encoding='utf-8')).get('leads',[])
+    # Use *only* the approved Radar 1 + institutional handoff. The old pilot
+    # used generic abstracts from research-leads, bypassing original passages.
+    try:
+        from radar2_scope import original_claims
+        from radar2_questions import question_card
+    except ModuleNotFoundError:
+        from scripts.radar2_scope import original_claims
+        from scripts.radar2_questions import question_card
+    leads=[]
+    for claim in original_claims(ROOT):
+        if question_card(claim)['readiness'] in ('source_review_required','original_text_required'):
+            continue
+        leads.append({'title':claim['title'],'abstract':claim.get('abstract') or '',
+                      'date':claim['original_publication'], 'url':claim['source_url'],
+                      'original_passage':claim['original_passage'], 'original_id':claim['id']})
     if a.mode=='live':
         if a.max_cases>3:raise SystemExit('The live pilot is deliberately capped at 3 cases.')
         # Hard time/request cap; deliberately never runs 25 minutes.

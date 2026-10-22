@@ -135,6 +135,62 @@ def distinctive_words(title):
     return sorted(words,key=lambda w:(c[w],-len(w),w))[:3]
 
 
+def original_question_alignment(claim, later_title, later_abstract=''):
+    """Second, source-passage-led gate after general topic screening.
+
+    Returns (aligned, detail). We require continuity of an *object of study*,
+    not just method / governance / climate terms. When a source passage is not
+    supplied (older standalone tests), the existing screen remains in force.
+    This is conservative: non-aligned works may be useful context but never
+    become direct 'what happened' trails solely on similar titles.
+    """
+    passage=clean(claim.get('original_passage'))
+    if not passage:
+        return True, 'No original passage supplied; existing topic screen used'
+    try:
+        from .radar2_questions import tokens, STOP as QSTOP, DOMAIN_WORDS
+    except ImportError:
+        from radar2_questions import tokens, STOP as QSTOP, DOMAIN_WORDS
+    def norm(value):
+        # Light morphology: simple plurals should not decide relevance.
+        return value[:-1] if value.endswith('s') and not value.endswith(('ss','ies')) and len(value)>5 else value
+    title_terms={norm(t) for t in tokens(claim.get('title')) if t not in QSTOP}
+    passage_terms={norm(t) for t in tokens(passage) if t not in QSTOP}
+    later_title_terms={norm(t) for t in tokens(later_title) if t not in QSTOP}
+    later_terms={norm(t) for t in tokens(later_title+' '+later_abstract) if t not in QSTOP}
+    subjects=title_terms & passage_terms
+    # Primary object words (trees, soil, aviation, mortality) matter more than
+    # methodological co-occurrence. Require at least one if known.
+    objects={norm(t) for t in DOMAIN_WORDS} & (subjects | title_terms)
+    generic={'climate','change','energy','policy','security','research','technology',
+             'innovation','future','economic','development','industry','public',
+             'scenario','transport','health','population','regional',
+             'demand','expansion','prices','ecology'}
+    specific_objects=objects-generic
+    # Details present ONLY in the original passage are often what makes the
+    # question distinctive: incinerator-attributable cancer is not hospital
+    # waste management, even though their titles share many generic words.
+    passage_objects=(passage_terms-title_terms)&({norm(t) for t in DOMAIN_WORDS}-generic)
+    if passage_objects and not (passage_objects & later_terms):
+        return False, 'Original passage-specific object missing: '+', '.join(sorted(passage_objects)[:4])
+    title_overlap=title_terms & later_title_terms
+    overlap=subjects & later_terms
+    matches=title_terms & later_terms
+    if specific_objects and not (specific_objects & later_terms):
+        return False, 'Original concrete object missing: '+', '.join(sorted(specific_objects)[:4])
+    # A source with multiple subject words must share at least two; a citation
+    # or a new climate-method keyword cannot bypass this check.
+    if len(subjects)>=3 and len(overlap)<2:
+        return False, f'Only {len(overlap)} source-passage subject anchors in newer paper'
+    # A domain-specific passage may identify the real problem more clearly
+    # than the original's generic title. Incinerator/cancer results, for
+    # example, need not contain 'waste management facilities' in the title.
+    strong_passage_continuity=len(passage_objects & later_title_terms)>=2
+    if len(title_terms)>=3 and not title_overlap and len(matches)<3 and not strong_passage_continuity:
+        return False, 'Original subject not present in later title and insufficient abstract continuity'
+    return True, f'{len(overlap)} original passage anchors; {len(title_overlap)} title anchors; {len(specific_objects & later_terms)} named objects'
+
+
 def profile(claim):
     title = clean(claim.get('title'))
     description = clean(claim.get('expected') or claim.get('abstract') or '')
@@ -173,7 +229,15 @@ def query_plan(claim):
         # Avoid giant AND conjunctions and rotate in the historical context.
         issue=' '.join(anchors[:3]) if anchors else ' '.join(title.split()[:3])
         empirical=' '.join(anchors[:2] + ['monitoring']) if anchors else issue
-    return [('semantic',semantic),('issue',issue),('developments',empirical)]
+    # Add one query composed of concrete original-text concepts, not an
+    # invented prediction. Kept inside the existing <=5 call budget.
+    try:
+        from .radar2_questions import source_anchors
+    except ImportError:
+        from radar2_questions import source_anchors
+    source_terms=source_anchors(claim)
+    source_query=' '.join(source_terms[:3]) if len(source_terms)>=2 else issue
+    return [('semantic',semantic),('source_issue',source_query),('developments',empirical)]
 
 
 def geography(claim, title, abstract=''):
@@ -315,6 +379,10 @@ def evaluate(claim, work, *, discovery='semantic'):
             r'\b(projects?|projected|projecting|projections?|future scenarios?|scenarios?|simulations?|forecasts?)\b',
             title+' '+abstract,re.I)):
         value['evidence_kind']='newer_scenario_or_model'
+    aligned, alignment_basis=original_question_alignment(claim,title,abstract)
+    if not aligned:
+        return None
+    value['original_question_alignment']=alignment_basis
     # Avoid inflating a paper into a historical observation when candidate()
     # could not identify an applicable findings sentence.
     value.update({'geography':scope,'discovery':discovery})
