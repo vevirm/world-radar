@@ -42,7 +42,13 @@
       ],
       "assessment": "Hydrogen remains a serious European decarbonisation pathway, but observed rollout and economics lag policy ambition. This is an interim check of the original conditional scenario, not a finding that its 2030 proposition has failed.",
       "assessment_status": "interim_with_observed_barriers",
-      "scope_caveat": "Do not conflate the 2015 model finding with targets set by the EU in 2020–2022; the 2030 horizon is still in the future."
+      "scope_caveat": "Do not conflate the 2015 model finding with targets set by the EU in 2020–2022; the 2030 horizon is still in the future.",
+      "interpretation": {
+        "similarities": "The scenario identified hydrogen as a possible European decarbonisation route and later policy and investment continue to treat it as a serious option.",
+        "differences": "Observed deployment and costs remain much less favourable than EU ambitions, showing practical constraints that the model scenario alone did not establish would be overcome.",
+        "still_unestablished": "The conditional claim about viability in 2030 cannot yet be assessed as fulfilled or failed, and the model carbon-cap condition is not equivalent to later EU hydrogen targets.",
+        "present_relevance": "The original scenario remains a useful conditional pathway, especially for examining carbon constraints, infrastructure bottlenecks and the difference between technical possibility and rollout."
+      }
     },
     {
       "original_id": "lead-9363d7d494bf528e",
@@ -79,7 +85,13 @@
       ],
       "assessment": "The broad directional expansion appears to have occurred, but stable expansion did not mean uninterrupted annual growth. More directly comparable long-term panels for Denmark, Italy and the UK would be needed to test the consumer barriers identified in the original study.",
       "assessment_status": "direction_supported_stability_qualified",
-      "scope_caveat": "Nominal European sales are not inflation-adjusted; wider Europe totals do not prove the specific household-level explanations for Denmark, Italy and the UK."
+      "scope_caveat": "Nominal European sales are not inflation-adjusted; wider Europe totals do not prove the specific household-level explanations for Denmark, Italy and the UK.",
+      "interpretation": {
+        "similarities": "Later nominal European retail-sales figures support the anticipated broad expansion in demand for organic food.",
+        "differences": "The observed 2022 contraction does not fit an interpretation of stable expansion as uninterrupted annual growth.",
+        "still_unestablished": "Aggregate European nominal sales cannot establish the causal role of the original household-level consumer barriers in Denmark, Italy and the UK.",
+        "present_relevance": "The original questions about prices, distribution and support remain useful, while real-term comparable country panels would be needed to evaluate those explanations."
+      }
     },
     {
       "original_id": "report-3eff29ec207eb208",
@@ -123,7 +135,20 @@
       ],
       "assessment": "The risk identified in 2022 generated substantial policy action, while a 2026 independent audit shows the dependency problem remains unresolved. The warning retains strong relevance; the law and announced projects must not be presented as proof of achieved resilience.",
       "assessment_status": "warning_remains_relevant_actions_not_outcomes",
-      "scope_caveat": "Original foresight was broad; this pilot assesses only one anchored question about critical raw materials, not the whole 2022 report."
+      "scope_caveat": "Original foresight was broad; this pilot assesses only one anchored question about critical raw materials, not the whole 2022 report.",
+      "original_excerpt": "Strategically managing supply of critical materials and commodities, by adopting a long-term systemic approach to avoid a new dependency trap.",
+      "passage_review": {
+        "source_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+        "reviewed_on": "2026-10-22",
+        "verification": "checked_against_original_source",
+        "note": "Exact wording of area for action 3 on the original 2022 Commission strategic foresight report webpage."
+      },
+      "interpretation": {
+        "similarities": "After the 2022 warning, the EU enacted critical raw-materials legislation and selected projects addressing dependency risks.",
+        "differences": "Subsequent independent evaluation finds tangible diversification and actual resilience still lag the ambition of these policy responses.",
+        "still_unestablished": "Strategic-project designation is not delivered supply capacity; the long-run effect of policy on dependencies is not yet demonstrated.",
+        "present_relevance": "The original warning about a possible dependency trap remains pertinent, and policy implementation should be tracked against actual supply diversification."
+      }
     }
   ],
   "policy": [
@@ -132,6 +157,8 @@
     "Subsequent evidence must postdate the original and address same substantive question",
     "Policy or project announcements cannot be called realised outcomes",
     "Keep geography, metrics, original conditions and uncertainty separate",
-    "No artificial binary accuracy rating"
-  ]
+    "No artificial binary accuracy rating",
+    "Connection not established is publishable only after documented independent research routes; uninvestigated originals stay unassessed."
+  ],
+  "unresolved_cases": []
 }

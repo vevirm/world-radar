@@ -1,0 +1,161 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-22",
+  "method": "Reviewed originals support either a dated then-versus-now comparison or a documented inability to establish a link after scoped source checks. These are distinct from originals not yet researched. OpenAlex leads alone are never proof of developments or of their absence.",
+  "total_accepted_originals": 398,
+  "documented_comparisons": 3,
+  "documented_unresolved": 0,
+  "unassessed_originals": 395,
+  "comparisons": [
+    {
+      "id": "lead-726d2d4ffd64aca7",
+      "title": "How far away is hydrogen? Its role in the medium and long-term decarbonisation of the European energy system",
+      "historical_year": 2015,
+      "type": "Academic foresight",
+      "original_url": "https://doi.org/10.1016/j.ijhydene.2015.09.004",
+      "original_excerpt": "In this paper, the JRC-EU-TIMES model – a bottom-up, technology-rich model of the EU28 energy system – is used to assess the role of hydrogen in a future decarbonised Europe under two climate scenarios, current policy initiative (CPI) and long-term decarbonisation (CAP). Our results indicate that hydrogen could become a viable option already in 2030 – however, a long-term CO 2 cap is needed to sustain the transition.",
+      "original_claim": "JRC-EU-TIMES scenario modelling suggested hydrogen could become viable in the EU energy system around 2030 under a long-term carbon constraint; hydrogen might help decarbonise industry and transport.",
+      "condition": "Long-term carbon cap; scenario is conditional, not a guarantee or the later EU production target.",
+      "question": "Has hydrogen become more practically viable as a European decarbonisation option, and what deployment and cost constraints remain on the path to 2030?",
+      "subsequent_evidence": [
+        {
+          "year": 2024,
+          "document": "European Court of Auditors, Special report 11/2024",
+          "url": "https://www.eca.europa.eu/en/publications/SR-2024-11",
+          "finding": "The EU was unlikely to meet the 2030 renewable-hydrogen targets established years after the original paper; market rules, project maturity and demand hinder deployment.",
+          "type": "observed",
+          "source_type": "independent_institutional_evaluation"
+        },
+        {
+          "year": 2025,
+          "document": "ACER, European hydrogen markets monitoring report 2025 (covering 2024 deployments)",
+          "url": "https://www.acer.europa.eu/monitoring/European-hydrogen-markets-2025",
+          "finding": "EU electrolyser capacity was 308 MW in 2024, 51% more than before but well behind the 2024 EU policy ambition of 6 GW. Renewable hydrogen production costs were about four times conventional hydrogen costs.",
+          "type": "observed",
+          "source_type": "market_observation"
+        },
+        {
+          "year": 2026,
+          "document": "JRC, Water Electrolysis and Hydrogen in the EU: 2025 Status Report (published 14 Jan 2026)",
+          "url": "https://setis.ec.europa.eu/water-electrolysis-and-hydrogen-european-union-2025-status-report-technology-development-trends_en",
+          "finding": "EU operational electrolysis capacity was projected at 514–800 MW by end-2025; high capital costs and raw material dependencies remain.",
+          "type": "projection_mixed",
+          "source_type": "market_status_and_projection"
+        }
+      ],
+      "what_happened": "Hydrogen remains a serious European decarbonisation pathway, but observed rollout and economics lag policy ambition. This is an interim check of the original conditional scenario, not a finding that its 2030 proposition has failed.",
+      "limitation": "Do not conflate the 2015 model finding with targets set by the EU in 2020–2022; the 2030 horizon is still in the future.",
+      "interpretation": {
+        "similarities": "The scenario identified hydrogen as a possible European decarbonisation route and later policy and investment continue to treat it as a serious option.",
+        "differences": "Observed deployment and costs remain much less favourable than EU ambitions, showing practical constraints that the model scenario alone did not establish would be overcome.",
+        "still_unestablished": "The conditional claim about viability in 2030 cannot yet be assessed as fulfilled or failed, and the model carbon-cap condition is not equivalent to later EU hydrogen targets.",
+        "present_relevance": "The original scenario remains a useful conditional pathway, especially for examining carbon constraints, infrastructure bottlenecks and the difference between technical possibility and rollout."
+      },
+      "status": "Evidence-based interim assessment",
+      "source_review": "Editorial source comparison, not automated forecast scoring"
+    },
+    {
+      "id": "lead-9363d7d494bf528e",
+      "title": "Actual and potential development of consumer demand on the organic food market in Europe",
+      "historical_year": 2011,
+      "type": "Academic foresight",
+      "original_url": "https://doi.org/10.1016/j.njas.2011.01.005",
+      "original_excerpt": "A likely scenario for future demand is that of continued stable expansion, dependent upon whether increasing input costs will favour organic production, whether the relative gap between organic and conventional food prices becomes smaller, whether organic products will be distributed more widely on national markets, and whether support for research and conversion of organic production systems on the part of public authorities is enhanced.",
+      "original_claim": "A plausible scenario was continued, relatively stable expansion of organic-food demand, conditional on prices, distribution, consumer trust and public support.",
+      "condition": "Qualitative, conditional scenario rather than a fixed volume target.",
+      "question": "Did European organic-food consumer demand expand after 2011, how steadily, and do later developments support the factors originally identified?",
+      "subsequent_evidence": [
+        {
+          "year": 2014,
+          "document": "FiBL/AMI European organic market 2014, announced 2016",
+          "url": "https://www.fibl.org/en/info-centre/news/european-organic-market-continued-to-grow-in-2014",
+          "finding": "Organic retail sales in Europe reached about €26.2 billion in 2014, and the three investigated markets were among the more developed markets.",
+          "type": "observed",
+          "source_type": "retail_observation"
+        },
+        {
+          "year": 2022,
+          "document": "FiBL, The World of Organic Agriculture 2024 (reporting 2022)",
+          "url": "https://www.sinab.it/sites/default/files/FIBL-organic-world-2024_light_0.pdf",
+          "finding": "Europe-wide organic retail sales declined by about 2.2% in 2022 rather than rising every year.",
+          "type": "observed",
+          "source_type": "retail_observation"
+        },
+        {
+          "year": 2024,
+          "document": "FiBL, Europe organic market 2024 data released 10 Feb 2026",
+          "url": "https://www.fibl.org/en/info-centre/news/europes-organic-market-sets-another-record-in-2024-farmland-stable",
+          "finding": "European organic retail sales reached €58.7 billion in 2024, above the 2014 value in nominal euros.",
+          "type": "observed",
+          "source_type": "retail_observation"
+        }
+      ],
+      "what_happened": "The broad directional expansion appears to have occurred, but stable expansion did not mean uninterrupted annual growth. More directly comparable long-term panels for Denmark, Italy and the UK would be needed to test the consumer barriers identified in the original study.",
+      "limitation": "Nominal European sales are not inflation-adjusted; wider Europe totals do not prove the specific household-level explanations for Denmark, Italy and the UK.",
+      "interpretation": {
+        "similarities": "Later nominal European retail-sales figures support the anticipated broad expansion in demand for organic food.",
+        "differences": "The observed 2022 contraction does not fit an interpretation of stable expansion as uninterrupted annual growth.",
+        "still_unestablished": "Aggregate European nominal sales cannot establish the causal role of the original household-level consumer barriers in Denmark, Italy and the UK.",
+        "present_relevance": "The original questions about prices, distribution and support remain useful, while real-term comparable country panels would be needed to evaluate those explanations."
+      },
+      "status": "Evidence-based interim assessment",
+      "source_review": "Editorial source comparison, not automated forecast scoring"
+    },
+    {
+      "id": "report-3eff29ec207eb208",
+      "title": "2022 Strategic Foresight Report: Twinning the green and digital transitions in the new geopolitical context",
+      "historical_year": 2022,
+      "type": "EU institution",
+      "original_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+      "original_excerpt": "Strategically managing supply of critical materials and commodities, by adopting a long-term systemic approach to avoid a new dependency trap.",
+      "original_claim": "Strategic management and diversification of supplies of critical raw materials would be essential to the EU green and digital transitions; otherwise the EU could fall into new dependency traps.",
+      "condition": "A strategic warning and possible future vulnerability, not a numeric prediction.",
+      "question": "Did the EU recognise and act on critical raw-material dependencies after 2022, and has actual supply resilience improved?",
+      "subsequent_evidence": [
+        {
+          "year": 2024,
+          "document": "European Critical Raw Materials Act (in force 2024)",
+          "url": "https://commission.europa.eu/topics/competitiveness/green-deal-industrial-plan/european-critical-raw-materials-act_en",
+          "finding": "The EU enacted diversification and domestic-capacity policy with non-binding 2030 benchmarks for extraction, processing, recycling and single-country concentration.",
+          "type": "policy_or_project",
+          "source_type": "documented_policy_response"
+        },
+        {
+          "year": 2025,
+          "document": "European Commission strategic-project selections under CRMA",
+          "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+          "finding": "The Commission designated its first EU strategic-project list on 25 March 2025.",
+          "type": "policy_or_project",
+          "source_type": "documented_implementation"
+        },
+        {
+          "year": 2026,
+          "document": "European Court of Auditors, Special report 04/2026",
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/0ebbba88-03d4-11f1-825d-01aa75ed71a1/language-en",
+          "finding": "Auditors found diversification had not yet produced tangible results, with obstacles to production and recycling and many projects unlikely to improve supply in time for 2030.",
+          "type": "observed",
+          "source_type": "independent_outcome_evaluation"
+        },
+        {
+          "year": 2026,
+          "document": "European Commission second project selection, 9 Oct 2026",
+          "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+          "finding": "A further EU list of strategic projects was designated on 9 October 2026; designated projects are not the same thing as delivered supply capacity.",
+          "type": "policy_or_project",
+          "source_type": "documented_implementation"
+        }
+      ],
+      "what_happened": "The risk identified in 2022 generated substantial policy action, while a 2026 independent audit shows the dependency problem remains unresolved. The warning retains strong relevance; the law and announced projects must not be presented as proof of achieved resilience.",
+      "limitation": "Original foresight was broad; this pilot assesses only one anchored question about critical raw materials, not the whole 2022 report.",
+      "interpretation": {
+        "similarities": "After the 2022 warning, the EU enacted critical raw-materials legislation and selected projects addressing dependency risks.",
+        "differences": "Subsequent independent evaluation finds tangible diversification and actual resilience still lag the ambition of these policy responses.",
+        "still_unestablished": "Strategic-project designation is not delivered supply capacity; the long-run effect of policy on dependencies is not yet demonstrated.",
+        "present_relevance": "The original warning about a possible dependency trap remains pertinent, and policy implementation should be tracked against actual supply diversification."
+      },
+      "status": "Evidence-based interim assessment",
+      "source_review": "Editorial source comparison, not automated forecast scoring"
+    }
+  ],
+  "unresolved": []
+}
