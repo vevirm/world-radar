@@ -16,6 +16,7 @@ import re
 from pathlib import Path
 
 try:
+    from .radar2_deep_search import investigate as deep_investigate
     from .radar2_broad_search import discover
     from .radar2_scope import original_claims
     from .radar2_questions import question_card
@@ -24,6 +25,7 @@ try:
     from .radar2_ten_study_pilot import (historical_focus, classified, research, markdown,
         AUTHORED_FORECAST, SOURCE_STUDY, SUBSTANTIVE_TRAJECTORY, FUTURE)
 except ImportError:
+    from radar2_deep_search import investigate as deep_investigate
     from radar2_broad_search import discover
     from radar2_scope import original_claims
     from radar2_questions import question_card
@@ -139,7 +141,7 @@ def run(root=ROOT, *, mode='inspect', batch_size=4, today=None, researcher=resea
     root = Path(root)
     today = today or date.today()
     state = load_state(root / STATE_FILE)
-    ready, stats = prepare(root, broad=True) if mode in ('broad_inspect','broad_search') else prepare(root)
+    ready, stats = prepare(root, broad=True) if mode in ('broad_inspect','broad_search','deep_search') else prepare(root)
     selected = choose_batch(ready,state,n=batch_size,today=today)
     overview = {
         'schema_version':1,'mode':mode,
@@ -150,14 +152,17 @@ def run(root=ROOT, *, mode='inspect', batch_size=4, today=None, researcher=resea
                               for c in selected],
         'publication_allowed':False, 'verified_outcomes':0,
         'limitations':'General discovery uses OpenAlex, Crossref and Europe PMC and is not a comprehensive open-web search. Matches are unverified research leads, not established developments. Original claim coverage is incomplete.'}
-    if mode == 'broad_search':
+    if mode in ('broad_search','deep_search'):
         items=[discoverer(c,api_key=os.environ.get('OPENALEX_API_KEY','')) for c in selected]
         overview['broad_discovery']={'cases':items, 'verified_outcomes':0}
         overview['status']='broad_discovery_draft_completed'
+        if mode == 'deep_search':
+            overview['source_reading_audit']=deep_investigate(items,max_per_claim=5)
+            overview['status']='deep_source_reading_draft_completed'
         # Checkpoint only when all three APIs return successfully.
         new={'schema_version':1,'completed':dict(state['completed'])}
         for item in items:
-            if len(item.get('sources_checked',[]))==3 and not item.get('errors'):
+            if mode == 'broad_search' and len(item.get('sources_checked',[]))==3 and not item.get('errors'):
                 new['completed'][item['original_id']]=today.isoformat()
         (root / STATE_FILE).write_text(json.dumps(new,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     elif mode == 'search':
@@ -196,7 +201,7 @@ def run(root=ROOT, *, mode='inspect', batch_size=4, today=None, researcher=resea
         lines.append(f'- {c["title"]} ({c["original_publication"][:4]}) — `{c["route_id"]}` — {c["source_url"]}')
     if not selected:lines.append('- None due (remaining supported claims need new routes or a later refresh).')
     lines += ['', '**Search limitations:** Question-specific later research is a discovery lead only. Each source, time period, measure and connection needs subsequent verification. Repeated checked items are eligible for refresh after 90 days.', '']
-    if mode == 'broad_search':
+    if mode in ('broad_search','deep_search'):
         lines.extend(['','## Multi-index research leads (unverified)',''])
         for item in overview['broad_discovery']['cases']:
             lines.append(f"### {item['original_title']} — {item['status']}")
@@ -205,6 +210,13 @@ def run(root=ROOT, *, mode='inspect', batch_size=4, today=None, researcher=resea
                 lines.append(f"- [{lead['title']}]({lead['url']}) ({lead['published']}; {lead['index']}) — TOPIC MATCH ONLY")
             for error in item['errors']:
                 lines.append(f"- Search error: {error['index']}: {error['error']}")
+    if mode == 'deep_search':
+        lines.extend(['', '## Source-reading audit (not verified findings)', ''])
+        for audit in overview['source_reading_audit']:
+            lines.append(f"### {audit['original_id']}: {audit['pages_read']}/{audit['read_attempts']} pages readable")
+            for reading in audit['source_readings']:
+                lines.append(f"- {reading['status']}: {reading['title']} — {reading['url']}")
+                if reading.get('excerpt'):lines.append(f"  - Readable text excerpt: {reading['excerpt'][:650]}")
     if mode == 'search' and selected:
         lines.extend(['---','',markdown(report)])
         if overview.get('official_followups'):
@@ -217,7 +229,7 @@ def run(root=ROOT, *, mode='inspect', batch_size=4, today=None, researcher=resea
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root',type=Path,default=ROOT)
-    p.add_argument('--mode',choices=('inspect','search','broad_inspect','broad_search'),default='inspect')
+    p.add_argument('--mode',choices=('inspect','search','broad_inspect','broad_search','deep_search'),default='inspect')
     p.add_argument('--batch-size',type=int,choices=range(1,11),default=4)
     args=p.parse_args(argv)
     out=run(args.root,mode=args.mode,batch_size=args.batch_size)
