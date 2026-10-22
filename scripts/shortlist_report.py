@@ -14,8 +14,10 @@ from datetime import date
 from pathlib import Path
 try:
     from .evidence_policy import classify, substantive_excerpt, same_geographic_context
+    from .evidence_promotion import assess_followup
 except ImportError:
     from evidence_policy import classify, substantive_excerpt, same_geographic_context
+    from evidence_promotion import assess_followup
 
 STOP = set(('the a an and or of for in on to from as at by with across under into through toward towards '
             'about between within how what why when which where whose this that these those a study review '
@@ -125,9 +127,13 @@ def links_for(r):
         source_field = ('direction_evidence' if f in (r.get('direction_trails') or []) else
                         'follow_up_publications' if f in (r.get('followups') or []) else 'field_developments')
         checked, _why = classify(original_for_check, f, source_field)
-        if checked != 'direct':
+        promotion_score, promotion_reason = assess_followup(r, f, source_field)
+        # Report promotion uses one shared semantic/independence gate. A saved
+        # direct label is not enough; replication files and wrong-object papers
+        # remain accessible as context, never featured under NOW.
+        if promotion_score is None:
             role = 'related_context'
-        elif role != 'related_context':
+        else:
             role = 'same_issue_literature'
         # Shared screening of stored links is authoritative. Broad/indirect
         # context is retained in the atlas but never ranked as positive evidence.
@@ -137,6 +143,7 @@ def links_for(r):
                          (role is None and related_enough(r.get('title'),title)) else 'weak'))
         found.append({**f, '_from_direction':bool(f.get('evidence_kind')),
                       '_score': score, '_shared': shared, '_year': fy,
+                      '_promotion_score': promotion_score or 0, '_promotion_reason': promotion_reason,
                       '_status': confidence, '_independent': confidence == 'candidate'})
     return found
 
@@ -167,17 +174,17 @@ def sort_data(atlas):
         # to headline the strongest cases. Require an actual abstract excerpt.
         credible = sorted([l for l in links if l['_independent'] and l['_year'] >= y + 2
                            and substantive_excerpt(l.get('abstract_excerpt') or l.get('finding_from_abstract'))],
-                          key=lambda x: (x['_score'], x['_shared'], x['_from_direction'], x['_year']), reverse=True)
+                          key=lambda x: (x['_promotion_score'], x['_from_direction'], x['_year']), reverse=True)
         best = credible[0] if credible else None
         reviewed = concrete_review(r)
         item = {'record': r, 'links': links, 'best': best, 'recent': max((l['_year'] for l in credible), default=0),
                 'rated': number, 'reviewed': reviewed, 'close':len(credible), 'strength':'reviewed' if reviewed else 'candidate'}
-        if not marked_invalid(r) and (reviewed or credible):
+        if not marked_invalid(r) and credible:
             score = (220 if reviewed else 0)
-            score += 60 * (best['_score'] if best else 0) + 12 * min(len(credible), 3)
+            score += 1.6 * (best['_promotion_score'] if best else 0) + 4 * min(len(credible), 3)
             if best and best['_from_direction']: score += 8
-            score += 24 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
-            score += 22 if best and same_geographic_context(r.get('title'), best.get('title'), best.get('abstract_excerpt')) else 0
+            score += 5 * max(0, 1 - (today-item['recent'])/12) if item['recent'] else 0
+            score += 8 if best and same_geographic_context(r.get('title'), best.get('title'), best.get('abstract_excerpt')) else 0
             score += 8 if FUTURE_RE.search(r['title']) else 0
             if reviewed and number is not None:
                 score += 0.15 * number
@@ -308,7 +315,7 @@ def write_shortlist(atlas, target):
                     para(f"Newer research ({best['_year']}) discusses: {abstract[:230]}", bold_label='NOW  ')
                 else:
                     para(f"A later study ({best['_year'] or 'date unrecorded'}) explores: {best['title']}.", bold_label='NOW  ')
-                para(f"This is a same-question research trail ({item['close']} linked publication(s)). It shows continuing work, not necessarily a measured outcome.", bold_label='WHY HERE  ')
+                para("This later publication addresses the same research issue. It documents continuing scholarship, not necessarily an observed outcome.", bold_label='WHY HERE  ')
             else:
                 para('Original and later source reviews are recorded.',bold_label='WHY HERE  ')
             if item['rated'] is not None:

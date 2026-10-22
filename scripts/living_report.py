@@ -9,9 +9,9 @@ from collections import defaultdict
 from pathlib import Path
 import re
 try:
-    from .evidence_policy import classify
+    from .evidence_promotion import assess_followup
 except ImportError:
-    from evidence_policy import classify
+    from evidence_promotion import assess_followup
 
 
 # Screening-only labels. A paper's title and metadata cannot confirm an outcome.
@@ -71,12 +71,22 @@ def _has_subject_anchor(original, later):
 def _later_with_quality(rec):
     seen=set()
     result=[]
-    for f in list(rec.get('followups') or []) + list(rec.get('field_developments') or []):
-        if not isinstance(f,dict) or not str(f.get('title','')).strip():
-            continue
-        quality=_match_quality(rec.get('title'),f,seen)
-        seen.add(_work_key(f.get('title')))
-        result.append((f,quality))
+    for field, links in (('follow_up_publications',rec.get('followups') or []),
+                         ('field_developments',rec.get('field_developments') or []),
+                         ('direction_evidence',rec.get('direction_trails') or [])):
+        for f in links:
+            if not isinstance(f,dict) or not str(f.get('title','')).strip():
+                continue
+            key = _work_key(f.get('title'))
+            score, reason = assess_followup(rec, f, field)
+            if key in seen:
+                quality='POSSIBLE DUPLICATE/REPUBLICATION'
+            elif score is not None:
+                quality='POSSIBLE TOPIC MATCH — evidence-screened'
+            else:
+                quality='LOOSE/TANGENTIAL MATCH — ' + reason.replace('_',' ')
+            seen.add(key)
+            result.append(({**f, '_report_promotion_score': score},quality))
     return result
 
 
@@ -194,6 +204,11 @@ def write_report(atlas, report):
       'A possible topic match is not proof that the original future happened; substantive review is still needed.')
     by_theme=defaultdict(list)
     for row in atlas['records']:by_theme[row['topic']].append(row)
+    # Classification is relatively expensive across ~10,000 references. Cache
+    # the result ONCE so featured cards and the complete reading trail agree.
+    screened_later = {id(row): _later_with_quality(row) for row in atlas['records']}
+    def later_for(row):
+        return screened_later[id(row)]
     for t in atlas['themes']:
         doc.add_heading(t['headline'],2)
         p(t['intro'])
@@ -203,50 +218,35 @@ def write_report(atlas, report):
         for rec in by_theme[t['topic']]:
             if _status_flag(rec):
                 continue
-            # The cleanup has already screened these records; favor issue-first
-            # evidence, then same-question followups. Broader context MUST NOT
-            # become the featured answer merely because its title overlaps.
-            original_ref = {'title': rec.get('title'), 'source_url': rec.get('original_url'),
-                            'original_publication': rec.get('year')}
-            # Recheck even previously approved automatic labels. A later
-            # cleanup may be stricter than the filter which saved the link.
-            candidates = []
-            for field, links in (('direction_evidence', rec.get('direction_trails', [])),
-                                 ('follow_up_publications', rec.get('followups', []))):
-                for link in links:
-                    if link.get('evidence_role') == 'same_issue_literature' and \
-                            classify(original_ref, link, field)[0] == 'direct':
-                        candidates.append(dict(link))
+            candidates=[]
+            for f,q in later_for(rec):
+                if q.startswith('POSSIBLE TOPIC MATCH') and str(f.get('url','')).startswith('https://'):
+                    score = f.get('_report_promotion_score')
+                    if score is not None:
+                        candidates.append((score,f))
             if not candidates:
                 continue
-            best = max(candidates, key=lambda f: (
-                f.get('evidence_kind') in ('implementation_or_evaluation','measured_or_reported_change'),
-                bool(f.get('abstract_excerpt')), int(f.get('year') or 0)))
-            strongest = int(best.get('evidence_kind') in
-                ('implementation_or_evaluation','measured_or_reported_change'))
-            strong.append((strongest, bool(best.get('abstract_excerpt')), int(best.get('year') or 0), rec, best))
-        featured=sorted(strong,key=lambda x:(x[0],x[1],x[2]),reverse=True)[:4]
-        for _quality,_has_abstract,_year,rec,later in featured:
-            label(f"{rec['year'] or 'Undated'} / same-question research (not a verdict)")
+            strength,best=sorted(candidates,key=lambda pair:(pair[0],str(pair[1].get('year',''))),reverse=True)[0]
+            strong.append((strength,len(candidates),rec,best))
+        featured=sorted(strong,key=lambda x:(x[0],x[1],str(x[2].get('year',''))),reverse=True)[:4]
+        for _score,_count,rec,later in featured:
+            label(f"{rec['year'] or 'Undated'} / a possible topic connection")
             p(rec['title'],lead='THEN  ')
             p(later['title']+ (f" ({later['year']})" if later.get('year') else ''),
-              lead='LATER RESEARCH  ')
-            if later.get('abstract_excerpt'):
-                p(later['abstract_excerpt'],lead='WHAT ITS ABSTRACT SAYS  ')
+              lead='LATER RESEARCH (SCREENED TOPIC MATCH)  ')
             sources([later],original=rec['original_url'])
         if not featured:
-            p('No same-question paper passed the current evidence screen for a featured example in this theme. '
+            p('No later paper passed the basic topical screen for a featured example in this theme. '
               'All looser research leads remain in the full trail below.',small=True)
-        p('WHAT IS STILL OPEN  A later publication is a sign of continued enquiry, not proof of a real-world outcome. The original arguments, later findings, '
+        p('WHAT IS STILL OPEN  A screened publication trail shows an evolving research conversation, not a final result. The original arguments, later findings, '
           'present-day outcomes and continued relevance still need checking.',small=True)
 
     doc.add_heading('Reading trail: every linked follow-up',1)
     p(f"The scanner catalogued possible later reading for {summary['with_later_reading']} original entries. "
       'The complete list is preserved below, but each suggested link is marked to show its limitations. '
-      'Legend: same-issue? = plausible follow-up; context = relevant background, not direct evidence; no linked publication alone proves an outcome. Retracted and duplicate links are separately quarantined.')
+      'Legend: topic? = candidate same-issue work with substantive abstract; loose? = related context or uncertain connection; duplicate? = possible repeat/republication; withdrawn = retracted/withdrawn. None alone establishes real-world outcomes.')
     for theme in atlas['themes']:
-        rows=[r for r in by_theme[theme['topic']]
-              if r.get('direction_trails') or r.get('followups') or r.get('field_developments')]
+        rows=[r for r in by_theme[theme['topic']] if r.get('followups') or r.get('field_developments')]
         if not rows:continue
         doc.add_heading(f"{theme['topic']} ({len(rows)})",2)
         for row in sorted(rows,key=lambda x:(str(x.get('year','')),x['title'].lower())):
@@ -258,16 +258,12 @@ def write_report(atlas, report):
             rr.bold=True;rr.font.size=Pt(9)
             para.add_run('\n')
             hyperlink(para,'Original',row.get('original_url',''))
-            seen=set()
-            for kind, group in [('same-issue?',row.get('direction_trails') or []),
-                                ('same-issue?',row.get('followups') or []),
-                                ('context',row.get('field_developments') or [])]:
-                for later in group:
-                    url=str(later.get('url') or '')
-                    if not url.startswith('https://') or url in seen: continue
-                    seen.add(url)
-                    para.add_run('   ·   ')
-                    hyperlink(para,f"{later.get('year') or '?'} {kind}",url)
+            for later,status in later_for(row):
+                para.add_run('   ·   ')
+                yr=later.get('year') or '?'
+                short_tag = ('withdrawn' if status.startswith('WITHDRAWN') else 'duplicate?' if status.startswith('POSSIBLE DUPLICATE') else 'topic?' if status.startswith('POSSIBLE TOPIC') else 'loose?')
+                text=f'{yr} {short_tag}'
+                hyperlink(para,text,later.get('url',''))
 
     doc.add_heading('How to read a hindsight score',1)
     p('If a topic can be fairly evaluated, the point is to judge the thinking — clarity of assumptions, usefulness for planning and how the expected direction compares with evidence. '
