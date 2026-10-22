@@ -14,7 +14,7 @@ def sample(original, **overrides):
 
 
 def work(*,title='European flood damage from river floods has increased in many regions',
-         abstract='Using measured European flood loss data, we found that flood damage increased by 18 percent between 2010 and 2020 in Europe.',
+         abstract='Using measured European flood economic loss data, we found that annual economic flood damage increased by 18 percent between 2010 and 2020 in Europe.',
          year='2024-05-12',doi='https://doi.org/10.1234/empirical'):
     return {'title':title,'abstract':abstract,'publication_date':year,'doi':doi}
 
@@ -90,9 +90,9 @@ def test_searches_are_bounded_do_not_write_and_no_automatic_verdict(tmp_path):
 
 def test_openalex_empty_not_a_conclusive_evidence_gap():
     report=research(select_ten(ROOT), 'configured', lambda *_: [])
-    assert all(c['status']=='no_usable_evidence_in_bounded_openalex_search' for c in report['cases'])
-    assert all(c['no_meaningful_link_established'] and not c['fully_investigated_evidence_gap'] for c in report['cases'])
-    assert 'NOT proof' in report['cases'][0]['interpretation']
+    assert all(c['status']=='no_same_construct_evidence_in_bounded_openalex_search' for c in report['cases'])
+    assert all(not c['no_meaningful_link_established'] and not c['fully_investigated_evidence_gap'] for c in report['cases'])
+    assert 'not proof' in report['cases'][0]['interpretation']
 
 
 def test_search_error_is_reported_not_mislabeled_no_evidence():
