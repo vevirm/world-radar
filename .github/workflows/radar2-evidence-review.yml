@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Review, pilot OpenAlex searches, test Eurostat comparison, or investigate 10 originals (draft only)'
+        description: 'Review, pilot OpenAlex searches, test Eurostat comparison, or investigate research connections (draft only)'
         type: choice
         required: true
         default: review_only
@@ -13,6 +13,7 @@ on:
           - live_three_drafts
           - automatic_eurostat_comparison
           - autonomous_ten_question_drafts
+          - research_connections_three
 
 permissions:
   contents: read
@@ -29,7 +30,7 @@ jobs:
       - name: Run source-continuity tests without accessing the internet
         run: |
           python -m pip install -q pytest
-          python -m pytest -q tests/test_radar2_evidence_review.py tests/test_radar2_live_draft.py tests/test_radar2_auto_observations.py tests/test_radar2_ten_study_pilot.py tests/test_radar2_claim_links.py
+          python -m pytest -q tests/test_radar2_evidence_review.py tests/test_radar2_live_draft.py tests/test_radar2_auto_observations.py tests/test_radar2_ten_study_pilot.py tests/test_radar2_claim_links.py tests/test_radar2_connections.py
       - name: Vet three dated evidence comparisons without modifying active Radar 2
         run: python scripts/radar2_evidence_review.py
       - name: Optional OpenAlex follow-up research for three originals (draft only)
@@ -49,6 +50,13 @@ jobs:
           OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
           MAILTO: ${{ secrets.MAILTO }}
         run: python scripts/radar2_ten_study_pilot.py
+      - name: Follow citing studies, research lineage and same-question observations (3 draft originals only)
+        if: ${{ inputs.mode == 'research_connections_three' }}
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
+          MAILTO: ${{ secrets.MAILTO }}
+        run: python scripts/radar2_connections.py --max-originals 3
       - name: Save review report, not publication data
         uses: actions/upload-artifact@v4
         if: always()
@@ -62,5 +70,7 @@ jobs:
             RADAR2-AUTOMATED-OBSERVATIONS.md
             RADAR2-TEN-QUESTION-PILOT.json
             RADAR2-TEN-QUESTION-PILOT.md
+            RADAR2-CONNECTIONS-DRAFT.json
+            RADAR2-CONNECTIONS-DRAFT.md
           retention-days: 30
           if-no-files-found: warn
