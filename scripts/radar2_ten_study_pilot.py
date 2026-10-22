@@ -51,6 +51,15 @@ TOPICAL_GENERIC = set('''climate change energy systems system policy impact effe
 countries country regional global europe european sustainability sustainable
 future scenarios study analysis development environment research policy'''.split())
 EXPLICIT_EU = re.compile(r'\b(?:Europe|European|EU[ -]?(?:27|28)?|Eurostat|Eurozone|member states|Finland|Finnish|Sweden|Swedish|Germany|German|France|French|Italy|Italian|Spain|Spanish|Poland|Polish|Netherlands|Dutch|Belgium|Belgian|Denmark|Danish|Portugal|Portuguese|Ireland|Irish|Greece|Greek|Austria|Austrian|Norway|Norwegian|Switzerland|Swiss|Czech|Romania|Romanian|Baltic|Mediterranean|UK|Britain|British)\b', re.I)
+# Prefer explicit location-of-study over an incidental model/provenance name.
+# Example: "Application of the UK Foresight Obesity Model in Ireland" is
+# about outcomes *in Ireland*, not UK observations.
+STUDY_REGION = re.compile(
+    r'\b(?:in|across|throughout|within|for)\s+(?:the\s+)?'
+    r'(Ireland|United Kingdom|Great Britain|UK|Finland|Sweden|Norway|Denmark|'
+    r'France|Germany|Italy|Spain|Portugal|Poland|Netherlands|Belgium|Austria|'
+    r'Switzerland|Greece|Czech Republic|Romania|Hungary|Scotland|England)\b', re.I)
+
 NON_EU_IN_TITLE = re.compile(r'\b(?:Brazil|Brazilian|Japan|Japanese|United States|U\.S\.|USA|American|China|Chinese|India|Indian|Australia|Australian|Pakistan|Pakistani|Nigeria|Nigerian)\b', re.I)
 OBSERVED = re.compile(r'\b(?:we (?:found|find|observed|measured|recorded)|observations? (?:show|indicate)|data (?:show|reveal|indicate)|(?:has|have|had) (?:risen|increased|fallen|declined|decreased|expanded|grown)|(?:increased|decreased|declined|rose|fell|expanded|contracted) (?:by|from|to|between|in|over)|empirical (?:evidence|results)|survey (?:data|results)|measured|recorded|observed|statistics show|was (?:measured|recorded|observed))\b',re.I)
 MODEL_ONLY = re.compile(r'\b(?:is predicted|are projected|we project|we forecast|might|could|would|may|hypothesiz\w*|is expected|are expected|is likely to|we modelled|we modeled|simulation shows)\b', re.I)
@@ -163,10 +172,14 @@ def discovery_queries(claim):
     concepts=unique[:7]
     if len(concepts)<2:
         return []
-    geo='Europe'
-    m=EXPLICIT_EU.search(title)
-    if m and m.group().strip().lower() not in ('eu','europe','european','eu-27','eu-28'):
-        geo=m.group().strip()
+    # Use explicit geography of the subject, if unambiguous, before the
+    # first incidental country mention in the title.
+    regions = {m.group(1).casefold(): m.group(1) for m in STUDY_REGION.finditer(title)}
+    geo = next(iter(regions.values())) if len(regions) == 1 else 'Europe'
+    if not regions:
+        m = EXPLICIT_EU.search(title)
+        if m and m.group().strip().lower() not in ('eu','europe','european','eu-27','eu-28'):
+            geo = m.group().strip()
     # First query uses the subject and original mechanism, the second is looser.
     searches=[f'{concepts[0]} {concepts[1]} {geo}',
               f'{concepts[0]} {concepts[2]} {geo}' if len(concepts)>2 else f'{concepts[0]} {geo}']
