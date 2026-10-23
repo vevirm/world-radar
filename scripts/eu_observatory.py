@@ -98,8 +98,8 @@ def compare(claim,paper):
    'geography_overlap':('eu_in_later_text' if paper_eu else 'eu_not_established' if claim_eu else 'not_required'),
    'reason':'Shared claim-specific concepts: '+', '.join(distinctive[:6])+'; '+('EU scope visible' if paper_eu else 'EU scope not established')+'. This is a provisional connection, not an outcome finding.'}
 
-def fetch_openalex(q,after_year,limit=20):
- params={'search':q,'filter':f'from_publication_date:{after_year+1}-01-01,to_publication_date:2026-10-23','per-page':str(limit),'select':'id,doi,title,display_name,publication_year,primary_location,abstract_inverted_index'}
+def fetch_openalex(q,after_year,limit=20,page=1):
+ params={'search':q,'filter':f'from_publication_date:{after_year+1}-01-01,to_publication_date:2026-10-23','per-page':str(limit),'page':str(page),'select':'id,doi,title,display_name,publication_year,primary_location,abstract_inverted_index'}
  url='https://api.openalex.org/works?'+urllib.parse.urlencode(params)
  req=urllib.request.Request(url,headers={'User-Agent':'EU-Futures-Observatory/1.0 (research; public sources)'})
  with urllib.request.urlopen(req,timeout=25) as response:raw=json.load(response)
@@ -118,42 +118,70 @@ def fetch_openalex(q,after_year,limit=20):
 
 def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
  start=time.monotonic(); pool=claims(); store=jsonread(ROOT/'observatory-data.json',{'schema_version':1,'claims':{},'connections':{},'history':[],'cursor':0})
- current={x['id']:x for x in pool};store['claims'].update(current)
+ store['claims'].update({x['id']:x for x in pool})
  if not pool:raise RuntimeError('No eligible historical claim excerpts')
- cursor=int(store.get('cursor') or 0)%len(pool); processed=[]; errors=[]; tried=0; retained=0
- budget_end=start+minutes*60-35  # reserve time for document exports and committing
+ cursor=int(store.get('cursor') or 0)%len(pool)
+ # Run through further result pages instead of stopping after the first shallow pass.
+ # Persist the next page for every claim/query so later runs do not fetch the same page again.
+ progress=store.setdefault('search_progress',{})
+ processed=set(); errors=[]; tried=0; retained=0; searches=0; failed_this_run=set()
+ budget_end=start+minutes*60-35
  target_end=start+min_minutes*60
  stop_reason='budget_exhausted'
- while len(processed)<min(max_claims,len(pool)) and time.monotonic()<budget_end:
-  claim=pool[cursor];cursor=(cursor+1)%len(pool);processed.append(claim['id'])
-  known={c.get('source_id') for c in store['connections'].values() if c.get('claim_id')==claim['id']}
-  for q in queries(claim):
+ # At most eight OpenAlex pages per query, with 20 records each. After exhausting
+ # those pages, do not pretend the minimum is met; report that searching is exhausted.
+ max_page=8
+ while time.monotonic()<budget_end:
+  work_found=False
+  # A round-robin sweep ensures the run explores many claims before going deeper.
+  for _ in range(min(len(pool),max_claims)):
    if time.monotonic()>=budget_end:break
-   try:candidates=fetch_openalex(q,claim['year'],max_papers)
-   except Exception as e:errors.append({'claim_id':claim['id'],'query':q,'error':str(e)[:240]});continue
-   tried+=len(candidates)
-   for p in candidates:
-    if p['id'] in known:continue
-    rel=compare(claim,p)
-    if rel is None:continue
-    ident='link-'+hashlib.sha256((claim['id']+'|'+p['id']).encode()).hexdigest()[:18]
-    store['connections'][ident]={'id':ident,'claim_id':claim['id'],'source_id':p['id'],'source_title':p['title'],
-      'source_year':p['year'],'source_url':p['url'],'source_doi':p['doi'],'abstract':p['abstract'],
-      'retrieved_by':q,'relevance':rel,'review_status':'unchecked','editorial_note':'',
-      'collected_at':datetime.now(timezone.utc).isoformat()}
-    known.add(p['id']);retained+=1
-  # Checkpoint after every investigated original: an interrupted run can resume.
-  store['cursor']=cursor
-  (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
-  if len(processed)>=len(pool):
-   stop_reason='all_eligible_claims_visited';break
- if len(processed)>=max_claims and time.monotonic()<budget_end:stop_reason='claim_limit'
- elif len(processed)>=len(pool):stop_reason='all_eligible_claims_visited'
- elif time.monotonic()<budget_end:stop_reason='no_more_work'
- if time.monotonic()<target_end:
-  print(f'EARLY_STOP: {stop_reason}; active research {int(time.monotonic()-start)}s (target {min_minutes*60:.0f}s). No artificial idle time.',flush=True)
+   claim=pool[cursor];cursor=(cursor+1)%len(pool)
+   available=[]
+   for q in queries(claim):
+    key=claim['id']+'|'+q
+    page=int(progress.get(key,1))
+    if page<=max_page and key not in failed_this_run:available.append((key,q,page))
+   if not available:continue
+   # Query with the least advancement first, so both variants are explored.
+   key,q,page=min(available,key=lambda item:item[2])
+   work_found=True;processed.add(claim['id'])
+   known={c.get('source_id') for c in store['connections'].values() if c.get('claim_id')==claim['id']}
+   try:
+    candidates=fetch_openalex(q,claim['year'],max_papers,page=page)
+    searches+=1;tried+=len(candidates)
+    progress[key]=max_page+1 if len(candidates)<max_papers else page+1
+    for paper in candidates:
+     if not paper.get('id') or paper['id'] in known:continue
+     rel=compare(claim,paper)
+     if rel is None:continue
+     ident='link-'+hashlib.sha256((claim['id']+'|'+paper['id']).encode()).hexdigest()[:18]
+     store['connections'][ident]={'id':ident,'claim_id':claim['id'],'source_id':paper['id'],'source_title':paper['title'],
+       'source_year':paper['year'],'source_url':paper['url'],'source_doi':paper['doi'],'abstract':paper['abstract'],
+       'retrieved_by':q,'relevance':rel,'review_status':'unchecked','editorial_note':'',
+       'collected_at':datetime.now(timezone.utc).isoformat()}
+     known.add(paper['id']);retained+=1
+   except Exception as e:
+    errors.append({'claim_id':claim['id'],'query':q,'page':page,'error':str(e)[:240]})
+    # Avoid repeatedly hitting a failing endpoint in the same run. Retry next run.
+    progress[key]=page
+    failed_this_run.add(key)
+   store['cursor']=cursor
+   (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+  if not work_found:
+   stop_reason='all_search_pages_exhausted';break
+  if time.monotonic()>=target_end:
+   stop_reason='minimum_work_target_reached';break
+  # If API requests fail quickly, avoid an endless tight retry cycle.
+  if errors and searches==0:
+   stop_reason='all_requests_failed';break
+ elapsed=round(time.monotonic()-start,1)
+ if elapsed<min_minutes*60:
+  print(f'EARLY_STOP: {stop_reason}; active research {elapsed}s; target {min_minutes*60:.0f}s',flush=True)
  store['cursor']=cursor
- store['history'].append({'at':datetime.now(timezone.utc).isoformat(),'processed_claims':len(processed),'candidates_seen':tried,'new_connections':retained,'errors':errors[:15],'research_seconds':round(time.monotonic()-start,1),'minimum_research_target_seconds':min_minutes*60,'stop_reason':stop_reason})
+ store['history'].append({'at':datetime.now(timezone.utc).isoformat(),'processed_claims':len(processed),
+  'search_requests':searches,'candidates_seen':tried,'new_connections':retained,'errors':errors[:15],
+  'research_seconds':elapsed,'minimum_research_target_seconds':min_minutes*60,'stop_reason':stop_reason})
  store['history']=store['history'][-150:]
  (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  print(json.dumps(store['history'][-1],indent=2))
