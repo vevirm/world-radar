@@ -46,7 +46,7 @@ jobs:
       - name: Test queue selection before any research
         run: |
           python -m pip install -q pytest PyMuPDF
-          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py tests/test_radar2_deep_search.py tests/test_radar2_25min.py tests/test_radar2_reading.py tests/test_radar2_selection.py tests/test_radar2_claim_handover.py tests/test_radar2_evidence_extract.py tests/test_radar2_claim_evidence.py
+          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py tests/test_radar2_deep_search.py tests/test_radar2_25min.py tests/test_radar2_reading.py tests/test_radar2_selection.py tests/test_radar2_claim_handover.py tests/test_radar2_evidence_extract.py tests/test_radar2_claim_evidence.py tests/test_radar2_claim_search.py
       - name: 10-minute live research pilot (four claims)
         if: ${{ inputs.mode == 'live_10min' }}
         env:
