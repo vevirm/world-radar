@@ -1,9 +1,11 @@
-"""Read selected online source pages after multi-index discovery; draft findings only."""
+"""Fetch and extract readable source text for draft research, without assessing claims."""
 from __future__ import annotations
 from html.parser import HTMLParser
 import re
 import urllib.request
-from urllib.parse import urlparse
+
+MAX_DOWNLOAD = 12_000_000
+MAX_TEXT = 25_000
 
 class VisibleText(HTMLParser):
     def __init__(self):
@@ -15,32 +17,67 @@ class VisibleText(HTMLParser):
     def handle_data(self,data):
         if not self.hidden and data.strip():self.parts.append(data.strip())
 
+def extract_document(raw, content_type, url=''):
+    """Return a bounded reading sample with explicit extraction status."""
+    kind = (content_type or '').lower()
+    is_pdf = ('pdf' in kind or raw.startswith(b'%PDF-'))
+    if is_pdf:
+        try:
+            import fitz
+            with fitz.open(stream=raw, filetype='pdf') as doc:
+                pages=len(doc)
+                # Read beginning and ending; conclusions often appear toward the end.
+                indices=list(range(min(pages, 16)))
+                if pages>16:
+                    indices+=list(range(max(16,pages-8),pages))
+                parts=[doc.load_page(i).get_text('text') for i in indices]
+            content='\n'.join(parts)
+            method='pdf_text'
+        except Exception as exc:
+            return {'status':'pdf_extraction_error','error':type(exc).__name__+': '+str(exc)[:160]}
+    elif 'html' in kind or (not kind and b'<html' in raw[:1000].lower()):
+        parser=VisibleText()
+        parser.feed(raw.decode('utf-8',errors='replace'))
+        content='\n'.join(parser.parts)
+        method='html_text'
+        pages=None
+    elif 'text/plain' in kind:
+        content=raw.decode('utf-8',errors='replace')
+        method='plain_text'
+        pages=None
+    else:
+        return {'status':'unsupported_content_type','type':kind[:90]}
+    content=re.sub(r'[ \t]+',' ',content)
+    content=re.sub(r'\n{3,}','\n\n',content).strip()
+    if len(content)<300:
+        return {'status':'insufficient_readable_text','chars':len(content),'method':method}
+    # The sample is not evidence of a finding. Retain both start and end for review.
+    half=MAX_TEXT//2
+    sample=content if len(content)<=MAX_TEXT else content[:half]+'\n\n[...middle omitted for bounded research sample...]\n\n'+content[-half:]
+    result={'status':'page_text_read','method':method,'chars':len(content),'excerpt':sample,
+            'sample_truncated':len(content)>MAX_TEXT}
+    if is_pdf:result['pdf_pages']=pages
+    return result
+
 def read_page(url, *, timeout=18, opener=None):
     if not url.startswith('https://'):
         return {'status':'unsupported_url'}
-    req=urllib.request.Request(url,headers={'User-Agent':'WorldRadar/6.0 (research review; contact repository owner)','Accept':'text/html, text/plain;q=0.9, application/pdf;q=0.5'})
+    req=urllib.request.Request(url,headers={'User-Agent':'WorldRadar/6.1 (research review; contact repository owner)',
+        'Accept':'text/html, text/plain;q=0.9, application/pdf;q=0.8'})
     try:
-        context=(opener or urllib.request.urlopen)(req,timeout=timeout)
-        with context as res:
+        with (opener or urllib.request.urlopen)(req,timeout=timeout) as res:
             ctype=res.headers.get('Content-Type','').lower()
             final=res.geturl()
             if not final.startswith('https://'):return {'status':'unsafe_redirect'}
-            if 'pdf' in ctype:return {'status':'pdf_requires_separate_extraction','final_url':final}
-            if 'html' not in ctype and 'text/plain' not in ctype:return {'status':'unsupported_content_type','type':ctype[:90]}
-            raw=res.read(350_001)
-            if len(raw)>350_000:return {'status':'document_too_large','final_url':final}
-        decoded=raw.decode('utf-8',errors='replace')
-        if 'html' in ctype:
-            parser=VisibleText();parser.feed(decoded);content=' '.join(parser.parts)
-        else:content=decoded
-        content=re.sub(r'\s+',' ',content).strip()
-        if len(content)<300:return {'status':'insufficient_readable_text','final_url':final,'chars':len(content)}
-        return {'status':'page_text_read','final_url':final,'chars':len(content),'excerpt':content[:3500]}
+            raw=res.read(MAX_DOWNLOAD+1)
+            if len(raw)>MAX_DOWNLOAD:
+                return {'status':'document_too_large','final_url':final,'limit_bytes':MAX_DOWNLOAD}
+        return {'final_url':final,**extract_document(raw,ctype,final)}
     except Exception as exc:
         return {'status':'fetch_error','error':type(exc).__name__+': '+str(exc)[:130]}
 
 def investigate(discovery, *, max_per_claim=5, reader=read_page):
-    """Preserve actual fetch audit. Read pages, but never infer claim outcomes."""
+    """Preserve actual fetch audit. Reading does not itself establish an outcome."""
     output=[]
     for case in discovery:
         reads=[]
