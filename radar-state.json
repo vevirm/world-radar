@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "runs": 40,
-  "source_cursor": 17,
-  "verification_cursor": 21,
+  "runs": 41,
+  "source_cursor": 18,
+  "verification_cursor": 0,
   "archive_pages": {
     "ec": {
       "https://commission.europa.eu/strategy-and-policy/strategic-foresight_en": {
@@ -642,9 +642,9 @@
     }
   },
   "queue": [],
-  "last_discovery_utc": "2026-10-23T06:05:58.579277+00:00",
-  "last_verification_utc": "2026-10-23T06:21:07.048974+00:00",
-  "scholarly_cursor": 251,
-  "last_scholarly_scan_utc": "2026-10-23T06:18:48.312616+00:00",
-  "scholarly_queries_completed": 18658
+  "last_discovery_utc": "2026-10-23T17:54:21.490621+00:00",
+  "last_verification_utc": "2026-10-23T18:08:07.490213+00:00",
+  "scholarly_cursor": 224,
+  "last_scholarly_scan_utc": "2026-10-23T18:07:41.968447+00:00",
+  "scholarly_queries_completed": 19653
 }
