@@ -14,6 +14,7 @@ on:
           - broad_search
           - deep_search
           - deep_25min
+          - reading_check
         default: inspect
       batch_size:
         description: 'Number of distinct accepted original claims this run'
@@ -40,18 +41,23 @@ jobs:
           python-version: '3.11'
       - name: Test queue selection before any research
         run: |
-          python -m pip install -q pytest
-          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py tests/test_radar2_deep_search.py tests/test_radar2_25min.py
+          python -m pip install -q pytest PyMuPDF
+          python -m pytest -q tests/test_radar2_rolling.py tests/test_radar2_broad_search.py tests/test_radar2_deep_search.py tests/test_radar2_25min.py tests/test_radar2_reading.py
       - name: 25-minute source research (four claims, no 50-source cap)
         if: ${{ inputs.mode == 'deep_25min' }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/radar2_25min.py --minutes 25 --batch-size 4
       - name: Inspect or search new original questions
-        if: ${{ inputs.mode != 'deep_25min' }}
+        if: ${{ inputs.mode != 'deep_25min' && inputs.mode != 'reading_check' }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/radar2_rolling.py --mode "${{ inputs.mode }}" --batch-size "${{ inputs.batch_size }}"
+      - name: Reading-layer check (no online research)
+        if: ${{ inputs.mode == 'reading_check' }}
+        run: |
+          python -m pytest -q tests/test_radar2_reading.py
+          echo 'READING CHECK PASSED: PDF, large HTML, and URL safety tests.'
       - name: Save research draft and selection audit
         if: always()
         uses: actions/upload-artifact@v4
