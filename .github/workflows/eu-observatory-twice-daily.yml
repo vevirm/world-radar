@@ -1,0 +1,45 @@
+name: VV Futures — cumulative Scanner 2 and outputs
+on:
+  workflow_dispatch:
+  schedule:
+    # Scanner 1 operates at 01:17 and 13:17 UTC; start this later.
+    - cron: '45 2,14 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: radar-shared-single-runner
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install 'python-docx>=1.1,<2'
+      - name: Discover later literature and refresh documents
+        run: python scripts/eu_observatory.py scan --minutes 10 --claims 8
+      - name: Save cumulative library and outputs
+        run: |
+          git config user.name 'vv-futures-bot'
+          git config user.email 'vv-futures-bot@users.noreply.github.com'
+          git add observatory-data.json reviewed-findings.json VV-FUTURES-*.docx VV-FUTURES-*.xlsx
+          if ! git diff --cached --quiet; then
+            git commit -m 'VV Futures: accumulate candidate research and refresh outputs'
+            git pull --rebase
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: vv-futures-research-package
+          path: |
+            observatory-data.json
+            VV-FUTURES-*.docx
+            VV-FUTURES-*.xlsx
+          retention-days: 30

@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'observatory-data.json'
+      - 'reviewed-findings.json'
+      - 'VV-FUTURES-*.docx'
+      - 'VV-FUTURES-*.xlsx'
       - 'retrospective-results.json'
       - 'outlook-summary.json'
       - 'hindsight-stories.json'
