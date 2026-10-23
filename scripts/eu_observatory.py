@@ -116,16 +116,19 @@ def fetch_openalex(q,after_year,limit=20):
       'landing_url':loc.get('landing_page_url') or '','source':'OpenAlex'})
  return results
 
-def scan(minutes=10,max_claims=8,max_papers=20):
+def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
  start=time.monotonic(); pool=claims(); store=jsonread(ROOT/'observatory-data.json',{'schema_version':1,'claims':{},'connections':{},'history':[],'cursor':0})
  current={x['id']:x for x in pool};store['claims'].update(current)
  if not pool:raise RuntimeError('No eligible historical claim excerpts')
  cursor=int(store.get('cursor') or 0)%len(pool); processed=[]; errors=[]; tried=0; retained=0
- while len(processed)<max_claims and time.monotonic()-start<minutes*60-5:
+ budget_end=start+minutes*60-35  # reserve time for document exports and committing
+ target_end=start+min_minutes*60
+ stop_reason='budget_exhausted'
+ while len(processed)<min(max_claims,len(pool)) and time.monotonic()<budget_end:
   claim=pool[cursor];cursor=(cursor+1)%len(pool);processed.append(claim['id'])
   known={c.get('source_id') for c in store['connections'].values() if c.get('claim_id')==claim['id']}
   for q in queries(claim):
-   if time.monotonic()-start>minutes*60-5:break
+   if time.monotonic()>=budget_end:break
    try:candidates=fetch_openalex(q,claim['year'],max_papers)
    except Exception as e:errors.append({'claim_id':claim['id'],'query':q,'error':str(e)[:240]});continue
    tried+=len(candidates)
@@ -139,9 +142,18 @@ def scan(minutes=10,max_claims=8,max_papers=20):
       'retrieved_by':q,'relevance':rel,'review_status':'unchecked','editorial_note':'',
       'collected_at':datetime.now(timezone.utc).isoformat()}
     known.add(p['id']);retained+=1
-  if len(processed)>=len(pool):break
+  # Checkpoint after every investigated original: an interrupted run can resume.
+  store['cursor']=cursor
+  (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+  if len(processed)>=len(pool):
+   stop_reason='all_eligible_claims_visited';break
+ if len(processed)>=max_claims and time.monotonic()<budget_end:stop_reason='claim_limit'
+ elif len(processed)>=len(pool):stop_reason='all_eligible_claims_visited'
+ elif time.monotonic()<budget_end:stop_reason='no_more_work'
+ if time.monotonic()<target_end:
+  print(f'EARLY_STOP: {stop_reason}; active research {int(time.monotonic()-start)}s (target {min_minutes*60:.0f}s). No artificial idle time.',flush=True)
  store['cursor']=cursor
- store['history'].append({'at':datetime.now(timezone.utc).isoformat(),'processed_claims':len(processed),'candidates_seen':tried,'new_connections':retained,'errors':errors[:15]})
+ store['history'].append({'at':datetime.now(timezone.utc).isoformat(),'processed_claims':len(processed),'candidates_seen':tried,'new_connections':retained,'errors':errors[:15],'research_seconds':round(time.monotonic()-start,1),'minimum_research_target_seconds':min_minutes*60,'stop_reason':stop_reason})
  store['history']=store['history'][-150:]
  (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  print(json.dumps(store['history'][-1],indent=2))
@@ -209,7 +221,7 @@ def build():
  print('Built',len(claims0),'claims,',len(links),'candidate connections,',len(reviewed),'reviewed accounts')
 
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('command',choices=['scan','build']);parser.add_argument('--minutes',type=float,default=10);parser.add_argument('--claims',type=int,default=8)
+ parser=argparse.ArgumentParser();parser.add_argument('command',choices=['scan','build']);parser.add_argument('--minutes',type=float,default=10);parser.add_argument('--claims',type=int,default=400);parser.add_argument('--min-minutes',type=float,default=15)
  args=parser.parse_args()
- if args.command=='scan':scan(args.minutes,args.claims);build()
+ if args.command=='scan':scan(args.minutes,args.claims,min_minutes=args.min_minutes);build()
  else:build()
