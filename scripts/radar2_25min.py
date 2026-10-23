@@ -13,7 +13,7 @@ import time
 from radar2_rolling import ROOT, STATE_FILE, load_state, prepare, choose_batch
 from radar2_broad_search import source_queries, fetch_json, extract, later, terms, query_for
 from radar2_deep_search import read_page
-from radar2_source_selection import select_source
+from radar2_claim_evidence import assess_connection, evidence_card
 from radar2_evidence_extract import extract_findings
 
 OUTPUT = 'RADAR2-25MIN-RESEARCH.json'
@@ -44,6 +44,7 @@ def paged_params(source, params, page):
 def save(root, report):
     report['updated_utc'] = datetime.now(timezone.utc).isoformat()
     (root / OUTPUT).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (root / 'RADAR2-EVIDENCE-CARDS.json').write_text(json.dumps([evidence_card(c) for c in report['cases']], ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     lines = ['# Radar 2 — minimum 25-minute investigation', '',
              '**Unverified research draft. No outcomes published.**', '',
              f"Elapsed: {report['elapsed_seconds']/60:.1f} minutes; rounds: {report['rounds']}; source reads attempted: {report['total_reads']}; successful document reads: {report['pages_read']}.",
@@ -94,7 +95,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
                             if address in case['_seen']:
                                 continue
                             case['_seen'].add(address)
-                            keep, reason = select_source(claim, item)
+                            keep, detail = assess_connection(claim, item)
                             if not keep:
                                 case['screened_out'] += 1
                                 continue
@@ -103,7 +104,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
                             outcome=reader(address)
                             row={'index':source,'url':address,'title':item.get('title'),
                                  'published':item.get('date'),'connection_status':'metadata_screened_pending_full_text',
-                                 'selection_reason':reason, 'geographic_match':'not_assessed',
+                                 'selection_reason':detail.get('reason'), 'selection_detail':detail, 'geographic_match':detail.get('geography','not_assessed'),
                                  'observed_development_confirmed':False, **outcome}
                             if outcome.get('status') == 'page_text_read':
                                 row['candidate_findings'] = extract_findings(outcome.get('excerpt', ''), claim.get('title', ''))
