@@ -7,6 +7,25 @@ import urllib.request
 MAX_DOWNLOAD = 12_000_000
 MAX_TEXT = 25_000
 
+# Publisher protection and login pages are not research full text, even when
+# their visible text is long enough to pass the character-count threshold.
+ACCESS_CHALLENGES = (
+    'client challenge',
+    'enable javascript to proceed',
+    'checking your browser before accessing',
+    'verify you are human',
+    'just a moment... checking your browser',
+    'access denied',
+    'please complete the security check',
+)
+
+def access_challenge(content):
+    # Test only the start: research articles can legitimately discuss blocked
+    # access in their body without themselves being a challenge page.
+    beginning = str(content or '')[:1800].lower()
+    return any(phrase in beginning for phrase in ACCESS_CHALLENGES)
+
+
 class VisibleText(HTMLParser):
     def __init__(self):
         super().__init__(); self.parts=[]; self.hidden=0
@@ -49,6 +68,8 @@ def extract_document(raw, content_type, url=''):
         return {'status':'unsupported_content_type','type':kind[:90]}
     content=re.sub(r'[ \t]+',' ',content)
     content=re.sub(r'\n{3,}','\n\n',content).strip()
+    if method == 'html_text' and access_challenge(content):
+        return {'status':'access_challenge_not_read', 'method':method, 'chars':len(content)}
     if len(content)<300:
         return {'status':'insufficient_readable_text','chars':len(content),'method':method}
     # The sample is not evidence of a finding. Retain both start and end for review.
