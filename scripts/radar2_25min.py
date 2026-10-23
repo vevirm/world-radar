@@ -13,6 +13,7 @@ import time
 from radar2_rolling import ROOT, STATE_FILE, load_state, prepare, choose_batch
 from radar2_broad_search import source_queries, fetch_json, extract, later, terms, query_for
 from radar2_deep_search import read_page
+from radar2_source_selection import select_source
 
 OUTPUT = 'RADAR2-25MIN-RESEARCH.json'
 MARKDOWN = 'RADAR2-25MIN-RESEARCH.md'
@@ -29,7 +30,7 @@ def save(root, report):
     (root / OUTPUT).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = ['# Radar 2 — minimum 25-minute investigation', '',
              '**Unverified research draft. No outcomes published.**', '',
-             f"Elapsed: {report['elapsed_seconds']/60:.1f} minutes; rounds: {report['rounds']}; source reads attempted: {report['total_reads']}; successful HTML/plain-text reads: {report['pages_read']}.",
+             f"Elapsed: {report['elapsed_seconds']/60:.1f} minutes; rounds: {report['rounds']}; source reads attempted: {report['total_reads']}; successful document reads: {report['pages_read']}.",
              '', '## Claims', '']
     for c in report['cases']:
         lines += [f"### {c['title']}", f"Original: {c['original_id']}; search: {c['query']}; attempted reads: {len(c['readings'])}", '']
@@ -52,7 +53,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
     for claim in selected:
         q=query_for(claim)
         cases.append({'original_id':claim['id'],'title':claim['title'], 'query':q,
-                      'original_publication':claim['original_publication'], 'readings':[], 'errors':[],
+                      'original_publication':claim['original_publication'], 'readings':[], 'errors':[], 'screened_out':0,
                       '_seen':set(), '_anchor':set(terms(claim['title']))})
     started=clock()
     report={'mode':'deep_25min', 'minimum_minutes_requested':minutes, 'publication_allowed':False,
@@ -73,14 +74,19 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
                         payload=fetcher(url,paged_params(source,params,page))
                         for item in extract(source,payload):
                             address=str(item.get('url') or '')
-                            if (not address.startswith('https://') or address in case['_seen'] or
-                                not later(claim['original_publication'],item.get('date')) or
-                                len(case['_anchor'].intersection(terms(item.get('title'))))<2):
+                            if address in case['_seen']:
                                 continue
                             case['_seen'].add(address)
+                            keep, reason = select_source(claim, item)
+                            if not keep:
+                                case['screened_out'] += 1
+                                continue
+                            if len(case['readings']) >= 30:
+                                continue
                             outcome=reader(address)
                             row={'index':source,'url':address,'title':item.get('title'),
-                                 'published':item.get('date'),'connection_status':'not_assessed',
+                                 'published':item.get('date'),'connection_status':'metadata_screened_pending_full_text',
+                                 'selection_reason':reason, 'geographic_match':'not_assessed',
                                  'observed_development_confirmed':False, **outcome}
                             case['readings'].append(row)
                             report['total_reads']+=1
