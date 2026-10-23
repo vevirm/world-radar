@@ -247,74 +247,46 @@ def make_docx(path,title,subtitle,records):
  d.save(path)
 
 def build():
+ """Regenerate ONLY the provisional working dossier for Let's see.
+
+ Editorial documents (Reviewed Findings, Historical Claims, and the Excel overview)
+ are intentionally never written here. They change only through manual curation.
+ """
  store=jsonread(ROOT/'observatory-data.json',{'claims':{},'connections':{},'history':[]})
- store['claims'].update({x['id']:x for x in claims()})
+ store.setdefault('claims',{}).update({x['id']:x for x in claims()})
  (ROOT/'observatory-data.json').write_text(json.dumps(store,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
- claims0=list(store.get('claims',{}).values()); links=list(store.get('connections',{}).values())
- claims0.sort(key=lambda a:(-a['year'],a['title']));links.sort(key=lambda x:(x['claim_id'],-x['source_year']))
+ claims0=sorted(store.get('claims',{}).values(),key=lambda a:(-a.get('year',0),a.get('title','')))
+ links=list(store.get('connections',{}).values())
+ links.sort(key=lambda x:(x.get('claim_id',''),-int(x.get('source_year',0) or 0)))
  from collections import defaultdict
  by=defaultdict(list)
- for p in links:by[p['claim_id']].append(p)
+ for p in links:by[p.get('claim_id')].append(p)
  decisions=read_decisions(ROOT/'connection-group-decisions.json')
- groups=suggest_groups(store.get('claims',{}), links, decisions)
- # Do not put unchecked material into the editorial findings Word.
- reviewed=jsonread(ROOT/'reviewed-findings.json',{'findings':[]}).get('findings',[])
- make_docx(ROOT/'VV-FUTURES-REVIEWED-FINDINGS.docx','European futures: reviewed accounts',
-   'LLM-reviewed accounts supplied 23 October 2026. Source alignment, quotations and factual interpretations still require verification before publication as established findings. Scanner runs do not change this editorial collection.',
-   [(f.get('title','Reviewed claim'),[f.get('original_claim',''),f.get('interpretation',''), 'Dossier sources: '+', '.join(f.get('sources',[])), 'Other web sources (as supplied, possibly without links): '+', '.join(f.get('web_sources_as_provided',[])), 'Editorial status: '+f.get('editorial_status','LLM review pending source verification')]) for f in reviewed] or [('No reviewed findings yet',['Upload the possible-connections dossier to an LLM, assess original and later sources, then add approved findings to reviewed-findings.json.'])])
+ groups=suggest_groups(store.get('claims',{}),links,decisions)
  possible=[]
- # Show explicit combinations separately. Rejected exact combinations are skipped.
  for g in groups:
-  c=store['claims'][g['claim_id']]
-  paras=['Group ID: '+g['id'], 'Original source: '+c.get('source_url',''),
-   'Original future claim: '+c.get('original_claim','')]
+  c=store['claims'].get(g['claim_id'],{})
+  paras=['Group ID: '+g['id'],'Original source: '+c.get('source_url',''),
+    'Original future claim: '+c.get('original_claim','')]
   for p in g['papers']:
    paras.append('Later source: '+p.get('source_title','')+' — '+p.get('source_url',''))
-  paras.append('Review status: '+g['status']+' — group association only; no outcome judgment')
+  paras.append('Review status: '+g['status']+' — possible relationship only')
   possible.append(('Claim + two later sources: '+c.get('title',''),paras))
  for c in claims0:
-  match=by[c['id']]
+  match=by.get(c['id'],[])
   if not match:continue
-  paras=['Original source ('+str(c['year'])+'): '+c['source_url'], 'Original wording ('+c['source_field']+'; '+c['source_status']+'): '+c['original_claim']]
-  for p in match[:12]:paras.extend([f"POSSIBLE {p['source_year']}: {p['source_title']} — {p['source_url']}",p['relevance']['reason'], 'Available abstract (not full text): '+(p['abstract'][:1400] or 'Unavailable')])
-  possible.append((c['title'],paras))
+  paras=['Original source ('+str(c.get('year',''))+'): '+c.get('source_url',''),
+   'Original wording ('+c.get('source_field','')+'; '+c.get('source_status','')+'): '+c.get('original_claim','')]
+  for p in match[:12]:
+   paras.extend([f"POSSIBLE {p.get('source_year','')}: {p.get('source_title','')} — {p.get('source_url','')}",
+    (p.get('relevance') or {}).get('reason',''),
+    'Available abstract (not full text): '+((p.get('abstract') or '')[:1400] or 'Unavailable')])
+  possible.append((c.get('title',''),paras))
  make_docx(ROOT/'VV-FUTURES-POSSIBLE-CONNECTIONS.docx','Possible connections — not checked',
-   'Automatically collected claim-to-publication leads. These are NOT verified outcomes or final findings. Some may be irrelevant. Check original sources, scope and later evidence before interpretation.',
-   possible or [('No candidate connections yet',['The automatic scanner has not yet retained candidate sources.'])])
- # Excel OOXML with two worksheets using standard library; URLs and originals kept.
- sheets=[('Claims',['Claim ID','Year','Original study','Original future wording','Original URL','Source status','Candidate count','Possible later sources (unchecked; up to 10)','Later source URLs (same order)'],
-  [[c['id'],c['year'],c['title'],c['original_claim'],c['source_url'],c['source_status'],len(by[c['id']]),
-    '\n'.join(p['source_title'] for p in by[c['id']][:10]),
-    '\n'.join(p['source_url'] for p in by[c['id']][:10])] for c in claims0]),
- ('Possible connections',['Connection ID','Claim ID','Original claim','Later publication','Year','URL','Ranking','EU scope','Reason for match','Abstract available','Review status','Search query'],
-  [[p['id'],p['claim_id'],store['claims'].get(p['claim_id'],{}).get('original_claim',''),p['source_title'],p['source_year'],p['source_url'],p['relevance']['rank'],p['relevance']['geography_overlap'],p['relevance']['reason'],p['abstract'],p['review_status'],p['retrieved_by']] for p in links]),
- ('Suggested groups',['Group ID','Claim ID','Later source A','Later source B','Status','Note'],
-  [[g['id'],g['claim_id'],g['papers'][0]['source_title'],g['papers'][1]['source_title'],g['status'],g['reason']] for g in groups]),
- ('LLM reviewed',['Review ID','Heading','Original publication','Interpretation','Later dossier sources','Other web sources as provided','Editorial status','Review date'],
-  [[f.get('id',''),f.get('title',''),f.get('original_claim',''),f.get('interpretation',''),'\n'.join(f.get('sources',[])),'\n'.join(f.get('web_sources_as_provided',[])),f.get('editorial_status',''),f.get('review_date','')] for f in reviewed])]
- def cell(col,row,value):
-  name='';k=col
-  while True:
-   name=chr(65+k%26)+name;k=k//26-1
-   if k<0:break
-  # Excel guard against formula injection
-  val=str(value or '')
-  if val.startswith(('=','+','-','@')):val="'"+val
-  return f'<c r="{name}{row}" t="inlineStr"><is><t>{escape(val[:30000])}</t></is></c>'
- def xmlsheet(header,rows):
-  rlist=[header]+rows
-  body=''.join(f'<row r="{i}">'+''.join(cell(j,i,v) for j,v in enumerate(row))+'</row>' for i,row in enumerate(rlist,1))
-  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0"/></sheetViews><sheetData>'+body+'</sheetData></worksheet>'
- with zipfile.ZipFile(ROOT/'VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx','w',zipfile.ZIP_DEFLATED) as z:
-  z.writestr('[Content_Types].xml','<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'+''.join(f'<Override PartName="/xl/worksheets/sheet{i}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>' for i in range(1,len(sheets)+1))+'</Types>')
-  z.writestr('_rels/.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>')
-  z.writestr('xl/workbook.xml','<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Claims" sheetId="1" r:id="rId1"/><sheet name="Possible connections" sheetId="2" r:id="rId2"/><sheet name="Suggested groups" sheetId="3" r:id="rId3"/><sheet name="LLM reviewed" sheetId="4" r:id="rId4"/></sheets></workbook>')
-  z.writestr('xl/_rels/workbook.xml.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/><Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet4.xml"/></Relationships>')
-  for i,(_,head,rows) in enumerate(sheets,1):z.writestr(f'xl/worksheets/sheet{i}.xml',xmlsheet(head,rows))
- print('Built',len(claims0),'claims,',len(links),'candidate connections,',len(reviewed),'reviewed accounts')
- # Make stable, readable public documents after the legacy export.
- from present_outputs import run as present_outputs
- present_outputs()
+  'Automatically collected research leads for “Let’s see”. These are NOT verified outcomes or final findings.',
+  possible or [('No candidate connections yet',['No candidate sources retained so far.'])])
+ print("Updated Let's see:",len(claims0),'claims,',len(links),'unchecked connections;',
+       'main-page Word and Excel left unchanged')
 
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('command',choices=['scan','build']);parser.add_argument('--minutes',type=float,default=10);parser.add_argument('--claims',type=int,default=400);parser.add_argument('--min-minutes',type=float,default=15)
