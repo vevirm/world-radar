@@ -12,7 +12,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 27
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: pip install 'python-docx>=1.1,<2'
       - name: Discover later literature and refresh documents
-        run: python scripts/eu_observatory.py scan --minutes 10 --claims 8
+        run: python -u scripts/eu_observatory.py scan --minutes 20 --min-minutes 15 --claims 400
       - name: Save cumulative library and outputs
         run: |
           git config user.name 'vv-futures-bot'
