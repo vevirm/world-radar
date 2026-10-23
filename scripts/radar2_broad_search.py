@@ -15,11 +15,30 @@ WORD = re.compile(r'[a-z][a-z-]{3,}')
 def terms(value):
     return list(dict.fromkeys(w for w in WORD.findall(str(value or '').lower()) if w not in STOP))
 
+# Generic prose words can otherwise crowd out the actual research subject.
+QUERY_FILLER = set("comments long-term outlook significant findings here some many most major various other factors results conclusions introduction summary paper article authors report reports show shows showing due depending which would could should therefore avoided increase increases decreased decrease rise rises reflecting growing projected projection projections scenario scenarios".split())
+
+
 def query_for(claim):
-    # Original title supplies the subject, passage supplies the underlying variable.
-    title = terms(claim.get('title'))[:5]
-    passage = [w for w in terms(claim.get('historical_focus') or claim.get('original_passage')) if w not in title][:2]
-    return ' '.join((title[:3] + passage)[:5])
+    """Search subsequent evidence using the historical claim, not a generic title.
+
+    The handed-over historical_focus is the original future proposition. The
+    title is only a fallback when the focus contains too little information.
+    No claim about relevance or an observed outcome is implied by this query.
+    """
+    focus = [w for w in terms(claim.get('historical_focus') or claim.get('original_passage'))
+             if w not in QUERY_FILLER]
+    title = [w for w in terms(claim.get('title')) if w not in QUERY_FILLER]
+    chosen = list(dict.fromkeys(focus))[:5]
+    if len(chosen) < 3:
+        chosen = list(dict.fromkeys(chosen + title))[:5]
+    # A geographic anchor matters when the original proposition is about Europe.
+    # Don't add Europe to claims about other regions or global developments.
+    combined = (str(claim.get('title') or '') + ' ' + str(claim.get('historical_focus') or '')).lower()
+    if any(w in combined for w in ('europe', 'european', ' eu ', 'european union')) and not any(
+        w in chosen for w in ('europe', 'european')):
+        chosen = chosen[:4] + ['europe']
+    return ' '.join(chosen)
 
 def fetch_json(base, params, timeout=15):
     url = base + '?' + urllib.parse.urlencode(params)
