@@ -312,6 +312,9 @@ def build():
   z.writestr('xl/_rels/workbook.xml.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/><Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet4.xml"/></Relationships>')
   for i,(_,head,rows) in enumerate(sheets,1):z.writestr(f'xl/worksheets/sheet{i}.xml',xmlsheet(head,rows))
  print('Built',len(claims0),'claims,',len(links),'candidate connections,',len(reviewed),'reviewed accounts')
+ # Make stable, readable public documents after the legacy export.
+ from present_outputs import run as present_outputs
+ present_outputs()
 
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('command',choices=['scan','build']);parser.add_argument('--minutes',type=float,default=10);parser.add_argument('--claims',type=int,default=400);parser.add_argument('--min-minutes',type=float,default=15)
