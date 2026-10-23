@@ -1,1 +1,722 @@
-{"findings": []}
+{
+  "schema_version": 1,
+  "notes": "Persistent LLM-reviewed accounts, not automatically verified. Never overwrite from scanner results.",
+  "findings": [
+    {
+      "id": "llm-review-20261023-001",
+      "title": "Strategic energy technology policy to 2050 (2013)",
+      "original_claim": "A strategic energy technology policy towards 2050: no-regret strategies for European technology push — https://doi.org/10.1504/ijetp.2013.058143",
+      "interpretation": "Held. The shift toward supply security it planned for happened: the JRC’s 2023 sustainability framework for EU energy technologies ranks energy security first.",
+      "sources": [
+        "Proposal for a sustainability framework for energy technologies (2023) — https://doi.org/10.2760/11063"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-002",
+      "title": "EU as a global security actor (FOCUS, 2013)",
+      "original_claim": "Analytical support to foresighting EU roles as a Global Security Actor — https://doi.org/10.11610/isij.2902",
+      "interpretation": "Partly. The EU’s security role grew, but mainly through rearmament after 2022. A 2025 editorial describes ReArm Europe’s roughly €800bn defence push, and a 2026 study finds NATO back to collective defence.",
+      "sources": [
+        "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+        "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-003",
+      "title": "Animal health and parasites in a warming Europe (2013)",
+      "original_claim": "Animal health aspects of adaptation to climate change: beating the heat and parasites in a warming Europe — https://doi.org/10.1017/s175173111300075x",
+      "interpretation": "Held. Climatic suitability for liver fluke rose through the 2000s in central and north-western Europe, matching a rise in livestock infections (2015). Climate change has also been a key driver of West Nile virus spread in Europe (2024).",
+      "sources": [
+        "Modelling recent and future climatic suitability for fasciolosis in Europe (2015) — https://doi.org/10.4081/gh.2015.352",
+        "Contribution of climate change to the spatial expansion of West Nile virus in Europe (2024) — https://doi.org/10.1038/s41467-024-45290-3"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-004",
+      "title": "Climate, air pollution and respiratory health (2013)",
+      "original_claim": "Climate change, extreme weather events, air pollution and respiratory health in Europe — https://doi.org/10.1183/09031936.00074712",
+      "interpretation": "Partly. Pollution patterns did change, but mostly for the better through regulation. It still caused about 300,000 premature EU deaths in 2020 (2023), and observed 2000–2019 declines track emission cuts (2024).",
+      "sources": [
+        "Clean air in Europe for all (2023) — https://doi.org/10.1097/ee9.0000000000000245",
+        "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-005",
+      "title": "ExxonMobil long-term energy outlook (2013)",
+      "original_claim": "Comments: The Long-Term Outlook — https://doi.org/10.2118/0113-0018-jpt",
+      "interpretation": "Held so far. Global energy demand rose 2% to a record in 2024, with China and India behind almost half the growth, and it rose another 1.7% in 2025 with every major source at a record high.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "api; downtoearth"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-006",
+      "title": "Resilient futures, UK (2013)",
+      "original_claim": "Constructing Resilient Futures: Integrating UK multi-stakeholder transport and energy resilience for 2050 — https://doi.org/10.1016/j.futures.2013.04.003",
+      "interpretation": "Held. The Covid Inquiry concluded the UK lacked resilience in 2020 and found the system had grown bureaucratic and needlessly complex. It called for radical simplification and a single independent statutory body. This evidence is about pandemics, not transport or energy.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "Chair’s Statement – Module 1 Report: Resilience and preparedness of the United Kingdom; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-007",
+      "title": "European atmosphere in 2050 (2013)",
+      "original_claim": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios — https://doi.org/10.5194/acp-13-7451-2013",
+      "interpretation": "Mostly held. Observed 2000–2019 declines track emission cuts, as its mitigation path implied, but summer ozone peaks fell less than modelled (2024).",
+      "sources": [
+        "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-008",
+      "title": "Foresight and grand challenges, Ireland (2013)",
+      "original_claim": "Foresight and “grand challenges” within research and innovation policies — https://doi.org/10.1108/14636681311310123",
+      "interpretation": "Held. Research Prioritisation, introduced in 2012, steers most competitive public research funding into 14 priority areas and was refreshed for 2018–2023. The 2022 Impact 2030 strategy added a National Grand Challenges Programme for mission-oriented challenges, backed by a €65m National Challenge Fund.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "Research Priority Areas 2018 to 2023; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-009",
+      "title": "Foresight Future Flooding, UK (2013)",
+      "original_claim": "From flood science to flood policy: the Foresight Future Flooding project seven years on — https://doi.org/10.1108/fs-06-2012-0046",
+      "interpretation": "Held. The Environment Agency’s 2024 assessment puts 6.3 million properties in England at flood risk, with the 43% jump mostly due to better data. It expects climate change to push that to about 8 million, one in four, by mid-century. River and sea risk alone is 2.4 million, slightly below the previous 2.6 million.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "hellorayo"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-010",
+      "title": "European eel larvae models (2013)",
+      "original_claim": "Integrating field data into individual-based models of the migration of European eel larvae — https://doi.org/10.3354/meps10368",
+      "interpretation": "Partly. A later Kiel ocean-model study simulated 45 years of larval drift and reproduced the recruitment swings seen in Europe, tying them to Sargasso Sea currents, though larval fate remains hard to predict.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "trebuchet-magazine"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-011",
+      "title": "Woody biomass, EU (2013)",
+      "original_claim": "Potential stocks and increments of woody biomass in the European Union under different management and climate scenarios — https://doi.org/10.1186/1750-0680-8-2",
+      "interpretation": "Held. Europe’s forest biomass losses rose 46% after 2018 as disturbances hit biomass-rich forests (2026), which backs its warning against maximising standing stock. Young northern forests drove the global biomass gain (2023, title only).",
+      "sources": [
+        "Accelerating biomass loss from forest disturbances across Europe (2026) — https://doi.org/10.1038/s41561-026-02032-y",
+        "Global increase in biomass carbon stock dominated by growth of northern young forests over past decade (2023) — https://doi.org/10.1038/s41561-023-01274-4"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-012",
+      "title": "Blue Growth maritime scenarios (2013)",
+      "original_claim": "Scenarios for selected maritime economic functions — https://doi.org/10.1007/s40309-013-0011-8",
+      "interpretation": "Open. Sectors grew unevenly: there were 447 algae producers, with macroalgae still mostly wild-harvested (2021), and critics say blue growth still leans on offshore oil, gas and big aquaculture (2020). No one has evaluated the scenarios themselves.",
+      "sources": [
+        "Current Status of the Algae Production Industry in Europe: An Emerging Sector of the Blue Bioeconomy (2021) — https://doi.org/10.3389/fmars.2020.626389",
+        "The Blue Fix: What's driving blue growth? (2020) — https://doi.org/10.1007/s11625-019-00777-7"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-013",
+      "title": "Superconductivity and the environment (2013)",
+      "original_claim": "Superconductivity and the environment: a Roadmap — https://doi.org/10.1088/0953-2048/26/11/113001",
+      "interpretation": "No. Growth isn’t being met by non-carbon energy. Wind and solar grew nine times faster than demand in 2024 but didn’t cover it, and fossil fuel use still rose just over 1%. CO2 at Mauna Loa peaked at 432 ppm in May 2026, 1.8 ppm above a year earlier.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "dieselnet; ucsd"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-014",
+      "title": "EU Decarbonisation Roadmap 2050 (2013)",
+      "original_claim": "The EU Decarbonisation Roadmap 2050—What way to walk? — https://doi.org/10.1016/j.enpol.2012.11.054",
+      "interpretation": "Partly. Net EU emissions were about 37% below 1990 in 2024, and adopted plus planned measures only reach 78% below by 2050. Member states expect 54% by 2030, just under the 55% target. The CDM route stayed marginal, with few, uneven projects in Eastern Europe (2022).",
+      "sources": [
+        "The clean development mechanism in Eastern Europe: an in-depth exploration (2022) — https://doi.org/10.1007/s11356-022-20988-3"
+      ],
+      "web_sources_as_provided": [
+        "europa; recycling-magazine"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-015",
+      "title": "NT for Podlaskie 2020 (2013)",
+      "original_claim": "Toward Identification of the Priority Lines of Research in Nanotechnology on the Basis of the Technology Foresight NT for Podlaskie 2020 — https://doi.org/10.7763/ijiet.2013.v3.293",
+      "interpretation": "Open. The project lived on in methods work: a wild-card method built on it (2015) and Podlaskie tourism foresight (2016). Nothing shows whether its nanotech priorities were funded.",
+      "sources": [
+        "Wild Cards in Polish Foresight Practice (2015) — https://doi.org/10.1016/j.sbspro.2015.11.510",
+        "NCRR - New Foresight Research Method (2016) — https://openalex.org/W2555381373"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-016",
+      "title": "Towards Europe 2035 (FOCUS, 2013)",
+      "original_claim": "Towards Europe 2035 - In Search of the Archimedean Screw: FOCUS in Perspective — https://doi.org/10.11610/isij.2912",
+      "interpretation": "Partly. Same evidence as 2, plus a 2026 book finding that EU strategic cultures were converging even before the Ukraine war.",
+      "sources": [
+        "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+        "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1",
+        "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-017",
+      "title": "Warming and wetland plants (2013)",
+      "original_claim": "Warming increases plant biomass and reduces diversity across continents, latitudes, and species migration scenarios in experimental wetland communities — https://doi.org/10.1111/gcb.12378",
+      "interpretation": "Mostly held. In an Alaskan coastal wetland, warming raised graminoid biomass by 20% in the second summer. A grassland meta-analysis found warming cut species richness by about 13% while raising biomass about 11%. However, a six-year Yellow River Delta experiment found warming reshaped the wetland community and weakened its resilience to flooding.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "3 sources, names not preserved"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-018",
+      "title": "History of futures, Dutch water scenarios (2012)",
+      "original_claim": "A history of futures: A review of scenario use in water policy studies in the Netherlands — https://doi.org/10.1016/j.envsci.2012.03.002",
+      "interpretation": "Partly. A 2016 review still found scenarios, robustness and adaptive strategies mostly handled separately, so “not yet fully exploited” still applied then.",
+      "sources": [
+        "An uncertain future, deep uncertainty, scenarios, robustness and adaptation: How do they fit together? (2016) — https://doi.org/10.1016/j.envsoft.2016.03.014"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-019",
+      "title": "After-crisis scenarios for European regions (2012)",
+      "original_claim": "After-crisis Scenarios for the European Regions — https://doi.org/10.2457/srs.42.3",
+      "interpretation": "The reference scenario held. Regions diverged, and policies stopped spreading prosperity effectively (2018).",
+      "sources": [
+        "Regional inequality in Europe: evidence, theory and policy implications (2018) — https://doi.org/10.1093/jeg/lby021"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-020",
+      "title": "Flood adaptation and ecosystem services (2012)",
+      "original_claim": "An assessment of the impact of climate adaptation measures to reduce flood risk on ecosystem services — https://doi.org/10.1007/s10980-012-9715-6",
+      "interpretation": "Held. Three European case studies found nature-based measures cheaper than grey ones for the same risk reduction, with co-benefits rather than avoided damage making up most of their value. A 2024 review warns that flood-only measures can harm people and ecosystems and that trade-offs are rarely managed jointly.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "umontpellier; doaj"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-021",
+      "title": "Finland 2050 backcasting (2012)",
+      "original_claim": "Backcasting scenarios for Finland 2050 of low emissions — https://doi.org/10.1108/14636681211256099",
+      "interpretation": "Partly. A 2022 Climate Act set carbon neutrality for 2035. Emissions outside land use fell 6% in 2024, but the land-use sector has been a net source since 2018 and forests since 2021, and the government says obligations will be missed without major action there.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "treasuryfinland; valtioneuvosto"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-022",
+      "title": "Vegetation in European Russia (2012)",
+      "original_claim": "FORECASTED TRENDS IN CHANGES OF VEGETATION IN THE EUROPEAN PART OF RUSSIA IN CONNECTION WITH GLOBAL WARMING — https://doi.org/10.24057/2071-9388-2012-5-4-4-16",
+      "interpretation": "Held, early signs. Spruce’s share in a study region on the East European Plain fell from about 50% to 35%, with climate-linked bark-beetle damage (2022).",
+      "sources": [
+        "The State of Dark Coniferous Forests on the East European Plain Due to Climate Change (2022) — https://doi.org/10.3390/life12111874"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-023",
+      "title": "Horizon scanning and sense-making (BEPA, 2012)",
+      "original_claim": "Facing the future: Scanning, synthesizing and sense-making in horizon scanning — https://doi.org/10.1093/scipol/scs021",
+      "interpretation": "Held. EU agencies now scan jointly with WHO and the JRC (2022). A check of a 2013 scan found 12 of its top 20 invasive species arrived within ten years (2025). Scanning and sense-making were still often confused in 2019.",
+      "sources": [
+        "Health horizons: Future trends and technologies from the European Medicines Agency’s horizon scanning collaborations (2022) — https://doi.org/10.3389/fmed.2022.1064003",
+        "Assessing the success of a horizon scanning approach in predicting invasive non‐native species arrival (2025) — https://doi.org/10.1111/1365-2664.70217",
+        "Horizon Scanning in Foresight – Why Horizon Scanning is only a part of the game (2019) — https://doi.org/10.1002/ffo2.23"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-024",
+      "title": "Future ozone exposure (2012)",
+      "original_claim": "Future air quality in Europe: a multi-model assessment of projected exposure to ozone — https://doi.org/10.5194/acp-12-10613-2012",
+      "interpretation": "Partly. Emission cuts drove the improvement as claimed, but ozone peaks fell less than modelled (2024). Over half of ozone deaths now come from ozone formed outside Europe (2024).",
+      "sources": [
+        "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
+        "Geographic sources of ozone air pollution and mortality burden in Europe (2024) — https://doi.org/10.1038/s41591-024-02976-x"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-025",
+      "title": "Climate change and ozone mortality (2012)",
+      "original_claim": "Impact of climate change on ozone-related mortality and morbidity in Europe — https://doi.org/10.1183/09031936.00210411",
+      "interpretation": "Open. Through 2019, summer ozone peaks were still falling, just less than modelled (2024). A 2025 projection still expects about 15% more ozone deaths in southern Europe by mid-century.",
+      "sources": [
+        "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
+        "Quantifying the Climate Penalty on Air Quality in Europe – Insights from INSPEnCaT Project (2025) — https://doi.org/10.5194/egusphere-egu25-17230"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-026",
+      "title": "UK bioenergy sustainability constraints (2012)",
+      "original_claim": "Implications of sustainability constraints on UK bioenergy development: Assessing optimistic and precautionary approaches with UK MARKAL — https://doi.org/10.1016/j.enpol.2012.05.015",
+      "interpretation": "Held. The UK’s 2023 Biomass Strategy reviewed sustainability rules and set out ways to tighten them while keeping bioenergy central (11% of electricity in 2022) and prioritising BECCS long-term. Precaution added rules rather than changing the mix.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "biodieselmagazine; pellet"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-027",
+      "title": "Farmers’ markets, Alberta and BC (2012)",
+      "original_claim": "Linking Local Food Systems and the Social Economy? Future Roles for Farmers' Markets in Alberta and British Columbia* — https://doi.org/10.1111/j.1549-0831.2011.00068.x",
+      "interpretation": "Held, based on BC data. BC market sales reached $155 million in 2023, worth $233 million to the economy, 28% above 2012 after inflation.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "straight"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-028",
+      "title": "New emerging issues and wild cards (2012)",
+      "original_claim": "New Emerging Issues and Wild Cards as Future Shakers and Shapers — https://doi.org/10.17323/1995-459x.2012.1.60.73",
+      "interpretation": "Partly. Wild-card methods were taken up in Polish regional foresight (2015), but the scanning-to-policy link was still muddled in 2019.",
+      "sources": [
+        "Wild Cards in Polish Foresight Practice (2015) — https://doi.org/10.1016/j.sbspro.2015.11.510",
+        "Horizon Scanning in Foresight – Why Horizon Scanning is only a part of the game (2019) — https://doi.org/10.1002/ffo2.23"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-029",
+      "title": "REMIND-D, Germany (2012)",
+      "original_claim": "REMIND-D: A Hybrid Energy-Economy Model of Germany — https://doi.org/10.22004/ag.econ.121911",
+      "interpretation": "Partly. Germany’s emissions fell 48% between 1990 and 2025 but barely moved in 2025. The Federal Environment Agency (UBA) projects only about 83% by 2045 under current policies, short of neutrality.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "umweltbundesamt; climatescorecard"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-030",
+      "title": "Organic food market scenarios (2012)",
+      "original_claim": "Scenarios of the organic food market in Europe — https://doi.org/10.1016/j.foodpol.2011.10.003",
+      "interpretation": "Held. European organic sales hit a record €58.7bn in 2024, up 4.1%, though farmland stayed flat at 19.6 million hectares.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "fibl"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-031",
+      "title": "Aedes albopictus suitability (2012)",
+      "original_claim": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios — https://doi.org/10.1098/rsif.2012.0138",
+      "interpretation": "Partly. By June 2025 it was established in 369 regions in 16 EU/EEA countries. It was newly established in Slovakia and Cyprus and spreading in Belgium and Germany, but also in Spain, Portugal and Greece, up from 114 regions a decade earlier. The northward spread is confirmed, but there’s no sign of the predicted southern retreat.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "europa (2 pages)"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-032",
+      "title": "Dutch GP workforce planning (2012)",
+      "original_claim": "Ten years of health workforce planning in the Netherlands: a tentative evaluation of GP planning as an example — https://doi.org/10.1186/1478-4491-10-21",
+      "interpretation": "No. About 60% of GP practices stopped accepting new patients in 2024, and the shortage is expected to grow, mainly because of ageing. The planning body itself estimated an 8% shortfall in 2022.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "rekenkamer (2 pages)"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-033",
+      "title": "CIRCE Mediterranean projections (2012)",
+      "original_claim": "The CIRCE Simulations: Regional Climate Change Projections with Realistic Representation of the Mediterranean Sea — https://doi.org/10.1175/bams-d-11-00136.1",
+      "interpretation": "Held so far. In the 2022 drought, central and southern Europe had their largest water deficit since 2002, with warming adding over 30% (2024).",
+      "sources": [
+        "Direct and lagged climate change effects intensified the 2022 European drought (2024) — https://doi.org/10.1038/s41561-024-01559-2"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-034",
+      "title": "The Great Future Debate (2012)",
+      "original_claim": "The Great Future Debate and the Struggle for the World — https://doi.org/10.1093/ahr/117.5.1411",
+      "interpretation": "Held. The FUTUREPOL project led to Andersson’s 2018 Oxford book. It shows futurists split between a closed, probability-bound science and an open future, with rival claims about how far the future could be known and controlled.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "ku; akademika"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-035",
+      "title": "EU direct payments (2012)",
+      "original_claim": "The future of direct payments system in the EU agriculture; European Commission scenarios — https://doi.org/10.22630/prs.2012.12.3.38",
+      "interpretation": "Partly. The 2013 reform tied 30% of direct payments to greening, with little evidence of environmental gains. The current CAP earmarks at least 25% of direct payments for eco-schemes, but after the 2024 farmer protests the EU lowered some environmental conditions and proposed more simplification in 2025.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "arc2020.eu; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-036",
+      "title": "UK water adaptation with weather generators (2012)",
+      "original_claim": "The use of probabilistic weather generator information for climate change adaptation in the UK water sector — https://doi.org/10.1002/met.1335",
+      "interpretation": "Partly. The same 2016 review as in 18 shows robust, adaptive planning was still being joined up.",
+      "sources": [
+        "An uncertain future, deep uncertainty, scenarios, robustness and adaptation: How do they fit together? (2016) — https://doi.org/10.1016/j.envsoft.2016.03.014"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-037",
+      "title": "NHS nursing supply (2012)",
+      "original_claim": "Using scenarios to assess the future supply of NHS nursing staff in England — https://doi.org/10.1186/1478-4491-10-16",
+      "interpretation": "Held. About 43,000 nurse posts were still vacant four years after the 2019 recruitment pledge, almost unchanged, and about 34,700 in 2024. International recruitment was the main fix, leaving the UK unusually reliant on it until 2024.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "nhs waiting list growing four times faster than the nurse workforce; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-038",
+      "title": "Eurozone scenarios (2012)",
+      "original_claim": "What We Hope, What We Fear, What We Expect: Possible Scenarios for the Future of the Eurozone — https://doi.org/10.1007/s12290-012-0210-x",
+      "interpretation": "Partly. The euro held through successive reforms, but analysts still argue a real economic government is missing (2018, 2017).",
+      "sources": [
+        "The Crisis of Functionalism and the Reform of European Economic Governance (2018) — https://doi.org/10.12797/politeja.12.2015.37.15",
+        "The reform of the European economic governance: critical aspects (2017) — https://openalex.org/W2786315619"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-039",
+      "title": "Climate change and power-sector water use (2012)",
+      "original_claim": "Will climate change affect the electricity production sector? A European study — https://doi.org/10.2166/wcc.2012.066",
+      "interpretation": "Tracking the low scenarios. Cooling-water abstraction for electricity fell about 30% between the 2000s and 2020–2023. It was the only sector to fall since 2010, though 65% of Europe’s electricity still relies on water cooling.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "europa (2 pages)"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-040",
+      "title": "Energy landscapes (2012)",
+      "original_claim": "‘Energy landscapes’: Meeting energy demands and human aspirations — https://doi.org/10.1016/j.biombioe.2012.11.022",
+      "interpretation": "Held. A 37-country review (2019) shows “energy landscapes” became an established research field.",
+      "sources": [
+        "Effects of renewable energy on landscape in Europe: Comparison of hydro, wind, solar, bio-, geothermal and infrastructure energy landscapes (2019) — https://doi.org/10.15201/hungeobull.68.4.1"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-041",
+      "title": "Organic food demand (2011)",
+      "original_claim": "Actual and potential development of consumer demand on the organic food market in Europe — https://doi.org/10.1016/j.njas.2011.01.005",
+      "interpretation": "Held. Growth continued (see 30), apart from a 2.2% drop in 2022.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "fibl"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-042",
+      "title": "Ageing and productivity, Bulgaria (2011)",
+      "original_claim": "Ageing population and labour productivity in Bulgaria — https://doi.org/10.5771/1435-2869-2011-4-521",
+      "interpretation": "Open. Eastern Europe’s population decline deepened into a major problem (2020), but there’s no productivity evidence.",
+      "sources": [
+        "The demographic challenge of Eastern Europe and potential policy options (2020) — https://doi.org/10.4337/9781839109508.00028"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-043",
+      "title": "European trees’ future ranges (2011)",
+      "original_claim": "Climate, competition and connectivity affect future migration and ranges of European trees — https://doi.org/10.1111/j.1466-8238.2011.00669.x",
+      "interpretation": "Open. There are only newer projections (boreal forests could lose up to 75% of their potential area, 2023) and early local losses (spruce, 2022).",
+      "sources": [
+        "Climate-Adapted Potential Vegetation—A European Multiclass Model Estimating the Future Potential of Natural Vegetation (2023) — https://doi.org/10.3390/f14020239",
+        "The State of Dark Coniferous Forests on the East European Plain Due to Climate Change (2022) — https://doi.org/10.3390/life12111874"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-044",
+      "title": "BPM research issues (2011)",
+      "original_claim": "Current and Future Issues in BPM Research: A European Perspective from the ERCIS Meeting 2010 — https://doi.org/10.17705/1cais.02825",
+      "interpretation": "Held. The culture–performance link the workshop flagged was studied and confirmed (2022).",
+      "sources": [
+        "The influence of BPM-supportive culture and individual process orientation on process conformance (2022) — https://doi.org/10.1108/bpmj-08-2020-0363"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-045",
+      "title": "Pharmaceutical consumption, Netherlands (2011)",
+      "original_claim": "Demographic projections of future pharmaceutical consumption in the Netherlands — https://doi.org/10.2166/wst.2011.120",
+      "interpretation": "Held. RIVM expects ageing to raise emissions and estimates at least 140 tonnes of drugs reach Dutch surface water each year. In 2017–2018, 19 substances exceeded risk limits, and a national chain approach was set up to cut residues.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "rivm (2 pages)"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-046",
+      "title": "EU transport energy to 2030 (2011)",
+      "original_claim": "Developments in Energy use for Transport in 27 European Union Countries through 2030 — https://doi.org/10.3141/2252-05",
+      "interpretation": "No, off track so far. The European Environment Agency says transport emissions have only trended weakly down since 2005 and rose 0.7% in 2024, with national projections only getting back to 1990 levels by 2030.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "europa"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-047",
+      "title": "Finland–Russia rail deregulation (2011)",
+      "original_claim": "Finland-Russia rail transport deregulation: future scenarios of market development — https://doi.org/10.1504/ijstl.2011.039377",
+      "interpretation": "No, it didn’t happen. Passenger trains stopped in March 2022 and VR wound down cross-border freight by the end of 2022. Finland left only the Vainikkala crossing open from late 2023, and a later report says Russia shut its remaining rail crossings too, calling it temporary.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "VR Group; and 3 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-048",
+      "title": "Fiscal sustainability and forecast accuracy (2011)",
+      "original_claim": "Fiscal sustainability and the accuracy of macroeconomic forecasts: Do supranational forecasts rather than government forecasts make a difference? — https://doi.org/10.1504/ijse.2011.039440",
+      "interpretation": "Held. The EU’s budgetary frameworks directive requires national forecasts to be compared with the Commission’s and large gaps explained. Later work finds optimistic growth forecasts still drive optimistic budgets, with high-profile fiscal councils helping, and that the Commission’s own fiscal forecasts turn more optimistic when a deficit threatens to breach 3%.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "3 sources, names not preserved"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-049",
+      "title": "UK food futures (2011)",
+      "original_claim": "Food futures: system transitions towards UK food security — https://doi.org/10.4337/jhre.2011.02.04",
+      "interpretation": "Partly. Shocks hit hard, with food inflation peaking at 19.1% in March 2023, the highest since 1977, yet overall UK production and trade stayed broadly stable. The Department for Environment, Food and Rural Affairs (DEFRA) calls the long-term decline of natural capital a pressing risk.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "Warnings in food security report as food chain vulnerabilities revealed; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-050",
+      "title": "Metrology research foresight (2011)",
+      "original_claim": "Foresight on the future of public research metrology in Europe — https://doi.org/10.1108/14636681111109660",
+      "interpretation": "Held. The European Metrology Programme for Innovation and Research (EMPIR) ran from 2014 with €600m and 240 projects, closing in 2026. Its successor, the European Partnership on Metrology, has €740m aimed at climate, digital and health challenges, including self-sustaining European metrology networks.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "lne; europa"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-051",
+      "title": "Depressed English region and education (2011)",
+      "original_claim": "Future scenarios for a depressed region of England: the role of education in creating alternative futures — https://doi.org/10.1108/14636681111179564",
+      "interpretation": "Partly. England raised the participation age to 17 in 2013 and 18 in 2015, but a University of Bath evaluation found only small, short-lived participation gains and rising dropout.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "schoolsweek; bath"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-052",
+      "title": "Waste facility health impacts (2011)",
+      "original_claim": "Health impact assessment of waste management facilities in three European countries — https://doi.org/10.1186/1476-069x-10-53",
+      "interpretation": "Partly. Excess cancer deaths near Spanish incinerators (2012) and dioxin exposure persisting near a closed Lausanne incinerator (2022) cast doubt on its projection that impacts fade to zero.",
+      "sources": [
+        "Cancer mortality in towns in the vicinity of incinerators and installations for the recovery or disposal of hazardous waste (2012) — https://doi.org/10.1016/j.envint.2012.10.003",
+        "Polychlorinated dibenzo-p-dioxins (PCDDs) and dibenzofurans (PCDFs) soil contamination in Lausanne, Switzerland: Combining pollution mapping and human exposure assessment for targeted risk management (2022) — https://doi.org/10.1016/j.envpol.2022.120441"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-053",
+      "title": "Integrating foresight into government (2011)",
+      "original_claim": "Integrating foresight into government. Is it possible? Is it likely? — https://doi.org/10.1108/14636681111126229",
+      "interpretation": "Partly. It’s spreading sector by sector; for example, six countries ran national drug-policy foresight with policymaker dialogues (2024). See also 8 and 23.",
+      "sources": [
+        "Applying foresight methods at the national level in the field of substance use: Experience from the DRUG-PREP project (2024) — https://doi.org/10.1093/eurpub/ckae144.540"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-054",
+      "title": "Foresight tackling obesities (2011)",
+      "original_claim": "O4-2.1 Foresight tackling obesities: future choices — https://doi.org/10.1136/jech.2011.142976b.14",
+      "interpretation": "No, not so far. Later modelling notes that the Foresight projections assumed large, sustained rises, while post-2000 data point to a flatter path. 29% of adults in England were obese in 2022, about the same as in 2019.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "nih; openprescribing"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-055",
+      "title": "Operational earthquake forecasting (2011)",
+      "original_claim": "OPERATIONAL EARTHQUAKE FORECASTING. State of Knowledge and Guidelines for Utilization — https://doi.org/10.4401/ag-5350",
+      "interpretation": "Held. Italy built OEF-Italy following the international commission’s (ICEF) guidelines. It runs around the clock issuing weekly forecasts, though it isn’t yet public, and it was validated after its first 10 years in 2023.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "EGU2017 19030; and 2 more"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-056",
+      "title": "POPs under climate change (2011)",
+      "original_claim": "Potential implications of future climate and land‐cover changes for the fate and distribution of persistent organic pollutants in Europe — https://doi.org/10.1111/j.1466-8238.2010.00547.x",
+      "interpretation": "Partly. The Arctic Monitoring and Assessment Programme (AMAP) found persistent organic pollutant levels tracking temperature, precipitation and sea ice, but the mechanisms remain unclear. Hexachlorobenzene (HCB) has been rising in the air at stations on Svalbard and Iceland. The evidence is mostly Arctic.",
+      "sources": [],
+      "web_sources_as_provided": [
+        "rsc; au"
+      ],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-057",
+      "title": "Constructivist forecasting, EU as a military power (2011)",
+      "original_claim": "The Purpose and Pitfalls of Constructivist Forecasting: Insights from Strategic Culture Research for the European Union’s Evolution as a Military Power1 — https://doi.org/10.1111/j.1468-2478.2011.00648.x",
+      "interpretation": "Held. EU strategic cultures were converging even before the Ukraine war, which then boosted EU defence thinking (2026). ReArm Europe brought a roughly €800bn defence push (2025), and “strategic autonomy” became the EU’s key frame (2026).",
+      "sources": [
+        "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566",
+        "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+        "European strategic antinomy (2026) — https://doi.org/10.1016/j.polgeo.2026.103616"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261023-058",
+      "title": "Swedish forest products (2011)",
+      "original_claim": "Trends and Possible Future Developments in Global Forest-Product Markets—Implications for the Swedish Forest Sector — https://doi.org/10.3390/f2010147",
+      "interpretation": "Partly. Wood building materials are gaining strong interest as a way to decarbonise buildings (2026), but there’s no Swedish market data.",
+      "sources": [
+        "The New European Bauhaus Academy: a novel skills, knowledge and innovation platform to boost sustainable construction within the built environment (2026) — https://doi.org/10.5281/zenodo.20586709"
+      ],
+      "web_sources_as_provided": [],
+      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
+      "review_date": "2026-10-23"
+    }
+  ]
+}
