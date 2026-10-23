@@ -18,6 +18,21 @@ from radar2_source_selection import select_source
 OUTPUT = 'RADAR2-25MIN-RESEARCH.json'
 MARKDOWN = 'RADAR2-25MIN-RESEARCH.md'
 
+def build_case(claim):
+    """Carry the source-backed future question, unchanged, into later research."""
+    card = claim.get('question_card') or {}
+    passage = str(claim.get('original_passage') or card.get('original_passage') or '')
+    if not passage.strip():
+        raise ValueError('Missing original passage: cannot research title alone')
+    return {'original_id':claim['id'], 'title':claim['title'],
+            'query':query_for(claim), 'original_publication':claim['original_publication'],
+            'original_passage':passage,
+            'original_source':card.get('original_source') or claim.get('source_url'),
+            'question_card':card,
+            'readings':[], 'errors':[], 'screened_out':0,
+            '_seen':set(), '_anchor':set(terms(claim['title']))}
+
+
 def paged_params(source, params, page):
     p = dict(params)
     if source == 'openalex': p['page'] = page
@@ -34,6 +49,8 @@ def save(root, report):
              '', '## Claims', '']
     for c in report['cases']:
         lines += [f"### {c['title']}", f"Original: {c['original_id']}; search: {c['query']}; attempted reads: {len(c['readings'])}", '']
+        lines.append('Original source passage: ' + c['original_passage'])
+        lines.append('')
         for r in c['readings']:
             lines.append(f"- {r['status']} — [{r['title']}]({r['url']}) ({r['published']}; {r['index']})")
             if r.get('excerpt'): lines.append(f"  - Extracted: {r['excerpt'][:700]}")
@@ -51,10 +68,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
     api_key=os.environ.get('OPENALEX_API_KEY','')
     cases=[]
     for claim in selected:
-        q=query_for(claim)
-        cases.append({'original_id':claim['id'],'title':claim['title'], 'query':q,
-                      'original_publication':claim['original_publication'], 'readings':[], 'errors':[], 'screened_out':0,
-                      '_seen':set(), '_anchor':set(terms(claim['title']))})
+        cases.append(build_case(claim))
     started=clock()
     report={'mode':'deep_25min', 'minimum_minutes_requested':minutes, 'publication_allowed':False,
             'verified_outcomes':0, 'coverage':coverage, 'rounds':0,'elapsed_seconds':0,
