@@ -1,65 +1,28 @@
-# The Hindsight Files · European Foresight Radar
+# VV Futures · European foresight observatory
 
-**Back then → What came next → How did the idea age?**
+**Purpose:** Gather future-oriented claims published **2011–2022** about Europe or relevant developments, find *plausible* later research addressing the same claims, and leave interpretation to a person assisted by an LLM.
 
-This is meant to be an enjoyable retrospective, not a giant machine-generated audit.
-The website now leads with short, sourced stories and keeps the research catalogue
-behind an expandable library. The Word download is a **four-page reader's digest**
-with a timeline of what was said, what was measured, and what remains unknown.
+## What the site provides
 
-**About the 1–100 numbers:** the current two policy stories show *target-level
-snapshots*, not grades for researchers or predictions (59/100 and 68/100 using
-explicitly dated 2024 measurements and stated EU 2030 goals). A true hindsight
-rating is only shown when an original passage and a later comparable outcome
-have been source-reviewed, plus an editor provides reasons and 1–100 scores for
-clarity (25%), anticipation (50%), and usefulness (25%). At the moment, **zero**
-such original forecasts are fully reviewed. Never assign an accuracy score from
-a paper title, abstract, or merely related later study.
+- `index.html`: simple visitor entrance (courtesy password `VVfutures2026.`), download links, historical-claims library. This is not real security; GitHub Pages serves documents directly.
+- `VV-FUTURES-REVIEWED-FINDINGS.docx`: editorial accounts **only**. Generated from `reviewed-findings.json`, initially empty. Scanner 2 cannot add final conclusions.
+- `VV-FUTURES-POSSIBLE-CONNECTIONS.docx`: candidate later publications, clearly **unchecked**.
+- `VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx`: cumulative claims and provisional connections.
 
-## Files that matter
+## Daily automation
 
-- `index.html` — the reader-friendly website.
-- `hindsight-stories.json` — the curated, reproducible website story feed.
-- `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx` — the short Word digest.
-- `outcome-observations.json` — editor-reviewed policy observations and target yardsticks.
-- `verified-outcomes.json` — strictly reviewed actual forecast comparisons when available.
-- `scripts/storybook.py` — generates digest and website stories from audited data.
-- `retrospective-results.json`, `outcome-review-queue.json`, `scanner2-audit.json` — the detailed scanner/review logs, **not** part of the short digest.
+The pre-existing `update-radar.yml` runs Scanner 1 twice daily, at 01:17 and 13:17 UTC. The new `eu-observatory-twice-daily.yml` follows at 02:45 and 14:45 UTC, and can also be started manually. Both cron schedules are best effort; GitHub can delay scheduled actions. The Scanner 2 job searches a rotating set of original claims rather than repeatedly covering four fixed cases. It commits `observatory-data.json` and the document outputs to `main`. It requires Actions write permission.
 
-### Refresh without live API access
+## Claim matching
 
-Run `python scripts/retrospective_radar.py --provider evidence --offline --minutes 0`
-for a fresh local digest from saved evidence. Regular GitHub Actions still run
-Scanner 2 and automatically rebuild both the website story feed and Word file.
-See the original setup notes below for deployment details.
+Passages are taken from Scanner 1's `research-leads.json` `radar2_seed.original_passage`; original years are restricted to 2011–2022. Claim-specific terms are extracted from the passage. OpenAlex searches later works. A candidate requires multiple distinguishing overlapping terms or recognisable object vocabulary; wrong periods are rejected and scope mismatch is labelled. Matching is heuristic **and not proof of relevance**. No incorrect claim–paper linkage may be published as a reviewed conclusion without editorial checking. Abstracts are not full-text reads. Retained connections store reason, search query, publication URL, abstract, and unchecked status.
 
----
+## Manual editorial updates
 
-# RADAR 2 UPDATE — OPENALEX RESEARCH IS THE DEFAULT
+To add a reviewed finding, edit `reviewed-findings.json` by adding a record to `findings` with `title`, `original_claim`, `interpretation`, and `sources` (URL strings). Run `python scripts/eu_observatory.py build`, commit the generated documents. This avoids allowing subsequent scanners to overwrite human-approved accounts. For an LLM review, upload `observatory-data.json` and the existing reviewed Word to the LLM, require source checking and approval before updating `reviewed-findings.json`.
 
-For the **scanner setup**, read [START-HERE-OPENALEX-RADAR-2.md](START-HERE-OPENALEX-RADAR-2.md). No OpenAI key is required for live OpenAlex research, which finds later studies; those study matches remain in the detailed JSON. The Word report is now deliberately short and story-led.
+## Tests and limitations
 
----
+`python -m unittest discover -s tests -p 'test_eu_observatory.py'` checks filtering and deterministic claim/source matching without internet. Earlier repository tests do not establish that historical claims are confirmed, that abstracts equal reading whole papers, or that candidate connections are true. First full live run and website publishing still need verification. The CSV-like Excel OOXML workbook is valid but has minimal formatting. A large library may require a pagination/size optimisation over time.
 
-# European Foresight Radar
-
-A simple EU foresight research observatory.
-
-- **Scanner 1** discovers research leads and writes `research-leads.json` and `stuff/WORLD_RADAR_MASTER.xlsx`. A lead is enough to enter the library; it is not automatically a verified forecast.
-- **Scanner 2** reads those leads, searches later scholarship via OpenAlex by default (or uses an explicitly selected OpenAI research route), and writes `retrospective-results.json`, `hindsight-stories.json`, `outlook-summary.json` and `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx`. The Radar 2 workflow now also uploads a downloadable `Radar-2-Word-and-Audit` artifact on every valid report-generation run.
-- **Website** (`index.html`) presents the outlook, searchable research library, reality checks and downloads. It is a static GitHub Pages site.
-
-## Start
-
-1. Upload the entire extracted repository, including `.github/workflows`, to a GitHub repository on branch `main`.
-2. Under **Settings → Secrets and variables → Actions**, add `OPENAI_API_KEY` for Scanner 2. Optional: `OPENALEX_API_KEY` for scholarly discovery.
-3. Under **Settings → Actions → General**, allow workflows to read and write repository contents. Enable GitHub Pages with **GitHub Actions** as source.
-4. Run **European Foresight Radar — Scholarly Discovery and Retrospective Verification** (Scanner 1), then **Radar 2 - outcomes and Word report** (Scanner 2). Run **Publish radar website (controlled)** if needed.
-
-## Notes
-
-GitHub's scheduled Actions are best effort. Scanner 1 targets ~25 minutes (14-minute discovery, 9-minute verification); Scanner 2 allows up to 18 minutes of evidence research, with a limit of 12 requests each run. Radar 2 runs at 04:17 and 16:17 UTC, and Radar 1 at 01:17 and 13:17 UTC. Radar 2 can generate the report without a key, but does no new independent outcome research in offline mode; GitHub Actions now marks these runs failed unless `allow_offline_report` is explicitly selected. The generated Word remains downloadable as an artifact even when a missing key triggers this warning/failure. Live APIs and GitHub deployment have not been tested here. Excel and Word contain saved results and will be refreshed when workflows succeed. GitHub Pages is public: the site and JSON source data are publicly accessible.
-
-Some legacy supporting scripts/data remain deliberately because removing them without a live integration test could break scanning. They are not shown on the website.
-
-**Current Word report:** `stuff/WHAT_WAS_EXPECTED_WHAT_HAPPENED.docx` is a four-page, visually checked hindsight digest: two dated policy observations, two approachable later-study conversations, and a scoring explanation. The 143 unverified possible forecast passages remain in `outcome-review-queue.json` instead of cluttering the Word file. Zero forecast comparisons have passed source review so far.
+**Legacy workflow:** `foresight-observatory.yml` is disabled to prevent duplicate, conflicting twice-daily Scanner 2 runs. Use the new `eu-observatory-twice-daily.yml` workflow.
