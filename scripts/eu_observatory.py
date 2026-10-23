@@ -6,6 +6,7 @@ import argparse, hashlib, json, os, re, time, urllib.parse, urllib.request, urll
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
+from connection_groups import read_decisions, suggest_groups
 
 ROOT=Path(__file__).resolve().parents[1]
 STOP=set('a an and are as at be been being by can could do for from had has have how if in into is it its may might more most of on or our should some such than that the their these this through to toward towards under using was were what when where which while will with would year years study studies research report paper results evidence analysis future futures forecasting forecast scenarios scenario projection projected long term eu european europe'.split())
@@ -208,13 +209,41 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
 
 def make_docx(path,title,subtitle,records):
  from docx import Document
- from docx.shared import Pt,Inches,RGBColor
- d=Document();sec=d.sections[0];sec.header.paragraphs[0].text='VV FUTURES  /  EUROPEAN FORESIGHT OBSERVATORY'
- d.add_heading(title,0);d.add_paragraph(subtitle)
- for head,paragraphs in records:
-  d.add_heading(head,level=2)
-  for text in paragraphs:d.add_paragraph(str(text))
- sec.footer.paragraphs[0].text='Research collection · Sources should be checked before publication as findings'
+ from docx.shared import Pt, Inches, RGBColor
+ from docx.enum.text import WD_ALIGN_PARAGRAPH
+ from docx.enum.style import WD_STYLE_TYPE
+ d=Document(); sec=d.sections[0]
+ sec.top_margin=Inches(.8);sec.bottom_margin=Inches(.75)
+ sec.left_margin=Inches(.92);sec.right_margin=Inches(.92)
+ styles=d.styles
+ normal=styles['Normal'];normal.font.name='Aptos';normal.font.size=Pt(10)
+ normal.font.color.rgb=RGBColor(42,53,65)
+ normal.paragraph_format.space_after=Pt(6)
+ for level,size in [('Title',22),('Heading 2',12)]:
+  st=styles[level];st.font.name='Aptos Display';st.font.size=Pt(size)
+  st.font.bold=True;st.font.color.rgb=RGBColor(25,67,87)
+  st.paragraph_format.space_before=Pt(14);st.paragraph_format.space_after=Pt(6)
+ if 'Source Note' not in [x.name for x in styles]:
+  small=styles.add_style('Source Note',WD_STYLE_TYPE.PARAGRAPH)
+ else:small=styles['Source Note']
+ small.font.name='Aptos';small.font.size=Pt(8.5);small.font.color.rgb=RGBColor(92,108,116)
+ small.paragraph_format.space_after=Pt(5)
+ hdr=sec.header.paragraphs[0];hdr.text='VV FUTURES  /  EUROPEAN FORESIGHT OBSERVATORY'
+ hdr.style='Source Note'
+ d.add_heading(title,0)
+ intro=d.add_paragraph(subtitle);intro.style='Source Note'
+ d.add_paragraph('')
+ for number,(head,paragraphs) in enumerate(records,1):
+  d.add_heading(f'{number}. {head}',level=2)
+  for item in paragraphs:
+   txt=str(item)
+   if not txt.strip():continue
+   p=d.add_paragraph(style='Source Note' if txt.startswith(('Original source', 'Editorial status:', 'Dossier sources:', 'Other web sources', 'Available abstract', 'Group ID:','Review status:')) else 'Normal')
+   if ':' in txt and len(txt.split(':',1)[0])<35:
+    tag,rest=txt.split(':',1);p.add_run(tag+':').bold=True;p.add_run(rest)
+   else:p.add_run(txt)
+ foot=sec.footer.paragraphs[0];foot.text='VV Futures · Research dossier · Review source links before citing'
+ foot.style='Source Note'
  d.save(path)
 
 def build():
@@ -226,12 +255,23 @@ def build():
  from collections import defaultdict
  by=defaultdict(list)
  for p in links:by[p['claim_id']].append(p)
+ decisions=read_decisions(ROOT/'connection-group-decisions.json')
+ groups=suggest_groups(store.get('claims',{}), links, decisions)
  # Do not put unchecked material into the editorial findings Word.
  reviewed=jsonread(ROOT/'reviewed-findings.json',{'findings':[]}).get('findings',[])
  make_docx(ROOT/'VV-FUTURES-REVIEWED-FINDINGS.docx','European futures: reviewed accounts',
    'LLM-reviewed accounts supplied 23 October 2026. Source alignment, quotations and factual interpretations still require verification before publication as established findings. Scanner runs do not change this editorial collection.',
    [(f.get('title','Reviewed claim'),[f.get('original_claim',''),f.get('interpretation',''), 'Dossier sources: '+', '.join(f.get('sources',[])), 'Other web sources (as supplied, possibly without links): '+', '.join(f.get('web_sources_as_provided',[])), 'Editorial status: '+f.get('editorial_status','LLM review pending source verification')]) for f in reviewed] or [('No reviewed findings yet',['Upload the possible-connections dossier to an LLM, assess original and later sources, then add approved findings to reviewed-findings.json.'])])
  possible=[]
+ # Show explicit combinations separately. Rejected exact combinations are skipped.
+ for g in groups:
+  c=store['claims'][g['claim_id']]
+  paras=['Group ID: '+g['id'], 'Original source: '+c.get('source_url',''),
+   'Original future claim: '+c.get('original_claim','')]
+  for p in g['papers']:
+   paras.append('Later source: '+p.get('source_title','')+' — '+p.get('source_url',''))
+  paras.append('Review status: '+g['status']+' — group association only; no outcome judgment')
+  possible.append(('Claim + two later sources: '+c.get('title',''),paras))
  for c in claims0:
   match=by[c['id']]
   if not match:continue
@@ -242,10 +282,14 @@ def build():
    'Automatically collected claim-to-publication leads. These are NOT verified outcomes or final findings. Some may be irrelevant. Check original sources, scope and later evidence before interpretation.',
    possible or [('No candidate connections yet',['The automatic scanner has not yet retained candidate sources.'])])
  # Excel OOXML with two worksheets using standard library; URLs and originals kept.
- sheets=[('Claims',['Claim ID','Year','Original study','Original future wording','Original URL','Source status','Candidate count'],
-  [[c['id'],c['year'],c['title'],c['original_claim'],c['source_url'],c['source_status'],len(by[c['id']])] for c in claims0]),
+ sheets=[('Claims',['Claim ID','Year','Original study','Original future wording','Original URL','Source status','Candidate count','Possible later sources (unchecked; up to 10)','Later source URLs (same order)'],
+  [[c['id'],c['year'],c['title'],c['original_claim'],c['source_url'],c['source_status'],len(by[c['id']]),
+    '\n'.join(p['source_title'] for p in by[c['id']][:10]),
+    '\n'.join(p['source_url'] for p in by[c['id']][:10])] for c in claims0]),
  ('Possible connections',['Connection ID','Claim ID','Original claim','Later publication','Year','URL','Ranking','EU scope','Reason for match','Abstract available','Review status','Search query'],
   [[p['id'],p['claim_id'],store['claims'].get(p['claim_id'],{}).get('original_claim',''),p['source_title'],p['source_year'],p['source_url'],p['relevance']['rank'],p['relevance']['geography_overlap'],p['relevance']['reason'],p['abstract'],p['review_status'],p['retrieved_by']] for p in links]),
+ ('Suggested groups',['Group ID','Claim ID','Later source A','Later source B','Status','Note'],
+  [[g['id'],g['claim_id'],g['papers'][0]['source_title'],g['papers'][1]['source_title'],g['status'],g['reason']] for g in groups]),
  ('LLM reviewed',['Review ID','Heading','Original publication','Interpretation','Later dossier sources','Other web sources as provided','Editorial status','Review date'],
   [[f.get('id',''),f.get('title',''),f.get('original_claim',''),f.get('interpretation',''),'\n'.join(f.get('sources',[])),'\n'.join(f.get('web_sources_as_provided',[])),f.get('editorial_status',''),f.get('review_date','')] for f in reviewed])]
  def cell(col,row,value):
@@ -264,8 +308,8 @@ def build():
  with zipfile.ZipFile(ROOT/'VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx','w',zipfile.ZIP_DEFLATED) as z:
   z.writestr('[Content_Types].xml','<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'+''.join(f'<Override PartName="/xl/worksheets/sheet{i}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>' for i in range(1,len(sheets)+1))+'</Types>')
   z.writestr('_rels/.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>')
-  z.writestr('xl/workbook.xml','<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Claims" sheetId="1" r:id="rId1"/><sheet name="Possible connections" sheetId="2" r:id="rId2"/><sheet name="LLM reviewed" sheetId="3" r:id="rId3"/></sheets></workbook>')
-  z.writestr('xl/_rels/workbook.xml.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/></Relationships>')
+  z.writestr('xl/workbook.xml','<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Claims" sheetId="1" r:id="rId1"/><sheet name="Possible connections" sheetId="2" r:id="rId2"/><sheet name="Suggested groups" sheetId="3" r:id="rId3"/><sheet name="LLM reviewed" sheetId="4" r:id="rId4"/></sheets></workbook>')
+  z.writestr('xl/_rels/workbook.xml.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/><Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet4.xml"/></Relationships>')
   for i,(_,head,rows) in enumerate(sheets,1):z.writestr(f'xl/worksheets/sheet{i}.xml',xmlsheet(head,rows))
  print('Built',len(claims0),'claims,',len(links),'candidate connections,',len(reviewed),'reviewed accounts')
 
