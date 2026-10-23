@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T18:25:33.390987+00:00",
+  "generated_at": "2026-10-23T06:28:19.803318+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 600,
+  "original_records": 612,
   "selection_counts": {
-    "active": 600
+    "active": 612
   },
-  "rejected_identifier_count": 8766,
+  "rejected_identifier_count": 9272,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -793,6 +793,15 @@
       "investigation_type": "strategic_future_question"
     },
     {
+      "doi": "10.1127/0941-2948/2014/0549",
+      "title": "Climate change signal of future climate projections for Aachen, Germany, in terms of temperature and precipitation",
+      "date": "2014-06-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "A multi-model ensemble of regional climate projections is used to estimate the climate change signal in terms of temperature and precipitation for the city of Aachen, Germany, until the end of the current century.Since the combination of heat and high moisture content in the ambient air is assumed to adversely affect human health, the equivalent temperature is employed as an indicator for heat stress and applied to identify heat waves.As prolonged periods of high temperatures may also cause summer drought, summer precipitation and dry periods are analyzed as well.The study refers to regional climate projections (A1B emission scenario) of the statistical climate models STARII and WETTREG and the dynamical climate models REMO and COSMO-CLM.The model outputs are compared a) with each other in order to assess discrepancies between them and b) with the 30-year baseline period of 1971-2000 in order to estimate future changes in heat load and precipitation patterns for the summer months of June, July and August.Based on median realizations of the model runs, further warming of approximately 1-2 K is expected by the middle of the 21 st century and 3-4 K by 2100.These changes will probably be accompanied by an increase in variance.Maximum temperature shows the greatest enhancement (+1.9 K 2031-2060 and 4.3 K 2071-2100, ensemble mean) causing almost a doubling of (extreme) hot days and a trebling of tropical nights as soon as the middle of the century.According to this temperature development heat waves are likely to last longer and occur more often in future whereas their intensity is not expected to change significantly.An increasing number of heat waves is concurrent with a decreasing amount of rainfall in the summer months until 2100.All four climate projections indicate a decrease in precipitation in summer until 2100 with -17 % on average.The highest decrease is shown by COSMO-CLM with -30 % rainfall in June for the period of 2071-2100.Dry periods are expected to occur 3 times more often at the end of the current century and to last longer by 1 day (COSMO-CLM) to 3 days (WETTREG) compared to the period of 1971-2000.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.4018/ijtd.2014070103",
       "title": "Forecasting the Diffusion of Gigabit Home Networking In Europe",
       "date": "2014-07-01",
@@ -1099,6 +1108,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1080/0952813x.2015.1024493",
+      "title": "A decision support system to find the best water allocation strategies in a Mediterranean river basin in future scenarios of global change",
+      "date": "2015-04-15",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Several scenarios have been constructed to evaluate different sectorial water allocation policies to mitigate the water scarcity induced by global change.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1016/j.scs.2015.03.010",
       "title": "Long-term scenarios for reaching climate targets and energy security in UK",
       "date": "2015-04-17",
@@ -1223,6 +1241,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Time banks are particularly interesting for the future of services: they address all sorts of services while the time-bank “value” of these different types of services does not necessarily reflect their actual value in the free market; impacts may spread from the mere coverage of people’s needs, to increased social capital and community empowerment; and some scholars consider them as flexible forms of co-production, or even as enablers of wider social change.",
       "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1007/s40309-015-0069-6",
+      "title": "Technopolis, shared resources or controlled mobility? A net-based Delphi-study to explore visions of future urban daily mobility in Norway",
+      "date": "2015-08-13",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "An explorative factor analysis (principal component analysis) is applied to reveal three slightly different understandings of how the urban future may look like in 2050. Although there are general agreements on the need for change, different ideas and visions for the future dominate across different groups of stakeholders and academics.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.1093/cjres/rsv023",
@@ -1873,6 +1900,15 @@
       "investigation_type": "projection_or_forecast"
     },
     {
+      "doi": "10.1007/s12544-017-0252-x",
+      "title": "Policy insights and modelling challenges: The case of passenger car powertrain technology transition in the European Union",
+      "date": "2017-07-05",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We then transfer the policy scenarios to other EU member states and assess the transferability of the policies.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1108/jtf-01-2017-0001",
       "title": "Conditional forecasts of tourism exports and tourism export prices of the EU-15 within a global vector autoregression framework",
       "date": "2017-07-27",
@@ -2015,6 +2051,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "With the right set of incentives in place at EU and Member States levels, we find the current literature supports the view that the EU has the potential to achieve an additional combined mitigation impact through CSF of 441 Mt CO2/year by 2050. In July 2016, the European Commission (EC) published a legislative proposal for incorporating greenhouse gas emissions and removals due to Land Use, Land Use Change and Forestry (LULUCF) into its 2030 Climate and Energy Framework.",
       "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.13187/ejced.2017.4.797",
+      "title": "Scenarios for Chemistry Teacher Training and Practice in Romania in 2030: Views of Chemistry Students",
+      "date": "2017-12-12",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Four scenarios regarding Chemistry teacher training and practice in Romania in 2030 were developed by using the 2x2 matrix design for scenario writing.The two driving forces taken in account for the design of scenarios were migration and consumerism.In two of the proposed scenarios teachers are trained to teach socioscientific courses at class.One aim of this study was to collect Chemistry students' views on the developed scenarios for Chemistry teacher training and practice in Romania in 2030.From the N=111 students tested, 51.35 % of students selected the most auspicious scenario as the scenario for teacher training and practice in 2030, a scenario which did not include teaching socioscientific courses at class.This result was confirmed to be statistically significant by the Kruskal-Wallis test (p<0.01)and the Mann-Whitney U test (p < 0.01).This made us wonder if the students are aware of the consequences in time of migration and consumerism and if a more comprehensive study was necessary, to identify the predictors for their selection of scenarios.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.3390/en11010020",
@@ -3403,6 +3448,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1016/j.techfore.2020.120478",
+      "title": "Boosting the EU forest-based bioeconomy: Market, climate, and employment impacts",
+      "date": "2021-02-28",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Further, increased EU imports, resulting in lower consumption of sawnwood outside the EU, would reduce extra-EU long-life HWP carbon storage and substitution of GHG-intensive materials, highlighting the need for concerted international climate change mitigation. The positive EU climate-change mitigation effects of increased carbon storage in harvested wood products (HWP) and material substitution from increased wood\\nconstruction are more than offset by reduced net forests carbon sinks by 2030, due to increased EU harvests.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.5281/zenodo.4568679",
       "title": "Charging the future: Roadmaps and value tensions for mainstreaming prosumerism to 2030 and 2050",
       "date": "2021-02-28",
@@ -3544,6 +3598,24 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Explicit assessments on impacts of emerging topics, such as social oppositions to particular technologies and increased awareness of sustainability indicators besides clean energy, will add values for long‐term decision making in the power markets.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1080/25741292.2021.1930687",
+      "title": "Imagining the future with citizens: participatory foresight and democratic policy design in Marcoussis, France",
+      "date": "2021-06-07",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We will see in the preliminary part of this paper, the many challenges that undermine not only the functioning of democratic processes but also the citizens’ role and sense of agency in the governance of the society they live in, as well as the role of elected officials and experts regarding agenda-setting, then we will look into the lack of future thinking not only in the political sphere but also the educational and social practices, analyze the values of participatory processes and its potential limits and risks and finally review an experimental case of participatory foresight and policy design from the small town of Marcoussis (France) which successfully conducted a participatory agenda-setting experiment—and voted—after a 2 years-long process, their local agenda for the future together with its inhabitants, civil servants and elected officials.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1080/13501763.2021.1918221",
+      "title": "EU climate and energy governance in times of crisis: towards a new agenda",
+      "date": "2021-06-09",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "As the EU seeks to fully decarbonise itself by 2050, interactions with the crisis trends are likely to intensify in ways which future research could fruitfully investigate.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -4285,6 +4357,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1016/j.rset.2021.100016",
+      "title": "Which way to net zero? a comparative analysis of seven UK 2050 decarbonisation pathways",
+      "date": "2022-08-31",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The key findings reported are that (i) pathways that rely on less stringent behavioural changes require more ambitious technology development (and vice versa); (ii) electricity generation will increase by 51–160% to facilitate large-scale fuel-switching in heating and transport, the vast majority of which is likely to be generated from variable renewable sources; (iii) hydrogen is an important energy vector in meeting Net Zero for all pathways, providing 100–591 TWh annually by 2050, though the growth in demand is heavily dependent on the extent to which it is used in supplying heating and transport demand. Since the UK’s Net Zero greenhouse gas emissions target was set in 2019, organisations across the energy systems community have released pathways on how we might get there – which end-use technologies are deployed across each sector of demand, how our fossil fuel-based energy supply would be transferred to low carbon vectors and to what extent society must change the way it demands energy services.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1016/j.scitotenv.2022.154932",
       "title": "Long term impact of residue management on soil organic carbon stocks and nitrous oxide emissions from European croplands",
       "date": "2022-08-31",
@@ -4301,6 +4382,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Recognizing the urgent need for concrete sectoral information in designing European climate change mitigation pathways of policy relevance, this study formulates, simulates and compares 31 European decarbonization pathways, focusing on changes in trade flows and GHG emissions.",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1016/j.lanepe.2022.100451",
+      "title": "Impact of demographic changes and screening colonoscopy on long-term projection of incident colorectal cancer cases in Germany: A modelling study",
+      "date": "2022-09-30",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We estimated the number of new CRC cases until 2060, assuming screening colonoscopy use to be constant or to increase to between 1·5 and 3 times the current levels. Assuming no change in screening colonoscopy use, the overall annual caseload was predicted to increase from approximately 62,000 cases in 2020 to more than 70,000 cases by the year 2040 and more than 75,000 cases by 2050.",
+      "investigation_type": "projection_or_forecast"
     },
     {
       "doi": "10.1093/eurpub/ckac129.121",
@@ -4354,6 +4444,24 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1016/j.techfore.2022.121966",
+      "title": "Business ecosystems and the view from the future: The use of corporate foresight by stakeholders of the Ro-Ro shipping ecosystem in the Baltic Sea Region",
+      "date": "2022-11-30",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Corporate foresight tools, as applied to an ecosystem: 1) Target a diverse set of ecosystem actors beyond the segment's focal firm, including complementary firms, investors, and non-market actors; 2) Engage ecosystem actors, rather than only the focal firm, in shared strategy development based on a diverse mix of foresight tools; and 3) serve to orient and reify the ecosystem by charting the collective anticipation of innovations, policies, etc., in a shared set of future options.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1016/j.techfore.2022.121998",
+      "title": "A new approach on renewable energy as a support for regional economic development among the European Union",
+      "date": "2022-11-30",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The modelling results will enable the creation of an EU-wide sustainability profile useful to supranational decision-makers for adjusting energy policies to ensure the energy transition towards 2050. The methods and procedures used will be represented by a critical literature review in order to verify the working hypotheses and to design, test and validate a new statistical model of energy sustainability seasonality.",
       "investigation_type": "strategic_future_question"
     },
     {

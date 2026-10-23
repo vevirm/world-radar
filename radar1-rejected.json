@@ -50,6 +50,14 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1002/2017ef000622": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1002/2017ef000781": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1002/aaai.12105": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -125,6 +133,10 @@
     "10.1002/cep4.70031": {
       "reason": "outside_historical_original_period",
       "year": "2026"
+    },
+    "10.1002/cind.805_11.x": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
     },
     "10.1002/dama.201800016": {
       "reason": "european_subject_not_established",
@@ -634,6 +646,10 @@
       "reason": "no_traceable_european_future_proposition",
       "year": "2012"
     },
+    "10.1002/fut.21618": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
+    },
     "10.1002/fut.21701": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -718,7 +734,19 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1002/j.2573-508x.2016.tb00011.x": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1002/j.2573-508x.2016.tb00027.x": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1002/j.2573-508x.2016.tb00035.x": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1002/j.2573-508x.2016.tb00039.x": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -876,6 +904,10 @@
     },
     "10.1002/sys.21669": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1002/ueg2.12383": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1002/vetr.2525": {
@@ -1098,6 +1130,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1007/s10111-018-0518-7": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1007/s10111-019-00548-5": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -1201,6 +1237,10 @@
     "10.1007/s10272-022-1088-8": {
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
+    },
+    "10.1007/s10308-018-0504-y": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.1007/s10311-023-01604-3": {
       "reason": "european_subject_not_established",
@@ -1390,6 +1430,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2023"
     },
+    "10.1007/s10654-023-00974-w": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1007/s10658-011-9932-x": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2012"
@@ -1546,6 +1590,14 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1007/s11027-015-9642-3": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
+    },
+    "10.1007/s11027-017-9763-y": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1007/s11027-018-9813-0": {
       "reason": "non_european_subject",
       "year": "2018"
@@ -1642,8 +1694,16 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1007/s11356-021-17843-2": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
     "10.1007/s11356-022-20259-1": {
       "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1007/s11356-022-21285-9": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
     "10.1007/s11356-022-24901-w": {
@@ -1810,6 +1870,10 @@
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1007/s12061-019-09328-0": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
     "10.1007/s12062-020-09319-x": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2021"
@@ -1829,6 +1893,18 @@
     "10.1007/s12115-025-01104-w": {
       "reason": "outside_historical_original_period",
       "year": "2025"
+    },
+    "10.1007/s12134-011-0205-5": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
+    "10.1007/s12286-022-00530-y": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
+    "10.1007/s12290-012-0196-4": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
     },
     "10.1007/s12290-013-0266-2": {
       "reason": "european_subject_not_established",
@@ -1965,6 +2041,10 @@
     "10.1007/s12689-023-00105-4": {
       "reason": "non_european_subject",
       "year": "2023"
+    },
+    "10.1007/s13132-015-0274-3": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
     },
     "10.1007/s13147-014-0280-0": {
       "reason": "european_subject_not_established",
@@ -2262,6 +2342,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1007/s40309-014-0054-5": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
     "10.1007/s40309-014-0055-4": {
       "reason": "no_traceable_european_future_proposition",
       "year": "2014"
@@ -2290,6 +2374,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2015"
     },
+    "10.1007/s40309-015-0064-y": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1007/s40309-015-0065-x": {
       "reason": "ambiguous_title_no_supporting_abstract",
       "year": "2015"
@@ -2300,6 +2388,10 @@
     },
     "10.1007/s40309-015-0068-7": {
       "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1007/s40309-015-0073-x": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2015"
     },
     "10.1007/s40309-015-0074-9": {
@@ -2330,6 +2422,10 @@
       "reason": "no_traceable_european_future_proposition",
       "year": "2016"
     },
+    "10.1007/s40309-015-0081-x": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1007/s40309-015-0082-9": {
       "reason": "no_traceable_european_future_proposition",
       "year": "2015"
@@ -2343,6 +2439,10 @@
       "year": "2016"
     },
     "10.1007/s40309-016-0085-1": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
+    "10.1007/s40309-016-0086-0": {
       "reason": "european_subject_not_established",
       "year": "2016"
     },
@@ -2366,11 +2466,19 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1007/s40309-016-0092-2": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
     "10.1007/s40309-016-0093-1": {
       "reason": "european_subject_not_established",
       "year": "2016"
     },
     "10.1007/s40309-016-0094-0": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
+    "10.1007/s40309-016-0095-z": {
       "reason": "european_subject_not_established",
       "year": "2016"
     },
@@ -2598,6 +2706,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1007/s42533-023-00134-5": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1007/s42650-019-00002-x": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -2822,6 +2934,14 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1016/j.apenergy.2017.12.045": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
+    "10.1016/j.apenergy.2018.11.094": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.1016/j.apenergy.2019.01.155": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -2902,6 +3022,18 @@
       "reason": "non_european_subject",
       "year": "2012"
     },
+    "10.1016/j.atmosenv.2012.06.018": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
+    "10.1016/j.atmosenv.2012.06.048": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
+    "10.1016/j.atmosenv.2013.04.075": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
+    },
     "10.1016/j.atmosenv.2013.09.047": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -2913,6 +3045,10 @@
     "10.1016/j.atmosenv.2014.11.013": {
       "reason": "european_subject_not_established",
       "year": "2015"
+    },
+    "10.1016/j.atmosenv.2016.02.005": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
     },
     "10.1016/j.atmosenv.2016.05.008": {
       "reason": "european_subject_not_established",
@@ -3090,6 +3226,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1016/j.cliser.2019.100125": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
+    },
     "10.1016/j.cliser.2025.100575": {
       "reason": "outside_historical_original_period",
       "year": "2025"
@@ -3133,6 +3273,10 @@
     "10.1016/j.cose.2021.102551": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.1016/j.cosust.2013.10.001": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
     },
     "10.1016/j.cpa.2021.102311": {
       "reason": "european_subject_not_established",
@@ -3211,6 +3355,10 @@
       "year": "2014"
     },
     "10.1016/j.ecolecon.2018.02.009": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
+    "10.1016/j.ecolecon.2018.04.028": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
     },
@@ -3366,6 +3514,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1016/j.econmod.2010.11.020": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1016/j.econmod.2011.08.013": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -3514,12 +3666,20 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1016/j.econmod.2022.105911": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
     "10.1016/j.econmod.2022.105955": {
       "reason": "non_european_subject",
       "year": "2022"
     },
     "10.1016/j.econmod.2022.106176": {
       "reason": "non_european_subject",
+      "year": "2023"
+    },
+    "10.1016/j.econmod.2023.106196": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1016/j.econmod.2023.106279": {
@@ -3545,6 +3705,10 @@
     "10.1016/j.ecoser.2020.101195": {
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
+    },
+    "10.1016/j.ecosys.2013.02.004": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
     },
     "10.1016/j.ecss.2011.03.012": {
       "reason": "no_substantive_source_text_for_radar2",
@@ -3678,6 +3842,14 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
+    "10.1016/j.eist.2023.100698": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.eist.2023.100699": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1016/j.eist.2023.100757": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -3689,6 +3861,10 @@
     "10.1016/j.eja.2016.09.009": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
+    },
+    "10.1016/j.eja.2021.126319": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
     },
     "10.1016/j.eja.2022.126473": {
       "reason": "non_european_subject",
@@ -3762,6 +3938,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1016/j.ejor.2011.07.019": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
     "10.1016/j.ejor.2011.07.021": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -3820,6 +4000,10 @@
     },
     "10.1016/j.ejor.2013.06.041": {
       "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1016/j.ejor.2014.01.019": {
+      "reason": "financial_futures_not_foresight",
       "year": "2014"
     },
     "10.1016/j.ejor.2014.01.027": {
@@ -3998,6 +4182,10 @@
       "reason": "non_european_subject",
       "year": "2017"
     },
+    "10.1016/j.ejpn.2020.06.017": {
+      "reason": "european_subject_not_established",
+      "year": "2020"
+    },
     "10.1016/j.ejpoleco.2013.09.002": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -4138,6 +4326,10 @@
       "reason": "non_european_subject",
       "year": "2015"
     },
+    "10.1016/j.eneco.2016.05.008": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
     "10.1016/j.eneco.2016.06.012": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
@@ -4222,6 +4414,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
     },
+    "10.1016/j.energy.2014.06.045": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2014"
+    },
     "10.1016/j.energy.2014.06.075": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -4245,6 +4441,10 @@
     "10.1016/j.energy.2016.01.068": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
+    },
+    "10.1016/j.energy.2017.08.113": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
     },
     "10.1016/j.energy.2018.06.149": {
       "reason": "european_subject_not_established",
@@ -4486,6 +4686,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2014"
     },
+    "10.1016/j.enpol.2014.11.023": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2014"
+    },
     "10.1016/j.enpol.2015.02.024": {
       "reason": "future_facing_research_question_not_established",
       "year": "2015"
@@ -4546,6 +4750,10 @@
       "reason": "financial_futures_not_foresight",
       "year": "2018"
     },
+    "10.1016/j.enpol.2018.05.055": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.1016/j.enpol.2018.09.027": {
       "reason": "incidental_european_mention_only",
       "year": "2018"
@@ -4556,6 +4764,10 @@
     },
     "10.1016/j.enpol.2018.12.043": {
       "reason": "european_subject_not_established",
+      "year": "2019"
+    },
+    "10.1016/j.enpol.2019.110960": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2019"
     },
     "10.1016/j.enpol.2019.111063": {
@@ -4574,6 +4786,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.1016/j.enpol.2020.111726": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
+    },
     "10.1016/j.enpol.2020.111863": {
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
@@ -4584,6 +4800,10 @@
     },
     "10.1016/j.enpol.2022.112856": {
       "reason": "non_european_subject",
+      "year": "2022"
+    },
+    "10.1016/j.enpol.2022.113045": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
     "10.1016/j.enpol.2022.113144": {
@@ -4626,6 +4846,10 @@
       "reason": "outside_historical_original_period",
       "year": "2025"
     },
+    "10.1016/j.ensm.2021.09.015": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
     "10.1016/j.envdev.2012.03.002": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -4662,6 +4886,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1016/j.envpol.2013.02.011": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
+    },
     "10.1016/j.envpol.2016.07.042": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
@@ -4688,6 +4916,10 @@
     },
     "10.1016/j.envsci.2017.07.013": {
       "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.envsci.2017.08.022": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
     "10.1016/j.envsci.2018.10.015": {
@@ -4982,6 +5214,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2015"
     },
+    "10.1016/j.esd.2020.09.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
+    },
     "10.1016/j.ese.2020.100030": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
@@ -5002,6 +5238,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
     },
+    "10.1016/j.esr.2018.02.005": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.1016/j.esr.2018.04.001": {
       "reason": "european_subject_not_established",
       "year": "2018"
@@ -5021,6 +5261,10 @@
     "10.1016/j.esr.2020.100571": {
       "reason": "european_subject_not_established",
       "year": "2020"
+    },
+    "10.1016/j.esr.2021.100797": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
     },
     "10.1016/j.esr.2022.100858": {
       "reason": "european_subject_not_established",
@@ -5214,6 +5458,10 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1016/j.fopow.2016.07.024": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
     "10.1016/j.foreco.2021.119199": {
       "reason": "ambiguous_title_no_supporting_abstract",
       "year": "2021"
@@ -5273,6 +5521,22 @@
     "10.1016/j.future.2014.01.001": {
       "reason": "european_subject_not_established",
       "year": "2014"
+    },
+    "10.1016/j.future.2017.02.015": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.1016/j.future.2018.01.042": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.1016/j.future.2018.05.024": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.1016/j.future.2018.07.025": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
     },
     "10.1016/j.futures.2010.02.005": {
       "reason": "european_subject_not_established",
@@ -5650,6 +5914,10 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1016/j.futures.2013.09.009": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
+    },
     "10.1016/j.futures.2013.10.009": {
       "reason": "non_european_subject",
       "year": "2014"
@@ -5659,6 +5927,18 @@
       "year": "2014"
     },
     "10.1016/j.futures.2013.11.002": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1016/j.futures.2013.12.001": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1016/j.futures.2013.12.002": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1016/j.futures.2013.12.005": {
       "reason": "european_subject_not_established",
       "year": "2014"
     },
@@ -5810,6 +6090,10 @@
       "reason": "european_subject_not_established",
       "year": "2015"
     },
+    "10.1016/j.futures.2015.03.007": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
+    },
     "10.1016/j.futures.2015.05.004": {
       "reason": "european_subject_not_established",
       "year": "2015"
@@ -5853,6 +6137,10 @@
     "10.1016/j.futures.2015.08.010": {
       "reason": "non_european_subject",
       "year": "2015"
+    },
+    "10.1016/j.futures.2015.08.011": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
     },
     "10.1016/j.futures.2015.09.004": {
       "reason": "ambiguous_title_no_supporting_abstract",
@@ -5962,6 +6250,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1016/j.futures.2016.04.007": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.futures.2016.05.001": {
       "reason": "european_subject_not_established",
       "year": "2016"
@@ -5978,8 +6270,16 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1016/j.futures.2016.05.007": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.futures.2016.05.008": {
       "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.futures.2016.06.001": {
+      "reason": "no_substantive_title",
       "year": "2017"
     },
     "10.1016/j.futures.2016.06.002": {
@@ -5994,12 +6294,20 @@
       "reason": "non_european_subject",
       "year": "2016"
     },
+    "10.1016/j.futures.2016.06.006": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.futures.2016.07.004": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
     "10.1016/j.futures.2016.08.005": {
       "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.futures.2016.09.004": {
+      "reason": "editorial_review_or_not_original_study",
       "year": "2017"
     },
     "10.1016/j.futures.2016.09.006": {
@@ -6019,6 +6327,14 @@
       "year": "2017"
     },
     "10.1016/j.futures.2016.11.008": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.futures.2016.12.002": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.futures.2016.12.003": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -6043,6 +6359,10 @@
       "year": "2017"
     },
     "10.1016/j.futures.2017.03.006": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.futures.2017.04.002": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -6130,6 +6450,10 @@
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1016/j.futures.2018.02.002": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
     "10.1016/j.futures.2018.02.003": {
       "reason": "european_subject_not_established",
       "year": "2018"
@@ -6155,6 +6479,10 @@
       "year": "2018"
     },
     "10.1016/j.futures.2018.04.004": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.1016/j.futures.2018.04.005": {
       "reason": "european_subject_not_established",
       "year": "2018"
     },
@@ -6185,6 +6513,10 @@
     "10.1016/j.futures.2018.07.001": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.futures.2018.07.009": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
     },
     "10.1016/j.futures.2018.07.011": {
       "reason": "no_substantive_source_text_for_radar2",
@@ -6348,6 +6680,10 @@
     },
     "10.1016/j.futures.2020.102567": {
       "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.1016/j.futures.2020.102571": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
     },
     "10.1016/j.futures.2020.102585": {
@@ -6590,6 +6926,10 @@
       "reason": "non_european_subject",
       "year": "2021"
     },
+    "10.1016/j.futures.2021.102833": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.futures.2021.102838": {
       "reason": "european_subject_not_established",
       "year": "2021"
@@ -6617,6 +6957,10 @@
     "10.1016/j.futures.2021.102855": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.1016/j.futures.2021.102856": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
     },
     "10.1016/j.futures.2021.102859": {
       "reason": "european_subject_not_established",
@@ -6782,6 +7126,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1016/j.futures.2023.103098": {
+      "reason": "european_subject_not_established",
+      "year": "2023"
+    },
     "10.1016/j.futures.2023.103100": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
@@ -6791,6 +7139,10 @@
       "year": "2023"
     },
     "10.1016/j.futures.2023.103113": {
+      "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.futures.2023.103130": {
       "reason": "european_subject_not_established",
       "year": "2023"
     },
@@ -6807,6 +7159,10 @@
       "year": "2023"
     },
     "10.1016/j.futures.2023.103135": {
+      "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.futures.2023.103137": {
       "reason": "european_subject_not_established",
       "year": "2023"
     },
@@ -6836,6 +7192,10 @@
     },
     "10.1016/j.futures.2023.103156": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.futures.2023.103157": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1016/j.futures.2023.103158": {
@@ -6902,6 +7262,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1016/j.futures.2023.103233": {
+      "reason": "title_future_term_not_substantive_in_abstract",
+      "year": "2023"
+    },
     "10.1016/j.futures.2023.103237": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -6932,6 +7296,10 @@
     },
     "10.1016/j.futures.2023.103245": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.futures.2023.103259": {
+      "reason": "non_european_subject",
       "year": "2023"
     },
     "10.1016/j.futures.2023.103264": {
@@ -7074,6 +7442,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1016/j.gloenvcha.2011.09.003": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1016/j.gloenvcha.2011.11.009": {
       "reason": "non_european_subject",
       "year": "2011"
@@ -7186,6 +7558,10 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1016/j.gloenvcha.2023.102676": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1016/j.gloenvcha.2023.102681": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -7209,6 +7585,10 @@
     "10.1016/j.gloplacha.2016.08.009": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1016/j.gloplacha.2018.08.015": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.1016/j.gloplacha.2018.09.013": {
       "reason": "ambiguous_title_no_supporting_abstract",
@@ -7237,6 +7617,10 @@
     "10.1016/j.healthpol.2019.07.002": {
       "reason": "future_facing_research_question_not_established",
       "year": "2019"
+    },
+    "10.1016/j.heliyon.2018.e00590": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
     },
     "10.1016/j.heliyon.2020.e03935": {
       "reason": "no_traceable_european_future_proposition",
@@ -7366,6 +7750,10 @@
       "reason": "european_subject_not_established",
       "year": "2019"
     },
+    "10.1016/j.ijhydene.2019.01.207": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.1016/j.ijhydene.2022.08.170": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
@@ -7446,6 +7834,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2015"
     },
+    "10.1016/j.jaccpubpol.2021.106855": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.jafr.2019.100002": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -7480,6 +7872,10 @@
     },
     "10.1016/j.jafr.2023.100858": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.jafr.2023.100883": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1016/j.jairtraman.2012.01.006": {
@@ -7555,6 +7951,10 @@
       "year": "2016"
     },
     "10.1016/j.jclepro.2017.07.039": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
+    "10.1016/j.jclepro.2017.09.132": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
@@ -7662,9 +8062,17 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.1016/j.jebo.2018.06.019": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.1016/j.jebo.2020.07.010": {
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
+    },
+    "10.1016/j.jebo.2023.11.004": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
     },
     "10.1016/j.jedc.2012.09.012": {
       "reason": "european_subject_not_established",
@@ -7697,6 +8105,10 @@
     "10.1016/j.jenvman.2026.129142": {
       "reason": "outside_historical_original_period",
       "year": "2026"
+    },
+    "10.1016/j.jeoa.2018.07.004": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.1016/j.jeurceramsoc.2020.09.058": {
       "reason": "european_subject_not_established",
@@ -7774,6 +8186,10 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.1016/j.jrurstud.2012.03.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
     "10.1016/j.jrurstud.2015.06.003": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2015"
@@ -7822,6 +8238,10 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1016/j.jup.2022.101381": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
     "10.1016/j.jup.2023.101642": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
@@ -7865,6 +8285,10 @@
     "10.1016/j.labeco.2012.05.014": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.1016/j.labeco.2012.08.011": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
     },
     "10.1016/j.labeco.2013.03.003": {
       "reason": "european_subject_not_established",
@@ -7920,6 +8344,10 @@
     },
     "10.1016/j.labeco.2020.101811": {
       "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.1016/j.labeco.2020.101881": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
     },
     "10.1016/j.labeco.2021.102002": {
@@ -8154,6 +8582,10 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1016/j.polgeo.2011.10.001": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
     "10.1016/j.polgeo.2016.09.002": {
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
@@ -8290,6 +8722,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
+    "10.1016/j.renene.2017.05.007": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1016/j.renene.2018.03.006": {
       "reason": "future_facing_research_question_not_established",
       "year": "2018"
@@ -8326,6 +8762,10 @@
       "reason": "outside_historical_original_period",
       "year": "2025"
     },
+    "10.1016/j.reseneeco.2011.07.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1016/j.resglo.2023.100146": {
       "reason": "no_substantive_title",
       "year": "2023"
@@ -8333,6 +8773,10 @@
     "10.1016/j.resourpol.2013.10.008": {
       "reason": "financial_futures_not_foresight",
       "year": "2013"
+    },
+    "10.1016/j.resourpol.2018.12.005": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.1016/j.resourpol.2019.101569": {
       "reason": "european_subject_not_established",
@@ -8382,6 +8826,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2013"
     },
+    "10.1016/j.respol.2013.08.012": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
+    },
     "10.1016/j.respol.2013.09.004": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -8417,6 +8865,10 @@
     "10.1016/j.respol.2019.01.006": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.respol.2020.104047": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
     },
     "10.1016/j.respol.2020.104140": {
       "reason": "future_facing_research_question_not_established",
@@ -8626,6 +9078,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1016/j.scitotenv.2011.08.015": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1016/j.scitotenv.2016.09.040": {
       "reason": "non_european_subject",
       "year": "2016"
@@ -8654,13 +9110,29 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
     },
+    "10.1016/j.scitotenv.2018.08.419": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.1016/j.scitotenv.2018.11.424": {
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1016/j.scitotenv.2019.02.050": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.1016/j.scitotenv.2019.05.112": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
     "10.1016/j.scitotenv.2019.06.298": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.scitotenv.2019.134770": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
     },
     "10.1016/j.scitotenv.2019.135402": {
       "reason": "european_subject_not_established",
@@ -8706,12 +9178,24 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1016/j.scitotenv.2023.167303": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
+    "10.1016/j.scitotenv.2023.168160": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1016/j.scitotenv.2023.169357": {
       "reason": "european_subject_not_established",
       "year": "2023"
     },
     "10.1016/j.scp.2023.101330": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1016/j.scs.2023.104668": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2023"
     },
     "10.1016/j.sctalk.2022.100117": {
@@ -9382,8 +9866,16 @@
       "reason": "european_subject_not_established",
       "year": "2015"
     },
+    "10.1016/j.techfore.2015.03.010": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
     "10.1016/j.techfore.2015.03.011": {
       "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1016/j.techfore.2015.04.008": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2015"
     },
     "10.1016/j.techfore.2015.04.010": {
@@ -9502,9 +9994,21 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1016/j.techfore.2016.04.018": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2016.04.021": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
+    },
+    "10.1016/j.techfore.2016.05.001": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.05.014": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
     },
     "10.1016/j.techfore.2016.05.024": {
       "reason": "european_subject_not_established",
@@ -9518,9 +10022,25 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1016/j.techfore.2016.06.023": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2016.06.025": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1016/j.techfore.2016.06.027": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.06.031": {
+      "reason": "non_european_subject",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.06.032": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
     },
     "10.1016/j.techfore.2016.07.013": {
       "reason": "no_substantive_source_text_for_radar2",
@@ -9529,6 +10049,10 @@
     "10.1016/j.techfore.2016.07.017": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1016/j.techfore.2016.07.038": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
     },
     "10.1016/j.techfore.2016.07.040": {
       "reason": "european_subject_not_established",
@@ -9542,11 +10066,19 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
+    "10.1016/j.techfore.2016.08.010": {
+      "reason": "non_european_subject",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2016.08.015": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
     "10.1016/j.techfore.2016.08.016": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.08.017": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -9566,7 +10098,15 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1016/j.techfore.2016.09.026": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2016.10.011": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.10.017": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -9582,7 +10122,15 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1016/j.techfore.2016.11.002": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2016.11.003": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2016.11.017": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
@@ -9594,11 +10142,19 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1016/j.techfore.2017.01.003": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2017.01.006": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
     "10.1016/j.techfore.2017.01.014": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2017.01.018": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -9614,6 +10170,10 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.1016/j.techfore.2017.02.027": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2017.02.031": {
       "reason": "european_subject_not_established",
       "year": "2017"
@@ -9626,7 +10186,23 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
     },
+    "10.1016/j.techfore.2017.04.009": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2017.04.018": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2017.04.020": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1016/j.techfore.2017.04.025": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2017.05.005": {
       "reason": "european_subject_not_established",
       "year": "2017"
     },
@@ -9637,6 +10213,14 @@
     "10.1016/j.techfore.2017.06.009": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.1016/j.techfore.2017.07.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
+    "10.1016/j.techfore.2017.07.022": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
     },
     "10.1016/j.techfore.2017.08.001": {
       "reason": "european_subject_not_established",
@@ -9670,12 +10254,20 @@
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1016/j.techfore.2017.11.025": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1016/j.techfore.2017.12.007": {
       "reason": "european_subject_not_established",
       "year": "2018"
     },
     "10.1016/j.techfore.2017.12.013": {
       "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.1016/j.techfore.2018.01.005": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
     },
     "10.1016/j.techfore.2018.01.016": {
@@ -9738,9 +10330,25 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1016/j.techfore.2018.07.035": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.1016/j.techfore.2018.08.005": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
+    "10.1016/j.techfore.2018.08.020": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.1016/j.techfore.2018.08.022": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.1016/j.techfore.2018.09.014": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
     },
     "10.1016/j.techfore.2018.09.028": {
       "reason": "european_subject_not_established",
@@ -9802,6 +10410,18 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2019"
     },
+    "10.1016/j.techfore.2019.119716": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.1016/j.techfore.2019.119724": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.1016/j.techfore.2019.119734": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
     "10.1016/j.techfore.2019.119748": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -9809,6 +10429,14 @@
     "10.1016/j.techfore.2019.119753": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.techfore.2019.119769": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
+    "10.1016/j.techfore.2019.119770": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
     },
     "10.1016/j.techfore.2019.119847": {
       "reason": "title_future_term_not_substantive_in_abstract",
@@ -9878,6 +10506,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1016/j.techfore.2020.120056": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
+    },
     "10.1016/j.techfore.2020.120086": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -9914,6 +10546,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1016/j.techfore.2020.120209": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
+    },
     "10.1016/j.techfore.2020.120220": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -9926,12 +10562,28 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.1016/j.techfore.2020.120340": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2020.120373": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.techfore.2020.120389": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2021"
     },
     "10.1016/j.techfore.2020.120414": {
       "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2020.120428": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2020.120489": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2021"
     },
     "10.1016/j.techfore.2021.120577": {
@@ -9966,8 +10618,16 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2021"
     },
+    "10.1016/j.techfore.2021.120891": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.techfore.2021.120897": {
       "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2021.120947": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2021"
     },
     "10.1016/j.techfore.2021.120960": {
@@ -9978,6 +10638,10 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1016/j.techfore.2021.121069": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.techfore.2021.121082": {
       "reason": "european_subject_not_established",
       "year": "2021"
@@ -9986,15 +10650,39 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1016/j.techfore.2021.121095": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.techfore.2021.121106": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.1016/j.techfore.2021.121139": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
     },
     "10.1016/j.techfore.2021.121140": {
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1016/j.techfore.2021.121164": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2021.121167": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
+    "10.1016/j.techfore.2021.121177": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
     "10.1016/j.techfore.2021.121208": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2021.121215": {
       "reason": "european_subject_not_established",
       "year": "2022"
     },
@@ -10006,7 +10694,15 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
+    "10.1016/j.techfore.2022.121590": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
     "10.1016/j.techfore.2022.121664": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121673": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
@@ -10026,8 +10722,28 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
+    "10.1016/j.techfore.2022.121803": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121805": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121826": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
     "10.1016/j.techfore.2022.121843": {
       "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121845": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121856": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
     "10.1016/j.techfore.2022.121901": {
@@ -10038,8 +10754,20 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1016/j.techfore.2022.121945": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.121962": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
     "10.1016/j.techfore.2022.121967": {
       "reason": "financial_futures_not_foresight",
+      "year": "2022"
+    },
+    "10.1016/j.techfore.2022.122012": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
     "10.1016/j.techfore.2022.122161": {
@@ -10150,6 +10878,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1016/j.telpol.2011.03.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1016/j.telpol.2020.101988": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -10190,11 +10922,19 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1016/j.tra.2014.10.009": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2014"
+    },
     "10.1016/j.tra.2014.10.010": {
       "reason": "european_subject_not_established",
       "year": "2014"
     },
     "10.1016/j.tra.2015.04.007": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
+    },
+    "10.1016/j.tra.2015.05.007": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2015"
     },
@@ -10213,6 +10953,10 @@
     "10.1016/j.tra.2019.09.033": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.tra.2022.05.021": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
     },
     "10.1016/j.tra.2023.103781": {
       "reason": "european_subject_not_established",
@@ -10286,6 +11030,10 @@
       "reason": "european_subject_not_established",
       "year": "2019"
     },
+    "10.1016/j.vaccine.2017.09.090": {
+      "reason": "non_european_subject",
+      "year": "2017"
+    },
     "10.1016/j.wace.2021.100363": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2021"
@@ -10313,6 +11061,10 @@
     "10.1016/j.whi.2016.10.001": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.1016/j.wpi.2015.07.002": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
     },
     "10.1016/j.wre.2017.09.003": {
       "reason": "european_subject_not_established",
@@ -10343,6 +11095,10 @@
       "year": "2012"
     },
     "10.1016/s0004-3702(12)00007-0": {
+      "reason": "no_substantive_title",
+      "year": "2012"
+    },
+    "10.1016/s0004-3702(12)00016-1": {
       "reason": "no_substantive_title",
       "year": "2012"
     },
@@ -10443,6 +11199,10 @@
       "year": "2018"
     },
     "10.1016/s0016-3287(11)00015-2": {
+      "reason": "no_substantive_title",
+      "year": "2011"
+    },
+    "10.1016/s0016-3287(11)00032-2": {
       "reason": "no_substantive_title",
       "year": "2011"
     },
@@ -10642,6 +11402,86 @@
       "reason": "no_substantive_title",
       "year": "2016"
     },
+    "10.1016/s0016-3287(16)30366-4": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30021-6": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30069-1": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30139-8": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30156-8": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30207-0": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30283-5": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30315-4": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30357-9": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30400-7": {
+      "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.1016/s0016-3287(17)30499-8": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30024-7": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30062-4": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30102-2": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30154-x": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30188-5": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30233-7": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30270-2": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30339-2": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
+    "10.1016/s0016-3287(18)30424-5": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
     "10.1016/s0016-3287(18)30507-x": {
       "reason": "no_substantive_title",
       "year": "2019"
@@ -10821,6 +11661,10 @@
     "10.1016/s0140-6736(21)02488-0": {
       "reason": "non_european_subject",
       "year": "2022"
+    },
+    "10.1016/s0140-6736(23)00494-4": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
     },
     "10.1016/s0262-4079(23)01121-1": {
       "reason": "european_subject_not_established",
@@ -11042,6 +11886,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1016/s1470-2045(22)00790-2": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1016/s1473-3099(14)70834-5": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2014"
@@ -11067,6 +11915,10 @@
       "year": "2011"
     },
     "10.1016/s1553-7250(11)37078-x": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
+    "10.1016/s1553-7250(11)37081-x": {
       "reason": "european_subject_not_established",
       "year": "2011"
     },
@@ -11118,6 +11970,10 @@
       "reason": "no_substantive_title",
       "year": "2011"
     },
+    "10.1016/s1553-7250(11)37105-x": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
     "10.1016/s1553-7250(12)38026-4": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -11138,7 +11994,15 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.1016/s1553-7250(12)38085-9": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
     "10.1016/s1553-7250(12)38088-4": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
+    "10.1016/s1553-7250(12)38094-x": {
       "reason": "european_subject_not_established",
       "year": "2012"
     },
@@ -11148,6 +12012,10 @@
     },
     "10.1016/s1553-7250(12)38100-2": {
       "reason": "european_subject_not_established",
+      "year": "2012"
+    },
+    "10.1016/s1553-7250(12)38110-5": {
+      "reason": "no_substantive_title",
       "year": "2012"
     },
     "10.1016/s1553-7250(12)38111-7": {
@@ -11163,6 +12031,10 @@
       "year": "2013"
     },
     "10.1016/s1553-7250(13)39077-1": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
+    },
+    "10.1016/s1553-7250(13)39080-1": {
       "reason": "european_subject_not_established",
       "year": "2013"
     },
@@ -11266,11 +12138,27 @@
       "reason": "european_subject_not_established",
       "year": "2015"
     },
+    "10.1016/s1553-7250(15)41082-7": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1016/s1553-7250(15)41085-2": {
       "reason": "european_subject_not_established",
       "year": "2015"
     },
     "10.1016/s1553-7250(15)41091-8": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1016/s1553-7250(15)41094-3": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1016/s1553-7250(15)41097-9": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1016/s1553-7250(15)41103-1": {
       "reason": "european_subject_not_established",
       "year": "2015"
     },
@@ -11462,6 +12350,10 @@
       "reason": "no_substantive_title",
       "year": "2020"
     },
+    "10.1016/s1553-7250(20)30023-4": {
+      "reason": "no_substantive_title",
+      "year": "2020"
+    },
     "10.1016/s1553-7250(20)30087-8": {
       "reason": "no_substantive_title",
       "year": "2020"
@@ -11491,6 +12383,10 @@
       "year": "2020"
     },
     "10.1016/s1553-7250(20)30252-x": {
+      "reason": "no_substantive_title",
+      "year": "2020"
+    },
+    "10.1016/s1553-7250(20)30264-6": {
       "reason": "no_substantive_title",
       "year": "2020"
     },
@@ -11627,6 +12523,10 @@
       "year": "2023"
     },
     "10.1016/s1553-7250(23)00082-x": {
+      "reason": "no_substantive_title",
+      "year": "2023"
+    },
+    "10.1016/s1553-7250(23)00104-6": {
       "reason": "no_substantive_title",
       "year": "2023"
     },
@@ -12190,6 +13090,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1017/s0954102014000662": {
+      "reason": "no_substantive_title",
+      "year": "2014"
+    },
     "10.1017/s0960777311000300": {
       "reason": "european_subject_not_established",
       "year": "2011"
@@ -12374,6 +13278,10 @@
       "reason": "non_european_subject",
       "year": "2018"
     },
+    "10.1029/2018ef000832": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1029/2018jc013866": {
       "reason": "non_original_editorial_or_retracted",
       "year": "2018"
@@ -12466,6 +13374,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1038/474161a": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1038/504332a": {
       "reason": "no_substantive_title",
       "year": "2013"
@@ -12489,6 +13401,18 @@
     "10.1038/d41586-018-07242-y": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.1038/d41586-022-01676-1": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
+    "10.1038/d41586-022-01998-0": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2022"
+    },
+    "10.1038/d41586-023-00613-0": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
     },
     "10.1038/d41586-023-03904-8": {
       "reason": "no_substantive_source_text_for_radar2",
@@ -12529,6 +13453,10 @@
     "10.1038/nenergy.2016.73": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1038/nenergy.2017.114": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
     },
     "10.1038/nenergy.2017.27": {
       "reason": "european_subject_not_established",
@@ -12738,6 +13666,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1039/c4em00470a": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1039/d1ee01530c": {
       "reason": "european_subject_not_established",
       "year": "2021"
@@ -12757,6 +13689,10 @@
     "10.1039/d3fb00199g": {
       "reason": "european_subject_not_established",
       "year": "2023"
+    },
+    "10.1049/et.2019.1015": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
     },
     "10.1051/e3sconf/20140203002": {
       "reason": "european_subject_not_established",
@@ -12806,9 +13742,17 @@
       "reason": "european_subject_not_established",
       "year": "2015"
     },
+    "10.1057/ces.2011.10": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
     "10.1057/dev.2014.53": {
       "reason": "editorial_review_or_not_original_study",
       "year": "2014"
+    },
+    "10.1057/eps.2013.34": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
     },
     "10.1057/eps.2015.65": {
       "reason": "future_facing_research_question_not_established",
@@ -12853,6 +13797,10 @@
     "10.1057/s41294-017-0038-0": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
+    },
+    "10.1057/s41300-019-00073-7": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
     },
     "10.1057/s41311-017-0043-y": {
       "reason": "no_substantive_source_text_for_radar2",
@@ -12925,6 +13873,10 @@
     "10.1071/cp11172": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.1071/ec14053": {
+      "reason": "non_european_subject",
+      "year": "2014"
     },
     "10.1071/rj11012": {
       "reason": "non_european_subject",
@@ -13002,6 +13954,10 @@
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1080/00128775.2023.2209074": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1080/00131857.2020.1824781": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -13070,7 +14026,15 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2013"
     },
+    "10.1080/01402382.2014.884755": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
     "10.1080/01402382.2014.919773": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/01402382.2014.919774": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
     },
@@ -13133,6 +14097,10 @@
     "10.1080/02601370.2013.873211": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
+    },
+    "10.1080/02601370.2023.2212424": {
+      "reason": "no_traceable_european_future_proposition",
+      "year": "2023"
     },
     "10.1080/02601370.2025.2472553": {
       "reason": "outside_historical_original_period",
@@ -13283,6 +14251,10 @@
       "year": "2012"
     },
     "10.1080/02604027.2012.730431": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
+    "10.1080/02604027.2012.730441": {
       "reason": "european_subject_not_established",
       "year": "2012"
     },
@@ -13854,8 +14826,76 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1080/02604027.2020.1871165": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1875673": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1899576": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1904747": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1904748": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
     "10.1080/02604027.2021.1929013": {
       "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1929790": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1949939": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1969876": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1976034": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1986346": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.1996188": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2001285": {
+      "reason": "no_substantive_title",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2002079": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2002080": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2002082": {
+      "reason": "no_substantive_title",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2005448": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2005450": {
+      "reason": "no_substantive_title",
       "year": "2021"
     },
     "10.1080/02604027.2021.2012874": {
@@ -13866,9 +14906,81 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1080/02604027.2021.2012877": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
     "10.1080/02604027.2021.2014747": {
       "reason": "european_subject_not_established",
       "year": "2023"
+    },
+    "10.1080/02604027.2021.2014748": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2021.2014749": {
+      "reason": "no_substantive_title",
+      "year": "2022"
+    },
+    "10.1080/02604027.2021.2018645": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
+    "10.1080/02604027.2021.2018646": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2028539": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2041994": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2044245": {
+      "reason": "editorial_review_or_not_original_study",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2048600": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2050162": {
+      "reason": "editorial_review_or_not_original_study",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2050341": {
+      "reason": "no_substantive_title",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2052707": {
+      "reason": "no_substantive_title",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2059305": {
+      "reason": "historical_reconstruction_not_forward_looking",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2072160": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2094196": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2101856": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2111964": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/02604027.2022.2112776": {
+      "reason": "no_substantive_title",
+      "year": "2022"
     },
     "10.1080/02604027.2022.2150043": {
       "reason": "editorial_review_or_not_original_study",
@@ -14050,6 +15162,10 @@
       "reason": "non_european_subject",
       "year": "2013"
     },
+    "10.1080/0312407x.2018.1535606": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1080/0312407x.2020.1808031": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -14119,6 +15235,10 @@
       "year": "2016"
     },
     "10.1080/07036337.2023.2190588": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.1080/07036337.2023.2239998": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
@@ -14206,6 +15326,14 @@
       "reason": "non_european_subject",
       "year": "2011"
     },
+    "10.1080/09537325.2011.592267": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/09537325.2011.592273": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
     "10.1080/09537325.2012.655412": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -14278,6 +15406,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2022"
     },
+    "10.1080/09537325.2022.2163889": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1080/09540962.2013.763424": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -14342,6 +15474,14 @@
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.1080/09644016.2018.1429046": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
+    "10.1080/09644016.2019.1625139": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.1080/09644016.2019.1670987": {
       "reason": "incidental_european_mention_only",
       "year": "2019"
@@ -14353,6 +15493,10 @@
     "10.1080/09654313.2012.665041": {
       "reason": "future_facing_research_question_not_established",
       "year": "2012"
+    },
+    "10.1080/09654313.2012.722933": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
     },
     "10.1080/09654313.2012.723422": {
       "reason": "european_subject_not_established",
@@ -14422,6 +15566,10 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.1080/09662839.2012.727181": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
     "10.1080/09662839.2013.863452": {
       "reason": "no_substantive_title",
       "year": "2013"
@@ -14436,6 +15584,14 @@
     },
     "10.1080/09662839.2014.883185": {
       "reason": "no_substantive_title",
+      "year": "2014"
+    },
+    "10.1080/09662839.2014.884075": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/09662839.2014.913026": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2014"
     },
     "10.1080/09662839.2014.933207": {
@@ -14486,6 +15642,14 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
+    "10.1080/09662839.2023.2222666": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.1080/09662839.2023.2233436": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1080/09668136.2012.698046": {
       "reason": "non_european_subject",
       "year": "2012"
@@ -14493,6 +15657,10 @@
     "10.1080/09668136.2015.1020038": {
       "reason": "european_subject_not_established",
       "year": "2015"
+    },
+    "10.1080/09668136.2018.1525339": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
     },
     "10.1080/09668136.2019.1602593": {
       "reason": "european_subject_not_established",
@@ -14530,6 +15698,10 @@
       "reason": "european_subject_not_established",
       "year": "2019"
     },
+    "10.1080/10301763.2020.1722347": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
+    },
     "10.1080/10301763.2021.1894634": {
       "reason": "european_subject_not_established",
       "year": "2021"
@@ -14545,6 +15717,10 @@
     "10.1080/10437797.2023.2203213": {
       "reason": "european_subject_not_established",
       "year": "2023"
+    },
+    "10.1080/10438599.2019.1571668": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
     },
     "10.1080/10438599.2021.1919517": {
       "reason": "european_subject_not_established",
@@ -14598,8 +15774,24 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1080/13501763.2011.544490": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
     "10.1080/13501763.2011.544499": {
       "reason": "european_subject_not_established",
+      "year": "2011"
+    },
+    "10.1080/13501763.2011.544505": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/13501763.2011.544507": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/13501763.2011.551075": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2011"
     },
     "10.1080/13501763.2011.586793": {
@@ -14610,9 +15802,29 @@
       "reason": "no_substantive_title",
       "year": "2011"
     },
+    "10.1080/13501763.2011.593356": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/13501763.2011.609743": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
+    },
+    "10.1080/13501763.2011.610690": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
+    },
     "10.1080/13501763.2011.615202": {
       "reason": "european_subject_not_established",
       "year": "2011"
+    },
+    "10.1080/13501763.2011.615206": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/13501763.2011.638119": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.1080/13501763.2011.641336": {
       "reason": "no_substantive_title",
@@ -14626,6 +15838,14 @@
       "reason": "no_substantive_title",
       "year": "2012"
     },
+    "10.1080/13501763.2012.672106": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
+    },
+    "10.1080/13501763.2012.672109": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
+    },
     "10.1080/13501763.2012.693311": {
       "reason": "editorial_review_or_not_original_study",
       "year": "2012"
@@ -14637,6 +15857,10 @@
     "10.1080/13501763.2012.742296": {
       "reason": "no_substantive_title",
       "year": "2012"
+    },
+    "10.1080/13501763.2012.758446": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
     },
     "10.1080/13501763.2013.761494": {
       "reason": "european_subject_not_established",
@@ -14654,8 +15878,24 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1080/13501763.2013.829582": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
+    "10.1080/13501763.2013.834070": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
     "10.1080/13501763.2013.851994": {
       "reason": "no_substantive_title",
+      "year": "2013"
+    },
+    "10.1080/13501763.2013.867892": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2013.870023": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2013"
     },
     "10.1080/13501763.2014.1000364": {
@@ -14664,6 +15904,22 @@
     },
     "10.1080/13501763.2014.881411": {
       "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2014.881415": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2014.882388": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2014.882971": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2014.882972": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2014"
     },
     "10.1080/13501763.2014.893080": {
@@ -14686,6 +15942,30 @@
       "reason": "no_substantive_title",
       "year": "2014"
     },
+    "10.1080/13501763.2014.966743": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.1080/13501763.2015.1020833": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1080/13501763.2015.1031158": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1080/13501763.2015.1047398": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1080/13501763.2015.1065115": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1080/13501763.2015.1068836": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
     "10.1080/13501763.2015.1110193": {
       "reason": "european_subject_not_established",
       "year": "2015"
@@ -14702,8 +15982,16 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1080/13501763.2015.1128218": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.1080/13501763.2015.1128228": {
       "reason": "european_subject_not_established",
+      "year": "2016"
+    },
+    "10.1080/13501763.2015.1132752": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
     "10.1080/13501763.2016.1146323": {
@@ -14712,6 +16000,14 @@
     },
     "10.1080/13501763.2016.1149205": {
       "reason": "european_subject_not_established",
+      "year": "2016"
+    },
+    "10.1080/13501763.2016.1162838": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1080/13501763.2016.1164744": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
     "10.1080/13501763.2016.1168979": {
@@ -14726,8 +16022,24 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.1080/13501763.2016.1174534": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1080/13501763.2016.1184507": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.1080/13501763.2016.1186211": {
       "reason": "no_substantive_title",
+      "year": "2016"
+    },
+    "10.1080/13501763.2016.1186214": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1080/13501763.2016.1206140": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
     "10.1080/13501763.2016.1253764": {
@@ -14854,6 +16166,14 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1080/13501763.2021.1918217": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
+    "10.1080/13501763.2021.1918219": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
     "10.1080/13501763.2021.1936131": {
       "reason": "no_substantive_title",
       "year": "2021"
@@ -14866,16 +16186,40 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1080/13501763.2022.2069844": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
     "10.1080/13501763.2022.2084583": {
       "reason": "no_substantive_title",
+      "year": "2022"
+    },
+    "10.1080/13501763.2022.2096101": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
     "10.1080/13501763.2022.2096102": {
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.1080/13501763.2022.2096103": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
     "10.1080/13501763.2022.2099449": {
       "reason": "european_subject_not_established",
+      "year": "2022"
+    },
+    "10.1080/13501763.2022.2103170": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
+    "10.1080/13501763.2022.2107047": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
+    "10.1080/13501763.2022.2107049": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2022"
     },
     "10.1080/13501763.2022.2123024": {
@@ -14890,11 +16234,19 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
+    "10.1080/13501763.2022.2143867": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
+    },
     "10.1080/13501763.2022.2158208": {
       "reason": "european_subject_not_established",
       "year": "2023"
     },
     "10.1080/13501763.2022.2162567": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.1080/13501763.2023.2171091": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
@@ -14918,12 +16270,20 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1080/13501763.2023.2205887": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1080/13501763.2023.2215495": {
       "reason": "european_subject_not_established",
       "year": "2023"
     },
     "10.1080/13501763.2023.2217846": {
       "reason": "european_subject_not_established",
+      "year": "2023"
+    },
+    "10.1080/13501763.2023.2240374": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1080/13501763.2023.2243997": {
@@ -14940,6 +16300,14 @@
     },
     "10.1080/13501763.2023.2275860": {
       "reason": "no_substantive_title",
+      "year": "2023"
+    },
+    "10.1080/13501763.2023.2288236": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.1080/13501763.2023.2297807": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.1080/13501763.2025.2516120": {
@@ -14990,9 +16358,21 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1080/13511610.2014.998641": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1080/13511610.2015.1082460": {
+      "reason": "no_substantive_title",
+      "year": "2015"
+    },
     "10.1080/13511610.2017.1282308": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
+    },
+    "10.1080/13511610.2023.2266578": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.1080/1351847x.2011.601629": {
       "reason": "european_subject_not_established",
@@ -15106,6 +16486,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2012"
     },
+    "10.1080/13662716.2016.1195253": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.1080/13662716.2021.2021864": {
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
@@ -15181,6 +16565,10 @@
     "10.1080/1369183x.2019.1611421": {
       "reason": "future_facing_research_question_not_established",
       "year": "2019"
+    },
+    "10.1080/1369183x.2023.2193713": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.1080/13698575.2013.854990": {
       "reason": "european_subject_not_established",
@@ -15294,6 +16682,10 @@
       "reason": "financial_futures_not_foresight",
       "year": "2023"
     },
+    "10.1080/14702436.2019.1586435": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.1080/14719037.2014.908662": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
@@ -15362,6 +16754,14 @@
       "reason": "no_substantive_title",
       "year": "2012"
     },
+    "10.1080/14782804.2011.610605": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
+    "10.1080/14782804.2013.817824": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
     "10.1080/14782804.2023.2241021": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
@@ -15429,6 +16829,10 @@
     "10.1080/15583058.2016.1186758": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1080/15705854.2013.772751": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
     },
     "10.1080/15710882.2025.2578736": {
       "reason": "outside_historical_original_period",
@@ -15614,6 +17018,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2019"
     },
+    "10.1080/20504721.2016.1148468": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
     "10.1080/20504721.2017.1391002": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
@@ -15625,6 +17033,10 @@
     "10.1080/21550085.2017.1291836": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.1080/21568235.2011.629487": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
     },
     "10.1080/21568235.2020.1835517": {
       "reason": "european_subject_not_established",
@@ -15641,6 +17053,10 @@
     "10.1080/21599165.2016.1154844": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1080/21614083.2021.2014097": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
     },
     "10.1080/21622671.2020.1837220": {
       "reason": "future_facing_research_question_not_established",
@@ -15934,6 +17350,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1080/24750263.2018.1478003": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.1080/25741292.2019.1622276": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -16118,6 +17538,14 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1088/2058-7058/26/08/13": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
+    "10.1088/2058-7058/27/01/20": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
     "10.1088/2058-7058/31/7/37": {
       "reason": "no_substantive_title",
       "year": "2018"
@@ -16234,6 +17662,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2013"
     },
+    "10.1093/cjres/rsx009": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1093/cpe/bzu009": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
@@ -16261,6 +17693,10 @@
     "10.1093/esr/jcs049": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.1093/esr/jct020": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
     },
     "10.1093/esr/jcv056": {
       "reason": "european_subject_not_established",
@@ -16458,6 +17894,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1093/eurpub/ckv171.054": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
     "10.1093/eurpub/ckw022": {
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
@@ -16490,9 +17930,17 @@
       "reason": "editorial_review_or_not_original_study",
       "year": "2016"
     },
+    "10.1093/eurpub/ckw173.053": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.1093/eurpub/ckw174.207": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1093/eurpub/ckx159": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
     },
     "10.1093/eurpub/ckx186.015": {
       "reason": "non_european_subject",
@@ -16598,6 +18046,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
+    "10.1093/ia/iix127": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
     "10.1093/ia/iiy087": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
@@ -16682,6 +18134,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2013"
     },
+    "10.1093/nsr/nwu034": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
     "10.1093/nutrit/nuae215": {
       "reason": "outside_historical_original_period",
       "year": "2025"
@@ -16705,6 +18161,10 @@
     "10.1093/pa/gsab004": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
+    },
+    "10.1093/pa/gss047": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.1093/pa/gss051": {
       "reason": "european_subject_not_established",
@@ -16790,6 +18250,10 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.1093/scipol/scu047": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
     "10.1093/scipol/scv010": {
       "reason": "non_european_subject",
       "year": "2015"
@@ -16845,6 +18309,10 @@
     "10.1093/sw/sww054": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.1093/swr/svw031": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
     },
     "10.1093/toxsci/kfr075": {
       "reason": "european_subject_not_established",
@@ -16997,6 +18465,10 @@
     "10.1108/03090591211255584": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.1108/10748121311297058": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
     },
     "10.1108/10878571211257140": {
       "reason": "european_subject_not_established",
@@ -17229,6 +18701,10 @@
     "10.1108/aam-09-2021-0054": {
       "reason": "european_subject_not_established",
       "year": "2022"
+    },
+    "10.1108/bfj-01-2016-0021": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
     },
     "10.1108/bfj.2011.070113baa.002": {
       "reason": "european_subject_not_established",
@@ -17738,6 +19214,10 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1108/fs-10-2011-0045": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
+    },
     "10.1108/fs-10-2012-0076": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -17942,6 +19422,10 @@
       "reason": "non_european_subject",
       "year": "2023"
     },
+    "10.1108/ijccsm.2012.41404baa.009": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
     "10.1108/ijccsm.2013.41405baa.003": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
@@ -17977,6 +19461,14 @@
     "10.1108/ijpdlm-12-2016-0359": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.1108/ijshe.2011.24912bag.001": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
+    "10.1108/ijshe.2011.24912caa.013": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
     },
     "10.1108/ijssp-03-2018-0035": {
       "reason": "european_subject_not_established",
@@ -18678,6 +20170,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2018"
     },
+    "10.1111/epi.12346": {
+      "reason": "european_subject_not_established",
+      "year": "2013"
+    },
     "10.1111/eulj.12254": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
@@ -18902,6 +20398,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1111/j.1468-0319.2012.00883.x": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
     "10.1111/j.1468-0319.2013.00939.x": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
@@ -18925,6 +20425,10 @@
     "10.1111/j.1468-2397.2012.00871.x": {
       "reason": "future_facing_research_question_not_established",
       "year": "2012"
+    },
+    "10.1111/j.1468-2435.2009.00535.x": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
     },
     "10.1111/j.1468-2435.2011.00709.x": {
       "reason": "future_facing_research_question_not_established",
@@ -19430,6 +20934,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1136/bmj.f1286": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2013"
+    },
     "10.1136/bmj.g4699": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -19441,6 +20949,18 @@
     "10.1136/bmj.l5350": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1136/bmj.p1974": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
+    "10.1136/bmj.p2054": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
+    "10.1136/bmj.p2068": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.1136/bmjinnov-2021-000804": {
       "reason": "incidental_european_mention_only",
@@ -19557,6 +21077,10 @@
     "10.1145/3186585": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.1145/3309915": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
     },
     "10.1145/3610103": {
       "reason": "european_subject_not_established",
@@ -19862,6 +21386,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.11648/j.ijes.20230702.11": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.11648/j.jhrm.20140201.12": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
@@ -20150,6 +21678,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2015"
     },
+    "10.1177/0730888417726119": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1177/07308884231203668": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -20294,6 +21826,10 @@
       "reason": "no_substantive_title",
       "year": "2014"
     },
+    "10.1177/1024258915581948": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2015"
+    },
     "10.1177/1024258915586127": {
       "reason": "future_facing_research_question_not_established",
       "year": "2015"
@@ -20390,6 +21926,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
     },
+    "10.1177/10242589221099990": {
+      "reason": "no_substantive_title",
+      "year": "2022"
+    },
     "10.1177/10242589231183319": {
       "reason": "no_substantive_title",
       "year": "2023"
@@ -20410,6 +21950,10 @@
       "reason": "outside_historical_original_period",
       "year": "2024"
     },
+    "10.1177/1035304614530375": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.1177/1035304620903152": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -20421,6 +21965,10 @@
     "10.1177/1035719x221120296": {
       "reason": "european_subject_not_established",
       "year": "2022"
+    },
+    "10.1177/1037969x1403900105": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
     },
     "10.1177/1065912911421016": {
       "reason": "no_traceable_european_future_proposition",
@@ -20622,6 +22170,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
     },
+    "10.1177/1465116513501907": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
     "10.1177/1465116513517014": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
@@ -20674,6 +22226,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2015"
     },
+    "10.1177/1465116515610641": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
     "10.1177/1465116515624166": {
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
@@ -20702,6 +22258,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
     },
+    "10.1177/1465116517721124": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.1177/1465116517721657": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
@@ -20725,6 +22285,10 @@
     "10.1177/1465116517741562": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
+    },
+    "10.1177/1465116518778900": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.1177/1465116518793707": {
       "reason": "future_facing_research_question_not_established",
@@ -20766,6 +22330,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.1177/1465116520980068": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
     "10.1177/14651165211027397": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
@@ -20797,6 +22365,10 @@
     "10.1177/14651165221138000": {
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
+    },
+    "10.1177/14651165231170453": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
     },
     "10.1177/14651165231175533": {
       "reason": "future_facing_research_question_not_established",
@@ -20907,6 +22479,10 @@
       "year": "2023"
     },
     "10.1177/1478210315579558": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
+    "10.1177/1478210315622916": {
       "reason": "european_subject_not_established",
       "year": "2015"
     },
@@ -21042,6 +22618,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1177/1946756713510280": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
     "10.1177/1946756713510282": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -21061,6 +22641,10 @@
     "10.1177/1946756714528881": {
       "reason": "european_subject_not_established",
       "year": "2014"
+    },
+    "10.1177/1946756714555920": {
+      "reason": "no_substantive_title",
+      "year": "2015"
     },
     "10.1177/1946756715569173": {
       "reason": "european_subject_not_established",
@@ -21168,6 +22752,14 @@
     },
     "10.1177/201395251100200201": {
       "reason": "no_substantive_title",
+      "year": "2011"
+    },
+    "10.1177/201395251100200204": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
+    "10.1177/201395251100200206": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2011"
     },
     "10.1177/201395251100200208": {
@@ -21280,6 +22872,10 @@
     },
     "10.1177/201395251300400401": {
       "reason": "no_substantive_title",
+      "year": "2013"
+    },
+    "10.1177/201395251300400407": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
     },
     "10.1177/201395251300400408": {
@@ -21646,6 +23242,22 @@
       "reason": "no_substantive_title",
       "year": "2014"
     },
+    "10.1177/2050640614548981": {
+      "reason": "no_substantive_title",
+      "year": "2014"
+    },
+    "10.1177/2050640615601624": {
+      "reason": "no_substantive_title",
+      "year": "2015"
+    },
+    "10.1177/2050640616663841": {
+      "reason": "no_substantive_title",
+      "year": "2016"
+    },
+    "10.1177/2050640616669651": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
     "10.1177/2050640618787651": {
       "reason": "european_subject_not_established",
       "year": "2018"
@@ -21678,9 +23290,17 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1177/2319510x14565013": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
+    },
     "10.1177/2336825x20909945": {
       "reason": "title_future_term_not_substantive_in_abstract",
       "year": "2020"
+    },
+    "10.1177/2378023118796932": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
     },
     "10.1177/2514848619827009": {
       "reason": "european_subject_not_established",
@@ -21757,6 +23377,10 @@
     "10.1186/1478-4505-9-38": {
       "reason": "future_facing_research_question_not_established",
       "year": "2011"
+    },
+    "10.1186/1479-5876-10-s2-a5": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.1186/1742-6405-8-13": {
       "reason": "european_subject_not_established",
@@ -22482,6 +24106,10 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.1242/jeb.156356": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.1257/aer.103.6.2265": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -22613,6 +24241,10 @@
     "10.12765/cpos-2011-18": {
       "reason": "future_facing_research_question_not_established",
       "year": "2012"
+    },
+    "10.12765/cpos-2017-04": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
     },
     "10.12765/cpos-2020-10": {
       "reason": "historical_reconstruction_not_forward_looking",
@@ -23058,6 +24690,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
     },
+    "10.1353/psg.2018.0000": {
+      "reason": "no_substantive_title",
+      "year": "2018"
+    },
     "10.1353/sfs.2020.0014": {
       "reason": "incidental_european_mention_only",
       "year": "2020"
@@ -23077,6 +24713,10 @@
     "10.1353/wic.2023.a965093": {
       "reason": "european_subject_not_established",
       "year": "2023"
+    },
+    "10.1364/ao.53.008556": {
+      "reason": "no_substantive_title",
+      "year": "2014"
     },
     "10.1365/s40112-012-0010-3": {
       "reason": "european_subject_not_established",
@@ -23139,6 +24779,10 @@
       "year": "2014"
     },
     "10.1371/journal.pone.0096480": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
+    "10.1371/journal.pone.0105380": {
       "reason": "european_subject_not_established",
       "year": "2014"
     },
@@ -23334,6 +24978,10 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.14419/ijet.v7i3.31.18293": {
+      "reason": "non_european_subject",
+      "year": "2018"
+    },
     "10.14422/rib.i01.y2016.002": {
       "reason": "european_subject_not_established",
       "year": "2016"
@@ -23466,6 +25114,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.14763/2021.3.1572": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2021"
+    },
     "10.14763/2023.4.1733": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
@@ -23524,6 +25176,10 @@
     },
     "10.1504/ijfip.2012.046109": {
       "reason": "european_subject_not_established",
+      "year": "2012"
+    },
+    "10.1504/ijfip.2012.046110": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2012"
     },
     "10.1504/ijfip.2012.046112": {
@@ -23592,6 +25248,10 @@
     },
     "10.1504/ijfip.2016.078379": {
       "reason": "european_subject_not_established",
+      "year": "2016"
+    },
+    "10.1504/ijfip.2016.084529": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
     "10.1504/ijfip.2017.085817": {
@@ -23694,6 +25354,10 @@
       "reason": "financial_futures_not_foresight",
       "year": "2011"
     },
+    "10.1504/ijgw.2018.094311": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
     "10.1504/ijhrcs.2013.052774": {
       "reason": "future_facing_research_question_not_established",
       "year": "2013"
@@ -23729,6 +25393,14 @@
     "10.1504/ijspm.2021.117330": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.1504/ijtis.2016.083590": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1504/ijtlid.2016.081708": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
     },
     "10.1504/ijtm.2013.055577": {
       "reason": "european_subject_not_established",
@@ -23782,6 +25454,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
     },
+    "10.1515/cer-2017-0024": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
     "10.1515/cirr-2015-0011": {
       "reason": "future_facing_research_question_not_established",
       "year": "2015"
@@ -23814,6 +25490,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2018"
     },
+    "10.1515/iwp-2018-0033": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
     "10.1515/jobs-2016-0047": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
@@ -23827,6 +25507,10 @@
       "year": "2015"
     },
     "10.1515/ngoe-2016-0022": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1515/nispa-2016-0010": {
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
@@ -23869,6 +25553,10 @@
     "10.1515/sirius-2017-0004": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.1515/sirius-2020-3016": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
     },
     "10.1515/sjs-2017-0015": {
       "reason": "european_subject_not_established",
@@ -23938,11 +25626,19 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.15196/rs080103": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.15199/62.2016.3.35": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
     },
     "10.15201/hungeobull.65.4.9": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
+    "10.15208/beh.2017.24": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
     },
@@ -24241,6 +25937,10 @@
     "10.1556/2065.179.2018.5.14": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.1556/tarskut.30.2012.1.4": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.15575/ks.v5i3.29485": {
       "reason": "european_subject_not_established",
@@ -24561,6 +26261,10 @@
     "10.17225/jhp00100": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.17261/pressacademia.2015211507": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
     },
     "10.17261/pressacademia.2017.593": {
       "reason": "european_subject_not_established",
@@ -25310,6 +27014,10 @@
       "reason": "european_subject_not_established",
       "year": "2012"
     },
+    "10.18109/jeus.2016..44.3": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
     "10.18174/odjar.v10i0.16398": {
       "reason": "outside_historical_original_period",
       "year": "2024"
@@ -25321,6 +27029,14 @@
     "10.18184/2079-4665.2017.8.2.203-214": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.18199/2226-5260-2016-5-1-10-15": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
+    "10.18199/2226-5260-2016-5-1-70-89": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
     },
     "10.18201/ijisae.24856": {
       "reason": "european_subject_not_established",
@@ -25666,6 +27382,10 @@
       "reason": "non_european_subject",
       "year": "2020"
     },
+    "10.18844/gjhss.v0i0.408": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.18848/1836-6236/cgp/v02i01/51531": {
       "reason": "european_subject_not_established",
       "year": "2011"
@@ -25926,9 +27646,25 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.21307/stattrans-2016-019": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
+    "10.21307/stattrans-2016-034": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
     "10.21314/jrmv.2017.166": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.2139/ssrn.1946258": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
+    },
+    "10.2139/ssrn.1946728": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2011"
     },
     "10.2139/ssrn.1955429": {
       "reason": "european_subject_not_established",
@@ -25978,6 +27714,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2013"
     },
+    "10.2139/ssrn.2394699": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
     "10.2139/ssrn.2482052": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2014"
@@ -26018,6 +27758,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.2139/ssrn.2864659": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
     "10.2139/ssrn.2871475": {
       "reason": "european_subject_not_established",
       "year": "2016"
@@ -26025,6 +27769,10 @@
     "10.2139/ssrn.2902565": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.2139/ssrn.2906249": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
     },
     "10.2139/ssrn.2939615": {
       "reason": "ambiguous_title_no_supporting_abstract",
@@ -26038,9 +27786,21 @@
       "reason": "european_subject_not_established",
       "year": "2017"
     },
+    "10.2139/ssrn.2978615": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2017"
+    },
     "10.2139/ssrn.3052257": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2017"
+    },
+    "10.2139/ssrn.3064863": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
+    "10.2139/ssrn.3158008": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
     },
     "10.2139/ssrn.3169147": {
       "reason": "european_subject_not_established",
@@ -26065,6 +27825,10 @@
     "10.2139/ssrn.3324127": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.2139/ssrn.3338692": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
     },
     "10.2139/ssrn.3350571": {
       "reason": "no_substantive_title",
@@ -26098,6 +27862,10 @@
       "reason": "short_horizon_operational_prediction",
       "year": "2020"
     },
+    "10.2139/ssrn.3708211": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.2139/ssrn.3717399": {
       "reason": "european_subject_not_established",
       "year": "2020"
@@ -26108,6 +27876,10 @@
     },
     "10.2139/ssrn.3732652": {
       "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.2139/ssrn.3735442": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
     },
     "10.2139/ssrn.3817520": {
@@ -26205,6 +27977,10 @@
     "10.21428/cb6ab371.fe26c513": {
       "reason": "european_subject_not_established",
       "year": "2020"
+    },
+    "10.21428/f4c6e600.05899abe": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.21463/jmic.2021.10.1.02": {
       "reason": "future_facing_research_question_not_established",
@@ -26365,6 +28141,10 @@
     "10.21820/23987073.2018.3.4": {
       "reason": "future_facing_research_question_not_established",
       "year": "2018"
+    },
+    "10.21820/23987073.2019.7.70": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
     },
     "10.21820/23987073.2021.4.30": {
       "reason": "future_facing_research_question_not_established",
@@ -26528,6 +28308,10 @@
     },
     "10.2218/finsoc.v3i2.2575": {
       "reason": "no_substantive_title",
+      "year": "2017"
+    },
+    "10.2218/unfamiliar.v7i1.1892": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2017"
     },
     "10.22190/teme191031070v": {
@@ -26716,6 +28500,10 @@
     },
     "10.2304/pfie.2014.12.4.542": {
       "reason": "future_facing_research_question_not_established",
+      "year": "2014"
+    },
+    "10.2304/pfie.2014.12.4.627": {
+      "reason": "editorial_review_or_not_original_study",
       "year": "2014"
     },
     "10.2304/pfie.2014.12.8.1084": {
@@ -26937,6 +28725,10 @@
     "10.24023/futurejournal/2175-5825/2021.v13i3.579": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.24057/2071-9388-2012-5-1-67-83": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.24057/2071-9388-2020-174": {
       "reason": "future_facing_research_question_not_established",
@@ -27454,6 +29246,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2012"
     },
+    "10.2478/v10145-011-0038-7": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
     "10.2478/v10151-011-0001-4": {
       "reason": "future_facing_research_question_not_established",
       "year": "2011"
@@ -27525,6 +29321,10 @@
     "10.24833/0869-0049-2018-3-72-82": {
       "reason": "future_facing_research_question_not_established",
       "year": "2018"
+    },
+    "10.24833/2071-8160-2017-2-53-266-274": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
     },
     "10.24833/2071-8160-2018-6-63-255-270": {
       "reason": "european_subject_not_established",
@@ -27625,6 +29425,10 @@
     "10.2514/1.c036058": {
       "reason": "european_subject_not_established",
       "year": "2021"
+    },
+    "10.25140/2411-5363-2017-1(7)-166-170": {
+      "reason": "no_traceable_european_future_proposition",
+      "year": "2017"
     },
     "10.25142/aak.2011.005": {
       "reason": "european_subject_not_established",
@@ -27749,6 +29553,10 @@
     "10.26481/marble.2015.v4.281": {
       "reason": "title_future_term_not_substantive_in_abstract",
       "year": "2016"
+    },
+    "10.26485/spe/2018/106/18": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
     },
     "10.26493/2335-4194.14.125-136": {
       "reason": "european_subject_not_established",
@@ -28318,8 +30126,24 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
     },
+    "10.31175/hi.2019.03.01": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
+    "10.31175/hi.2019.04.01": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.31175/hi.2020.02.02": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2020"
+    },
     "10.31175/hi.2023.02.01": {
       "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
+    "10.31175/hi.2023.03.01": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
     "10.31203/aepa.2011.8.2.003": {
@@ -28449,6 +30273,10 @@
     "10.31620/jccc.06.18/02": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.31637/epsir.23-1.1": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.31637/epsir.23-2.4": {
       "reason": "european_subject_not_established",
@@ -28690,6 +30518,10 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.32320/1581-6044.30(5-6)63-78": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
     "10.32324/2412-8945-2019-2-81-84": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -28798,6 +30630,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.32782/2306-9082/2023-50-7": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
+    },
     "10.32782/2524-0390/2019.4.60": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -28813,6 +30649,10 @@
     "10.32782/law.ua.2021.4.25": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
+    },
+    "10.32782/ln.2023.21.30": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.3280/exioa1-2023oa16045": {
       "reason": "european_subject_not_established",
@@ -30226,6 +32066,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.3390/photonics4010001": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.3390/plants13040535": {
       "reason": "outside_historical_original_period",
       "year": "2024"
@@ -30427,6 +32271,10 @@
       "year": "2018"
     },
     "10.3390/su10072558": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
+    "10.3390/su10082764": {
       "reason": "european_subject_not_established",
       "year": "2018"
     },
@@ -30926,6 +32774,10 @@
       "reason": "incidental_european_mention_only",
       "year": "2018"
     },
+    "10.3390/w10121866": {
+      "reason": "european_subject_not_established",
+      "year": "2018"
+    },
     "10.3390/w11020206": {
       "reason": "future_facing_research_question_not_established",
       "year": "2019"
@@ -31037,6 +32889,10 @@
     "10.34135/sjpppa.210807": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
+    },
+    "10.34142/hsr.2022.08.02.05": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
     },
     "10.34154/2019-ejcc-0101-13-23/euraass": {
       "reason": "european_subject_not_established",
@@ -31318,6 +33174,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2020"
     },
+    "10.3724/sp.j.1003.2014.14032": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
+    },
     "10.3724/sp.j.1085.2012.00170": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -31566,6 +33426,10 @@
       "reason": "financial_futures_not_foresight",
       "year": "2011"
     },
+    "10.3905/jai.2013.2013.1.028": {
+      "reason": "financial_futures_not_foresight",
+      "year": "2013"
+    },
     "10.3905/jai.2017.2017.1.053": {
       "reason": "financial_futures_not_foresight",
       "year": "2017"
@@ -31597,6 +33461,10 @@
     "10.3917/cris.2308.0005": {
       "reason": "incidental_european_mention_only",
       "year": "2016"
+    },
+    "10.3917/deba.204.0161": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
     },
     "10.3917/e.come.093.0169": {
       "reason": "european_subject_not_established",
@@ -31661,6 +33529,10 @@
     "10.3917/inno.038.0037": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.3917/med.167.0073": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2014"
     },
     "10.3917/med.199.0365": {
       "reason": "european_subject_not_established",
@@ -31809,6 +33681,10 @@
     "10.4000/cahierscfv.647": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.4000/cdlm.7951": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2015"
     },
     "10.4000/chinaperspectives.11674": {
       "reason": "non_european_subject",
@@ -31982,12 +33858,40 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
+    "10.4054/demres.2017.36.20": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
+    "10.4054/demres.2017.36.23": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
+    "10.4054/demres.2017.37.8": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
+    },
     "10.4054/demres.2018.38.54": {
       "reason": "european_subject_not_established",
       "year": "2018"
     },
+    "10.4054/demres.2018.39.28": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
+    "10.4054/demres.2019.40.19": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.4054/demres.2019.40.55": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
     "10.4054/demres.2019.41.12": {
       "reason": "european_subject_not_established",
+      "year": "2019"
+    },
+    "10.4054/demres.2019.41.49": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2019"
     },
     "10.4054/demres.2021.44.46": {
@@ -32000,6 +33904,10 @@
     },
     "10.4054/demres.2021.45.12": {
       "reason": "non_european_subject",
+      "year": "2021"
+    },
+    "10.4054/demres.2021.45.2": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2021"
     },
     "10.4054/demres.2021.45.4": {
@@ -32017,6 +33925,18 @@
     "10.4054/demres.2022.46.21": {
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
+    },
+    "10.4054/demres.2023.48.3": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.4054/demres.2023.48.8": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
+    "10.4054/demres.2023.49.18": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.4067/s0718-18762011000100006": {
       "reason": "european_subject_not_established",
@@ -32081,6 +34001,10 @@
     "10.4155/fmc-2018-0182": {
       "reason": "european_subject_not_established",
       "year": "2018"
+    },
+    "10.4161/hv.26888": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
     },
     "10.4172/2157-7617.1000228": {
       "reason": "european_subject_not_established",
@@ -32310,9 +34234,33 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
     },
+    "10.4337/eecj.2018.02.02": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2018"
+    },
     "10.4337/eecj.2018.02.04": {
       "reason": "no_substantive_title",
       "year": "2018"
+    },
+    "10.4337/eecj.2018.04.03": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
+    "10.4337/eecj.2019.03-04.04": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.4337/eecj.2019.03-04.06": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2019"
+    },
+    "10.4337/eecj.2020.02-03.03": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
+    },
+    "10.4337/eecj.2021.04.01": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
     },
     "10.4337/eecj.2023.03.01": {
       "reason": "future_facing_research_question_not_established",
@@ -32324,6 +34272,10 @@
     },
     "10.4337/jhre.2020.03.04": {
       "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.4337/relp.2020.01.01": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
     },
     "10.4337/relp.2023.0004": {
@@ -32549,6 +34501,10 @@
     "10.47459/cndcgs.2022.9": {
       "reason": "future_facing_research_question_not_established",
       "year": "2022"
+    },
+    "10.47459/lasr.2020.18.1": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
     },
     "10.47577/tssj.v11i1.967": {
       "reason": "european_subject_not_established",
@@ -33510,6 +35466,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2011"
     },
+    "10.54242/1702-000-011.012-028": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
     "10.54254/2753-8818/61/20241490": {
       "reason": "outside_historical_original_period",
       "year": "2024"
@@ -33573,6 +35533,14 @@
     "10.54648/cola2023073": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
+    },
+    "10.54648/ecta2020047": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2020"
+    },
+    "10.54648/eelr2012022": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
     },
     "10.54648/eelr2020038": {
       "reason": "future_facing_research_question_not_established",
@@ -33653,6 +35621,10 @@
     "10.5465/annals.2014.0054": {
       "reason": "european_subject_not_established",
       "year": "2017"
+    },
+    "10.54667/ceemr.2023.23": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
     },
     "10.54667/ceemr.2023.24": {
       "reason": "future_facing_research_question_not_established",
@@ -33754,6 +35726,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
     },
+    "10.5539/ilr.v2n1p109": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2013"
+    },
     "10.5539/jms.v2n1p210": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -33824,6 +35800,10 @@
     },
     "10.5547/2160-5890.9.1.dans": {
       "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.5547/2160-5890.9.1.spro": {
+      "reason": "no_substantive_source_text_for_radar2",
       "year": "2020"
     },
     "10.55528/18292828-2022.4-93": {
@@ -33970,6 +35950,10 @@
       "reason": "european_subject_not_established",
       "year": "2022"
     },
+    "10.56181/afdj8089": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
     "10.5621/sciefictstud.47.2.0301": {
       "reason": "incidental_european_mention_only",
       "year": "2020"
@@ -33997,6 +35981,10 @@
     "10.5642/urceu.202101.10": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
+    },
+    "10.5642/urceu.lgqo5909": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2022"
     },
     "10.56556/gssr.v2i3.556": {
       "reason": "european_subject_not_established",
@@ -34158,6 +36146,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2012"
     },
+    "10.5755/j01.eis.0.6.1426": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
+    },
     "10.5755/j01.eis.0.7.4236": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -34221,6 +36213,10 @@
     "10.5771/1435-2869-2014-1-27": {
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
+    },
+    "10.5771/1435-439x-2017-4-377": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2017"
     },
     "10.5771/1610-7780-2012-4-433": {
       "reason": "future_facing_research_question_not_established",
@@ -34341,6 +36337,10 @@
     "10.59071/2795-4765.rpcp2023.19/pp.23-36": {
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
+    },
+    "10.59170/stattrans-2016-015": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
     },
     "10.5922/2079-8555-2016-2-6": {
       "reason": "future_facing_research_question_not_established",
@@ -34638,6 +36638,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.62991/af1996294069": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.62991/af1996317961": {
       "reason": "european_subject_not_established",
       "year": "2023"
@@ -34686,6 +36690,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2023"
     },
+    "10.69554/rihl6016": {
+      "reason": "european_subject_not_established",
+      "year": "2017"
+    },
     "10.69554/wdbn2222": {
       "reason": "no_traceable_european_future_proposition",
       "year": "2011"
@@ -34717,6 +36725,10 @@
     "10.70852/tmj.1786306": {
       "reason": "outside_historical_original_period",
       "year": "2025"
+    },
+    "10.7163/eu21.2012.22.3": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2012"
     },
     "10.7163/gpol.2014.6": {
       "reason": "future_facing_research_question_not_established",
@@ -34837,6 +36849,14 @@
     "10.7327/cerei.2011.03.01": {
       "reason": "foresight_method_or_background_not_future_development",
       "year": "2011"
+    },
+    "10.7341/20191511": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
+    },
+    "10.7358/ecps-2019-019-schl": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2019"
     },
     "10.7416/ai.2022.2528": {
       "reason": "future_facing_research_question_not_established",
@@ -35060,6 +37080,10 @@
     },
     "10.9785/ag-2019-641806": {
       "reason": "ambiguous_title_no_supporting_abstract",
+      "year": "2019"
+    },
+    "10.9785/cri-2019-200402": {
+      "reason": "future_facing_research_question_not_established",
       "year": "2019"
     },
     "10.9790/9622-0704034248": {
