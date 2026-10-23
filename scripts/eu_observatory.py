@@ -2,7 +2,7 @@
 """EU Futures Observatory: cumulative, provisional claim-to-literature discovery.
 Never interprets a candidate source as evidence of a realised outcome.
 """
-import argparse, hashlib, json, os, re, time, urllib.parse, urllib.request, zipfile
+import argparse, hashlib, json, os, re, time, urllib.parse, urllib.request, urllib.error, zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -101,7 +101,12 @@ def compare(claim,paper):
 def fetch_openalex(q,after_year,limit=20,page=1):
  params={'search':q,'filter':f'from_publication_date:{after_year+1}-01-01,to_publication_date:2026-10-23','per-page':str(limit),'page':str(page),'select':'id,doi,title,display_name,publication_year,primary_location,abstract_inverted_index'}
  url='https://api.openalex.org/works?'+urllib.parse.urlencode(params)
- req=urllib.request.Request(url,headers={'User-Agent':'EU-Futures-Observatory/1.0 (research; public sources)'})
+ headers={'User-Agent':'EU-Futures-Observatory/1.0 (research; public sources)'}
+ api_key=os.environ.get('OPENALEX_API_KEY','').strip()
+ if not api_key:
+  raise RuntimeError('OPENALEX_API_KEY is missing from the Scanner 2 job environment; verify the GitHub Actions secret mapping')
+ headers['Authorization']='Bearer '+api_key
+ req=urllib.request.Request(url,headers=headers)
  with urllib.request.urlopen(req,timeout=25) as response:raw=json.load(response)
  results=[]
  for p in raw.get('results',[]):
@@ -128,9 +133,12 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
  budget_end=start+minutes*60-35
  target_end=start+min_minutes*60
  stop_reason='budget_exhausted'
- # At most eight OpenAlex pages per query, with 20 records each. After exhausting
- # those pages, do not pretend the minimum is met; report that searching is exhausted.
- max_page=8
+ # Continue from pages already investigated on earlier runs. A larger bounded
+ # horizon leaves further evidence to explore while rotating across claims.
+ max_page=30
+ request_interval=3.0  # cap API traffic instead of exhausting/rate-limiting in minutes
+ next_request_at=start
+ rate_limit_strikes=0
  while time.monotonic()<budget_end:
   work_found=False
   # A round-robin sweep ensures the run explores many claims before going deeper.
@@ -148,7 +156,14 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
    work_found=True;processed.add(claim['id'])
    known={c.get('source_id') for c in store['connections'].values() if c.get('claim_id')==claim['id']}
    try:
+    # Respect the public API: remaining runtime is used for paced research,
+    # never for an idle delay added after the search has ended.
+    pause=max(0.0,next_request_at-time.monotonic())
+    if pause:time.sleep(min(pause,max(0.0,budget_end-time.monotonic())))
+    if time.monotonic()>=budget_end:break
+    next_request_at=time.monotonic()+request_interval
     candidates=fetch_openalex(q,claim['year'],max_papers,page=page)
+    rate_limit_strikes=0
     searches+=1;tried+=len(candidates)
     progress[key]=max_page+1 if len(candidates)<max_papers else page+1
     for paper in candidates:
@@ -162,6 +177,10 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
        'collected_at':datetime.now(timezone.utc).isoformat()}
      known.add(paper['id']);retained+=1
    except Exception as e:
+    if isinstance(e,urllib.error.HTTPError) and e.code==429:
+     rate_limit_strikes+=1
+     # Exponential backoff with a ceiling; do not continually hammer OpenAlex.
+     next_request_at=max(next_request_at,time.monotonic()+min(90,15*2**min(rate_limit_strikes-1,3)))
     errors.append({'claim_id':claim['id'],'query':q,'page':page,'error':str(e)[:240]})
     # Avoid repeatedly hitting a failing endpoint in the same run. Retry next run.
     progress[key]=page
