@@ -37,9 +37,13 @@ def assess_connection(claim, candidate):
     source = claim_subject(claim)
     original_concepts = concept_matches(source)
     candidate_concepts = concept_matches(title+' '+abstract)
+    title_concepts = concept_matches(title)
     shared = sorted(original_concepts & candidate_concepts)
     if original_concepts and not shared:
         return False, {'reason':'different_core_object','original_concepts':sorted(original_concepts),'candidate_concepts':sorted(candidate_concepts)}
+    # An abstract mentioning the object in passing cannot turn an unrelated paper into direct evidence.
+    if original_concepts and shared and not (original_concepts & title_concepts):
+        return False, {'reason':'object_only_mentioned_in_abstract', 'shared_concepts':shared}
     anchor = {t for t in terms(source) if t not in GENERIC}
     candidate_terms = set(terms(title+' '+abstract))
     overlap = sorted(anchor & candidate_terms)

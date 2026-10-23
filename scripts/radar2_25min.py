@@ -15,6 +15,7 @@ from radar2_broad_search import source_queries, fetch_json, extract, later, term
 from radar2_deep_search import read_page
 from radar2_claim_evidence import assess_connection, evidence_card
 from radar2_evidence_extract import extract_findings
+from radar2_claim_search import search_plan
 
 OUTPUT = 'RADAR2-25MIN-RESEARCH.json'
 MARKDOWN = 'RADAR2-25MIN-RESEARCH.md'
@@ -26,7 +27,7 @@ def build_case(claim):
     if not passage.strip():
         raise ValueError('Missing original passage: cannot research title alone')
     return {'original_id':claim['id'], 'title':claim['title'],
-            'query':query_for(claim), 'original_publication':claim['original_publication'],
+            'query':search_plan(claim)['queries'][0] if search_plan(claim)['queries'] else query_for(claim), 'search_plan':search_plan(claim), 'original_publication':claim['original_publication'],
             'original_passage':passage,
             'original_source':card.get('original_source') or claim.get('source_url'),
             'question_card':card,
@@ -83,7 +84,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
         while clock()-started < minutes*60:
             page=report['rounds']+1
             for claim, case in zip(selected,cases):
-                q=case['query']
+                q=case['search_plan']['queries'][(page-1) % len(case['search_plan']['queries'])] if case['search_plan']['queries'] else case['query']
                 if len(q.split())<2:
                     case['errors'].append({'source':'query','page':page,'error':'insufficient_specific_terms'})
                     continue
@@ -102,7 +103,7 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
                             if len(case['readings']) >= 30:
                                 continue
                             outcome=reader(address)
-                            row={'index':source,'url':address,'title':item.get('title'),
+                            row={'index':source,'url':address,'title':item.get('title'),'search_query':q,'metadata_abstract':str(item.get('excerpt') or '')[:3000],
                                  'published':item.get('date'),'connection_status':'metadata_screened_pending_full_text',
                                  'selection_reason':detail.get('reason'), 'selection_detail':detail, 'geographic_match':detail.get('geography','not_assessed'),
                                  'observed_development_confirmed':False, **outcome}
