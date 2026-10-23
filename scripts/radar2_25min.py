@@ -14,6 +14,7 @@ from radar2_rolling import ROOT, STATE_FILE, load_state, prepare, choose_batch
 from radar2_broad_search import source_queries, fetch_json, extract, later, terms, query_for
 from radar2_deep_search import read_page
 from radar2_source_selection import select_source
+from radar2_evidence_extract import extract_findings
 
 OUTPUT = 'RADAR2-25MIN-RESEARCH.json'
 MARKDOWN = 'RADAR2-25MIN-RESEARCH.md'
@@ -54,6 +55,8 @@ def save(root, report):
         for r in c['readings']:
             lines.append(f"- {r['status']} — [{r['title']}]({r['url']}) ({r['published']}; {r['index']})")
             if r.get('excerpt'): lines.append(f"  - Extracted: {r['excerpt'][:700]}")
+            for finding in r.get('candidate_findings', []):
+                lines.append(f"  - Candidate {finding['kind']} (requires review): {finding['text']}")
         for err in c['errors']:
             lines.append(f"- Search error: {err['source']} page {err['page']}: {err['error']}")
         lines.append('')
@@ -102,6 +105,8 @@ def research(root=ROOT, *, minutes=25, batch_size=4, clock=time.monotonic, pause
                                  'published':item.get('date'),'connection_status':'metadata_screened_pending_full_text',
                                  'selection_reason':reason, 'geographic_match':'not_assessed',
                                  'observed_development_confirmed':False, **outcome}
+                            if outcome.get('status') == 'page_text_read':
+                                row['candidate_findings'] = extract_findings(outcome.get('excerpt', ''), claim.get('title', ''))
                             case['readings'].append(row)
                             report['total_reads']+=1
                             if outcome.get('status')=='page_text_read':report['pages_read']+=1
@@ -127,8 +132,11 @@ if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--minutes',type=float,default=25)
     p.add_argument('--batch-size',type=int,default=4)
+    p.add_argument('--pilot', action='store_true', help='Allow a 10-minute live research pilot')
     a=p.parse_args()
-    if a.minutes<25: p.error('Minimum research window is 25 minutes')
+    if a.pilot:
+        if a.minutes != 10: p.error('Pilot mode requires exactly 10 minutes')
+    elif a.minutes<25: p.error('Minimum research window is 25 minutes unless --pilot is set')
     if a.batch_size!=4:p.error('This pilot investigates exactly four claims')
     r=research(minutes=a.minutes,batch_size=a.batch_size)
     print(f"Research ended: {r['elapsed_seconds']/60:.1f} min, {r['total_reads']} reading attempts, {r['pages_read']} readable sources; no verification.")
