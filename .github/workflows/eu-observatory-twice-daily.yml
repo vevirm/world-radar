@@ -23,6 +23,8 @@ jobs:
       - name: Install dependencies
         run: pip install 'python-docx>=1.1,<2'
       - name: Discover later literature and refresh documents
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -u scripts/eu_observatory.py scan --minutes 20 --min-minutes 15 --claims 400
       - name: Save cumulative library and outputs
         run: |
