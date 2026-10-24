@@ -263,7 +263,7 @@ def build():
  for p in links:by[p.get('claim_id')].append(p)
  decisions=read_decisions(ROOT/'connection-group-decisions.json')
  groups=suggest_groups(store.get('claims',{}),links,decisions)
- possible=[]
+ possible=[('Group suggestions — screened combinations', ['Exact groups marked rejected by an LLM review are excluded here. Individual source leads further below are NOT proposed two-paper groups and remain available for other combinations.'])]
  for g in groups:
   c=store['claims'].get(g['claim_id'],{})
   paras=['Group ID: '+g['id'],'Original source: '+c.get('source_url',''),
@@ -272,6 +272,7 @@ def build():
    paras.append('Later source: '+p.get('source_title','')+' — '+p.get('source_url',''))
   paras.append('Review status: '+g['status']+' — possible relationship only')
   possible.append(('Claim + two later sources: '+c.get('title',''),paras))
+ possible.append(('Individual research leads — not grouped', ['These are single claim–paper research leads, not claim + paper A + paper B proposals. A paper in a rejected group may still be useful in a different combination.']))
  for c in claims0:
   match=by.get(c['id'],[])
   if not match:continue

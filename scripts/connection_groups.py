@@ -46,11 +46,11 @@ def suggest_groups(claims, connections, decisions, per_claim=1):
         ordered = sorted(papers.values(), key=lambda p: (
             p.get('relevance', {}).get('rank') != 'strong_candidate',
             -int(p.get('source_year') or 0), p.get('source_id', '')))
-        # Disjoint small groups: a group must never be inferred as "accepted".
-        for i in range(0, min(len(ordered), per_claim * 2), 2):
+        # Suggest up to per_claim non-rejected groups, examining different
+        # source pairs if an earlier exact combination was rejected.
+        made = 0
+        for i in range(0, len(ordered) - 1, 2):
             pair = ordered[i:i + 2]
-            if len(pair) != 2:
-                continue
             gid = group_id(cid, [p['source_id'] for p in pair])
             decision = decisions.get(gid, {})
             if decision.get('status') == 'rejected':
@@ -58,4 +58,7 @@ def suggest_groups(claims, connections, decisions, per_claim=1):
             out.append({'id': gid, 'claim_id': cid, 'source_ids': sorted(p['source_id'] for p in pair),
                         'papers': pair, 'status': decision.get('status', 'unchecked'),
                         'reason': decision.get('reason', '')})
+            made += 1
+            if made >= per_claim:
+                break
     return out
