@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "notes": "Persistent LLM-reviewed accounts, not automatically verified. Never overwrite from scanner results.",
+  "notes": "Persistent editorial LLM-reviewed accounts. 58 October 23 accounts retained; 15 revised and 5 newly added October 24. Preserve review history. Automated scanners must never replace this collection.",
   "findings": [
     {
       "id": "llm-review-20261023-001",
@@ -18,14 +18,34 @@
       "id": "llm-review-20261023-002",
       "title": "EU as a global security actor (FOCUS, 2013)",
       "original_claim": "Analytical support to foresighting EU roles as a Global Security Actor — https://doi.org/10.11610/isij.2902",
-      "interpretation": "Partly. The EU’s security role grew, but mainly through rearmament after 2022. A 2025 editorial describes ReArm Europe’s roughly €800bn defence push, and a 2026 study finds NATO back to collective defence.",
+      "interpretation": "The EU’s security role developed partly along the role areas the exercise identified — cyber, maritime, space and solidarity/defence — but mainly through regulatory, financial and industrial instruments, and since 2022 under conditions closer to the project’s fragmented or conflict-dominated configurations than to its “Constructive World” (the reviewer’s mapping, not the authors’). Whether the EU will perform wider roles itself by 2035 remains open.",
       "sources": [
         "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
         "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. The EU’s security role grew, but mainly through rearmament after 2022. A 2025 editorial describes ReArm Europe’s roughly €800bn defence push, and a 2026 study finds NATO back to collective defence.",
+        "sources": [
+          "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+          "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (conclusion): scenario-based foresight “cannot be rigorously performed without adequate analytical support”. Paraphrase: the paper describes how expert groups and formal tools built three context scenarios for 2035 — Constructive, Fragmented and Confusing World — and explored possible new EU roles as a global security actor beyond the Petersberg tasks of the Lisbon Treaty, clustered in cybersecurity, protection of sea lines of communication, energy security, space and solidarity/defence, with control of CBRN proliferation, extended air defence against advanced drones and Responsibility-to-Protect tasks added by the project team. These were plausible options for security-research planning, not predictions. Catalogue excerpt: HISTORICAL-CLAIMS record 437 (a methods passage).",
+      "full_review_original_study": "Tagarev, Todor & Ivanova, Petya (2013). Analytical support to foresighting EU roles as a Global Security Actor. Information & Security: An International Journal 29, 21–33 (EU FP7 project FOCUS, 2011–2013). https://doi.org/10.11610/isij.2902 (open access; full text read via a mirror copy).",
+      "full_review_sources": [
+        "European External Action Service / High Representative (2023). Annual Progress Report on the Implementation of the Strategic Compass for Security and Defence, Council document 6891/23, 27 February 2023. https://data.consilium.europa.eu/doc/document/ST-6891-2023-INIT/en/pdf — cyber-defence policy, hybrid toolbox, coordinated maritime presences, first EU space strategy for security and defence, mutual-assistance exercises with cyber, hybrid and space scenarios. Full text read; direct evidence (official self-assessment).",
+        "Council of the European Union. European Peace Facility (web page, reviewed 4 December 2024). https://www.consilium.europa.eu/en/policies/european-peace-facility/ — €11.1 billion for Ukraine in 2022–2024 including the Ukraine Assistance Fund; further use for Ukraine blocked by one member state since 2023 (European Parliamentary Research Service, April 2025). Web pages; direct evidence.",
+        "European Parliament, Economic Governance and EMU Scrutiny Unit (March 2025). Defence financing and spending under the Economic Governance Framework. https://www.europarl.europa.eu/RegData/etudes/IDAN/2025/764354/ECTI_IDA(2025)764354_EN.pdf — the “up to €800 billion” of ReArm Europe/Readiness 2030 is a Commission projection of enabled spending (SAFE loans of up to €150 billion, national escape clause and other channels), not money raised. Full text read; explanatory evidence.",
+        "European Defence Agency (2026). Defence Data 2025–2026 (data cut-off 20 April 2026). https://eda.europa.eu/docs/default-source/eda-publications/2026-eda_defencedata_webpublic.pdf — EU-27 defence spending €418 billion in 2025 (2.2% of GDP), estimated €454 billion in 2026; collaborative spending 24% of equipment procurement. Full text read; direct evidence (national aggregates).",
+        "NATO (25 June 2025). The Hague Summit Declaration. https://www.nato.int — allies commit to 5% of GDP for defence and security-related spending by 2035 (at least 3.5% for core defence). Web page; explanatory evidence on the transatlantic condition.",
+        "European Commission, CORDIS (2013). FOCUS – Foresight Security Scenarios: Mapping Research to a Comprehensive Approach to Exogenous EU Roles, project 261633, final report summary. https://cordis.europa.eu/project/id/261633 — project aims and reference scenario; foresight framed as neither prediction nor normative design. Web page; context."
+      ],
+      "review_status_detail": "Source-verified, with the caveats stated.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-003",
@@ -81,13 +101,32 @@
       "id": "llm-review-20261023-007",
       "title": "European atmosphere in 2050 (2013)",
       "original_claim": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios — https://doi.org/10.5194/acp-13-7451-2013",
-      "interpretation": "Mostly held. Observed 2000–2019 declines track emission cuts, as its mitigation path implied, but summer ozone peaks fell less than modelled (2024).",
+      "interpretation": "Open: the horizon has not been reached and the two pathways cannot yet be distinguished by observation. Intermediate evidence fits the paper’s core claim that emissions control the trajectory, but ozone exposure has responded more weakly to precursor cuts than models suggest, and the hemispheric background concern has become more central rather than less.",
       "sources": [
         "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Mostly held. Observed 2000–2019 declines track emission cuts, as its mitigation path implied, but summer ozone peaks fell less than modelled (2024).",
+        "sources": [
+          "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (final abstract): the main driver of future air quality is “air pollutant emissions, rather than climate change”. Paraphrase: comparing a reference world without climate policy with a 2°C mitigation world, population-weighted ozone exposure (SOMO35) rises about 7% by 2050 in the reference case but falls about 80% under mitigation, and PM2.5 falls by about 62% and 78% respectively; the ozone climate penalty is confirmed but modest, while rising hemispheric background ozone may matter more. Note: the catalogued excerpt (HISTORICAL-CLAIMS record 444) is a methods sentence, and the indexed abstract is that of the discussion paper, which said the climate penalty had been overstated; the final published abstract states that it is confirmed.",
+      "full_review_original_study": "Colette, Augustin, Bessagnet, Bertrand, Vautard, Robert, Szopa, Sophie, Rao, Shilpa, Schucht, Simone, Klimont, Zbigniew, Menut, Laurent, Clain, Gaëlle, Meleux, Frédérik, Curci, Gabriele & Rouïl, Laurence (2013). European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios. Atmospheric Chemistry and Physics 13, 7451–7471 (INERIS, LSCE/IPSL, IIASA and others). https://doi.org/10.5194/acp-13-7451-2013 (open access; full text read).",
+      "full_review_sources": [
+        "Aas, W. et al. (2024). Trends in Air Pollution in Europe, 2000–2019. Aerosol and Air Quality Research 24, 230237. https://doi.org/10.4209/aaqr.230237 — European NOx emissions fell 48% (2000–2019); the highest ozone values at EMEP sites fell only 0.3–0.6% a year while low percentiles rose; the EMEP model run with reported emissions simulated stronger declines than observed, especially south of 49°N. Full text read; direct evidence on intermediate trends (the model comparison is a hindcast).",
+        "Chen, Z.-Y. et al. (2024). Population exposure to multiple air pollutants and its compound episodes in Europe. Nature Communications 15, 2094. https://doi.org/10.1038/s41467-024-46103-3 — population-weighted daily maximum 8-hour ozone rose about 0.5% a year in 2003–2019 (excluding the 2003 heatwave), faster in southern Europe. Full text read; direct evidence on exposure.",
+        "Nelson, B. S. & Drysdale, W. S. (2025). Urban ozone trends in Europe and the USA (2000–2021). Atmospheric Chemistry and Physics 25. https://doi.org/10.5194/acp-25-16009-2025 — European urban series show mostly decreasing high-percentile trends but increasing median and low-percentile trends. Abstract only; direct evidence.",
+        "Achebak, H. et al. (2024). Geographic sources of ozone air pollution and mortality burden in Europe. Nature Medicine 30, 1732–1738. https://doi.org/10.1038/s41591-024-02976-x — 56.7% of ozone-attributable deaths in 35 countries in the 2015–2017 warm seasons associated with ozone entering the modelling domain from outside, mostly hemispheric background. Full text read; explanatory and reframing evidence.",
+        "Pisoni, E. et al. (2025). High resolution assessment of air quality and health in Europe under different climate mitigation scenarios. Nature Communications 16. https://doi.org/10.1038/s41467-025-60449-2 — re-projects PM2.5 health impacts under SSP scenarios; ozone not modelled. Full text read; later foresight (PM2.5 only).",
+        "Mertens, M. et al. (2026). Climate & Air Quality projections over Europe for 2030 and 2050. DLR conference paper, https://openalex.org/W7213705154; and Tarín-Carrasco, P. et al. (2025). Quantifying the Climate Penalty on Air Quality in Europe – Insights from INSPEnCaT Project. EGU25-17230. https://doi.org/10.5194/egusphere-egu25-17230 — new CMIP6/SSP-based projections of the same question; no results reported. Abstracts only; later foresight."
+      ],
+      "review_status_detail": "Provisional interpretation. The original and the key later evidence were read in full; horizon not reached.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-008",
@@ -129,14 +168,32 @@
       "id": "llm-review-20261023-011",
       "title": "Woody biomass, EU (2013)",
       "original_claim": "Potential stocks and increments of woody biomass in the European Union under different management and climate scenarios — https://doi.org/10.1186/1750-0680-8-2",
-      "interpretation": "Held. Europe’s forest biomass losses rose 46% after 2018 as disturbances hit biomass-rich forests (2026), which backs its warning against maximising standing stock. Young northern forests drove the global biomass gain (2023, title only).",
+      "interpretation": "The paper’s diagnosis — ageing forests with stagnating increment — developed partly along the envisioned pathway, but the question has been reframed. Policy now prioritises the in-forest sink, which runs against the recommendation, while climate-driven disturbance after 2018 erodes both stocks and increments, so the trade-off no longer behaves as the 2013 model described. The 2100 horizon remains open.",
       "sources": [
         "Accelerating biomass loss from forest disturbances across Europe (2026) — https://doi.org/10.1038/s41561-026-02032-y",
         "Global increase in biomass carbon stock dominated by growth of northern young forests over past decade (2023) — https://doi.org/10.1038/s41561-023-01274-4"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Held. Europe’s forest biomass losses rose 46% after 2018 as disturbances hit biomass-rich forests (2026), which backs its warning against maximising standing stock. Young northern forests drove the global biomass gain (2023, title only).",
+        "sources": [
+          "Accelerating biomass loss from forest disturbances across Europe (2026) — https://doi.org/10.1038/s41561-026-02032-y",
+          "Global increase in biomass carbon stock dominated by growth of northern young forests over past decade (2023) — https://doi.org/10.1038/s41561-023-01274-4"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): forest management “should maximise increments, not stocks”. Paraphrase: simulating EU-27 forests to 2100 under four climate scenarios, the authors found that maximising standing stock would raise stem-wood carbon from about 30 to about 50 tC per hectare but halve increments by 2100 relative to increment-maximising management, which would lower stocks to about 20 tC per hectare while yielding more harvest; management choices mattered far more than climate. Counting harvested carbon as absorbed, they recommended avoiding incentives that raise standing biomass beyond the increment-optimal level. Natural disturbances were not modelled explicitly. Catalogue excerpt: HISTORICAL-CLAIMS record 452 (a research aim joined to the recommendation).",
+      "full_review_original_study": "Kindermann, Georg E., Schörghuber, Stefan, Linkosalo, Tapio, Sánchez, Anabel, Rammer, Werner, Seidl, Rupert & Lexer, Manfred J. (2013). Potential stocks and increments of woody biomass in the European Union under different management and climate scenarios. Carbon Balance and Management 8, 2 (IIASA, BOKU, Metla, CREAF). https://doi.org/10.1186/1750-0680-8-2 (open access; full text read).",
+      "full_review_sources": [
+        "Korosuo, A. et al. (2023). The role of forests in the EU climate policy: are we on the right track? Carbon Balance and Management 18, 15. https://doi.org/10.1186/s13021-023-00234-0 — EU LULUCF sink from at least −300 Mt CO₂e/yr (1995–2016) to −230 Mt CO₂e (2021); drivers include decreased gross increment and increased mortality and harvest; −310 Mt target for 2030. Full text read; direct, explanatory and reframing evidence.",
+        "Patacca, M. et al. (2023). Significant increase in natural disturbance impacts on European forests since 1950. Global Change Biology 29(5), 1359–1376. https://doi.org/10.1111/gcb.16531 — disturbance damage 42.6 Mm³/yr (1950–2000) to 78.5 Mm³/yr (2001–2019); growing stock 18.7 to 29.1 billion m³. Full text read; direct and explanatory evidence.",
+        "Kowalski, K. et al. (2026). Accelerating biomass loss from forest disturbances across Europe. Nature Geoscience 19, 1132–1138. https://doi.org/10.1038/s41561-026-02032-y — gross aboveground biomass losses rose 46% from 2018 onward, coinciding with disturbances in biomass-rich temperate forests; harvest 82% of 1985–2023 losses. Abstract only; direct and explanatory evidence (also Scanner group member, kept at pair level).",
+        "Seidl, R., Schelhaas, M.-J., Rammer, W. & Verkerk, P. J. (2014). Increasing forest disturbances in Europe and their impact on carbon storage. Nature Climate Change 4, 806–810. https://doi.org/10.1038/nclimate2318 — carbon-oriented management with longer rotations raises damaged volume by 12.4%; disturbance can thwart management effects. Full text read (author manuscript); later foresight by overlapping authors."
+      ],
+      "review_status_detail": "Provisional interpretation. The original and three key later studies were read in full; the 2026 study in abstract.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-012",
@@ -155,13 +212,25 @@
       "id": "llm-review-20261023-013",
       "title": "Superconductivity and the environment (2013)",
       "original_claim": "Superconductivity and the environment: a Roadmap — https://doi.org/10.1088/0953-2048/26/11/113001",
-      "interpretation": "No. Growth isn’t being met by non-carbon energy. Wind and solar grew nine times faster than demand in 2024 but didn’t cover it, and fossil fuel use still rose just over 1%. CO2 at Mauna Loa peaked at 432 ppm in May 2026, 1.8 ppm above a year earlier.",
+      "interpretation": "Reframed and unresolved. The meaningful question for VV Futures is how far superconducting energy, transport and sensing technologies moved from demonstration to deployment, not whether global energy growth was met by non-carbon sources. That question cannot be answered from the evidence verified here, and the roadmap’s link to Europe is limited to a cited EU estimate and the European authors’ sections.",
       "sources": [],
       "web_sources_as_provided": [
         "dieselnet; ucsd"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "No. Growth isn’t being met by non-carbon energy. Wind and solar grew nine times faster than demand in 2024 but didn’t cover it, and fossil fuel use still rose just over 1%. CO2 at Mauna Loa peaked at 432 ppm in May 2026, 1.8 ppm above a year earlier.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "The catalogued excerpt (HISTORICAL-CLAIMS record 455) is a quotation from the 2011 Equinox Summit: to stabilise atmospheric CO₂ at 550 ppm, all growth in energy demand would have to be met by non-carbon sources. In the roadmap this is a motivating premise, not a forecast. The roadmap’s own future-oriented content, paraphrased from its abstract, is that superconducting technologies — low-loss DC transmission of renewable power, magnetic energy storage, maglev and ship propulsion, magnetic separation for water recycling, sensitive magnetometry for natural-hazard monitoring and very low-power computing — would have a significant environmental impact once adopted, with adoption expected to be gradual: the abstract cites an earlier estimate that a 50% transfer of relevant equipment to superconducting systems would take about 20 years at normal replacement rates.",
+      "full_review_original_study": "Nishijima, S., Eckroad, S., Marian, A., Choi, K., Kim, W. S., Terai, M. et al. (18 authors) (2013). Superconductivity and the environment: a Roadmap. Superconductor Science and Technology 26(11), 113001. https://doi.org/10.1088/0953-2048/26/11/113001 (open access on the publisher site, but the full text could not be retrieved during this review; the detailed section-by-section abstract was used).",
+      "full_review_sources": [
+        "NOAA Global Monitoring Laboratory (2026). Monthly mean CO₂ at Mauna Loa (co2_mm_mlo.txt; file created 9 October 2026). https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt — 432.34 ppm in May 2026; 430.51 ppm in May 2025. Dataset; relevant only to the premise quoted by the roadmap, not to its technology claims."
+      ],
+      "review_status_detail": "Insufficient evidence. Earlier account to be corrected; claim flagged as of marginal European scope.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-014",
@@ -194,15 +263,38 @@
       "id": "llm-review-20261023-016",
       "title": "Towards Europe 2035 (FOCUS, 2013)",
       "original_claim": "Towards Europe 2035 - In Search of the Archimedean Screw: FOCUS in Perspective — https://doi.org/10.11610/isij.2912",
-      "interpretation": "Partly. Same evidence as 2, plus a 2026 book finding that EU strategic cultures were converging even before the Ukraine war.",
+      "interpretation": "The dependencies and weaknesses Nerlich flagged became the core of the EU’s security agenda, but the change was driven by an external shock and US policy rather than by the long-term strategic planning he advocated. Whether the EU becomes a strategic unit by 2035 remains open.",
       "sources": [
         "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
         "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1",
         "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. Same evidence as 2, plus a 2026 book finding that EU strategic cultures were converging even before the Ukraine war.",
+        "sources": [
+          "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+          "NATO’s evolution and European security dynamics (2026) — https://doi.org/10.1007/s44282-026-00594-1",
+          "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (p. 166): reliance on the United States “can no longer be taken for granted”. Paraphrase: setting the FOCUS 2035 scenarios against the US National Intelligence Council’s Global Trends 2030, Nerlich described a Europe seen by other powers as in relative decline, with signs of renationalisation; he warned that the EU would appear marginal if some $300 billion of annual collective defence spending kept failing to buy strategic freedom of action, and argued that the EU had to stabilise itself as a strategic unit combining its dual civil–military nature with strategic assertiveness. He proposed repeating FOCUS-type analysis about every five years. Catalogue excerpt: HISTORICAL-CLAIMS record 460 (framework-oriented).",
+      "full_review_original_study": "Nerlich, Uwe (2013). Towards Europe 2035 – In Search of the Archimedean Screw: FOCUS in Perspective. Information & Security: An International Journal 29, 161–183. https://doi.org/10.11610/isij.2912 (open access; key passages read via a mirror copy).",
+      "full_review_sources": [
+        "European Defence Agency (2026). Defence Data 2025–2026 (data cut-off 20 April 2026). https://eda.europa.eu/docs/default-source/eda-publications/2026-eda_defencedata_webpublic.pdf — EU-27 defence spending €418 billion in 2025 (2.2% of GDP), estimated €454 billion in 2026; collaborative spending 24% of equipment procurement. Full text read; direct evidence (national aggregates).",
+        "NATO (25 June 2025). The Hague Summit Declaration. https://www.nato.int — allies commit to 5% of GDP for defence and security-related spending by 2035 (at least 3.5% for core defence). Web page; explanatory evidence on the transatlantic condition.",
+        "Council of the European Union. European Peace Facility (web page, reviewed 4 December 2024). https://www.consilium.europa.eu/en/policies/european-peace-facility/ — €11.1 billion for Ukraine in 2022–2024 including the Ukraine Assistance Fund; further use for Ukraine blocked by one member state since 2023 (European Parliamentary Research Service, April 2025). Web pages; direct evidence.",
+        "European Parliament, Economic Governance and EMU Scrutiny Unit (March 2025). Defence financing and spending under the Economic Governance Framework. https://www.europarl.europa.eu/RegData/etudes/IDAN/2025/764354/ECTI_IDA(2025)764354_EN.pdf — the “up to €800 billion” of ReArm Europe/Readiness 2030 is a Commission projection of enabled spending (SAFE loans of up to €150 billion, national escape clause and other channels), not money raised. Full text read; explanatory evidence.",
+        "Kruck, A. & Weiss, M. (2023). The regulatory security state in Europe. Journal of European Public Policy 30(7), 1205–1229. https://doi.org/10.1080/13501763.2023.2172061 — the EU’s security role has grown through expertise and regulation rather than autonomous capacities. Abstract only; reframing evidence (also a Scanner pair candidate).",
+        "Mi, Xue (2023). Strategic cultures between the EU member states: convergence or divergence? European Security 32(4), 558–582. https://doi.org/10.1080/09662839.2022.2159384 — Germany, Poland and Ireland 2000–2020: convergence in threat perceptions, persistent divergence on goals and means. Abstract only; direct evidence.",
+        "Mi, Xue (2026). European Strategic Culture at a Crossroads: National Continuities or Convergence Towards the EU? Routledge. https://doi.org/10.4324/9781032636566 — convergence between member states and with the EU under way before the 2022 war, which strengthened security and defence thinking. Abstract and chapter list only; direct evidence (cited in earlier accounts).",
+        "Edmond (2026). NATO’s evolution and European security dynamics. Discover Global Society 4. https://doi.org/10.1007/s44282-026-00594-1 — review of NATO strategic concepts 1991–2022, including burden-sharing and the autonomy–dependence trade-off. Abstract only; weak explanatory evidence (Scanner group member, kept at pair level)."
+      ],
+      "review_status_detail": "Provisional interpretation. Key passages of the original and the official data were read; strategic-culture and transatlantic evidence rests partly on abstracts.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-017",
@@ -256,13 +348,30 @@
       "id": "llm-review-20261023-021",
       "title": "Finland 2050 backcasting (2012)",
       "original_claim": "Backcasting scenarios for Finland 2050 of low emissions — https://doi.org/10.1108/14636681211256099",
-      "interpretation": "Partly. A 2022 Climate Act set carbon neutrality for 2035. Emissions outside land use fell 6% in 2024, but the land-use sector has been a net source since 2018 and forests since 2021, and the government says obligations will be missed without major action there.",
+      "interpretation": "Partly along the envisioned pathway, then reframed. Energy-system decarbonisation has progressed about as the 2050 target required, but the policy goal shifted from emission cuts to net neutrality, making the forest sink decisive at the moment it disappeared — a development the 2009–2012 framework under-examined. The 2050 horizon remains open.",
       "sources": [],
       "web_sources_as_provided": [
         "treasuryfinland; valtioneuvosto"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. A 2022 Climate Act set carbon neutrality for 2035. Emissions outside land use fell 6% in 2024, but the land-use sector has been a net source since 2018 and forests since 2021, and the government says obligations will be missed without major action there.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "The catalogued excerpt (HISTORICAL-CLAIMS record 465) is a methodological caveat from the abstract — future development could be viewed only through qualitative arguments — and the paper’s stated purpose of showing how backcasting can assist policy. The substantive future content is the target state from which the exercise backcast: the Finnish Government’s 2009 foresight report on climate and energy policy, which committed to cutting emissions by at least 80% from 1990 levels by 2050 and presented four illustrative scenarios built on large efficiency gains, lower energy use, low-carbon technology and more renewables (paraphrased from the government report and parliamentary committee statements, not from the 2012 paper itself).",
+      "full_review_original_study": "Heinonen, Sirkka & Lauttamäki, Ville (2012). Backcasting scenarios for Finland 2050 of low emissions. foresight 14(4), 304–315. Finland Futures Research Centre, University of Turku. https://doi.org/10.1108/14636681211256099 (paywalled; structured abstract and reference list used).",
+      "full_review_sources": [
+        "Statistics Finland (updated 22 May 2026). Greenhouse gas emissions in Finland 1990–2025, StatFin table 138v (1990–2024 official data released 13 March 2026; 2025 instant preliminary). https://stat.fi/en/statistics/khki — emissions excluding LULUCF 71.8 Mt (1990), 39.3 Mt (2024), 36.5 Mt (2025); LULUCF net −32.2 Mt (2012), +9.8 Mt (2024), +9.4 Mt (2025); forest land −43.5 Mt (2012), −0.1 Mt (2024), +1.3 Mt (2025). Dataset; direct evidence.",
+        "Statistics Finland (22 May 2026). Greenhouse gases 2025 (instant preliminary release). https://stat.fi/en/publication/cmg0dqrnn5sz007t73i2bqrnl — 2025 emissions 36.5 Mt, −7% on 2024 and −49% on 1990; LULUCF a net source of 9.4 Mt; forest land a net source of 1.3 Mt. Web page; direct evidence.",
+        "Natural Resources Institute Finland (Luke) (15 January 2025). Preliminary greenhouse gas inventory results for 2023. https://www.luke.fi/en — about 90% of tree growth now lost to harvest and natural drain, against slightly over 70% in the early 2010s; rising forest-soil emissions; large methodological revisions. Web page; explanatory evidence.",
+        "Finnish Government (27 June 2025). Annual Climate Report 2025 (K 16/2025 vp). https://www.eduskunta.fi — EU LULUCF obligations for 2021–2025 likely to be missed; deficit 110–115 Mt CO₂e (83–88 Mt with flexibilities). Web page; direct evidence (official assessment).",
+        "Finnish Climate Change Panel (17 April 2025). Memorandum and Report 1/2025 press release. https://www.ilmastopaneeli.fi — increased logging the main cause of the lost forest sink; neutrality in 2035 still possible if harvests stay well below 70 million m³. Web page; explanatory evidence and later foresight.",
+        "Ministry of Economic Affairs and Employment (2022). Carbon neutral Finland 2035 – national climate and energy strategy. Publications 2022:55. https://urn.fi/URN:ISBN:978-952-327-843-2 — Climate Change Act targets (neutrality 2035; −60% 2030, −80% 2040, at least −90% 2050). Relevant section read; reframing evidence."
+      ],
+      "review_status_detail": "Abstract-only assessment. Later statistical and official evidence verified.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-022",
@@ -294,27 +403,65 @@
       "id": "llm-review-20261023-024",
       "title": "Future ozone exposure (2012)",
       "original_claim": "Future air quality in Europe: a multi-model assessment of projected exposure to ozone — https://doi.org/10.5194/acp-12-10613-2012",
-      "interpretation": "Partly. Emission cuts drove the improvement as claimed, but ozone peaks fell less than modelled (2024). Over half of ozone deaths now come from ozone formed outside Europe (2024).",
+      "interpretation": "Open, with intermediate signals pointing two ways. Precursor cuts proceeded broadly as projected and the predicted pattern of declining peaks with rising means has materialised, but exposure indicators have improved more slowly than modelled and the question has been reframed towards hemispheric background ozone, which the study held fixed. No later study evaluated the climate-policy co-benefit itself.",
       "sources": [
         "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
         "Geographic sources of ozone air pollution and mortality burden in Europe (2024) — https://doi.org/10.1038/s41591-024-02976-x"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. Emission cuts drove the improvement as claimed, but ozone peaks fell less than modelled (2024). Over half of ozone deaths now come from ozone formed outside Europe (2024).",
+        "sources": [
+          "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
+          "Geographic sources of ozone air pollution and mortality burden in Europe (2024) — https://doi.org/10.1038/s41591-024-02976-x"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): air pollution mitigation measures “are the main factors leading to the improvement”. Paraphrase: under two Global Energy Assessment scenarios, NOx emissions fall to 30–50% of current levels by 2030; ozone exposure (SOMO35) falls to 45–70% of current levels and the share of stations with more than 25 days above 120 µg/m³ drops from 43% to 2–8%, while annual mean ozone rises slightly in NOx-saturated areas; climate policy adds a co-benefit of at least 40% depending on the indicator. Catalogue excerpt: HISTORICAL-CLAIMS record 468.",
+      "full_review_original_study": "Colette, Augustin, Granier, Claire, Hodnebrog, Øivind, Jakobs, Hermann, Maurizi, Alberto, Nyiri, Agnes, Rao, Shilpa, Amann, Markus et al. (23 authors) (2012). Future air quality in Europe: a multi-model assessment of projected exposure to ozone. Atmospheric Chemistry and Physics 12, 10613–10630. https://doi.org/10.5194/acp-12-10613-2012 (open access; full text read).",
+      "full_review_sources": [
+        "Aas, W. et al. (2024). Trends in Air Pollution in Europe, 2000–2019. Aerosol and Air Quality Research 24, 230237. https://doi.org/10.4209/aaqr.230237 — European NOx emissions fell 48% (2000–2019); the highest ozone values at EMEP sites fell only 0.3–0.6% a year while low percentiles rose; the EMEP model run with reported emissions simulated stronger declines than observed, especially south of 49°N. Full text read; direct evidence on intermediate trends (the model comparison is a hindcast).",
+        "Nelson, B. S. & Drysdale, W. S. (2025). Urban ozone trends in Europe and the USA (2000–2021). Atmospheric Chemistry and Physics 25. https://doi.org/10.5194/acp-25-16009-2025 — European urban series show mostly decreasing high-percentile trends but increasing median and low-percentile trends. Abstract only; direct evidence.",
+        "Achebak, H. et al. (2024). Geographic sources of ozone air pollution and mortality burden in Europe. Nature Medicine 30, 1732–1738. https://doi.org/10.1038/s41591-024-02976-x — 56.7% of ozone-attributable deaths in 35 countries in the 2015–2017 warm seasons associated with ozone entering the modelling domain from outside, mostly hemispheric background. Full text read; explanatory and reframing evidence.",
+        "Chen, Z.-Y. et al. (2024). Population exposure to multiple air pollutants and its compound episodes in Europe. Nature Communications 15, 2094. https://doi.org/10.1038/s41467-024-46103-3 — population-weighted daily maximum 8-hour ozone rose about 0.5% a year in 2003–2019 (excluding the 2003 heatwave), faster in southern Europe. Full text read; direct evidence on exposure."
+      ],
+      "review_status_detail": "Provisional interpretation. The original and the key later evidence were read in full; horizon not reached.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-025",
       "title": "Climate change and ozone mortality (2012)",
       "original_claim": "Impact of climate change on ozone-related mortality and morbidity in Europe — https://doi.org/10.1183/09031936.00210411",
-      "interpretation": "Open. Through 2019, summer ozone peaks were still falling, just less than modelled (2024). A 2025 projection still expects about 15% more ozone deaths in southern Europe by mid-century.",
+      "interpretation": "Open: the horizon has not been reached and the climate-only design cannot be observed directly. Later work by the same team kept the direction and geography of the climate penalty but moved the question from climate alone to the combined effects of climate, emissions and demography, in which emission cuts dominate the European average by mid-century.",
       "sources": [
         "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
         "Quantifying the Climate Penalty on Air Quality in Europe – Insights from INSPEnCaT Project (2025) — https://doi.org/10.5194/egusphere-egu25-17230"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Open. Through 2019, summer ozone peaks were still falling, just less than modelled (2024). A 2025 projection still expects about 15% more ozone deaths in southern Europe by mid-century.",
+        "sources": [
+          "Trends in Air Pollution in Europe, 2000–2019 (2024) — https://doi.org/10.4209/aaqr.230237",
+          "Quantifying the Climate Penalty on Air Quality in Europe – Insights from INSPEnCaT Project (2025) — https://doi.org/10.5194/egusphere-egu25-17230"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): all else being equal, ground-level ozone is “expected to increase due to climate change”. Paraphrase: compared with 1961–1990, much larger increases in ozone-related mortality and morbidity are projected for 2021–2050 and 2041–2060 in Belgium, France, Spain and Portugal, stronger under the ECHAM4 (A2) climate projection, with decreases of similar size in Nordic and Baltic countries; precursor emissions were held at present-day levels. The authors’ later review gives Europe-wide increases of about 14% (A2) and 9% (A1B) for 2021–2050. Catalogue excerpt: HISTORICAL-CLAIMS record 469.",
+      "full_review_original_study": "Orru, Hans, Andersson, Camilla, Ebi, Kristie L., Langner, Joakim, Åström, Christofer & Forsberg, Bertil (2013; online 27 June 2012). Impact of climate change on ozone-related mortality and morbidity in Europe. European Respiratory Journal 41(2), 285–294. https://doi.org/10.1183/09031936.00210411 (full text could not be opened; abstract used, with design details confirmed through the authors’ 2017 review).",
+      "full_review_sources": [
+        "Aas, W. et al. (2024). Trends in Air Pollution in Europe, 2000–2019. Aerosol and Air Quality Research 24, 230237. https://doi.org/10.4209/aaqr.230237 — European NOx emissions fell 48% (2000–2019); the highest ozone values at EMEP sites fell only 0.3–0.6% a year while low percentiles rose; the EMEP model run with reported emissions simulated stronger declines than observed, especially south of 49°N. Full text read; direct evidence on intermediate trends (the model comparison is a hindcast).",
+        "Chen, Z.-Y. et al. (2024). Population exposure to multiple air pollutants and its compound episodes in Europe. Nature Communications 15, 2094. https://doi.org/10.1038/s41467-024-46103-3 — population-weighted daily maximum 8-hour ozone rose about 0.5% a year in 2003–2019 (excluding the 2003 heatwave), faster in southern Europe. Full text read; direct evidence on exposure.",
+        "Orru, H., Åström, C., Andersson, C., Tamm, T., Ebi, K. L. & Forsberg, B. (2019). Ozone and heat-related mortality in Europe in 2050 significantly affected by changes in climate, population and greenhouse gas emission. Environmental Research Letters 14, 074013. https://doi.org/10.1088/1748-9326/ab1cd9 — climate penalty up to about 11% in some countries by 2050, outweighed by emission cuts. Abstract only; later foresight.",
+        "Geels, C. et al. (2015). Future premature mortality due to O3, secondary inorganic aerosols and primary PM in Europe. International Journal of Environmental Research and Public Health 12, 2837–2869. https://doi.org/10.3390/ijerph120302837 — climate-only increases of 8–11% in acute deaths by the 2050s, outweighed by projected emission reductions. Full text read; later foresight.",
+        "Orru, H., Ebi, K. L. & Forsberg, B. (2017). The interplay of climate change and air pollution on health. Current Environmental Health Reports 4, 504–513. https://doi.org/10.1007/s40572-017-0168-6 — confirms the constant-emissions design of the 2013 study and its Europe-wide figures. Full text read; explanatory evidence by the original authors.",
+        "Achebak, H. et al. (2024). Geographic sources of ozone air pollution and mortality burden in Europe. Nature Medicine 30, 1732–1738. https://doi.org/10.1038/s41591-024-02976-x — 56.7% of ozone-attributable deaths in 35 countries in the 2015–2017 warm seasons associated with ozone entering the modelling domain from outside, mostly hemispheric background. Full text read; explanatory and reframing evidence."
+      ],
+      "review_status_detail": "Abstract-only assessment (original); later evidence read in full or in abstract as stated.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-026",
@@ -332,13 +479,25 @@
       "id": "llm-review-20261023-027",
       "title": "Farmers’ markets, Alberta and BC (2012)",
       "original_claim": "Linking Local Food Systems and the Social Economy? Future Roles for Farmers' Markets in Alberta and British Columbia* — https://doi.org/10.1111/j.1549-0831.2011.00068.x",
-      "interpretation": "Held, based on BC data. BC market sales reached $155 million in 2023, worth $233 million to the economy, 28% above 2012 after inflation.",
+      "interpretation": "Partly developed along the envisioned pathway in British Columbia: markets expanded and kept a community-oriented, direct-sales role. The specific question the Delphi posed — the linkage with the social economy and the scale–authenticity tension — remains open. The record lies outside the observatory’s European scope and could serve at most as a non-European comparator.",
       "sources": [],
       "web_sources_as_provided": [
         "straight"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Held, based on BC data. BC market sales reached $155 million in 2023, worth $233 million to the economy, 28% above 2012 after inflation.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Paraphrase from the abstract: a Delphi panel of vendors, market managers and policy and government representatives in each province explored whether farmers’ markets could act as catalysts linking local food systems to the social economy. Participants sought ways to scale up local food systems beyond their current limits while keeping the markets’ “authentic experience” (abstract), and the authors concluded that the relationship between the social economy, infrastructure and authenticity required further study. No quantitative forecast and no time horizon are stated in the abstract. Catalogue excerpt: HISTORICAL-CLAIMS record 471.",
+      "full_review_original_study": "Wittman, Hannah, Beckie, Mary Anne & Hergesheimer, Chris (2012). Linking Local Food Systems and the Social Economy? Future Roles for Farmers’ Markets in Alberta and British Columbia. Rural Sociology 77(1), 36–61. https://doi.org/10.1111/j.1549-0831.2011.00068.x (publisher full text not accessible during this review; abstract used).",
+      "full_review_sources": [
+        "BC Association of Farmers’ Markets & Connell, D. (University of Northern British Columbia) (2024). 2023 BC Farmers’ Market Economic Impact Study – Provincial Report (Final), 18 January 2024. https://bcfarmersmarket.org/app/uploads/2024/02/Provincial_2023-BC-Farmers-Market-Economic-Impact-Study-Jan-18-2024.pdf — direct sales $155.28 million at member markets in 2023; economic impact $232.92 million; 28% above inflation-adjusted 2012 sales, mainly through more markets and market days. Full text read (pp. 1–3); fieldwork May–September 2023."
+      ],
+      "review_status_detail": "Abstract-only assessment. Flagged as outside the European scope of VV Futures.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-028",
@@ -381,13 +540,32 @@
       "id": "llm-review-20261023-031",
       "title": "Aedes albopictus suitability (2012)",
       "original_claim": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios — https://doi.org/10.1098/rsif.2012.0138",
-      "interpretation": "Partly. By June 2025 it was established in 369 regions in 16 EU/EEA countries. It was newly established in Slovakia and Cyprus and spreading in Belgium and Germany, but also in Spain, Portugal and Greece, up from 114 regions a decade earlier. The northward spread is confirmed, but there’s no sign of the predicted southern retreat.",
+      "interpretation": "The northward and eastward widening of the mosquito’s European range developed broadly in the direction envisaged, though driven at least as much by human-mediated introduction as by climate, and it did not come at the expense of the south. The projected slight decline in southern suitability has not appeared in observations or in later consensus modelling; it was, however, a conditional projection for 2030–2050 focused on the driest parts of Iberia and on Sardinia, and it remains open.",
       "sources": [],
       "web_sources_as_provided": [
         "europa (2 pages)"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. By June 2025 it was established in 369 regions in 16 EU/EEA countries. It was newly established in Slovakia and Cyprus and spreading in Belgium and Germany, but also in Spain, Portugal and Greece, up from 114 regions a decade earlier. The northward spread is confirmed, but there’s no sign of the predicted southern retreat.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): “increased risk simulated over northern Europe and slightly decreased risk over southern Europe”. Paraphrase: using three climate-based suitability models and ten regional climate models under the SRES A1B scenario, the authors projected for 2030–2050 (against 1990–2009) rising climatic suitability over the southern UK, Benelux, western Germany and the Balkans, and a slight, partly significant decline concentrated in southern Spain, southern Portugal and Sardinia, because wetter, milder winters favour overwintering in the north while hotter, drier summers limit the species in the south. “Risk” here means climatic suitability for establishment, conditional on prior introduction, not presence or disease. Catalogue excerpt: HISTORICAL-CLAIMS record 475.",
+      "full_review_original_study": "Caminade, Cyril, Medlock, Jolyon M., Ducheyne, Els, McIntyre, K. Marie, Leach, Steve, Baylis, Matthew & Morse, Andrew P. (2012). Suitability of European climate for the Asian tiger mosquito Aedes albopictus: recent trends and future scenarios. Journal of the Royal Society Interface 9(75), 2708–2717 (University of Liverpool; Health Protection Agency; Avia-GIS). https://doi.org/10.1098/rsif.2012.0138 (open access; full text read).",
+      "full_review_sources": [
+        "ECDC & EFSA (1 July 2025). Aedes albopictus – current known distribution: June 2025. https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-june-2025 — established in 369 regions in 16 EU/EEA countries; Cyprus and Slovakia newly established. Web page; direct evidence (establishment).",
+        "ECDC & EFSA (3 June 2026). Aedes albopictus – current known distribution: April 2026. https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-april-2026 — established in 384 units; expansion of 14 units in Bulgaria, France, Greece, Portugal and Romania; Italy 107/107, Spain 33/59, Portugal 5/26, Greece 48/52. Web page; direct evidence.",
+        "ECDC (22 June 2023). Increasing risk of mosquito-borne diseases in EU/EEA following spread of Aedes species; and ECDC (20 August 2025). World Mosquito Day 2025: Europe sets new records for mosquito-borne diseases. https://www.ecdc.europa.eu/en/news-events/world-mosquito-day-2025-europe-sets-new-records-mosquito-borne-diseases — 8 countries and 114 regions in 2013; 13 countries and 337 regions in 2023. Web pages; direct evidence on trend.",
+        "ECDC. Local transmission of dengue virus in mainland EU/EEA and seasonal chikungunya surveillance (accessed October 2026). https://www.ecdc.europa.eu/en/all-topics-z/Dengue/surveillance-and-disease-data/autochthonous-transmission-Dengue-virus-eueea — 71 (2022), 130 (2023), 304 (2024) locally acquired dengue cases; about 1,170 locally acquired chikungunya cases in France and Italy in 2025. Web pages; explanatory evidence (consequences of establishment).",
+        "Oliveira, S., Rocha, J., Sousa, C. A. & Capinha, C. (2021). Wide and increasing suitability for Aedes albopictus in Europe is congruent across distribution models. Scientific Reports 11, 9916. https://doi.org/10.1038/s41598-021-89096-5 — consensus of seven current and five future predictions: expansion north and east, no region with decreasing suitability. Full text read; later foresight and reframing.",
+        "Kraemer, M. U. G. et al. (2019). Past and future spread of the arbovirus vectors Aedes aegypti and Aedes albopictus. Nature Microbiology 4, 854–863. https://doi.org/10.1038/s41564-019-0376-y — spread in Europe explained by human movement, accelerating after crossing the Alps; projected contraction mainly in eastern Europe. Full text read; explanatory evidence and later foresight.",
+        "van Daalen, K. R. et al. (2024). The 2024 Europe report of the Lancet Countdown on health and climate change. The Lancet Public Health 9(7), e495–e522. https://doi.org/10.1016/S2468-2667(24)00055-0 — largest absolute rise in modelled dengue transmission suitability in southern Europe. Full text read; direct evidence (modelled suitability under observed climate).",
+        "Zardini, A. et al. (2024). Estimating the potential risk of transmission of arboviruses in the Americas and Europe: a modelling study. The Lancet Planetary Health 8(1), e30–e40. https://doi.org/10.1016/S2542-5196(23)00252-8 — highest modelled abundance and transmission potential in Mediterranean Europe. Full text read (appendix not read); later foresight (also Scanner group member, kept at pair level)."
+      ],
+      "review_status_detail": "Source-verified. The original was read in full, and the ECDC pages and key later studies were read directly.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-032",
@@ -453,13 +631,30 @@
       "id": "llm-review-20261023-037",
       "title": "NHS nursing supply (2012)",
       "original_claim": "Using scenarios to assess the future supply of NHS nursing staff in England — https://doi.org/10.1186/1478-4491-10-16",
-      "interpretation": "Held. About 43,000 nurse posts were still vacant four years after the 2019 recruitment pledge, almost unchanged, and about 34,700 in 2024. International recruitment was the main fix, leaving the UK unusually reliant on it until 2024.",
+      "interpretation": "The study’s central message — that NHS nursing supply was fragile and highly sensitive to training, retention and retirement decisions — was borne out by a decade of shortages, but the workforce grew rather than shrank, because supply was rebuilt through a lever the scenarios did not vary: large-scale international recruitment, later supplemented by expanded training. Development followed a different pathway from those envisioned and created a new dependence on overseas inflows that are now falling.",
       "sources": [],
       "web_sources_as_provided": [
         "nhs waiting list growing four times faster than the nurse workforce; and 2 more"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Held. About 43,000 nurse posts were still vacant four years after the 2019 recruitment pledge, almost unchanged, and about 34,700 in 2024. International recruitment was the main fix, leaving the UK unusually reliant on it until 2024.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (conclusions): a “strong risk that current policy decisions could lead to a significant reduction” in NHS staffing in England to 2022. Paraphrase: starting from a headcount of 352,104 qualified nurses, midwives and health visitors (September 2010), eight scenarios for the ten years to 2021/22 varied training intakes, leaving and retirement rates, with international inflows held at the low level of 2009/10; most scenarios showed falling supply, about 12% in the “no change” case and 28% in the worst case. The authors explicitly declined to make predictions and argued that policy should not rest on a single projection. Catalogue excerpt: HISTORICAL-CLAIMS record 481 (a methodological passage).",
+      "full_review_original_study": "Buchan, James & Seccombe, Ian (2012). Using scenarios to assess the future supply of NHS nursing staff in England. Human Resources for Health 10, 16. https://doi.org/10.1186/1478-4491-10-16 (open access; full text and annex read).",
+      "full_review_sources": [
+        "National Audit Office (2020). The NHS nursing workforce, HC 109, 5 March 2020. https://www.nao.org.uk/wp-content/uploads/2020/03/The-NHS-nursing-workforce-Summary.pdf — FTE nurses and health visitors 5% higher in September 2019 than in September 2010; about 43,590 FTE vacancies in July–September 2019. Summary read; direct evidence.",
+        "NHS England (quarterly). NHS Vacancy Statistics, England (experimental and official statistics). https://digital.nhs.uk/data-and-information/publications/statistical/nhs-vacancies-survey — registered-nursing vacancies 43,339 (June 2023), 34,709 (December 2023), 31,773 (September 2024), 23,046 (June 2026). Web pages; direct evidence (establishment-based; caution advised by the publisher).",
+        "Department of Health and Social Care (30 November 2023). Over 50,000 extra nurses in NHS, hitting government target early. https://www.gov.uk/government/news — 352,149 FTE nurses in September 2023 against 300,904 in September 2019. Press release; direct evidence.",
+        "Nuffield Trust (Palmer, B., 19 May 2023). Reliance on international nurse recruitment during a workforce crisis. https://www.nuffieldtrust.org.uk — overseas-trained staff 69% of the register’s net growth after September 2019. Web page; explanatory evidence.",
+        "Nursing and Midwifery Council (2024–2025). Annual data reports to March 2024 and March 2025 and mid-year report to September 2025. https://www.nmc.org.uk/about-us/reports-and-accounts/registration-statistics — internationally educated joiners 49.4% of all joiners (year to March 2024); international joiners down 30.2% in the year to March 2025; 24.4% of the register internationally educated (September 2025). Reports; direct evidence.",
+        "NHS England (June 2023). NHS Long Term Workforce Plan. https://www.england.nhs.uk/long-read/nhs-long-term-workforce-plan-2/ — domestic training expansion and planned reduction of reliance on international recruitment. Web page; later foresight."
+      ],
+      "review_status_detail": "Source-verified, with comparability caveats.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-038",
@@ -575,13 +770,30 @@
       "id": "llm-review-20261023-047",
       "title": "Finland–Russia rail deregulation (2011)",
       "original_claim": "Finland-Russia rail transport deregulation: future scenarios of market development — https://doi.org/10.1504/ijstl.2011.039377",
-      "interpretation": "No, it didn’t happen. Passenger trains stopped in March 2022 and VR wound down cross-border freight by the end of 2022. Finland left only the Vainikkala crossing open from late 2023, and a later report says Russia shut its remaining rail crossings too, calling it temporary.",
+      "interpretation": "The recommendation was enacted about five years after publication, but the competitive cross-border market it aimed at did not visibly develop, and the war has since transformed the question: the issue is no longer how to open the Finland–Russia rail market but whether traffic across that border continues at all. The earlier account’s verdict that the deregulation “didn’t happen” conflated the policy change with its later outcomes.",
       "sources": [],
       "web_sources_as_provided": [
         "VR Group; and 3 more"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "No, it didn’t happen. Passenger trains stopped in March 2022 and VR wound down cross-border freight by the end of 2022. Finland left only the Vainikkala crossing open from late 2023, and a later report says Russia shut its remaining rail crossings too, calling it temporary.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): deregulating third-country transport “would be advisable”. Paraphrase: EU rail freight had been opened to competition, but traffic between Finland and Russia remained reserved; drawing on three kinds of qualitative scenarios for EU–Russia rail competition, the author concluded that opening this traffic to other operators would increase border transport, lower prices and bring competition into Finland’s rail market. Catalogue excerpt: HISTORICAL-CLAIMS record 491, which matches the abstract’s concluding sentences.",
+      "full_review_original_study": "Mäkitalo, Miika (2011). Finland–Russia rail transport deregulation: future scenarios of market development. International Journal of Shipping and Transport Logistics 3(2), 168–179 (Inderscience). https://doi.org/10.1504/IJSTL.2011.039377 (paywalled; abstract used). The author worked for the Finnish Transport Agency.",
+      "full_review_sources": [
+        "Government of Finland (2016). Government Decree 1332/2016 bringing into force the Finland–Russia railway traffic agreement, and Government bill HE 181/2016 vp. https://www.finlex.fi — entry into force 22 December 2016; access for railway undertakings established in Finland or the EEA. Decree read in full; bill read as web page. Direct evidence.",
+        "VR Group (2017). Annual Report 2016, “Operating environment”. https://www.vrgroup.fi — freight traffic between Finland and Russia opened to competition at the end of 2016; Russian traffic about 40% of freight on Finnish railways. Web page; direct evidence.",
+        "Railway Gazette International (29 September 2016). Operator aims to benefit from Finland–Russia freight liberalisation. https://www.railwaygazette.com — planned market entry by a Nurminen Logistics joint venture. Web page; explanatory evidence (whether it ran cross-border trains not verified).",
+        "Fintraffic, Digitraffic open railway data (queried 24 October 2026). https://rata.digitraffic.fi — sample of 21 days, 2016–2021: all timetabled trains at the border points operated by VR. Dataset; direct evidence (sample, not full scan).",
+        "RailFreight.com (21 April 2022). Rail freight Finland–Russia: traffic to phase out gradually, private operators affected. https://www.railfreight.com — VR contracts ending; other operators depended on VR to cross the border. Trade press; direct evidence on events.",
+        "Statistics Finland (updated 28 August 2026). Railway statistics, StatFin tables 12m5, 12m6 and 12m8, 2007–2025. https://stat.fi/en/statistics/rtie — international rail freight 15.9 Mt (2021), 7.1 Mt (2022), 2.5 Mt (2024), 3.3 Mt (2025); eastern-traffic wagons 630,241 (2021) and 101,174 (2025). Dataset; direct evidence."
+      ],
+      "review_status_detail": "Abstract-only assessment. Post-2023 border arrangements provisional.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-048",
@@ -635,14 +847,36 @@
       "id": "llm-review-20261023-052",
       "title": "Waste facility health impacts (2011)",
       "original_claim": "Health impact assessment of waste management facilities in three European countries — https://doi.org/10.1186/1476-069x-10-53",
-      "interpretation": "Partly. Excess cancer deaths near Spanish incinerators (2012) and dioxin exposure persisting near a closed Lausanne incinerator (2022) cast doubt on its projection that impacts fade to zero.",
+      "interpretation": "The study is best read as a conditional baseline rather than a testable forecast. Its 2050 horizon has not been reached, and its key condition — that the contribution of plants operating in 2001 ends around 2020 — was replaced by a large expansion of modern incineration in England. Later evidence reframes rather than refutes it: modern plants appear to add very small exposures, while legacy contamination questions the cessation assumption for persistent pollutants.",
       "sources": [
         "Cancer mortality in towns in the vicinity of incinerators and installations for the recovery or disposal of hazardous waste (2012) — https://doi.org/10.1016/j.envint.2012.10.003",
         "Polychlorinated dibenzo-p-dioxins (PCDDs) and dibenzofurans (PCDFs) soil contamination in Lausanne, Switzerland: Combining pollution mapping and human exposure assessment for targeted risk management (2022) — https://doi.org/10.1016/j.envpol.2022.120441"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Partly. Excess cancer deaths near Spanish incinerators (2012) and dioxin exposure persisting near a closed Lausanne incinerator (2022) cast doubt on its projection that impacts fade to zero.",
+        "sources": [
+          "Cancer mortality in towns in the vicinity of incinerators and installations for the recovery or disposal of hazardous waste (2012) — https://doi.org/10.1016/j.envint.2012.10.003",
+          "Polychlorinated dibenzo-p-dioxins (PCDDs) and dibenzofurans (PCDFs) soil contamination in Lausanne, Switzerland: Combining pollution mapping and human exposure assessment for targeted risk management (2022) — https://doi.org/10.1016/j.envpol.2022.120441"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Paraphrase (the catalogue excerpt, HISTORICAL-CLAIMS record 496, reproduces the abstract sentence): assuming the incinerators operating in 2001 continue until 2020, the authors were moderately confident that annual cancer cases attributable to exposure in 2001–2020 would reach 11 (Italy), 0 (Slovakia) and 7 (England) in 2020 and then decline to zero by 2050; most of the attributable cancers expected over 2001–2050 (2,729, 24 and 1,125) stem from exposure to older plants before 2001. The decline to zero follows from the model’s accounting boundary — a fixed 2001 resident cohort, exposure counted only to 2020, and an assumed fall in excess risk after exposure ceases — rather than from a forecast that harm disappears. Key phrase (discussion): most health effects “will be seen over several decades”.",
+      "full_review_original_study": "Forastiere, Francesco, Badaloni, Chiara, de Hoogh, Kees, von Kraus, Martin K., Martuzzi, Marco, Mitis, Francesco, Palkovicova, Lubica, Porta, Daniela, Preiss, Philipp, Ranzi, Andrea, Perucci, Carlo A. & Briggs, David (2011). Health impact assessment of waste management facilities in three European countries. Environmental Health 10, 53 (EU FP6 INTARESE project). https://doi.org/10.1186/1476-069X-10-53 (open access; full text and appendix read).",
+      "full_review_sources": [
+        "OECD. Municipal waste: generation and treatment (dataflow DSD_MUNW@DF_MUNW), United Kingdom series (accessed October 2026). https://data-explorer.oecd.org — UK incineration 2,535 kt (2001), 5,040 kt (2011), 14,400 kt (2024); landfill 80.0% (2001) to 6.1% (2024). Dataset; direct evidence on the scenario’s conditions (UK, not England).",
+        "Eurostat (updated 15 October 2026). Municipal waste by waste management operations (env_wasmun). Eurostat database, https://ec.europa.eu/eurostat/web/main/data/database — Italy incineration 2,516 kt (2001) and 5,484 kt (2024), landfill 67.7% to 15.0%; Slovakia landfill 81.6% to 38.1%. Dataset; direct evidence.",
+        "Ghosh, R. E. et al. (2019). Fetal growth, stillbirth, infant mortality and other birth outcomes near UK municipal waste incinerators; retrospective population based cohort and case-control study. Environment International 122, 151–158. https://doi.org/10.1016/j.envint.2018.10.060 — 22 incinerators, about one million births 2003–2010: no excess risk. Abstract only; direct evidence (modern plants).",
+        "Parkes, B. et al. (2020). Risk of congenital anomalies near municipal waste incinerators in England and Scotland. Environment International 134, 104845. https://doi.org/10.1016/j.envint.2019.05.039 — no association with modelled PM10; small excesses of heart and genital anomalies with proximity, possibly confounded. Abstract only; direct evidence.",
+        "Douglas, P. et al. (2017). Estimating particulate exposure from modern municipal waste incinerators in Great Britain. Environmental Science & Technology 51(13), 7511–7519. https://doi.org/10.1021/acs.est.6b06478 — modelled incinerator PM10 three to five orders of magnitude below background. Abstract only; explanatory evidence.",
+        "García-Pérez, J. et al. (2013; online 2012). Cancer mortality in towns in the vicinity of incinerators and installations for the recovery or disposal of hazardous waste. Environment International 51, 31–44. https://doi.org/10.1016/j.envint.2012.10.003 — relative risk 1.09 within 5 km, 1997–2006 data. Abstract only; explanatory evidence on older facilities (cited in the earlier account).",
+        "Vernez, D. et al. (2023; online 2022). Polychlorinated dibenzo-p-dioxins and dibenzofurans soil contamination in Lausanne, Switzerland. Environmental Pollution 316, 120441. https://doi.org/10.1016/j.envpol.2022.120441 — legacy contamination attributed to a former incinerator; modelled exposure via home-produced eggs. Abstract only; reframing evidence on the cessation assumption (cited in the earlier account).",
+        "Mataloni, F. et al. (2016). Morbidity and mortality of people who live close to municipal waste landfills: a multisite cohort study. International Journal of Epidemiology 45(3), 806–815. https://doi.org/10.1093/ije/dyw052 — hydrogen sulphide exposure near Lazio landfills associated with lung-cancer mortality and respiratory disease. Abstract only; reframing evidence on landfill effects."
+      ],
+      "review_status_detail": "Provisional interpretation. The original and the waste statistics were verified; the later epidemiology is abstract-only.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-053",
@@ -660,13 +894,31 @@
       "id": "llm-review-20261023-054",
       "title": "Foresight tackling obesities (2011)",
       "original_claim": "O4-2.1 Foresight tackling obesities: future choices — https://doi.org/10.1136/jech.2011.142976b.14",
-      "interpretation": "No, not so far. Later modelling notes that the Foresight projections assumed large, sustained rises, while post-2000 data point to a flatter path. 29% of adults in England were obese in 2022, about the same as in 2019.",
+      "interpretation": "The direction held — adult obesity did not reverse and remains high — but the pace did not: the 2015 milestone was missed by a wide margin and the latest measurements are far below the levels projected for 2025. The main reason is that the steep 1993–2004 trend flattened from the late 2000s, not that the policy-scenario logic failed. The 2050 horizon remains open, with GLP-1 drugs as a development the original framing did not seriously consider.",
       "sources": [],
       "web_sources_as_provided": [
         "nih; openprescribing"
       ],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "No, not so far. Later modelling notes that the Foresight projections assumed large, sustained rises, while post-2000 data point to a flatter path. 29% of adults in England were obese in 2022, about the same as in 2019.",
+        "sources": [],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): “Given these predictions up to 2050, we built a micro simulation”. Paraphrase: Health Survey for England BMI distributions were extrapolated and fed into a microsimulation of the UK population to 2050 under business-as-usual and policy options. The abstract gives no figures; the underlying Foresight reports (2007) projected that, on 1993–2004 trends, 36% of men and 28% of women aged 21–60 would be obese by 2015, 47% and 36% by 2025, and 60% and 50% by 2050, with about a quarter of under-20s obese by 2050; experts consulted expected obesity to keep rising in all four of the project’s societal scenarios without further action. Catalogue excerpt: HISTORICAL-CLAIMS record 498 (a methods passage).",
+      "full_review_original_study": "McPherson, Klim (2011). O4-2.1 Foresight tackling obesities: future choices. Journal of Epidemiology & Community Health 65(Suppl 1), A41 (conference abstract). University of Oxford. https://doi.org/10.1136/jech.2011.142976b.14 (abstract read in full via publisher-deposited metadata; the projections it summarises were read in the 2007 Foresight Project and Modelling Reports).",
+      "full_review_sources": [
+        "Butland, B. et al. (2007). Tackling Obesities: Future Choices – Project Report (2nd ed.), and McPherson, K., Marsh, T. & Brown, M. (2007). Tackling Obesities: Future Choices – Modelling Future Trends in Obesity and Their Impact on Health (2nd ed.). Government Office for Science. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/287937/07-1184x-tackling-obesities-future-choices-report.pdf — projected obesity of 36%/28% (2015), 47%/36% (2025) and 60%/50% (2050) for men/women aged 21–60. Full text read; context for the 2011 abstract (published before it).",
+        "NHS England Digital (27 January 2026). Health Survey for England 2024: Adults’ overweight and obesity. https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england/2024 — adult obesity 15% (1993), 25% (2008), 30% (2024); men 29%, women 31%. Web page (read via a mirror); direct evidence.",
+        "Cobiac, L. J. & Scarborough, P. (2021). Modelling future trajectories of obesity and body mass index in England. PLOS ONE 16(6), e0252072. https://doi.org/10.1371/journal.pone.0252072 — post-2000 data imply flatter trajectories; Foresight 2025 figures exceed both of the authors’ scenarios. Full text read; reframing and later foresight (source of the earlier account’s “flatter path” statement).",
+        "NCD Risk Factor Collaboration (2026). Obesity rise plateaus in developed nations and accelerates in developing nations. Nature 653, 510–518. https://doi.org/10.1038/s41586-026-10383-0; estimates via WHO Global Health Observatory (indicator NCD_BMI_30A, accessed October 2026) — UK age-standardised adult obesity about 27% in 2024; plateau in high-income western countries. Abstract and dataset; direct (model-based) and explanatory evidence.",
+        "Office for Health Improvement and Disparities. National Child Measurement Programme, Fingertips indicators 90319 and 90323 (accessed October 2026). https://fingertips.phe.org.uk — Year 6 obesity 17.5% (2006/07) to 22.2% (2024/25); Reception 10.5% (2024/25). Dataset; direct evidence (children; different definitions).",
+        "Rogers, N. T. et al. (2023). Associations between trajectories of obesity prevalence in English primary school children and the UK soft drinks industry levy. PLOS Medicine 20(1), e1004160. https://doi.org/10.1371/journal.pmed.1004160 — levy associated with 1.6 percentage points lower obesity in Year 6 girls; no change in boys or Reception. Abstract only; explanatory evidence.",
+        "National Institute for Health and Care Excellence. TA875 Semaglutide for managing overweight and obesity (2023) and TA1026 Tirzepatide for managing overweight and obesity (2024). https://www.nice.org.uk/guidance/ta1026 — 3.4 million eligible; at least 220,000 funded in the first three years. Web pages; reframing evidence (new treatment pathway)."
+      ],
+      "review_status_detail": "Source-verified (the abstract was read in full; the projections it summarises and the key outcome sources were read in full).",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-055",
@@ -696,15 +948,36 @@
       "id": "llm-review-20261023-057",
       "title": "Constructivist forecasting, EU as a military power (2011)",
       "original_claim": "The Purpose and Pitfalls of Constructivist Forecasting: Insights from Strategic Culture Research for the European Union’s Evolution as a Military Power1 — https://doi.org/10.1111/j.1468-2478.2011.00648.x",
-      "interpretation": "Held. EU strategic cultures were converging even before the Ukraine war, which then boosted EU defence thinking (2026). ReArm Europe brought a roughly €800bn defence push (2025), and “strategic autonomy” became the EU’s key frame (2026).",
+      "interpretation": "This record cannot be scored as held or failed. The EU’s military role grew after 2022, mainly through money and industry and under the shock of war; national strategic cultures shifted unevenly; and the methodological programme of combining strategic culture with material drivers has been carried forward by the author. Meyer’s substantive trajectories remain to be checked against the full text.",
       "sources": [
         "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566",
         "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
         "European strategic antinomy (2026) — https://doi.org/10.1016/j.polgeo.2026.103616"
       ],
       "web_sources_as_provided": [],
-      "editorial_status": "LLM-reviewed — pending original-claim and source verification",
-      "review_date": "2026-10-23"
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_date": "2026-10-24",
+      "previous_version_2026_10_23": {
+        "interpretation": "Held. EU strategic cultures were converging even before the Ukraine war, which then boosted EU defence thinking (2026). ReArm Europe brought a roughly €800bn defence push (2025), and “strategic autonomy” became the EU’s key frame (2026).",
+        "sources": [
+          "European Strategic Culture at a Crossroads (2026) — https://doi.org/10.4324/9781032636566",
+          "From Reaction to Foresight: EUPHA’s vision for health security in Europe (2025) — https://doi.org/10.1093/eurpub/ckaf071",
+          "European strategic antinomy (2026) — https://doi.org/10.1016/j.polgeo.2026.103616"
+        ],
+        "editorial_status": "LLM-reviewed — pending original-claim and source verification"
+      },
+      "full_review_original_claim": "Key phrase (abstract): strategic culture research suits outlining “trajectories of the likely” when combined with drivers, discontinuities and key uncertainties. Paraphrase: the article argues that forecasting is scientifically rewarding and normatively desirable for constructivist scholars and uses the EU’s evolution as a military power as its example. The specific trajectories and uncertainties it identified for the EU could not be verified, so the claim is treated here mainly as methodological. Catalogue excerpt: HISTORICAL-CLAIMS record 501.",
+      "full_review_original_study": "Meyer, Christoph O. (2011). The Purpose and Pitfalls of Constructivist Forecasting: Insights from Strategic Culture Research for the European Union’s Evolution as a Military Power. International Studies Quarterly 55(3), 669–690 (King’s College London). https://doi.org/10.1111/j.1468-2478.2011.00648.x (paywalled; abstract and reference list used).",
+      "full_review_sources": [
+        "Mi, Xue (2023). Strategic cultures between the EU member states: convergence or divergence? European Security 32(4), 558–582. https://doi.org/10.1080/09662839.2022.2159384 — Germany, Poland and Ireland 2000–2020: convergence in threat perceptions, persistent divergence on goals and means. Abstract only; direct evidence.",
+        "Mi, Xue (2026). European Strategic Culture at a Crossroads: National Continuities or Convergence Towards the EU? Routledge. https://doi.org/10.4324/9781032636566 — convergence between member states and with the EU under way before the 2022 war, which strengthened security and defence thinking. Abstract and chapter list only; direct evidence (cited in earlier accounts).",
+        "Meyer, C. O. (2023). Nature, emergence, and limitations of an EU strategic culture. In Kartchner, K. M., Bowen, B. A. & Johnson, J. L. (eds), Routledge Handbook of Strategic Culture, 106–120. https://doi.org/10.4324/9781003010302-10 — EU strategic culture centred on civilian tools, shaped and limited by member-state cultures. Abstract only; later foresight and explanatory evidence by the same author.",
+        "Herborth, B. (2026). European strategic antinomy. Political Geography 129, 103616. https://doi.org/10.1016/j.polgeo.2026.103616 — strategic autonomy as a key but internally contradictory geonarrative. Abstract only; reframing evidence (cited in the earlier account).",
+        "Li & Meyer, C. O. (2026). A realist-constructivist framework for explaining change in strategic culture: the four pathways model. Cooperation and Conflict. https://doi.org/10.1177/00108367261490365 — four pathways and three forms of strategic-cultural change. Abstract only; reframing evidence (methodological continuation).",
+        "European Defence Agency (2026). Defence Data 2025–2026 (data cut-off 20 April 2026). https://eda.europa.eu/docs/default-source/eda-publications/2026-eda_defencedata_webpublic.pdf — EU-27 defence spending €418 billion in 2025 (2.2% of GDP), estimated €454 billion in 2026; collaborative spending 24% of equipment procurement. Full text read; direct evidence (national aggregates)."
+      ],
+      "review_status_detail": "Abstract-only assessment. Flagged for source verification of the original’s substantive trajectories.",
+      "review_change": "Revised in 24 October review"
     },
     {
       "id": "llm-review-20261023-058",
@@ -717,6 +990,162 @@
       "web_sources_as_provided": [],
       "editorial_status": "LLM-reviewed — pending original-claim and source verification",
       "review_date": "2026-10-23"
+    },
+    {
+      "id": "llm-review-20261024-new-001",
+      "title": "EU gas supply options and the Southern Gas Corridor (2013)",
+      "original_claim": "Fernandes, Jeverson & Ermida, Graça (2013). The European Union’s Strategic Gas Supply Options and the Prevalence of the Southern Corridor. European Foreign Affairs Review 18, 547–561 (Kluwer Law International; issue designation given inconsistently as no. 4 or special issue). https://doi.org/10.54648/eerr2013040 (paywalled; abstract and publisher landing page used).",
+      "interpretation": "The import-dependence warning materialised early, through falling domestic production rather than rising demand. The Southern Corridor became a working supply route but at modest scale; it did not “prevail” as the Union’s central diversification option. The break with Russian gas came through an unexpected geopolitical shock and was achieved mainly through LNG, Norwegian supply and lower demand.",
+      "sources": [
+        "Eurostat (dataset updated 16 July 2026). Energy imports dependency (nrg_ind_id), natural gas, EU27_2020, 1990–2024. Eurostat database, https://ec.europa.eu/eurostat/web/main/data/database — 68.3% (2013), 80.2% (2017), 97.6% (2022), 85.0% (2024). Dataset; direct evidence.",
+        "Eurostat (dataset updated 9 October 2026). Supply, transformation and consumption of gas (nrg_cb_gas) and Imports of natural gas by partner country (nrg_ti_gas), EU27_2020. Eurostat database (as above) — inland consumption about 393 bcm (2013) and 336 bcm (2024); production 135 bcm (2013) and 37 bcm (2024); imports from Azerbaijan about 12 bcm a year in 2022–2024; partner shares calculated by the reviewer. Dataset; direct evidence.",
+        "Pirani, S. (2018). Let’s not exaggerate – Southern Gas Corridor prospects to 2030. Oxford Institute for Energy Studies, Paper NG 135. https://doi.org/10.26889/9781784671167 — about 10 bcm a year expected for Europe, no more than about 2% of demand, far below Commission assumptions of around 2011. Full text read; explanatory evidence and pre-2022 later foresight.",
+        "Siddi, M. (2017). The Southern Gas Corridor: Challenges to a geopolitical approach in the EU’s external energy policy. FIIA Briefing Paper 216. https://fiia.fi/wp-content/uploads/2017/04/bp216_the_southern_gas_corridor.pdf — corridor capacity of 16 bcm a year with 10 bcm for the EU, against the 31 bcm once planned for Nabucco; the corridor would not significantly diversify EU imports. Full text read; explanatory evidence.",
+        "Trans Adriatic Pipeline AG (10 July 2026). One flow, two milestones: 60 bcm delivered to Europe, 50 bcm to Italy. https://www.tap-ag.com/news/news-stories/one-flow-two-milestones-60-bcm-delivered-to-europe-50-bcm-to-italy — more than 60 bcm delivered since start of operations; first expansion phase adds 1.2 bcm a year from early 2026. Company web page; direct evidence on volumes.",
+        "European Commission (2022). REPowerEU Plan, COM(2022) 230 final, 18 May 2022. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0230 — diversification through LNG, joint purchasing, demand reduction and renewables; support for expanding the corridor to 20 bcm a year. Full text read; reframing evidence.",
+        "Regulation (EU) 2026/261 of 26 January 2026 on phasing out Russian natural gas imports. Official Journal L, 2 February 2026. https://eur-lex.europa.eu/eli/reg/2026/261/oj — prohibition of Russian pipeline gas and LNG with transition periods to late 2027. Full text read; direct and reframing evidence."
+      ],
+      "web_sources_as_provided": [],
+      "review_status_detail": "Abstract-only assessment. Later statistical and legal evidence was read in full.",
+      "full_review_original_claim": "Paraphrase from the abstract: EU gas consumption was expected to rise significantly, and the authors cite current estimates that the EU would need to import “up to 80% of the gas it will consume in 2030”, amid strong concern about reliance on Russian gas, especially in Eastern Europe. Weighing shale gas, more LNG and supplier diversification, they conclude that the EU’s main priority appeared to be the Southern Gas Corridor, with Turkey retaining its strategic importance as a hub. The 80% figure is a cited projection; the article’s own forward-looking claim is the prevalence of the corridor. Catalogue excerpt: HISTORICAL-CLAIMS record 458 (which reproduces only the import-dependence sentences).",
+      "full_review_original_study": "Fernandes, Jeverson & Ermida, Graça (2013). The European Union’s Strategic Gas Supply Options and the Prevalence of the Southern Corridor. European Foreign Affairs Review 18, 547–561 (Kluwer Law International; issue designation given inconsistently as no. 4 or special issue). https://doi.org/10.54648/eerr2013040 (paywalled; abstract and publisher landing page used).",
+      "full_review_sources": [
+        "Eurostat (dataset updated 16 July 2026). Energy imports dependency (nrg_ind_id), natural gas, EU27_2020, 1990–2024. Eurostat database, https://ec.europa.eu/eurostat/web/main/data/database — 68.3% (2013), 80.2% (2017), 97.6% (2022), 85.0% (2024). Dataset; direct evidence.",
+        "Eurostat (dataset updated 9 October 2026). Supply, transformation and consumption of gas (nrg_cb_gas) and Imports of natural gas by partner country (nrg_ti_gas), EU27_2020. Eurostat database (as above) — inland consumption about 393 bcm (2013) and 336 bcm (2024); production 135 bcm (2013) and 37 bcm (2024); imports from Azerbaijan about 12 bcm a year in 2022–2024; partner shares calculated by the reviewer. Dataset; direct evidence.",
+        "Pirani, S. (2018). Let’s not exaggerate – Southern Gas Corridor prospects to 2030. Oxford Institute for Energy Studies, Paper NG 135. https://doi.org/10.26889/9781784671167 — about 10 bcm a year expected for Europe, no more than about 2% of demand, far below Commission assumptions of around 2011. Full text read; explanatory evidence and pre-2022 later foresight.",
+        "Siddi, M. (2017). The Southern Gas Corridor: Challenges to a geopolitical approach in the EU’s external energy policy. FIIA Briefing Paper 216. https://fiia.fi/wp-content/uploads/2017/04/bp216_the_southern_gas_corridor.pdf — corridor capacity of 16 bcm a year with 10 bcm for the EU, against the 31 bcm once planned for Nabucco; the corridor would not significantly diversify EU imports. Full text read; explanatory evidence.",
+        "Trans Adriatic Pipeline AG (10 July 2026). One flow, two milestones: 60 bcm delivered to Europe, 50 bcm to Italy. https://www.tap-ag.com/news/news-stories/one-flow-two-milestones-60-bcm-delivered-to-europe-50-bcm-to-italy — more than 60 bcm delivered since start of operations; first expansion phase adds 1.2 bcm a year from early 2026. Company web page; direct evidence on volumes.",
+        "European Commission (2022). REPowerEU Plan, COM(2022) 230 final, 18 May 2022. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0230 — diversification through LNG, joint purchasing, demand reduction and renewables; support for expanding the corridor to 20 bcm a year. Full text read; reframing evidence.",
+        "Regulation (EU) 2026/261 of 26 January 2026 on phasing out Russian natural gas imports. Official Journal L, 2 February 2026. https://eur-lex.europa.eu/eli/reg/2026/261/oj — prohibition of Russian pipeline gas and LNG with transition periods to late 2027. Full text read; direct and reframing evidence."
+      ],
+      "review_date": "2026-10-24",
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_change": "New in 24 October review"
+    },
+    {
+      "id": "llm-review-20261024-new-002",
+      "title": "Renewable electricity from North Africa for Europe, 2050 (2014)",
+      "original_claim": "Boie, Inga, Pudlik, Martin, Ragwitz, Mario, Sensfuß, Frank (Fraunhofer ISI), Bohn, Sven, Agsten, Michael, Bretschneider, Peter & Westermann, Dirk (Fraunhofer IOSB-AST) (2014). Scenarios for renewable energy deployment in North African countries and electricity exchange with Europe – A model-based analysis for 2050. International Journal of Smart Grid and Clean Energy 3(3), 299–306. https://doi.org/10.12720/sgce.3.3.299-306 (the open-access PDF could not be retrieved; abstract read, scenario figures taken from the same team’s 2016 Fraunhofer report).",
+      "interpretation": "So far the imagined pathway of large-scale renewable electricity exports from North Africa to Europe has not materialised; the region’s own renewable build-out has been slow outside Morocco, and the export idea has been largely reframed towards hydrogen and selected bilateral interconnectors. Because the scenarios are conditional and their horizon is 2050, they remain formally open, but the intermediate milestones are far out of reach.",
+      "sources": [
+        "Ember, yearly electricity data, accessed via Our World in Data (last updated 30 June 2026). Share of electricity generation from renewables and Electricity production by source. https://ourworldindata.org/grapher/share-electricity-renewables — 2024 renewable shares: Morocco 24.4%, Egypt 11.2%, Tunisia 4.4%, Algeria 1.1%, Libya about 0%; five-country aggregate about 9.0% (2024) versus 6.5% (2013), reviewer’s calculation. Dataset; direct evidence.",
+        "Eurostat (datasets updated 22 October 2026). Imports and exports of electricity by partner country (nrg_ti_eh, nrg_te_eh). Eurostat database, https://ec.europa.eu/eurostat/web/main/data/database — Spain exported 2,896 GWh to and imported 356 GWh from Morocco in 2024; no recorded flows between other EU states and Algeria, Tunisia, Libya or Egypt. Dataset; direct evidence.",
+        "Platzer, W. et al. (2016). Supergrid – Approach for the integration of renewable energy in Europe and North Africa. Fraunhofer study report, 12 March 2016. https://www.ise.fraunhofer.de/content/dam/ise/en/documents/press-releases/2016/Study_Supergrid_final_160412_.pdf — Chapter 3 restates the four 2014 scenarios (renewable shares 83–98% in 2050; exports of 191–347 TWh in the export scenarios). Full text read; companion source used for the original scenario figures.",
+        "Boie, I. et al. (2016). Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe. Renewable Energy 87, 130–144. https://doi.org/10.1016/j.renene.2015.10.008 — same team reiterates near-100% renewables by 2050 and exports gaining importance after 2030. Abstract only; later foresight.",
+        "European Commission (2022). REPowerEU Plan, COM(2022) 230 final. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0230 — 10 million tonnes of renewable hydrogen imports by 2030 and a Mediterranean hydrogen corridor. Full text read; reframing evidence.",
+        "van der Zwaan, B., Lamboo, S. & Dalla Longa, F. (2021). Timmermans’ dream: An electricity and hydrogen partnership between Europe and North Africa. Energy Policy 159, 112613. https://doi.org/10.1016/j.enpol.2021.112613 — models a combined electricity–hydrogen partnership to 2050. Abstract only; reframing and later foresight."
+      ],
+      "web_sources_as_provided": [],
+      "review_status_detail": "Abstract-only assessment (original); later statistical evidence read directly.",
+      "full_review_original_claim": "Paraphrase from the abstract: four scenarios with renewable shares of 83–98% of electricity generation (regional average) in Morocco, Algeria, Tunisia, Libya and Egypt by 2050, evaluating the opportunities and technical challenges of electricity exchange within the region and with Europe; the authors found that “extensive grid reinforcements would be required” (abstract). The 2016 Fraunhofer report by the same team specifies that two scenarios assume exports to Europe, of about 191–347 TWh a year in 2050, with renewable shares of 59–68% already in 2030. Catalogue excerpt: HISTORICAL-CLAIMS record 421.",
+      "full_review_original_study": "Boie, Inga, Pudlik, Martin, Ragwitz, Mario, Sensfuß, Frank (Fraunhofer ISI), Bohn, Sven, Agsten, Michael, Bretschneider, Peter & Westermann, Dirk (Fraunhofer IOSB-AST) (2014). Scenarios for renewable energy deployment in North African countries and electricity exchange with Europe – A model-based analysis for 2050. International Journal of Smart Grid and Clean Energy 3(3), 299–306. https://doi.org/10.12720/sgce.3.3.299-306 (the open-access PDF could not be retrieved; abstract read, scenario figures taken from the same team’s 2016 Fraunhofer report).",
+      "full_review_sources": [
+        "Ember, yearly electricity data, accessed via Our World in Data (last updated 30 June 2026). Share of electricity generation from renewables and Electricity production by source. https://ourworldindata.org/grapher/share-electricity-renewables — 2024 renewable shares: Morocco 24.4%, Egypt 11.2%, Tunisia 4.4%, Algeria 1.1%, Libya about 0%; five-country aggregate about 9.0% (2024) versus 6.5% (2013), reviewer’s calculation. Dataset; direct evidence.",
+        "Eurostat (datasets updated 22 October 2026). Imports and exports of electricity by partner country (nrg_ti_eh, nrg_te_eh). Eurostat database, https://ec.europa.eu/eurostat/web/main/data/database — Spain exported 2,896 GWh to and imported 356 GWh from Morocco in 2024; no recorded flows between other EU states and Algeria, Tunisia, Libya or Egypt. Dataset; direct evidence.",
+        "Platzer, W. et al. (2016). Supergrid – Approach for the integration of renewable energy in Europe and North Africa. Fraunhofer study report, 12 March 2016. https://www.ise.fraunhofer.de/content/dam/ise/en/documents/press-releases/2016/Study_Supergrid_final_160412_.pdf — Chapter 3 restates the four 2014 scenarios (renewable shares 83–98% in 2050; exports of 191–347 TWh in the export scenarios). Full text read; companion source used for the original scenario figures.",
+        "Boie, I. et al. (2016). Opportunities and challenges of high renewable energy deployment and electricity exchange for North Africa and Europe. Renewable Energy 87, 130–144. https://doi.org/10.1016/j.renene.2015.10.008 — same team reiterates near-100% renewables by 2050 and exports gaining importance after 2030. Abstract only; later foresight.",
+        "European Commission (2022). REPowerEU Plan, COM(2022) 230 final. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0230 — 10 million tonnes of renewable hydrogen imports by 2030 and a Mediterranean hydrogen corridor. Full text read; reframing evidence.",
+        "van der Zwaan, B., Lamboo, S. & Dalla Longa, F. (2021). Timmermans’ dream: An electricity and hydrogen partnership between Europe and North Africa. Energy Policy 159, 112613. https://doi.org/10.1016/j.enpol.2021.112613 — models a combined electricity–hydrogen partnership to 2050. Abstract only; reframing and later foresight."
+      ],
+      "review_date": "2026-10-24",
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_change": "New in 24 October review"
+    },
+    {
+      "id": "llm-review-20261024-new-003",
+      "title": "A Europe-wide CO₂ transport network for carbon capture and storage (2014)",
+      "original_claim": "Stewart, R. Jamie, Scott, Vivian, Haszeldine, R. Stuart (University of Edinburgh), Ainger, Dominic & Argent, Steve (Arup) (2014). The feasibility of a European-wide integrated CO₂ transport network. Greenhouse Gases: Science and Technology 4(4), 481–494. https://doi.org/10.1002/ghg.1410 (accepted author manuscript read in full via the University of Edinburgh repository).",
+      "interpretation": "The study’s core insight — that CCS at scale in Europe requires transboundary transport and offshore storage — has been absorbed into EU policy, but the envisaged integrated pipeline network has been delayed by roughly a decade and reshaped into clusters linked by shipping, with 2030 ambitions at the low end of the 2014 scenarios. The 2050 horizon remains open.",
+      "sources": [
+        "Regulation (EU) 2024/1735 (Net-Zero Industry Act), 13 June 2024, Article 20. https://eur-lex.europa.eu/eli/reg/2024/1735/oj — Union objective of at least 50 Mt a year of CO₂ injection capacity by 2030; Commission estimates that up to 550 Mt a year may need to be captured by 2050. Full text read; direct and reframing evidence (target).",
+        "European Commission (2024). Towards an ambitious Industrial Carbon Management for the EU, COM(2024) 62 final, 6 February 2024. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0062 — limited operational projects; early transport largely by shipping from clusters; up to 7,300 km of pipelines and shipping routes by 2030 and about 19,000 km by 2040; about 280 Mt captured in 2040 and 450 Mt in 2050. Full text read; direct, explanatory and later-foresight evidence.",
+        "Pipe Line & Gas Journal (25 August 2025). Norway’s Northern Lights CCS project starts operations with first CO₂ injected. https://pgjonline.com/news/2025/august/norways-northern-lights-ccs-project-starts-operations-with-first-co2-injected — operations begun with CO₂ from the Brevik cement plant; phase 1 capacity 1.5 Mt a year; phase 2 at least 5 Mt a year. Trade-press web page; direct evidence on first operation.",
+        "Hofmann, F., Tries, C., Neumann, F., Zeyen, E. & Brown, T. (2024). H2 and CO2 network strategies for the European energy system. arXiv:2402.19042 (later published in Nature Energy, 2025). https://arxiv.org/abs/2402.19042 — in a carbon-neutral European model a CO₂ network lowers system costs by 3.1%, a combined hydrogen and CO₂ network by 5.2%. Full text read (preprint); later foresight.",
+        "Anvari, M. et al. (2026). From carbon management strategies to implementation: Modeling and physical simulation of CO₂ pipeline infrastructure – a case study for Germany. arXiv:2601.15090. https://arxiv.org/abs/2601.15090 — designs a German network of about 7,000 km and states that actual roll-out of CO₂ pipelines had not yet begun. Full text read (preprint); later foresight with status statements."
+      ],
+      "web_sources_as_provided": [],
+      "review_status_detail": "Source-verified for the original paper and the EU policy documents; project-level status beyond Northern Lights not verified.",
+      "full_review_original_claim": "Key phrase (conclusions): extensive CO₂ pipeline networks “will be required by both low and high levels of CCS deployment”. Paraphrase: modelling capture of 50–350 Mt CO₂ a year by 2030 and 280–800 Mt by 2050, the authors found that least-cost networks would need roughly 7,000–15,000 km of pipeline by 2030 and 12,000–20,000 km by 2050, with pipeline capital costs of the order of €10–20 billion; offshore storage would be needed even at low deployment, almost no 2030 routes would become redundant by 2050, and priority CO₂ corridors should become EU projects of common interest. The catalogued excerpt (HISTORICAL-CLAIMS record 427) gives only the contextual opening sentence.",
+      "full_review_original_study": "Stewart, R. Jamie, Scott, Vivian, Haszeldine, R. Stuart (University of Edinburgh), Ainger, Dominic & Argent, Steve (Arup) (2014). The feasibility of a European-wide integrated CO₂ transport network. Greenhouse Gases: Science and Technology 4(4), 481–494. https://doi.org/10.1002/ghg.1410 (accepted author manuscript read in full via the University of Edinburgh repository).",
+      "full_review_sources": [
+        "Regulation (EU) 2024/1735 (Net-Zero Industry Act), 13 June 2024, Article 20. https://eur-lex.europa.eu/eli/reg/2024/1735/oj — Union objective of at least 50 Mt a year of CO₂ injection capacity by 2030; Commission estimates that up to 550 Mt a year may need to be captured by 2050. Full text read; direct and reframing evidence (target).",
+        "European Commission (2024). Towards an ambitious Industrial Carbon Management for the EU, COM(2024) 62 final, 6 February 2024. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0062 — limited operational projects; early transport largely by shipping from clusters; up to 7,300 km of pipelines and shipping routes by 2030 and about 19,000 km by 2040; about 280 Mt captured in 2040 and 450 Mt in 2050. Full text read; direct, explanatory and later-foresight evidence.",
+        "Pipe Line & Gas Journal (25 August 2025). Norway’s Northern Lights CCS project starts operations with first CO₂ injected. https://pgjonline.com/news/2025/august/norways-northern-lights-ccs-project-starts-operations-with-first-co2-injected — operations begun with CO₂ from the Brevik cement plant; phase 1 capacity 1.5 Mt a year; phase 2 at least 5 Mt a year. Trade-press web page; direct evidence on first operation.",
+        "Hofmann, F., Tries, C., Neumann, F., Zeyen, E. & Brown, T. (2024). H2 and CO2 network strategies for the European energy system. arXiv:2402.19042 (later published in Nature Energy, 2025). https://arxiv.org/abs/2402.19042 — in a carbon-neutral European model a CO₂ network lowers system costs by 3.1%, a combined hydrogen and CO₂ network by 5.2%. Full text read (preprint); later foresight.",
+        "Anvari, M. et al. (2026). From carbon management strategies to implementation: Modeling and physical simulation of CO₂ pipeline infrastructure – a case study for Germany. arXiv:2601.15090. https://arxiv.org/abs/2601.15090 — designs a German network of about 7,000 km and states that actual roll-out of CO₂ pipelines had not yet begun. Full text read (preprint); later foresight with status statements."
+      ],
+      "review_date": "2026-10-24",
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_change": "New in 24 October review"
+    },
+    {
+      "id": "llm-review-20261024-new-015",
+      "title": "Projected obesity and its costs in Ireland to 2030 (2013)",
+      "original_claim": "Keaver, Laura, Webber, Laura, Dee, Anne, Shiely, Frances, Marsh, Tim, Balanda, Kevin P. & Perry, Ivan J. (2013). Application of the UK Foresight Obesity Model in Ireland: The Health and Economic Consequences of Projected Obesity Trends in Ireland. PLoS ONE 8(11), e79827. https://doi.org/10.1371/journal.pone.0079827 (open access; full text read).",
+      "interpretation": "Partly along the envisioned pathway — adult obesity in Ireland is high and still rising — but much more slowly than the extrapolation implied. The 2030 horizon has not arrived, yet the projected prevalence now looks very unlikely, mainly because the steep early trend fitted to few, partly self-reported data points did not continue. The cost projection remains open and unverified.",
+      "sources": [
+        "NCD Risk Factor Collaboration estimates via WHO Global Health Observatory (indicators NCD_BMI_30C and NCD_BMI_25C, record date 27 May 2026); method in NCD-RisC (2026), Nature 653, 510–518, https://doi.org/10.1038/s41586-026-10383-0 — Ireland crude adult obesity 25.1% (2010), 30.6% (2024; men 31.9%, women 29.4%). Dataset; direct (model-based) evidence.",
+        "Central Statistics Office Ireland. Irish Health Survey tables IH465 (2024) and IHS17 (2025); Department of Health indicator HSPAA51 (Healthy Ireland Survey). https://data.cso.ie — adult obesity 23.8% (2024); overweight or obese aged 15+: 60.7% (2015), 56.6% (2024). Datasets; direct evidence (measurement mode not verified).",
+        "Department of Health Ireland, table KTA24 (WHO Childhood Obesity Surveillance Initiative, Ireland; updated 5 June 2026). https://data.cso.ie — overweight including obesity at age 7–8: 21.6% (2008), 15.8% (2018), 17.1% (2022). Dataset; explanatory evidence.",
+        "Pineda, E. et al. (2018). Forecasting future trends in obesity across Europe: the value of improving surveillance. Obesity Facts 11(5), 360–371. https://doi.org/10.1159/000492115 — Ireland projected at 43% obesity by 2025 with particularly wide intervals. Full text read; later foresight.",
+        "Cobiac, L. J. & Scarborough, P. (2021). Modelling future trajectories of obesity and body mass index in England. PLOS ONE 16(6), e0252072. https://doi.org/10.1371/journal.pone.0252072 — Foresight-type projections are highly sensitive to the fitting period. Full text read; explanatory evidence."
+      ],
+      "web_sources_as_provided": [],
+      "review_status_detail": "Provisional interpretation. The original and the prevalence evidence were read; the cost side and the Irish policy context remain unverified.",
+      "full_review_original_claim": "Key phrase (abstract): overweight and obesity “projected to reach levels of 89% and 85%” in men and women by 2030. Paraphrase: if trends continued unabated, 48% of men and 57% of women aged 20 and over would be obese by 2030, and obesity-related direct healthcare costs would rise from about €2.5 billion in 2010 to €5.4 billion a year by 2030; a 5% reduction in population BMI would lower 2030 costs by about €495 million. The abstract describes the €495 million as a saving over twenty years, but the paper’s own results table shows it as the difference in annual costs in 2030 — an internal inconsistency repeated in the catalogue excerpt (HISTORICAL-CLAIMS record 439).",
+      "full_review_original_study": "Keaver, Laura, Webber, Laura, Dee, Anne, Shiely, Frances, Marsh, Tim, Balanda, Kevin P. & Perry, Ivan J. (2013). Application of the UK Foresight Obesity Model in Ireland: The Health and Economic Consequences of Projected Obesity Trends in Ireland. PLoS ONE 8(11), e79827. https://doi.org/10.1371/journal.pone.0079827 (open access; full text read).",
+      "full_review_sources": [
+        "NCD Risk Factor Collaboration estimates via WHO Global Health Observatory (indicators NCD_BMI_30C and NCD_BMI_25C, record date 27 May 2026); method in NCD-RisC (2026), Nature 653, 510–518, https://doi.org/10.1038/s41586-026-10383-0 — Ireland crude adult obesity 25.1% (2010), 30.6% (2024; men 31.9%, women 29.4%). Dataset; direct (model-based) evidence.",
+        "Central Statistics Office Ireland. Irish Health Survey tables IH465 (2024) and IHS17 (2025); Department of Health indicator HSPAA51 (Healthy Ireland Survey). https://data.cso.ie — adult obesity 23.8% (2024); overweight or obese aged 15+: 60.7% (2015), 56.6% (2024). Datasets; direct evidence (measurement mode not verified).",
+        "Department of Health Ireland, table KTA24 (WHO Childhood Obesity Surveillance Initiative, Ireland; updated 5 June 2026). https://data.cso.ie — overweight including obesity at age 7–8: 21.6% (2008), 15.8% (2018), 17.1% (2022). Dataset; explanatory evidence.",
+        "Pineda, E. et al. (2018). Forecasting future trends in obesity across Europe: the value of improving surveillance. Obesity Facts 11(5), 360–371. https://doi.org/10.1159/000492115 — Ireland projected at 43% obesity by 2025 with particularly wide intervals. Full text read; later foresight.",
+        "Cobiac, L. J. & Scarborough, P. (2021). Modelling future trajectories of obesity and body mass index in England. PLOS ONE 16(6), e0252072. https://doi.org/10.1371/journal.pone.0252072 — Foresight-type projections are highly sensitive to the fitting period. Full text read; explanatory evidence."
+      ],
+      "review_date": "2026-10-24",
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_change": "New in 24 October review"
+    },
+    {
+      "id": "llm-review-20261024-new-018",
+      "title": "Immigration and integration scenarios for Europe to 2050 (2013)",
+      "original_claim": "Avramov, Dragana (2013). Immigration and integration scenarios in global Europe: Forward-looking up to 2050. Sociologija 55(2), 169–186. Population and Social Policy Consultants, Brussels. https://doi.org/10.2298/SOC1302169A (diamond open access; the full text could not be opened during this review, so the abstract was used).",
+      "interpretation": "The methodological recommendation developed broadly along the envisioned pathway: integration and labour-market scenarios became standard companions of EU population projections. The migration pathway itself was transformed by unexpected events — an asylum surge, a pandemic and a war — rather than shaped by planned recruitment, and the zero-immigration storyline survives as a counterfactual reference case in official projections. The 2050 horizon has not been reached.",
+      "sources": [
+        "Eurostat (dataset updated 30 September 2026). Population change – demographic balance and crude rates at national level (demo_gind), EU27_2020, 2012–2025. Eurostat database, dataset code demo_gind, https://ec.europa.eu/eurostat/web/main/data/database — negative natural change every year since 2012; population 441.7 million (2013) to 452.0 million (2026); net migration about 3.16 million in 2022. Dataset; values partly provisional.",
+        "Eurostat (2023; dataset updated 2026). EUROPOP2023 population projections (proj_23np), EU27_2020. Eurostat database, dataset code proj_23np, https://ec.europa.eu/eurostat/web/main/data/database — baseline peak in 2026 (about 453.3 million) and 447.9 million in 2050; no-migration variant 408.5 million in 2050; old-age dependency ratio 50.4 (baseline) versus 56.2 (no migration) in 2050. Later foresight.",
+        "Eurostat (2019). EUROPOP2019 population projections (proj_19np). Eurostat database, dataset code proj_19np, https://ec.europa.eu/eurostat/web/main/data/database — baseline also peaking in 2026; no-migration variant about 401 million in 2050. Later foresight.",
+        "Eurostat (datasets updated September–October 2026). Asylum applicants (migr_asyappctza) and Beneficiaries of temporary protection (migr_asytpsm). Eurostat database, dataset code migr_asyappctza, https://ec.europa.eu/eurostat/web/main/data/database — about 1.22 million first-time applicants in 2015; 4.35 million temporary-protection beneficiaries in December 2025. Explanatory evidence.",
+        "Eurostat. First permits by reason (migr_resfirst) and Employment rates by country of birth (lfsa_ergacob). Eurostat database, dataset code lfsa_ergacob, https://ec.europa.eu/eurostat/web/main/data/database — employment permits about 0.43 million (2013) and 1.30 million (2025); employment rate of non-EU-born aged 20–64: 57.0% (2013), 68.6% (2025). Direct evidence on integration outcomes.",
+        "Marois, G. & Potančoková, M. (2020). Scenarios of labour force participation and employment integration of immigrants in the EU: demographic perspective. JRC Technical Report EUR 30146 EN. https://doi.org/10.2760/021884 — at equal immigration volumes, high integration roughly halves the projected decline of the employed population while low integration almost doubles it. Full text read; later foresight that operationalises the original recommendation.",
+        "Lutz, W. et al. (2019). Demographic Scenarios for the EU: Migration, Population and Education. JRC/IIASA. https://doi.org/10.2760/590301 — higher immigration enlarges the labour force but barely changes the ratio of dependants to workers; raising participation is the most effective lever. Executive summary read; later foresight."
+      ],
+      "web_sources_as_provided": [],
+      "review_status_detail": "Abstract-only assessment. The original was read as an abstract; the Eurostat datasets and the two JRC reports were opened directly.",
+      "full_review_original_claim": "Paraphrase from the abstract: the article compares EU population prospects to 2050 under several migration hypotheses — business as usual, replacement migration, and recruitment to fill gaps in labour supply — and builds a deliberate shock storyline of no immigration into the EU, setting out the social consequences of the zero immigration that, according to the abstract, some policy circles desired. Its closing recommendation is that assessments of future immigration needs should combine integration scenarios with demographic projections and labour-market needs. Key phrase (abstract): “No immigration into European Union” as a shock hypothesis. The catalogued excerpt (HISTORICAL-CLAIMS record 448) reproduces only the recommendation sentence, which is methodological; the substantive future content lies in the comparison of migration hypotheses and the zero-immigration warning.",
+      "full_review_original_study": "Avramov, Dragana (2013). Immigration and integration scenarios in global Europe: Forward-looking up to 2050. Sociologija 55(2), 169–186. Population and Social Policy Consultants, Brussels. https://doi.org/10.2298/SOC1302169A (diamond open access; the full text could not be opened during this review, so the abstract was used).",
+      "full_review_sources": [
+        "Eurostat (dataset updated 30 September 2026). Population change – demographic balance and crude rates at national level (demo_gind), EU27_2020, 2012–2025. Eurostat database, dataset code demo_gind, https://ec.europa.eu/eurostat/web/main/data/database — negative natural change every year since 2012; population 441.7 million (2013) to 452.0 million (2026); net migration about 3.16 million in 2022. Dataset; values partly provisional.",
+        "Eurostat (2023; dataset updated 2026). EUROPOP2023 population projections (proj_23np), EU27_2020. Eurostat database, dataset code proj_23np, https://ec.europa.eu/eurostat/web/main/data/database — baseline peak in 2026 (about 453.3 million) and 447.9 million in 2050; no-migration variant 408.5 million in 2050; old-age dependency ratio 50.4 (baseline) versus 56.2 (no migration) in 2050. Later foresight.",
+        "Eurostat (2019). EUROPOP2019 population projections (proj_19np). Eurostat database, dataset code proj_19np, https://ec.europa.eu/eurostat/web/main/data/database — baseline also peaking in 2026; no-migration variant about 401 million in 2050. Later foresight.",
+        "Eurostat (datasets updated September–October 2026). Asylum applicants (migr_asyappctza) and Beneficiaries of temporary protection (migr_asytpsm). Eurostat database, dataset code migr_asyappctza, https://ec.europa.eu/eurostat/web/main/data/database — about 1.22 million first-time applicants in 2015; 4.35 million temporary-protection beneficiaries in December 2025. Explanatory evidence.",
+        "Eurostat. First permits by reason (migr_resfirst) and Employment rates by country of birth (lfsa_ergacob). Eurostat database, dataset code lfsa_ergacob, https://ec.europa.eu/eurostat/web/main/data/database — employment permits about 0.43 million (2013) and 1.30 million (2025); employment rate of non-EU-born aged 20–64: 57.0% (2013), 68.6% (2025). Direct evidence on integration outcomes.",
+        "Marois, G. & Potančoková, M. (2020). Scenarios of labour force participation and employment integration of immigrants in the EU: demographic perspective. JRC Technical Report EUR 30146 EN. https://doi.org/10.2760/021884 — at equal immigration volumes, high integration roughly halves the projected decline of the employed population while low integration almost doubles it. Full text read; later foresight that operationalises the original recommendation.",
+        "Lutz, W. et al. (2019). Demographic Scenarios for the EU: Migration, Population and Education. JRC/IIASA. https://doi.org/10.2760/590301 — higher immigration enlarges the labour force but barely changes the ratio of dependants to workers; raising participation is the most effective lever. Executive summary read; later foresight."
+      ],
+      "review_date": "2026-10-24",
+      "editorial_status": "LLM-reviewed; source verification status varies — see review_status_detail",
+      "review_change": "New in 24 October review"
+    }
+  ],
+  "last_editorial_update": "2026-10-24",
+  "review_history": [
+    {
+      "date": "2026-10-24",
+      "source": "VV-FUTURES-NEW-REVIEWED-FINDINGS.docx",
+      "new": 5,
+      "revised": 15,
+      "unrevised_previous": 43,
+      "review_type": "LLM-assisted, mixed verification statuses"
     }
   ]
 }
