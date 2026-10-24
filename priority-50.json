@@ -1012,6 +1012,38 @@
       "review_priority": 39
     },
     {
+      "title": "Finding a needle in a haystack? Identifying degrowth-compatible provisions in EU energy law for a just transition to net-zero by 2050",
+      "date": "2023-04-03",
+      "publisher": "Taylor & Francis",
+      "topic": "Energy transition",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1080/02646811.2023.2187549",
+      "doi": "10.1080/02646811.2023.2187549",
+      "abstract": "Research shows that relying on a green growth strategy to limit climate change is, at best, a gamble. Degrowth represents a much safer way, relying on a steep reduction in energy and materials consumption, starting with developed countries. Consequently, the concept of degrowth should be implemented within European Union (EU) energy law to reach its net zero target by 2050. This academic article is the first to use the theoretical framework of degrowth to analyse EU energy law. To do so, it focuses on various core energy laws: the 2019 Electricity Market Directive, the 2018 Renewable Energy Sources Directive and the 2012 Energy Efficiency Directive (slightly amended in 2018) as well as the recast proposals for the Renewable Energy and Energy Efficiency directives tabled in the 2021 Fit for 55 package and 2022 REPowerEU plan. This research shows that various degrowth-compatible provisions already exist in EU energy law and can be harnessed in the short term, without waiting for a legal overhaul. This article also formulates recommendations, such as interpreting in a degrowth-favourable way the aforementioned provisions and challenging the current as well as forthcoming framework, for instance by amending the proposed ‘energy efficiency first’ principle to include energy sufficiency. Finally, opportunities for future research are outlined.",
+      "journal": "Journal of Energy & Natural Resources Law",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_focused",
+      "eu_connection_reason": "EU_or_Europe_in_original_title",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Consequently, the concept of degrowth should be implemented within European Union (EU) energy law to reach its net zero target by 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "strategic_future_question",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 135,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 40
+    },
+    {
       "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
       "date": "2022-04-14",
       "publisher": "MDPI AG",
@@ -1042,7 +1074,7 @@
       "age_band": "near-preferred · 4–5 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 40
+      "review_priority": 41
     },
     {
       "title": "What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios?",
@@ -1074,7 +1106,7 @@
       "age_band": "near-preferred · 4–5 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 41
+      "review_priority": 42
     },
     {
       "title": "Drivers, trends and scenarios for the future of health in Europe. Impressions from the FRESHER project",
@@ -1104,7 +1136,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 42
+      "review_priority": 43
     },
     {
       "title": "Emerging smart city, transport and energy trends in urban settings: Results of a pan-European foresight exercise with 120 experts",
@@ -1136,7 +1168,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 43
+      "review_priority": 44
     },
     {
       "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
@@ -1168,7 +1200,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 44
+      "review_priority": 45
     },
     {
       "title": "Making or breaking climate targets: The AMPERE study on staged accession scenarios for climate policy",
@@ -1200,7 +1232,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 45
+      "review_priority": 46
     },
     {
       "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
@@ -1232,7 +1264,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 46
+      "review_priority": 47
     },
     {
       "title": "Assessing the impact of the 2011 EU Transport White Paper - a rail freight demand forecast up to 2050 for the EU27",
@@ -1265,7 +1297,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 47
+      "review_priority": 48
     },
     {
       "title": "Immigration and integration scenarios in global Europe: Forward-looking up to 2050",
@@ -1297,7 +1329,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 48
+      "review_priority": 49
     },
     {
       "title": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios",
@@ -1326,38 +1358,6 @@
       },
       "target_year": null,
       "ranking_score": 129,
-      "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 49
-    },
-    {
-      "title": "Sustainable development according to 2030 agenda in European Union countries: Evidence of the enlargement policy",
-      "date": "2023-09-14",
-      "publisher": "Wiley",
-      "topic": "Technology",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1002/sd.2758",
-      "doi": "10.1002/sd.2758",
-      "abstract": "Abstract This paper assesses the performance of European Union countries in achieving sustainable development using an assessment framework based on the 2030 Agenda. Through the application of the Spatial Sustainability Assessment Model, which integrates multi‐criteria analysis with the geographical tool QuantumGIS, European countries are classified according to the four basic dimensions of sustainability (social, economic, environmental, and institutional) organized into various sub‐dimensions, with reference to the year 2020. The results show that Northern countries have better overall sustainability performance in all dimensions except the environment. In contrast, Eastern European and Mediterranean countries perform worse, showing major weaknesses, especially in the economic and institutional dimensions, with a gap between the countries that joined the Union after 2004 and the other states. An in‐depth analysis was conducted to highlight the reasons behind these difficulties in order to give useful indications to public decision‐makers, as a tool for planning, on future choices.",
-      "journal": "Sustainable Development",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "Abstract This paper assesses the performance of European Union countries in achieving sustainable development using an assessment framework based on the 2030 Agenda.",
-        "anticipated_horizons": [
-          2030
-        ],
-        "investigation_type": "strategic_future_question",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 128,
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",

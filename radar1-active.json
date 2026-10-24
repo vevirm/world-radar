@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T06:22:26.021636+00:00",
+  "generated_at": "2026-10-24T17:04:17.850375+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 615,
+  "original_records": 616,
   "selection_counts": {
-    "active": 615
+    "active": 616
   },
-  "rejected_identifier_count": 9400,
+  "rejected_identifier_count": 9458,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -690,7 +690,7 @@
       "date": "2014-02-17",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "The European Union's ambition to achieve near‐total decarbonization by 2050 suggests a large role for carbon capture and storage (CCS), requiring the transport (mostly by pipeline) of CO 2 from source facilities to appropriate sites for geological storage.",
+      "original_passage": "Abstract The European Union's ambition to achieve near‐total decarbonization by 2050 suggests a large role for carbon capture and storage (CCS), requiring the transport (mostly by pipeline) of CO 2 from source facilities to appropriate sites for geological storage.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -1095,7 +1095,7 @@
       "date": "2015-03-27",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "For this purpose two alternative reference scenarios are outlined and examined in the light of some specific characteristics of Poland’s metropolitan development. The questions posed in this context involve the sustainability of policy assumptions concerning the role of cities of various size categories, as well as factors that could lead to a discontinuity in the trends observed in metropolisation.",
+      "original_passage": "The questions posed in this context involve the sustainability of policy assumptions concerning the role of cities of various size categories, as well as factors that could lead to a discontinuity in the trends observed in metropolisation For this purpose two alternative reference scenarios are outlined and examined in the light of some specific characteristics of Poland’s metropolitan development.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -1104,7 +1104,7 @@
       "date": "2015-04-07",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "The author outlines three scenarios for the future of industrial relations in Europe. The second envisages that “elite reform” from above will succeed in re‐engineering industrial relations and workers' protection according to an ideal social policy agenda – an unlikely prospect given the overriding importance of financial considerations and globalized competition.",
+      "original_passage": "Abstract The author outlines three scenarios for the future of industrial relations in Europe. The second envisages that “elite reform” from above will succeed in re‐engineering industrial relations and workers' protection according to an ideal social policy agenda – an unlikely prospect given the overriding importance of financial considerations and globalized competition.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -1803,7 +1803,7 @@
     {
       "doi": "10.1017/s1867299x00000593",
       "title": "Regulating the Use of Bisphenol A in Baby and Children's Products in the European Union: Current Developments and Scenarios for the Regulatory Future",
-      "date": "2011-01-01",
+      "date": "2017-01-20",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Apart from regulatory exposure limits (Tolerable Daily Intake levels (TDI), Bisphenol A is currently not subject to any restrictions in use yet (although BPA will be subject to a ban on the EU level from spring 2011 onwards). However, with the REACH framework (Registration, Evaluation, Authorisation of Chemicals), a new regulatory framework for EU's chemical policy in place since June 2007, these exposure limits may be reviewed and BPA may face regulatory action.",
@@ -1995,7 +1995,7 @@
       "date": "2017-10-23",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Projections of precipitation and its extremes over the European continent are analyzed in an extensive multimodel ensemble of 12 and 50 km resolution EURO‐CORDEX Regional Climate Models (RCMs) forced by RCP2.6, RCP4.5, and RCP8.5 (Representative Concentration Pathway) aerosol and greenhouse gas emission scenarios. The projected changes of the European hydrological cycle may have substantial impact on environmental and anthropogenic systems.",
+      "original_passage": "Abstract Projections of precipitation and its extremes over the European continent are analyzed in an extensive multimodel ensemble of 12 and 50 km resolution EURO‐CORDEX Regional Climate Models (RCMs) forced by RCP2.6, RCP4.5, and RCP8.5 (Representative Concentration Pathway) aerosol and greenhouse gas emission scenarios. The projected changes of the European hydrological cycle may have substantial impact on environmental and anthropogenic systems.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2163,10 +2163,10 @@
     {
       "doi": "10.1515/eec-2017-0004",
       "title": "The Future of Rural Poland: the Main Trends and Possible Scenarios.",
-      "date": "2017-01-01",
+      "date": "2018-02-20",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "The objective of the report is to attempt the identification of the most significant factors that will shape Polish countryside until the year 2050 and to outline the feasible scenarios of changes in rural areas. The image of the Polish countryside in the perspective of the decades to come will most probably not undergo radical shifts.",
+      "original_passage": "Abstract The objective of the report is to attempt the identification of the most significant factors that will shape Polish countryside until the year 2050 and to outline the feasible scenarios of changes in rural areas. The image of the Polish countryside in the perspective of the decades to come will most probably not undergo radical shifts.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2487,10 +2487,10 @@
     {
       "doi": "10.2478/jlecol-2018-0020",
       "title": "Future Scenarios of European Forests",
-      "date": "2018-01-01",
+      "date": "2019-02-14",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Scenarios based on contrasting storylines can be used as a tool to explore the different ways in which the future may develop and their impacts on the sustainability of European forestry. Here we discuss characteristics of scenario studies forest large scale forest resources in general and focus on a few recent trends and their long term impact on European forests, as e.g. nature oriented management, carbon credits, and extra demand for bioenergy.",
+      "original_passage": "Abstract Scenarios based on contrasting storylines can be used as a tool to explore the different ways in which the future may develop and their impacts on the sustainability of European forestry. Here we discuss characteristics of scenario studies forest large scale forest resources in general and focus on a few recent trends and their long term impact on European forests, as e.g. nature oriented management, carbon credits, and extra demand for bioenergy.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2955,10 +2955,10 @@
     {
       "doi": "10.1080/21699763.2017.1411288",
       "title": "The implications of demographic and economic projections on public pension spending in the European Union",
-      "date": "2018-01-01",
+      "date": "2020-03-09",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "This paper analyses the implications that demographic and economic projections have on public pension spending in the European Union (EU). Using some stylised facts, we study the aging trends of the population, as well as labour force and employment projections.",
+      "original_passage": "Abstract This paper analyses the implications that demographic and economic projections have on public pension spending in the European Union (EU). Using some stylised facts, we study the aging trends of the population, as well as labour force and employment projections.",
       "investigation_type": "projection_or_forecast"
     },
     {
@@ -3120,7 +3120,7 @@
       "date": "2020-08-03",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "This article provides a comprehensive overview of the changes to European Union (EU) climate and energy law brought about by the 2030 Climate and Energy Policy Framework. The article also explores the prospects for future change of the 2030 Framework towards more radical transformation in light of the European Green Deal and the ongoing COVID‐19 pandemic.",
+      "original_passage": "Abstract This article provides a comprehensive overview of the changes to European Union (EU) climate and energy law brought about by the 2030 Climate and Energy Policy Framework. The article also explores the prospects for future change of the 2030 Framework towards more radical transformation in light of the European Green Deal and the ongoing COVID‐19 pandemic.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -3903,7 +3903,7 @@
       "date": "2021-12-01",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Shrinkage, depopulation and the related structural decline threaten development trajectories of more than a quarter of European territories from the present until 2050. The article also discusses the content of citizens’ ideas for the future of shrinking areas, thus offering concrete proposals that may fuel the definition of future policy agendas.",
+      "original_passage": "Abstract Shrinkage, depopulation and the related structural decline threaten development trajectories of more than a quarter of European territories from the present until 2050. The article also discusses the content of citizens’ ideas for the future of shrinking areas, thus offering concrete proposals that may fuel the definition of future policy agendas.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -4290,7 +4290,7 @@
       "date": "2022-06-30",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population.",
+      "original_passage": "Abstract By 2030, the European Union (EU) must have regulatory instruments in place that not only reduce greenhouse gas emissions from agriculture, but that also increase carbon sequestration, increase resilience of agricultural production, improve biodiversity in rural areas and contribute to providing nutritious and healthy food to a growing world population.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -4416,7 +4416,7 @@
       "date": "2022-10-11",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Socio‐economic scenarios such as the Shared Socioeconomic Pathways (SSPs) have been widely used to analyze global change impacts, but representing their diversity is a challenge for the analytical tools applied to them. Taking Great Britain as an example, we represent a set of stakeholder‐elaborated UK‐SSP scenarios, linked to climate change scenarios (Representative Concentration Pathways), in a globally‐embedded agent‐based modeling framework.",
+      "original_passage": "Abstract Socio‐economic scenarios such as the Shared Socioeconomic Pathways (SSPs) have been widely used to analyze global change impacts, but representing their diversity is a challenge for the analytical tools applied to them. Taking Great Britain as an example, we represent a set of stakeholder‐elaborated UK‐SSP scenarios, linked to climate change scenarios (Representative Concentration Pathways), in a globally‐embedded agent‐based modeling framework.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -4814,6 +4814,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Report on migration and demographic patterns in the EU CEE countries and potential source countries” from the project FUME – Future Migration Scenarios for Europe (870649), financed with the Horizon 2020 programme.",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1080/02646811.2023.2187549",
+      "title": "Finding a needle in a haystack? Identifying degrowth-compatible provisions in EU energy law for a just transition to net-zero by 2050",
+      "date": "2023-04-03",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Consequently, the concept of degrowth should be implemented within European Union (EU) energy law to reach its net zero target by 2050.",
+      "investigation_type": "strategic_future_question"
     },
     {
       "doi": "10.5281/zenodo.7785750",
