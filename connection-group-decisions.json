@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "description": "Only exact claim and complete 2-paper group decisions from 24 October 2026 review. Individual source and claim records must not be banned.",
+  "decisions": [
+    {
+      "claim_id": "claim-d2d9280bed1f4887",
+      "source_ids": [
+        "https://openalex.org/W4408486584",
+        "https://openalex.org/W7213705154"
+      ],
+      "status": "accepted",
+      "reason": "Both papers re-pose the same question (emissions versus climate as drivers of European air quality at the 2050 horizon) with CMIP6/SSP scenarios. They show how the question is being re-projected; they are not evidence of outcomes and carry low evidential weight.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-1a9f66512272b271dc18"
+    },
+    {
+      "claim_id": "claim-c8bd592f750e834c",
+      "source_ids": [
+        "https://openalex.org/W4393867417",
+        "https://openalex.org/W4413439276"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns EU gas import dependence and the Southern Gas Corridor; neither paper concerns energy, gas or supply security. The match rests on “predict”, “current” and “estimates”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-843ad46cf9790bf2b53d"
+    },
+    {
+      "claim_id": "claim-b2a08bb4b054505c",
+      "source_ids": [
+        "https://openalex.org/W7221468623",
+        "https://openalex.org/W7222602139"
+      ],
+      "status": "rejected",
+      "reason": "Both papers concern renewable deployment inside the EU only; neither measures, explains or reframes renewable electricity in North Africa or its exchange with Europe.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-ae38da4746bcab72d8c7"
+    },
+    {
+      "claim_id": "claim-29bd38aa3695dbd3",
+      "source_ids": [
+        "https://openalex.org/W4410942066",
+        "https://openalex.org/W7151014627"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns the feasibility of a Europe-wide CO₂ pipeline network for CCS; neither paper addresses CCS, CO₂ infrastructure or decarbonisation pathways.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-79d2dced0e27fb25132e"
+    },
+    {
+      "claim_id": "claim-69950b53a5830d9a",
+      "source_ids": [
+        "https://openalex.org/W4417428564",
+        "https://openalex.org/W7204458683"
+      ],
+      "status": "rejected",
+      "reason": "Paper A is unrelated to the FOCUS role-space claim; Paper B is at most tangential and is recorded separately as a pair-level UNCERTAIN pending a full-text check.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-e7d07994583e19cc3f5a"
+    },
+    {
+      "claim_id": "claim-5e5974ad685d9d38",
+      "source_ids": [
+        "https://openalex.org/W7166557779",
+        "https://openalex.org/W7211956326"
+      ],
+      "status": "rejected",
+      "reason": "Paper A is unrelated to the claim’s warning about EU decline, US dependence and strategic unity. Paper B is relevant but weak and is kept at pair level.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-2997c97102fd34c1511d"
+    },
+    {
+      "claim_id": "claim-c3b72e57c2fbf098",
+      "source_ids": [
+        "https://openalex.org/W7119516682",
+        "https://openalex.org/W7138028059"
+      ],
+      "status": "rejected",
+      "reason": "Paper B is unrelated to the EU’s evolution as a military power. Paper A is relevant but weak (a non-peer-reviewed preprint) and is kept at pair level.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-c32ec7ea24f4d7b0e8aa"
+    },
+    {
+      "claim_id": "claim-872e8bc8934fa439",
+      "source_ids": [
+        "https://openalex.org/W4399303465",
+        "https://openalex.org/W4405973987"
+      ],
+      "status": "rejected",
+      "reason": "Paper A is unrelated to the ozone-exposure projection. Paper B is relevant explanatory evidence and is kept at pair level.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-3e5da3dfcc08d6453b44"
+    },
+    {
+      "claim_id": "claim-c5a14eb6f1f7dd43",
+      "source_ids": [
+        "https://openalex.org/W4411805599",
+        "https://openalex.org/W4413812330"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns climate-driven changes in ozone-related mortality and morbidity; neither paper deals with ozone, air pollution or health. The match rests on the words “baseline” and “impact”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-3d61103cff9f3e3005de"
+    },
+    {
+      "claim_id": "claim-e0f3cbcdc25788f2",
+      "source_ids": [
+        "https://openalex.org/W4390658746",
+        "https://openalex.org/W4415425554"
+      ],
+      "status": "rejected",
+      "reason": "Paper A is unrelated to mosquito climatic suitability. Paper B is relevant and is kept at pair level.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-fb2b5bfc412e8abd774b"
+    },
+    {
+      "claim_id": "claim-65c6f526acccd869",
+      "source_ids": [
+        "https://openalex.org/W4391985088",
+        "https://openalex.org/W7172495500"
+      ],
+      "status": "rejected",
+      "reason": "Paper B is unrelated to the EU-level stock-versus-increment question. Paper A is relevant and is kept at pair level.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-511161772e681b4b8469"
+    },
+    {
+      "claim_id": "claim-bae835546dfc91be",
+      "source_ids": [
+        "https://openalex.org/W4308550317",
+        "https://openalex.org/W7162797083"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns deregulation of Finland–Russia rail transport; neither paper concerns rail, transport markets or Finland–Russia relations.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-46a1cd04e6fa840add4a"
+    },
+    {
+      "claim_id": "claim-93d981a3ef93589e",
+      "source_ids": [
+        "https://openalex.org/W4366817748",
+        "https://openalex.org/W7220450130"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns backcasting scenarios for a low-emission Finland in 2050; neither paper concerns Finland, emissions, energy or futures methods.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-4ba949d822bfde4713aa"
+    },
+    {
+      "claim_id": "claim-c4bd64f065820699",
+      "source_ids": [
+        "https://openalex.org/W3197496319",
+        "https://openalex.org/W4211107820"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns UK obesity projections and policy choices; both papers matched only on the word “prediction”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-2fefaafb3c96dc227db9"
+    },
+    {
+      "claim_id": "claim-d9056b0d2f24898b",
+      "source_ids": [
+        "https://openalex.org/W4391767276",
+        "https://openalex.org/W4410926975"
+      ],
+      "status": "rejected",
+      "reason": "Neither paper measures, explains or re-projects obesity prevalence or obesity-related costs in Ireland; the overlap is limited to terms such as “direct costs”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-c40e9d792d9ed968549f"
+    },
+    {
+      "claim_id": "claim-1b6b71170e9f7fa5",
+      "source_ids": [
+        "https://openalex.org/W4399388948",
+        "https://openalex.org/W7155045001"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns scenarios for the supply of NHS nurses in England; neither paper concerns nursing, workforce planning or the NHS. The match rests on the words “different” and “important”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-fa374c6b85ef7270acb2"
+    },
+    {
+      "claim_id": "claim-17422a844c2cce7d",
+      "source_ids": [
+        "https://openalex.org/W2123657854",
+        "https://openalex.org/W4406432602"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns health impacts of landfills and incinerators under operating scenarios to 2050; both papers are technical studies of facility processes and say nothing about exposure, health or the facility trajectories assumed.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-dcfce777e25ff21308cc"
+    },
+    {
+      "claim_id": "claim-33bbbb43737342ec",
+      "source_ids": [
+        "https://openalex.org/W4205119179",
+        "https://openalex.org/W7163898982"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns immigration and integration scenarios for Europe to 2050; neither publication addresses migration, integration or demography. The match rests on “integration” and “European”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-3be7371a722f9a38dcdc"
+    },
+    {
+      "claim_id": "claim-712c438b1376af94",
+      "source_ids": [
+        "https://openalex.org/W2500875911",
+        "https://openalex.org/W4413350868"
+      ],
+      "status": "rejected",
+      "reason": "The claim concerns superconducting technologies and their environmental role; the papers matched only on “want” and “stabilize”.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-9f31693245f69d548199"
+    },
+    {
+      "claim_id": "claim-17491252981576b0",
+      "source_ids": [
+        "https://openalex.org/W4417101562",
+        "https://openalex.org/W7203868314"
+      ],
+      "status": "rejected",
+      "reason": "Both papers share only the Delphi method with the original study; neither concerns farmers’ markets, local food systems or the social economy.",
+      "review_date": "2026-10-24",
+      "review_origin": "VV-FUTURES-CONNECTION-DECISIONS.docx",
+      "group_id_for_reference": "group-f7fa8be92f989f8dc992"
+    }
+  ]
+}
