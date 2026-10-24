@@ -34,6 +34,31 @@ def jsonread(path,default):
  try:return json.loads(Path(path).read_text(encoding='utf8'))
  except (FileNotFoundError,ValueError):return default
 
+# Editorial corrections validated against the historical catalogue, 2026-10-24.
+# Applied after a stable claim ID is derived so pre-existing links remain intact.
+EDITORIAL_YEARS = {
+ '10.1080/21699763.2017.1411288': 2018,
+ '10.2478/jlecol-2018-0020': 2018,
+ '10.1515/eec-2017-0004': 2017,
+ '10.1017/s1867299x00000593': 2011,
+}
+EDITORIAL_ORDER_DOI = '10.7163/gpol.0008'
+EDITORIAL_ORDER_TEXT = (
+ 'For this purpose two alternative reference scenarios are outlined and examined in the light of some specific characteristics of Poland’s metropolitan development. '
+ 'The questions posed in this context involve the sustainability of policy assumptions concerning the role of cities of various size categories, as well as factors that could lead to a discontinuity in the trends observed in metropolisation.'
+)
+
+def apply_editorial_corrections(claim):
+ doi=(claim.get('doi') or '').strip().lower().removeprefix('https://doi.org/')
+ if doi in EDITORIAL_YEARS:
+  year=EDITORIAL_YEARS[doi]
+  claim['year']=year
+  claim['date']=f'{year}-01-01'  # year-only correction; exact issue date not asserted
+ if doi==EDITORIAL_ORDER_DOI:
+  claim['original_claim']=EDITORIAL_ORDER_TEXT
+ claim['original_claim']=re.sub(r'^Abstract\s+', '',claim.get('original_claim') or '')
+ return claim
+
 def claims():
  data=jsonread(ROOT/'research-leads.json',{}).get('leads',[])
  output=[]
@@ -50,7 +75,7 @@ def claims():
     'original_claim':passage,'source_url':x.get('url',''),'doi':x.get('doi',''),
     'source_status':seed.get('source_status','unverified'),'theme':x.get('foresight_scope','') or '',
     'source_field':seed.get('source_field','unknown'),'review_status':'source excerpt not independently verified'})
- return output
+ return [apply_editorial_corrections(x) for x in output]
 
 def anchors(claim):
  raw=claim['original_claim']+' '+claim['title']
@@ -125,6 +150,8 @@ def fetch_openalex(q,after_year,limit=20,page=1):
 def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
  start=time.monotonic(); pool=claims(); store=jsonread(ROOT/'observatory-data.json',{'schema_version':1,'claims':{},'connections':{},'history':[],'cursor':0})
  store['claims'].update({x['id']:x for x in pool})
+ for _claim in store['claims'].values():
+  apply_editorial_corrections(_claim)
  if not pool:raise RuntimeError('No eligible historical claim excerpts')
  cursor=int(store.get('cursor') or 0)%len(pool)
  # Run through further result pages instead of stopping after the first shallow pass.
