@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_date": "2026-10-23",
+  "generated_date": "2026-10-24",
   "target": 50,
   "policy": "Original publications from 2011 through 2023 inclusive; newer publications belong to the Radar 2 evidence period. Shortlist is research triage, not 50 certified findings",
   "method_note": "2011–2023 EU institutional and European future-oriented originals; 2024+ only later context. Source-screened publisher reports prioritized and annual series diversified. Research priority is not forecast accuracy.",
@@ -948,6 +948,38 @@
       "review_priority": 37
     },
     {
+      "title": "Assessing and projecting the burden of diabetes mellitus in the European Union by 2030",
+      "date": "2023-10-24",
+      "publisher": "Oxford University Press (OUP)",
+      "topic": "European futures",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1093/eurpub/ckad160.799",
+      "doi": "10.1093/eurpub/ckad160.799",
+      "abstract": "Abstract Background Although the upward trend in diabetes mellitus (DM) is known in many countries, there are considerable uncertainties in the forecasts. This study provides valuable insights into the potential development of DM in the European Union (EU) member states through past trends and future projections. Methods European Health Interview Survey (EHIS) 2015 and 2019 microdata from 27 EU countries were used. Finite mix model (fmm) was applied to identify subgroups within the population and obtain probability of risk factors within each group. Time indicator as interaction was added to obtain the developing trend of heterogeneous effects with socioeconomic and lifestyle risk factors that were included in the model. Forecasting was used to project probability of risk factors within each group up to 2030. Results Data included 500,840 participants (274,016 from 2015 and 226,824 from 2019). Fmm and forecasting results showed DM prevalence was 7.4% in 2015 and 8.4% in 2019 and expected to increase to 11.15% in 2030. High- and low-risk subgroups were identified. Most risk factors and lifestyle categories increased in the high-risk group in comparison to the low-risk group between 2015 and 2019. However, within the high risk group, the probability of living rural areas has decreased 2.7% 2015 vs. 2019 and is expected to further decrease by 10.2% up to 2030. Additionally, within the high-risk group, the likelihood of living in towns and suburbs, having a tertiary education and eating fruit and vegetables 1-6 times a week have increased by (3%, 5%, 1.7%, 4.4%) compared to other categories for each risk factor and are expected to be higher in 2030 by (11.6%, 18.6%, 5%, 16.3%). Conclusions According to EHIS data, from 2015 to 2030, the number of people with diabetes in the EU will change and increase by 3.8 %. This increase will vary by subgroup.More data on risk factors are needed to obtain more accurate estimates. Key messages • The future health and economic burden of diabetes on society, health systems and the national economy is expected to increase in the EU. • Implementing effective prevention strategies on a large scale can reduce the future burden of diabetes.",
+      "journal": "European Journal of Public Health",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_focused",
+      "eu_connection_reason": "EU_or_Europe_in_original_title",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Conclusions According to EHIS data, from 2015 to 2030, the number of people with diabetes in the EU will change and increase by 3.8 %. Fmm and forecasting results showed DM prevalence was 7.4% in 2015 and 8.4% in 2019 and expected to increase to 11.15% in 2030.",
+        "anticipated_horizons": [
+          2030
+        ],
+        "investigation_type": "projection_or_forecast",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 135,
+      "age_band": "exceptional · outside preferred",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 38
+    },
+    {
       "title": "Mapping the Future of Green Hydrogen: Integrated Analysis of Poland and the EU’s Development Pathways to 2050",
       "date": "2023-08-28",
       "publisher": "Multidisciplinary Digital Publishing Institute",
@@ -977,7 +1009,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 38
+      "review_priority": 39
     },
     {
       "title": "Investigating European Union Decarbonization Strategies: Evaluating the Pathway to Carbon Neutrality by 2050",
@@ -1010,7 +1042,7 @@
       "age_band": "near-preferred · 4–5 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 39
+      "review_priority": 40
     },
     {
       "title": "What energy infrastructure will be needed by 2050 in the EU to support 1.5°C scenarios?",
@@ -1042,7 +1074,7 @@
       "age_band": "near-preferred · 4–5 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 40
+      "review_priority": 41
     },
     {
       "title": "Drivers, trends and scenarios for the future of health in Europe. Impressions from the FRESHER project",
@@ -1072,7 +1104,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 41
+      "review_priority": 42
     },
     {
       "title": "Emerging smart city, transport and energy trends in urban settings: Results of a pan-European foresight exercise with 120 experts",
@@ -1104,7 +1136,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 42
+      "review_priority": 43
     },
     {
       "title": "Transport demand evolution in Europe – factors of change, scenarios and challenges",
@@ -1136,7 +1168,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 43
+      "review_priority": 44
     },
     {
       "title": "Making or breaking climate targets: The AMPERE study on staged accession scenarios for climate policy",
@@ -1168,7 +1200,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 44
+      "review_priority": 45
     },
     {
       "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
@@ -1200,7 +1232,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 45
+      "review_priority": 46
     },
     {
       "title": "Assessing the impact of the 2011 EU Transport White Paper - a rail freight demand forecast up to 2050 for the EU27",
@@ -1233,7 +1265,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 46
+      "review_priority": 47
     },
     {
       "title": "Immigration and integration scenarios in global Europe: Forward-looking up to 2050",
@@ -1265,7 +1297,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 47
+      "review_priority": 48
     },
     {
       "title": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios",
@@ -1297,7 +1329,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 48
+      "review_priority": 49
     },
     {
       "title": "Sustainable development according to 2030 agenda in European Union countries: Evidence of the enlargement policy",
@@ -1327,38 +1359,6 @@
       "target_year": null,
       "ranking_score": 128,
       "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 49
-    },
-    {
-      "title": "Integrated assessment of the role of bioenergy within the EU energy transition targets to 2050",
-      "date": "2021-10-29",
-      "publisher": "Wiley",
-      "topic": "Energy transition",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.1111/gcbb.12908",
-      "doi": "10.1111/gcbb.12908",
-      "abstract": "Abstract Bioenergy is considered an important component within the European Union (EU) energy transition to meet mid‐century climate targets. Model assessments that have highlighted the role of bioenergy in decarbonising EU energy systems fail to account for the fact that mitigation strategies and bioenergy supply take place within a global decarbonisation effort. Thus, they do not account for inter‐regional competition for the resource base that Europe may face. This study shows how bioenergy can contribute to EU climate targets, highlighting its possible role within the energy system and developments required to facilitate its scale‐up. We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050. Employing a global model allows for projections of EU decarbonisation strategies consistent with global climate targets and captures the effects of biomass production and consumption in other world regions. Bioenergy is projected to account for up to 27% of total primary energy demand, increasing from the current 5EJ to 18EJ/yr. To match this demand, the model projects imports of biomass to increase from 4% of its current supply to 60%. Bioenergy could provide up to 1GtCO2 or 40% of the overall mitigation needed by the EU in 2050. This is based on large‐scale use for power production, with the transport, industry and buildings sectors getting smaller shares. By 2050 it is projected that 55% of total EU bioenergy use is coupled with Bioenergy with carbon capture and storage (BECCS). Bioenergy supply comes primarily for agricultural and forestry residues, as these sources have low upstream greenhouse gas emissions. However, as demand increases, energy crops are increasingly used, especially in the provision of advanced liquid fuels. The results show that one route for achieving an EU energy transition is based on rapid deployment of BECCS and the mobilisation of sustainable imports of second‐generation feedstocks.",
-      "journal": "GCB Bioenergy",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "Bioenergy could provide up to 1GtCO2 or 40% of the overall mitigation needed by the EU in 2050. We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050.",
-        "anticipated_horizons": [
-          2050
-        ],
-        "investigation_type": "projection_or_forecast",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 128,
-      "age_band": "near-preferred · 4–5 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
       "review_priority": 50

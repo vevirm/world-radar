@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T06:28:19.803318+00:00",
+  "generated_at": "2026-10-24T06:22:26.021636+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 612,
+  "original_records": 615,
   "selection_counts": {
-    "active": 612
+    "active": 615
   },
-  "rejected_identifier_count": 9272,
+  "rejected_identifier_count": 9400,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -4384,6 +4384,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1016/j.esr.2022.100936",
+      "title": "Are the EU climate ambitions reflected on member-state level for greenhouse gas reductions and renewable energy consumption shares?",
+      "date": "2022-09-30",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Though some countries have consistent targets, the annual GHG reduction rate of the EU has to be tripled up to −3% per year until 2030. The required objective for RES is achievable but the growth rate has to be increased to 2% to fulfill the announced ambitions by 2030.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.1016/j.lanepe.2022.100451",
       "title": "Impact of demographic changes and screening colonoscopy on long-term projection of incident colorectal cancer cases in Germany: A modelling study",
       "date": "2022-09-30",
@@ -4444,6 +4453,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The revision of the Energy Performance of Building Directive (EPBD) sets out how Europe can achieve a decarbonised building stock by 2050.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1016/j.enpol.2022.113245",
+      "title": "Making the EU Carbon Border Adjustment Mechanism acceptable and climate friendly for least developed countries",
+      "date": "2022-11-30",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "A more stringent climate target results in carbon leakage, and implementing CBAM will reduce the rate by one-third by 2040. Implementation of CBAM to support EU climate neutrality by 2050 has raised several concerns.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -5120,6 +5138,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "In this study, the carbon emissions of Turkey, which has important trade relations with the EU, were estimated using machine learning techniques, and a prediction was made for 2030 based on the results obtained. According to these results, Turkey will not be able to reach the targets set by the EU unless it increases its coal-based energy consumption and provides incentives for renewable energy sources.",
       "investigation_type": "projection_or_forecast"
+    },
+    {
+      "doi": "10.1016/j.rset.2022.100041",
+      "title": "Modelling least-cost technology pathways to decarbonise the New South Wales energy system by 2050",
+      "date": "2023-08-31",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The findings show that the NSW energy system can continue its shift from fossil fuels to renewables like solar, wind, and hydro and can entirely phase out coal- and gas-fired electricity generation by 2050. It includes both a higher emissions reference case scenario and a scenario implementing the NSW state government's target of net-zero emissions by 2050 under the NSW Climate Change Policy Framework, consistent with the international Paris Agreement on climate change, with available and viable well-developed technologies.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.1007/s11233-023-09131-0",
