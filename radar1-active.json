@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T06:37:49.785449+00:00",
+  "generated_at": "2026-10-25T17:28:45.092045+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 616,
+  "original_records": 618,
   "selection_counts": {
-    "active": 616
+    "active": 618
   },
-  "rejected_identifier_count": 9460,
+  "rejected_identifier_count": 9470,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -1927,6 +1927,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1016/j.agsy.2017.07.010",
+      "title": "Improving the use of crop models for risk assessment and climate change adaptation",
+      "date": "2017-08-14",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The analysis highlights the limitations of focussing only on projections of future impacts and adaptation options using pre-determined time slices.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1175/jcli-d-16-0695.1",
       "title": "Improved Consistency of Climate Projections over Europe after Accounting for Atmospheric Circulation Variability",
       "date": "2017-08-15",
@@ -2284,6 +2293,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "We test the potential of this method by modelling several scenarios exploring the effects of vRES penetration, alternative demand profiles, access to wind sites located far offshore, and alternative PV configurations. We find that expanding offshore wind capacity in the North Sea is a ‘no regret’ option, though correlated generation patterns with onshore wind farms in neighbouring countries at high vRES penetration rates may lead to significant surplus generation.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1177/1946756718790758",
+      "title": "Beyond Futures: Designing Futures by Educating Future Designers",
+      "date": "2018-08-02",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "It may increase designers’ sensitivity of the impact their work may have in the future and push their creativity by broadening their view looking at different future scenarios.",
       "investigation_type": "alternative_scenarios"
     },
     {
