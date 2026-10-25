@@ -1266,6 +1266,10 @@
       "reason": "no_traceable_european_future_proposition",
       "year": "2021"
     },
+    "10.1007/s10433-012-0217-9": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2012"
+    },
     "10.1007/s10436-017-0314-z": {
       "reason": "european_subject_not_established",
       "year": "2016"
@@ -12147,6 +12151,10 @@
       "year": "2012"
     },
     "10.1016/s1553-7250(12)38100-2": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
+    "10.1016/s1553-7250(12)38103-8": {
       "reason": "european_subject_not_established",
       "year": "2012"
     },
