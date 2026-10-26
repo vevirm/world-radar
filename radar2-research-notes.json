@@ -1,0 +1,865 @@
+{
+  "as_of": "2026-10-26",
+  "editorial_status": "LLM source checks supplied; independently verify before promotion",
+  "batches": [
+    {
+      "batch_id": "WR-KNOWLEDGE-01",
+      "research_date": "2026-10-26",
+      "cases": [
+        {
+          "record_id": "lead-726d2d4ffd64aca7",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC96734",
+            "quoted_or_precisely_located_passage": "\"Hydrogen could become a viable option already in 2030 – however, a long-term CO2 cap is needed to sustain the transition.\"",
+            "locator": "JRC96734, abstract (CPI and CAP energy-system scenarios); corresponding journal DOI 10.1016/j.ijhydene.2015.09.004",
+            "interpretation_or_correction": "The 2030 observation is conditional techno-economic scenario output under a sustained carbon cap, not a prediction that EU electrolysis plants would reach any later political target. The JRC abstract is directly accessible; the publisher article’s complete methods and tables were not independently opened, so only abstract-level wording is verified.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "hydrogen-E1",
+              "title": "State of the clean Hydrogen Valleys sector 2026",
+              "publisher_or_authors": "Clean Hydrogen Joint Undertaking; Weichenhain-Stahl et al.",
+              "published_date": "2026-07-06",
+              "url": "https://op.europa.eu/en/publication-detail/-/publication/201cde95-79aa-11f1-bf5e-01aa75ed71a1/",
+              "source_kind": "primary_observation",
+              "specific_observation": "Publication metadata/abstract: more than 600 MW of electrolyser capacity was operational in Europe, 225 MW above 2024; projects exceeding 800 MW reached final investment decision during 2025 and 3.3 GW was past FID. Its expectation that half of 3.3 GW would operate in 2026 is explicitly a plan, not operational output.",
+              "how_it_relates_to_original": "Adds a newer, observed European deployment measure beyond the existing 2024 ACER EU capacity figure, while separating built plant from financing decisions.",
+              "relationship_type": "observed_development",
+              "causality_limit": "“Europe” may include non-EU jurisdictions and project scopes differ from ACER’s EU measurement. Neither installed electrolysis MW nor FID directly verifies the 2015 EU system-model threshold for viability or hydrogen use in industry and transport.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "hydrogen-E2",
+              "title": "Global Hydrogen Review 2026: executive summary",
+              "publisher_or_authors": "International Energy Agency",
+              "published_date": "2026-06-18",
+              "url": "https://www.iea.org/reports/global-hydrogen-review-2026/executive-summary",
+              "source_kind": "independent_evaluation",
+              "specific_observation": "Global hydrogen demand exceeded 100 million tonnes in 2025, nearly all used in existing industrial/refining applications; low-emissions production grew 20% to almost 1 million tonnes, still under 1% globally in 2025. The IEA identifies offtake uncertainty, high costs, infrastructure gaps and project cancellations/delays, and expects the 1% share to be exceeded only in 2026.",
+              "how_it_relates_to_original": "Provides real end-use and cost-constraint evidence, complementing MW-of-electrolyser metrics and underscoring how early the transition remains relative to the conditional 2030 model pathway.",
+              "relationship_type": "limitation",
+              "causality_limit": "Global hydrogen shares cannot be presented as EU shares, and 2025 market behaviour does not causally test the 2015 CAP scenario or establish 2030 outcomes.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing comparison of 308 MW EU operational electrolysers in 2024 with a “6 GW 2024 EU policy ambition”.",
+              "problem": "An apparent gap of 308 MW versus 6 GW involves capacity definitions and political aspirations whose comparability is not self-evident; the European Court of Auditors notes unclear GW input/output definitions in the Commission’s original ambition.",
+              "proposed_correction": "Label 308 MW as observed EU operational capacity and 6 GW as the separate 2024 policy ambition, noting that the audit questioned how electrolyser-capacity targets were defined. Do not use the ratio to grade the older 2015 carbon-cap model.",
+              "supporting_url": "https://www.eca.europa.eu/en/publications/SR-2024-11"
+            },
+            {
+              "existing_statement_or_source": "Existing JRC 2025 status figure “514–800 MW by end-2025”.",
+              "problem": "It is a projected year-end range in a status report published January 2026, not a directly observed end-2025 capacity census; mixing it with commissioned MW overstates empirical comparability.",
+              "proposed_correction": "Keep its explicit projection label and show the 2026 Clean Hydrogen JU observed Europe-wide >600 MW separately, noting geography and accounting differences.",
+              "supporting_url": "https://setis.ec.europa.eu/water-electrolysis-and-hydrogen-european-union-2025-status-report-technology-development-trends_en"
+            }
+          ],
+          "synthesis": {
+            "continuities": "The 2015 JRC-EU-TIMES paper treats hydrogen as a plausible decarbonisation technology where sustained carbon policy changes long-run incentives. Operational electrolysers and a developing final-investment-decision pipeline show that an industry is materialising.",
+            "departures_and_surprises": "Deployment remains small compared with announced policy visions, and the IEA reports that low-emissions hydrogen is a tiny share of actual global output. More importantly, identified offtake and infrastructure barriers show why being technically viable in a model need not produce rapid market adoption.",
+            "unresolved": "There is still no harmonised observed EU measure of hydrogen produced, delivered and consumed in the modelled transport and industrial uses under an equivalent carbon constraint. The 2030 milestone remains ahead, and financing decisions may not result in commissioned plants or utilised assets.",
+            "what_is_new_since_existing_record": "A July 2026 EU-body report provides an operational European capacity estimate and distinguishes it from 2025 investment decisions. The June 2026 IEA report adds production and end-use reality checks rather than another policy target.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Obtain CAP versus CPI scenario results and explicit 2030 hydrogen volumes/shares from the article’s full model tables for like-for-like testing.",
+            "Find consistent EU27 time-series data for certified low-emissions hydrogen production, actual end-use in steel/chemicals/road transport and offtake contracts through 2030.",
+            "Reconcile EU-only, geographical Europe and GW electrical input/output capacity boundaries across JRC, ACER and Clean Hydrogen JU."
+          ]
+        },
+        {
+          "record_id": "lead-9363d7d494bf528e",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://researchprofiles.ku.dk/en/publications/actual-and-potential-development-of-consumer-demand-on-the-organi/",
+            "quoted_or_precisely_located_passage": "\"A likely scenario for future demand is that of continued stable expansion\", conditional on relative organic/conventional prices, national distribution, production costs and public support.",
+            "locator": "Jensen, Denver & Zanolic (2011), author-deposited abstract, pp. 79–84, and original indexed publisher introduction (scenario horizon up to 2015)",
+            "interpretation_or_correction": "Original analysis sampled household panels and qualitative consumer accounts in Denmark, Italy and the UK; the scenario was probabilistic and conditional, not a Europe-wide sales-growth target. The original paper focused on scenarios up to 2015, so later 2020s market data are retrospective extensions, not direct tests of an explicit 2024–2026 forecast. The university author record provides the article abstract; the publisher full-text page returned access restrictions.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "organic-E1",
+              "title": "Stigning i økologisk detailsalg [Increase in organic retail sales, 2024]",
+              "publisher_or_authors": "Statistics Denmark (Danmarks Statistik)",
+              "published_date": "2025-04-22",
+              "url": "https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=51107",
+              "source_kind": "primary_observation",
+              "specific_observation": "2024 organic grocery retail sales reached DKK 16.0 billion (+3% nominal; +2% by quantity). Organic food’s share of total food purchases fell slightly to an estimated 11.6% from 11.8% in 2023; coverage excludes farm-gate and specialist shops.",
+              "how_it_relates_to_original": "Reports both monetary and volume demand in Denmark, an original study country, and demonstrates expansion can coexist with a slipping market share.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Food-retail aggregates do not show the household-panel reasons for choosing or dropping organic food; prices, channels and coverage are not directly the same as the 2011 sample.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "organic-E2",
+              "title": "Biologico: nel 2025 gli acquisti delle famiglie volano a 4,4 miliardi di euro",
+              "publisher_or_authors": "ISMEA and NielsenIQ consumer-purchase observatory",
+              "published_date": "2026-05-18",
+              "url": "https://www.ismeamercati.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13861",
+              "source_kind": "primary_observation",
+              "specific_observation": "Italian household purchases of organic foods for home use reached €4.4 billion in 2025, +9.2% in value and +7.2% in quantities versus 2024; organic reached 4% of home food expenditure (+0.4 percentage points). These are household retail purchases rather than food-service turnover.",
+              "how_it_relates_to_original": "Adds a geographically on-target volume observation in another original study country, supporting real demand improvement beyond sales-price inflation.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Year-on-year changes do not establish uninterrupted growth since 2011 or identify distribution, trust and price mechanisms from the older qualitative research.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "organic-E3",
+              "title": "Organic Market Report 2026",
+              "publisher_or_authors": "Soil Association Certification",
+              "published_date": "2026-03-04",
+              "url": "https://www.soilassociation.org/for-business/soil-association-certification/business-support/organic-market-report/",
+              "source_kind": "primary_observation",
+              "specific_observation": "The 2026 UK report, launched on 4 March 2026, records £3.9 billion in organic food and drink sales in 2025 (+4.2% nominal), the fourteenth consecutive growth year by its reported UK market definition; major-retailer organic sales increased 7%. It also reports only about 3% of UK farmland is organic and domestic supply depends significantly on imports.",
+              "how_it_relates_to_original": "Completes a recent Denmark–Italy–UK three-country comparison, while highlighting supply-chain/distribution constraints alongside demand.",
+              "relationship_type": "observed_development",
+              "causality_limit": "The association’s market measure is not a matched, inflation-adjusted household panel and may include UK retail channels different from Statistics Denmark or ISMEA; the launch date is corroborated by the Organic Research Centre’s 4 March 2026 launch-webinar listing.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing organic demand interpretation extends the 2011 study into Europe-wide data for 2022 and 2024.",
+              "problem": "The original expert exercise addressed Denmark, Italy and the UK with a short-run scenario horizon through approximately 2015, while Europe-wide later totals were not the original forecast variable.",
+              "proposed_correction": "Explicitly name the original three markets and 2015 horizon and treat post-2015 observations as an extension of the question, not a precise forecast horizon or geographic validation.",
+              "supporting_url": "https://www.tandfonline.com/doi/full/10.1016/j.njas.2011.01.005"
+            },
+            {
+              "existing_statement_or_source": "Existing comparison “€26.2 billion in 2014” versus “€58.7 billion in 2024” for wider Europe.",
+              "problem": "Both figures are nominal and aggregate different economies; reported retail turnover alone cannot prove price-adjusted demand volume growth or consistent national coverage.",
+              "proposed_correction": "Keep the nominal wider-Europe comparison as context only. Use national volume changes where available and note FiBL’s data methodology, including its practice of carrying forward last available national observations for missing reporting years.",
+              "supporting_url": "https://statistics.fibl.org/europe/retail-sales-europe.html"
+            }
+          ],
+          "synthesis": {
+            "continuities": "All three original markets show substantial continuing organic commerce, and the new Denmark and Italy series separate quantities from sales value. The original emphasis on retail access and prices continues to have explanatory relevance as the UK source notes supply dependence despite demand.",
+            "departures_and_surprises": "Demand is neither uniformly stable nor identical across countries: Denmark’s organic share slipped from 2023 to 2024 even as volumes increased, whereas Italian households recorded strong 2025 volume gains. The original forecast did not specify uninterrupted annual increases, and short-term volatility is not a binary scenario refutation.",
+            "unresolved": "Comparable inflation-adjusted, category-consistent long panels for the original three markets and modern household survey data on trust, availability and organic/conventional price premia remain incomplete. None of the new country totals identifies the causal effect of public support or retail expansion on purchases.",
+            "what_is_new_since_existing_record": "Three dated national sources now directly cover Denmark, Italy and the UK rather than relying mainly on Europe-wide monetary aggregates. Italy provides explicit +7.2% volume growth, Denmark +2% quantity growth but falling market share, and the UK a 2025 £3.9 billion headline with supply constraints.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Retrieve the article’s full publisher introduction to confirm its exact 2015 expert-scenario endpoint and underlying household sample periods.",
+            "Construct harmonised 2011–2025 inflation-adjusted household organic retail volume and market-share panels for Denmark, Italy and the UK.",
+            "Test how organic/conventional price premiums, product availability, labels/trust and public conversion subsidies correlate with buyer retention across household types."
+          ]
+        },
+        {
+          "record_id": "report-3eff29ec207eb208",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://commission.europa.eu/strategy-and-policy/strategic-foresight/2022-strategic-foresight-report_en",
+            "quoted_or_precisely_located_passage": "\"Strategically managing supply of critical materials and commodities, by adopting a long-term systemic approach to avoid a new dependency trap.\"",
+            "locator": "European Commission, 2022 Strategic Foresight Report landing page, area for action 3 of 10",
+            "interpretation_or_correction": "A recommendation about strategic vulnerability in a twin green/digital transition, not a probabilistic prediction of Chinese export rules, volumes or specific EU dependence ratios. Publication of CRMA legislation later establishes policy thematic continuity but cannot, without citation or decision history, establish that the 2022 foresight report caused it.",
+            "confidence": "verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "critical-materials-E1",
+              "title": "EU trade in rare earth elements increased in 2025",
+              "publisher_or_authors": "Eurostat",
+              "published_date": "2026-06-29",
+              "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260629-1",
+              "source_kind": "primary_observation",
+              "specific_observation": "Eurostat customs data record 15,100 tonnes of rare-earth elements and compounds imported to the EU in 2025 (+17.1% by weight); China supplied 46.8% by weight, Russia 25.9% and Malaysia 23.1% (dataset ds-045409). This is a narrow traded-product classification, not all critical raw materials or an accounting of finished rare-earth magnets.",
+              "how_it_relates_to_original": "Quantifies current dependence on concentrated external suppliers in one set of strategically important inputs despite the CRMA and strategic-project announcements already logged in the case.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Partner shares of import tonnage cannot be assumed to equal EU total consumption, concentration by material or the CRMA single-country benchmark; they do not prove causal effects of any legislation.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "critical-materials-E2",
+              "title": "Global Critical Minerals Outlook 2026: executive summary",
+              "publisher_or_authors": "International Energy Agency",
+              "published_date": "2026-07-16",
+              "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/executive-summary",
+              "source_kind": "independent_evaluation",
+              "specific_observation": "IEA reports Chinese controls imposed on seven heavy rare-earth elements in April 2025 caused some downstream automakers to reduce production rates or temporarily halt operations. It also documents approximately fivefold European-versus-China prices for gallium and some heavy rare earths in 2026, while noting a modest decline in rare-earth refining concentration due to output in Malaysia and the US.",
+              "how_it_relates_to_original": "Supplies a realised supply-chain stress episode, with limited positive diversification, that sharpens the 2022 foresight warning about a new dependency trap.",
+              "relationship_type": "unexpected_development",
+              "causality_limit": "The IEA is describing global supply networks and price markets, not isolating EU-only throughput or the effects of the foresight publication; controls and industrial responses do not establish attribution to EU policy.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing description of CRMA 2030 “single-country concentration” benchmarks and selected strategic projects.",
+              "problem": "The 2025 Eurostat rare-earth import shares are a by-weight classification of selected metals and compounds; neither they nor counts of approved projects directly quantify attainment of the CRMA’s strategic-raw-material sourcing/diversification benchmark.",
+              "proposed_correction": "When using the new 46.8% China import share, add “selected REE traded categories, by gross weight” and retain the separate interpretation of CRMA project designations as policy steps, not measured diversification outcomes.",
+              "supporting_url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260629-1"
+            }
+          ],
+          "synthesis": {
+            "continuities": "The 2022 report anticipated a structural tension between the EU’s green/digital aims and geographically concentrated inputs. Later EU rules, strategy designations, import records and independent IEA monitoring show that the dependency issue remains a live strategic priority.",
+            "departures_and_surprises": "A significant new development is the realised production disruption following 2025 Chinese heavy rare-earth export controls, rather than merely a theoretical dependence ratio. The IEA nevertheless observes some modest rare-earth refining diversification, so the picture is not one-way worsening in every mineral.",
+            "unresolved": "The EU’s material-by-material supply security, magnet imports, downstream component dependence, recycling yields and new mine/refinery actual outputs are not established by aggregate REE customs tonnage. Whether CRMA programmes durably lower vulnerability by 2030, and what role the 2022 foresight document had in policymaking, remain separate open questions.",
+            "what_is_new_since_existing_record": "Eurostat contributes a dated 2025 EU import partner distribution, while the IEA contributes observed 2025 disruptions and a 2026 downstream price premium. These are outcome and vulnerability measures beyond the case’s existing legal acts, project selections and 2026 audit.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Obtain EU end-to-end material balances for each strategic raw material, including magnets, processed compounds and indirect imports embedded in finished goods.",
+            "Track CRMA designated projects from approval through permitting, financing, commissioning and verified annual output.",
+            "Find a documented legislative or Commission preparatory citation before stating the 2022 foresight report directly influenced the CRMA."
+          ]
+        },
+        {
+          "record_id": "lead-6be39a26704bb7e6",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://livrepository.liverpool.ac.uk/3000269/",
+            "quoted_or_precisely_located_passage": "\"Increased risk simulated over northern Europe and slightly decreased risk over southern Europe\" under the climate-model scenarios, with warmer/wetter northern overwintering conditions and hotter/drier southern summers.",
+            "locator": "Caminade et al. (2012), original abstract hosted by the University of Liverpool, J. R. Soc. Interface 9(75):2708–2717; published online 25 April 2012",
+            "interpretation_or_correction": "The study forecasts *climatic suitability/risk of potential establishment*, not mosquito counts, measured climate attribution or disease incidence; a future introduction and suitable local habitats are additional prerequisites. The university repository reproduces the original abstract and lists the full paper, but full climate-scenario figures were not rechecked here.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "mosquito-E1",
+              "title": "Non-native mosquito species profiles: Aedes albopictus",
+              "publisher_or_authors": "UK Health Security Agency; Centre for Climate and Health Security",
+              "published_date": "2026-04-01",
+              "url": "https://www.gov.uk/guidance/non-native-mosquito-species-profiles",
+              "source_kind": "primary_observation",
+              "specific_observation": "UKHSA states the Asian tiger mosquito has not established a self-sustaining population in the UK despite eggs having been detected in southeast England through invasive-mosquito surveillance since 2016.",
+              "how_it_relates_to_original": "A direct northern/western European counterpoint: possible climatic suitability and repeated introduction do not by themselves yield verified establishment.",
+              "relationship_type": "limitation",
+              "causality_limit": "UK non-establishment cannot be explained by temperature alone; surveillance effort, introduction frequency, local habitat and vector control may all matter.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "mosquito-E2",
+              "title": "Seasonal surveillance of chikungunya virus disease – 2026 (weekly), 11 September update",
+              "publisher_or_authors": "European Centre for Disease Prevention and Control",
+              "published_date": "2026-09-11",
+              "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-evd-00016/2026-09-11",
+              "source_kind": "primary_observation",
+              "specific_observation": "The 11 September 2026 ECDC snapshot, covering notifications as of 9 September, identifies 57 locally acquired chikungunya cases in France across 11 clusters and one case in Italy (Rome).",
+              "how_it_relates_to_original": "Shows that vector-borne-disease transmission occurred again in continental Europe, adding a distinct outcome dimension to distribution maps, though the original 2012 study modelled mosquito climatic suitability.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Local human cases are not a direct measure of Aedes albopictus climatic suitability or unambiguous evidence that climate change drove a given outbreak; human travel, virus importation, local surveillance and vector control contribute.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing ECDC 2026 description: “384 EU/EEA administrative units ... fourteen additional units compared with June 2025” after listing 369 in 2025.",
+              "problem": "Arithmetic gives a net difference of 15 units (384 minus 369), whereas the 2026 ECDC narrative explicitly reports an expansion of 14 named units across five countries; the published description does not reconcile the two figures.",
+              "proposed_correction": "Quote the 384 total and ECDC’s independently stated “14 expansion units” separately rather than equating 14 to the total net change; flag the +15-versus-14 reconciliation for dataset-level checking (e.g., revised geography or previously counted units).",
+              "supporting_url": "https://www.ecdc.europa.eu/en/publications-data/aedes-albopictus-current-known-distribution-april-2026"
+            }
+          ],
+          "synthesis": {
+            "continuities": "Observed establishment across central and north-western continental Europe agrees broadly with the direction of the original climate-suitability warning. New ECDC disease surveillance shows actual local transmission in France and Italy, which makes vector readiness a continuing public-health concern.",
+            "departures_and_surprises": "The UK is a useful exception: repeated egg introductions have not yet translated into recognised population establishment. Disease episodes are also a different phenomenon from the paper’s climatic thresholds, while the projected slight decline in southern suitability is not directly refuted by continued southern establishment.",
+            "unresolved": "Comparable climate-adjusted longitudinal suitability estimates, surveillance-normalised establishment histories and estimates of the impact of transport and interventions are not available from the regional counts alone. The source-level 369-to-384 versus “14 additions” discrepancy also needs a documented crosswalk.",
+            "what_is_new_since_existing_record": "New UKHSA evidence explicitly distinguishes introductions from established populations, and September 2026 ECDC surveillance independently tracks indigenous chikungunya transmission. These go beyond the existing EU/EEA establishment maps and the retrospective association study.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Map the 2012 model grids against contemporary seasonal climate observations and site-level confirmed overwintering, holding surveillance intensity constant.",
+            "Reconcile ECDC’s 2025 369 and 2026 384 totals with its narrative of 14 added units and any revised country/regional coding.",
+            "Investigate southern Europe suitability trends using temperature, summer precipitation, irrigation and larval habitat observations rather than equating establishment with suitability."
+          ]
+        },
+        {
+          "record_id": "lead-1e5bc406a360f64e",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://link.springer.com/article/10.1007/s12544-015-0171-7",
+            "quoted_or_precisely_located_passage": "\"White paper High scenario results show that demand for rail freight services almost doubles compared to the Reference values\" under a shift from road toward rail and waterways of 30% by 2030 and 50% by 2050 for freight journeys greater than 300 km.",
+            "locator": "European Transport Research Review, original open-access full text, scenario comparisons in abstract/results and White Paper High assumptions; online 19 June 2015",
+            "interpretation_or_correction": "The “doubling” is a counterfactual 2050 rail-demand level versus the model Reference case, not a doubling of observed 2015 rail volume, and the White Paper policy shifts are long-distance road freight, not all-mode rail market shares. It assumes coordinated policy and substantial terminal/line capacity and uses an EU27 modelling frame; contemporary EU27 freight statistics are not direct forecasts of a specific scenario without matched baselines.",
+            "confidence": "verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "rail-E1",
+              "title": "Rail freight transport dropped by 1.8% in 2025",
+              "publisher_or_authors": "Eurostat",
+              "published_date": "2026-09-14",
+              "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260914-2",
+              "source_kind": "primary_observation",
+              "specific_observation": "Eurostat’s main-railway-undertakings series (rail_go_typepas) reports 368.2 billion EU tonne-kilometres in 2025, down 1.8% from 375.1 billion in 2024; this marks a fourth consecutive yearly fall in the series. Reporting thresholds exclude smaller railway undertakings.",
+              "how_it_relates_to_original": "Adds the newest observed rail work figure after the existing 2023/2024 assessments, a direction not indicative of imminent implementation of an ambitious rail-growth scenario.",
+              "relationship_type": "observed_development",
+              "causality_limit": "EU27 activity from main operators cannot be compared mechanically with the EEA all-freight estimate or a model-generated 2050 EU27 difference between counterfactual scenarios.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "rail-E2",
+              "title": "EU road freight transport up by 0.9% in 2025",
+              "publisher_or_authors": "Eurostat",
+              "published_date": "2026-07-31",
+              "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-2",
+              "source_kind": "primary_observation",
+              "specific_observation": "Road freight work performed by EU-registered vehicles reached 1,886 billion tonne-kilometres in 2025, +0.9% from 2024 (dataset road_go_ta_tott). Its road-registration data basis differs from rail national-operator data and route-specific road-to-rail modal-shift measures.",
+              "how_it_relates_to_original": "The concurrent road-growth / rail-decline contrast reinforces the existing broad modal-shift concern without assuming that total road and rail tonne-km form a comparable single modal-share denominator.",
+              "relationship_type": "observed_development",
+              "causality_limit": "National registration, international/cabotage activity, freight-distance classes and railway reporting thresholds differ; this is not a direct measurement of White Paper freight over 300 km.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "rail-E3",
+              "title": "Intermodal freight transport: EU still far from getting freight off the road, Special Report 08/2023",
+              "publisher_or_authors": "European Court of Auditors",
+              "published_date": "2023-03-27",
+              "url": "https://op.europa.eu/webpub/eca/special-reports/intermodal-freight-transport-08-2023/en/",
+              "source_kind": "independent_evaluation",
+              "specific_observation": "ECA examined EU intermodal transport support including €1.1 billion committed in 2014–2020 and 16 sampled projects across seven countries. It judged modal-shift targets unrealistic/insufficiently monitored, identified terminal, legal and interoperability barriers, and found that funded infrastructure projects were primarily monitored for outputs, not measured tonnes shifted from road (executive summary III–VI; paragraphs 83–89).",
+              "how_it_relates_to_original": "Independently evaluates whether prerequisites of the modelled High scenario were implemented, an explanatory layer more useful than a direct comparison between mismatched aggregate modal-share indicators.",
+              "relationship_type": "limitation",
+              "causality_limit": "The 2023 audit covers support and sampled intermodal projects, not all EU rail traffic and not the TRANS-TOOLS model itself; it cannot directly estimate the High-versus-Reference rail-demand outcome.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing comparison cites EEA 2023 rail share 11.5% and Destatis/Eurostat inland rail share about 17% in 2024.",
+              "problem": "EEA 11.5% includes broader modes such as coastal maritime freight, while Destatis 17% is a rail share among inland road/rail/waterway tonne-km; these are not competing measurements of the same denominator.",
+              "proposed_correction": "Display the two percentages with their distinct mode coverage and years, and assess change only within a harmonised single series; neither evaluates the >300 km modal-shift promise.",
+              "supporting_url": "https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/freight-transport-activity"
+            },
+            {
+              "existing_statement_or_source": "Original lead dated 18 June 2015 in the curated entry.",
+              "problem": "The publisher’s article header says “Published: 19 June 2015”, one day after the recorded historical date.",
+              "proposed_correction": "Use 19 June 2015 as verified online publication date, preserving 18 June only if a distinct traceable indexing/acceptance event is found.",
+              "supporting_url": "https://link.springer.com/article/10.1007/s12544-015-0171-7"
+            }
+          ],
+          "synthesis": {
+            "continuities": "The original model emphasised the scale of institutional and infrastructure change required for major rail growth, not an inevitable doubling. Both recent activity data and an institutional audit confirm that those prerequisites remain pivotal.",
+            "departures_and_surprises": "Eurostat records 2025 road-freight activity rising while main-operator rail-freight work fell for the fourth year. ECA’s finding that targets were not robustly monitored, and that terminals and interoperability hamper competition, illustrates why policy aspirations do not automatically generate modal shift.",
+            "unresolved": "The distance-specific >300 km road-freight base, measured diversion to rail or waterways, freight terminal productivity and a harmonised EU27 Reference path remain missing. The 2030 and 2050 policy horizons also remain open; no 2025 all-freight statistic is a direct test of the model’s 2050 High scenario.",
+            "what_is_new_since_existing_record": "Two Eurostat 2026 releases bring activity measurement through 2025, while the ECA’s intermodal audit provides concrete reasons for slow implementation. An online publisher date correction and metric-denominator clarification improve auditability of the older comparison.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Find a measured EU-wide >300 km road-freight modal shift time series compatible with the 2011 White Paper target.",
+            "Recreate model Reference and High assumptions using up-to-date input costs, capacity, terminals and infrastructure delays, without treating the replay as the 2015 prediction.",
+            "Reconcile rail_go_typepas, EEA cross-modal estimates and national registration-based road tonne-km accounting before creating a modal split."
+          ]
+        },
+        {
+          "record_id": "lead-c58a6b59f8f84186",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC95212",
+            "quoted_or_precisely_located_passage": "\"In the EU, the aim is to reach 100 GW of combined wave and tidal capacity installed by 2050.\"",
+            "locator": "Magagna and Uihlein, Ocean energy development in Europe (2015), original JRC author publication record and abstract; DOI 10.1016/j.ijome.2015.05.001",
+            "interpretation_or_correction": "The 100 GW figure is presented as an EU/sectoral long-term ambition, not observed growth or an unconditional independently modelled result. Technological maturity, cost, finance and electricity-market integration remain caveats; “installed” should not be conflated with active operational MW or energy generation. Only the publication abstract was directly verified in an accessible official repository, not each figure in the publisher full text.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "ocean-E1",
+              "title": "Marine Renewable Energy: Ocean Energy, Blue Economy Observatory (2026 update)",
+              "publisher_or_authors": "European Commission Joint Research Centre / EU Blue Economy Observatory",
+              "published_date": "2026-05-21",
+              "url": "https://blue-economy-observatory.ec.europa.eu/eu-blue-economy-sectors/marine-renewable-energy_en",
+              "source_kind": "primary_observation",
+              "specific_observation": "The Commission’s ocean-energy section reports 2.2 MW operational EU non-tidal-range ocean capacity at end-2025 *excluding pilot projects*: 1.5 MW tidal stream, 0.65 MW wave and 0.02 MW salinity gradient. It separately reports 2024 EU ocean-electricity production of 461 GWh, 449 GWh from La Rance tidal barrage and only 12 GWh from other technologies (Ocean Energy subsection, Figure 5; update 21 May 2026).",
+              "how_it_relates_to_original": "Supplies later operational and electricity-generation evidence rather than a future pipeline, reinforcing the gap between 2015 high-level ambition and modest contemporary wave/tidal contribution.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Its end-2025 “excluding pilot projects” boundary may differ from the 2024 existing-record 2.82 MW category, and La Rance tidal-range production is not comparable to emerging tidal-stream/wave output. Annual GWh and installed/operational MW cannot be converted without technology-specific utilisation factors.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "ocean-E2",
+              "title": "Europe’s ocean energy pipeline reaches 200 devices and 200 MW as public funding leverages private investment",
+              "publisher_or_authors": "Ocean Energy Europe (industry association)",
+              "published_date": "2026-09-14",
+              "url": "https://www.oceanenergy-europe.eu/europes-ocean-energy-pipeline-reaches-200-devices-and-200-mw-as-public-funding-leverages-private-investment/",
+              "source_kind": "other",
+              "specific_observation": "The association reports sixteen publicly supported European wave/tidal farm projects totalling 196 MW *expected* by 2030: eleven tidal farms with 172 MW and 140 devices and five wave farms with 24 MW and 66 devices. It separately reports aspirational national commitments of another 650 MW; none of these MW is verified as operational.",
+              "how_it_relates_to_original": "Updates the investment and near-term project pipeline beyond the existing 2025 reported 165 MW European pipeline, while showing that announced pre-commercial clusters remain orders of magnitude below the historical 100 GW ambition.",
+              "relationship_type": "thematic_parallel",
+              "causality_limit": "The European industry pipeline includes the UK and has scope/date differences from the earlier 165 MW set. It is developer/association reporting of intentions and subsidies, not evidence of generation, completed capacity, commercially viable tariffs or EU-only deployment.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "Existing 2025 Blue Economy Report cites 2.82 MW operational EU emerging ocean capacity at end-2024, and JRC 2026 overview now cites 2.2 MW at end-2025.",
+              "problem": "A raw year-on-year decline of 0.62 MW is not established because the 2026 page explicitly excludes pilot projects while the 2025 report uses an “emerging operational” aggregation, and both exclude legacy tidal-range capacity.",
+              "proposed_correction": "Present the 2.82 MW (end-2024) and 2.2 MW (end-2025, excluding pilots) side by side with source-specific exclusions; avoid claiming net decommissioning or a rate of scale-up until project-level capacity classifications are reconciled.",
+              "supporting_url": "https://blue-economy-observatory.ec.europa.eu/eu-blue-economy-sectors/marine-renewable-energy_en"
+            },
+            {
+              "existing_statement_or_source": "Existing 2025 industry pipeline of 165 MW is framed as “European plans” with 100 GW cited as an EU ambition.",
+              "problem": "Geographic Europe project pipelines are not coextensive with EU member-state capacity: the Commission says 130 MW of that 165 MW earlier pipeline is planned in the UK, with just about 35 MW in specified EU countries.",
+              "proposed_correction": "Label industry forecasts as Europe-wide including the UK; do not compare the full 165 MW or newer 196 MW directly with EU-only installed/operational figures or implicitly treat UK projects as EU capacity.",
+              "supporting_url": "https://blue-economy-observatory.ec.europa.eu/eu-blue-economy-sectors/marine-renewable-energy_en"
+            }
+          ],
+          "synthesis": {
+            "continuities": "The original 2015 assessment connected ocean-energy potential to technology maturity, market support, financing and grid conditions. EU monitoring and industry reporting continue to identify noncommercial costs and public revenue support as central to progress.",
+            "departures_and_surprises": "The dominant observed fact remains a tiny operational wave/tidal fleet in the EU, now complemented by just 12 GWh of 2024 non-tidal-range generation; the old La Rance barrage contributes most measured EU ocean electricity. Meanwhile a more substantial 196 MW European pre-commercial pipeline is emerging, but financial commitment and device plans do not equal electricity delivered.",
+            "unresolved": "Individual device operating hours, capacity factors, decommissioning/replacement cycles, delivered grid output and realised levelised costs are needed to establish actual commercial progress. Comparability across “excluding pilots”, tidal-range inclusion, EU versus Europe and the sector’s 2050 100 GW ambition is unresolved without an explicit taxonomy.",
+            "what_is_new_since_existing_record": "The European Commission provides a 2025 end-of-year non-pilot operating figure and a quantitative 2024 generation breakdown. Ocean Energy Europe adds a September 2026, conditional 2030 farm-and-device pipeline whose geography and status require clear labels.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Develop a device-level commissioned/decommissioned and annual electricity-delivery register with definitions for pilot, test and commercially operational assets.",
+            "Reconstruct the original article’s precise 100 GW institutional source, technology inclusion and jurisdiction; verify it was an ambition rather than an EU binding target.",
+            "Follow the sixteen 2026 pipeline farms to financial close, physical commissioning, delivered GWh and sustained subsidy-adjusted production costs."
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "WR-KNOWLEDGE-02",
+      "research_date": "2026-10-26",
+      "cases": [
+        {
+          "record_id": "doi:10.3141/2252-05",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.3141/2252-05",
+            "quoted_or_precisely_located_passage": "Both stored sentences occur verbatim in the publisher-deposited abstract, but in reverse order and without scenario context: sentence 3 \"The model suite applied in iTREN-2030 comprises POLES (prospective outlook on long-term energy systems), a simulation model for development of long-term (2050) energy supply-and-demand scenarios; TREMOVE; ASTRA (assesment of transport strategies); and TRANS-TOOLS.\" and the final sentence \"As a consequence, GHG emissions by transport will decline 12% by 2030 compared with 2005; in the reference scenario in the same period, emissions are expected to grow 17%.\" The preceding sentences make clear that the -12% belongs to the integrated scenario.",
+            "locator": "Schade & Wiesenthal, Transportation Research Record 2252(1):31-39 (issued 2011-01), abstract sentence 3 and final sentence. Checked via Crossref metadata (https://api.crossref.org/works/10.3141/2252-05) and JRC repository record JRC63886; SAGE full text not accessible (doi.org/journals.sagepub.com blocked/paywalled) - abstract-only check.",
+            "interpretation_or_correction": "Model-based, conditional scenario study (not a forecast) for the EU-27 of 2007-2013 (incl. UK, excl. Croatia), base year 2005, horizon 2030, from the EU-cofunded iTREN-2030 project linking POLES, TREMOVE, ASTRA and TRANS-TOOLS. Reference scenario = policies approved by mid-2008, no shocks, 2008 downturn not fully reflected (+17% transport GHG 2005-2030); integrated scenario = policies likely by 2025 (vehicle CO2 limits, EU climate-energy package via a carbon value for -20% GHG and 20% renewables by 2020, downturn included) giving -12% by 2030. The iTREN-2030 final report D6 (Schade & Krail, 27 Apr 2010, Executive Summary; Table 3: 1,268 Mt CO2 in 2005 -> 1,485 Mt in 2030) carries the same +17%, and a JRC-IPTS WCTRS 2010 abstract gives the integrated path as -7% by 2020 and -12% by 2030; the iTREN emission scope should be reconciled with inventory categories before any numeric comparison.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.3141/2252-05-E1",
+              "title": "Greenhouse gas emissions by source sector (env_air_gge): EU27_2020, CRF 1.A.3 'Fuel combustion in transport' and memo items",
+              "publisher_or_authors": "Eurostat (from the EU greenhouse gas inventory)",
+              "published_date": "2026-06-02",
+              "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en",
+              "source_kind": "primary_observation",
+              "specific_observation": "EU27_2020 transport GHG (CRF 1.A.3, excl. international bunkers): 849.9 Mt CO2e in 2005; 834.8 Mt in 2019 (-1.8% vs 2005); 722.5 Mt in 2020; 795.6 Mt in 2023 (-6.4%); 804.8 Mt in 2024 (-5.3%). International aviation (memo item 1.D.1.a) rose from 96.4 Mt (2005) to 130.0 Mt (2024). Values extracted via the Eurostat dissemination API on 2026-10-26 (dataset last updated 2026-06-02).",
+              "how_it_relates_to_original": "Interim real-world observation against a 2030 scenario horizon that has not arrived. Domestic transport emissions are about 5% below 2005, so they have not followed the reference path (+17% by 2030) and move in the direction of the integrated scenario, but more slowly than its -7%-by-2020 milestone reported in the iTREN-2030 documents (pre-COVID 2019 was only -1.8%).",
+              "relationship_type": "observed_development",
+              "causality_limit": "Geography differs (study: EU-27 incl. UK; Eurostat EU27_2020 excl. UK, incl. Croatia) and the iTREN emission scope/base (1,268 Mt CO2 in 2005) is not the same as CRF 1.A.3. COVID-19 and the 2022 energy-price shock were outside both scenarios. Resemblance to the integrated path does not show that the modelled policies caused the outcome.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.3141/2252-05-E2",
+              "title": "Share of energy from renewable sources in transport (nrg_ind_ren, REN_TRA): EU27_2020",
+              "publisher_or_authors": "Eurostat (SHARES)",
+              "published_date": "2026-09-15",
+              "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ren/default/table?lang=en",
+              "source_kind": "primary_observation",
+              "specific_observation": "Renewable energy share in transport (RES-T): 1.8% (2005), 5.5% (2010), 10.3% (2020), 9.6% (2022), 11.0% (2023), 11.2% (2024). Extracted via the Eurostat API on 2026-10-26.",
+              "how_it_relates_to_original": "The abstract attributes the integrated-scenario emission cut partly to higher shares of alternative fuels (biofuels, gas, electricity). The iTREN-2030 final report gives a reference-scenario biofuel share of about 6.6% in 2020 and almost 10% in 2030 (Section 3.2), and the JRC-IPTS WCTRS 2010 abstract gives about 9.8% in 2020 for the preliminary integrated run; the observed ~10% in 2020 sits nearer the integrated value, with slow growth after 2020.",
+              "relationship_type": "observed_development",
+              "causality_limit": "RES-T is a Renewable Energy Directive accounting indicator (multipliers for advanced biofuels and renewable electricity, specific denominator) and is not like-for-like with a modelled physical biofuel share. Policy targets (RED 10% in 2020) shaped the observation independently of the paper.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.3141/2252-05-E3",
+              "title": "Greenhouse gas emissions from transport in Europe (EEA indicator)",
+              "publisher_or_authors": "European Environment Agency",
+              "published_date": "2025-11-06",
+              "url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emissions-from-transport",
+              "source_kind": "independent_evaluation",
+              "specific_observation": "EEA states that EU transport emissions \"have only declined slightly since 2005\" and that preliminary 2024 emissions were 0.7% above 2023; road transport emitted 73% of EU transport GHG (incl. international bunkers) in 2023. Member State projections: with existing measures transport emissions would reach 1990 levels by 2030; with additional measures 13% below 1990 (Figure 1 and Figure 2 text).",
+              "how_it_relates_to_original": "An official interim assessment plus a newer projection for the same 2030 horizon. Using Eurostat domestic-transport values (674.7 Mt in 1990, 849.9 Mt in 2005; our arithmetic), a return to 1990 levels would be roughly -21% versus 2005, a deeper cut than the integrated scenario's -12%, but it remains a projection, not an outcome.",
+              "relationship_type": "thematic_parallel",
+              "causality_limit": "Compares one projection with another; the page mixes 'domestic' wording with a methodology that sums 1.A.3 plus international aviation and maritime, so the scope of the 2030 projection is ambiguous. Member State projections may not materialise.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "original_passage_as_stored: \"As a consequence, GHG emissions by transport will decline 12% by 2030 compared with 2005; in the reference scenario ... grow 17%. The model suite applied in iTREN-2030 comprises POLES ...\"",
+              "problem": "The two sentences are verbatim but reversed, and 'As a consequence' loses its subject: the -12% is the integrated-scenario result (policies likely by 2025), while +17% is the reference scenario (policies approved by mid-2008). Read alone, the passage looks like an unconditional forecast.",
+              "proposed_correction": "Store as: \"[Integrated scenario - policies likely to be implemented until 2025, incl. vehicle CO2 limits and the EU climate and energy package:] GHG emissions by transport will decline 12% by 2030 compared with 2005; in the reference scenario [policies approved by mid-2008] in the same period, emissions are expected to grow 17%.\" Keep the model-suite sentence separately as method context, and tag the geography as EU-27 (2007-2013 membership).",
+              "supporting_url": "https://api.crossref.org/works/10.3141/2252-05"
+            }
+          ],
+          "synthesis": {
+            "continuities": "Observed EU transport emissions did not follow the reference path (+17%); by 2024 domestic transport emissions were about 5% below 2005, the direction of the integrated scenario. Renewable shares in transport reached about 10% around 2020, close to the integrated run's preliminary 2020 biofuel figure.",
+            "departures_and_surprises": "Progress was slower than the integrated path: emissions were only 1.8% below 2005 in 2019, and then COVID-19 (2020) and the 2022 energy shock caused swings that neither scenario represented. International aviation emissions grew about 35% (2005-2024), a part of transport outside the domestic total.",
+            "unresolved": "The 2030 horizon has not arrived; current Member State projections (EEA 2025) point to a deeper cut than -12%, but these are projections. A numeric comparison needs the iTREN emission scope and the EU-27 (with UK) geography reconciled with EU27_2020 inventory categories.",
+            "what_is_new_since_existing_record": "Stored passage verified verbatim against the abstract, with scenario attribution restored; the +17%/-12% figures traced to the iTREN-2030 final report. Added official interim observations to 2024 and the EEA's 2025 assessment and projection.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Full TRR text (SAGE) not accessed; the scenario emission scope (CO2 vs GHG; whether international aviation/maritime are included) is unconfirmed.",
+            "No EU-27-with-UK series was extracted to match the study geography exactly (Eurostat EU28 aggregate was not returned for this dataset).",
+            "No ex-post evaluation found that compares iTREN-2030 scenario outputs with outturns."
+          ]
+        },
+        {
+          "record_id": "doi:10.3390/f2010147",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.3390/f2010147",
+            "quoted_or_precisely_located_passage": "Verbatim abstract sentences 4-5: \"These so-called critical uncertainties were found to be degrees to which: (i) current patterns of globalization will continue, or be replaced by regionalism, and (ii) concern about the environment, particularly climate change, related policy initiatives and customer preferences, will materialize. The overall future of the Swedish solid wood-product industry looks bright, irrespective of which of the four possible futures occurs, provided it accommodates the expected growth in demand for factory-made, energy-efficient construction components.\" The Discussion restates it: the outlook is optimistic \"provided it sheds its commodity orientation and increases the value-added by accommodating the growing demand for factory-made, energy-efficient construction components, produced using renewable materials.\"",
+            "locator": "Jonsson, Forests 2(1):147-167 (2011-01-20, CC BY 3.0). Abstract p. 147; time horizon Section 1 p. 148; scenario matrix Figure 3 and scenarios I-IV Section 5 pp. 157-160; Section 6 Discussion and Conclusions p. 161. Full text read (MDPI PDF).",
+            "interpretation_or_correction": "Qualitative scenario analysis (no quantitative market model) of global wood-product markets and implications for Sweden, horizon about forty years (around 2050). A 2x2 matrix of globalisation vs regionalism and low vs pronounced climate and environmental concern gives scenarios I-IV. Beyond the stored sentence, the paper expects ICT to drastically cut newsprint and printing paper demand, sees pulp and paper prospects as 'more ambiguous' (production shifting south; mechanical pulp squeezed by bioenergy-driven raw material and electricity prices), expects bioenergy to benefit sawmills and forest owners, and finds the highest demand for Swedish wood in a regionalised, high-climate-concern world. These are conditional futures; the 2050 horizon has not arrived.",
+            "confidence": "verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.3390/f2010147-E1",
+              "title": "FAOSTAT Forestry Production and Trade: world production of newsprint, graphic papers and other paper and paperboard",
+              "publisher_or_authors": "Food and Agriculture Organization of the United Nations (FAOSTAT)",
+              "published_date": "2026-04-01",
+              "url": "https://www.fao.org/faostat/en/#data/FO",
+              "source_kind": "primary_observation",
+              "specific_observation": "World newsprint production fell from 33.1 Mt (2010) to 10.6 Mt (2024, estimate; -68%); graphic papers from 143.3 Mt to 85.1 Mt (-41%). 'Other paper and paperboard' (mainly packaging, household and sanitary grades) rose from 249.1 Mt to 337.9 Mt (+36%); total paper and paperboard rose from 392.4 Mt to 423.0 Mt (+8%). Taken from the FAOSTAT bulk file Forestry_E_All_Data_(Normalized), timestamp 2026-04-01.",
+              "how_it_relates_to_original": "Directly matches the paper's expectation (abstract; Section 6, p. 161) that ICT would bring 'drastic reductions in demand for newsprint and printing paper', which appears in all four scenarios. The strong growth of packaging grades, which the paper did not emphasise, partly offsets the decline at total-paper level.",
+              "relationship_type": "observed_development",
+              "causality_limit": "The decline was already under way in 2011, so this continues a trend more than it confirms a forecast. Several drivers besides ICT are involved (e-commerce, Asian demand, recycling), and FAOSTAT mixes official and estimated values (flags A/E/X).",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.3390/f2010147-E2",
+              "title": "FAOSTAT Forestry Production and Trade: Sweden, production of paper grades, sawnwood and wood pellets",
+              "publisher_or_authors": "Food and Agriculture Organization of the United Nations (FAOSTAT)",
+              "published_date": "2026-04-01",
+              "url": "https://www.fao.org/faostat/en/#data/FO",
+              "source_kind": "primary_observation",
+              "specific_observation": "Sweden: graphic papers 5.51 Mt (2010) -> 1.81 Mt (2024, estimate; -67%); newsprint 2.26 Mt -> 0.22 Mt (-90%); total paper and paperboard 11.41 Mt -> 8.07 Mt (-29%); other paper and paperboard 5.90 Mt -> 6.26 Mt (+6%). Sawnwood 16.8 million m3 (2010) -> 17.9 million m3 (2024), within 17.6-19.0 million m3 since 2015. Wood pellets 1.66 Mt (2015) -> 1.58 Mt (2024).",
+              "how_it_relates_to_original": "The collapse in Swedish graphic paper fits the 'more ambiguous' pulp and paper outlook and the expected ICT effect, while packaging grades held up. Sawnwood output stayed broadly flat rather than growing, so the 'bright' solid-wood outlook is not visible as volume growth; the paper framed it as a value-added shift, which volumes cannot show. Pellet output did not expand, giving no sign yet of the strong bioenergy-driven wood demand in scenarios II-IV.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Volumes do not measure profitability or value added. Swedish graphic-paper values for recent years are FAO estimates (flag E), and individual mill closures, energy prices and market cycles are not separated out. No scenario can be identified as 'occurring' from production data.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.3390/f2010147-E3",
+              "title": "TMF i siffror - Statistik om den svenska trä- och möbelindustrin, nr 1, April 2026",
+              "publisher_or_authors": "Trä- och Möbelföretagen (TMF), citing Statistics Sweden (SCB)",
+              "published_date": "2026-04 (day not stated; PDF created 2026-04-29)",
+              "url": "https://via.tt.se/files/3236590/4357795/325348/sv",
+              "source_kind": "other",
+              "specific_observation": "p. 3: according to SCB, 1,393 ordinary apartments with wooden frames were started in 2024 (-6.8% vs 2023), and the wood-frame share of all started apartments in multi-dwelling buildings rose to 17% in 2024; 95.4% of wood-frame apartments were fully or partly prefabricated ('helt eller delvis förtillverkade'). TMF's industrial wood-frame producers delivered 2,339 apartments in 2025 (-1.1% vs 2024).",
+              "how_it_relates_to_original": "This is the closest available indicator for the paper's stated condition, that the solid-wood industry accommodate demand for 'factory-made, energy-efficient construction components'. Industrial prefabrication is now the norm in Swedish wood-frame multi-dwelling construction and its market share is rising, but absolute volumes remain small.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Industry-association digest relaying SCB data (not independently checked against SCB tables). Covers started ordinary apartments only, excluding student and special housing, and is a single year of share data. Energy efficiency and value added for sawmills are not measured, and no causal link to the paper.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [],
+          "synthesis": {
+            "continuities": "The paper's most robust expectation, steep ICT-driven decline in newsprint and printing paper, is clearly observed both globally (-41% graphic papers 2010-2024) and in Sweden (-67%). Industrially prefabricated timber frames dominate Swedish wood multi-dwelling construction and reached a 17% share of started apartments in 2024.",
+            "departures_and_surprises": "Swedish sawnwood volumes have been flat rather than growing, and pellet output has not expanded, so the bioenergy-driven 'demand pressure on Swedish wood' of scenarios II-IV is not evident in production volumes. Packaging-paper growth, which the paper did not emphasise, cushioned the pulp and paper sector.",
+            "unresolved": "Which of the four scenario quadrants the world is moving toward cannot be judged from production data: globalisation and climate-policy axes have both shifted in mixed ways, and the 2050 horizon is far off. Value-added and profitability outcomes for Swedish sawmills, and forest-owner wood prices, were not examined.",
+            "what_is_new_since_existing_record": "Full text verified, including the Discussion's fuller conditional wording ('sheds its commodity orientation'), the ~2050 horizon and the scenario structure. Added FAOSTAT production series to 2024 and SCB/TMF data on prefabricated timber construction.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "No time series of the SCB wood-frame share (Diagram 3 in TMF report is graphical only); SCB's frame-material table was not located in the SCB statistical database API.",
+            "Swedish sawlog and pulpwood price series and forest-industry profitability were not checked.",
+            "EU climate-policy changes affecting forest harvest (e.g., LULUCF 2023 revision, RED III biomass criteria) were not evaluated against the scenario axes."
+          ]
+        },
+        {
+          "record_id": "doi:10.2166/wst.2011.120",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.2166/wst.2011.120",
+            "quoted_or_precisely_located_passage": "The stored passage is the first sentence of the abstract, verbatim. The study's actual projection is later in the abstract: \"Calculations based on a fixed consumption rate (2007) predict that demographic developments can be expected to push consumption up to 1.504 metric tonnes in 2020 (+17%) and 1.851 metric tonnes by 2050 (+37%).\"",
+            "locator": "van der Aa, Kommer, van Montfoort & Versteegh, Water Science and Technology 63(4):825-831 (2011-02-01), abstract sentences 1 and 5. Checked via publisher-deposited abstract in Crossref (https://api.crossref.org/works/10.2166/wst.2011.120) and RIVM bibliographic records; IWA full-text PDF returned HTTP 403 - abstract-only check.",
+            "interpretation_or_correction": "Netherlands-only, demographic-only projection: age-specific 2007 consumption rates for 354 prescribed pharmaceuticals in 40 therapeutic groups (1,251 tonnes, 98% of Dutch prescribed consumption in 2007) applied to population projections, to anticipate emissions of pharmaceuticals and residues to surface water. Largest increases in groups linked to old age; decreases only for antivirals, addiction-treatment drugs and ethinylestradiol. It is a 'what if consumption rates stay at 2007 levels' scenario, not a forecast of actual use. The 2020 milestone has passed; 2050 has not.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.2166/wst.2011.120-E1",
+              "title": "Data en feiten 2014 - Het jaar 2013 in cijfers",
+              "publisher_or_authors": "Stichting Farmaceutische Kengetallen (SFK)",
+              "published_date": "2014 (exact date unknown; PDF created 2014-08-13)",
+              "url": "https://sfk.nl/sites/sfk-nl/files/2025-01/Data_en_feiten_2014.pdf",
+              "source_kind": "primary_observation",
+              "specific_observation": "Section 1.2 'Gebruik van geneesmiddelen' (PDF p. 14) and summary: medicine use from community pharmacies, measured in DDD, grew 1.1% in 2013, whereas population growth and ageing alone implied +1.9%; annual growth over the preceding decade had been about 4-8% (summary) or 4-5% (Section 1.2). People aged 65+ (17.4% of the population on 1 Jan 2014) received more than three times the average volume. SFK offers healthier new 65+ cohorts and the rise in the insurance deductible (EUR 155 -> 350, 2009-2013) as possible explanations.",
+              "how_it_relates_to_original": "A direct real-world test of the study's mechanism (fixed age-specific rates times demographic change). Within two to three years of publication, observed growth fell below the purely demographic expectation, showing that cohort health and insurance design move age-specific consumption rates.",
+              "relationship_type": "limitation",
+              "causality_limit": "Single-year comparison. Measured in DDD of reimbursed medicines, not tonnes of active substance; the +1.9% expectation is SFK's own calculation, not the paper's. SFK's explanations are offered as possibilities, not tested.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.2166/wst.2011.120-E2",
+              "title": "Data en feiten 2025 - Het jaar 2024 in cijfers",
+              "publisher_or_authors": "Stichting Farmaceutische Kengetallen (SFK)",
+              "published_date": "2025-09 (month from file path; exact day unknown)",
+              "url": "https://sfk.nl/sites/sfk-nl/files/2025-09/Data%20en%20feiten%202025%20%281MB%29.pdf",
+              "source_kind": "primary_observation",
+              "specific_observation": "Section 1.2, p. 21 and Figure 1.2: community pharmacies dispensed almost 8.9 billion DDD of reimbursed medicines in 2024 (+2.7% vs 2023, against estimated population growth of ~0.7%), i.e. 532 DDD per head (+2.0%). People aged 75+ used 1,574 DDD per head versus the 532 average. The largest per-head increase (+2.7%) was among 21-40-year-olds, driven by ADHD medicines (methylphenidate +10%, lisdexamfetamine +38%) and sertraline (+10%).",
+              "how_it_relates_to_original": "Confirms the steep age gradient underlying the projection: 75+ use about three times the average. It also shows that recent growth comes partly from non-demographic prescribing trends in younger adults, which a fixed-rate demographic projection cannot capture.",
+              "relationship_type": "observed_development",
+              "causality_limit": "DDD volume, not mass of active substance (the paper's unit), and reimbursed community-pharmacy medicines only. A single year, so it cannot be compared with the paper's 2020 tonnage projection without conversion.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.2166/wst.2011.120-E3",
+              "title": "Directive (EU) 2024/3019 of the European Parliament and of the Council of 27 November 2024 concerning urban wastewater treatment (recast)",
+              "publisher_or_authors": "European Parliament and Council of the European Union",
+              "published_date": "2024-11-27",
+              "url": "https://eur-lex.europa.eu/eli/dir/2024/3019/oj",
+              "source_kind": "policy_action",
+              "specific_observation": "Entered into force 1 Jan 2025 (transposition by 31 Jul 2027). It requires quaternary treatment (micropollutant removal) at plants of 150,000 p.e. and above: 20% of such plants by 31 Dec 2033, 60% by 31 Dec 2039 and all by 31 Dec 2045. Producers of medicinal products for human use and cosmetics must cover at least 80% of the additional treatment costs (extended producer responsibility). EurEau reported on 2026-02-20 that the EU General Court dismissed industry challenges to the EPR provisions as inadmissible.",
+              "how_it_relates_to_original": "The study aimed to anticipate rising pharmaceutical emissions to surface waters driven by population ageing. EU policy has since moved to mandatory end-of-pipe micropollutant removal financed mainly by pharmaceutical producers, a policy response to the problem the study framed.",
+              "relationship_type": "thematic_parallel",
+              "causality_limit": "No documented influence of this paper on the Directive. It is EU-wide, not Dutch-specific, implementation lies in the future, and cost-sharing remains politically contested.",
+              "verification_status": "only_secondary"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "original_passage_as_stored: \"Over the next few decades, many Western European countries will undergo a large demographic transformation ...\"",
+              "problem": "This is the abstract's opening context sentence, not the study's own projection; it reads as a generic demographic forecast and omits the quantified, conditional result (fixed 2007 consumption rates).",
+              "proposed_correction": "Add the projection sentence as the core passage: \"Calculations based on a fixed consumption rate (2007) predict that demographic developments can be expected to push consumption up to 1.504 metric tonnes in 2020 (+17%) and 1.851 metric tonnes by 2050 (+37%).\" Label it a demographic-only scenario for 354 prescribed pharmaceuticals in the Netherlands.",
+              "supporting_url": "https://api.crossref.org/works/10.2166/wst.2011.120"
+            },
+            {
+              "existing_statement_or_source": "Abstract figures: 1,251 t (2007) -> 1,504 t in 2020 (+17%) and 1,851 t by 2050 (+37%)",
+              "problem": "The figures do not reconcile: 1,504/1,251 = +20.2% and 1,851/1,251 = +48.0%. Either the percentages use a different base (e.g., a projection-start year) or there is an error in the abstract.",
+              "proposed_correction": "Do not reuse the percentages or tonnages until a maintainer checks the full text (tables). Flag the record for human review.",
+              "supporting_url": "https://api.crossref.org/works/10.2166/wst.2011.120"
+            }
+          ],
+          "synthesis": {
+            "continuities": "The demographic premise materialised: Eurostat (demo_pjanind) shows the Dutch 65+ share rising from 14.5% (2007) to 20.8% (2025). SFK data confirm a steep age gradient in medicine use (75+ use about three times the average). Pharmaceutical residues in water remained a policy concern, culminating in the EU's 2024 quaternary-treatment and producer-pays rules.",
+            "departures_and_surprises": "Soon after publication, actual DDD growth fell below the purely demographic expectation (2013: +1.1% vs +1.9%). More recent growth is partly driven by non-demographic trends such as ADHD medication in young adults, which a fixed-rate projection omits.",
+            "unresolved": "Whether 2020 consumption in tonnes of active substance reached the projected level has not been established: available statistics use DDD, not mass. The abstract's internal numeric inconsistency needs full-text resolution. The 2050 horizon has not arrived.",
+            "what_is_new_since_existing_record": "The stored passage is identified as context, the actual conditional projection is located, and an arithmetic inconsistency is flagged. Added SFK observations on realised vs demographically expected growth (2013, 2024) and the EU UWWTD recast as the major related policy action.",
+            "recommended_update": "needs_human_review"
+          },
+          "research_gaps": [
+            "Full text (IWA) not accessed; tables needed to resolve the +17%/+37% vs tonnage inconsistency and to see the demographic projection variant used.",
+            "No series of Dutch prescribed-pharmaceutical consumption in tonnes of active substance (the paper's unit) for 2020 or later was found; the GIP databank or RIVM emission estimates could provide this.",
+            "No study found that explicitly evaluates this projection or cites it in Dutch policy (e.g., 'Ketenaanpak Medicijnresten uit Water')."
+          ]
+        },
+        {
+          "record_id": "doi:10.1108/14636681111109660",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.1108/14636681111109660",
+            "quoted_or_precisely_located_passage": "The stored passage reproduces the abstract's 'Purpose' first sentence and the 'Design/methodology/approach' sentence verbatim. The substantive claim is in 'Findings': \"This case demonstrates the need for proactive strategic management which goes well beyond the institutional boundary, into national policy and European decision making.\" 'Research limitations' adds: \"Follow-up activities based on the research outputs are required for the findings to go forward.\"",
+            "locator": "Barker, Cox & Sveinsdottir, Foresight 13(1):5-18 (2011-02-22), structured abstract (Purpose; Design/methodology/approach; Findings; Research limitations/implications). Checked via Crossref-deposited abstract and the Emerald landing page; full text paywalled (Emerald: 'You do not currently have access to this content') - abstract-only check.",
+            "interpretation_or_correction": "A methodological evaluation of a five-step foresight and scenario-workshop process for European public metrology research institutes, within a larger European Commission (DG Research) study of public research institutes. The other sectors in that study included civil space, plant science, geosurveys and marine; the underlying report is Cox, Barker & Sveinsdottir, 'Analysis of public research institutes in Europe in selected S&T fields - Metrology', Nov 2009, contract FORESIGHT-200702 Lot 2. The abstract gives no scenario names, time horizon or quantitative projections, so there is no forecast to compare; only the normative finding (European-level strategic coordination needed) and the networking aim can be traced.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.1108/14636681111109660-E1",
+              "title": "Decision No 555/2014/EU on the participation of the Union in a European Metrology Programme for Innovation and Research (EMPIR) jointly undertaken by several Member States",
+              "publisher_or_authors": "European Parliament and Council of the European Union",
+              "published_date": "2014-05-15",
+              "url": "https://www.legislation.gov.uk/eudn/2014/555/introduction",
+              "source_kind": "policy_action",
+              "specific_observation": "EMPIR is an Article 185 TFEU joint programme running 2014-2024 (recital 7) and implemented by EURAMET e.V. (recital 13). Recital 10 aims at 'a stronger integration of Participating States' programmes', and recital 26 at an integrated European Metrology Research system. The predecessor EMRP received an EU contribution of up to EUR 200 million (recital 4). The EP Legislative Observatory summary gives the EMPIR EU contribution as up to EUR 300 million, with an independent-expert interim evaluation due by 30 June 2017.",
+              "how_it_relates_to_original": "The paper's finding called for proactive strategic management reaching 'into national policy and European decision making'. EMPIR institutionalised European-level joint programming and integration of national metrology research, the kind of follow-up the paper said was needed.",
+              "relationship_type": "observed_development",
+              "causality_limit": "No documented influence of the paper or its workshops. The trend predates it (EURAMET founded 2007; EMRP from 2009), so this is a continuation as much as a new development.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.1108/14636681111109660-E2",
+              "title": "Decision (EU) 2021/2084 on the participation of the Union in the European Partnership on Metrology jointly undertaken by several Member States (CELEX 32021D2084)",
+              "publisher_or_authors": "European Parliament and Council of the European Union",
+              "published_date": "2021-11-24",
+              "url": "https://lawplayer.com/eu/act/32021D2084",
+              "source_kind": "policy_action",
+              "specific_observation": "Art. 3(1): EU contribution up to EUR 300 million. Art. 1(1): 25 Participating States, including Norway. Art. 4(1)(b): EURAMET is the implementing structure. Art. 2(3)(a): research capabilities to be 'built within the framework of new European metrology networks'. EURAMET's Metrology Partnership page states an expected total budget of 'around 690 million euro' for 2021-2027.",
+              "how_it_relates_to_original": "Shows the European-level coordination trajectory continuing and deepening under Horizon Europe, with networks of national institutes written into law. This parallels the paper's emphasis on stakeholder networking and a shared European vision for public metrology institutes.",
+              "relationship_type": "observed_development",
+              "causality_limit": "No documented link to the paper. Text read from a third-party reproduction of the Decision (LawPlayer, stated current to 4 July 2026) and the EP Legislative Observatory proposal summary, not the EUR-Lex rendering.",
+              "verification_status": "only_secondary"
+            },
+            {
+              "evidence_id": "10.1108/14636681111109660-E3",
+              "title": "European Metrology Networks Report 2019 - 2024",
+              "publisher_or_authors": "EURAMET e.V.",
+              "published_date": "2024-07-18",
+              "url": "https://www.euramet.org/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzUzODgxMTgsImV4cCI6MTgwNzAxMDUxOCwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJNZWRpYS9kb2NzL0VNUlAvRG9jdW1lbnRzX1BhcnRuZXJzaGlwL0VNTl9SZXBvcnRfMjAxOV8tXzIwMjQucGRmIiwicGFnZSI6MjgyMn0.tBteRHTiqEnfRoqsKJf5-kH4j0R9-mFbUVlFWZ9SQO8/EMN_Report_2019_-_2024.pdf",
+              "source_kind": "other",
+              "specific_observation": "EURAMET covers 39 national metrology institutes and 77 designated institutes. The first six European Metrology Networks were approved in 2019 (p. 8) and twelve were approved between 2018 and 2024 (p. 9). EMNs channel stakeholder needs into EMPIR and the Metrology Partnership. The report concedes that 'The networks are at different levels of maturity' and calls their development 'a challenging venture' (p. 2).",
+              "how_it_relates_to_original": "The paper valued scenario workshops for helping experts and stakeholders network and build a shared vision, and said follow-up was needed. EMNs are a permanent, stakeholder-facing networking structure with strategic research agendas, a later institutional form of that aim.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Self-assessment by the implementing body, not an independent evaluation, with no connection to the 2009-2011 foresight workshops documented. The signed download URL may expire (token expiry around 2027); the PDF is dated by its file metadata.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "original_passage_as_stored (Purpose + Design/methodology/approach sentences)",
+              "problem": "Verbatim, but it describes method only. It contains no future-facing claim, scenario content or time horizon, so it can mislead if treated as a forecast record.",
+              "proposed_correction": "Classify as a methodological foresight record. If a substantive passage is needed, use the Findings sentence (\"This case demonstrates the need for proactive strategic management which goes well beyond the institutional boundary, into national policy and European decision making.\"), and point to the 2009 EC report for the actual scenarios.",
+              "supporting_url": "https://api.crossref.org/works/10.1108/14636681111109660"
+            }
+          ],
+          "synthesis": {
+            "continuities": "European-level coordination of public metrology research deepened after 2011: EMPIR (2014-2024, EU up to EUR 300M), then the European Partnership on Metrology (2021-2027, EU up to EUR 300M, ~EUR 690M total), with EURAMET as the single implementing structure. Stakeholder-facing European Metrology Networks were formalised from 2019.",
+            "departures_and_surprises": "Networks were formalised as thematic EMNs tied to EU regulation and Horizon Europe clusters rather than through broader institute reform. EURAMET itself reports uneven maturity across the networks.",
+            "unresolved": "The paper's actual scenarios and their horizon are in paywalled full text and the 2009 EC report, which were not accessed, so no scenario-by-scenario comparison is possible. No independent evaluation (e.g., the 2017 EMPIR interim evaluation) was retrieved.",
+            "what_is_new_since_existing_record": "The stored passage is identified as methodological, and the substantive Findings and the parent 2009 EC study are located. Added the 2014 and 2021 legal acts and EURAMET's 2024 EMN report as institutional developments.",
+            "recommended_update": "needs_human_review"
+          },
+          "research_gaps": [
+            "Full text (Emerald) and the Nov 2009 EC report not accessed; scenario names, horizon and policy recommendations unknown.",
+            "Commission/independent EMPIR interim (2017) or final evaluation not retrieved.",
+            "No evidence located on whether the workshop participants or recommendations fed into EMPIR or EMN design."
+          ]
+        },
+        {
+          "record_id": "doi:10.1111/j.1466-8238.2011.00669.x",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.1111/j.1466-8238.2011.00669.x",
+            "quoted_or_precisely_located_passage": "Stored passage = abstract 'Aim' sentence 1 + 'Methods' sentence 2, verbatim. Key projection (Results): early-successional species' 21st-century distributions under realistic migration \"matched quite well with the unlimited migration assumption (mean migration rate over Europe for A1fi/GRAS ... 156.7 ± 79.1 m year−1 and for B1/SEDG 164.3 ± 84.2 m year−1)\", while mid- to late-successional species \"matched better with the no migration assumption (A1fi/GRAS, 15.2 ± 24.5 m year−1 and B1/SEDG, 16.0 ± 25.6 m year−1)\".",
+            "locator": "Meier, Lischke, Schmatz & Zimmermann, Global Ecology and Biogeography 21(2):164-178 (online 2011-05-05; issue 2012-02), structured abstract (Aim, Location, Methods, Results, Main conclusions). Checked via publisher-deposited abstract in Crossref; Wiley full text returned HTTP 403/paywall - abstract-only check.",
+            "interpretation_or_correction": "Model-based projection for Europe of 14 tree species. SDMs were calibrated on abundance from 5,768 ICP Forests Level I plots (climate, topography, soil, land use); realistic migration rates came from TreeMig process-model experiments as functions of macroclimate, inter-specific competition and habitat connectivity, applied as a migration-cost surface. Results are compared with no-migration and unlimited-migration assumptions under the A1fi/GRAS and B1/SEDG climate and land-use scenarios for the 21st century. Main conclusions: competition slows range shifts more than adverse macroclimate, fragmentation causes lags, and early-successional species track climate almost instantly while mid- to late-successional species migrate very slowly. The end-of-century horizon has not arrived; only interim observations exist.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.1111/j.1466-8238.2011.00669.x-E1",
+              "title": "Disparity in elevational shifts of European trees in response to recent climate warming",
+              "publisher_or_authors": "Rabasa, S.G.; Granda, E.; Benavides, R.; Kunstler, G.; Espelta, J.M.; Ogaya, R.; Peñuelas, J.; Scherer-Lorenzen, M. et al. - Global Change Biology 19(8):2490-2499, doi:10.1111/gcb.12220",
+              "published_date": "2013-05-14",
+              "url": "https://doi.org/10.1111/gcb.12220",
+              "source_kind": "peer_reviewed_research",
+              "specific_observation": "Juvenile vs adult altitudinal distributions of seven major European tree species on transects from southern Spain (37°N) to northern Sweden (67°N), where mean temperature over the last decade was 0.86 °C above the previous 30-year period. Only Abies alba showed juveniles peaking higher than adults. Fagus sylvatica, Picea abies and Pinus sylvestris showed the opposite pattern, and no change was detected for Quercus ilex, Acer pseudoplatanus and Q. petraea. The authors state that the findings are 'in contrast with theoretical predictions'.",
+              "how_it_relates_to_original": "Field evidence that several mid- to late-successional European trees are not (yet) tracking warming upslope, consistent in direction with Meier et al.'s projection of very slow migration for such species. The opposite-direction pattern points to demographic and ontogenetic processes beyond the competition and connectivity mechanisms that were modelled.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Elevational juvenile-adult comparison, not latitudinal range-front migration. Limited transects and species, whose overlap with Meier et al.'s 14 species was not verified. Abstract-level check.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.1111/j.1466-8238.2011.00669.x-E2",
+              "title": "Species better track climate warming in the oceans than on land",
+              "publisher_or_authors": "Lenoir, J.; Bertrand, R.; Comte, L.; Bourgeaud, L.; Hattab, T.; Murienne, J.; Grenouillet, G. - Nature Ecology & Evolution 4:1044-1059, doi:10.1038/s41559-020-1198-2",
+              "published_date": "2020-05-25",
+              "url": "https://archimer.ifremer.fr/doc/00632/74377/",
+              "source_kind": "peer_reviewed_research",
+              "specific_observation": "BioShifts geodatabase of 30,534 range shifts (over 12,000 species): marine species shift poleward about six times faster than terrestrial ones, and terrestrial species lag behind shifting isotherms more than marine species. 'On land, human activities impede the capacity of terrestrial species to track isotherm shifts in latitude'; elevational shifts follow isotherms but more slowly than expected. The data are biased toward developed Northern Hemisphere regions.",
+              "how_it_relates_to_original": "Broad empirical support for the paper's premise that species may not keep pace with climate change, and for the importance of landscape and human constraints (cf. its habitat-connectivity and land-use variables) in slowing range shifts on land.",
+              "relationship_type": "thematic_parallel",
+              "causality_limit": "Global, multi-taxa synthesis; no tree- or Europe-specific estimate was checked. Heterogeneous underlying studies, and it does not test the TreeMig-derived rates.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.1111/j.1466-8238.2011.00669.x-E3",
+              "title": "Excess forest mortality is consistently linked to drought across Europe",
+              "publisher_or_authors": "Senf, C.; Buras, A.; Zang, C.S.; Rammig, A.; Seidl, R. - Nature Communications 11:6200, doi:10.1038/s41467-020-19924-1",
+              "published_date": "2020-12-03",
+              "url": "https://doi.org/10.1038/s41467-020-19924-1",
+              "source_kind": "peer_reviewed_research",
+              "specific_observation": "Satellite canopy-mortality maps for 1987-2016 show excess forest mortality significantly related to drought across continental Europe, with threshold behaviour: steep increases when the March-July climatic water balance falls below -1.6 SD. Drought caused about 500,000 ha of excess mortality, and the authors suggest that more drought could trigger widespread tree mortality.",
+              "how_it_relates_to_original": "Points to a pathway of climate-driven distribution change, drought-induced mortality within ranges and at trailing edges, that lies outside a migration-focused SDM framework centred on colonisation constraints. Realised range dynamics may be dominated by rapid losses rather than slow gains.",
+              "relationship_type": "limitation",
+              "causality_limit": "Mortality is not resolved by species in this analysis and does not test Meier et al.'s projections. The study period ends in 2016, before the 2018-2020 central European drought years.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "original_passage_as_stored (Aim sentence 1 + Methods sentence 2)",
+              "problem": "It joins two non-adjacent sentences and omits the study's actual goal (influence of macroclimate, competition and connectivity on migration rates of 14 species) and all quantitative results, so the record holds no projection.",
+              "proposed_correction": "Append the Main conclusions: \"Early-successional species track climate change almost instantaneously while mid- to late-successional species were predicted to migrate very slowly\", with the Results' migration rates (~157-164 vs ~15-16 m/yr) and scenario labels A1fi/GRAS and B1/SEDG.",
+              "supporting_url": "https://api.crossref.org/works/10.1111/j.1466-8238.2011.00669.x"
+            },
+            {
+              "existing_statement_or_source": "historical_date 2011-05-05",
+              "problem": "This is the online (Early View) date; the version of record appeared in the 2012 print issue, which the record does not cite.",
+              "proposed_correction": "Keep 2011-05-05 as the first-publication date and add the citation: Global Ecology and Biogeography 21(2):164-178 (Feb 2012); authors Meier, Lischke, Schmatz, Zimmermann.",
+              "supporting_url": "https://api.crossref.org/works/10.1111/j.1466-8238.2011.00669.x"
+            }
+          ],
+          "synthesis": {
+            "continuities": "Observational syntheses since 2011 support the core premise that terrestrial species, especially under human land-use constraints, lag behind shifting climate. European field data show several mid- to late-successional trees not shifting upslope, consistent in direction with the projected very slow migration.",
+            "departures_and_surprises": "Some species show juveniles at lower, not higher, elevations than adults, implying demographic or ontogenetic controls not represented in the migration model. Drought-driven mortality emerged as a major, abrupt driver of forest change, outside the model's colonisation-focused framing.",
+            "unresolved": "The projection horizon (21st century) is far off, and no study was found that directly evaluates the predicted migration rates for the same 14 species. Distinguishing slow migration from non-climatic causes in observed distributions remains methodologically hard.",
+            "what_is_new_since_existing_record": "Verified the abstract, located the quantitative projections and corrected the stitched passage and citation date. Added three peer-reviewed observational studies (2013, 2020, 2020) relating to lagging migration and disturbance-driven change.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Full text (Wiley) not accessed; species list and per-species projections not checked.",
+            "No ICP Forests re-survey or European regeneration-front study was found that tests these 14 species' migration rates directly.",
+            "Assisted-migration policy uptake in European forestry was not examined."
+          ]
+        },
+        {
+          "record_id": "doi:10.5771/1435-2869-2011-4-521",
+          "original_source_check": {
+            "checked": true,
+            "source_url": "https://doi.org/10.5771/1435-2869-2011-4-521",
+            "quoted_or_precisely_located_passage": "The stored passage matches the article abstract: exact-phrase checks confirmed 'Recent literature has shown that it is difficult to ascertain the impact of an ageing population on labour productivity', 'sensitivity tests of long-term projections of labour productivity (to 2050)', 'A model of the International Labour Organisation (ILO) is applied', 'three different rates of improvement in life expectancy', 'The study confirms that an ageing population has a negative effect on labour productivity' and 'the overall direction of the trend is clear'. The stored version lacks spaces after full stops (e.g., 'productivity.According').",
+            "locator": "Rangelova & Sariiski, SEER - Journal for Labour and Social Affairs in Eastern Europe 14(4):521-544 (2011; Nomos). Abstract checked via the ETUI Labourline catalogue record (https://www.labourline.org/KENTIKA-19129293124919474759-24-Ageing-population-and-labour-p.htm); Crossref holds metadata only. Full text on Nomos eLibrary/Inlibra is access-restricted ('Kein Zugriff') - abstract-only check.",
+            "interpretation_or_correction": "Bulgaria-only study: a literature review plus ILO-model sensitivity tests of labour productivity to 2050, driven by population size and age structure under three life-expectancy improvement variants (fast, medium, slow). It concludes that ageing has a negative effect on labour productivity while flagging the long timeframe. This is a sensitivity analysis comparing demographic variants (a relative effect), not a forecast that productivity levels will fall. The 2050 horizon has not arrived.",
+            "confidence": "partially_verified"
+          },
+          "new_evidence": [
+            {
+              "evidence_id": "10.5771/1435-2869-2011-4-521-E1",
+              "title": "Population on 1 January (demo_pjan) and population structure indicators (demo_pjanind): Bulgaria",
+              "publisher_or_authors": "Eurostat",
+              "published_date": "2026-09-25",
+              "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjanind/default/table?lang=en",
+              "source_kind": "primary_observation",
+              "specific_observation": "Bulgaria's population was 7,369,431 (2011), 6,532,117 (2021) and 6,437,360 (2025), -12.6% over 2011-2025. The 65+ share rose from 18.5% to 23.0% to 24.0%, the old-age dependency ratio from 27.0 to 36.7 to 38.7, and the median age from 42.5 (2011) to 47.3 (2025). Extracted via the Eurostat API on 2026-10-26.",
+              "how_it_relates_to_original": "Confirms that the study's demographic premise, a shrinking and rapidly ageing population, materialised strongly in the interim period.",
+              "relationship_type": "observed_development",
+              "causality_limit": "Demographic outcomes do not validate the productivity link. The series may be affected by census-based revisions (2021 census), and the paper's life-expectancy variants were not compared with outturns.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.5771/1435-2869-2011-4-521-E2",
+              "title": "Labour productivity and unit labour costs (nama_10_lp_ulc): real labour productivity, Bulgaria and EU27_2020",
+              "publisher_or_authors": "Eurostat",
+              "published_date": "2026-10-22",
+              "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table?lang=en",
+              "source_kind": "primary_observation",
+              "specific_observation": "Real labour productivity per person (index 2015=100): Bulgaria 93.5 (2011), 111.4 (2019), 123.7 (2024), i.e. +32% over 2011-2024; EU27 98.0 to 104.7 (+7%). Per hour worked: Bulgaria 93.5 to 125.1 (+34%); EU27 96.4 to 106.0 (+10%). Extracted via the Eurostat API on 2026-10-26.",
+              "how_it_relates_to_original": "Despite rapid ageing and population decline, Bulgaria recorded productivity growth far above the EU average in the interim. This does not refute the study's relative (counterfactual) ageing effect, but other drivers not modelled there, likely including economic catch-up, dominated observed productivity outcomes so far.",
+              "relationship_type": "unexpected_development",
+              "causality_limit": "Per-person productivity can rise through composition effects (exit or emigration of lower-productivity workers, sectoral shifts). With no counterfactual this neither tests nor contradicts the ILO-model sensitivity result.",
+              "verification_status": "verified_in_source"
+            },
+            {
+              "evidence_id": "10.5771/1435-2869-2011-4-521-E3",
+              "title": "Economic Aspects of Demographic Changes in the European Union and in Bulgaria",
+              "publisher_or_authors": "Rangelova, R.; Bilyanski, V. - Economic Studies (Ikonomicheski Izsledvania) 28(5):25-54",
+              "published_date": "2019 (issue 5; exact date unknown)",
+              "url": "https://www.iki.bas.bg/Journals/EconomicStudies/2019/2019-5/3_Rangelova-1_f-f.pdf",
+              "source_kind": "peer_reviewed_research",
+              "specific_observation": "pp. 45-46 restate ILO-model results to 2050 under three life-expectancy variants, citing Rangelova & Sariiski (2013), 'Ageing in Bulgaria', pp. 124-139. Differences in GDP per employed person across variants are '(albeit very small)', and faster life-expectancy improvement goes with lower productivity. The authors call the negative ageing effect '(though unconvincing)' yet 'confirmed', and urge caution because the model is 'a simple extrapolation of current trends'.",
+              "how_it_relates_to_original": "The same lead author's later characterisation of the same type of ILO-model exercise substantially qualifies the 2011 abstract's 'the overall direction of the trend is clear': the scenario differences are very small and the effect is described as unconvincing.",
+              "relationship_type": "limitation",
+              "causality_limit": "Author self-assessment, not independent. It cites a 2013 publication; whether that is identical to or an update of the 2011 SEER analysis was not verified.",
+              "verification_status": "verified_in_source"
+            }
+          ],
+          "corrections_to_existing": [
+            {
+              "existing_statement_or_source": "original_passage_as_stored (formatting)",
+              "problem": "Missing spaces after full stops ('productivity.According', 'issue.After', 'slow.The', 'productivity.The') make the stored text non-verbatim in form.",
+              "proposed_correction": "Restore a single space after each sentence-ending full stop; the wording is otherwise consistent with the abstract.",
+              "supporting_url": "https://www.labourline.org/KENTIKA-19129293124919474759-24-Ageing-population-and-labour-p.htm"
+            },
+            {
+              "existing_statement_or_source": "historical_date 2011-01-01",
+              "problem": "Placeholder day and month: Crossref gives only the year 2011 (vol. 14, no. 4, pp. 521-544), and the Nomos/Inlibra issue page shows a citation_publication_date of 2012-06-21.",
+              "proposed_correction": "Store year-level precision (2011, SEER 14(4):521-544) and do not infer 1 January; optionally note the publisher's online issue date 2012-06-21.",
+              "supporting_url": "https://api.crossref.org/works/10.5771/1435-2869-2011-4-521"
+            }
+          ],
+          "synthesis": {
+            "continuities": "Bulgaria's demographic decline and ageing proceeded strongly (population -12.6% and 65+ share 18.5% to 24.0%, 2011-2025). Later work, including the same author (2019) and a Bulgarian National Bank model study (DP/124/2025, Ivanov, Cvetkova & Vassilev), still treats shrinking labour input as a lasting drag on potential growth.",
+            "departures_and_surprises": "Observed real labour productivity rose about 32% (2011-2024), more than four times the EU average, despite ageing. The lead author later described the modelled negative ageing effect on productivity as small and 'unconvincing'.",
+            "unresolved": "No counterfactual analysis isolating the effect of workforce ageing on Bulgarian productivity since 2011 was found. The 2050 horizon has not arrived, and the ILO model's projected productivity path could not be compared numerically because the full text was not accessible.",
+            "what_is_new_since_existing_record": "Abstract verified (with formatting and date precision issues corrected) and the study framed as a sensitivity analysis rather than a forecast. Added Eurostat demographic and productivity outturns and the author's 2019 reassessment.",
+            "recommended_update": "enrich"
+          },
+          "research_gaps": [
+            "Full SEER text (Nomos) not accessed; projected productivity figures by variant not checked.",
+            "Relationship between the 2011 SEER article and Rangelova & Sariiski (2013, 'Ageing in Bulgaria') not verified.",
+            "Bulgarian National Bank DP/124/2025 (https://www.bnb.bg/bnbweb/groups/public/documents/bnb_publication/discussion_2025_124_en.pdf) was read only via a tool summary; its productivity and human-capital findings should be checked before use as evidence."
+          ]
+        }
+      ]
+    }
+  ]
+}
