@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T17:28:45.092045+00:00",
+  "generated_at": "2026-10-26T06:46:01.394876+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
   "original_records": 618,
   "selection_counts": {
     "active": 618
   },
-  "rejected_identifier_count": 9470,
+  "rejected_identifier_count": 9471,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
