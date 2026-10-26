@@ -4318,6 +4318,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2022"
     },
+    "10.1016/j.enconman.2023.117968": {
+      "reason": "european_subject_not_established",
+      "year": "2023"
+    },
     "10.1016/j.enconman.2023.118058": {
       "reason": "outside_historical_original_period",
       "year": "2024"
@@ -10986,6 +10990,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2011"
     },
+    "10.1016/j.technovation.2023.102760": {
+      "reason": "european_subject_not_established",
+      "year": "2023"
+    },
     "10.1016/j.techsoc.2015.03.006": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2015"
@@ -15481,6 +15489,10 @@
     "10.1080/08941920.2018.1547852": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1080/08941920.2020.1830456": {
+      "reason": "european_subject_not_established",
+      "year": "2020"
     },
     "10.1080/08956308.2017.1255053": {
       "reason": "european_subject_not_established",
@@ -20086,6 +20098,10 @@
       "reason": "european_subject_not_established",
       "year": "2013"
     },
+    "10.1108/jsma-01-2014-0007": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1108/jtf-03-2019-080": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -24110,6 +24126,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2014"
     },
+    "10.1186/cc11086": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
     "10.1186/gb-2012-13-5-158": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -26617,6 +26637,10 @@
     "10.15611/pn.2016.443.12": {
       "reason": "european_subject_not_established",
       "year": "2016"
+    },
+    "10.15640/jea.v5n2a6": {
+      "reason": "non_european_subject",
+      "year": "2018"
     },
     "10.15663/ajte.v9.i0.95": {
       "reason": "future_facing_research_question_not_established",
@@ -33098,6 +33122,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.3390/su12176919": {
+      "reason": "non_european_subject",
+      "year": "2020"
+    },
     "10.3390/su12177079": {
       "reason": "non_european_subject",
       "year": "2020"
@@ -34722,6 +34750,10 @@
       "reason": "european_subject_not_established",
       "year": "2016"
     },
+    "10.4104/pcrj.2011.00013": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
     "10.4108/fiee.1.1.e2": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -35107,6 +35139,10 @@
       "year": "2020"
     },
     "10.46473/wcsaj27240606/18-09-2020-0014//full/html": {
+      "reason": "european_subject_not_established",
+      "year": "2020"
+    },
+    "10.46609/ijsser.2020.v05i08.013": {
       "reason": "european_subject_not_established",
       "year": "2020"
     },
