@@ -310,6 +310,9 @@ def build():
     (p.get('relevance') or {}).get('reason',''),
     'Available abstract (not full text): '+((p.get('abstract') or '')[:1400] or 'Unavailable')])
   possible.append((c.get('title',''),paras))
+ from research_additions import research_records
+ if research_records():
+  possible.extend([('Research update · 26 October 2026 — independently check before citing',['12 researched cases. External LLM checks are not editorial verification; these connections are not prediction scores.'])]+research_records())
  make_docx(ROOT/'VV-FUTURES-POSSIBLE-CONNECTIONS.docx','Possible connections — not checked',
   'Automatically collected research leads for “Let’s see”. These are NOT verified outcomes or final findings.',
   possible or [('No candidate connections yet',['No candidate sources retained so far.'])])

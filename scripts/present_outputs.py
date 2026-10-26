@@ -48,12 +48,27 @@ def run():
         p=doc.add_paragraph();r=p.add_run('ORIGINAL STUDY   ');r.bold=True;r.font.size=Pt(8)
         r=p.add_run(c.get('source_url') or 'Source link not recorded');r.font.size=Pt(8)
         p.paragraph_format.space_after=Pt(12)
+    # A clearly separate source-context appendix; original indexed excerpts are not silently rewritten.
+    from research_additions import research_cases
+    cases=research_cases()
+    if cases:
+        doc.add_page_break()
+        doc.add_paragraph('Source-context notes — 26 October 2026',style='Heading 1')
+        doc.add_paragraph('Twelve research source checks supplied by an external LLM. These notes refine how the historical works should be read; not all full texts were accessible and independent editorial verification is pending. Original indexed excerpts above remain unchanged.')
+        for c in cases:
+            d=c.get('original_source_check',{})
+            doc.add_paragraph(c['record_id'],style='Heading 1')
+            doc.add_paragraph(d.get('interpretation_or_correction',''))
+            doc.add_paragraph('Original source: '+d.get('source_url',''))
+            if c.get('corrections_to_existing'):
+                for x in c['corrections_to_existing']:
+                    doc.add_paragraph('Proposed correction (awaiting review): '+x.get('proposed_correction',''))
     doc.save(ROOT/'VV-FUTURES-HISTORICAL-CLAIMS.docx')
 
     # Editorial document: preserve supplied conclusions verbatim and mark verification clearly.
     doc=Document();setup(doc,'LLM-reviewed narratives · Source verification still required')
-    lead(doc,'European futures — reviewed accounts','58 LLM-assisted interpretations supplied 23 October 2026. These are editorial research drafts. Original claims, later source alignment and cited web references have not all been independently verified.')
-    doc.add_paragraph(f'{len(reviews)} research accounts · Not a prediction-accuracy scoreboard')
+    lead(doc,'European futures — reviewed accounts','Existing editorial accounts and twelve further case investigations dated 26 October 2026. Research-based connections are presented with their evidence, limitations and unresolved questions, not as prediction grades.')
+    doc.add_paragraph(f'{len(reviews)} earlier accounts + 12 new researched accounts · Not a prediction-accuracy scoreboard')
     for i,f in enumerate(reviews,1):
         doc.add_paragraph(f"{i:02}.  {f.get('title','Untitled')}",style='Heading 1')
         doc.add_paragraph(f.get('interpretation',''),style='Normal')
@@ -67,6 +82,8 @@ def run():
             for r in p.runs:r.font.size=Pt(8)
         p=doc.add_paragraph('STATUS  ·  LLM-reviewed; awaiting source verification')
         for r in p.runs:r.font.size=Pt(8);r.italic=True
+    from research_additions import add_reviewed_research
+    add_reviewed_research(doc)
     doc.save(ROOT/'VV-FUTURES-REVIEWED-FINDINGS.docx')
 
     # Clean overview first; detailed candidate links kept separate for research purposes.
@@ -97,6 +114,17 @@ def run():
     for col,width in [('A',36),('B',58),('C',85),('D',75),('E',40)]:rs.get_range(f'{col}:{col}').format.column_width=width
     rs.freeze_panes.freeze_rows(1)
 
+    # Add new, documented research accounts alongside earlier editorial interpretations.
+    from research_additions import research_cases
+    research_reviews=research_cases()
+    if research_reviews:
+        sheet=wb.worksheets.add('Research syntheses')
+        hdr=['Record ID','Original URL','Continuities','Departures / surprises','Unresolved','Scope / source limitations','Review status']
+        data=[[c['record_id'],c['original_source_check'].get('source_url',''),c['synthesis'].get('continuities',''),c['synthesis'].get('departures_and_surprises',''),c['synthesis'].get('unresolved',''),c['original_source_check'].get('interpretation_or_correction',''),c['synthesis'].get('recommended_update','')] for c in research_reviews]
+        sheet.get_range_by_indexes(0,0,len(data)+1,len(hdr)).values=[hdr]+data
+        sheet.get_range('A1:G1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'}}
+        for col,width in [('A',30),('B',48),('C',92),('D',92),('E',92),('F',92),('G',27)]:sheet.get_range(f'{col}:{col}').format.column_width=width
+        sheet.freeze_panes.freeze_rows(1)
     ls=wb.worksheets.add('Unreviewed source links')
     lh=['Original claim ID','Later paper','Year','Later paper URL','Why scanner connected them','Status']
     lr=[]
@@ -109,6 +137,15 @@ def run():
     ls.get_range('A1:F1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'},'row_height':30}
     for col,width in [('A',29),('B',54),('C',12),('D',49),('E',68),('F',23)]:ls.get_range(f'{col}:{col}').format.column_width=width
     ls.freeze_panes.freeze_rows(1)
+    from research_additions import evidence_rows
+    research=evidence_rows()
+    if research:
+        add=wb.worksheets.add('Research 2026-10')
+        headers=['Original record ID','Original study URL','Evidence ID','Later source title','Source date','Publisher','Later source URL','Reported observation','Proposed relationship','Limits / comparability','LLM source check','Research disposition']
+        add.get_range_by_indexes(0,0,len(research)+1,len(headers)).values=[headers]+research
+        add.get_range('A1:L1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'},'row_height':32}
+        for col,width in [('A',30),('B',47),('C',32),('D',55),('E',18),('F',43),('G',55),('H',90),('I',80),('J',85),('K',24),('L',24)]:add.get_range(f'{col}:{col}').format.column_width=width
+        add.freeze_panes.freeze_rows(1)
     out=ROOT/'VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx'; SpreadsheetFile.export_xlsx(wb).save(str(out))
     print('Presented:',len(claims),'claims,',len(links),'candidate links,',len(reviews),'LLM reviews')
 
