@@ -1,22 +1,22 @@
 {
   "policy_version": 5,
-  "generated_at": "2026-10-27T06:46:57.051472+00:00",
+  "generated_at": "2026-10-27T19:07:44.343341+00:00",
   "applied": true,
-  "original_studies": 618,
+  "original_studies": 619,
   "historical_period": {
     "start": "2011-01-01",
     "end": "2023-12-31"
   },
   "selection_counts": {
-    "active": 618
+    "active": 619
   },
-  "retained_in_main_file": 618,
+  "retained_in_main_file": 619,
   "removed_from_main_file": 0,
-  "prior_rejections": 9493,
-  "rejection_registry_after_apply": 9493,
+  "prior_rejections": 9573,
+  "rejection_registry_after_apply": 9573,
   "removed_by_reason": {},
   "inspection_method": {
-    "source_traceability": 618
+    "source_traceability": 619
   },
   "already_rejected_encountered": {},
   "examples_kept": [

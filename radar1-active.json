@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T06:46:57.051472+00:00",
+  "generated_at": "2026-10-27T19:07:44.343341+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 618,
+  "original_records": 619,
   "selection_counts": {
-    "active": 618
+    "active": 619
   },
-  "rejected_identifier_count": 9493,
+  "rejected_identifier_count": 9573,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -3814,6 +3814,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Materials and Methods:In this study, using in-depth interview tools and a questionnaire governing the Maktor software with 25 health system experts in the 2019 and relying on the process of scriptwriting at the University of Norway in four steps of analyzing trends and actors in the field of health as The first step is to determine the drivers as the second step, the development of scenarios as the third step, and finally the evaluation and strategic recommendation as the fourth step to design the scenarios of the health system at the national level.Results: The findings include four scenarios.The goal of the first scenario as a desirable scenario, Equity in the collective dimension and wellbeing in the individual dimension, in the second scenario as a possible scenario, the goal of that Equity in the collective dimension and ignoring wellbeing in the individual dimension, in the third scenario as a possible scenario goal of wellbeing in the dimension Individual and neglect of Equity in the collective dimension, and finally the fourth scenario as a scenario of disaster in which there is neither wellbeing in the individual dimension nor Equity in the collective dimension.Conclusion: In order to move away from the disaster scenario and approach the desired scenario, the country's health system needs to change the paradigm from therapist to caregiver in such a way that multiple care promotes health, disease prevention, and treatment.Diseases and rehabilitation are integrated and, in this integration, the most important policy will be health promotion.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1016/j.ecolind.2021.108236",
+      "title": "Assessing future sustainability and resilience of farming systems with a participatory method: A case study on extensive sheep farming in Huesca, Spain",
+      "date": "2021-10-05",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The methodology includes an assessment of current performance (Step 1), identification of critical thresholds whose exceedance can lead to large and permanent system change (Step 2), impact assessment when critical thresholds are exceeded (Step 3), identification of desired alternative systems and their expected improved performance of sustainability and resilience (Step 4), identification of strategies to realize those alternative systems (Step 5), and an assessment on the compatibility of alternative systems with the developments of exogenous factors as projected in different future scenarios (Step 6). Although the high-tech extensive system seems most compatible with a future in which sustainable food production is very important, the semi-intensive system seems a less risky bet as it has on average the best compatibility with multiple future scenarios.",
       "investigation_type": "alternative_scenarios"
     },
     {
