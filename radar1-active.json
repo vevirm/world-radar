@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T07:17:27.894725+00:00",
+  "generated_at": "2026-10-28T19:18:27.829993+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 619,
+  "original_records": 621,
   "selection_counts": {
-    "active": 619
+    "active": 621
   },
-  "rejected_identifier_count": 9582,
+  "rejected_identifier_count": 9618,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -5455,6 +5455,15 @@
       "investigation_type": "projection_or_forecast"
     },
     {
+      "doi": "10.3389/ffgc.2023.1236842",
+      "title": "More losses than gains? Distribution models predict species-specific shifts in climatic suitability for European beech forest herbs under climate change",
+      "date": "2023-11-23",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Methods By using a total of 394,502 occurrence records and an ensemble of species distribution models (SDMs), we quantified the potential current distribution and future (2061-2080) range shifts in climatic suitability (expressed as occurrence probability, OP) according to two climate change scenarios (moderate SSP2-4.5 and severe SSP5-8.5). However, the magnitude and directions of changes in the climatic suitability were highly species-specific; few species might even increase OP in the future, particularly in case of SSP2-4.5 scenario.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1016/j.renene.2023.118989",
       "title": "Validating EURO-CORDEX climate simulations for modelling European wind power generation",
       "date": "2023-11-30",
@@ -5534,6 +5543,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Acknowledgment The paper shows the authors’ results within the frameworks of the study, performed in 2021−2023 at Kyiv National University of Trade and Economics at the request of the Ministry of Education and Science of Ukraine “Digital transformation of trade, economic and tourist systems in Ukraine” (state registration number 0121U112231) and “Forecasting the impact of the tourism system on the country’s economy” (state registration number 0122U001559). Considering the war in Ukraine, it will be necessary to restore the tourism system.",
       "investigation_type": "projection_or_forecast"
+    },
+    {
+      "doi": "10.21138/bage.3448",
+      "title": "Back to business? Taking lessons from Porto (Portugal) to inform sustainable tourism futures after COVID-19",
+      "date": "2023-12-23",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The vulnerabilities highlighted during the pandemic should guide the development towards a more sustainable future.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.3390/en17010104",
