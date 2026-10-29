@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T19:18:27.829993+00:00",
+  "generated_at": "2026-10-29T07:36:00.920004+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 621,
+  "original_records": 629,
   "selection_counts": {
-    "active": 621
+    "active": 629
   },
-  "rejected_identifier_count": 9618,
+  "rejected_identifier_count": 9723,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -838,6 +838,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1016/j.eiar.2014.09.003",
+      "title": "Including the temporal change in PM2.5 concentration in the assessment of human health impact: Illustration with renewable energy scenarios to 2050",
+      "date": "2014-09-26",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Its capabilities are demonstrated for two pathways of European energy system development up to 2050: the Baseline (BL) and the Low Carbon, Maximum Renewable Power (LC-MRP). This article proposes a new method to assess the health impact of populations exposed to fine particles (PM2.5) during their whole lifetime, which is suitable for comparative analysis of energy scenarios.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1007/s12155-014-9529-2",
       "title": "Modelling Soil Organic Carbon Changes Under Different Maize Cropping Scenarios for Cellulosic Ethanol in Europe",
       "date": "2014-10-01",
@@ -1393,6 +1402,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Data from these interviews were analysed to stimulate the construction of four future teacher education scenarios.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1088/1748-9326/11/1/014012",
+      "title": "Environmental impacts of high penetration renewable energy scenarios for Europe",
+      "date": "2016-01-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "This letter implements outputs of a detailed power system optimisation model into a prospective life cycle analysis framework in order to present a life cycle analysis of 44 electricity scenarios for Europe in 2050, including analyses of systems based largely on low-carbon fossil energy options (natural gas, and coal with carbon capture and storage (CCS)) as well as systems with high shares of variable renewable energy (VRE) (wind and solar). The climate change impacts from Europe for the year 2050 in a scenario using primarily natural gas are 1400 Tg CO 2 -eq while in a scenario using mostly coal with CCS the impacts are 480 Tg CO 2 -eq.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2278,6 +2296,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.17345/rcda1935",
+      "title": "From Kyoto to Paris: the European Union's contribution to a new world climate order",
+      "date": "2018-07-27",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "While implementing this binding framework, the EU is giving legal contents to the 2030 climate-energy package as a major contribution to the new international climate regime under the Paris Agreement, in whose design and adoption the Union also played a key role. Recent policies and other proposals now in prospect are intended to transform the EU into a competitive and sustainable economy by 2050.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.1007/s00382-018-4371-4",
       "title": "The northern hemisphere circumglobal teleconnection in a seasonal forecast model and its relationship to European summer forecast skill",
       "date": "2018-07-28",
@@ -2935,6 +2962,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1111/1758-5899.12792",
+      "title": "Enhancing Europe’s Global Power: A Scenario Exercise with Eight Proposals",
+      "date": "2020-02-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Through a scenario exercise, we develop eight policy proposals aimed at countering Europe´s vulnerabilities and enabling it to assert its sharp and soft power more effectively.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1016/j.esr.2020.100461",
       "title": "A comparison of three transformation pathways towards a sustainable European society - An integrated analysis from an energy system perspective",
       "date": "2020-02-04",
@@ -3293,6 +3329,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The results also showed that the decrease in PM2.5 emissions envisaged in the analyzed scenarios in 2050 will lead to a reduction in the number of lost years of life by about 35 thousand and an avoidance of external costs by EUR 2.4 billion. The three scenarios of the REFLEX Project focused on the reduction of CO2 emissions up to 2050 from various sectors, mainly by the means of fuel and technological switches.",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1016/j.jclepro.2020.125263",
+      "title": "A review on European Union’s strategy for plastics in a circular economy and its impact on food safety",
+      "date": "2020-11-25",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Unless possible substitutes to multi-layer plastics offering the same level of food protection can be developed then there will be detrimental effects on food quality, safety and shelf-life, which will lead to increased food waste, additional food costs and a reduction in the variety and availability of certain foods. One of the strategies outlined is that by 2030, all plastic packaging placed on the EU market is either reusable or can be recycled in a cost-effective manner.",
+      "investigation_type": "strategic_future_question"
     },
     {
       "doi": "10.30525/2256-0742/2020-6-5-148-154",
@@ -4024,6 +4069,15 @@
       "investigation_type": "projection_or_forecast"
     },
     {
+      "doi": "10.1051/ocl/2022031",
+      "title": "Could domestic soybean production avoid Europe’s protein imports in 2050?",
+      "date": "2022-01-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "INRAE (France), 159 p + Annexes) concluded that, in some parts of Europe (defined here as the European Union-27 plus other Balkan countries, Switzerland, Norway and the United Kingdom), cropland requirements in 2050 may be lower than “2010” cropland areas given possible changes in European food demand (related to glooming demographic growth and under the assumption of healthy diets) and in crop yields (influenced by technological developments and climate change). In this study, we examine to what extent this “cropland surplus” could be used to increase soybean production in Europe and reduce the dependency ratio on protein imports.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.2478/rtuect-2022-0010",
       "title": "The Boundaries of Scientific Innovation in the EU Green Deal Context",
       "date": "2022-01-01",
@@ -4112,6 +4166,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "By varying the background climate, including CO 2 concentrations, it is demonstrated how the July 2019 European heat wave could have evolved in preindustrial times and in warmer climates.",
       "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1016/j.cities.2022.103639",
+      "title": "The health potential of urban water: Future scenarios on local risks and opportunities",
+      "date": "2022-02-17",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Future scenarios have been developed based on the question: How can blue spaces contribute to a healthier city population, given the long term trends? The future scenarios deliver information that could serve as useful input for local planning processes.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.1002/met.2053",
@@ -5434,6 +5497,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "We illustrate the model application as a potential broad-scale Decision Support Tool by predicting how the forest age composition, placement of clear-cut areas, and connectivity of old stands will develop until the year 2050 under future scenarios. In forestry terms, we show that a continuation of recent intensive forest management trends will produce a decline of the national timber supplies in Estonia, which greatly varies among ownership types.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1016/j.scitotenv.2023.168566",
+      "title": "How do environmental flows impact on water availability under climate change scenarios in European basins?",
+      "date": "2023-11-20",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We analyzed the current scenario (historical from 1960 to 2000) and 40 future projections, which combine short and long term (from 2020 to 2059, and from 2060 to 2099, respectively), four emission scenarios (RCP2.6 to RCP8.5) and five climate models. Expected changes on MAF due to climate change are not uniform through Europe and also vary regarding the specific climate scenario. >70 % of basins show a trend to reduce their MAF under severe emission scenarios.",
       "investigation_type": "alternative_scenarios"
     },
     {
