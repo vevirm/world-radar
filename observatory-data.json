@@ -1006314,9 +1006314,111 @@
       "research_seconds": 1166.2,
       "minimum_research_target_seconds": 900.0,
       "stop_reason": "minimum_work_target_reached"
+    },
+    {
+      "at": "2026-10-29T20:12:36.998849+00:00",
+      "processed_claims": 16,
+      "search_requests": 0,
+      "candidates_seen": 0,
+      "new_connections": 0,
+      "errors": [
+        {
+          "claim_id": "claim-bf598b2a08fad509",
+          "query": "then transfer policy Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-ae4069a2e06831ca",
+          "query": "purpose analyze ante Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-50440f0f68133bd5",
+          "query": "contrast changing ideas",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-e8cb317d29de7c43",
+          "query": "highlights limitations focussing",
+          "page": 4,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-d31f97232c299b1d",
+          "query": "differences atmospheric circulation Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-d7528d8b32a883f4",
+          "query": "participatory iterative approach Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-80d326b0b7a1ef63",
+          "query": "nuclear power experience Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-625c5b61e3f813ad",
+          "query": "aimed quantify changes Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-1c54de53b6c407eb",
+          "query": "climate change affect Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-04c1c1a840cc185b",
+          "query": "aid informed debate",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-bd6cbbb9ba6d8e94",
+          "query": "best skill scores Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-3d7e67df67ef386a",
+          "query": "projections precipitation continent analyzed Europe",
+          "page": 4,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-b15dde9db3770616",
+          "query": "need tight cooperation Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-70d976dc7f9905d4",
+          "query": "describe use planning",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "claim_id": "claim-0b5543132bdc9dd1",
+          "query": "analyzed socio-economic biophysical Europe",
+          "page": 5,
+          "error": "HTTP Error 429: Too Many Requests"
+        }
+      ],
+      "research_seconds": 1165.0,
+      "minimum_research_target_seconds": 900.0,
+      "stop_reason": "minimum_work_target_reached"
     }
   ],
-  "cursor": 212,
+  "cursor": 228,
   "search_progress": {
     "claim-b17115753345b141|findings highlight achieving Europe": 6,
     "claim-565f6d848a5e7a8f|purpose publication detailed": 6,
