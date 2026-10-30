@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_date": "2026-10-29",
+  "generated_date": "2026-10-30",
   "target": 50,
   "policy": "Original publications from 2011 through 2023 inclusive; newer publications belong to the Radar 2 evidence period. Shortlist is research triage, not 50 certified findings",
   "method_note": "2011–2023 EU institutional and European future-oriented originals; 2024+ only later context. Source-screened publisher reports prioritized and annual series diversified. Research priority is not forecast accuracy.",
@@ -1235,6 +1235,38 @@
       "review_priority": 46
     },
     {
+      "title": "Integrated assessment of the role of bioenergy within the EU energy transition targets to 2050",
+      "date": "2021-10-29",
+      "publisher": "Wiley",
+      "topic": "Energy transition",
+      "method": "Academic futures/forecast study · method unverified",
+      "url": "https://doi.org/10.1111/gcbb.12908",
+      "doi": "10.1111/gcbb.12908",
+      "abstract": "Abstract Bioenergy is considered an important component within the European Union (EU) energy transition to meet mid‐century climate targets. Model assessments that have highlighted the role of bioenergy in decarbonising EU energy systems fail to account for the fact that mitigation strategies and bioenergy supply take place within a global decarbonisation effort. Thus, they do not account for inter‐regional competition for the resource base that Europe may face. This study shows how bioenergy can contribute to EU climate targets, highlighting its possible role within the energy system and developments required to facilitate its scale‐up. We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050. Employing a global model allows for projections of EU decarbonisation strategies consistent with global climate targets and captures the effects of biomass production and consumption in other world regions. Bioenergy is projected to account for up to 27% of total primary energy demand, increasing from the current 5EJ to 18EJ/yr. To match this demand, the model projects imports of biomass to increase from 4% of its current supply to 60%. Bioenergy could provide up to 1GtCO2 or 40% of the overall mitigation needed by the EU in 2050. This is based on large‐scale use for power production, with the transport, industry and buildings sectors getting smaller shares. By 2050 it is projected that 55% of total EU bioenergy use is coupled with Bioenergy with carbon capture and storage (BECCS). Bioenergy supply comes primarily for agricultural and forestry residues, as these sources have low upstream greenhouse gas emissions. However, as demand increases, energy crops are increasingly used, especially in the provision of advanced liquid fuels. The results show that one route for achieving an EU energy transition is based on rapid deployment of BECCS and the mobilisation of sustainable imports of second‐generation feedstocks.",
+      "journal": "GCB Bioenergy",
+      "source_kind": "Indexed academic lead",
+      "foresight_scope": "future_facing",
+      "eu_connection": "eu_focused",
+      "eu_connection_reason": "EU_or_Europe_in_original_title",
+      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
+      "radar2_seed": {
+        "source_field": "abstract",
+        "source_status": "indexed_source_text_not_full_document_verified",
+        "original_passage": "Bioenergy could provide up to 1GtCO2 or 40% of the overall mitigation needed by the EU in 2050. We use the global integrated assessment model IMAGE 3.2 to project bioenergy demand, sectoral deployment, feedstock, and inter‐regional import for Europe to 2050.",
+        "anticipated_horizons": [
+          2050
+        ],
+        "investigation_type": "projection_or_forecast",
+        "traceability_version": 1
+      },
+      "target_year": null,
+      "ranking_score": 130,
+      "age_band": "preferred · 5–10 years",
+      "accuracy_verdict": "Not evaluated",
+      "outcome_evidence_url": "",
+      "review_priority": 47
+    },
+    {
       "title": "Future transitions for the Bioeconomy towards Sustainable Development and a Climate-Neutral Economy - Knowledge Synthesis Final Report: WP1 - Knowledge synthesis and foresight",
       "date": "2020-01-01",
       "publisher": "European Commission",
@@ -1264,7 +1296,7 @@
       "age_band": "preferred · 5–10 years",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 47
+      "review_priority": 48
     },
     {
       "title": "Assessing the impact of the 2011 EU Transport White Paper - a rail freight demand forecast up to 2050 for the EU27",
@@ -1297,7 +1329,7 @@
       "age_band": "exceptional · outside preferred",
       "accuracy_verdict": "Not evaluated",
       "outcome_evidence_url": "",
-      "review_priority": 48
+      "review_priority": 49
     },
     {
       "title": "Immigration and integration scenarios in global Europe: Forward-looking up to 2050",
@@ -1318,38 +1350,6 @@
         "source_field": "abstract",
         "source_status": "indexed_source_text_not_full_document_verified",
         "original_passage": "She proposes addressing integration of immigrants scenarios alongside demographic projections and labour market needs for future assessments of needs for immigrants and for responsible governance.",
-        "anticipated_horizons": [
-          2050
-        ],
-        "investigation_type": "alternative_scenarios",
-        "traceability_version": 1
-      },
-      "target_year": null,
-      "ranking_score": 129,
-      "age_band": "exceptional · outside preferred",
-      "accuracy_verdict": "Not evaluated",
-      "outcome_evidence_url": "",
-      "review_priority": 49
-    },
-    {
-      "title": "European atmosphere in 2050, a regional air quality and climate perspective under CMIP5 scenarios",
-      "date": "2013-08-02",
-      "publisher": "Copernicus Publications",
-      "topic": "Climate and environment",
-      "method": "Academic futures/forecast study · method unverified",
-      "url": "https://doi.org/10.5194/acp-13-7451-2013",
-      "doi": "10.5194/acp-13-7451-2013",
-      "abstract": "Abstract. To quantify changes in air pollution in Europe at the 2050 horizon, we designed a comprehensive modelling system that captures the external factors considered to be most relevant and relies on up-to-date and consistent sets of air pollution and climate policy scenarios. Global and regional climate as well as global chemistry simulations are based on the recent Representative Concentrations Pathways (RCP) produced for the Fifth Assessment Report (AR5) of IPCC whereas regional air quality modelling is based on the updated emissions scenarios produced in the framework of the Global Energy Assessment. We explored two diverse scenarios: a reference scenario where climate policies are absent and a mitigation scenario which limits global temperature rise to within 2 °C by the end of this century. This first assessment of projected air quality and climate at the regional scale based on CMIP5 (5th Climate Model Intercomparison Project) climate simulations is in line with the existing literature using CMIP3. The discrepancy between air quality simulations obtained with a climate model or with meteorological reanalyses is pointed out. Sensitivity simulations show that the main factor driving future air quality projections is air pollutant emissions, rather than climate change or long range transport. Whereas the well documented \"climate penalty\" bearing upon ozone over Europe is confirmed, other features appear less robust compared to the literature: such as the impact of climate on PM2.5. The quantitative disentangling of each contributing factor shows that the magnitude of the ozone climate penalty has been overstated in the past while on the contrary the contribution of the global ozone burden is overlooked in the literature.",
-      "journal": "Atmospheric chemistry and physics",
-      "source_kind": "Indexed academic lead",
-      "foresight_scope": "future_facing",
-      "eu_connection": "eu_focused",
-      "eu_connection_reason": "EU_or_Europe_in_original_title",
-      "verification_status": "DOI + title + year cross-checked · full text not yet verified",
-      "radar2_seed": {
-        "source_field": "abstract",
-        "source_status": "indexed_source_text_not_full_document_verified",
-        "original_passage": "To quantify changes in air pollution in Europe at the 2050 horizon, we designed a comprehensive modelling system that captures the external factors considered to be most relevant and relies on up-to-date and consistent sets of air pollution and climate policy scenarios. We explored two diverse scenarios: a reference scenario where climate policies are absent and a mitigation scenario which limits global temperature rise to within 2 °C by the end of this century.",
         "anticipated_horizons": [
           2050
         ],
