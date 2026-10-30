@@ -164,7 +164,7 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
  # Continue from pages already investigated on earlier runs. A larger bounded
  # horizon leaves further evidence to explore while rotating across claims.
  max_page=30
- request_interval=3.0  # cap API traffic instead of exhausting/rate-limiting in minutes
+ request_interval=6.0  # lower sustained request rate to reduce HTTP 429s
  next_request_at=start
  rate_limit_strikes=0
  while time.monotonic()<budget_end:
@@ -208,7 +208,15 @@ def scan(minutes=20,max_claims=400,max_papers=20,min_minutes=15):
     if isinstance(e,urllib.error.HTTPError) and e.code==429:
      rate_limit_strikes+=1
      # Exponential backoff with a ceiling; do not continually hammer OpenAlex.
-     next_request_at=max(next_request_at,time.monotonic()+min(90,15*2**min(rate_limit_strikes-1,3)))
+     retry_after=e.headers.get('Retry-After', '') if e.headers else ''
+     try: retry_seconds=max(0, int(retry_after))
+     except (ValueError, TypeError): retry_seconds=0
+     delay=max(retry_seconds, min(300, 30*2**min(rate_limit_strikes-1,4)))
+     print(f'OpenAlex 429: pausing {delay}s before another request', flush=True)
+     next_request_at=max(next_request_at,time.monotonic()+delay)
+     if time.monotonic()+delay>=budget_end:
+      stop_reason='openalex_rate_limited'
+      break
     errors.append({'claim_id':claim['id'],'query':q,'page':page,'error':str(e)[:240]})
     # Avoid repeatedly hitting a failing endpoint in the same run. Retry next run.
     progress[key]=page
