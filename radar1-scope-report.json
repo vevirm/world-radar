@@ -1,22 +1,22 @@
 {
   "policy_version": 5,
-  "generated_at": "2026-10-30T07:38:49.491546+00:00",
+  "generated_at": "2026-10-30T19:03:11.912725+00:00",
   "applied": true,
-  "original_studies": 629,
+  "original_studies": 633,
   "historical_period": {
     "start": "2011-01-01",
     "end": "2023-12-31"
   },
   "selection_counts": {
-    "active": 629
+    "active": 633
   },
-  "retained_in_main_file": 629,
+  "retained_in_main_file": 633,
   "removed_from_main_file": 0,
-  "prior_rejections": 9737,
-  "rejection_registry_after_apply": 9737,
+  "prior_rejections": 9744,
+  "rejection_registry_after_apply": 9744,
   "removed_by_reason": {},
   "inspection_method": {
-    "source_traceability": 629
+    "source_traceability": 633
   },
   "already_rejected_encountered": {},
   "examples_kept": [
@@ -79,6 +79,12 @@
       "title": "Climate, competition and connectivity affect future migration and ranges of European trees",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "ABSTRACT Aim Species ranges have adapted during the Holocene to altering climate conditions, but it remains unclear if species will be able to keep pace with recent and future climate change. To predict future species ranges from these models, we applied three migration scenarios: no migration, unlimited migration and realistic migration."
+    },
+    {
+      "doi": "10.1108/14636681111138749",
+      "title": "Africa 2010‐2020: poverty reduction beyond the global crisis",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The purpose of this paper is to outline a set of four post‐crisis global economic scenarios to 2020, and will consider their impacts across a range of low income countries."
     },
     {
       "doi": "10.1186/1476-069x-10-53",
@@ -193,12 +199,6 @@
       "title": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "Similar trends are likely in the future, with an increased risk simulated over northern Europe and slightly decreased risk over southern Europe. These distribution shifts are related to wetter and warmer conditions favouring the overwintering of A. albopictus in the north, and drier and warmer summers that might limit its southward expansion."
-    },
-    {
-      "doi": "10.1016/j.enpol.2012.05.015",
-      "title": "Implications of sustainability constraints on UK bioenergy development: Assessing optimistic and precautionary approaches with UK MARKAL",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "The paper then examines the implications of these scenarios using the energy systems model MARKAL, finding that a precautionary approach adds to the cost of decarbonisation, but does not significantly alter the optimal technology mix."
     }
   ],
   "proposed_removals": [],

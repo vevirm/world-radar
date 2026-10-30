@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T07:38:49.491546+00:00",
+  "generated_at": "2026-10-30T19:03:11.912725+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 629,
+  "original_records": 633,
   "selection_counts": {
-    "active": 629
+    "active": 633
   },
-  "rejected_identifier_count": 9737,
+  "rejected_identifier_count": 9744,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -97,6 +97,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "ABSTRACT Aim Species ranges have adapted during the Holocene to altering climate conditions, but it remains unclear if species will be able to keep pace with recent and future climate change. To predict future species ranges from these models, we applied three migration scenarios: no migration, unlimited migration and realistic migration.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1108/14636681111138749",
+      "title": "Africa 2010‐2020: poverty reduction beyond the global crisis",
+      "date": "2011-05-31",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The purpose of this paper is to outline a set of four post‐crisis global economic scenarios to 2020, and will consider their impacts across a range of low income countries.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -268,6 +277,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Similar trends are likely in the future, with an increased risk simulated over northern Europe and slightly decreased risk over southern Europe. These distribution shifts are related to wetter and warmer conditions favouring the overwintering of A. albopictus in the north, and drier and warmer summers that might limit its southward expansion.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1111/j.1365-2486.2012.02746.x",
+      "title": "A European science plan to sustainably increase food security under climate change",
+      "date": "2012-05-21",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "A key challenge is to increase the global food supply to accommodate a world growing to nine billion or more people by 2050 while preserving a safe operating space for humanity by avoiding dangerous environmental change (Rockström et al., 2009).",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -565,6 +583,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The project invited 17 European and three international drug disorder experts to provide an initial vision and a reframing as to how scientific, technological and social advancement may impact on our understanding of addictions and lifestyles over the next 20 years («Vision 2030+»). Four mini-scenarios were designed to raise awareness that the future could go in different (possible, plausible, preferable) directions implying quite diverse individual and societal impacts.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1142/s2010007813020016",
+      "title": "INTRODUCTION TO THE EMF28 STUDY ON SCENARIOS FOR TRANSFORMING THE EUROPEAN ENERGY SYSTEM",
+      "date": "2013-11-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Europe plays an important role in international climate policy.Among the industrialized countries, European Union Member States have been in favor of relatively stringent emission reductions, consistent with the so-called 2 C climate target.In order to achieve the global 2 C target, Europe needs to reduce its emissions projected for 2050 significantly, by about 80-95% relative to 1990 levels.How can such a reduction be achieved?What might cost-effective pathways for achieving this goal look like?Are there different possible transition pathways?How do they compare to the strategy outlined by the European Commission in the \"Energy Roadmap 2050\"?This special issue of Climate Change Economics presents the views regarding the aforementioned questions of the EMF28 study of the Stanford Energy Modeling Forum (EMF).EMF employs an international expert platform to improve the understanding of important energy and environmental problems by comparing different modeling approaches and results.The main objective of the EMF28 study is to provide insights into the debate of the long-term and near-term climate and energy strategies in Europe and address questions related to emission reduction targets, their timing, and technology mix in a way that can help to inform decision-makers in the climate policy arena.In that context, it should be noted that the EU strategy beyond 2020 is not yet defined.In 2011, the EU Commission launched three Roadmaps for the long-term perspective until 2050, based on extensive modeling analysis.One is the \"Energy Roadmap 2050\", investigating how the long-term energy transformation could take place, which technologies are important, the targets that need to be set, and what the transformation might cost.In addition, in 2013, the EU Commission initiated the debate on policy targets for 2030 with the green paper \"A 2030 framework for climate and energy policies\".This deals with potential architectures for a post-2020 framework.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2933,6 +2960,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "There is enough sustainable EU biomass to contribute to all sectors by 2030, and probably beyond, as well as to bring organic carbon back to soil. \\nTo ensure sustainable supply, not only residues and wastes are relevant, but sustainably sourced agricultural and forestry feedstocks, and feedstocks from recovering and restoring marginal and degraded land.",
       "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.5547/2160-5890.9.1.pcre",
+      "title": "Energy Transition Pathways to a low-carbon Europe in 2050: the degree of cooperation and the level of decentralization",
+      "date": "2020-01-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "All four pathways achieve an 85–95% emissions reduction by 2050. In the framework of the Paris Agreement, the European Union (EU) will have to firmly set decarbonization targets to 2050.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.17073/2072-1633-2019-4-484-493",
