@@ -26,6 +26,19 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -u scripts/eu_observatory.py scan --minutes 20 --min-minutes 15 --claims 400
+      - name: Compact cumulative JSON before saving
+        run: |
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          p = Path('observatory-data.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          p.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          size = p.stat().st_size
+          print(f'Compacted file: {size / 1024 / 1024:.2f} MiB')
+          if size > 99 * 1024 * 1024:
+              raise SystemExit('JSON is still too large for GitHub; database splitting is needed.')
+          PYCODE
       - name: Save cumulative library and outputs
         run: |
           git config user.name 'vv-futures-bot'
