@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.html'
       - 'observatory-data.json'
+      - 'observatory-data.json.gz'
       - 'reviewed-findings.json'
       - 'VV-FUTURES-*.docx'
       - 'VV-FUTURES-*.xlsx'
@@ -38,6 +39,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Restore website JSON from compressed database
+        run: |
+          python - <<'PYCODE'
+          import gzip, shutil
+          from pathlib import Path
+          src = Path('observatory-data.json.gz')
+          if src.exists():
+              with gzip.open(src, 'rb') as inp, Path('observatory-data.json').open('wb') as out:
+                  shutil.copyfileobj(inp, out)
+          elif not Path('observatory-data.json').exists():
+              raise SystemExit('Cannot publish: cumulative database is missing')
+          PYCODE
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

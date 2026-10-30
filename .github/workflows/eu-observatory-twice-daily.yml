@@ -22,28 +22,53 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install 'python-docx>=1.1,<2'
+      - name: Restore cumulative database (lossless)
+        run: |
+          python - <<'PYCODE'
+          import gzip
+          from pathlib import Path
+          compressed = Path('observatory-data.json.gz')
+          uncompressed = Path('observatory-data.json')
+          if compressed.exists():
+              with gzip.open(compressed, 'rb') as source, uncompressed.open('wb') as dest:
+                  import shutil
+                  shutil.copyfileobj(source, dest)
+              print('Restored full database from compressed archive')
+          elif not uncompressed.exists():
+              raise SystemExit('No cumulative database found; refusing to start with an empty one')
+          PYCODE
       - name: Discover later literature and refresh Let’s see
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -u scripts/eu_observatory.py scan --minutes 20 --min-minutes 15 --claims 400
-      - name: Compact cumulative JSON before saving
+      - name: Compress cumulative database with validation
         run: |
           python - <<'PYCODE'
-          import json
+          import gzip, json, os, shutil
           from pathlib import Path
-          p = Path('observatory-data.json')
-          data = json.loads(p.read_text(encoding='utf-8'))
-          p.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-          size = p.stat().st_size
-          print(f'Compacted file: {size / 1024 / 1024:.2f} MiB')
-          if size > 99 * 1024 * 1024:
-              raise SystemExit('JSON is still too large for GitHub; database splitting is needed.')
+          src = Path('observatory-data.json')
+          dst = Path('observatory-data.json.gz')
+          payload = src.read_bytes()
+          obj = json.loads(payload)
+          if not isinstance(obj.get('claims'), dict) or not isinstance(obj.get('connections'), dict):
+              raise SystemExit('Refusing to save: missing claim or connection collection')
+          tmp = dst.with_suffix('.json.gz.tmp')
+          with tmp.open('wb') as handle:
+              with gzip.GzipFile(filename='', mode='wb', compresslevel=9, mtime=0, fileobj=handle) as archive:
+                  archive.write(payload)
+          with gzip.open(tmp, 'rb') as check:
+              if check.read() != payload:
+                  raise SystemExit('Lossless compression validation failed')
+          os.replace(tmp, dst)
+          print(f'Preserved {len(obj["claims"])} claims and {len(obj["connections"])} connections; compressed to {dst.stat().st_size:,} bytes')
+          # Keep JSON for this run's artifact, but stop Git from tracking it.
           PYCODE
       - name: Save cumulative library and outputs
         run: |
           git config user.name 'vv-futures-bot'
           git config user.email 'vv-futures-bot@users.noreply.github.com'
-          git add observatory-data.json VV-FUTURES-POSSIBLE-CONNECTIONS.docx
+          git rm --cached -f --ignore-unmatch observatory-data.json
+          git add observatory-data.json.gz VV-FUTURES-POSSIBLE-CONNECTIONS.docx
           if ! git diff --cached --quiet; then
             git commit -m 'VV Futures: accumulate candidate research and refresh outputs'
             git pull --rebase
