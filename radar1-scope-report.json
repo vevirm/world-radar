@@ -1,22 +1,22 @@
 {
   "policy_version": 5,
-  "generated_at": "2026-10-31T07:27:18.336096+00:00",
+  "generated_at": "2026-10-31T18:12:15.392617+00:00",
   "applied": true,
-  "original_studies": 633,
+  "original_studies": 634,
   "historical_period": {
     "start": "2011-01-01",
     "end": "2023-12-31"
   },
   "selection_counts": {
-    "active": 633
+    "active": 634
   },
-  "retained_in_main_file": 633,
+  "retained_in_main_file": 634,
   "removed_from_main_file": 0,
-  "prior_rejections": 9749,
-  "rejection_registry_after_apply": 9749,
+  "prior_rejections": 9761,
+  "rejection_registry_after_apply": 9761,
   "removed_by_reason": {},
   "inspection_method": {
-    "source_traceability": 633
+    "source_traceability": 634
   },
   "already_rejected_encountered": {},
   "examples_kept": [
@@ -129,6 +129,12 @@
       "original_passage": "Scenarios detailing climate and land‐cover changes, such as precipitation, temperature and vegetation cover, were used as input in a European multi‐media chemical fate model to help understand their impact on the environmental fate and behaviour of POPs over the period 1990–2100 in Europe. Main conclusions Overall, the model simulations suggest that the dominant driver behind differences seen between the present and climate‐changed future scenarios is temperature, resulting in a slight shift in chemical distribution from surface compartments to the air."
     },
     {
+      "doi": "10.1111/j.1466-8238.2011.00720.x",
+      "title": "Scenarios as a tool for large‐scale ecological research: experiences and legacy of the ALARM project",
+      "reason": "substantive_future_question_with_original_passage",
+      "original_passage": "In this context scenarios were regarded as a potentially valuable tool, both as a method of integrating different strands of the project and as a means for addressing alternative future pathways that might have an important effect on biodiversity. For instance, selection of a few scenarios that are subsequently applied in all aspects of a study may impose constraints on the analysis that could result in too narrow or unrepresentative visions of the future."
+    },
+    {
       "doi": "10.1504/ijstl.2011.039377",
       "title": "Finland-Russia rail transport deregulation: future scenarios of market development",
       "reason": "substantive_future_question_with_original_passage",
@@ -193,12 +199,6 @@
       "title": "A history of futures: A review of scenario use in water policy studies in the Netherlands",
       "reason": "substantive_future_question_with_original_passage",
       "original_passage": "Based on two criteria, 'Decision robustness' and 'Learning success', we conclude that (1) the possibilities for robust decisionmaking increased through a paradigm shift from predicting to exploring futures, but the scenario method is not yet fully exploited for decisionmaking under uncertainty; and (2) the scenarios enabled learning about possible impacts of developments and effectiveness of policy options."
-    },
-    {
-      "doi": "10.1098/rsif.2012.0138",
-      "title": "Suitability of European climate for the Asian tiger mosquito Aedes albopictus : recent trends and future scenarios",
-      "reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Similar trends are likely in the future, with an increased risk simulated over northern Europe and slightly decreased risk over southern Europe. These distribution shifts are related to wetter and warmer conditions favouring the overwintering of A. albopictus in the north, and drier and warmer summers that might limit its southward expansion."
     }
   ],
   "proposed_removals": [],
