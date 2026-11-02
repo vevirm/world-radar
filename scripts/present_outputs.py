@@ -1,5 +1,6 @@
 """VV Futures: stable reader-facing outputs. No scanning or editorial decisions."""
 import json
+import gzip
 from collections import defaultdict
 from pathlib import Path
 from docx import Document
@@ -11,8 +12,17 @@ ROOT=Path(__file__).resolve().parents[1]
 NAVY='173B4B'
 
 def read(path, fallback):
-    p=ROOT/path
-    return json.loads(p.read_text(encoding='utf-8')) if p.exists() else fallback
+    p = ROOT/path
+    if p.exists():
+        return json.loads(p.read_text(encoding='utf-8'))
+    # The canonical historical catalogue is committed as a .json.gz archive.
+    # Never rebuild the Word and Excel files from an empty catalogue merely
+    # because its uncompressed staging file is absent.
+    compressed = ROOT/(path + '.gz')
+    if compressed.exists():
+        with gzip.open(compressed, 'rt', encoding='utf-8') as handle:
+            return json.load(handle)
+    return fallback
 
 def setup(doc, running):
     sec=doc.sections[0]
@@ -66,9 +76,9 @@ def run():
     doc.save(ROOT/'VV-FUTURES-HISTORICAL-CLAIMS.docx')
 
     # Editorial document: preserve supplied conclusions verbatim and mark verification clearly.
-    doc=Document();setup(doc,'LLM-reviewed narratives · Source verification still required')
-    lead(doc,'European futures — reviewed accounts','Existing editorial accounts and twelve further case investigations dated 26 October 2026. Research-based connections are presented with their evidence, limitations and unresolved questions, not as prediction grades.')
-    doc.add_paragraph(f'{len(reviews)} earlier accounts + 12 new researched accounts · Not a prediction-accuracy scoreboard')
+    doc=Document();setup(doc,'LLM-reviewed narratives · Source status from editorial records')
+    lead(doc,'European futures — reviewed accounts','Previously checked editorial accounts, October 2026 research notes, and November 2026 forward-path studies. Interpretations retain their evidence, limitations and open questions; nothing here is a prediction grade.')
+    doc.add_paragraph(f'{len(reviews)} existing LLM accounts · 12 October research notes · 12 November trajectories · Not a prediction scoreboard')
     for i,f in enumerate(reviews,1):
         doc.add_paragraph(f"{i:02}.  {f.get('title','Untitled')}",style='Heading 1')
         doc.add_paragraph(f.get('interpretation',''),style='Normal')
@@ -80,15 +90,17 @@ def run():
         if f.get('web_sources_as_provided'):
             p=doc.add_paragraph('Additional references (as supplied; links may be missing): '+ '; '.join(f['web_sources_as_provided']))
             for r in p.runs:r.font.size=Pt(8)
-        p=doc.add_paragraph('STATUS  ·  LLM-reviewed; awaiting source verification')
+        p=doc.add_paragraph('RECORDED EDITORIAL STATUS  ·  '+f.get('editorial_status','LLM-reviewed'))
         for r in p.runs:r.font.size=Pt(8);r.italic=True
     from research_additions import add_reviewed_research
     add_reviewed_research(doc)
+    from trajectory_extension import add_to_reviewed_document
+    add_to_reviewed_document(doc)
     doc.save(ROOT/'VV-FUTURES-REVIEWED-FINDINGS.docx')
 
     # Clean overview first; detailed candidate links kept separate for research purposes.
     wb=Workbook.create(); sh=wb.worksheets.add('Start here')
-    sh.get_range('A1:B6').values=[['VV FUTURES','European foresight catalogue'],['Historical claim records',len(claims)],['Provisional claim–paper links',len(links)],['LLM-reviewed accounts',len(reviews)],['Status','Research collection; sources not independently validated'],['How to read','Claims = original source excerpts; Later sources = unchecked scanner suggestions']]
+    sh.get_range('A1:B6').values=[['VV FUTURES','European foresight catalogue'],['Historical claim records',len(claims)],['Provisional claim–paper links',len(links)],['LLM-reviewed accounts',len(reviews)],['Status','Existing LLM-reviewed accounts retained; later scanner suggestions unchecked'],['How to read','Claims = original source excerpts; Later sources = unchecked scanner suggestions']]
     sh.get_range('A1:B1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'},'row_height':30}
     sh.get_range('A1:A6').format.column_width=32;sh.get_range('B1:B6').format.column_width=72
     sh.get_range('A2:A6').format.font.bold=True
@@ -108,7 +120,7 @@ def run():
 
     rs=wb.worksheets.add('LLM reviewed')
     rh=['Account','Original publication','Developmental interpretation','Cited later sources','Editorial status']
-    rr=[[f.get('title',''),f.get('original_claim',''),f.get('interpretation',''),'\n'.join(f.get('sources',[])),'LLM-reviewed; source verification pending'] for f in reviews]
+    rr=[[f.get('title',''),f.get('original_claim',''),f.get('interpretation',''),'\n'.join(f.get('sources',[])),f.get('editorial_status','LLM-reviewed')] for f in reviews]
     rs.get_range_by_indexes(0,0,len(rr)+1,5).values=[rh]+rr
     rs.get_range('A1:E1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'},'row_height':30}
     for col,width in [('A',36),('B',58),('C',85),('D',75),('E',40)]:rs.get_range(f'{col}:{col}').format.column_width=width
@@ -146,7 +158,12 @@ def run():
         add.get_range('A1:L1').format={'fill':'#173B4B','font':{'bold':True,'color':'#FFFFFF'},'row_height':32}
         for col,width in [('A',30),('B',47),('C',32),('D',55),('E',18),('F',43),('G',55),('H',90),('I',80),('J',85),('K',24),('L',24)]:add.get_range(f'{col}:{col}').format.column_width=width
         add.freeze_panes.freeze_rows(1)
-    out=ROOT/'VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx'; SpreadsheetFile.export_xlsx(wb).save(str(out))
+    from trajectory_extension import preserve_preexisting_research_tabs, add_to_workbook
+    out=ROOT/'VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx'
+    retained=preserve_preexisting_research_tabs(wb, out)
+    add_to_workbook(wb)
+    SpreadsheetFile.export_xlsx(wb).save(str(out))
+    print('Preserved supplementary workbook tabs:', ', '.join(retained) if retained else 'none')
     print('Presented:',len(claims),'claims,',len(links),'candidate links,',len(reviews),'LLM reviews')
 
 if __name__=='__main__':run()
