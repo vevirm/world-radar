@@ -1,0 +1,1328 @@
+{
+  "as_of": "2026-11-02",
+  "scope": "Extended independent forward research on 12 studies/institutional source families; the 63 existing LLM-checked accounts are preserved and neither reopened nor rescored. New institutional items are identified separately from catalogue academic claims.",
+  "cases": [
+    {
+      "id": "T01",
+      "theme": "Energy and measurement",
+      "title": "Renewables in 2020: target exceeded, forecast context changed",
+      "original_year": 2018,
+      "horizon": "2020 — elapsed",
+      "original_title": "Estimation and Forecasts for the Share of Renewable Energy Consumption in Final Energy Consumption by 2020 in the European Union",
+      "doi": "10.3390/su10051515",
+      "original_url": "https://doi.org/10.3390/su10051515",
+      "original_type": "Modelled forecasts from historical data",
+      "original_statement": "Models fitted to EU-28 data through 2016 showed an upward renewable-energy share towards 2020; the paper asks how that path relates to the 20% EU goal.",
+      "original_condition": "EU-28 baseline, 1995–2016, particular model specifications; subsequent 2020 official statistic is EU-27 and affected by an exceptional demand shock.",
+      "path": "2018 forecast and target debate → 2020 pandemic-induced energy demand contraction → 2020 EU-27 renewable share of 22.1% → 2022 Commission analysis explicitly notes COVID denominator effects.",
+      "latest": "The EU-27 exceeded its 2020 20% target (22.1%). This is a completed policy outcome, not a clean back-test of the paper’s EU-28 statistical forecasts.",
+      "meaning": "The object of comparison changes: EU-28 model projections versus EU-27 realised share; percentage shares can rise when both renewable supply grows and the consumption denominator falls.",
+      "trajectory": "Target attained under changed conditions",
+      "horizon_status": "Elapsed; scope-adjusted comparison",
+      "confidence": "High for EU target attainment; limited for paper-specific numerical forecast",
+      "limits": "Do not call this an inaccurate forecast until the actual published model point estimates and EU-28 comparable observed series are aligned.",
+      "question": "What did each of the five models actually estimate for the same EU membership and definition, and how much of the 2020 jump was numerator versus denominator?",
+      "source_ids": [
+        "S01",
+        "S02"
+      ],
+      "link_ids": [
+        "C01",
+        "C02"
+      ],
+      "essay": "The first temptation is to call the 2020 renewable target a clear victory for the 2018 forecast. But the target and statistical extrapolation were different objects, and the geography changed from EU28 to EU27. An unusually weak 2020 energy-consumption denominator also magnified percentage shares. The original foresight becomes valuable as a trace of pre-pandemic expectations, not as an all-or-nothing match against a headline policy outcome. Compare energy consumption and renewable production separately; only then construct a harmonised backtest.",
+      "afterlife": "The energy share became a policy-performance indicator with an unexpected denominator effect. A target can be met for reasons not central to the original model.",
+      "alternative": "It is still possible that the upward trend was sound; quantifying its error requires reconstructed EU28 2020 data and the authors’ model-specific forecasts, not only official target attainment.",
+      "lookback": "Re-read the model table for each forecast value. Place the 2020 denominator and EU membership definition next to the original result.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-9d8593483e33ce0a",
+      "catalog_original_row": 246
+    },
+    {
+      "id": "T02",
+      "theme": "Public health",
+      "title": "Tuberculosis 2030: an early warning still relevant",
+      "original_year": 2019,
+      "horizon": "2030 — future",
+      "original_title": "Will we reach the Sustainable Development Goals target for tuberculosis in the European Union/European Economic Area by 2030?",
+      "doi": "10.2807/1560-7917.ES.2019.24.12.1900153",
+      "original_url": "https://doi.org/10.2807/1560-7917.ES.2019.24.12.1900153",
+      "original_type": "Conditional trend extrapolation",
+      "original_statement": "At the observed 4.8% annual decline, EU/EEA TB notification rates would be about 5.7 per 100,000 in 2030, not the target 2.4; the article warns that the SDG target is out of reach on the existing path.",
+      "original_condition": "Assumes the historical rate of decline remains roughly unchanged; TB notifications proxy incidence imperfectly; mortality has a different target.",
+      "path": "2019 warning from 2008–2017 trend → pandemic-era surveillance disruptions → 2025 ECDC continued off-track assessment → 2026 report using 2024 EU/EEA rate of 8.4 notifications per 100,000.",
+      "latest": "2024 EU/EEA notifications remain 8.4 per 100,000; ECDC finds the region off course for many 2030 epidemic goals.",
+      "meaning": "A trend-warning is not a declared end-state. COVID-era diagnosis and notification changes complicate comparing observed notifications with disease incidence.",
+      "trajectory": "Warning remains live; final horizon not reached",
+      "horizon_status": "2030 not reached",
+      "confidence": "High for monitoring trend; no 2030 result yet",
+      "limits": "Do not mistake WHO European Region estimated incidence for EU/EEA notified rates or treat the 2024 rate as a 2030 test.",
+      "question": "Did surveillance disruption change the underlying TB trajectory or mostly the notification measure; how does the slope compare with the original 5.7 projection?",
+      "source_ids": [
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "link_ids": [
+        "C03"
+      ],
+      "essay": "The value of the 2019 tuberculosis paper lies in the warning structure: continue the historic decline and the 2030 target stays out of reach. This is different from predicting a particular year’s case count. Current notification data and the 2025 ECDC assessment show why the early-warning question remains meaningful. Yet TB case notification is not identical to incidence; surveillance capacity, case detection and cross-country reporting shape the observed series. The 2030 horizon remains open and the task is to measure whether the decline steepened enough, not declare the forecast vindicated.",
+      "afterlife": "The phrase “ending TB” split into linked but non-identical outcomes: incidence, notified cases, drug resistance, deaths and service access.",
+      "alternative": "A worsening notification count could reflect better detection, changes in migration, true transmission or reporting. The present research does not identify these contributions.",
+      "lookback": "Revisit the original annual 4.8% decline and model horizon, then chart same-geography cases and separate underlying surveillance changes.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-eae261fe6f1c82d2",
+      "catalog_original_row": 230
+    },
+    {
+      "id": "T03",
+      "theme": "Transport and autonomy",
+      "title": "Dutch driverless mobility: the word “self-driving” split into different realities",
+      "original_year": 2017,
+      "horizon": "2030 and 2050 — future",
+      "original_title": "Development and transport implications of automated vehicles in the Netherlands: scenarios for 2030 and 2050",
+      "doi": "10.18757/ejtir.2017.17.1.3180",
+      "original_url": "https://doi.org/10.18757/ejtir.2017.17.1.3180",
+      "original_type": "Four explorative technology/policy scenarios",
+      "original_statement": "Scenarios envisaged 1–11% automated-vehicle market penetration by 2030, mainly conditional automation, and fully automated vehicles becoming commercially available between 2025 and 2045.",
+      "original_condition": "Scenario spread depends on technical development and restrictive/supportive Dutch policy; measures vary between conditional assistance, driverless vehicles and pilots.",
+      "path": "2017 four scenarios → scaled driver assistance and highway automation → 2026 RDW type approval for driver-supervised assistance → special-use shuttle on public roads with safety driver, temporary national authorization.",
+      "latest": "Dutch regulator explicitly distinguishes approved supervised driver-assistance from self-driving; operational shuttle piloting still uses a safety driver.",
+      "meaning": "“Autonomous” covers supervised assistance, conditional automation, limited-route automated shuttles, and fully driverless operations. Treating these as one market creates false success signals.",
+      "trajectory": "Partial deployment; meaning fragmentation",
+      "horizon_status": "2030/2050 not reached",
+      "confidence": "High for policy/equipment distinction; no representative adoption measure",
+      "limits": "No reliable Dutch fleetwide 2030 adoption or 2026 population-penetration series verified here; pilots cannot validate the projected market share.",
+      "question": "Which level of automation did the scenarios count in 2030? Can Dutch registry/type-approval data provide consistent uptake by level and operating domain?",
+      "source_ids": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "link_ids": [
+        "C04"
+      ],
+      "essay": "The changing meaning of “driverless” is a textbook foresight event. An automation scenario with wide 2030 and 2050 penetration ranges imagined technologies, business models, and legal domains that would co-develop. Later Dutch approvals show functioning systems under restricted or supervised conditions. A driver still responsible for takeover is not the same unit of analysis as an automated shuttle with safety driver, and neither proves broad private-vehicle automation adoption. Moving from technical capability to the organisation of responsibility changes the apparent trajectory.",
+      "afterlife": "Autonomy became a set of tightly scoped operational design domains and supervisory responsibilities rather than a binary self-driving label.",
+      "alternative": "The presence of prototypes or approvals says little about market penetration; comparing to a scenario needs fleet and registration data at matching levels of automation.",
+      "lookback": "Recover original Dutch vehicle-market and level-of-automation definitions, then construct separate columns for pilot, approval, sale, unrestricted operation and fleet share.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-8c14fae72a23ba16",
+      "catalog_original_row": 283
+    },
+    {
+      "id": "T04",
+      "theme": "Climate and land",
+      "title": "Climate-smart forests: enormous conditional potential meets a declining sink",
+      "original_year": 2017,
+      "horizon": "2050 — future",
+      "original_title": "By 2050 the Mitigation Effects of EU Forests Could Nearly Double through Climate Smart Forestry",
+      "doi": "10.3390/f8120484",
+      "original_url": "https://doi.org/10.3390/f8120484",
+      "original_type": "Conditional mitigation potential across multiple mechanisms",
+      "original_statement": "With suitable incentives, combined EU forest and forest-product mitigation could add about 441 Mt CO2 per year by 2050 relative to baseline.",
+      "original_condition": "Conditional incentives and management; combined forestry accounting includes material/energy substitution, not solely measured land-use net removals.",
+      "path": "2017 climate-smart forest potential → EU LULUCF and land-removal governance tightened → observed 2023 sink 198 Mt CO2e and 2024 preliminary 212 Mt CO2e → 2030 net-removal target 310 Mt CO2e remains off-track.",
+      "latest": "The monitored EU land sink weakened over the decade and planned measures are insufficient for the 310 Mt 2030 net-removals goal.",
+      "meaning": "A 2050 systemwide avoided-emissions/forest-sector mitigation potential is not the same number as today’s LULUCF annual net removal. The policy question also shifts from harvesting-and-substitution gains to durable sink resilience.",
+      "trajectory": "Potential remains; limiting conditions worsened",
+      "horizon_status": "2050 not reached",
+      "confidence": "High for EEA sink numbers; comparison is qualitative only",
+      "limits": "Never subtract 212 from 441 or calculate a “prediction error”: the accounting boundaries differ.",
+      "question": "Can the original four climate-smart forestry levers be recast under current EU land-use accounting, ecological disturbance risk and forest biodiversity constraints?",
+      "source_ids": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "link_ids": [
+        "C01",
+        "C05"
+      ],
+      "essay": "The original forest study estimated a conditional mitigation potential, not a guarantee of a realised carbon sink by 2050. Its total included forest management, harvested wood products, substitution and related mechanisms. The later reported land-sector sink is a different ledger and can shrink even when the theoretical long-run potential is large. This is exactly the kind of “changed X” worth recording. Foresight can remain technically interesting while the environmental or policy starting point deteriorates, making the conditions for its realisation more demanding.",
+      "afterlife": "The question shifted from potential tonnes under incentives to verified accounting, monitoring and resilience of an existing sink.",
+      "alternative": "The original 441 Mt CO2/year additional potential must not be numerically compared with 198–212 Mt CO2e observed sink as if same numerator.",
+      "lookback": "Return to the model’s baseline, the definition of added mitigation and the assumptions on forest resilience; trace subsequent drought, harvest and accounting effects.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-f426f177f748e93e",
+      "catalog_original_row": 279
+    },
+    {
+      "id": "T05",
+      "theme": "Aviation and supply chains",
+      "title": "Renewable jet fuel: scale-up happened through a narrower observed route",
+      "original_year": 2018,
+      "horizon": "2030 — future",
+      "original_title": "Renewable jet fuel supply scenarios in the European Union in 2021–2030 in the context of proposed biofuel policy and competing biomass demand",
+      "doi": "10.1111/gcbb.12525",
+      "original_url": "https://doi.org/10.1111/gcbb.12525",
+      "original_type": "Conditional supply-and-policy model",
+      "original_statement": "Nonfood renewable jet fuel could grow to 3.8–6.1 Mt per year in the EU by 2030 if advanced technologies, feedstocks, and policy incentives develop.",
+      "original_condition": "Nonfood renewable jet fuel under model assumptions; NOT identical to the broader current “sustainable aviation fuel” (SAF) regulatory category.",
+      "path": "2018 advanced biofuel scenario → ReFuelEU binding blend mandates → 2024 SAF baseline 193 kt → 2025 reported EU SAF 1.1 Mt (2.8% of jet fuel) → September 2026 EASA report shows 80% from used cooking oil, most feedstock imported.",
+      "latest": "EU met 2025 SAF mandate early (2.8% versus 2% requirement), but the feedstock/technology mix matters: 80% used cooking oil and 85% feedstock from outside the EU.",
+      "meaning": "RJF/nonfood advanced biofuel in the model and SAF supplied under ReFuelEU are different categories; converting the latter into validation of the former would be an invalid apples-to-oranges comparison.",
+      "trajectory": "Regulatory target reached; pathway and definition changed",
+      "horizon_status": "2030 not reached; 2025 interim observed",
+      "confidence": "High for 2025 official supply; limited comparability with 2018 model outputs",
+      "limits": "Do not label 1.1 Mt SAF as 1.1 Mt of original-model advanced RJF; do not infer causal influence of a paper on the mandate.",
+      "question": "How much 2025 EU SAF volume matches each 2018 nonfood RJF pathway, what are feedstock sustainability limits and where is 2030 production capacity genuinely operational?",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S14",
+        "S15"
+      ],
+      "link_ids": [
+        "C02",
+        "C05",
+        "C06"
+      ],
+      "essay": "By 2025, SAF became a measurable regulatory category with mandated blending and audited supply, whereas the older analysis focused on conditional non-food renewable-jet-fuel pathways. EU supply crossed the initial policy requirement, but depended heavily on used cooking oil rather than a broad new portfolio of technological feedstocks. Growth occurred; the pathway was narrower than scenario rhetoric might suggest. This is not a contradiction: different legal definitions and technology-readiness constraints shaped what counted and what could be deployed soonest.",
+      "afterlife": "The object became a legally certified mix with origin and traceability rules; early tonnes came through established rather than universally novel pathways.",
+      "alternative": "Near-term mandated shares do not establish that the study’s 2030 modeled volume or environmental life-cycle assumptions will be achieved.",
+      "lookback": "Compare 2018 feedstock-by-feedstock production assumptions with 2025 feedstock origins, certification and 2030 construction-stage facilities.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-b3a8e9eb3fe270e1",
+      "catalog_original_row": 265
+    },
+    {
+      "id": "T06",
+      "theme": "Agriculture and governance",
+      "title": "Digital agriculture: scenarios became a live governance problem",
+      "original_year": 2022,
+      "horizon": "2030 — future",
+      "original_title": "Scenarios for European agricultural policymaking in the era of digitalisation",
+      "doi": "10.1016/j.agsy.2021.103318",
+      "original_url": "https://doi.org/10.1016/j.agsy.2021.103318",
+      "original_type": "Four alternative governance scenarios",
+      "original_statement": "Explored baseline digitalisation, stronger government control, autonomous farming technology and digitally driven food business by 2030, with gaps and risks in all futures.",
+      "original_condition": "Not a single predicted outcome; scenarios intended for strategic policy testing. Source indexing shows late 2021 online publication and 2022 journal issue.",
+      "path": "2021/2022 scenarios → CAP 2023–27 policy puts farm and administrative digitalisation on the agenda → 2025 Data Act applies → Common European Agricultural Data Space under phased development.",
+      "latest": "EU programmes now address data sharing, access, farm skills, interoperability and data sovereignty, the same mechanisms the scenarios identified as unresolved.",
+      "meaning": "The central “digital future” shifts from owning automated machines to rules governing who may collect, use, protect and share farm information. No one scenario can be pronounced “correct”.",
+      "trajectory": "Scenario family reframed as governance choices",
+      "horizon_status": "2030 not reached",
+      "confidence": "High for policy developments; no case-level realised outcome verdict",
+      "limits": "Policy announcements and programme existence do not measure adoption across farms or prove a specific scenario.",
+      "question": "What do 2023–2026 EU farm adoption rates, digital divides and actual data-sharing contracts reveal about which mix of scenarios is developing?",
+      "source_ids": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "link_ids": [
+        "C04",
+        "C06",
+        "C07"
+      ],
+      "essay": "The scenarios used digitalisation to expose alternative ways of organising agriculture: public oversight, technology autonomy and business-led data ecosystems. Current EU policy developments focus on data access, interoperability and sovereignty, demonstrating that who governs information has become a core question. But a data-space programme is not evidence that farmers use it at scale, and legislation is not proof of trust. This case should be tracked as institutions and on-farm practice separately.",
+      "afterlife": "Digital agriculture changed from an equipment-adoption story into a politics of access, interoperability, contracts and agricultural autonomy.",
+      "alternative": "Policy agendas might anticipate future adoption without creating it; no representative farmer-level adoption measurements were assessed here.",
+      "lookback": "Return to the scenario axes, map live programmes to them, and compare to observed farm-size, region and skill differences.",
+      "provenance": "Direct match to 507-row historical claims table; see Nov26 Paths original claim ID",
+      "catalog_claim_id": "claim-69af00f6e952c96f",
+      "catalog_original_row": 117
+    },
+    {
+      "id": "T07",
+      "theme": "European institutions",
+      "title": "Five futures for Europe: the real EU combined pathways rather than choosing one",
+      "original_year": 2017,
+      "horizon": "2025 elapsed",
+      "original_title": "White Paper on the Future of Europe: Reflections and Scenarios for the EU27 by 2025",
+      "doi": "",
+      "original_url": "https://commission.europa.eu/publications/white-paper-future-europe_en",
+      "original_type": "Illustrative policy scenarios, not predictions",
+      "original_statement": "Five illustrative paths included carrying on, single-market-only integration, a coalition of willing Member States, doing less more efficiently, and doing much more together. The text explicitly said the scenarios overlap and are not mutually exclusive.",
+      "original_condition": "EU27 as a group; 2025 horizon; political choices and unforeseen shocks; no numerical probabilities for scenarios.",
+      "path": "2017 political thought experiment → 2020 pandemic recovery and common borrowing → 2022 full-scale Russia invasion and defence coordination → 2024–2029 strategic agenda → 2025 joint defence-readiness proposals.",
+      "latest": "The EU did not simply select one of the five 2017 models. By 2025–2026, common recovery instruments, defence coordination and differentiated cooperation coexisted with continuing national choices and unresolved institutional tensions.",
+      "meaning": "“More Europe” moved from mainly institutional architecture to questions of resilience, procurement capacity, preparedness and strategic autonomy; sectoral integration can accelerate without an all-purpose constitutional leap.",
+      "trajectory": "Overlapping branches; policy agenda recomposed",
+      "horizon_status": "2025 passed",
+      "confidence": "High for documents and agenda, low for any winner-takes-all classification",
+      "limits": "Published programme documents show institutional direction, not that a scenario was enacted wholesale or that 2017 white paper caused subsequent choices.",
+      "question": "Which actual 2025 competences, spending instruments and voting arrangements match each scenario mechanism? What had no place in the 2017 frame?",
+      "source_ids": [
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "link_ids": [
+        "C08",
+        "C09"
+      ],
+      "essay": "The original is best read as a political grammar rather than as five competing wagers. It offered different ways of arranging collective action. When the pandemic required extraordinary recovery financing and European security changed after 2022, the practical question shifted from how far integration should go in general to which institutions could act at speed. Common instruments expanded in some policy areas even while limits to unanimity and national control remained. Counting the number of current joint programmes alone would exaggerate integration: formal competences, budgetary scale, implementation powers, and actual member-state participation must all be examined.",
+      "afterlife": "The foresight survives as a menu of choices, but its labels are insufficient for the actual combination: European fiscal response, security urgency, industrial capacity and open enlargement debates. The future became hybrid rather than a single branch.",
+      "alternative": "One might reasonably read 2025 as closest to “Carrying on” because constitutional structures did not transform. Equally, differentiated defence and finance instruments resemble “Those who want more do more.” The point is to compare mechanisms one by one, not choose a rhetorical victor.",
+      "lookback": "Return to Annex 2 of the 2017 White Paper and mark domains: budget, defence, euro area, Schengen, single market. For each, distinguish formal legal change from agenda-setting and implementation; identify the shocks that entered from outside the scenario diagrams.",
+      "provenance": "Institutional original in research queue; not a direct match to 507-row academic claim sheet",
+      "catalog_claim_id": "",
+      "catalog_original_row": ""
+    },
+    {
+      "id": "T08",
+      "theme": "Work, skills, and demographic transition",
+      "title": "Skills to 2030: the forecast was updated, not completed",
+      "original_year": 2018,
+      "horizon": "2030 future",
+      "original_title": "Skills forecast: trends and challenges to 2030",
+      "doi": "",
+      "original_url": "https://www.cedefop.europa.eu/en/publications/3077",
+      "original_type": "Skills supply/demand forecast and task-based analysis",
+      "original_statement": "A 2018 Cedefop-Eurofound forecast explored labour-market changes and occupational polarisation through 2030; its purpose was to help planning, not promise an exact occupational headcount.",
+      "original_condition": "2018 vintage and underlying demographic, economic and task assumptions; occupational classifications and models evolve.",
+      "path": "2018 task and polarisation framework → COVID and changes in work → shocks from energy prices and war → green/digital policies and rapid generative AI diffusion → 2025 and 2026 Cedefop forecast vintages to 2035.",
+      "latest": "The Cedefop 2025 forecast projects low aggregate employment growth and strong replacement demand, especially in sectors including care and construction. The 2026 release separates replacement demand more explicitly and further disaggregates qualifications.",
+      "meaning": "“Skills of the future” shifts from enumerating new occupations to studying retirements, occupational tasks, retraining, qualifications, job openings and the difference between growth and replacement demand.",
+      "trajectory": "Foresight instrument revised while horizon remains open",
+      "horizon_status": "2030 not reached",
+      "confidence": "High for report lineage and updates; not a validation of 2018 numeric outputs",
+      "limits": "A 2035 forecast published in 2026 is new modelling, not observational confirmation of a 2018 2030 forecast. No profession-level backtest performed.",
+      "question": "Which 2018 occupation/task projections have 2024–2026 observed employment counterparts under a stable classification? Where does replacement demand overwhelm job growth?",
+      "source_ids": [
+        "S22",
+        "S23",
+        "S24"
+      ],
+      "link_ids": [
+        "C10",
+        "C11"
+      ],
+      "essay": "The most revealing afterlife is methodological: the forecast was not abandoned because labour markets changed; the institution kept revising the model. That is appropriate for policy planning but creates a hindsight trap. The newest scenario cannot be used as evidence that an old scenario was fulfilled. A correct audit needs archived tables from 2018, observed results for overlapping years and a classification crosswalk. Also, automation narratives often exaggerate job disappearance by focusing on technology while ignoring replacement demand caused by retirement, migration and workforce transitions.",
+      "afterlife": "The idea remains relevant but becomes a continuously revised decision-support system. Generative AI makes task composition harder to infer from job titles and highlights why occupation-level counts are insufficient to describe the change.",
+      "alternative": "A reading focused solely on job polarisation may remain useful; equally, shortage pressure in health and care could be driven less by technological change than demographic replacement. These are different causal pathways.",
+      "lookback": "Reopen the 2018 forecast tables and compare occupation definitions and model vintages with Cedefop 2026. Note which shifts were anticipated, which were policy-induced and which are new uncertainties.",
+      "provenance": "Institutional original in research queue; not direct academic-claims row",
+      "catalog_claim_id": "",
+      "catalog_original_row": ""
+    },
+    {
+      "id": "T09",
+      "theme": "European environment",
+      "title": "Environment outlook: emissions improved while ecosystem warnings persisted",
+      "original_year": 2019,
+      "horizon": "2020 title; medium-term environmental trajectories to 2030/2050",
+      "original_title": "The European environment — state and outlook 2020 (SOER 2020)",
+      "doi": "",
+      "original_url": "https://www.eea.europa.eu/en/analysis/publications/soer-2020-executive-summary",
+      "original_type": "Integrated assessment and outlook, not a single forecast",
+      "original_statement": "The EEA identified insufficient progress to stop biodiversity decline and unsustainable production and consumption, despite progress in selected areas. It argued systemic changes were necessary for longer-term European environmental goals.",
+      "original_condition": "Released with 2020 title, executive summary dated 4 December 2019; environmental indicators have varying geography, reference years, and causal drivers.",
+      "path": "2019 assessment → 2020s Green Deal and restoration-policy efforts → 2025 Europe’s environment assessment and biodiversity briefing → persistent nature degradation and rising climate risks alongside emissions progress.",
+      "latest": "EEA 2025 finds climate-mitigation progress and air-pollution reductions, but poor and deteriorating biodiversity; many 2030 biodiversity targets remain off track.",
+      "meaning": "“Environment improves” is not a meaningful single verdict: carbon emissions, air pollution, adaptation, biodiversity and resource throughput develop at different speeds and under competing land demands.",
+      "trajectory": "Persisting systemic warning with sectoral divergence",
+      "horizon_status": "Multiple horizons; 2025 checkpoint passed",
+      "confidence": "High for 2019 and 2025 official assessments; attribution not attempted",
+      "limits": "Comparing published overall summaries does not make a like-for-like numerical indicator panel. EEA indicators must be compared on same scope, geography and definition.",
+      "question": "Which threats from 2019 became specific regulatory obligations by 2025, and which pressures grew even where targets were adopted?",
+      "source_ids": [
+        "S25",
+        "S26",
+        "S27"
+      ],
+      "link_ids": [
+        "C09",
+        "C12",
+        "C13"
+      ],
+      "essay": "This case reveals why foresight research must resist one-number scorecards. Europe has reduced greenhouse gas emissions and air pollutants, yet ecological condition has not turned around. The mechanisms of emissions abatement can be faster than biodiversity recovery: emissions respond to energy-system change, whereas species and habitats may recover slowly or continue deteriorating when land and consumption pressures persist. The foresight was therefore not a prediction of uniform catastrophe. It was a warning about interactions, time lags and insufficient systemic transformation.",
+      "afterlife": "Some concerns matured into programmes and regulations without producing the ecological improvements they sought. The object shifted from identifying the crisis to evaluating the gap between policy adoption, implementation and environmental recovery.",
+      "alternative": "A narrow climate-only account would depict more progress; a biodiversity-only account a bleaker picture. Both would hide the divergent systems foregrounded by the broader original.",
+      "lookback": "Return to the 2019 executive summary, disaggregate its claims by indicator and expected speed of response, and then use the same EEA series for 2025 when available.",
+      "provenance": "Institutional original in source queue; not direct 507-row academic claim sheet",
+      "catalog_claim_id": "",
+      "catalog_original_row": ""
+    },
+    {
+      "id": "T10",
+      "theme": "Energy counterfactuals",
+      "title": "The EU 2016 reference scenario: a baseline overtaken by a changed policy world",
+      "original_year": 2016,
+      "horizon": "2030–2050 future",
+      "original_title": "EU Reference Scenario 2016: Energy, Transport and GHG Emissions — Trends to 2050",
+      "doi": "",
+      "original_url": "https://energy.ec.europa.eu/publications/reference-scenario_en",
+      "original_type": "Conditional policy and market baseline, used as analytical counterfactual",
+      "original_statement": "A projection of the EU28 energy, transport and greenhouse-gas system through 2050 on the then-current policy and market-trend assumptions, intended to benchmark new policy initiatives.",
+      "original_condition": "Not a pledge or prediction of unchanged policy. Scope EU28 and 2016 assumptions. Subsequent UK exit, energy-security shocks and updated climate law change both the boundary and baseline.",
+      "path": "2016 EU28 reference scenario → 2021 EU27 Reference Scenario 2020 update → 2022 Russian energy supply shock and REPowerEU → 2025 solar and electrification expansion → more ambitious policy conditions.",
+      "latest": "The Commission explicitly published a new EU Reference Scenario 2020 (in 2021), replacing the older 2016 benchmark for policy analysis. By 2025 deployment and policies, the 2016 current-policy premise no longer describes the current policy environment.",
+      "meaning": "A reference scenario can become obsolete precisely because policy changed; its most valuable afterlife may be the counterfactual it documented rather than accuracy to observed 2026 totals.",
+      "trajectory": "Model vintage superseded; old counterfactual remains interpretable",
+      "horizon_status": "2050 not reached",
+      "confidence": "High on supersession and changed boundaries; no numeric error metric",
+      "limits": "Cannot score 2016 forecast accuracy against a policy-driven 2025 outcome without matched variable, scenario and country scope. Avoid identifying a single cause for difference.",
+      "question": "Which 2016 baseline variables would have diverged earliest because of policy revision, pandemic, EU membership and the energy shock? What difference did the benchmark make to decisions?",
+      "source_ids": [
+        "S28",
+        "S29",
+        "S30"
+      ],
+      "link_ids": [
+        "C11",
+        "C14"
+      ],
+      "essay": "A reference scenario is a structured counterfactual: what follows under the policies and market assumptions that the modeler makes explicit. It therefore has two legitimate ways to survive. It can act as a comparator in impact assessments, and it can later be replaced because the world for which it was constructed no longer exists. The Commission’s successor benchmark uses EU27 rather than EU28 and a different policy base. Treating the old document as a forecast to beat would penalise exactly the policy interventions it was built to help evaluate.",
+      "afterlife": "It became a historical baseline rather than a current forecast. That is not a failure; the path from model to superseded model says something about the evolving policy environment and the value of periodic recalibration.",
+      "alternative": "Some model outputs may still be quantitatively useful as illustrative counterfactuals. But this would need variables, assumptions and old/new coverage; no claim that every value was rendered irrelevant.",
+      "lookback": "Retrieve the numeric 2016 annex and 2020-scenario annex, build a variable/assumption crosswalk, then compare real measurements separately. Mark every EU28/EU27 and pre-/post-policy break.",
+      "provenance": "Institutional reference scenario; not a direct 507-row academic claim",
+      "catalog_claim_id": "",
+      "catalog_original_row": ""
+    },
+    {
+      "id": "T11",
+      "theme": "Solar and industrial capacity",
+      "title": "Solar’s extraordinary growth does not erase the 2030 conditionality",
+      "original_year": 2020,
+      "horizon": "2030 future",
+      "original_title": "How photovoltaics can contribute to GHG emission reductions of 55% in the EU by 2030",
+      "doi": "",
+      "original_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC119156",
+      "original_type": "Conditional decarbonisation scenario and PV capacity pathway",
+      "original_statement": "The article estimated PV capacity of 455–605 GW by 2030 under specified 55% GHG-reduction pathways (EU and UK coverage in paper); an annual solar market of roughly 50–80 GW was explored.",
+      "original_condition": "Conditional model, relying on 2018 European long-term-strategy pathways; coverage may combine EU and UK; installed capacity is not energy generated or total GHG emissions avoided.",
+      "path": "2020 scenario → EU 2022 Solar Strategy aiming for 380 GW in 2025 → 2025 EU solar capacity estimate 406 GW and 56 GW of new capacity → 2026 Commission reporting record 2025 generation of 275 TWh.",
+      "latest": "SolarPower Europe reported 406 GW EU solar PV fleet in 2025 (65.1 GW new), a measure reproduced in a Commission solar focus; separately the Commission electricity-market series reports 359 GW and 56 GW additions in 2025. These are not a reconciled common capacity series.",
+      "meaning": "Beyond EU+UK vs EU27 coverage and GW vs TWh, 2025 solar capacity and annual installations diverge across published measurement series (e.g. 406 versus 359 GW). Measurement conventions, units and data vintages need explicit crosswalks; a large growing fleet can coexist with a cooling installation market.",
+      "trajectory": "Rapid deployment with multiple measurement boundaries",
+      "horizon_status": "2030 not reached",
+      "confidence": "High for reported EU 2025 metrics; original scenario conditions remain untested",
+      "limits": "The 2020 455–605 GW scenario uses EU-and-UK geography. EU-only 2025 values of 406 GW (SolarPower Europe, quoted by Commission) and 359 GW (Commission power-market series) use differing reporting bases, which are not reconciled here. No direct apples-to-apples numeric backtest is claimed.",
+      "question": "Can the EU+UK 2025 capacity be assembled in consistent units, and how do the 2025 market slowdown, grid constraints, storage and supply-chain structure affect the original 2030 scenario?",
+      "source_ids": [
+        "S31",
+        "S32",
+        "S33",
+        "S36",
+        "S37"
+      ],
+      "link_ids": [
+        "C14",
+        "C15"
+      ],
+      "essay": "A future once framed as urgent industrial scale-up had already become a mass-market reality by 2025, but the story is richer than a success graph. SolarPower Europe reported a 406 GW EU fleet in 2025, with 65.1 GW newly installed, while a separate Commission electricity-market series reports 359 GW and 56 GW additions. The difference in definitions or reporting methods has not been resolved in this research; unit, AC/DC and scope should be checked before merging the series. Moreover, the 406 GW series itself recorded a small year-on-year drop in annual new installations. The overall installed base can keep expanding while its growth rate slows. And neither capacity nor electricity generated directly proves the paper’s economy-wide greenhouse-gas reduction scenario. The original paper also covers the EU and UK, a different geography from later EU-only figures.",
+      "afterlife": "The meaning of solar leadership expanded from installation counts to storage, grid flexibility, industrial supply chains, and even a disagreement over how installed capacity is measured. Adoption and deployment-rate trends must both be investigated.",
+      "alternative": "It is fair to say that the installed solar fleet increased substantially; it is not warranted to say that the 2030 conditional emissions scenario or domestic manufacturing employment promises were met. The fall in annual additions in one source is not a decline in total installed stock.",
+      "lookback": "Retrieve the original EU+UK capacity definition and specify DC versus AC units where available. Reconcile the SolarPower Europe 406/65.1 series with Commission 359/56 series before plotting an historical outcome chart.",
+      "provenance": "DIRECT match: original historical claims row 162; source row claim ID to be copied from archive",
+      "catalog_claim_id": "claim-6049cfca1d3a1bd9",
+      "catalog_original_row": 162
+    },
+    {
+      "id": "T12",
+      "theme": "Population and long-run government budgets",
+      "title": "Ageing forecasts: the revisions are a foresight outcome in their own right",
+      "original_year": 2021,
+      "horizon": "2070 future; 2024 model-vintage checkpoint",
+      "original_title": "The 2021 Ageing Report: Economic and Budgetary Projections for the EU Member States (2019–2070)",
+      "doi": "",
+      "original_url": "https://economy-finance.ec.europa.eu/publications/2021-ageing-report-economic-and-budgetary-projections-eu-member-states-2019-2070_en",
+      "original_type": "Long-run conditional fiscal projections",
+      "original_statement": "The report projected the budgetary implications of ageing to 2070 under harmonised demographic, pension, healthcare and macroeconomic assumptions for EU Member States.",
+      "original_condition": "2019 demographic baseline; policy assumptions and model inputs are explicitly subject to revision; public pension share of GDP depends on both nominal expenditure and GDP denominator.",
+      "path": "2021 projection vintage → extraordinary inflation/GDP developments through 2022 → Eurostat demographic refresh and national pension reform changes → 2024 Ageing Report updates the expenditure paths.",
+      "latest": "The 2024 Ageing Report states that the projected EU change in public pension expenditure over 2022–2070 is +0.4 percentage points of GDP, against −0.6 percentage points in the 2021 exercise—a revision of +1.0 point.",
+      "meaning": "The exercise remains useful despite vintage shifts; a forecast that is revised before its far-off target is not thereby disproven, but exposes its dependence on baseline year, inflation, employment and legislation.",
+      "trajectory": "Revised long-run projection; far horizon remains open",
+      "horizon_status": "2070 not reached",
+      "confidence": "High for the official vintage comparison; no claim of realised 2070 costs",
+      "limits": "EU aggregate changes refer to a change over 2022–2070, not the 2070 pension spending level; table section 1.9 is the source. Different base-year vintages must not be overlooked.",
+      "question": "Which assumptions produced the one-point revision, how much arose from the 2022 denominator and how much from policy, demographics or labour-market behaviour?",
+      "source_ids": [
+        "S34",
+        "S35"
+      ],
+      "link_ids": [
+        "C10",
+        "C16"
+      ],
+      "essay": "This is a useful antidote to simplistic foresight grading. A later Ageing Report does not observe the 2070 future. Instead it reports a refreshed conditional version of the future after newer demographic and economic information became available. The official comparison shows a one-percentage-point shift in the change in public pension spending (as GDP share). It notes that realised 2022 expenditure was lower than the earlier vintage expected because the GDP denominator rose and other economic conditions differed; it also identifies legislation and revised assumptions behind country-level changes.",
+      "afterlife": "Long-run demography did not become irrelevant; the model had to absorb actual economic shocks, new inputs and policy. The afterlife is an evolving reference system for fiscal choices, not a prediction whose truth status can be set in 2026.",
+      "alternative": "Some national trajectories moved in opposite directions; a positive EU aggregate revision must not be described as every country’s deterioration. The report explicitly distinguishes baseline, scenario and sensitivities.",
+      "lookback": "Put 2021 and 2024 forecasts side by side, measure the same year, geographical group and GDP definition, and annotate source of change: rebasing, new Eurostat population, law, employment, macro shock.",
+      "provenance": "Institutional original in research queue; not a direct 507-row academic claim",
+      "catalog_claim_id": "",
+      "catalog_original_row": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "2018 original renewable forecast study",
+      "source_type": "Original paper",
+      "published": "2018-05-10",
+      "url": "https://www.mdpi.com/2071-1050/10/5/1515",
+      "case_id": "T01",
+      "what_this_supports": "Presents trend models using EU-28 1995–2016 data; the abstract says all forecast series trend upward. Do not infer a binary missed target from its phrase “yet to be reached”."
+    },
+    {
+      "id": "S02",
+      "title": "EU Commission 2022 renewable energy progress report",
+      "source_type": "EU Commission retrospective",
+      "published": "2022-11-15",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0639",
+      "case_id": "T01",
+      "what_this_supports": "Reports EU-27 22.1% share in 2020, exceeding 20% target; flags COVID-related demand reduction and final energy consumption decline."
+    },
+    {
+      "id": "S03",
+      "title": "2019 original EU/EEA tuberculosis projection",
+      "source_type": "Original paper",
+      "published": "2019-03-21",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6440579/",
+      "case_id": "T02",
+      "what_this_supports": "2017 10.7 cases notified per 100,000, forecast 2030 5.7 vs 2.4 target assuming 4.8% annual decline."
+    },
+    {
+      "id": "S04",
+      "title": "ECDC assessment of progress on SDG 3.3",
+      "source_type": "Official surveillance summary",
+      "published": "2025-04-23",
+      "url": "https://www.ecdc.europa.eu/en/news-events/making-next-five-years-count-europe-not-track-reach-2030-sustainable-development-goal",
+      "case_id": "T02",
+      "what_this_supports": "EU/EEA is off track on many 2030 infection targets; data gaps limit assessment."
+    },
+    {
+      "id": "S05",
+      "title": "ECDC/WHO Tuberculosis surveillance 2026 (2024 data)",
+      "source_type": "Official surveillance",
+      "published": "2026-03-23",
+      "url": "https://www.ecdc.europa.eu/en/publications-data/tuberculosis-surveillance-and-monitoring-europe-2026-2024-data",
+      "case_id": "T02",
+      "what_this_supports": "EU/EEA 38,249 notifications, 8.4 per 100,000 in 2024; WHO European Region figures cover a different population and should not be substituted."
+    },
+    {
+      "id": "S06",
+      "title": "2017 Netherlands automated-vehicle scenarios",
+      "source_type": "Original study",
+      "published": "2017-01-01",
+      "url": "https://journals.open.tudelft.nl/ejtir/article/view/3180",
+      "case_id": "T03",
+      "what_this_supports": "Four scenarios; 2030 1–11% uptake (mainly conditional automation), 2050 7–61%; first fully automated commercial availability 2025–2045."
+    },
+    {
+      "id": "S07",
+      "title": "Dutch RDW approval note on supervised FSD",
+      "source_type": "National road regulator",
+      "published": "2026-04-10",
+      "url": "https://www.rdw.nl/en/news/2026/rdw-explanation-of-european-type-approval-tesla-with-provisional-validity-in-the-netherlands",
+      "case_id": "T03",
+      "what_this_supports": "Regulator expressly says this approved assistance system is not a self-driving vehicle and the driver remains responsible."
+    },
+    {
+      "id": "S08",
+      "title": "RDW explanation of supervised autonomous shuttle pilot",
+      "source_type": "National road regulator",
+      "published": "2026 (webpage undated)",
+      "url": "https://www.rdw.nl/over-rdw/campagnes/veilige-voertuigen/zelfrijdende-bus",
+      "case_id": "T03",
+      "what_this_supports": "Bus shuttle near Rotterdam The Hague Airport uses automated driving with a safety driver and temporary prototype approval; pilot not fleet penetration."
+    },
+    {
+      "id": "S09",
+      "title": "2017 Climate Smart Forestry potential study",
+      "source_type": "Original study",
+      "published": "2017-12-06",
+      "url": "https://www.mdpi.com/1999-4907/8/12/484",
+      "case_id": "T04",
+      "what_this_supports": "Potential additional 441 Mt CO2/year by 2050 assumes incentives; contains substitution effects as well as net carbon removals."
+    },
+    {
+      "id": "S10",
+      "title": "EEA LULUCF carbon-removal indicator",
+      "source_type": "European Environment Agency",
+      "published": "Latest page accessed 2026-11-02",
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emissions-from-land",
+      "case_id": "T04",
+      "what_this_supports": "2023 198 Mt CO2e net removal, 2024 estimated 212, 2030 EU target 310; projected current-policy removals insufficient."
+    },
+    {
+      "id": "S11",
+      "title": "EC land use sector framework",
+      "source_type": "European Commission policy",
+      "published": "Latest page accessed 2026-11-02",
+      "url": "https://climate.ec.europa.eu/areas-action/land-use-sector_en",
+      "case_id": "T04",
+      "what_this_supports": "2026–2030 EU shift toward reported net-removals and new target; not comparable to forest-product substitution scenario totals."
+    },
+    {
+      "id": "S12",
+      "title": "2018 nonfood renewable jet fuel scenarios",
+      "source_type": "Original study",
+      "published": "2018-05-22",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/gcbb.12525",
+      "case_id": "T05",
+      "what_this_supports": "Conditional 2030 nonfood RJF supply 3.8–6.1 Mt/year with policy incentives, biomass availability and advanced technologies."
+    },
+    {
+      "id": "S13",
+      "title": "EASA ReFuelEU Aviation technical report 2026 (2025 data)",
+      "source_type": "EU aviation regulator monitoring",
+      "published": "2026-09-17",
+      "url": "https://www.easa.europa.eu/en/newsroom-and-events/press-releases/eu-sustainable-aviation-fuel-supply-exceeds-2025-refueleu-aviation-target",
+      "case_id": "T05",
+      "what_this_supports": "2025 EU SAF 1.1 Mt, 2.8% of airport fuel, vs 2% mandate; used cooking oil predominant at 80% and most feedstock originated outside EU."
+    },
+    {
+      "id": "S14",
+      "title": "EASA ReFuelEU interactive dashboard",
+      "source_type": "EU aviation regulator dashboard",
+      "published": "2026-09-17",
+      "url": "https://www.easa.europa.eu/en/domains/environment/refueleu-aviation/annual-technical-report/dashboard-refueleu-aviation-2026",
+      "case_id": "T05",
+      "what_this_supports": "SAF supplied 2.79%; categories and feedstocks differentiated, including 90.5 kt advanced aviation biofuel; broad SAF is not identical to 2018 nonfood RJF modeled definition."
+    },
+    {
+      "id": "S15",
+      "title": "ReFuelEU aviation policy obligations",
+      "source_type": "EU aviation regulator policy",
+      "published": "Latest page accessed 2026-11-02",
+      "url": "https://www.easa.europa.eu/en/domains/environment/eaer/sustainable-aviation-fuels/saf-policy-actions",
+      "case_id": "T05",
+      "what_this_supports": "2025 2% EU mandate, ramping to 6% in 2030 and 70% by 2050; synthetic fuel separate submandate."
+    },
+    {
+      "id": "S16",
+      "title": "2022 digital agriculture scenarios original",
+      "source_type": "Original study",
+      "published": "2022-02 (early online 2021)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0308521X21002717",
+      "case_id": "T06",
+      "what_this_supports": "Four explorative 2030 pathways; authors warn different data-governance and skills needs. These are scenarios, not point predictions."
+    },
+    {
+      "id": "S17",
+      "title": "EC digitalising EU agricultural sector",
+      "source_type": "European Commission policy account",
+      "published": "Latest page accessed 2026-11-02",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/digitalisation-agriculture",
+      "case_id": "T06",
+      "what_this_supports": "Data Act enters force 2025, Common European Agricultural Data Space phased preparation/deployment; data sovereignty and unequal uptake matter."
+    },
+    {
+      "id": "S18",
+      "title": "EC CAP and digitalisation",
+      "source_type": "European Commission agriculture policy",
+      "published": "Latest page accessed 2026-11-02",
+      "url": "https://agriculture.ec.europa.eu/vision-overview/digitalisation_en",
+      "case_id": "T06",
+      "what_this_supports": "CAP 2023–27 explicitly develops knowledge, innovation and digitalisation, including data sharing and administration; not evidence of 2030 scenario outcome."
+    },
+    {
+      "id": "S19",
+      "title": "2017 White Paper on the future of Europe",
+      "source_type": "Original European Commission scenario publication",
+      "published": "2017-03-01",
+      "url": "https://commission.europa.eu/publications/white-paper-future-europe_en",
+      "case_id": "T07",
+      "what_this_supports": "Five scenarios to 2025; original makes clear they are overlapping illustrations and not deterministic blueprints."
+    },
+    {
+      "id": "S20",
+      "title": "The EU Commission priorities 2024–2029",
+      "source_type": "Institutional agenda",
+      "published": "2024-07-18",
+      "url": "https://commission.europa.eu/priorities-2024-2029_en",
+      "case_id": "T07",
+      "what_this_supports": "2024–29 priorities including defence, competitiveness, governance and social resilience, not a single 2017 scenario."
+    },
+    {
+      "id": "S21",
+      "title": "Future of European defence: readiness actions",
+      "source_type": "Policy and implementation chronology",
+      "published": "2025-10-16",
+      "url": "https://commission.europa.eu/topics/defence/future-european-defence_en",
+      "case_id": "T07",
+      "what_this_supports": "2025 White Paper / Readiness 2030, roadmap and funding instruments. Programmes and aims, not proof of achieved readiness."
+    },
+    {
+      "id": "S22",
+      "title": "Cedefop 2018 Skills forecast",
+      "source_type": "Original forecast",
+      "published": "2018-12-18",
+      "url": "https://www.cedefop.europa.eu/en/publications/3077",
+      "case_id": "T08",
+      "what_this_supports": "2018 task content and polarisation studies plus 2030 models."
+    },
+    {
+      "id": "S23",
+      "title": "Cedefop Skills Forecast to 2035: 2025 edition",
+      "source_type": "Updated forecast",
+      "published": "2025-03-14",
+      "url": "https://www.cedefop.europa.eu/en/news/cedefop-skills-forecast-2035-twin-transition-and-demographic-challenge-drive-demand-high-level",
+      "case_id": "T08",
+      "what_this_supports": "2025 expectations on replacement demand, population ageing and green/digital transitions; not observed outcomes."
+    },
+    {
+      "id": "S24",
+      "title": "Cedefop Skills Forecast 2026 dataset",
+      "source_type": "Updated modelling dataset",
+      "published": "2026",
+      "url": "https://www.cedefop.europa.eu/en/datasets/skills-forecast",
+      "case_id": "T08",
+      "what_this_supports": "2026 forecast to 2035, new model vintage with more attention to replacement demand and qualifications."
+    },
+    {
+      "id": "S25",
+      "title": "SOER 2020 Executive Summary",
+      "source_type": "Original environment assessment",
+      "published": "2019-12-04",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/soer-2020-executive-summary",
+      "case_id": "T09",
+      "what_this_supports": "The report with 2020 title was summarised December 2019; systemic climate, nature and consumption challenges."
+    },
+    {
+      "id": "S26",
+      "title": "Europe environment 2025 biodiversity briefing",
+      "source_type": "2025 EEA observation and outlook",
+      "published": "2025",
+      "url": "https://www.eea.europa.eu/en/europe-environment-2025/thematic-briefings/biodiversity-and-ecosystems/state-of-europes-biodiversity",
+      "case_id": "T09",
+      "what_this_supports": "Biodiversity remains poor and has deteriorated; outlook negative and 2030 targets broadly off track."
+    },
+    {
+      "id": "S27",
+      "title": "Europe environment 2025 main findings",
+      "source_type": "2025 assessment",
+      "published": "2025",
+      "url": "https://www.eea.europa.eu/en/newsroom/news/state-of-europes-environment-2025",
+      "case_id": "T09",
+      "what_this_supports": "Climate and air-pollution improvements alongside persistent environmental degradation."
+    },
+    {
+      "id": "S28",
+      "title": "EU Reference Scenario 2016",
+      "source_type": "Original conditional baseline",
+      "published": "2016-07-19",
+      "url": "https://energy.ec.europa.eu/publications/reference-scenario_en",
+      "case_id": "T10",
+      "what_this_supports": "2016 EU28 current-policy baseline through 2050."
+    },
+    {
+      "id": "S29",
+      "title": "EU Reference Scenario 2020 published 2021",
+      "source_type": "Successor benchmark",
+      "published": "2021-07-01",
+      "url": "https://blue-economy-observatory.ec.europa.eu/publications/energy-transport-and-ghg-emissions-trends-2050_en",
+      "case_id": "T10",
+      "what_this_supports": "Explicit replacement/updated version of 2016 reference; EU27 and newer policies and data."
+    },
+    {
+      "id": "S30",
+      "title": "Commission report solar and EV 2025 electricity market",
+      "source_type": "Observed energy deployment",
+      "published": "2026-07-06",
+      "url": "https://energy.ec.europa.eu/news/quarterly-reports-show-surge-solar-energy-and-e-vehicles-record-highs-2025-2026-07-06_en",
+      "case_id": "T10",
+      "what_this_supports": "Record 2025 solar generation and renewable installations, not direct proof that old reference would have predicted them."
+    },
+    {
+      "id": "S31",
+      "title": "JRC 2020 photovoltaic 55% GHG pathway paper",
+      "source_type": "Original scientific foresight scenario",
+      "published": "2020-05-19",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC119156",
+      "case_id": "T11",
+      "what_this_supports": "455–605 GW conditional 2030 scenario; note EU+UK comparison issue."
+    },
+    {
+      "id": "S32",
+      "title": "Commission solar 2026 focus",
+      "source_type": "2025 observed reported capacity",
+      "published": "2026-01-15",
+      "url": "https://energy.ec.europa.eu/news/focus-solar-energy-shining-star-europes-clean-transition-2026-01-15_en",
+      "case_id": "T11",
+      "what_this_supports": "Estimated 406 GW EU capacity in 2025, higher than EU 2022 intermediate strategy 380 GW."
+    },
+    {
+      "id": "S33",
+      "title": "Commission 2025 solar generation and installations",
+      "source_type": "2025 outcome reported 2026",
+      "published": "2026-07-06",
+      "url": "https://energy.ec.europa.eu/news/quarterly-reports-show-surge-solar-energy-and-e-vehicles-record-highs-2025-2026-07-06_en",
+      "case_id": "T11",
+      "what_this_supports": "Solar generated 275 TWh in 2025, plus 56 GW installations. Distinguish energy from capacity."
+    },
+    {
+      "id": "S34",
+      "title": "2021 Ageing Report",
+      "source_type": "Original budgetary forecast",
+      "published": "2021-05-07",
+      "url": "https://economy-finance.ec.europa.eu/publications/2021-ageing-report-economic-and-budgetary-projections-eu-member-states-2019-2070_en",
+      "case_id": "T12",
+      "what_this_supports": "2019–2070 economic, demographic and fiscal projection vintage."
+    },
+    {
+      "id": "S35",
+      "title": "2024 Ageing Report, section 1.9, p.59",
+      "source_type": "Successor projection with explicit vintage comparison",
+      "published": "2024-04-18",
+      "url": "https://economy-finance.ec.europa.eu/system/files/2024-04/ip279_en.pdf",
+      "case_id": "T12",
+      "what_this_supports": "Official report estimates 2022–2070 EU public pension spending change +0.4 pp GDP vs −0.6 pp in 2021 vintage; revisions are not outcomes."
+    },
+    {
+      "id": "S36",
+      "case_id": "T11",
+      "title": "EU electricity market analysis 2025: PV 359 GW series",
+      "source_type": "Commission electricity market report",
+      "published": "2026-07",
+      "url": "https://energy.ec.europa.eu/data-and-analysis/market-analysis_en",
+      "what_this_supports": "Commission market series reports 359 GW installed solar capacity in 2025 and 56 GW installations; differs from SolarPower Europe 406 GW / 65.1 GW series, not reconciled here."
+    },
+    {
+      "id": "S37",
+      "case_id": "T11",
+      "title": "SolarPower Europe December 2025 solar market outlook",
+      "source_type": "Industry installed-capacity dataset and forecast",
+      "published": "2025-12-11",
+      "url": "https://www.solarpowereurope.org/press-releases/new-report-eu-hits-2025-solar-target-but-market-contraction-puts-2030-goal-at-risk",
+      "what_this_supports": "Reports 406 GW 2025 EU PV installed capacity, 65.1 GW annual installations, a 0.7% annual decline in newly installed GW, and prospective 2030 shortfall; latter is forecast not outcome."
+    }
+  ],
+  "events": [
+    {
+      "case_id": "T01",
+      "date": "2018",
+      "stage": "Original study",
+      "event": "EU-28 rising-share models published",
+      "evidence_class": "Original model",
+      "source_id": "S01"
+    },
+    {
+      "case_id": "T01",
+      "date": "2020",
+      "stage": "Observed shock",
+      "event": "COVID reduced gross final energy demand in EU",
+      "evidence_class": "Exogenous shock",
+      "source_id": "S02"
+    },
+    {
+      "case_id": "T01",
+      "date": "2020 / reported 2022",
+      "stage": "Observed outcome",
+      "event": "EU-27 renewables share 22.1%, above the 20% goal",
+      "evidence_class": "Measured outcome",
+      "source_id": "S02"
+    },
+    {
+      "case_id": "T02",
+      "date": "2019",
+      "stage": "Original forecast",
+      "event": "If existing decline persists, TB notification 5.7 / 100k in 2030 vs target 2.4",
+      "evidence_class": "Conditional extrapolation",
+      "source_id": "S03"
+    },
+    {
+      "case_id": "T02",
+      "date": "2025",
+      "stage": "Institutional assessment",
+      "event": "ECDC warns many EU/EEA 2030 epidemic targets are off-track",
+      "evidence_class": "Evaluation",
+      "source_id": "S04"
+    },
+    {
+      "case_id": "T02",
+      "date": "2024 / reported 2026",
+      "stage": "Observed outcome",
+      "event": "EU/EEA TB notification 8.4 / 100k (38,249 reports)",
+      "evidence_class": "Measured outcome",
+      "source_id": "S05"
+    },
+    {
+      "case_id": "T03",
+      "date": "2017",
+      "stage": "Original scenarios",
+      "event": "2030 1–11% adoption, 2050 7–61% under four scenario variants",
+      "evidence_class": "Scenario",
+      "source_id": "S06"
+    },
+    {
+      "case_id": "T03",
+      "date": "2026-04",
+      "stage": "Regulatory change",
+      "event": "RDW permits a supervised assistance feature while stressing driver responsibility",
+      "evidence_class": "Approval / definition",
+      "source_id": "S07"
+    },
+    {
+      "case_id": "T03",
+      "date": "2026 (page undated)",
+      "stage": "Limited deployment",
+      "event": "RDW documents automated shuttle with safety driver and temporary prototype approval",
+      "evidence_class": "Pilot / limited ODD",
+      "source_id": "S08"
+    },
+    {
+      "case_id": "T04",
+      "date": "2017",
+      "stage": "Original potential",
+      "event": "441 Mt CO2/year additional combined mitigation possible by 2050 with incentives",
+      "evidence_class": "Conditional potential",
+      "source_id": "S09"
+    },
+    {
+      "case_id": "T04",
+      "date": "2023 / reported later",
+      "stage": "Observed outcome",
+      "event": "EU LULUCF net sink about 198 Mt CO2e",
+      "evidence_class": "Measured outcome",
+      "source_id": "S10"
+    },
+    {
+      "case_id": "T04",
+      "date": "2024 estimate",
+      "stage": "Observed outcome",
+      "event": "EU LULUCF sink preliminarily about 212 Mt CO2e; not comparable with 441 total sector potential",
+      "evidence_class": "Estimate",
+      "source_id": "S10"
+    },
+    {
+      "case_id": "T04",
+      "date": "2026–2030",
+      "stage": "Regulatory change",
+      "event": "EU land-use policy shifts to reported removals, 310 Mt CO2e EU 2030 target",
+      "evidence_class": "Policy target",
+      "source_id": "S11"
+    },
+    {
+      "case_id": "T05",
+      "date": "2018",
+      "stage": "Original scenario",
+      "event": "2030 nonfood RJF 3.8–6.1 Mt/year conditional on technology and policy",
+      "evidence_class": "Conditional model",
+      "source_id": "S12"
+    },
+    {
+      "case_id": "T05",
+      "date": "2025",
+      "stage": "Policy begins",
+      "event": "ReFuelEU SAF minimum blend 2%",
+      "evidence_class": "Regulatory target",
+      "source_id": "S15"
+    },
+    {
+      "case_id": "T05",
+      "date": "2024 / reported 2025",
+      "stage": "Observed baseline",
+      "event": "193,000 tonnes EU SAF supplied prior to mandate",
+      "evidence_class": "Measured outcome",
+      "source_id": "S13"
+    },
+    {
+      "case_id": "T05",
+      "date": "2025 / reported 2026-09",
+      "stage": "Observed outcome",
+      "event": "EU SAF 1.1 Mt; 2.8% fuel share; 80% used cooking oil and mostly imported feedstock",
+      "evidence_class": "Measured outcome",
+      "source_id": "S13"
+    },
+    {
+      "case_id": "T06",
+      "date": "2021/2022",
+      "stage": "Original scenarios",
+      "event": "Four 2030 agriculture-digitalisation governance alternatives",
+      "evidence_class": "Explorative scenarios",
+      "source_id": "S16"
+    },
+    {
+      "case_id": "T06",
+      "date": "2023–2027",
+      "stage": "Policy strategy",
+      "event": "CAP includes digitalisation at farm and administration levels",
+      "evidence_class": "Policy initiative",
+      "source_id": "S18"
+    },
+    {
+      "case_id": "T06",
+      "date": "2025",
+      "stage": "Legislation",
+      "event": "Data Act applies, alongside planning of an agricultural data space",
+      "evidence_class": "Legal/governance shift",
+      "source_id": "S17"
+    },
+    {
+      "case_id": "T07",
+      "date": "2017-03",
+      "stage": "Scenario publication",
+      "event": "Five overlapping paths for the EU27 by 2025",
+      "evidence_class": "Original scenarios",
+      "source_id": "S19"
+    },
+    {
+      "case_id": "T07",
+      "date": "2024-07",
+      "stage": "Political priorities",
+      "event": "New 2024–29 Commission priorities stress defence, competitiveness, resilience",
+      "evidence_class": "Institutional agenda",
+      "source_id": "S20"
+    },
+    {
+      "case_id": "T07",
+      "date": "2025-03 to 10",
+      "stage": "Policy development",
+      "event": "Defence-readiness white paper and roadmap; combined initiatives rather than wholesale one scenario",
+      "evidence_class": "Programme and policy",
+      "source_id": "S21"
+    },
+    {
+      "case_id": "T08",
+      "date": "2018-12",
+      "stage": "Original forecast",
+      "event": "2030 labour forecasts and occupation/task polarisation",
+      "evidence_class": "Model-based projection",
+      "source_id": "S22"
+    },
+    {
+      "case_id": "T08",
+      "date": "2025-03",
+      "stage": "New forecast vintage",
+      "event": "Cedefop publishes projections to 2035 including demographic replacement demand",
+      "evidence_class": "Revised projection",
+      "source_id": "S23"
+    },
+    {
+      "case_id": "T08",
+      "date": "2026",
+      "stage": "New dataset",
+      "event": "Cedefop 2026 projection dataset covers 2035 with refined skills categories",
+      "evidence_class": "Revised projection",
+      "source_id": "S24"
+    },
+    {
+      "case_id": "T09",
+      "date": "2019-12",
+      "stage": "Original environmental assessment",
+      "event": "SOER 2020 executive summary documents systemic risks",
+      "evidence_class": "Original outlook",
+      "source_id": "S25"
+    },
+    {
+      "case_id": "T09",
+      "date": "2025",
+      "stage": "Observed state",
+      "event": "EEA 2025 biodiversity poor and deteriorating",
+      "evidence_class": "Official assessment",
+      "source_id": "S26"
+    },
+    {
+      "case_id": "T09",
+      "date": "2025",
+      "stage": "Observed divergence",
+      "event": "Mitigation and air quality improve while ecosystem pressures remain",
+      "evidence_class": "Official assessment",
+      "source_id": "S27"
+    },
+    {
+      "case_id": "T10",
+      "date": "2016-07",
+      "stage": "Reference modelling",
+      "event": "EU28 policy/market baseline through 2050 published",
+      "evidence_class": "Counterfactual baseline",
+      "source_id": "S28"
+    },
+    {
+      "case_id": "T10",
+      "date": "2021-07",
+      "stage": "Baseline updated",
+      "event": "EU27 2020 Reference Scenario replaces 2016 version",
+      "evidence_class": "New model vintage",
+      "source_id": "S29"
+    },
+    {
+      "case_id": "T10",
+      "date": "2025, reported 2026",
+      "stage": "Observed system",
+      "event": "Record solar and renewable electricity generation amid changed policy environment",
+      "evidence_class": "Measured deployment",
+      "source_id": "S30"
+    },
+    {
+      "case_id": "T11",
+      "date": "2020-05",
+      "stage": "Original study",
+      "event": "455–605 GW EU-and-UK PV capacity conditional 2030 pathway",
+      "evidence_class": "Conditional scenario",
+      "source_id": "S31"
+    },
+    {
+      "case_id": "T11",
+      "date": "2025, reported Jan 2026",
+      "stage": "Observed expansion",
+      "event": "Estimated EU solar PV capacity 406 GW; exceeds EU 2022 strategy 380 GW 2025 target",
+      "evidence_class": "Observed estimate",
+      "source_id": "S32"
+    },
+    {
+      "case_id": "T11",
+      "date": "2025, reported July 2026",
+      "stage": "Observed generation",
+      "event": "275 TWh solar electricity, 56 GW new capacity in 2025",
+      "evidence_class": "Measured market / generation",
+      "source_id": "S33"
+    },
+    {
+      "case_id": "T12",
+      "date": "2021-05",
+      "stage": "Long-run forecast",
+      "event": "2019–2070 projection vintage released",
+      "evidence_class": "Conditional projection",
+      "source_id": "S34"
+    },
+    {
+      "case_id": "T12",
+      "date": "2022, reviewed 2024",
+      "stage": "Base-year surprise",
+      "event": "2022 nominal GDP and actual public pension spending ratio altered scenario starting point",
+      "evidence_class": "Baseline remeasurement",
+      "source_id": "S35"
+    },
+    {
+      "case_id": "T12",
+      "date": "2024-04",
+      "stage": "Projection revised",
+      "event": "EU 2022–2070 pension expenditure change +0.4 pp vs −0.6 pp in older vintage",
+      "evidence_class": "Revised forecast, NOT outcome",
+      "source_id": "S35"
+    },
+    {
+      "case_id": "T11",
+      "date": "2025, reported Dec 2025",
+      "stage": "Independent market series",
+      "event": "SolarPower Europe estimates 406 GW installed EU PV; 65.1 GW new in 2025, slight fall from 2024 annual new capacity",
+      "evidence_class": "Sectoral measured estimate",
+      "source_id": "S37"
+    },
+    {
+      "case_id": "T11",
+      "date": "2025, reported Jul 2026",
+      "stage": "Another measurement series",
+      "event": "EU electricity market report records 359 GW installed, 56 GW new; not reconciled with 406 GW series",
+      "evidence_class": "Official series / method mismatch",
+      "source_id": "S36"
+    }
+  ],
+  "connections": [
+    {
+      "id": "C01",
+      "from_id": "T01",
+      "to_id": "T04",
+      "headline": "Competing meanings of “green progress”",
+      "interpretation": "Both energy share and land removals use aggregate climate indicators but answer different questions; increased renewables share does not show forest removals improve.",
+      "link_type": "Analytical contrast",
+      "confidence": "Moderate",
+      "source_ids": "S02;S10",
+      "caution": "Comparison only, no assumed causality"
+    },
+    {
+      "id": "C02",
+      "from_id": "T01",
+      "to_id": "T05",
+      "headline": "Target achievement versus underlying mechanism",
+      "interpretation": "Renewables 2020 share and SAF 2025 blend exceeded policy thresholds; changing denominators, feedstocks and metric boundaries affect what “success” means.",
+      "link_type": "Shared measurement trap",
+      "confidence": "High",
+      "source_ids": "S02;S13",
+      "caution": "Two distinct legal targets; not evidence one caused the other"
+    },
+    {
+      "id": "C03",
+      "from_id": "T01",
+      "to_id": "T02",
+      "headline": "Exogenous shocks break straight-line extrapolation",
+      "interpretation": "COVID shaped energy demand and disease surveillance, challenging extrapolation from pre-2020 conditions in both studies.",
+      "link_type": "Shared shock",
+      "confidence": "Moderate",
+      "source_ids": "S02;S05",
+      "caution": "Different mechanisms; direct TB notification effect not quantified here"
+    },
+    {
+      "id": "C04",
+      "from_id": "T03",
+      "to_id": "T06",
+      "headline": "Technology growth depends on governance",
+      "interpretation": "AV scenarios depend on transport law/safety responsibility; agriculture scenarios depend on data access, trust and digital skills.",
+      "link_type": "Cross-sector analogy",
+      "confidence": "Moderate",
+      "source_ids": "S07;S17",
+      "caution": "Analogy only, no direct sector causal link"
+    },
+    {
+      "id": "C05",
+      "from_id": "T04",
+      "to_id": "T05",
+      "headline": "Biomass/resource constraints and accounting",
+      "interpretation": "Forestry mitigation calculations include bioenergy and substitution; jet-fuel modeling depends on biomass. Distinguish theoretical competition from observed 2025 UCO-based SAF.",
+      "link_type": "Potential resource coupling",
+      "confidence": "Moderate",
+      "source_ids": "S09;S12;S13",
+      "caution": "No direct measured diversion of forest resources into EU SAF shown"
+    },
+    {
+      "id": "C06",
+      "from_id": "T05",
+      "to_id": "T06",
+      "headline": "Supply chain transparency and data governance",
+      "interpretation": "SAF feedstock origin, sustainability certification and farm-data control are both traceability/governance questions.",
+      "link_type": "Institutional connection",
+      "confidence": "Moderate",
+      "source_ids": "S13;S17",
+      "caution": "Not proof that one policy led to the other"
+    },
+    {
+      "id": "C07",
+      "from_id": "T04",
+      "to_id": "T06",
+      "headline": "Land monitoring and data rights",
+      "interpretation": "New LULUCF reporting and agriculture data-space work create related but distinct data-governance requirements for land systems.",
+      "link_type": "Institutional overlap",
+      "confidence": "Moderate",
+      "source_ids": "S11;S17",
+      "caution": "Does not establish harmonized datasets or direct technical integration"
+    },
+    {
+      "id": "C08",
+      "from_id": "T07",
+      "to_id": "T03",
+      "headline": "Integration scenarios meet real automation regulation",
+      "interpretation": "Cross-border transport regulation is one practical test of the 2017 EU integration choices; Dutch AV scope shows different meaning of harmonisation than total autonomy.",
+      "link_type": "Institutional mechanism",
+      "confidence": "Moderate",
+      "source_ids": "S19;S07",
+      "caution": "Does not prove White Paper influenced any Dutch AV approval."
+    },
+    {
+      "id": "C09",
+      "from_id": "T07",
+      "to_id": "T09",
+      "headline": "Green strategy becomes a broader security and resilience agenda",
+      "interpretation": "Environmental resilience is woven into the EU 2024–29 strategic agenda; 2025 ecological outcomes remain mixed.",
+      "link_type": "Agenda convergence",
+      "confidence": "Moderate",
+      "source_ids": "S20;S27",
+      "caution": "Political attention not equivalent to environmental improvement."
+    },
+    {
+      "id": "C10",
+      "from_id": "T08",
+      "to_id": "T12",
+      "headline": "The labour force is the hidden link between skills and fiscal ageing",
+      "interpretation": "Replacement demand in skills forecasts and GDP/payroll assumptions in ageing reports share demographic constraints, but their outputs differ.",
+      "link_type": "Shared demographic driver",
+      "confidence": "High",
+      "source_ids": "S23;S35",
+      "caution": "Do not numerically merge employment forecasts and pension forecasts without consistent baselines."
+    },
+    {
+      "id": "C11",
+      "from_id": "T08",
+      "to_id": "T10",
+      "headline": "Model vintages can be replaced without making the original useless",
+      "interpretation": "Labour-market and energy-sector models are repeatedly updated after shocks; useful history lives in the conditional assumptions.",
+      "link_type": "Methodological analogy",
+      "confidence": "High",
+      "source_ids": "S24;S29",
+      "caution": "Not a causal connection between the modelling agencies."
+    },
+    {
+      "id": "C12",
+      "from_id": "T09",
+      "to_id": "T04",
+      "headline": "The forest sink is part of environmental state, not all biodiversity",
+      "interpretation": "EU forestry mitigation potential and the 2025 nature assessment interact through land use, but carbon is not a proxy for ecological condition.",
+      "link_type": "Intersecting land system",
+      "confidence": "Moderate",
+      "source_ids": "S09;S26",
+      "caution": "No causal effect or quantified trade-off estimated."
+    },
+    {
+      "id": "C13",
+      "from_id": "T09",
+      "to_id": "T06",
+      "headline": "Data governance cannot substitute for ecological recovery",
+      "interpretation": "Digital agriculture and the EEA environmental outlook may share monitoring needs; adoption of data tools does not itself establish better biodiversity.",
+      "link_type": "Implementation gap",
+      "confidence": "Moderate",
+      "source_ids": "S17;S26",
+      "caution": "No measured farm-scale environmental benefit is inferred."
+    },
+    {
+      "id": "C14",
+      "from_id": "T10",
+      "to_id": "T11",
+      "headline": "The scenario baseline and the deployed solar system are different objects",
+      "interpretation": "PV expansion responds to policy/markets; a 2016 EU28 reference is not a direct test of a later EU/UK conditional PV scenario.",
+      "link_type": "Scenario boundary / model vintage",
+      "confidence": "High",
+      "source_ids": "S28;S29;S31;S32",
+      "caution": "Country geography, date and scenario assumptions differ."
+    },
+    {
+      "id": "C15",
+      "from_id": "T11",
+      "to_id": "T01",
+      "headline": "Installed solar GW and renewable final-energy share measure different things",
+      "interpretation": "Strong PV capacity growth may affect the generation mix without being equivalent to final energy renewable-share achievement.",
+      "link_type": "Metric crosswalk",
+      "confidence": "High",
+      "source_ids": "S02;S32;S33",
+      "caution": "No direct attribution of renewable final-energy share to one solar technology."
+    },
+    {
+      "id": "C16",
+      "from_id": "T12",
+      "to_id": "T02",
+      "headline": "A 2030 health trajectory and 2070 fiscal projection remain open",
+      "interpretation": "Both are conditional models with dated inputs and policy-sensitive results; a later vintage is not a realised endpoint.",
+      "link_type": "Methodological comparison",
+      "confidence": "High",
+      "source_ids": "S05;S35",
+      "caution": "Disease notification and pension expenditures are unrelated measures."
+    }
+  ],
+  "queue": [
+    {
+      "title": "What if...? Scanning the horizon: 12 scenarios for 2021",
+      "year": "2019",
+      "next_task": "Read full scenario texts and compare 2021 event-specific pathways; scenarios ≠ probabilities."
+    },
+    {
+      "title": "The Future of Cities: Opportunities, Challenges and the Way Forward",
+      "year": "2019",
+      "next_task": "Follow urban futures through pandemic and municipal planning; avoid national-to-city leaps."
+    },
+    {
+      "title": "Global Trends to 2030: Challenges and Choices for Europe",
+      "year": "2019",
+      "next_task": "Trace selected assumptions after 2022 geopolitical shocks; select falsifiable propositions."
+    },
+    {
+      "title": "Innovative technologies shaping the 2040 battlefield",
+      "year": "2021",
+      "next_task": "Compare scenario categories and technical capability claims to recent public defence programmes."
+    },
+    {
+      "title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
+      "year": "2020",
+      "next_task": "Test EV adoption, fleet turnover and energy demand vs assumptions."
+    },
+    {
+      "title": "Emerging smart city, transport and energy trends in urban settings: Results of a pan-European foresight exercise",
+      "year": "2022",
+      "next_task": "Identify concrete project pathways; resist false outcomes from title similarity."
+    }
+  ],
+  "version": "long-form research expansion",
+  "evidence_rules": [
+    "A forecast revision is not an observed outcome.",
+    "Targets, adoption, certification and demonstrated impact are distinct stages.",
+    "Scenario families should not be forced into one winner.",
+    "Changed geography and indicators must be harmonised before numeric scoring.",
+    "A conceptual similarity between studies does not imply causal influence.",
+    "Old baselines can be replaced without becoming historically useless."
+  ]
+}
