@@ -1,0 +1,54 @@
+{
+  "package_name": "VV-FUTURES-GITHUB-READY-UPDATE-V2-2026-11-02",
+  "based_on": "world-radar-main (16).zip supplied 2026-11-02",
+  "research_cutoff": "2026-11-02",
+  "note": "Unzip and upload the individual files into the existing repository root; do not commit the ZIP itself.",
+  "paths": [
+    {
+      "path": "UPLOAD-THIS-UPDATE-FIRST.md",
+      "bytes": 7045,
+      "sha256": "449ce408ad95a8b65d88be6f697ffb4fdcd58dc9bbcfca4d90dce364cefb3b9d"
+    },
+    {
+      "path": "VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx",
+      "bytes": 2162429,
+      "sha256": "a91178dca1c68850f4030b31f1734be7aa7a71e8fe61103e0e682bcc6e3a729e"
+    },
+    {
+      "path": "VV-FUTURES-REVIEWED-FINDINGS.docx",
+      "bytes": 129735,
+      "sha256": "db17aadd0858e493d0ccf8e97953fa383524edced5d6d5e07a7236c2150f6499"
+    },
+    {
+      "path": "VV-FUTURES-WHAT-BECAME-OF-THE-FUTURE.docx",
+      "bytes": 62457,
+      "sha256": "98eac9b41c060eb8045bdf7595102d07a2b7f2803ed992dda2db6fc65c9a1fcd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10761,
+      "sha256": "a6fc49862cec3c152f8b2a24fdfbaa513b99697823c6453da032eb3656923abb"
+    },
+    {
+      "path": "research-updates/trajectory-research-2026-11-02.json",
+      "bytes": 82868,
+      "sha256": "208eff90919bbd526d61e4a01b448562a5a6ba0dcbe003375e16a018e3b460ef"
+    },
+    {
+      "path": "scripts/check_trajectory_update.py",
+      "bytes": 2090,
+      "sha256": "3184fee87ed6bb2b71a77ceda3b6b9b7586b1157a6d0cc43e3507069eb4bd778"
+    },
+    {
+      "path": "scripts/present_outputs.py",
+      "bytes": 11837,
+      "sha256": "4666d36fc0656c00d7331d4080689f9b85158d27ef0fba5442c74cd7228020bf"
+    },
+    {
+      "path": "scripts/trajectory_extension.py",
+      "bytes": 12695,
+      "sha256": "a82b141dd0d99ee4dd2de12fa7f56312b55498b731555987d97026469bb68f1f"
+    }
+  ],
+  "homepage_number_update": "Separately shows 12 new trajectories, 40 milestones, 37 sources, 16 qualified connections. Existing 507/63/12 headline counts remain associated with their existing data."
+}
