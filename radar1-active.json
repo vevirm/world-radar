@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T08:22:05.777594+00:00",
+  "generated_at": "2026-11-03T20:32:55.850413+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 635,
+  "original_records": 636,
   "selection_counts": {
-    "active": 635
+    "active": 636
   },
-  "rejected_identifier_count": 9772,
+  "rejected_identifier_count": 9777,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -809,6 +809,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "We conclude by applying the partially validated model to climate change scenarios for Europe, demonstrating that climate trends observed over the last three decades warrant changes to current use of Douglas-fir provenances in plantation forestry throughout Western and Central Europe.",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.65748/fiqf-2013-0029",
+      "title": "FORECASTING LIQUIDITY IN TRADITIONAL AND TECHNOLOGY-BASED SECTORS – THE CASE OF POLAND",
+      "date": "2014-04-29",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Poland is an example of a developing market that has undergone a transformation and has not been dramatically affected by the crisis, and we believe that our research may reveal some liquidity-related economic patterns applicable not only to other in-transition and developing countries, but also to countries facing economic problems.",
+      "investigation_type": "strategic_future_question"
     },
     {
       "doi": "10.1684/agr.2014.0698",
@@ -2976,7 +2985,7 @@
       "date": "2020-01-01",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "All four pathways achieve an 85–95% emissions reduction by 2050. In the framework of the Paris Agreement, the European Union (EU) will have to firmly set decarbonization targets to 2050.",
+      "original_passage": "All four pathways achieve an 85-95% emissions reduction by 2050. In the framework of the Paris Agreement, the European Union (EU) will have to firmly set decarbonization targets to 2050.",
       "investigation_type": "alternative_scenarios"
     },
     {
