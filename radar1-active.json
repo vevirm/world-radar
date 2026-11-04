@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T07:56:54.106227+00:00",
+  "generated_at": "2026-11-04T20:50:46.499830+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 636,
+  "original_records": 644,
   "selection_counts": {
-    "active": 636
+    "active": 644
   },
-  "rejected_identifier_count": 9778,
+  "rejected_identifier_count": 9870,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -188,6 +188,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Three different kinds of scenarios are constructed, and based on this research, it may be concluded that deregulating third country transport would be advisable. This would promote border transports, decrease prices, and attract and boost competition in Finland’s rail transport market.",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.15356/2071-9388_04v05_2012_01",
+      "title": "FORECASTED TRENDS IN CHANGES OF VEGETATION IN THE EUROPEAN PART OF RUSSIA IN CONNECTION WITH GLOBAL WARMING",
+      "date": "2012-01-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The models are used to forecast changes in the boundaries of the vegetation sub-zones and of forest stands productivity in the European Part of Russia and on the adjacent areas for 2046–2065 under one of the scenarios of global warming.",
+      "investigation_type": "projection_or_forecast"
     },
     {
       "doi": "10.22004/ag.econ.121911",
@@ -604,6 +613,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1214/13-sts445",
+      "title": "Wind Energy: Forecasting Challenges for Its Operational Management",
+      "date": "2013-11-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Indeed, while wind energy may be seen as an environmentally friendly source of energy, full benefits from its usage can only be obtained if one is able to accommodate its variability and limited predictability.",
+      "investigation_type": "projection_or_forecast"
+    },
+    {
       "doi": "10.1371/journal.pone.0079827",
       "title": "Application of the UK Foresight Obesity Model in Ireland: The Health and Economic Consequences of Projected Obesity Trends in Ireland",
       "date": "2013-11-13",
@@ -844,6 +862,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "A multi-model ensemble of regional climate projections is used to estimate the climate change signal in terms of temperature and precipitation for the city of Aachen, Germany, until the end of the current century.Since the combination of heat and high moisture content in the ambient air is assumed to adversely affect human health, the equivalent temperature is employed as an indicator for heat stress and applied to identify heat waves.As prolonged periods of high temperatures may also cause summer drought, summer precipitation and dry periods are analyzed as well.The study refers to regional climate projections (A1B emission scenario) of the statistical climate models STARII and WETTREG and the dynamical climate models REMO and COSMO-CLM.The model outputs are compared a) with each other in order to assess discrepancies between them and b) with the 30-year baseline period of 1971-2000 in order to estimate future changes in heat load and precipitation patterns for the summer months of June, July and August.Based on median realizations of the model runs, further warming of approximately 1-2 K is expected by the middle of the 21 st century and 3-4 K by 2100.These changes will probably be accompanied by an increase in variance.Maximum temperature shows the greatest enhancement (+1.9 K 2031-2060 and 4.3 K 2071-2100, ensemble mean) causing almost a doubling of (extreme) hot days and a trebling of tropical nights as soon as the middle of the century.According to this temperature development heat waves are likely to last longer and occur more often in future whereas their intensity is not expected to change significantly.An increasing number of heat waves is concurrent with a decreasing amount of rainfall in the summer months until 2100.All four climate projections indicate a decrease in precipitation in summer until 2100 with -17 % on average.The highest decrease is shown by COSMO-CLM with -30 % rainfall in June for the period of 2071-2100.Dry periods are expected to occur 3 times more often at the end of the current century and to last longer by 1 day (COSMO-CLM) to 3 days (WETTREG) compared to the period of 1971-2000.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1136/bmjopen-2014-004787",
+      "title": "The future burden of obesity-related diseases in the 53 WHO European-Region countries and the impact of effective interventions: a modelling study",
+      "date": "2014-07-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "INTERVENTIONS: The effect of three hypothetical scenarios on the future burden of disease in 2030 was tested: baseline scenario, BMI trends go unchecked; intervention 1, population BMI decreases by 1%; intervention 2, BMI decreases by 5%. This paper projects the future burden of coronary heart disease (CHD), stroke, type 2 diabetes and seven cancers by 2030 in 53 WHO European Region countries based on current and past body mass index (BMI) trends.",
       "investigation_type": "alternative_scenarios"
     },
     {
@@ -2341,6 +2368,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.17345/1935",
+      "title": "From Kyoto to Paris: the European Union's contribution to a new world climate order",
+      "date": "2018-07-27",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "While implementing this binding framework, the EU is giving legal contents to the 2030 climate-energy package as a major contribution to the new international climate regime under the Paris Agreement, in whose design and adoption the Union also played a key role. Recent policies and other proposals now in prospect are intended to transform the EU into a competitive and sustainable economy by 2050.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.17345/rcda1935",
       "title": "From Kyoto to Paris: the European Union's contribution to a new world climate order",
       "date": "2018-07-27",
@@ -3565,6 +3601,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.3390/agriculture11030191",
+      "title": "Forecasting Global Developments and Challenges in Olive Oil Supply and Demand: A Delphi Survey from Spain",
+      "date": "2021-02-26",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "We use the Delphi technique to estimate the expected annual growth rates in the olive oil production and consumption worldwide as well as their likely impact on Spanish exports by 2025. Results suggest substantial future increases in production in new-producing countries, in parallel with a slower growth in the European traditional suppliers whose focus will increasingly be placed on quality and sustainability rather than quantity.",
+      "investigation_type": "projection_or_forecast"
+    },
+    {
       "doi": "10.1016/j.techfore.2020.120478",
       "title": "Boosting the EU forest-based bioeconomy: Market, climate, and employment impacts",
       "date": "2021-02-28",
@@ -3841,6 +3886,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "It identifies six food futures, each of which is made possible through the greater use of legumes in various production, processing, marketing and consumption contexts. But as the environmental consequences of agriculture (biodiversity loss, high greenhouse gas emissions, water pollution) and the health outcomes of modern diets (heart disease, cancer, diabetes, obesity) become better known, so great and varied hopes are being expressed about the future role of legumes in the food system.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1016/j.isci.2021.102999",
+      "title": "Future operation of hydropower in Europe under high renewable penetration and climate change",
+      "date": "2021-08-19",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "As large renewable capacities penetrate the European energy system and the climate faces significant alterations, the future operation of hydropower reservoirs might deviate from today.",
       "investigation_type": "strategic_future_question"
     },
     {
@@ -4654,6 +4708,15 @@
       "investigation_type": "strategic_future_question"
     },
     {
+      "doi": "10.1016/j.jclepro.2022.135723",
+      "title": "Understanding the EU's circular economy policies through futures of circularity",
+      "date": "2022-12-21",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Despite this hybridity, circular modernism imaginaries that rely on techno-optimism and centralised governance tend to dominate, leading to a weak version of the CE that may be unable to meet the EU's environmental ambitions.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
       "doi": "10.17018/portal.2022.10",
       "title": "Futures and foresight of Croatian cultural heritage",
       "date": "2022-12-30",
@@ -5113,6 +5176,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.1080/17583004.2023.2217423",
+      "title": "Influence of economic decoupling in assessing carbon budget quotas for the European Union",
+      "date": "2023-06-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The study proposes a simple mathematical model as a policy tool to assess and redistribute Member States’ carbon budgets as frequently as necessary to encourage progress or overcome the difficulties each Member State may face during the decarbonization pathways. This is done within the context of achieving the Green Deal objective and EU27 carbon neutrality by 2050.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.1108/fs-10-2021-0191",
       "title": "Time to build a new practice of foresight for national economies? Ireland, and uncertain futures in forecasts and scenarios",
       "date": "2023-06-05",
@@ -5172,8 +5244,8 @@
       "date": "2023-06-24",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Third, changes in the amount of water consumed by livestock per year in individual regions in 2050 compared to 2005 were estimated. When modeling future scenarios of water consumption by livestock systems, the most suitable tools result from the interconnectivity of growth models, economic models, and climate models.",
-      "investigation_type": "alternative_scenarios"
+      "original_passage": "By 2050, a substantial reduction in pigs and poultry is expected in most regions of the CZ. This study developed novel livestock production scenarios for individual regions of the Czech Republic (CZ) with estimations of the categories of livestock that have been bred during the last 20 years and will be bred in the future (2030, 2035, 2040, 2045, 2050) and what their water consumption will be, both throughout the year and in particular seasons (spring, summer, autumn, winter).",
+      "investigation_type": "strategic_future_question"
     },
     {
       "doi": "10.3390/su151310026",
@@ -5208,7 +5280,7 @@
       "date": "2023-07-11",
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
-      "original_passage": "Thus, the objective of this study is to explore how different EU countries (Poland, Italy, and Germany) employ three decarbonization pillars: waste recycling, eco-innovation, and policy innovation (WEP) as a yardstick to mitigate global warming and attain the EU’s ‘net-zero’ emissions by 2050.",
+      "original_passage": "Thus, the objective of this study is to explore how different EU countries (Poland, Italy, and Germany) employs three decarbonization pillars: waste recycling, eco-innovation, and policy innovation (WEP) as a yardstick to mitigate global warming and attain the EU’s “net-zero” emissions by 2050.",
       "investigation_type": "strategic_future_question"
     },
     {
