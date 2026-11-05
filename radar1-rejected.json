@@ -1382,6 +1382,10 @@
       "reason": "european_subject_not_established",
       "year": "2021"
     },
+    "10.1007/s10479-021-04406-4": {
+      "reason": "financial_futures_not_foresight",
+      "year": "2021"
+    },
     "10.1007/s10489-021-02264-y": {
       "reason": "european_subject_not_established",
       "year": "2021"
@@ -2077,6 +2081,10 @@
     "10.1007/s12517-022-09483-8": {
       "reason": "non_european_subject",
       "year": "2022"
+    },
+    "10.1007/s12520-023-01850-0": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2023"
     },
     "10.1007/s12525-020-00433-4": {
       "reason": "european_subject_not_established",
@@ -24089,6 +24097,10 @@
     "10.1177/17454999211057448": {
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
+    },
+    "10.1177/1749975520943167": {
+      "reason": "european_subject_not_established",
+      "year": "2020"
     },
     "10.1177/1781685818764821": {
       "reason": "future_facing_research_question_not_established",

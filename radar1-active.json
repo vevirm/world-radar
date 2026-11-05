@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T20:50:46.499830+00:00",
+  "generated_at": "2026-11-05T08:20:28.713104+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 644,
+  "original_records": 645,
   "selection_counts": {
-    "active": 644
+    "active": 645
   },
-  "rejected_identifier_count": 9870,
+  "rejected_identifier_count": 9873,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -2788,6 +2788,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Three scenario narratives were elaborated based on nine key impact factors based on literature review, content analysis of EIA documents and interviews with EIA actors.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.3390/su11154010",
+      "title": "Supporting Europe’s Energy Policy Towards a Decarbonised Energy System: A Comparative Assessment",
+      "date": "2019-07-24",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "This assessment aims at providing a direction towards a most preferable pathway concept that should be taken into account by a future model-based analysis of the necessary transformation of our energy sector. The European Union (EU) aims to prepare its strategy and infrastructure for further decarbonisation of its energy system in the longer term towards 2050.",
       "investigation_type": "alternative_scenarios"
     },
     {
