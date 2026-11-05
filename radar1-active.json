@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T08:20:28.713104+00:00",
+  "generated_at": "2026-11-05T21:05:39.511431+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 645,
+  "original_records": 646,
   "selection_counts": {
-    "active": 645
+    "active": 646
   },
-  "rejected_identifier_count": 9873,
+  "rejected_identifier_count": 9893,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -647,6 +647,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Current estimates predict the EU will need to import up to 80% of the gas it will consume in 2030.Already there is a strong concern about its reliance on Russian gas, especially in Eastern European countries.",
       "investigation_type": "projection_or_forecast"
+    },
+    {
+      "doi": "10.7427/ddi.19.21",
+      "title": "Possible futures for the Mediterranean: A cross-cutting approach of foresight analysis studies",
+      "date": "2013-12-01",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Starting from the “business as usual” and alternative scenarios offered by those studies, this synthesis develops a cross-cutting approach between different dimensions of change (demographic trends, climate change, globalization) and topics (water, energy, coastal development, urbanization, tourism, maritime transportation). On the other hand, taking into account seeds of change and inflections of current trends, the reflection raises the crucial perspective towards a new regional prospective study at the 2050 horizon.",
+      "investigation_type": "alternative_scenarios"
     },
     {
       "doi": "10.13031/trans.56.9961",

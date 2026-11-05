@@ -886,6 +886,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1002/poi3.102": {
+      "reason": "european_subject_not_established",
+      "year": "2015"
+    },
     "10.1002/polq.12680": {
       "reason": "european_subject_not_established",
       "year": "2017"
@@ -3570,6 +3574,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1016/j.ecolecon.2016.09.003": {
+      "reason": "european_subject_not_established",
+      "year": "2016"
+    },
     "10.1016/j.ecolecon.2018.02.009": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2018"
@@ -4516,6 +4524,10 @@
     },
     "10.1016/j.eneco.2012.08.028": {
       "reason": "financial_futures_not_foresight",
+      "year": "2013"
+    },
+    "10.1016/j.eneco.2013.07.028": {
+      "reason": "european_subject_not_established",
       "year": "2013"
     },
     "10.1016/j.eneco.2013.08.019": {
@@ -7942,6 +7954,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1016/j.habitatint.2018.12.005": {
+      "reason": "european_subject_not_established",
+      "year": "2019"
+    },
     "10.1016/j.habitatint.2021.102499": {
       "reason": "european_subject_not_established",
       "year": "2022"
@@ -8257,6 +8273,10 @@
     "10.1016/j.jbankfin.2017.06.015": {
       "reason": "financial_futures_not_foresight",
       "year": "2017"
+    },
+    "10.1016/j.jbiosc.2014.01.006": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
     },
     "10.1016/j.jbusres.2015.12.050": {
       "reason": "european_subject_not_established",
@@ -9005,6 +9025,10 @@
     "10.1016/j.phro.2025.100900": {
       "reason": "outside_historical_original_period",
       "year": "2025"
+    },
+    "10.1016/j.physa.2014.02.042": {
+      "reason": "financial_futures_not_foresight",
+      "year": "2014"
     },
     "10.1016/j.physa.2019.122310": {
       "reason": "financial_futures_not_foresight",
@@ -9849,6 +9873,10 @@
     "10.1016/j.spacepol.2016.02.005": {
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
+    },
+    "10.1016/j.spacepol.2022.101517": {
+      "reason": "european_subject_not_established",
+      "year": "2022"
     },
     "10.1016/j.spc.2020.11.001": {
       "reason": "future_facing_research_question_not_established",
@@ -13026,6 +13054,10 @@
       "reason": "no_substantive_title",
       "year": "2019"
     },
+    "10.1016/s1553-7250(19)30437-4": {
+      "reason": "no_substantive_title",
+      "year": "2019"
+    },
     "10.1016/s1553-7250(19)30479-9": {
       "reason": "no_substantive_title",
       "year": "2020"
@@ -13059,6 +13091,10 @@
       "year": "2020"
     },
     "10.1016/s1553-7250(20)30189-6": {
+      "reason": "no_substantive_title",
+      "year": "2020"
+    },
+    "10.1016/s1553-7250(20)30199-9": {
       "reason": "no_substantive_title",
       "year": "2020"
     },
@@ -13333,6 +13369,10 @@
     "10.1016/s1881-8366(11)80009-1": {
       "reason": "european_subject_not_established",
       "year": "2011"
+    },
+    "10.1016/s1881-8366(12)80021-8": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
     },
     "10.1016/s1881-8366(14)00011-1": {
       "reason": "no_substantive_title",
@@ -17482,6 +17522,10 @@
       "reason": "european_subject_not_established",
       "year": "2023"
     },
+    "10.1080/13501763.2023.2251812": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2023"
+    },
     "10.1080/13501763.2023.2256370": {
       "reason": "no_substantive_title",
       "year": "2023"
@@ -19766,6 +19810,10 @@
       "reason": "european_subject_not_established",
       "year": "2020"
     },
+    "10.1103/physrevd.84.124025": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
     "10.1103/physrevd.86.023002": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -21114,6 +21162,10 @@
       "reason": "european_subject_not_established",
       "year": "2014"
     },
+    "10.1109/jproc.2012.2189788": {
+      "reason": "european_subject_not_established",
+      "year": "2012"
+    },
     "10.1109/jproc.2014.2358691": {
       "reason": "european_subject_not_established",
       "year": "2014"
@@ -21906,6 +21958,10 @@
       "reason": "ambiguous_title_no_supporting_abstract",
       "year": "2011"
     },
+    "10.1111/j.1749-5687.2011.00141.x": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2011"
+    },
     "10.1111/j.1749-5687.2012.00165.x": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -22501,6 +22557,10 @@
     "10.1140/epjst/e2012-01699-6": {
       "reason": "european_subject_not_established",
       "year": "2012"
+    },
+    "10.1142/s0219024914500435": {
+      "reason": "european_subject_not_established",
+      "year": "2014"
     },
     "10.1142/s021952591250049x": {
       "reason": "european_subject_not_established",
@@ -23771,6 +23831,10 @@
       "year": "2016"
     },
     "10.1177/1465116515627017": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2016"
+    },
+    "10.1177/1465116516633299": {
       "reason": "future_facing_research_question_not_established",
       "year": "2016"
     },
@@ -25854,6 +25918,10 @@
       "reason": "historical_reconstruction_not_forward_looking",
       "year": "2020"
     },
+    "10.12775/bgss-2023-0017": {
+      "reason": "no_traceable_european_future_proposition",
+      "year": "2023"
+    },
     "10.12775/eip.2017.026": {
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
@@ -26520,6 +26588,10 @@
     },
     "10.14195/1647-6336_15-1_1": {
       "reason": "no_substantive_source_text_for_radar2",
+      "year": "2016"
+    },
+    "10.14195/1647-6336_15-1_3": {
+      "reason": "european_subject_not_established",
       "year": "2016"
     },
     "10.14198/fem.2014.23.04": {
@@ -28753,6 +28825,10 @@
     "10.17976/jpps/2024.02.11": {
       "reason": "outside_historical_original_period",
       "year": "2024"
+    },
+    "10.17994/it.2018.16.1.52.9": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
     },
     "10.17994/it.2020.18.2.61.8": {
       "reason": "european_subject_not_established",
@@ -34340,6 +34416,10 @@
     },
     "10.3390/su10030848": {
       "reason": "no_traceable_european_future_proposition",
+      "year": "2018"
+    },
+    "10.3390/su10041014": {
+      "reason": "european_subject_not_established",
       "year": "2018"
     },
     "10.3390/su10041279": {
