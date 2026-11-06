@@ -1324,5 +1324,329 @@
     "Changed geography and indicators must be harmonised before numeric scoring.",
     "A conceptual similarity between studies does not imply causal influence.",
     "Old baselines can be replaced without becoming historically useless."
-  ]
+  ],
+  "deep_tracking_followup_2026_11_05": {
+    "as_of": "2026-11-05",
+    "provenance": "Recovered from the existing 5 November 2026 dated headings and reading trails in VV-FUTURES-WHAT-BECAME-OF-THE-FUTURE.docx. These six readings are not new 6 November research.",
+    "sources": [
+      {
+        "id": "S38",
+        "case_id": "T03",
+        "published": "2026-06-17",
+        "title": "RDW explanation of supervised driver-assistance evaluation",
+        "url": "https://www.rdw.nl/en/news/2026/explanation-of-the-type-approval-of-fsd-supervised",
+        "source_type": "Supplementary official/project reading"
+      },
+      {
+        "id": "S39",
+        "case_id": "T03",
+        "published": "2026-11-03",
+        "title": "RDW approval of Tesla Assisted Driving name without changing driver responsibility",
+        "url": "https://www.rdw.nl/over-rdw/nieuws/2026/rdw-keurt-wijzigingen-aan-tesla-rijhulpsysteem-goed",
+        "source_type": "Supplementary official/project reading"
+      },
+      {
+        "id": "S40",
+        "case_id": "T06",
+        "published": "2025-09-12",
+        "title": "European Commission: EU Data Act application date and device-data access",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/eu-data-act-gives-users-control-over-data-connected-devices",
+        "source_type": "Supplementary official/project reading"
+      },
+      {
+        "id": "S41",
+        "case_id": "T06",
+        "published": "2026 (access 2026-11-05)",
+        "title": "CEADS ecosystem project on federated data governance",
+        "url": "https://ceads.eu/key-take-outs-from-the-ceads-ecosystem-agora/",
+        "source_type": "Supplementary official/project reading"
+      },
+      {
+        "id": "S42",
+        "case_id": "T11",
+        "published": "2026 (access 2026-11-05)",
+        "title": "Commission grids page: connection queues and risk estimate",
+        "url": "https://energy.ec.europa.eu/topics/infrastructure/european-grids_en",
+        "source_type": "Supplementary official/project reading"
+      },
+      {
+        "id": "S43",
+        "case_id": "T11",
+        "published": "2026-08-11",
+        "title": "Commission: solar contribution during heatwaves and storage need",
+        "url": "https://energy.ec.europa.eu/news/europes-electricity-system-remains-stable-despite-extreme-weather-2026-08-11_en",
+        "source_type": "Supplementary official/project reading"
+      }
+    ],
+    "events": [
+      {
+        "case_id": "T03",
+        "date": "2026-06-17",
+        "stage": "Regulatory assessment",
+        "event": "Supervised vehicle-assistance evaluation described; driver remains responsible",
+        "evidence_class": "Official type-approval evidence",
+        "source_id": "S38"
+      },
+      {
+        "case_id": "T03",
+        "date": "2026-11-03",
+        "stage": "Terminology correction",
+        "event": "RDW approved Tesla Assisted Driving name; function and driver responsibility unchanged",
+        "evidence_class": "Official clarification",
+        "source_id": "S39"
+      },
+      {
+        "case_id": "T06",
+        "date": "2025-09-12",
+        "stage": "Data-rights rule",
+        "event": "EU Data Act applies to relevant connected-product data; legal rights not observed farmer use",
+        "evidence_class": "Policy implementation",
+        "source_id": "S40"
+      },
+      {
+        "case_id": "T06",
+        "date": "2026-11-05",
+        "stage": "Project reading",
+        "event": "CEADS project material sets out federation, consent and interoperability questions",
+        "evidence_class": "Architecture/project statement",
+        "source_id": "S41"
+      },
+      {
+        "case_id": "T11",
+        "date": "2026-11-05",
+        "stage": "Grid constraint reading",
+        "event": "Commission describes connection queues and cross-renewables risk, not blocked solar capacity",
+        "evidence_class": "Official policy estimate",
+        "source_id": "S42"
+      },
+      {
+        "case_id": "T11",
+        "date": "2026-08-11",
+        "stage": "Operation observation",
+        "event": "Commission describes daytime solar output easing heatwave price pressure and need for storage",
+        "evidence_class": "Official electricity-system observation",
+        "source_id": "S43"
+      }
+    ]
+  },
+  "deep_tracking_followup_2026_11_06": {
+    "as_of": "2026-11-06",
+    "scope": "Two existing cases deepened (T04, T05), one new case (T13), two qualified new links; preserves base 12 and 5 Nov research.",
+    "new_cases": [
+      {
+        "id": "T13",
+        "theme": "Road transport, electrification and demand",
+        "title": "EU road decarbonisation: new electric cars rose, but the modelled system transformation is unfinished",
+        "original_year": 2020,
+        "horizon": "2050 — future; illustrative 2030 powertrain uptake path",
+        "original_title": "EU road vehicle energy consumption and CO2 emissions by 2050 – Expert-based scenarios",
+        "doi": "10.1016/j.enpol.2019.111224",
+        "original_url": "https://doi.org/10.1016/j.enpol.2019.111224",
+        "original_type": "Conditional technical-potential scenarios: high electrification (HE), high electrification + hydrogen (HEH) and mix; optimistic/pessimistic transport measures",
+        "original_statement": "A 2020 full-text study modelled up to 90% lower road-vehicle tank-to-wheel CO2 in 2050 relative to 1990 under strong electrification and best-case vehicle/transport measures. An illustrative path to its least-electrified Mix scenario assumes 20% BEV and 28% PHEV among 2030 light-duty new registrations; that is a scenario-compatible path, not a forecast of 2025 registrations.",
+        "original_condition": "DIONE fleet scenarios rooted in EU Reference Scenario 2016 activity/stock assumptions and a 2050 electricity emission factor of 0.082 tCO2/MWh from that reference. 2050 powertrain mix and realised transport activity are assumptions. Upstream electricity emissions are treated separately; complete full lifecycle impacts and future clean-power availability are not established.",
+        "path": "2020 technical scenarios embedded in 2016 EU reference baseline → 2023 road-transport emissions still 22% above 1990 (EEA 2025 study) → 2024 inventory road emissions 24% above 1990 (EEA) → 2025 EU 1.89 million new BEV cars, 7.59 million total BEV cars → December 2025 Commission proposal to vary 2035 car/vans rule remains a proposal as of this review.",
+        "latest": "Electric-car sales and stocks grew markedly through 2025; measured road GHG emissions have not yet fallen below the 1990 baseline by 2024. The 2050 model horizon has not arrived; neither indicator alone can judge the conditional 2050 tank-to-wheel calculation.",
+        "meaning": "EV sales share, EVs in the existing fleet, actual vehicle-kilometres, road-fleet tank-to-wheel CO2, and economy-wide GHG inventory are different objects. The topic moved from whether batteries could technically decarbonise transport to whether fleet turnover, demand, electricity and policy make the energy-system transition real.",
+        "trajectory": "Technology uptake visible; system-level decarbonisation not yet comparable",
+        "horizon_status": "2050 open; 2030 illustrative mix not due",
+        "confidence": "High: original full text, Eurostat observed car numbers, EEA inventory; low: any claim that scenario has been achieved",
+        "limits": "Do not equate 2025 passenger-car registrations with the paper’s 2030 all-light-duty-vehicle mix; do not equate 2024 inventory GHG with the paper’s 2050 tank-to-wheel CO2. A Commission proposal does not change adopted law until legislated. Model paper is not proven to cause any observed policy.",
+        "question": "Can 2030 EU-27 car-and-van new-registration shares, actual fleet share, road-vehicle kilometres and tank-to-wheel CO2 be harmonised with the original EU geography and 2016-reference assumptions? What replacement electricity-factor and power-demand values are defensible?",
+        "afterlife": "The core question becomes an interface: vehicle and fleet turnover, mobility activity, power-system decarbonisation, and legal standards evolve together. Technical possibility survived; realised emissions improvement and pace remain open.",
+        "alternative": "The observed emissions increase may largely reflect legacy stock and rising road activity while zero-emission new sales accelerate. Conversely the model may overstate downstream savings without clean-grid provision. Both readings require lifecycle and activity data.",
+        "lookback": "Recreate the model’s HE/HEH/Mix 2050 fleet and 2030 illustrative path from Figure 3 and Table 11; align EU geography, vehicle class, CO2 unit, observation year and energy boundaries before a numeric comparison.",
+        "provenance": "Direct match to 507-row Historical claims catalogue: Excel row 152, ID claim-4bbf4f842de012c2. The auto-suggested later papers for this catalogue row were NOT used; their topic alignment is unverified and appears unrelated.",
+        "catalog_claim_id": "claim-4bbf4f842de012c2",
+        "catalog_original_row": 152,
+        "source_ids": [
+          "S45",
+          "S46",
+          "S47",
+          "S48",
+          "S49",
+          "S28"
+        ],
+        "essay": "A technological possibility can turn into real sales without yet transforming the complete system. Krause and colleagues did not forecast a single 2050 fleet. They constructed alternative powertrain mixes and best-/worst-case improvements in vehicle efficiency, traffic flow and traffic demand. Even the least-electrified Mix example implied a demanding 2030 share of new battery and plug-in vehicles. By 2025, battery-electric car registrations were growing strongly, but observed road transport emissions had still not reversed their long-run 1990 increase. The apparent tension is not a simple false forecast: new-car sales are only a flow into a slow-turning stock, and the original measure is tank-to-wheel CO2 in 2050, unlike current total road GHG inventory. The paper also borrowed the 2016 EU reference activity baseline and an assumed 2050 grid-intensity factor, so a later change in the power system can change the meaning of its scenario. The 2025 Commission proposal to soften the strict 2035 tailpipe rule adds policy uncertainty but is not adopted law. The next test must follow fleet vintage, total traffic and clean-electricity supply together."
+      }
+    ],
+    "sources": [
+      {
+        "id": "S44",
+        "case_id": "T05",
+        "title": "EASA 2026 ReFuelEU annual technical report; corrigendum",
+        "source_type": "Aviation regulator monitoring report",
+        "published": "2026-09-17; corrected 2026-11-02",
+        "url": "https://www.easa.europa.eu/en/document-library/general-publications/refueleu-aviation-annual-technical-report-2026",
+        "what_this_supports": "Reaffirms 2025 1.1 Mt and 2.79% EU-airport SAF supply; 2 Nov corrigendum clarifies EU production and import interpretations, not the supply KPI; 2030 capacity bands are conditional."
+      },
+      {
+        "id": "S45",
+        "case_id": "T13",
+        "title": "Krause et al. 2020 road vehicle scenario — full original paper",
+        "source_type": "Peer-reviewed original; full text inspected",
+        "published": "2020-02-19",
+        "url": "https://cris.brighton.ac.uk/ws/files/12059653/1_s2.0_S0301421519308067_main.pdf",
+        "what_this_supports": "Three powertrain scenarios and vehicle/transport measures; up to 90% tank-to-wheel CO2 reduction by 2050 conditional; Mix illustrative 2030 LDV new-vehicle mix 20% BEV and 28% PHEV; uses 2016 EU reference baseline and grid-intensity assumption."
+      },
+      {
+        "id": "S46",
+        "case_id": "T13",
+        "title": "Eurostat: new battery-only electric cars in 2025",
+        "source_type": "EU official observed registrations and stocks",
+        "published": "2026-07-31",
+        "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-1",
+        "what_this_supports": "In 2025, EU registered 1.89 million new BEV cars and BEV passenger-car stock was 7.59 million. Passenger cars are narrower than all 2050 road vehicles and 2025 is not horizon."
+      },
+      {
+        "id": "S47",
+        "case_id": "T13",
+        "title": "EEA: key trends and drivers in EU greenhouse gas emissions",
+        "source_type": "EU official inventory analysis",
+        "published": "2026 (2024 inventory series)",
+        "url": "https://www.eea.europa.eu/en/analysis/publications/key-trends-and-drivers-in-ghg-emissions-in-the-eu",
+        "what_this_supports": "Official inventory synthesis reports road-transport emissions 24% above 1990 in 2024; measurement is historic EU inventory GHG and should not be treated as a back-test of 2050 tank-to-wheel model."
+      },
+      {
+        "id": "S48",
+        "case_id": "T13",
+        "title": "Commission: cars and vans CO2 standards and December 2025 proposal",
+        "source_type": "Commission legislation summary and policy proposal",
+        "published": "2025-12 proposal; accessed 2026-11-06",
+        "url": "https://climate.ec.europa.eu/areas-action/transport-decarbonisation/road-transport/cars-and-vans_en",
+        "what_this_supports": "Distinguishes current 2035 zero-tailpipe target for new cars and vans from Commission proposed 90% target with compensation flexibilities; a proposal is NOT enacted law."
+      },
+      {
+        "id": "S49",
+        "case_id": "T13",
+        "title": "EEA: sustainability of Europe mobility systems, climate chapter",
+        "source_type": "Official sector measurement and projection",
+        "published": "2025 report (2023 data)",
+        "url": "https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/climate",
+        "what_this_supports": "Road emissions were 757 MtCO2e in 2023, 22% above 1990; road accounted 72.9% of transport emissions. Different system, year and metric than tank-to-wheel modelling."
+      }
+    ],
+    "events": [
+      {
+        "case_id": "T04",
+        "date": "2026-11-06 source reading (observations 2023–2024, projections to 2030)",
+        "stage": "Projection/outcome split",
+        "event": "EEA reports EU land sink 198 MtCO2e in 2023 and provisional 212 in 2024; 2030 with-current-measures 183 and with-additional-measures 233 are forecasts, not outcomes, both below 310 target.",
+        "evidence_class": "Observed inventory separated from policy projections",
+        "source_id": "S10"
+      },
+      {
+        "case_id": "T05",
+        "date": "2026-11-02",
+        "stage": "Source corrigendum",
+        "event": "EASA clarifies EU production statistics and import interpretations; 2025 Union-airport supply 1.1 Mt, 2.79% is unchanged.",
+        "evidence_class": "Official publication correction",
+        "source_id": "S44"
+      },
+      {
+        "case_id": "T05",
+        "date": "2025 (reported September 2026)",
+        "stage": "Fuel composition and supply chain",
+        "event": "EASA dashboard distinguishes 90.5 kt advanced aviation biofuels, 80.2% of SAF from used cooking oil and 85.1% of feedstocks from outside the EU. Do not equate feedstock origin with imported finished SAF.",
+        "evidence_class": "Supplier-reported composition; official monitoring",
+        "source_id": "S14"
+      },
+      {
+        "case_id": "T13",
+        "date": "2020-02-19",
+        "stage": "Original technical scenarios",
+        "event": "2050 HE/HEH/Mix conditional technical potential; uses EU Reference Scenario 2016; an example Mix path has 20% BEV, 28% PHEV in 2030 light-duty new registrations.",
+        "evidence_class": "Original full text read",
+        "source_id": "S45"
+      },
+      {
+        "case_id": "T13",
+        "date": "2023",
+        "stage": "Observed road emissions",
+        "event": "EEA reports 757 MtCO2e road-sector emissions, 22% above 1990.",
+        "evidence_class": "Historical inventory",
+        "source_id": "S49"
+      },
+      {
+        "case_id": "T13",
+        "date": "2024",
+        "stage": "Observed inventory",
+        "event": "EEA reports EU road transport GHG 24% above 1990 in 2024.",
+        "evidence_class": "Historical inventory synthesis",
+        "source_id": "S47"
+      },
+      {
+        "case_id": "T13",
+        "date": "2025",
+        "stage": "Observed car uptake",
+        "event": "Eurostat reports 1.89 million newly registered BEV cars and 7.59 million BEV passenger cars in stock.",
+        "evidence_class": "Official 2025 vehicle data (published July 2026)",
+        "source_id": "S46"
+      },
+      {
+        "case_id": "T13",
+        "date": "2025-12",
+        "stage": "Changing policy proposal",
+        "event": "Commission proposed 2035 90% tailpipe reduction with compensation flexibilities; does not replace adopted target until legislation changes.",
+        "evidence_class": "Proposal, not enacted outcome",
+        "source_id": "S48"
+      }
+    ],
+    "connections": [
+      {
+        "id": "C17",
+        "from_id": "T10",
+        "to_id": "T13",
+        "headline": "The 2016 EU reference baseline became an input to the 2020 road-vehicle future",
+        "interpretation": "The original 2020 road-vehicle paper explicitly calibrates 2050 fleet activity/stock to EU Reference Scenario 2016 and uses that scenario’s 2050 electricity-emission factor (0.082 tCO2/MWh) for EV upstream emissions. This is an observable input dependency, not merely similar subject matter.",
+        "link_type": "Direct methodological/source genealogy",
+        "confidence": "High: stated in original paper methods",
+        "source_ids": [
+          "S28",
+          "S45"
+        ],
+        "caution": "Model-input influence is evidenced; no claim the 2020 paper caused later policy or observed EV sales."
+      },
+      {
+        "id": "C18",
+        "from_id": "T11",
+        "to_id": "T13",
+        "headline": "Electrification needs delivered low-carbon electricity, not just installed solar",
+        "interpretation": "The road scenario’s conditional emissions potential relies on carbon intensity and energy availability that it says are outside its core model; later solar deployment illustrates progress in supply but mismatched capacity, generation and grid-carbon units must be tracked separately.",
+        "link_type": "Conditional system-dependency, not direct scholarly citation",
+        "confidence": "Moderate for mechanism; implementation and causality not tested",
+        "source_ids": [
+          "S45",
+          "S32",
+          "S33"
+        ],
+        "caution": "Does not show that solar deployment directly enabled a measured amount of road decarbonisation; no attributable causal effect calculated."
+      }
+    ],
+    "existing_case_updates": [
+      {
+        "case_id": "T04",
+        "headline": "The projection is not the sink",
+        "finding": "EEA provides two explicit 2030 scenario paths: 183 MtCO2e removals with existing measures and 233 with planned additional measures, alongside observed 2023 198 and estimated 2024 212. These four metrics differ in date and evidence type.",
+        "limits": "Do not subtract 183 or 233 from the 2017 441 Mt conditional forest-sector mitigation total; units, counterfactuals and sector boundaries differ.",
+        "sources": [
+          "S10"
+        ],
+        "research_question": "Which changes to forest inventory methods, harvest, disturbances and managed-soils accounting drive the projection gap? Separate 2030 WEM, WAM and observed net sink."
+      },
+      {
+        "case_id": "T05",
+        "headline": "Supply, feedstock origin, production and project pipeline are distinct",
+        "finding": "EASA 2 Nov clarification concerns EU production/import interpretation without changing EU-airport supply KPI. In 2025 supplied SAF, 90.5 kt qualified as advanced aviation biofuels, 80.2% derived from UCO and 85.1% feedstocks originated outside EU. The 2030 estimates 1.5/3.7/5.5+0.6 Mt are different capacity maturity tiers, not three observations.",
+        "limits": "No claim the 2018 modeled 3.8–6.1 Mt RJF is achieved by 1.1 Mt of broader ReFuelEU SAF. Feedstock origin is not the same as the location of refining or of finished fuel imports.",
+        "sources": [
+          "S14",
+          "S44"
+        ],
+        "research_question": "Establish a 2018-to-2025 matched fuel-category and feedstock crosswalk, then track final investment decisions and operational synthetic-fuel capacity."
+      }
+    ],
+    "method": "Source opened/read; retains original forecast type, observation vs projection, time, units, geography, sample scope and alternative explanations. No numeric success scores or influence claims without direct document links.",
+    "known_gap": "T13 linked to catalogue row 152 and stable claim ID. Automated later source suggestions are screening-only; no proposed paper pairs accepted without source reading."
+  }
 }
