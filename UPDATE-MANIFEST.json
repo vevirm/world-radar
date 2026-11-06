@@ -1,59 +1,63 @@
 {
-  "package_name": "VV-FUTURES-GITHUB-READY-UPDATE-V2-2026-11-02",
-  "based_on": "world-radar-main (16).zip supplied 2026-11-02",
-  "research_cutoff": "2026-11-05",
-  "note": "Surgical 2026-11-05 follow-up: replace only the five modified existing files; no deletions or extra repository files. Homepage counters now include the six additional source readings and six dated events.",
+  "package_name": "VV-FUTURES-CUMULATIVE-FOLLOWUP-2026-11-06",
+  "based_on": "world-radar-main (18).zip supplied 2026-11-06",
+  "research_cutoff": "2026-11-06",
+  "note": "Historical 2 Nov base arrays unchanged, 5 Nov documented readings restored to machine-readable follow-up, 6 Nov source-verified case and case rechecks integrated in Word, Excel, JSON and website. No scheduled scanner workflows changed.",
   "paths": [
     {
       "path": "UPLOAD-THIS-UPDATE-FIRST.md",
-      "bytes": 7045,
-      "sha256": "449ce408ad95a8b65d88be6f697ffb4fdcd58dc9bbcfca4d90dce364cefb3b9d"
+      "bytes": 8552,
+      "sha256": "e16bfa61bead5f23963610bd5868849752fb27413a5eb8746a1997fb30b7394e"
     },
     {
       "path": "VV-FUTURES-ALL-CLAIMS-AND-SOURCES.xlsx",
-      "bytes": 2162429,
-      "sha256": "a91178dca1c68850f4030b31f1734be7aa7a71e8fe61103e0e682bcc6e3a729e"
+      "bytes": 2170915,
+      "sha256": "616580db26fc11503e7935f7bb7163f45ca91c399020b27e19ff3bbbf67f1358"
     },
     {
       "path": "VV-FUTURES-REVIEWED-FINDINGS.docx",
-      "bytes": 129735,
-      "sha256": "db17aadd0858e493d0ccf8e97953fa383524edced5d6d5e07a7236c2150f6499"
+      "bytes": 131221,
+      "sha256": "aad71afe013069b6c61ea59cc8e1ae6f3fe0c1a11371d8d1767dd44137a979e2"
     },
     {
       "path": "VV-FUTURES-WHAT-BECAME-OF-THE-FUTURE.docx",
-      "bytes": 65072,
-      "sha256": "9410529b0f9b9e709ce64117533a26b2c8d9c917e715a77c2630059c22a8ed2f"
+      "bytes": 70694,
+      "sha256": "674b17dc0aeb022fb4c34ebb1bbbe23db75c0601b32fce2ae95a7dbcfda469a7"
+    },
+    {
+      "path": "VV-FUTURES-TESTING-AND-METHOD.docx",
+      "bytes": 40117,
+      "sha256": "1af101fe3f0578a14df99c95c84f8935d54de64e1fa88a096aa000c5d4389101"
     },
     {
       "path": "index.html",
-      "bytes": 11260,
-      "sha256": "e7d0b05b3087860e99dd48d5fd74b6ca3472b26a9f213de4b7b6fab8cc41b737"
+      "bytes": 11541,
+      "sha256": "ff89dc948b6efbe5fb352c6dfed2484b05887e80eacff4ad71b860f2a2c8aea4"
+    },
+    {
+      "path": "RESEARCH-UPDATE-2026-11-06.md",
+      "bytes": 3762,
+      "sha256": "8fe7d8c37890c99596beb5c433dedbca0ce62e5c899bf6505184c18c60fa3284"
+    },
+    {
+      "path": "research-updates/README.md",
+      "bytes": 2459,
+      "sha256": "fae3c4bdd33b5e4f1b2fbd433151f903533178c19a3c938a28722f4c5ab1fc16"
     },
     {
       "path": "research-updates/trajectory-research-2026-11-02.json",
-      "bytes": 92471,
-      "sha256": "5e64f5bb8f9a544caa2c46ea720fff2c13041b1194ab0f66c6e4f8506ff11e95"
+      "bytes": 103903,
+      "sha256": "6634d33d088713023e033ff88a1b17c661495e0d35b88cccaae73add5dd6d7fe"
+    },
+    {
+      "path": "research-updates/trajectory-followup-2026-11-06.json",
+      "bytes": 16252,
+      "sha256": "256893ac3a871f23bbf0d42bdb306dda3a5726832310efe21e06842b468b0753"
     },
     {
       "path": "scripts/check_trajectory_update.py",
-      "bytes": 2090,
-      "sha256": "3184fee87ed6bb2b71a77ceda3b6b9b7586b1157a6d0cc43e3507069eb4bd778"
-    },
-    {
-      "path": "scripts/present_outputs.py",
-      "bytes": 11837,
-      "sha256": "4666d36fc0656c00d7331d4080689f9b85158d27ef0fba5442c74cd7228020bf"
-    },
-    {
-      "path": "scripts/trajectory_extension.py",
-      "bytes": 12695,
-      "sha256": "a82b141dd0d99ee4dd2de12fa7f56312b55498b731555987d97026469bb68f1f"
-    },
-    {
-      "path": "VV-FUTURES-HISTORICAL-CLAIMS.docx",
-      "bytes": 146519,
-      "sha256": "17c825df6b274330d495be612214172f365f44b32c50d9dcb7920c21bd0b23e2"
+      "bytes": 3795,
+      "sha256": "663b1f04e1fccdc5744a8c9e6bbbc10b559bbb084d19c260bbdffbba5641ea00"
     }
-  ],
-  "homepage_number_update": "Homepage counts: 12 tracked trajectories, 46 dated milestones (40 original + 6 follow-up), 43 unique source records (37 original + 6 follow-up), and 16 qualified connections. Existing 507/63/12 headline counts remain separate. JavaScript counts both base and dated follow-up records with source/event deduplication."
+  ]
 }

@@ -1,3 +1,15 @@
+# 6 November 2026 follow-up to the existing VV Futures research archive
+
+Replace the corresponding files in the root of the GitHub repository with the files in this complete ZIP. Keep all other files and the `.github` workflows. This is a **cumulative research update**, not a reset of the scanner and not an assertion that each older future came true or false.
+
+The main Word investigation now contains the preserved 12 cases plus a new **T13**, with deep T04/T05 rechecks; reviewed findings and methodology have dated addenda. The existing Excel register was **expanded** with all original rows kept, a new 2026-11-06 review sheet, and source-linked evidence. A 6 November JSON increment and restored 5 November source/event records allow the homepage to show accurate cumulative research counters.
+
+**As of 6 November 2026:** 13 trajectories; 54 dated milestones; 49 source records; 18 carefully qualified links. The previous 63 LLM-assisted editorial accounts remain draft research interpretations. For the full sources, comparison limitations and methodological notes, read `research-updates/README.md` and `RESEARCH-UPDATE-2026-11-06.md`.
+
+**Do not regenerate the manually reviewed Word and Excel outputs** with the older optional `scripts/present_outputs.py` without integrating the dated follow-ups, because that tool does not yet reproduce all manually appended material. Automated scanner workflows were not altered. Run `python scripts/check_trajectory_update.py` after copying the update.
+
+---
+
 # VV FUTURES — upload-ready update (2 November 2026)
 
 ## What this is
