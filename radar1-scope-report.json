@@ -1,6 +1,6 @@
 {
   "policy_version": 5,
-  "generated_at": "2026-11-06T20:22:02.593066+00:00",
+  "generated_at": "2026-11-07T07:40:20.931291+00:00",
   "applied": true,
   "original_studies": 646,
   "historical_period": {
@@ -12,8 +12,8 @@
   },
   "retained_in_main_file": 646,
   "removed_from_main_file": 0,
-  "prior_rejections": 9905,
-  "rejection_registry_after_apply": 9905,
+  "prior_rejections": 9918,
+  "rejection_registry_after_apply": 9918,
   "removed_by_reason": {},
   "inspection_method": {
     "source_traceability": 646
