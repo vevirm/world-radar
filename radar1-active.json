@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T07:40:20.931291+00:00",
+  "generated_at": "2026-11-07T18:28:31.950037+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 646,
+  "original_records": 648,
   "selection_counts": {
-    "active": 646
+    "active": 648
   },
-  "rejected_identifier_count": 9918,
+  "rejected_identifier_count": 9937,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -3196,6 +3196,15 @@
       "investigation_type": "alternative_scenarios"
     },
     {
+      "doi": "10.3390/atmos11060603",
+      "title": "Towards Sustainable Neighborhoods in Europe: Mitigating 12 Environmental Impacts by Successively Applying 8 Scenarios",
+      "date": "2020-06-08",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The results show that the management of mobility is the parameter that can reduce the impact the most, in terms of greenhouse effect, odor, damage to biodiversity and health. The study of multiple scenarios allows us to determine the influence of several parameters on the results of the life cycle analysis of the neighborhood.",
+      "investigation_type": "alternative_scenarios"
+    },
+    {
       "doi": "10.3390/su12124828",
       "title": "Econometric Studies on the Development of Renewable Energy Sources to Support the European Union 2020–2030 Climate and Energy Framework: A Critical Appraisal",
       "date": "2020-06-12",
@@ -5750,6 +5759,15 @@
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The research analyzes future climate scenarios for the years 2030, 2050, and 2070, using three different Representative Concentration Pathways (RCP 2.6, 4.5, 8.5).",
       "investigation_type": "alternative_scenarios"
+    },
+    {
+      "doi": "10.1080/1369183x.2023.2279749",
+      "title": "The agrifood-migration nexus: migration regimes and the politics of labour shortages in Italy and Sweden",
+      "date": "2023-12-11",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "The COVID-19 crisis has put the spotlight on the role of migrant workers as 'essential' for agrifood systems in Europe and elsewhere.The paper compares Italy and Sweden in terms of the interplay between labour shortages in agriculture and the policies facing migrant workers' exploitation within their respective agrifood systems.Our cases show how labour shortages are politically constructed and have become a key issue in the possibility for migrants to integrate within the current corporateenvironment food regime.There are clear indications that a shift in agriculture is reshaping migration policymaking; with important consequences for how labour migration is being redefined and the impact on the future of agrifood systems in Europe.We conclude that national migration policy responses are politically conditioned by the way governments use state mechanisms and regulation to implement decisions produced by ideological positions on the future of labour, agriculture and food supply at the national level.",
+      "investigation_type": "strategic_future_question"
     },
     {
       "doi": "10.1057/s41599-023-02482-4",
