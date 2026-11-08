@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-08T07:51:59.204382+00:00",
+  "generated_at": "2026-11-08T18:46:42.872756+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 648,
+  "original_records": 649,
   "selection_counts": {
-    "active": 648
+    "active": 649
   },
-  "rejected_identifier_count": 9940,
+  "rejected_identifier_count": 9962,
   "studies": [
     {
       "doi": "10.1504/ijse.2011.039440",
@@ -4066,6 +4066,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "Reaching the EU climate-neutrality objective in 2050 is very ambitious, especially for the Member States from Central-Eastern Europe.",
+      "investigation_type": "strategic_future_question"
+    },
+    {
+      "doi": "10.1038/s41467-021-26680-3",
+      "title": "Delaying carbon dioxide removal in the European Union puts climate targets at risk",
+      "date": "2021-11-11",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Under an indicative target of −50 Gt of net CO 2 by 2100, delayed CDR would cost an extra of 0.12−0.19 trillion EUR per year of inaction. Moreover, postponing CDR beyond mid-century would substantially reduce the removal potential to almost half (−35.60 Gt CO 2 ) due to the underused biomass and land resources and the maximum technology diffusion speed.",
       "investigation_type": "strategic_future_question"
     },
     {
