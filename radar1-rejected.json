@@ -150,6 +150,10 @@
       "reason": "no_substantive_source_text_for_radar2",
       "year": "2016"
     },
+    "10.1002/cssc.201802292": {
+      "reason": "future_facing_research_question_not_established",
+      "year": "2018"
+    },
     "10.1002/dama.201800016": {
       "reason": "european_subject_not_established",
       "year": "2018"
@@ -8662,6 +8666,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2021"
     },
+    "10.1016/j.jrurstud.2021.10.005": {
+      "reason": "no_substantive_source_text_for_radar2",
+      "year": "2021"
+    },
     "10.1016/j.jrurstud.2021.11.017": {
       "reason": "european_subject_not_established",
       "year": "2022"
@@ -12698,6 +12706,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1016/s1553-7250(11)37108-5": {
+      "reason": "european_subject_not_established",
+      "year": "2011"
+    },
     "10.1016/s1553-7250(12)38026-4": {
       "reason": "european_subject_not_established",
       "year": "2012"
@@ -14568,6 +14580,10 @@
     },
     "10.1038/srep16518": {
       "reason": "financial_futures_not_foresight",
+      "year": "2015"
+    },
+    "10.1038/srep17073": {
+      "reason": "non_european_subject",
       "year": "2015"
     },
     "10.1038/srep39666": {
@@ -18226,6 +18242,10 @@
       "reason": "future_facing_research_question_not_established",
       "year": "2017"
     },
+    "10.1080/16258312.2021.1967081": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
+    },
     "10.1080/16549716.2019.1662685": {
       "reason": "european_subject_not_established",
       "year": "2019"
@@ -19946,6 +19966,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1108/00400911211265611": {
+      "reason": "incidental_european_mention_only",
+      "year": "2012"
+    },
     "10.1108/02580541311304607": {
       "reason": "european_subject_not_established",
       "year": "2013"
@@ -21101,6 +21125,10 @@
     "10.1108/jtf-10-2019-0109": {
       "reason": "european_subject_not_established",
       "year": "2020"
+    },
+    "10.1108/jtf-10-2020-0179": {
+      "reason": "european_subject_not_established",
+      "year": "2021"
     },
     "10.1108/jtf-11-2015-0048": {
       "reason": "european_subject_not_established",
@@ -38784,6 +38812,10 @@
     },
     "10.5751/es-06168-190112": {
       "reason": "no_substantive_title",
+      "year": "2014"
+    },
+    "10.5751/es-06915-190432": {
+      "reason": "european_subject_not_established",
       "year": "2014"
     },
     "10.5751/es-07081-200126": {
