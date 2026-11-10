@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T23:24:45.784522+00:00",
+  "generated_at": "2026-11-10T08:52:01.908169+00:00",
   "historical_start": "2011-01-01",
   "historical_end": "2023-12-31",
-  "original_records": 649,
+  "original_records": 650,
   "selection_counts": {
-    "active": 649
+    "active": 650
   },
   "rejected_identifier_count": 9975,
   "studies": [
@@ -2590,6 +2590,15 @@
       "selection": "active",
       "admission_reason": "substantive_future_question_with_original_passage",
       "original_passage": "The data used for the forecast is UN data on migration flows in 1990-2015, and the UN’s predictions regarding changes in population between now and 2050. The research objective is a quantitative estimation of the volume of international migration flows into European countries and their close neighbors until 2050.",
+      "investigation_type": "projection_or_forecast"
+    },
+    {
+      "doi": "10.18276/ejsm.2018.27/1-29",
+      "title": "Economic factors and forecast of apple production in development bioenergy in Poland and its use in agritourism",
+      "date": "2018-12-31",
+      "selection": "active",
+      "admission_reason": "substantive_future_question_with_original_passage",
+      "original_passage": "Data from the Central Statistical Office (CSO) in Poland were used in 2008–2015 and the forecast was calculated from 2016 to 2030. The aim of this article is to present the forecast of apples production in Poland in the development of bioenergy in rural areas.",
       "investigation_type": "projection_or_forecast"
     },
     {
