@@ -1,9 +1,6 @@
 name: VV Futures — cumulative Scanner 2 and outputs
 on:
   workflow_dispatch:
-  schedule:
-    # Scanner 1 operates at 01:17 and 13:17 UTC; start this later.
-    - cron: '45 2,14 * * *'
 permissions:
   contents: write
 concurrency:

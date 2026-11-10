@@ -1,10 +1,6 @@
 name: European Foresight Radar — Scholarly Discovery and Retrospective Verification
 on:
   workflow_dispatch:
-  schedule:
-    # Two runs daily (UTC), with 14-minute discovery, 9-minute verification, and publishing / housekeeping within ~25-minute job.
-    # GitHub-hosted cron is best-effort, not an exact real-time or continuous service.
-    - cron: '17 1,13 * * *'
 permissions:
   contents: write
 concurrency:
