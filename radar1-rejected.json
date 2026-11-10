@@ -4150,6 +4150,10 @@
       "reason": "european_subject_not_established",
       "year": "2011"
     },
+    "10.1016/j.ejmech.2019.111744": {
+      "reason": "scenario_is_present_day_context",
+      "year": "2019"
+    },
     "10.1016/j.ejmech.2023.115495": {
       "reason": "scenario_is_present_day_context",
       "year": "2023"
@@ -8261,6 +8265,10 @@
     "10.1016/j.jafr.2019.100002": {
       "reason": "european_subject_not_established",
       "year": "2019"
+    },
+    "10.1016/j.jafr.2020.100038": {
+      "reason": "non_european_subject",
+      "year": "2020"
     },
     "10.1016/j.jafr.2022.100307": {
       "reason": "european_subject_not_established",
